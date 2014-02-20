@@ -44,8 +44,9 @@ The CSA consists a block cipher and a stream cipher connected in sequence
 \citep[p. 271]{WeiLi:2007}. The block cipher reads 64-bit blocks of data, which 
 is then run in an CBC-mode. The block cipher processes these blocks of data in 
 56 rounds. The output of this is sent to the stream cipher where additional 
-encoding is performed. The first block of data is used as an IV for the stream 
-cipher, and is not encoded in this phase. \citep{DVBAnalysis:2006}
+encoding is performed. The first block of data sent from the block cipher to the 
+stream cipher is used as an IV for the stream cipher, and is not encoded in this 
+phase. \citep{DVBAnalysis:2006}
 
 \section{Breaking the CSA}
 There are a few standard ways to try when you want to break a cipher. 
@@ -59,12 +60,22 @@ One of the problems with the CW distribution is the fact that CW sharing has
 become a real problem \citep{Farncombe}. This is possible due to the fact that
 the CW is sent in the clear between the smart card and the STB, meaning that a 
 user might grab the clear CW and redistribute it over the internet. 
-This has become a huge problem 
-One way is to decode the encrypted CW on the smart card, and then encrypt it 
-once again on the smart card. The latter key has been setup between the smart 
-card and the STB, and is done through a sychronization one time. This means that 
-users are not able to grab the clear CW and redistribute it. 
-\citep[pp. 12--13]{HIS:2011} 
+This has become a financial problem for content distributors, since people stop 
+paying for the content which they are watching.
+
+One way of dealing with CW sharing is to decode the encrypted CW on the CI 
+system, and then encrypt it once again on the CI, before sending it to the STB. 
+The latter key is setup between the CI system and the STB  through a one time
+sychronization. This means that users are not able to grab the clear CW and 
+redistribute it. \citep[pp. 12--13]{HIS:2011}
+
+\hrulefill
+\hrule
+Nu ska jag försöka få in att man inte får lägga TS streams i översta lagret, så 
+att folk kan koppla in hårdvara och försöka sno data från översta lagret. Det 
+finns därmed väldigt mycket krav på hur hårdvaran ser ut.
+\hrulefill
+\hrule
 
 \subsection{Brute force}
 The CSA uses a key consisting of 64-bits, which gives us 18.5 Quintillion 

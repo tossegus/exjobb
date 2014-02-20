@@ -17,17 +17,22 @@
 \contentsline {section}{\numberline {1.3}Common Interface}{2}{section.1.3}
 \contentsline {section}{\numberline {1.4}Set-up}{3}{section.1.4}
 \contentsline {chapter}{\numberline {2}Scrambling}{5}{chapter.2}
-\contentsline {section}{\numberline {2.1}Scrambling or Encrypting?}{5}{section.2.1}
-\contentsline {section}{\numberline {2.2}What is the need for cryptography?}{6}{section.2.2}
-\contentsline {section}{\numberline {2.3}Encryption and decryption}{6}{section.2.3}
-\contentsline {section}{\numberline {2.4}Ciphers}{7}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Data packets}{7}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Block cipher}{8}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Stream cipher}{9}{subsection.2.4.3}
-\contentsline {section}{\numberline {2.5}Confusion and Diffusion}{10}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}S-boxes}{10}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}P-Boxes}{10}{subsection.2.5.2}
-\contentsline {section}{\numberline {2.6}Secrecy}{10}{section.2.6}
+\contentsline {section}{\numberline {2.1}Data packets}{5}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}TS packets}{6}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}PES packets}{6}{subsection.2.1.2}
+\contentsline {section}{\numberline {2.2}Scrambling or Encrypting?}{7}{section.2.2}
+\contentsline {section}{\numberline {2.3}What is the need for cryptography?}{7}{section.2.3}
+\contentsline {section}{\numberline {2.4}Encryption and decryption}{7}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Symmetric-key encryption}{8}{subsection.2.4.1}
+\contentsline {section}{\numberline {2.5}Public-key encryption}{8}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Combinational encryption}{8}{subsection.2.5.1}
+\contentsline {section}{\numberline {2.6}Ciphers}{8}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Block cipher}{9}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}Stream cipher}{10}{subsection.2.6.2}
+\contentsline {section}{\numberline {2.7}Confusion and Diffusion}{10}{section.2.7}
+\contentsline {subsection}{\numberline {2.7.1}S-boxes}{10}{subsection.2.7.1}
+\contentsline {subsection}{\numberline {2.7.2}P-Boxes}{10}{subsection.2.7.2}
+\contentsline {section}{\numberline {2.8}Secrecy}{11}{section.2.8}
 \contentsline {chapter}{\numberline {3}CSA}{13}{chapter.3}
 \contentsline {section}{\numberline {3.1}History}{13}{section.3.1}
 \contentsline {section}{\numberline {3.2}Layout of the CSA}{14}{section.3.2}
