@@ -15,6 +15,69 @@ is "out to get you". Because of this, \citet[pp. 12--14]{Schneier:2003} say that
 we always need  to look for possible ways to break systems, to make sure that
 we are safe.
 
+
+\section{Packets}\label{sec:Data}
+% Do I want to add TS packets, PS packets and PES packets?
+The data that we process are often found in so-called TS packets. TS packets 
+consist of ES packets (elementary stream), and are generally the output of an 
+audio or video encoder. This data is either encoded into program streams (PS) or 
+transport streams (TS). TS is are used when data is being transmitted, and PS is 
+used when data is being stored. DVB uses itself of TS packets, while the data on 
+DVDs are found in PS packets.
+
+Except for TS packets one might also find PES packets when working with 
+transmitted data. 
+\Warning[Not sure]{When and where do we find PES and TS 
+packets?} 
+TS packets are the ones used by the DVB society, possibly due to their fixed 
+lenghts of 188 byte with a 4 byte long header. The PES packets have varying 
+lengths of up to 64 KBytes. The layout of a TS packet can be viewed in figure 
+\ref{img:Package}.
+
+\begin{figure}
+\includegraphics[width=\textwidth]{TSpacket}
+\caption{General layout of a data packet \citep{DVB:2013}}
+\label{img:Package}
+\end{figure}
+
+The building blocks that the TS packets consist of are:
+
+\begin{itemize}
+\item Header
+\item Adaptation field - might not exist
+\item Encrypted payload - might not exist
+\item Clear payload
+\end{itemize}
+
+The header consist of information regarding the packet. The header provides 
+information as to whether there is an adaptation field in the packet, what id 
+the packet has, the sync byte and two bits telling us whether the data is 
+scrambled using an odd or even key, if it is scrambled. The header is never to 
+be encrypted and is always found in the beginning of the packets.
+
+The adaptation field is a padding that you input when the end of the data is not 
+aligned with the end of the TS packet. This is done to make sure that the TS 
+packet is filled. We only find adaptation fields we are working with the last 
+string of data, if the data does not align. Adaptation fields are not encrypted.
+
+We are prone to end up with clear bytes of data in the TS packets when we work 
+with block ciphers, since block ciphers only encrypt fixed sizes of data. The 
+clear data is always located at the end of the packets and can in a worst case 
+scenario be up to one byte smaller than the block size, since that will be the 
+largest amount of bytes that does not fill an entire block. The encrypted 
+payload is always located before \Warning[Wording]{before? In front?} the clear 
+payload \cite[pp. 10--11]{DVB:2013}.
+
+PES-packets can be of any size less than 64 Kbytes. They are found inside TS 
+packets, and are extracted according to certain rules. \Warning[Utveckla]{Skriv om hur det fungerar och varför här} They are then assembled into a PES packet 
+with a header and encrypted payload.
+
+\begin{figure}
+  \includegraphics[width=\textwidth]{PES.png}
+  \label{img:PES}
+  \caption{PES packet derived from TS packets}
+\end{figure}
+
 \section{Scrambling or Encrypting?}
 The main difference between scrambling and encryption is that scrambling is the
 way we generate the secret control word (key) which is used when we make the
@@ -98,66 +161,6 @@ cryptosystems. Those ciphers are called block ciphers and stream ciphers.
 Many systems use a combination of block ciphers and stream ciphers in sequence.
 \Warning[Source]{At least the CSA uses it. But you need a source if you want this to be here}.
 
-\subsection{Data packets}\label{sec:Data}
-The data that we process are often found in so-called TS packets. TS packets 
-consist of ES packets (elementary stream), and are generally the output of an 
-audio or video encoder. This data is either encoded into program streams (PS) or 
-transport streams (TS). TS is are used when data is being transmitted, and PS is 
-used when data is being stored. DVB uses itself of TS packets, while the data on 
-DVDs are found in PS packets.
-
-Except for TS packets one might also find PES packets when working with 
-transmitted data. 
-\Warning[Not sure]{When and where do we find PES and TS 
-packets?} 
-TS packets are the ones used by the DVB society, possibly due to their fixed 
-lenghts of 188 byte with a 4 byte long header. The PES packets have varying 
-lengths of up to 64 KBytes. The layout of a TS packet can be viewed in figure 
-\ref{img:Package}.
-
-\begin{figure}
-\includegraphics[width=\textwidth]{TSpacket}
-\caption{General layout of a data packet \citep{DVB:2013}}
-\label{img:Package}
-\end{figure}
-
-The building blocks that the TS packets consist of are:
-
-\begin{itemize}
-\item Header
-\item Adaptation field - might not exist
-\item Encrypted payload - might not exist
-\item Clear payload
-\end{itemize}
-
-The header consist of information regarding the packet. The header provides 
-information as to whether there is an adaptation field in the packet, what id 
-the packet has, the sync byte and two bits telling us whether the data is 
-scrambled using an odd or even key, if it is scrambled. The header is never to 
-be encrypted and is always found in the beginning of the packets.
-
-The adaptation field is a padding that you input when the end of the data is not 
-aligned with the end of the TS packet. This is done to make sure that the TS 
-packet is filled. We only find adaptation fields we are working with the last 
-string of data, if the data does not align. Adaptation fields are not encrypted.
-
-We are prone to end up with clear bytes of data in the TS packets when we work 
-with block ciphers, since block ciphers only encrypt fixed sizes of data. The 
-clear data is always located at the end of the packets and can in a worst case 
-scenario be up to one byte smaller than the block size, since that will be the 
-largest amount of bytes that does not fill an entire block. The encrypted 
-payload is always located before \Warning[Wording]{before? In front?} the clear 
-payload \cite[pp. 10--11]{DVB:2013}.
-
-PES-packets can be of any size less than 64 Kbytes. They are found inside TS 
-packets, and are extracted according to certain rules. \Warning[Utveckla]{Skriv om hur det fungerar och varför här} They are then assembled into a PES packet 
-with a header and encrypted payload.
-
-\begin{figure}
-  \includegraphics[width=\textwidth]{PES.png}
-  \label{img:PES}
-  \caption{PES packet derived from TS packets}
-\end{figure}
 
 \subsection{Block cipher}\label{sec:BlockCipher}
 A block cipher operates on blocks where each block consists of a fixed number 
