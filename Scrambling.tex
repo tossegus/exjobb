@@ -15,18 +15,19 @@ is "out to get you". Because of this, \citet[pp. 12--14]{Schneier:2003} say that
 we always need  to look for possible ways to break systems, to make sure that
 we are safe.
 
-
-\section{Packets}\label{sec:Data}
-% Do I want to add TS packets, PS packets and PES packets?
-The data that we process are often found in so-called TS packets. TS packets 
-consist of ES packets (elementary stream), and are generally the output of an 
-audio or video encoder. This data is either encoded into program streams (PS) or 
-transport streams (TS). TS is are used when data is being transmitted, and PS is 
-used when data is being stored. DVB uses itself of TS packets, while the data on 
-DVDs are found in PS packets.
+\section{Data packets}\label{sec:Data}
+The data processed by the DVB systems is sent in data packets. There exists three
+different kinds of data packets, but only two of them are commonly used. The 
+packets are called TS, PS and PES. TS is are used when data is being transmitted,
+and PS is used when data is being stored. DVB uses itself of TS packets, while 
+the data on DVDs are found in PS packets.
 
 Except for TS packets one might also find PES packets when working with 
-transmitted data. 
+transmitted data.
+
+The data that we process are often found in so-called TS packets. TS packets 
+consist of ES packets (elementary stream), and are generally the output of an 
+audio or video encoder.  
 \Warning[Not sure]{When and where do we find PES and TS 
 packets?} 
 TS packets are the ones used by the DVB society, possibly due to their fixed 
