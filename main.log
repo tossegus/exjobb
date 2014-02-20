@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.1.29)  20 FEB 2014 14:49
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.1.29)  20 FEB 2014 19:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2146,12 +2146,12 @@ File: fig/blockcipher.pdf Graphic file (type pdf)
 Package pdftex.def Info: fig/blockcipher.pdf used on input line 36.
 (pdftex.def)             Requested size: 252.94438pt x 179.22914pt.
  [14 <./fig/blockcipher.pdf>]
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 86--86
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 88--88
 [][][][] 
  []
 
 
-Overfull \hbox (1.00937pt too wide) in paragraph at lines 109--114
+Overfull \hbox (1.00937pt too wide) in paragraph at lines 111--116
 []\T1/jkpk/m/n/10 The DVB-CSA stan-dard of-fers short-term pro-tec-tion (it as-
 sumed con-tent is viewed
  []
@@ -2466,7 +2466,7 @@ r/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpsya.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/helvetic/uhvr8a.pfb>
-Output written on main.pdf (47 pages, 448791 bytes).
+Output written on main.pdf (47 pages, 448885 bytes).
 PDF statistics:
  918 PDF objects out of 1000 (max. 8388607)
  814 compressed objects within 9 object streams
