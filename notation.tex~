@@ -1,0 +1,39 @@
+\begin{notation}% Passing the option "old" to the notation environment will redefine the notationtabular environment so that it produces an old style LaTeX tabular instead of a ctable.sty style tabular.
+  \centering
+
+%  \begin{notationtabular}{Några mängder}{Notation}{Betydelse}
+%    $\naturals$ & Mängden av naturliga tal \\
+%    $\reals$ & Mängden av reella tal \\
+%    $\complexes$ & Mängden av komplexa tal \\
+%  \end{notationtabular}
+
+  \begin{notationtabular}{Abbreviations}{Abbrevation}{Meaning}
+    AES & Advanced Encryption Standard \\
+    CAM & Conditional Access Module \\
+    CAS & Conditional Access System \\
+    CBC mode & Cipher block chaining mode \\
+    Ciphertext & Encrypted plaintext \\
+    CPU & Central Processing Unig \\
+    CSA & Common Scrambling Algorithm \\
+    CTR mode & Counter mode \\
+    CW & Control Word \\
+    DVB & Digital Video Broadcasting \\
+    ECM & Entitlement Control Message \\
+    EMM & Entitlement Management Messages \\
+    ES & Elementary stream \\
+    ETSI & European Telecommunications Standards Institute \\
+    IPTV & Internet Protocol Television \\
+    IV & Initialization vector \\
+    LFSR & Linear Feedback Shift-Register \\
+    LSB & Least Significant Bit \\
+    MSB & Most Significant Bit \\
+    Nibble & Half a byte (4 bits) \\
+    P-Box & Permutation-Box \\
+    PES & Packetized Elementary Stream \\
+    Plaintext & Data \\
+    S-Box & Substitution-Box \\
+    STB & Set-top Box \\
+    TS & Transport Stream \\
+    XRC & eXtended emulation Resistant Cipher \\
+  \end{notationtabular}
+\end{notation}

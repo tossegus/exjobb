@@ -1,0 +1,52 @@
+\chapter{CSA3 and CISSA}
+There are currently two scrambling standards that are being \Warning[Fill]{This section with some yadayada} looked into, and assessed with the thought of replacing the currently used CSA1. This is done to assure content security for the coming 10 years or some other bullshit.
+
+CSA3 is a hardware-friendly, software-unfriendly scrambling algorithm chosen by 
+the ETSI to replace the currently used CSA. \citep[pp. 6--7]{DVB:2013}
+
+CISSA is meant to be a software-friendly algorithm made with the purpose of 
+allowing descrambling on CPU-based units such as computers, smart phones and 
+tablets. \citep[p. 9]{DVB:2013}
+
+\section{CISSA}
+CISSA stands for \emph{Common IPTV Software-oriented Scrambling Algorithm} and 
+is designed to be software-friendly. Opposite to the CSA3, CISSA is made to be 
+easily descrambled in software, so that CPU-based systems such as computers and 
+smart-phones can also implement it.  Although it is software-friendly, it is 
+supposed to able to be implemented efficiently on hardware as well as in 
+software \citep[p. 9]{DVB:2013}.
+
+CISSA is to use the AES-128 block cipher in CBC-mode with a 16 byte IV with the 
+value 0x445642544d4350544145534349535341.
+\Warning[Find more]{But I don't know the name of the second block cipher}
+
+%If the packet is a TS-packet, both the header and adaptation field are to be left unscrambled no matter what. As a result of this being a Block Cipher, some data in the TS-packet might go unscrambled since AES-128 only scrambles blocks of 16 bytes. This means that in a worst case scenario blocks of up to 15 bytes of data might be left clear. Each packet is scrambled independently of each other, which allows for random access. \citep[pp. 10--11]{DVB:2013}
+
+%If the packet is a PES-packet we have even more rules. The header of the PES-packet shall consist of less than 184-bytes and left clear. \Warning[More information]{Might need to write more here}
+
+\subsection{Software friendly}
+What makes this algorithm software friendly?
+Is it still possible to make use of it on an FPGA - since FPGAs are so
+general?
+
+\section{CSA3}
+CSA is to be succeeded by CSA3 which is based on a combination of a 128-bit 
+AES block cipher, which is simply called the AES-128, and a confidential block 
+cipher called the XRC \citep[p. 8]{DVB:2013}.
+
+\subsection{XRC}
+XRC stands for eXtended emulation Resistant Cipher and is a confidential cipher 
+used in DVB \citep[p. 8]{DVB:2013}.
+
+\subsection{Hardware friendly}
+What makes the CSA3 so hardware friendly?
+Is it because it is meant to be a secret standard, only to be delivered
+on a chip, to make it as good as impossible to reverse-engineer?
+
+\section{Conclusion}
+From what I've seen, both the CISSA and CSA3 implement the AES-128 for scrambling
+, combined with a secret cipher. The secret cipher for CSA3 is the XRC cipher, 
+and the secret CISSA cipher is yet to be known. CISSA sounds like a great idea 
+in my opinion, allowing CPU-based units to descramble data streams without a 
+dedicated HW-Chip. While that is good and all, CSA3 is a finished standard, and 
+will probably be more easily implemented on an FPGA.

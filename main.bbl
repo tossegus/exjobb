@@ -1,0 +1,143 @@
+\begin{thebibliography}{20}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Conax(2014)]{Conax}
+Conax, 2014.
+\newblock URL \url{http://www.conax.com/about-us/}.
+\newblock Accessed: 13 Feb 2014.
+
+\bibitem[DVB{\ }Scene(2013)]{DVBScene:2013}
+DVB{\ }Scene.
+\newblock Delivering the digital standard not so sure about the title.
+\newblock \emph{DVB Scene}, September 2013.
+\newblock URL \url{http://www.dvb.org/resources/public/scene/DVB-SCENE42.pdf}.
+\newblock Accessed: 10 Feb 2014.
+
+\bibitem[ETSI{\ }TS(2008)]{SimulCrypt:2008}
+ETSI{\ }TS.
+\newblock Digital video broadcasting (dvb); head-end implementation of dvb
+  simulcrypt.
+\newblock \emph{ETSI{\ }TS{\ }103{\ }197}, 10 2008.
+\newblock Accessed: 13 Feb 2014.
+
+\bibitem[ETSI{\ }TS{\ }(2013)]{DVB:2013}
+ETSI{\ }TS{\ }.
+\newblock Digital video broadcasting (dvb).
+\newblock \emph{ETSI{\ }TS{\ }103{\ }127}, 05 2013.
+\newblock URL
+  \url{http://www.etsi.org/deliver/etsi\_ts/103100\_103199/103127/01.01.01\_60/ts\_103127v010101p.pdf}.
+\newblock Accessed: 10 Feb 2014.
+
+\bibitem[Farncombe{\ }Consulting{\ }Group(2009)]{Farncombe}
+Farncombe{\ }Consulting{\ }Group.
+\newblock Towards a replacement for the dvb common scrambling algorithm.
+\newblock \emph{Farncombe White Paper}, October 2009.
+\newblock URL \url{http://farncombe.eu/whitepapers/FTLCAWhitePaperTwo.pdf}.
+\newblock Accessed: 28 jan 2014.
+
+\bibitem[Fischer(2008)]{LFSR:2008}
+Simon Fischer.
+\newblock Analysis of lightweight stream ciphers.
+\newblock \emph{\'Ecole Polytechnique F\'ed\'erale De Lausanne}, 2008.
+\newblock URL
+  \url{http://biblion.epfl.ch/EPFL/theses/2008/4040/EPFL_TH4040.pdf}.
+\newblock Accessed: 3 Feb 2014.
+
+\bibitem[Internet(2014)]{Angelfire}
+Mr~Internet.
+\newblock Mixcolumns step for aes.
+\newblock \emph{Empty}, January 2014.
+\newblock URL \url{http://www.angelfire.com/biz7/atleast/mix_columns.pdf}.
+\newblock Accessed: 28 jan 2014.
+
+\bibitem[Li and Gu(2007)]{WeiLi:2007}
+Wei Li and Dawu Gu.
+\newblock Security analysis of dvb common scrambling algorithm, 2007.
+\newblock URL
+  \url{http://ieeexplore.ieee.org.lt.ltag.bibl.liu.se/stamp/stamp.jsp?tp=&arnumber=4402690}.
+\newblock Accessed: 12 Feb 2014.
+
+\bibitem[Schneier and Fergusson(2003)]{Schneier:2003}
+Bruce Schneier and Niels Fergusson.
+\newblock \emph{Practical Cryptography}.
+\newblock Wiley Publishing, Inc., first edition, 2003.
+
+\bibitem[Schrijen(2011)]{HIS:2011}
+G.J. Schrijen.
+\newblock Use case: Control word protection, May 2011.
+\newblock URL
+  \url{http://www.hisinitiative.org/_lib/img/Intrinsic\-ID\_CWProtection\_May\_25.pdf}.
+\newblock Accessed: 18 Feb, 2014.
+
+\bibitem[Shannon(1949)]{Shannon:1949}
+Claude~Elwood Shannon.
+\newblock \emph{Communication Theory of Secrecy Systems*}.
+\newblock Bell System Technical Journal, 1949.
+\newblock URL \url{netlab.cs.ucla.edu/wiki/files/shannon1949.pdf}.
+\newblock Accessed: 28 Jan 2014.
+
+\bibitem[Simmons(1992)]{Simmons:1992}
+Gustavus~J. Simmons.
+\newblock \emph{Contemporary Cryptology}.
+\newblock IEEE Press, 1992.
+
+\bibitem[Simpson et~al.(2009)Simpson, Hendricksen, and Yap]{Simpson:2009}
+Leonie~R. Simpson, Matthew Hendricksen, and Wun-She Yap.
+\newblock Improved cryptanalysis of the common scrambling algorithm stream
+  cipher, 2009.
+\newblock URL \url{http://eprints.qut.edu.au/27578/1/c27578.pdf}.
+\newblock Accessed: 12 Feb 2014. VET INTE OM DEN ÄR VÄRD ATT HA MED FÖR 1
+  SIFFRA.
+
+\bibitem[Stinson(2006)]{Stinson:2006}
+Douglas~R. Stinson.
+\newblock \emph{Cryptography : Theory and practice}.
+\newblock Chapman \& Hall / CRC, third edition, 2006.
+
+\bibitem[Tews et~al.(2012)Tews, Wälde, and Weiner]{Breaking:2012}
+Erik Tews, Julian Wälde, and Michael Weiner.
+\newblock Breaking dvb-csa.
+\newblock \emph{http://hgpu.org/?p=6038}, pages 45 -- 61, 2012.
+\newblock URL
+  \url{http://link.springer.com.lt.ltag.bibl.liu.se/chapter/10.1007\%2F978-3-642-34159-5\_4\#page-14}.
+\newblock Accessed: 3 Feb 2014.
+
+\bibitem[Weimann and Wirt(2006)]{DVBAnalysis:2006}
+Ralf-Philipp Weimann and Kai Wirt.
+\newblock Analysis of the dvb common scrambling algorithm, October 2006.
+\newblock URL
+  \url{http//sec.cs.kent.ac.uk/cms2004/Program/CMS2004final/p5a1.pdf}.
+\newblock Accessed: 31 Jan 2014.
+
+\bibitem[Wikipedia(2014{\natexlab{a}})]{CBCmode:2014}
+Unknown Wikipedia.
+\newblock Cbc encryption, 2014{\natexlab{a}}.
+\newblock URL
+  \url{http://upload.wikimedia.org/wikipedia/commons/thumb/8/80/CBC_encryption.svg/2000px-CBC\_encryption.svg.png}.
+\newblock Accessed: 7 Feb 2014.
+
+\bibitem[Wikipedia(2014{\natexlab{b}})]{CipherTax:2013}
+Unknown Wikipedia.
+\newblock Cipher-taxanomy, 2014{\natexlab{b}}.
+\newblock URL
+  \url{http://upload.wikimedia.org/wikipedia/en/thumb/8/85/Cipher-taxonomy.svg/500px-Cipher-taxonomy.svg.png}.
+\newblock Accessed: 5 Feb 2014.
+
+\bibitem[Wikipedia(2014{\natexlab{c}})]{RijndaelKeySchedule}
+Wikipedia~Jr Wikipedia.
+\newblock Rijndael's key schedule.
+\newblock \emph{Empty}, January 2014{\natexlab{c}}.
+\newblock URL \url{http://en.wikipedia.org/wiki/Rijndael_key_schedule}.
+\newblock Accessed: 28 jan 2014.
+
+\bibitem[Wirt(2004)]{Wirt:2004}
+Kai Wirt.
+\newblock Fault attack on the dvb common scrambling algorithm, 2004.
+\newblock URL \url{https://eprint.iacr.org/2004/289.pdf}.
+\newblock Accessed: 13 Feb 2014.
+
+\end{thebibliography}

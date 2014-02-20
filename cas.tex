@@ -1,0 +1,87 @@
+\chapter{Encryption of the DVB}
+There are many parts that are needed to provide DVB with a secure way of 
+transmitting streams without facing the risk of content getting stolen. The 
+most important parts are:
+
+\begin{itemize}
+\item Scrambler - explained in chapter \ref{ch:Scrambling}
+\item CAS - explained in section \ref{sec:CAS}
+\item Common Interface - explained in section \ref{sec:CI}
+\item Descrambler - the inverse of a scrambler.
+\end{itemize}
+
+\section{CAS} \label{sec:CAS}
+Conditional Access is used to make sure that a user fulfills an amount of 
+criteria before being able to view content. To make sure that a user that 
+demands data does, the CW used to scramble the data is encrypted by a CAS, and 
+only users that are allowed to view said material are allowed to. A CAS consists 
+of an EMM-generator and an ECM-generator in addition to some other parts. We are 
+only interrested in the ECMG and EMMG since they are the parts that affect the 
+scrambler. The ECM is generated using the CW, while the EMM is generated based 
+on information related to the user. That information varies, but might relate to 
+what channels the user is allowed to access and when the subscription ends. A TV 
+will not broadcast any channels without receiving an EMM telling it to do so.
+\Warning[Source]{You need to find more sources than just Patrik}
+
+%This might just be a the same thing as the information above, but in simpler terms? Might remove this
+A simple example is that a user needs to pay for tv-services to be able to 
+watch certain channels. The content provider generates an EMM that tells the 
+smart-card if the user has paid for the material it requests. The content 
+provider also generates an ECM based on the CW, which the smart-card decrypts 
+and passes to the descrambler if the EMM allows it. \Warning[Repetition]{Is this merely a repetition?}
+
+CA-modules. What are they, how and where are they connected to the system? I 
+think that the CAM is where you input the smart-card. 
+
+\subsection{Standards}
+The three most common CAS in Sweden are Viaccess, Conax and Strong. You need to 
+buy a specific CAM depending on what distributor you choose for your channels. 
+This 
+
+\subsubsection{Viaccess}
+Viaccess is the CA-module used by Boxer. This is currently the most commonly used
+ distributor in Sweden.
+%Boxer supports CI+
+
+\subsubsection{Conax}
+Conax is the CA-module used by Com Hem. This is currently the second most used
+distributor in Sweden. Conax has got its headquarter in Norway and is a part of the Telenor Group, which deals with mobile telecommunications \citep{Conax}.
+%Com Hem supports CI+
+
+\subsubsection{Strong}
+Strong is the CA-module used by Canal Digital. This is currently the third most 
+used distributor in Sweden.
+%Canal Digital does not support CI+
+
+\section{DVB-SimulCrypt} \label{sec:Simul}
+DVB-SimulCrypt is widespread in Europe, and works as an interface between the 
+head-end and the CAS \citep{SimulCrypt:2008}.
+
+SimulCrypt encourages the use of several CAS at once \citep[p. 17]{SimulCrypt:2008}. 
+But how does it do that? 
+Why and how can we do that? Is that because the scrambling is the same, where the
+only thing differentiating the CAS is the encoding of the control word?
+
+\section{Common Interface} \label{sec:CI}
+THE COMMON INTERFACE CAN'T READ, SO IT WON'T MIND IF I WRITE IN ALL-CAPS ;\_\_\_;
+IT ALSO CAN'T UNDERSTAND EMOJIS, WHICH MEANS THAT I CAN INPUT AS MANY STUPID 
+THINGS AS I WANT TO. stupid common interface..
+
+\section{Set-up} \label{sec:setup}
+The TS is scrambled using a key which is called a \emph{control word}. The 
+control word is at least changed several times per minute, but it is not 
+uncommon to change the CW every 10 seconds. This means that breaking the key 
+has very little effect since it will just be changed in a few seconds even if 
+you manage to break it. The control word is generated randomly to make sure 
+that consecutive control words are not related to each other. 
+
+The control word is scrambled, then sent to the content provider. The content 
+provider then encrypts the CW as an \emph{entitlement control message} (ECM). 
+The content provider also generates an \emph{entitlement management message} 
+(EMM) which tells the smart-card if the user is allowed access to the data. The 
+ECM and EMM are then sent back to the scrambler where it is attached to the 
+scrambled TS. This package is then sent to the user, where the ECM, EMM and TS 
+are separated. The ECM and EMM are sent to the box containing the smart-card 
+for processing, and the TS is sent directly to the descrambler where it waits 
+for the CW. The TS is then descrambled using the CW and the pure data is then 
+displayed to the user.

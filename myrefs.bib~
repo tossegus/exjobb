@@ -1,0 +1,223 @@
+@Book{Schneier:2003,
+  author = {Bruce Schneier and Niels Fergusson},
+  title = {Practical Cryptography},
+  pages = {15 -- 100},
+  publisher = {Wiley Publishing, Inc.},
+  edition = {First},
+  year = 2003,
+}
+
+@Book{Simmons:1992,
+  title={Contemporary Cryptology},
+  subtitle={The Science of Information Integrity},
+  author = {Gustavus J. Simmons},
+  year = 1992,
+  publisher = {IEEE Press},
+  page = {48--49},
+}
+
+@book{Shannon:1949,
+  author = {Claude Elwood Shannon},
+  book = {Communication Theory of Secrecy Systems*},
+  url = {netlab.cs.ucla.edu/wiki/files/shannon1949.pdf},
+  year = 1949,
+  title = {Communication Theory of Secrecy Systems*},
+  publisher = {Bell System Technical Journal},
+  note = {Accessed: 28 Jan 2014},
+  page = {708 -- 710},
+}
+
+@book{Stinson:2006,
+  author = {Douglas R. Stinson},
+  title = {Cryptography : Theory and practice},
+  edition = {Third},
+  publisher = {Chapman \& Hall / CRC},
+  year = 2006,
+  page = {73--100?},
+}
+
+@article{Breaking:2012,
+  author = {Erik Tews and Julian Wälde and Michael Weiner},
+  title = {Breaking DVB-CSA},
+  journal = {http://hgpu.org/?p=6038},
+  book = {Research in Cryptology},
+  pages = {45 -- 61},
+  url = {http://link.springer.com.lt.ltag.bibl.liu.se/chapter/10.1007\%2F978-3-642-34159-5\_4\#page-14},
+  year = 2012,
+  note = {Accessed: 3 Feb 2014},
+}
+
+@article{LFSR:2008,
+  author = {Simon Fischer},
+  url = {http://biblion.epfl.ch/EPFL/theses/2008/4040/EPFL_TH4040.pdf},
+  year = 2008,
+  note = {Accessed: 3 Feb 2014},
+  title = {Analysis of Lightweight Stream Ciphers},
+  journal = {\'Ecole Polytechnique F\'ed\'erale De Lausanne}  
+}
+
+@misc{DVBAnalysis:2006,
+  author = {Ralf-Philipp Weimann and Kai Wirt},
+  title = {Analysis of the DVB Common Scrambling Algorithm},
+  year = {2006},
+  month = {October},
+  url = {http//sec.cs.kent.ac.uk/cms2004/Program/CMS2004final/p5a1.pdf},
+  note = {Accessed: 31 Jan 2014},
+}
+
+@article{Farncombe,
+  author = {Farncombe{\ }Consulting{\ }Group},
+  title = {Towards a Replacement for the DVB Common Scrambling Algorithm},
+  journal = {Farncombe White Paper},
+  url = {http://farncombe.eu/whitepapers/FTLCAWhitePaperTwo.pdf},
+  year = 2009,
+  month = {October},
+  note = {Accessed: 28 jan 2014},
+}
+
+@article{RijndaelSbox,
+  author = {Wikipedia},
+  title = {Rijndael's S-Box},
+  journal = {Empty},
+  url = {http://en.wikipedia.org/wiki/Rijndael_S-box},
+  year = 2014,
+  month = {January},
+  note = {Accessed: 28 jan 2014},
+}
+
+@article{RijndaelKeySchedule,
+  author = {Wikipedia, Wikipedia Jr},
+  title = {Rijndael's Key Schedule},
+  journal = {Empty},
+  url = {http://en.wikipedia.org/wiki/Rijndael_key_schedule},
+  year = 2014,
+  month = {January},
+  note = {Accessed: 28 jan 2014},
+}
+
+@article{Angelfire,
+  author = {Internet, Mr},
+  title = {MixColumns step for AES},
+  journal = {Empty},
+  url = {http://www.angelfire.com/biz7/atleast/mix_columns.pdf},
+  year = 2014,
+  month = {January},
+  note = {Accessed: 28 jan 2014},
+}
+
+@misc{CipherTax:2013,
+  author = {Unknown Wikipedia},
+  title = {Cipher-taxanomy},
+  year = {2014},
+  url = {http://upload.wikimedia.org/wikipedia/en/thumb/8/85/Cipher-taxonomy.svg/500px-Cipher-taxonomy.svg.png},
+  note = {Accessed: 5 Feb 2014},
+}
+
+@misc{CBCmode:2014,
+  author = {Unknown Wikipedia},
+  title = {CBC encryption},
+  year = {2014},
+  url = {http://upload.wikimedia.org/wikipedia/commons/thumb/8/80/CBC_encryption.svg/2000px-CBC\_encryption.svg.png},
+  note = {Accessed: 7 Feb 2014},
+}
+
+@article{DVB:2013,
+  author = {ETSI{\ }TS{\ }},
+  journal = {ETSI{\ }TS{\ }103{\ }127},
+  title = {Digital Video Broadcasting (DVB)},
+  subtitle = {Content Scrambling Algorithm for DVB-IPTV Services using MPEG2 Transport Streams},
+  year = 2013,
+  month = 05,
+  url = {http://www.etsi.org/deliver/etsi\_ts/103100\_103199/103127/01.01.01\_60/ts\_103127v010101p.pdf},
+  note = {Accessed: 10 Feb 2014},
+  reference = {DTS/JTC-DVB-322},
+}
+
+@article{DVBScene:2013,
+  journal = {DVB Scene},
+  title = {Delivering the Digital Standard NOT SO SURE ABOUT THE TITLE},
+  author = {DVB{\ }Scene},
+  edition = 42,
+  year = 2013,
+  page = 19,
+  month = {September},
+  url = {http://www.dvb.org/resources/public/scene/DVB-SCENE42.pdf},
+  note = {Accessed: 10 Feb 2014},
+}
+
+@article{DVB2:2013,
+  author = {ETSI{\ }TS},
+  journal = {ETSI{\ }TS{\ }100{\ }289},
+  title = {Digital Video Broadcasting (DVB)},
+  subtitle = {Support for use of the DVB Scrambling Algorithm version 3 within digital broadcasting systems},
+  year = 2011,
+  month = 09,
+  url = {http://www.etsi.org/deliver/etsi_ts/100200_100299/100289/01.01.01_60/ts_100289v010101p.pdf},
+  note = {Accessed: 10 Feb 2014},
+  reference = {RTS/JTC-DVB-291},
+}
+
+@misc{WeiLi:2007,
+  author = {Wei Li and Dawu Gu},
+  title = {Security Analysis of DVB Common Scrambling Algorithm},
+  note = {Accessed: 12 Feb 2014},
+  url = {http://ieeexplore.ieee.org.lt.ltag.bibl.liu.se/stamp/stamp.jsp?tp=&arnumber=4402690},
+  year = 2007,
+  publisher = {IEEE Xplore},
+  reference = {First International Symposium on Data, Privacy and E-Commerce},
+}
+
+@misc{Simpson:2009,
+  author = {Leonie R. Simpson and Matthew Hendricksen and Wun-She Yap},
+  title = {Improved Cryptanalysis of the Common Scrambling Algorithm Stream 
+Cipher},
+  year = 2009,
+  url = {http://eprints.qut.edu.au/27578/1/c27578.pdf},
+  note = {Accessed: 12 Feb 2014. 
+VET INTE OM DEN ÄR VÄRD ATT HA MED FÖR 1 SIFFRA},
+}
+
+@misc{Wirt:2004,
+  author = {Kai Wirt},
+  year = 2004,
+  url = {https://eprint.iacr.org/2004/289.pdf},
+  note = {Accessed: 13 Feb 2014},
+  title = {Fault attack on the DVB Common Scrambling Algorithm},
+}
+
+@misc{Conax,
+  author = {Conax},
+  note = {Accessed: 13 Feb 2014},
+  url = {http://www.conax.com/about-us/},
+  year = 2014,
+}
+
+@article{SimulCrypt:2008,
+  author = {ETSI{\ }TS},
+  year = 2008,
+  month = 10,
+  journal = {ETSI{\ }TS{\ }103{\ }197},
+  title = {Digital Video Broadcasting (DVB); Head-end implementation of DVB Simulcrypt},
+  reference = {RTS/JTC-DVB-231},
+  note = {Accessed: 13 Feb 2014}
+}
+
+@misc{AES:2001,
+  author = {NIST},
+  year = 2001,
+  month = November,
+  day = 26,
+  note = {Accessed: 17 Feb 2014. Looks like shit but wth},
+  journal = {Federal Information Processing Standards Publication 197},
+  title = {Specification for the Advanced Encryption Standard (AES)},
+  url = {http://csrc.nist.gov/publications/fips/fips197/fips\-197.pdf}
+}
+
+@misc{HIS:2011,
+  author = {G.J. Schrijen},
+  url = {http://www.hisinitiative.org/_lib/img/Intrinsic\-ID\_CWProtection\_May\_25.pdf},
+  note = {Accessed: 18 Feb, 2014},
+  title = {Use Case: Control Word Protection},
+  year = 2011,
+  month = {May},
+}

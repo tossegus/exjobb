@@ -1,0 +1,115 @@
+\chapter{CSA} \label{ch:CSA}
+The CSA is currently the most commonly used encryption algorithm in DVB for 
+encryption of video-streams. There are two versions of the DVB-CSA, CSA1 and 
+CSA2. The only difference between them being the key-length 
+\citep[p. 23]{DVBScene:2013}. The CSA uses a combination of a block cipher 
+taking an input of a 64-bit block, and a stream cipher. Both of the ciphers use 
+the same key, so that the entire system uses the same key 
+\citep[pp. 271--272]{WeiLi:2007}. This means that the complete algorithm would 
+break if the key would be recovered. Using the same key does on the other hand 
+allow us to change the key at regular intervals more easily. 
+
+CSA has been the official scrambling method for DVB since may 1994. CSA was 
+to be implemented in hardware and hard to implement in software, for the sake
+ of making reverse-engineering difficult \citep{DVBScene:2013}.
+
+\section{History} \label{sec:History}
+CSA was largely kept secret until 2002. It was made very hard to reverse engineer
+since it was largely implemented in hardware. The patent papers gave some hints
+of the layout, but important details like the layout of the S-boxes remained 
+secret.
+Without the S-boxes, free implementations of the algorithm were out of question. 
+Initially, CSA was to remain implemented in hardware only, but software 
+implementations were found on the internet, which made it possible to analyze
+the entire solution.
+
+In 2002 FreeDec was released, implementing CSA in software. Though released as 
+binary only, disassembly revealed the missing details and allowed 
+reimplementation of the algorithm in higher-level programming languages. 
+\Warning[source]{Is this relevant, and you need another source than Wikipedia}
+
+With CSA now publicly known in its entirety, cryptanalysts started looking for 
+weaknesses.
+
+\begin{figure}
+  \begin{center}
+    \includegraphics{blockcipher}
+  \end{center}
+  \caption{Image from \citet[pp. 49]{Breaking:2012}}
+  \label{fig:blockcipher}
+\end{figure}
+
+\section{Layout of the CSA}
+The CSA consists a block cipher and a stream cipher connected in sequence 
+\citep[p. 271]{WeiLi:2007}. The block cipher reads 64-bit blocks of data, which 
+is then run in an CBC-mode. The block cipher processes these blocks of data in 
+56 rounds. The output of this is sent to the stream cipher where additional 
+encoding is performed. The first block of data is used as an IV for the stream 
+cipher, and is not encoded in this phase. \citep{DVBAnalysis:2006}
+
+\section{Breaking the CSA}
+There are a few standard ways to try when you want to break a cipher. 
+Those are the brute force approach, known-plaintext attacks, chosen plaintext 
+attacks and birthday attacks \citep[pp. 31-34]{Schneier:2003}. You choose what 
+method to use depending on what the ciphers look like. I will not discuss all 
+of them, but I will talk about the most relevant ones here.
+
+\subsection{CW sharing}
+One of the problems with the CW distribution is the fact that CW sharing has 
+become a real problem \citep{Farncombe}. This is possible due to the fact that
+the CW is sent in the clear between the smart card and the STB, meaning that a 
+user might grab the clear CW and redistribute it over the internet. 
+This has become a huge problem 
+One way is to decode the encrypted CW on the smart card, and then encrypt it 
+once again on the smart card. The latter key has been setup between the smart 
+card and the STB, and is done through a sychronization one time. This means that 
+users are not able to grab the clear CW and redistribute it. 
+\citep[pp. 12--13]{HIS:2011} 
+
+\subsection{Brute force}
+The CSA uses a key consisting of 64-bits, which gives us 18.5 Quintillion 
+possible keys (Quintillion is $10^{18}$). But byte 3 and 7 are often used as 
+parity bytes in CA systems which leads to only 48 bits being used in the key 
+\citep{Breaking:2012}. This can be seen in figure \ref{fig:blockcipher}. 48 bits 
+on other hand leads to $2^{48}$ combinations, which corresponds to 281 trillion 
+possible keys (Trillion is $10^{12}$). Testing a million keys per second is about 
+what is possible through on a modern x86 processor using software methods
+\Warning[Todo]{How did I get this number?}, which means it would take roughly 
+3258 days to force brake the keys. That is roughly 8.8 years.
+
+Moreover, systems need to change the key at least every 120 seconds \citep{Simpson:2009} and most systems issues new keys every 10-120 second \citep{Wirt:2004}.
+
+It is possible to use dedicated hardware and FPGA implementations to speed this 
+up, using hardware accelerations and other methods. But even if we would then 
+be able to scan through 2.8 trillion keys per second, precisely allowing us to 
+be certain to find the key in two minutes, we could just change the key more 
+often. As such, the brute force method of obtaining the key is not an option.
+
+%\subsection{Bit slicing}
+%The stream cipher part of CSA is prone to bit slicing, a software implementation 
+%technique that allows decryption of many blocks, or the same block with many 
+%different keys, at the same time. This significantly speeds up a brute force 
+%search implemented in software, although the factor is too low to make a real-time 
+%attack practical.
+
+%The block cipher part is harder to bit slice, as the S-boxes involved are too large 
+%(8x8) to be efficiently implemented using logical operations, a prerequisite for bit 
+%slicing to be more efficient than a regular implementation.
+
+\section{Why do we need a new standard?}
+The DVB-CSA standard offers short-term protection (it assumed content is viewed 
+in real time and not stored). But due to the development during recent years, 
+we now need to be able to distribute the content around the home. This means 
+that the focus needs to be moved from securing the delivery, to securing the 
+content. \citep{Farncombe}
+
+
+There are currently two implementations suggested for doing this. The first is 
+the hardware friendly CSA3 which uses itself of AES blocks (with keys of sized 
+128, 192 or 256 bits) as well as a confidential block cipher called the XRC. The 
+second version is the software friendly CISSA which uses the AES-128 as a basic 
+building block. \citep{DVB:2013}
+
+What are the pros and cons of having hardware scramblers and software scramblers.
+Software uses itself of the date to generate a random key. Hardware uses itself 
+of additive scramblers, and other random output generators to generate the key. 

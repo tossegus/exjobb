@@ -1,0 +1,16 @@
+\chapter{Result}
+Här är väl tanken att jag ska skriva lite om hur jag implementerat
+och bearbetat allt som har med CSA3 implementationen att göra.
+
+Såhär ser hårdvaran ut i en sjukt snygg bild jag ritat:
+Inputs   ________  Outputs
+     1 -|        |- 1
+     2 -|        |- 2
+     3 -|   HW   |- 3
+     4 -|        |- 4
+     5 -|        |- 5
+         ¨¨¨¨¨¨¨¨¨
+
+Berätta om flödet på implementationen.
+Berätta om hur det fungerar.
+Berätta om vilka delar du realiserat.

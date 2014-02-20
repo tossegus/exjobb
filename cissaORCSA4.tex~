@@ -1,0 +1,16 @@
+\chapter{CISSA}
+CISSA stands for \emph{Common IPTV Software-oriented Scrambling Algorithm} and 
+is designed to be software-friendly. Opposite to the CSA3, CISSA is made to be 
+easily descrambled in software, so that CPU-based systems such as computers and 
+smart-phones can also implement it. In spite of being software-friendly, CISSA 
+is possible to implement in hardware. \citep{DVB:2013}
+
+But I've found absolutely no information on how CISSA is implemented, making it 
+hard to analyze it, both in software-friendlyability as well as making an 
+assessment as to whether it is possible to implement the scrambling part of it 
+on an FPGA.
+
+\section{Software friendly}
+What makes this algorithm software friendly?
+Is it still possible to make use of it on an FPGA - since FPGAs are so
+general?
