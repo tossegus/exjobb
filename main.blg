@@ -11,44 +11,44 @@ A level-1 auxiliary file: aes.aux
 A level-1 auxiliary file: Result.aux
 A level-1 auxiliary file: images.aux
 Database file #1: myrefs.bib
-You've used 20 entries,
+You've used 21 entries,
             2773 wiz_defined-function locations,
-            735 strings with 8149 characters,
-and the built_in function-call counts, 6861 in all, are:
-= -- 621
-> -- 273
-< -- 19
-+ -- 103
-- -- 81
-* -- 417
-:= -- 1089
-add.period$ -- 84
-call.type$ -- 20
-change.case$ -- 84
-chr.to.int$ -- 18
-cite$ -- 40
-duplicate$ -- 364
-empty$ -- 642
-format.name$ -- 107
-if$ -- 1447
+            743 strings with 8406 characters,
+and the built_in function-call counts, 7184 in all, are:
+= -- 652
+> -- 283
+< -- 20
++ -- 107
+- -- 84
+* -- 436
+:= -- 1143
+add.period$ -- 89
+call.type$ -- 21
+change.case$ -- 88
+chr.to.int$ -- 19
+cite$ -- 42
+duplicate$ -- 383
+empty$ -- 672
+format.name$ -- 111
+if$ -- 1514
 int.to.chr$ -- 3
 int.to.str$ -- 1
-missing$ -- 16
-newline$ -- 132
-num.names$ -- 80
-pop$ -- 206
+missing$ -- 17
+newline$ -- 139
+num.names$ -- 84
+pop$ -- 213
 preamble$ -- 1
-purify$ -- 67
+purify$ -- 70
 quote$ -- 0
-skip$ -- 272
+skip$ -- 284
 stack$ -- 0
-substring$ -- 72
-swap$ -- 40
+substring$ -- 74
+swap$ -- 42
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 200
+type$ -- 211
 warning$ -- 0
-while$ -- 63
+while$ -- 66
 width$ -- 0
-write$ -- 298
+write$ -- 314

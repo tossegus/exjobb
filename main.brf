@@ -5,6 +5,7 @@
 \backcite {Schneier:2003}{{5}{2}{chapter.2}}
 \backcite {DVB:2013}{{6}{2.1}{figure.caption.4}}
 \backcite {DVB:2013}{{6}{2.1.1}{figure.caption.4}}
+\backcite {ETR:289}{{7}{2.2}{figure.caption.5}}
 \backcite {Simmons:1992}{{8}{2.5}{section.2.5}}
 \backcite {Schneier:2003}{{8}{2.5}{section.2.5}}
 \backcite {CipherTax:2013}{{9}{2.3}{figure.caption.6}}
@@ -25,12 +26,12 @@
 \backcite {Breaking:2012}{{14}{3.1}{figure.caption.8}}
 \backcite {WeiLi:2007}{{14}{3.2}{section.3.2}}
 \backcite {DVBAnalysis:2006}{{14}{3.2}{section.3.2}}
-\backcite {Schneier:2003}{{14}{3.3}{section.3.3}}
-\backcite {Farncombe}{{14}{3.3.1}{subsection.3.3.1}}
-\backcite {HIS:2011}{{15}{3.3.1}{subsection.3.3.1}}
-\backcite {Breaking:2012}{{15}{3.3.2}{subsection.3.3.2}}
-\backcite {Simpson:2009}{{15}{3.3.2}{subsection.3.3.2}}
-\backcite {Wirt:2004}{{15}{3.3.2}{subsection.3.3.2}}
+\backcite {Farncombe}{{14}{3.3}{section.3.3}}
+\backcite {HIS:2011}{{14}{3.3}{section.3.3}}
+\backcite {Schneier:2003}{{15}{3.3}{section.3.3}}
+\backcite {Breaking:2012}{{15}{3.3.1}{subsection.3.3.1}}
+\backcite {Simpson:2009}{{15}{3.3.1}{subsection.3.3.1}}
+\backcite {Wirt:2004}{{15}{3.3.1}{subsection.3.3.1}}
 \backcite {Farncombe}{{15}{3.4}{section.3.4}}
 \backcite {DVB:2013}{{15}{3.4}{section.3.4}}
 \backcite {DVB:2013}{{17}{4}{chapter.4}}
@@ -42,7 +43,7 @@
 \backcite {Stinson:2006}{{19}{5}{chapter.5}}
 \backcite {Stinson:2006}{{19}{5.1}{section.5.1}}
 \backcite {Stinson:2006}{{20}{5.1}{Item.9}}
-\backcite {Stinson:2006}{{20}{5.1}{Item.9}}
-\backcite {Angelfire}{{21}{5.1.4}{subsection.5.1.4}}
-\backcite {RijndaelKeySchedule}{{21}{5.2}{section.5.2}}
+\backcite {Angelfire}{{20}{5.1.4}{subsection.5.1.4}}
+\backcite {Stinson:2006}{{21}{5.2.1}{subsection.5.2.1}}
+\backcite {RijndaelKeySchedule}{{21}{5.2.3}{subsection.5.2.3}}
 \backcite {CBCmode:2014}{{30}{A.5}{figure.caption.13}}

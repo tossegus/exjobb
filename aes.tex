@@ -38,25 +38,7 @@ confusion and diffusion are nescessary. They can be seen in the SubBytes and
 ShiftRows steps above. These steps also performs whitening, which strengthens the cipher. Whitening is, as mentioned in \ref{ch:ConfDiff}, performed through an 
 XOR between the subkey and the data.
 
-\subsubsection{KeyExpansion}
-To generate round keys from the cipher key, we use the Rijndael's key schedule. 
-This is done since AES requires a separate 128-bit round key for each round, 
-plus one extra key.
-
-/Warning[Todo]{This includes more steps than this} 
-%Have a look at wikipedia. It takes like 5 steps or something, and depends on previous values of the key. This is REALLY hard! You need to explain this properly as fuck! :)
-
-Rijndael's key schedule takes an input of 4 bytes (32 bits) which it then 
-rotates 1 byte (8 bits) to the left. Let us say that our key is 
-\emph{AB CD EF 01}. This would give us the key \emph{CD EF 01 AB} after the 
-rotation. This operation is also called the RotWord-operation 
-\citep[p. 107]{Stinson:2006}. The next step is to apply Rijndael's S-box to 
-each of these bytes, giving us 4 new bytes. The bytes {AB CD EF 01} would give 
-us {62 BD DF 7C} when input in the Rijndael S-box (Figure Table 
-\ref{matrix:rijSbox}).
-
-Each of these bytes are then XORed with a value from the Rcon function. You
- can read more about the Rcon function in section \ref{ch:Rcon}.
+The KeySchedule is explained in section \ref{sec:KeySch}.
 
 \subsection{InitialRound}
 This is simply an initial AddRoundKey.
@@ -97,7 +79,39 @@ Each of the 16 bytes of the state is combined with a byte of the round key
 using bitwise xor. They are then combined to a state matrix (figure 
 \ref{matrix:state} in appendix \ref{app:misc}) containing 4x4 bytes.
 
-\section{Rcon} \label{ch:Rcon}
+\section{KeyExpansion}\label{sec:KeySch}
+To generate round keys from the cipher key, we use the Rijndael's key schedule. 
+This is done since AES requires a separate 128-bit round key for each round, 
+plus one extra key for the initialization.
+
+\Warning[Todo]{This includes more steps than this} 
+%Have a look at wikipedia. It takes like 5 steps or something, and depends on previous values of the key. This is REALLY hard! You need to explain this properly as fuck! :)
+The schedule consists of a loop, and a key-schedule core.
+
+INPUT A FLOWCHART OR SOMETHING HERE!
+\Warning[Todo]{Explain the general algorithm here. You might input a flowchart if you want to}
+
+\subsection{Key-schedule core}
+The key-schedule core takes an input of 4 bytes (32 bits) which it then rotates 
+1 byte (8 bits) to the left. Let us say that our key is \emph{AB CD EF 01}. This 
+would give us the key \emph{CD EF 01 AB} after the rotation. This operation is 
+also called the RotWord-operation \citep[p. 107]{Stinson:2006}. The next step is 
+to apply Rijndael's S-box to each of these bytes, giving us 4 new bytes. The 
+bytes {AB CD EF 01} would give us {62 BD DF 7C} when input in the Rijndael 
+S-box (Figure Table \ref{matrix:rijSbox}).
+
+Each of these bytes are then XORed with a value from the Rcon function depending 
+on what round you are currently at. You can read more about the Rcon function in 
+section \ref{ch:Rcon}.
+
+\subsection{Rijndael's S-Box}
+Rijndael's S-box takes an input byte which it transforms according to a matrix 
+(figure \ref{matrix:rijSbox} in appendix \ref{app:misc}). Where the most 
+significant nibble is placed on the Y axis, and the least significant nibble 
+is set on the X axis. Let us say we have an input of 0x31, then 0xC7 would be 
+output from the Rijndael's S-box.
+
+ \subsection{Rcon} \label{ch:Rcon}
 The value input into the Rcon function depends on what round you are currently 
 at. Which means that you would choose Rcon(1) the first round, Rcon(2) the 
 second, and so on. The values in the Rcon array are calculated mathematically, 
@@ -127,10 +141,3 @@ Otherwise, go to \ref{item:exit_loop}.
 \item We set the output to c.
 \label{item:exit_loop}
 \end{enumerate}
-
-\section{Rijndael's S-Box}
-Rijndael's S-box takes an input byte which it transforms according to a matrix 
-(figure \ref{matrix:rijSbox} in appendix \ref{app:misc}). Where the most 
-significant nibble is placed on the Y axis, and the least significant nibble 
-is set on the X axis. Let us say we have an input of 0x31, then 0xC7 would be 
-output from the Rijndael's S-box.

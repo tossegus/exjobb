@@ -42,26 +42,19 @@ weaknesses.
 \section{Layout of the CSA}
 The CSA consists a block cipher and a stream cipher connected in sequence 
 \citep[p. 271]{WeiLi:2007}. The block cipher reads 64-bit blocks of data, which 
-is then run in an CBC-mode. The block cipher processes these blocks of data in 
-56 rounds. The output of this is sent to the stream cipher where additional 
-encoding is performed. The first block of data sent from the block cipher to the 
-stream cipher is used as an IV for the stream cipher, and is not encoded in this 
-phase. \citep{DVBAnalysis:2006}
+is then run in Cipher Block Chaining-mode. The block cipher processes these 
+blocks of data in 56 rounds. The output of this is sent to the stream cipher 
+where additional encoding is performed. The first block of data sent from the 
+block cipher to the stream cipher is used as an IV for the stream cipher, and is 
+not encoded in this phase. \citep{DVBAnalysis:2006}
 
-\section{Breaking the CSA}
-There are a few standard ways to try when you want to break a cipher. 
-Those are the brute force approach, known-plaintext attacks, chosen plaintext 
-attacks and birthday attacks \citep[pp. 31-34]{Schneier:2003}. You choose what 
-method to use depending on what the ciphers look like. I will not discuss all 
-of them, but I will talk about the most relevant ones here.
-
-\subsection{CW sharing}
-One of the problems with the CW distribution is the fact that CW sharing has 
-become a real problem \citep{Farncombe}. This is possible due to the fact that
+\section{Security}
+One of the problems associated with CW distribution is the fact that CW sharing 
+has become rather common \citep{Farncombe}. This is possibly due to the fact that
 the CW is sent in the clear between the smart card and the STB, meaning that a 
-user might grab the clear CW and redistribute it over the internet. 
-This has become a financial problem for content distributors, since people stop 
-paying for the content which they are watching.
+user might grab the clear CW during transmission and redistribute it over the 
+internet. This has become a financial problem for content distributors, since 
+people stop paying for the content which they are watching.
 
 One way of dealing with CW sharing is to decode the encrypted CW on the CI 
 system, and then encrypt it once again on the CI, before sending it to the STB. 
@@ -69,13 +62,21 @@ The latter key is setup between the CI system and the STB  through a one time
 sychronization. This means that users are not able to grab the clear CW and 
 redistribute it. \citep[pp. 12--13]{HIS:2011}
 
-\hrulefill
-\hrule
-Nu ska jag försöka få in att man inte får lägga TS streams i översta lagret, så 
-att folk kan koppla in hårdvara och försöka sno data från översta lagret. Det 
-finns därmed väldigt mycket krav på hur hårdvaran ser ut.
-\hrulefill
-\hrule
+Another security issue that you need to think of when designing the hardware, to 
+prevent content theft, is to make sure that no contacts are ever accessible from 
+the top layer of the circuit board. This is due to the fact that people would be 
+able to connect hardware to the board and download the material that way, if they
+were. \Warning[Source]{Except from Patrik Lantto}
+
+We also need to be aware of people trying to break the algorithm through forced 
+ways as well as CW sharing and hardware methods of stealing content.
+%\subsection{Breaking the CSA}
+
+There are a few standard ways to try when you want to break a cipher. 
+Those are the brute force approach, known-plaintext attacks, chosen plaintext 
+attacks and birthday attacks \citep[pp. 31-34]{Schneier:2003}. You choose what 
+method to use depending on what the ciphers look like. I will not discuss all 
+of them, but I will talk about the most relevant ones here.
 
 \subsection{Brute force}
 The CSA uses a key consisting of 64-bits, which gives us 18.5 Quintillion 
@@ -91,10 +92,10 @@ what is possible through on a modern x86 processor using software methods
 Moreover, systems need to change the key at least every 120 seconds \citep{Simpson:2009} and most systems issues new keys every 10-120 second \citep{Wirt:2004}.
 
 It is possible to use dedicated hardware and FPGA implementations to speed this 
-up, using hardware accelerations and other methods. But even if we would then 
-be able to scan through 2.8 trillion keys per second, precisely allowing us to 
-be certain to find the key in two minutes, we could just change the key more 
-often. As such, the brute force method of obtaining the key is not an option.
+up, using hardware accelerations and other methods. But even if we would be able 
+to scan through 2.8 trillion keys per second, precisely allowing us to be certain
+to find the key in two minutes, we could just change the key more often. As such,
+the brute force method of obtaining the key is not a feasible option.
 
 %\subsection{Bit slicing}
 %The stream cipher part of CSA is prone to bit slicing, a software implementation 
