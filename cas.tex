@@ -12,31 +12,33 @@ most important parts are:
 
 \section{CAS} \label{sec:CAS}
 Conditional Access is used to make sure that a user fulfills an amount of 
-criteria before being able to view content. To make sure that a user that 
-demands data does, the CW used to scramble the data is encrypted by a CAS, and 
-only users that are allowed to view said material are allowed to. A CAS consists 
-of an EMM-generator and an ECM-generator in addition to some other parts. We are 
-only interrested in the ECMG and EMMG since they are the parts that affect the 
-scrambler. The ECM is generated using the CW, while the EMM is generated based 
-on information related to the user. That information varies, but might relate to 
-what channels the user is allowed to access and when the subscription ends. A TV 
-will not broadcast any channels without receiving an EMM telling it to do so.
+criteria before being able to view content. A CAS consist of an EMM-generator 
+and an ECM-generator in addition to some other parts. We are only interrested 
+in the ECMG and EMMG since they are the parts that affect the scrambler. The 
+ECM is generated using the CW, while the EMM is generated based on information 
+related to the user. That information varies, but might relate to what channels 
+the user is allowed to access and when the subscription ends. A TV will not 
+broadcast any channels without receiving an EMM telling it to do so.
+
 \Warning[Source]{You need to find more sources than just Patrik}
 
-%This might just be a the same thing as the information above, but in simpler terms? Might remove this
-A simple example is that a user needs to pay for tv-services to be able to 
-watch certain channels. The content provider generates an EMM that tells the 
-smart-card if the user has paid for the material it requests. The content 
-provider also generates an ECM based on the CW, which the smart-card decrypts 
-and passes to the descrambler if the EMM allows it. \Warning[Repetition]{Is this merely a repetition?}
+A simple example is that a user needs to pay for TV-services to be able to access
+content. The content provider generates an EMM which tells the smart-card whether
+the user is allowed to access the requested material or not. The content provider
+also generates an ECM based on the CW, which the smart-card decrypts and passes 
+to the descrambler if the EMM allows it.
 
 CA-modules. What are they, how and where are they connected to the system? I 
 think that the CAM is where you input the smart-card. 
 
-\subsection{Standards}
-The three most common CAS in Sweden are Viaccess, Conax and Strong. You need to 
-buy a specific CAM depending on what distributor you choose for your channels. 
-This 
+%Är verkligen den här delen nödvändig? Vad ska stå här? Jag måste fundera på vad 
+%jag vill lägga in här, om det ska få vara kvar. Vad är relevant? Vilka 
+%distributörer som använder vilket system? Det kan man hitta på google. Vad de 
+%olika systemen använder för ECMG och EMMG? Det är konfidentiellt.
+\subsection{Standards}\Warning[Remove?]{Or keep?}
+Some of the CA systems currently in use are Viaccess, Conax, Irdeto, NDS, Strong 
+and NagraVision. You need to buy a specific CAM depending on what distributor 
+you choose for your channels. NDS is used by Viasat, Conax is used by Com Hem, Viaccess is used by Boxer and Strong is used by Canal Digital.
 
 \subsubsection{Viaccess}
 Viaccess is the CA-module used by Boxer. This is currently the most commonly used
@@ -57,23 +59,26 @@ used distributor in Sweden.
 DVB-SimulCrypt is widespread in Europe, and works as an interface between the 
 head-end and the CAS \citep{SimulCrypt:2008}.
 
-SimulCrypt encourages the use of several CAS at once \citep[p. 17]{SimulCrypt:2008}. 
-But how does it do that? 
-Why and how can we do that? Is that because the scrambling is the same, where the
-only thing differentiating the CAS is the encoding of the control word?
+SimulCrypt encourages the use of several CAS at once \citep[p. 17]{SimulCrypt:2008}. This is done by sending the same CW to many CAS at the same time, and then 
+allowing them to generate an ECM and EMM based on the CW. The multiplexer in the 
+head-end then creates TS packets based on those, since the EMMs will determine 
+whether the user is allowed access or not. 
+%OERHÖRT CHANSAT DETTA JA OKEJ KOLLA ÖVER DET! Allt efter citatet är chansat.
+%Why and how can we do that? Is that because the scrambling is the same, where the only thing differentiating the CAS is the encoding of the control word?
 
 \section{Common Interface} \label{sec:CI}
+\Warning[Fill]{This section with some relevant information}
 THE COMMON INTERFACE CAN'T READ, SO IT WON'T MIND IF I WRITE IN ALL-CAPS ;\_\_\_;
 IT ALSO CAN'T UNDERSTAND EMOJIS, WHICH MEANS THAT I CAN INPUT AS MANY STUPID 
 THINGS AS I WANT TO. stupid common interface..
 
 \section{Set-up} \label{sec:setup}
-The TS is scrambled using a key which is called a \emph{control word}. The 
-control word is at least changed several times per minute, but it is not 
-uncommon to change the CW every 10 seconds. This means that breaking the key 
-has very little effect since it will just be changed in a few seconds even if 
-you manage to break it. The control word is generated randomly to make sure 
-that consecutive control words are not related to each other. 
+The TS is scrambled using a key which is called a \emph{control word} (CW). The 
+control word is at least changed every 120th second, but it is not uncommon to 
+change the CW every 10 seconds. This means that breaking the key has very little 
+effect since it will just be changed in a few seconds even if you manage to 
+break it. The control word is generated randomly to make sure that consecutive 
+control words are not related to each other. 
 
 The control word is scrambled, then sent to the content provider. The content 
 provider then encrypts the CW as an \emph{entitlement control message} (ECM). 
