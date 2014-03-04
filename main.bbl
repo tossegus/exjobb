@@ -1,4 +1,4 @@
-\begin{thebibliography}{21}
+\begin{thebibliography}{23}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -41,6 +41,15 @@ ETSI{\ }TS{\ }.
   \url{http://www.etsi.org/deliver/etsi\_ts/103100\_103199/103127/01.01.01\_60/ts\_103127v010101p.pdf}.
 \newblock Accessed: 10 Feb 2014.
 
+\bibitem[European{\ }Standard(1997)]{CI:1997}
+European{\ }Standard.
+\newblock Common interface specification for conditional access and other
+  digital video broadcasting decoder applications.
+\newblock \emph{EN 50221}, February 1997.
+\newblock URL
+  \url{http://www.dvb.org/resources/public/standards/En50221.V1.pdf}.
+\newblock Accessed: 4 March 2014.
+
 \bibitem[Farncombe{\ }Consulting{\ }Group(2009)]{Farncombe}
 Farncombe{\ }Consulting{\ }Group.
 \newblock Towards a replacement for the dvb common scrambling algorithm.
@@ -69,6 +78,14 @@ Wei Li and Dawu Gu.
 \newblock URL
   \url{http://ieeexplore.ieee.org.lt.ltag.bibl.liu.se/stamp/stamp.jsp?tp=&arnumber=4402690}.
 \newblock Accessed: 12 Feb 2014.
+
+\bibitem[LLP(2011)]{CI+:2011}
+CI~Plus LLP.
+\newblock Ci plus overview.
+\newblock \emph{Common Interface Plus}, November 2011.
+\newblock URL
+  \url{http://www.ci\-plus.com/data/ci\-plus\_overview\_v2011\-11\-11.pdf}.
+\newblock Accessed: 4 March 2014.
 
 \bibitem[Schneier and Fergusson(2003)]{Schneier:2003}
 Bruce Schneier and Niels Fergusson.

@@ -1,15 +1,21 @@
 \chapter{CISSA and CSA3}
-There are currently two scrambling algorithms being assessed with the purpose of 
-replacing the currently used CSA1. This is done to assure content security for 
+There are currently two scrambling algorithms being assessed as replacements to 
+the currently used DVB-CSA. This is done to assure content security for 
 yet another ten years.
 
-CSA3 is a hardware-friendly, software-unfriendly scrambling algorithm chosen by 
-the ETSI to replace the currently used CSA. \citep[pp. 6--7]{DVB:2013}
+%%%%%%%%%%%%%%
+%What are the pros and cons of having hardware scramblers and software scramblers.Software uses itself of the date to generate a random key. Hardware uses itself %of additive scramblers, and other random output generators to generate the key. %%%%%%%%%%%%%%
 
-CISSA is meant to be a software-friendly algorithm designed to allow descrambling
-on CPU-based units such as computers, smart phones and tablets. CISSA is not 
-designed to be hardware-unfriendly in spite of it being designed to be 
-software-friendly. \citep[p. 9]{DVB:2013} 
+CISSA is meant to be a hardware-friendly as well as software-friendly algorithm 
+designed to allow descrambling on CPU-based units such as computers, smart phones
+and tablets \citep[p. 9]{DVB:2013}. CISSA 
+
+CSA3 is a hardware-friendly, software-unfriendly scrambling algorithm chosen by 
+the ETSI to replace the currently used CSA \citep[pp. 6--7]{DVB:2013}. It uses 
+itself of AES blocks (with keys of lengths of either 128, 192 or 256 bits) as 
+well as a confidential block cipher called the XRC for scrambling. 
+Software-unfriendly means that descrambling is designed so that it is highly 
+impractical to perform in software, but is easily done in hardware.
 
 Both of the algorithms are to be implemented in hardware for scrambling of data.
 The difference is that CSA3 is to make it hard to descramble the material in 
@@ -26,7 +32,9 @@ supposed to able to be implemented efficiently on hardware as well as in
 software \citep[p. 9]{DVB:2013}.
 
 CISSA is to use the AES-128 block cipher in CBC-mode with a 16 byte IV with the 
-value 0x445642544d4350544145534349535341.
+value 0x445642544d4350544145534349535341. \citep[p. 11]{DVB:2013}
+
+Är inte meningen att ens IV ska vara hemlig? Den utgör ju en stor del an shiffret? Om man vet IV borde man kunna inputta en ciphertext som plaintext så att man kan ta reda på vilken det ursprungliga plaintexten var?
 \Warning[Find more]{But I don't know the name of the second block cipher}
 
 \subsection{Software friendly}

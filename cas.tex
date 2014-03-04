@@ -1,4 +1,4 @@
-\chapter{Encryption of the DVB}
+\chapter{DVB Transmissions}
 There are many parts that are needed to provide DVB with a secure way of 
 transmitting streams without facing the risk of content getting stolen. The 
 most important parts are:
@@ -87,13 +87,13 @@ whether the user is allowed access or not.
 
 \section{Common Interface} \label{sec:CI}
 The Common Interface is the interface between the CAM and the host (Digital TV 
-receiver-decoder). There are currently two versions of common interfaces, which 
-are CI and the CI+. The difference between them is that the output from the CI is
-unencrypted, while the output from the CI+ is encrypted. This means that a clear 
-TS is sent between the CI and the host, that can be copied. This can be viewed in
- \citet[p. 4]{CI:1997}. The data sent between the CI+ and host can not be copied 
-due to it being encrypted, and therefore provides more security for content 
-providers. \citep{CI+:2011}
+receiver-decoder). There are currently two versions of common interfaces in use, 
+which are the CI and the CI+. The difference between them is that the output 
+from the CI is unencrypted, while the output from the CI+ is encrypted 
+\citep{CI+:2011}. This means that a clear TS is sent between the CI and the 
+host, that can be copied. The data sent between the CI+ and host can not be 
+copied due to it being encrypted, and therefore provides more security for 
+content providers \citep{CI:1997}.
 
 \section{Conditional Access Module}\label{sec:CAM}
 CA modules (CAMs) are responsible of decoding the scrambled TS received from 
