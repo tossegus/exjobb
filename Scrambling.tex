@@ -15,6 +15,31 @@ is "out to get you". Because of this, \citet[pp. 12--14]{Schneier:2003} say that
 we always need  to look for possible ways to break systems, to make sure that
 we are safe.
 
+\section{What is the need for cryptography?}
+If we communicate without encrypting the data we are sending, someone 
+else will most likely be eavesdropping. For most people this isn’t a problem, 
+but in some instances sending secure messages can be extremely important. One 
+example is communication during war, where a single piece of intelligence might 
+turn the tide of the entire war. Another example is sending manuscripts, and 
+drafts of books over the internet. These are some of the reasons as to why we 
+want to encode messages.
+
+Another reason for scrambling is to reduce the number of adjacent data-bits with 
+the same value, as in long strings of zeros or ones. 
+
+%Balancing the amount of 
+%zeros and ones gives a DC balance, which means that the signal is stronger when 
+%sent.
+
+\section{Scrambling or Encrypting}
+The difference between scrambling and encryption is that scrambling is the
+way we generate the secret control word (key) which is used when we make the
+data unreadable to outsiders while encryption is the way we protect the control 
+word during transmission.
+
+\Warning[Todo]{Det här måste jag bli säkrare på}
+% What is the difference between scrambling and encryption? 
+
 \section{Data packets}\label{sec:Data}
 The data processed by the DVB systems is sent in data packets. All of them are 
 created from ES packets (elementary streams) which generally is the output from 
@@ -81,37 +106,12 @@ of more or less any length, as long as the packet do not exceed 64 KBytes.
 taken from \citep[p. 9]{ETR:289} ) }
 \end{figure}
 
-\section{Scrambling or Encrypting?}
-The main difference between scrambling and encryption is that scrambling is the
-way we generate the secret control word (key) which is used when we make the
-data unreadable to outsiders. Encryption is the way we protect the control word, 
-when we send it.
-\Warning[Todo]{Det här måste jag bli säkrare på}
-% What is the difference between scrambling and encryption? 
-
-\section{What is the need for cryptography?}
-If we communicate without encrypting the data we are sending, someone 
-else will most likely be eavesdropping. For most people this isn’t a problem, 
-but in some instances sending secure messages can be extremely important. One 
-example is communication during war, where a single piece of intelligence might 
-turn the tide of the entire war. Another example is sending manuscripts, and 
-drafts of books over the internet. These are some of the reasons as to why we 
-want to encode messages.
-
-Another reason for scrambling is to reduce the number of adjacent data-bits with 
-the same value, as in long strings of zeros or ones. 
-
-% This is to be re-written. Use Henriks sources to see why this is, and what the real reason is.
-Having long strings of the same value leads the capacitors to fully charge into 
-that value, which in turn makes them switch slower when they need to change 
-value. 
-\Warning[Source]{Find source, and a better description as to why this is!}
-
-\section{Encryption and decryption}
-There are two things that you need when you decrypt messages. These things 
-are the decryption algorithm and the decryption-key. There are mainly two ways 
-of doing this. The first method is the symmetric-key encryption, and the second 
-method is the public-key encryption.
+\section{Encryption and Decryption}
+There are two things that you need when you encrypt and decrypt messages. Those 
+are the algorithm as well as the key. There are plenty of ways to encrypt 
+messages, but there are two ways of sharing the encryption-key. The first method 
+being the symmetric-key encryption, and the second method being the public-key 
+encryption.
 
 \subsection{Symmetric-key encryption}
 The symmetric-key encryption uses the same key to encode and decode messages. 
@@ -123,7 +123,7 @@ who wants to read our messages  most likely already will be listening, and they
 will therefore obtain the key as well as the means to decode the messages we 
 send.
 
-\section{Public-key encryption}
+\subsection{Public-key encryption}
 The public-key encryption uses a public key that anyone can look up, and a 
 secret key that only one person knows \citep[pp. 25--32]{Simmons:1992}.
 For instance say that the two persons, Bob and Alice, want to communicate. 
@@ -133,7 +133,7 @@ to send Bob a message, she looks up Bob’s public key \(P_{Bob}\), which she th
 uses to encode her message. When she sends Bob the message, Bob decodes the 
 message using his secret key \(S_{Bob}\) \citep{Schneier:2003}.
 
-\subsection{Combinational encryption}
+\subsection{Combination}
 The big question now is why we would use anything other than the public-key
 encryption, since it seems secure and easy to manage. The reason is that the 
 public-key encryption is not as effective as the symmetric-key encryption. 
@@ -224,9 +224,9 @@ The S-box is one of the basic components that is used when creating ciphers.
 An S-box takes a number of input bits and creates a number of output bits in 
 a non-linear fashion \citep[pp. 74--75]{Stinson:2006}. They can effectively be 
 implemented as lookup tables. Each input has to correspond to a unique output, 
-to make sure that the input can be recreated in the descrambler. One way of 
-making it harder to find the relation between the input and the output is to 
-place adjacent bits far from each other in the lookup table
+to make sure that the input can be recreated in the descrambler.
+
+%One way of making it harder to find the relation between the input and the output is to place adjacent bits far from each other in the lookup table 
 \Warning[TODO]{You need sources for this!}. 
 
 % CONFUSION OR DIFFUSION?
@@ -249,8 +249,10 @@ dotted rectangle in the middle.
 
 \section{Secrecy}
 Although encryption is important, as well as the strength of the encryption, 
-keeping the algorithm secret is never a good ideaq. A simple mistake when 
-designing the algorithm might turn the encryption from very strong, to 
-incredibly weak. It is therefore never a good idea to use algorithms exclusive 
-for a few persons. If you use an open algorithm, faults will most likely be 
-discovered and fixed by experienced cryptographers \citep[pp. 23]{Schneier:2003}.
+keeping the algorithm secret is never a good idea. A simple mistake when 
+designing an algorithm might turn an encryption that would have been strong,
+incredibly weak. It is therefore a bad idea to use small scale algorithms  
+(designed for the use of just a few persons for instance). If you instead 
+use an open algorithm, faults will most likely be discovered and fixed by 
+experienced cryptographers \citep[pp. 23]{Schneier:2003}. Keeping the key, 
+which is used to encrypt the data, secret is what is important.

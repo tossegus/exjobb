@@ -1,35 +1,25 @@
 \chapter{CSA} \label{ch:CSA}
 The CSA is currently the most commonly used encryption algorithm in DVB for 
 encryption of video-streams. There are two versions of the DVB-CSA, CSA1 and 
-CSA2. The only difference between them being the key-length 
-\citep[p. 23]{DVBScene:2013}. The CSA uses a combination of a block cipher 
-taking an input of a 64-bit block, and a stream cipher. Both of the ciphers use 
-the same key, so that the entire system uses the same key 
-\citep[pp. 271--272]{WeiLi:2007}. This means that the complete algorithm would 
-break if the key would be recovered. Using the same key does on the other hand 
-allow us to change the key at regular intervals more easily. 
+CSA2, where the key-length is the only difference between them 
+\citep[p. 23]{DVBScene:2013}. 
+
+The CSA uses a combination of a block cipher, taking an input of a 64-bit block, 
+and a stream cipher. Both of the ciphers use the same key, so that the entire 
+system uses the same key \citep[pp. 271--272]{WeiLi:2007}. This means that the 
+complete algorithm would break if the key would be recovered. Using the same key 
+does on the other hand allow us to easily change the key at regular intervals. 
 
 CSA has been the official scrambling method for DVB since may 1994. CSA was 
-to be implemented in hardware and hard to implement in software, for the sake
- of making reverse-engineering difficult \citep{DVBScene:2013}.
+to be easily implemented in hardware and hard to implement in software to make 
+reverse-engineering difficult \citep{DVBScene:2013}.
 
-\section{History} \label{sec:History}
-CSA was largely kept secret until 2002. It was made very hard to reverse engineer
-since it was largely implemented in hardware. The patent papers gave some hints
-of the layout, but important details like the layout of the S-boxes remained 
-secret.
-Without the S-boxes, free implementations of the algorithm were out of question. 
-Initially, CSA was to remain implemented in hardware only, but software 
-implementations were found on the internet, which made it possible to analyze
-the entire solution.
+%\section{History} \label{sec:History}
+%CSA was largely kept secret until 2002, possibly since it was designed to be hard to reverse-engineered. The patent papers gave some hints of the layout, but important details like the layout of the S-boxes remained secret. Without the S-boxes, free implementations of the algorithm were out of question. Initially, CSA was to remain implemented in hardware only, but software implementations were found on the internet, which made it possible to analyze the entire solution.
 
-In 2002 FreeDec was released, implementing CSA in software. Though released as 
-binary only, disassembly revealed the missing details and allowed 
-reimplementation of the algorithm in higher-level programming languages. 
-\Warning[source]{Is this relevant, and you need another source than Wikipedia}
+%In 2002 FreeDec was released, implementing CSA in software. Though released as binary only, disassembly revealed the missing details and allowed reimplementation of the algorithm in higher-level programming languages. \Warning[source]{Is this relevant, and you need another source than Wikipedia}
 
-With CSA now publicly known in its entirety, cryptanalysts started looking for 
-weaknesses.
+%With CSA now publicly known in its entirety, cryptanalysts started looking for weaknesses.
 
 \begin{figure}
   \begin{center}
@@ -38,6 +28,29 @@ weaknesses.
   \caption{Image from \citet[pp. 49]{Breaking:2012}}
   \label{fig:blockcipher}
 \end{figure}
+
+\section{Why do we need a new standard?}
+The DVB-CSA standard offers short-term protection (it assumed content is viewed 
+in real time and not stored). But due to the development during recent years, 
+we now need to be able to distribute the content around the home. This means 
+that the focus needs to be moved from securing the delivery, to securing the 
+content. \citep{Farncombe}
+
+Another thing to bear in mind is the fact that more CPU-based units, such as 
+smart-phones, tablets and computers are used to access contents now more than 
+ever. In order to allow for descrambling on CPU-based units, a software-friendly 
+scrambling algorithm might be needed.
+
+%Ska det här finnas här? Ska inte det här enbart handla om CSA?
+\subsection{Proposed replacements}
+There are currently two implementations suggested for doing this. The first is 
+the hardware friendly CSA3 which uses itself of AES blocks (with keys consisting 
+of 128, 192 or 256 bits) as well as a confidential block cipher called the XRC. 
+The second version is the software friendly CISSA which uses the AES-128 as a 
+basic building block. \citep{DVB:2013}
+
+%What are the pros and cons of having hardware scramblers and software scramblers.Software uses itself of the date to generate a random key. Hardware uses itself of additive scramblers, and other random output generators to generate the key. 
+%Det här ska definitivt inte ligga här.
 
 \section{Layout of the CSA}
 The CSA consists a block cipher and a stream cipher connected in sequence 
@@ -108,20 +121,3 @@ the brute force method of obtaining the key is not a feasible option.
 %(8x8) to be efficiently implemented using logical operations, a prerequisite for bit 
 %slicing to be more efficient than a regular implementation.
 
-\section{Why do we need a new standard?}
-The DVB-CSA standard offers short-term protection (it assumed content is viewed 
-in real time and not stored). But due to the development during recent years, 
-we now need to be able to distribute the content around the home. This means 
-that the focus needs to be moved from securing the delivery, to securing the 
-content. \citep{Farncombe}
-
-
-There are currently two implementations suggested for doing this. The first is 
-the hardware friendly CSA3 which uses itself of AES blocks (with keys of sized 
-128, 192 or 256 bits) as well as a confidential block cipher called the XRC. The 
-second version is the software friendly CISSA which uses the AES-128 as a basic 
-building block. \citep{DVB:2013}
-
-What are the pros and cons of having hardware scramblers and software scramblers.
-Software uses itself of the date to generate a random key. Hardware uses itself 
-of additive scramblers, and other random output generators to generate the key. 

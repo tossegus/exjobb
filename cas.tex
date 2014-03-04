@@ -10,75 +10,14 @@ most important parts are:
 \item Descrambler - the inverse of a scrambler.
 \end{itemize}
 
-\section{CAS} \label{sec:CAS}
-Conditional Access is used to make sure that a user fulfills an amount of 
-criteria before being able to view content. A CAS consist of an EMM-generator 
-and an ECM-generator in addition to some other parts. We are only interrested 
-in the ECMG and EMMG since they are the parts that affect the scrambler. The 
-ECM is generated using the CW, while the EMM is generated based on information 
-related to the user. That information varies, but might relate to what channels 
-the user is allowed to access and when the subscription ends. A TV will not 
-broadcast any channels without receiving an EMM telling it to do so.
-
-\Warning[Source]{You need to find more sources than just Patrik}
-
-A simple example is that a user needs to pay for TV-services to be able to access
-content. The content provider generates an EMM which tells the smart-card whether
-the user is allowed to access the requested material or not. The content provider
-also generates an ECM based on the CW, which the smart-card decrypts and passes 
-to the descrambler if the EMM allows it.
-
-CA-modules. What are they, how and where are they connected to the system? I 
-think that the CAM is where you input the smart-card. 
-
-%Är verkligen den här delen nödvändig? Vad ska stå här? Jag måste fundera på vad 
-%jag vill lägga in här, om det ska få vara kvar. Vad är relevant? Vilka 
-%distributörer som använder vilket system? Det kan man hitta på google. Vad de 
-%olika systemen använder för ECMG och EMMG? Det är konfidentiellt.
-\subsection{Standards}\Warning[Remove?]{Or keep?}
-Some of the CA systems currently in use are Viaccess, Conax, Irdeto, NDS, Strong 
-and NagraVision. You need to buy a specific CAM depending on what distributor 
-you choose for your channels. NDS is used by Viasat, Conax is used by Com Hem, Viaccess is used by Boxer and Strong is used by Canal Digital.
-
-\subsubsection{Viaccess}
-Viaccess is the CA-module used by Boxer. This is currently the most commonly used
- distributor in Sweden.
-%Boxer supports CI+
-
-\subsubsection{Conax}
-Conax is the CA-module used by Com Hem. This is currently the second most used
-distributor in Sweden. Conax has got its headquarter in Norway and is a part of the Telenor Group, which deals with mobile telecommunications \citep{Conax}.
-%Com Hem supports CI+
-
-\subsubsection{Strong}
-Strong is the CA-module used by Canal Digital. This is currently the third most 
-used distributor in Sweden.
-%Canal Digital does not support CI+
-
-\section{DVB-SimulCrypt} \label{sec:Simul}
-DVB-SimulCrypt is widespread in Europe, and works as an interface between the 
-head-end and the CAS \citep{SimulCrypt:2008}.
-
-SimulCrypt encourages the use of several CAS at once \citep[p. 17]{SimulCrypt:2008}. This is done by sending the same CW to many CAS at the same time, and then 
-allowing them to generate an ECM and EMM based on the CW. The multiplexer in the 
-head-end then creates TS packets based on those, since the EMMs will determine 
-whether the user is allowed access or not. 
-%OERHÖRT CHANSAT DETTA JA OKEJ KOLLA ÖVER DET! Allt efter citatet är chansat.
-%Why and how can we do that? Is that because the scrambling is the same, where the only thing differentiating the CAS is the encoding of the control word?
-
-\section{Common Interface} \label{sec:CI}
-\Warning[Fill]{This section with some relevant information}
-THE COMMON INTERFACE CAN'T READ, SO IT WON'T MIND IF I WRITE IN ALL-CAPS ;\_\_\_;
-IT ALSO CAN'T UNDERSTAND EMOJIS, WHICH MEANS THAT I CAN INPUT AS MANY STUPID 
-THINGS AS I WANT TO. stupid common interface..
-
 \section{Set-up} \label{sec:setup}
-The TS is scrambled using a key which is called a \emph{control word} (CW). The 
-control word is at least changed every 120th second, but it is not uncommon to 
-change the CW every 10 seconds. This means that breaking the key has very little 
-effect since it will just be changed in a few seconds even if you manage to 
-break it. The control word is generated randomly to make sure that consecutive 
-control words are not related to each other. 
+The \emph{Transport Stream} (TS) is scrambled using a key which is called a 
+\emph{control word} (CW). While CW is at least changed every 120th second, it is 
+not uncommon to change it as often as every 10th seconds. Because of the 
+frequency in which you change the CW, finding the key has very little effect. 
+Even if someone manages to find a CW, they will only be able to use it for a few 
+seconds before the CW is changed. The control word is generated randomly to make 
+sure that consecutive control words are not related to each other. 
 
 The control word is scrambled, then sent to the content provider. The content 
 provider then encrypts the CW as an \emph{entitlement control message} (ECM). 
@@ -90,3 +29,76 @@ are separated. The ECM and EMM are sent to the box containing the smart-card
 for processing, and the TS is sent directly to the descrambler where it waits 
 for the CW. The TS is then descrambled using the CW and the pure data is then 
 displayed to the user.
+
+\section{Conditional Access System} \label{sec:CAS}
+\emph{Conditional Access} (CA) is used to make sure that a user fulfills an 
+amount of criteria before being able to view content. A CA system (CAS) consist 
+of an EMM-generator and an ECM-generator in addition to some other parts. We are 
+only interrested in the ECMG and EMMG since they are the parts that affect the 
+scrambler. The ECM is generated using the CW, while the EMM is generated based 
+on information related to the user. That information varies, but might relate to 
+what channels the user is allowed to access and when the subscription ends. A 
+TV will not broadcast any channels without receiving an EMM telling it to do so.
+
+\Warning[Source]{You need to find more sources than just Patrik}
+
+A simple example is that a user needs to pay for TV-services to be able to access
+content. The content provider generates an EMM which tells the smart-card whether
+the user is allowed to access the requested material or not. The content provider
+also generates an ECM based on the CW, which the smart-card decrypts and passes 
+to the descrambler if the EMM allows it.
+
+%Är verkligen den här delen nödvändig? Vad ska stå här? Jag måste fundera på vad 
+%jag vill lägga in här, om det ska få vara kvar. Vad är relevant? Vilka 
+%distributörer som använder vilket system? Det kan man hitta på google. Vad de 
+%olika systemen använder för ECMG och EMMG? Det är konfidentiellt.
+\subsection{Standards}\Warning[Remove?]{Or keep?}
+Some of the CA systems currently in use are Viaccess, Conax, Irdeto, NDS, Strong 
+and NagraVision. There are different \emph{Conditional Access Module}s (CAM) 
+that are used, and which one is needed depends on the content provider. NDS is 
+used by Viasat, Conax is used by Com Hem, Viaccess is used by Boxer and Strong 
+is used by Canal Digital for instance.
+
+\subsubsection{Viaccess}
+Viaccess is one of the most common CA systems. In Sweden it is used by Boxer and SVT.
+%Boxer supports CI+
+
+\subsubsection{Conax}
+Conax is the CA-module used by Com Hem. Conax has got its headquarter in Norway and is a part of the Telenor Group, which deals with mobile telecommunications \citep{Conax}.
+%Com Hem supports CI+
+
+\subsubsection{Strong}
+Strong is the CA-module used by Canal Digital. This is currently the third most 
+used content provider in Sweden.
+%Canal Digital does not support CI+
+
+\section{DVB-SimulCrypt} \label{sec:Simul}
+DVB-SimulCrypt is widespread in Europe, and works as an interface between the 
+head-end and the CAS \citep{SimulCrypt:2008}.
+
+SimulCrypt encourages the use of several CAS at once \citep[p. 17]{SimulCrypt:2008}. 
+
+This is done by sending the same CW to many CAS at the same time, and then 
+allowing them to generate an ECM and EMM based on the CW. The multiplexer in the 
+head-end then creates TS packets based on those, since the EMMs will determine 
+whether the user is allowed access or not. 
+%OERHÖRT CHANSAT DETTA JA OKEJ KOLLA ÖVER DET! Allt efter citatet är chansat.
+%Why and how can we do that? Is that because the scrambling is the same, where the only thing differentiating the CAS is the encoding of the control word?
+
+\section{Common Interface} \label{sec:CI}
+The Common Interface is the interface between the CAM and the host (Digital TV 
+receiver-decoder). There are currently two versions of common interfaces, which 
+are CI and the CI+. The difference between them is that the output from the CI is
+unencrypted, while the output from the CI+ is encrypted. This means that a clear 
+TS is sent between the CI and the host, that can be copied. This can be viewed in
+ \citet[p. 4]{CI:1997}. The data sent between the CI+ and host can not be copied 
+due to it being encrypted, and therefore provides more security for content 
+providers. \citep{CI+:2011}
+
+\section{Conditional Access Module}\label{sec:CAM}
+CA modules (CAMs) are responsible of decoding the scrambled TS received from 
+the host. The CAM is often input to a PCMCIA slot (Personal Computer Memory 
+International Association) either in the TV or the STB. The CAM consists of a 
+slot for a smart-card and a descrambler. The smart card decodes the ECM and 
+sends the CW to the descrambler. The TS is then descrambled and the clear TS is 
+sent back to the host from the CAM.

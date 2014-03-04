@@ -1,4 +1,4 @@
-\chapter{CSA3 and CISSA}
+\chapter{CISSA and CSA3}
 There are currently two scrambling algorithms being assessed with the purpose of 
 replacing the currently used CSA1. This is done to assure content security for 
 yet another ten years.
@@ -49,9 +49,12 @@ Is it because it is meant to be a secret standard, only to be delivered
 on a chip, to make it as good as impossible to reverse-engineer?
 
 \section{Conclusion}
-From what I've seen, both the CISSA and CSA3 implement the AES-128 for scrambling
-, combined with a secret cipher. The secret cipher for CSA3 is the XRC cipher, 
-and the secret CISSA cipher is yet to be known. CISSA sounds like a great idea 
-in my opinion, allowing CPU-based units to descramble data streams without a 
-dedicated HW-Chip. While that is good and all, CSA3 is a finished standard, and 
-will probably be more easily implemented on an FPGA.
+From what I've seenff, both the CISSA and CSA3 implement the AES-128 for 
+scrambling, combined with a secret cipher. The secret cipher for CSA3 is the XRC 
+cipher, and the secret CISSA cipher is yet to be known FÖR JAG HAR INTE HITTAT DET, MEN DET BETYDER INTE ATT ANDRA INTE VET VAD DET HETER. CISSA sounds like a 
+great idea in my opinion, allowing CPU-based units to descramble data streams 
+without a dedicated HW-Chip. While that is good and all, CSA3 is a finished 
+standard, and will probably be more easily implemented on an FPGA, while CISSA 
+seems to be still developed. Starting out with an AES-128 chiper would provide 
+for a basis to continue development of the scrambling, either towards the CISSA 
+or the CSA3 solution, on a later stage.

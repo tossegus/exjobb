@@ -8,38 +8,38 @@
 \select@language {english}
 \contentsline {chapter}{Notation}{v}{section*.2}
 \contentsline {chapter}{\numberline {1}Encryption of the DVB}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}CAS}{1}{section.1.1}
-\contentsline {subsection}{\numberline {1.1.1}Standards}{2}{subsection.1.1.1}
-\contentsline {subsubsection}{Viaccess}{2}{subsection.1.1.1}
-\contentsline {subsubsection}{Conax}{2}{subsection.1.1.1}
-\contentsline {subsubsection}{Strong}{2}{subsection.1.1.1}
-\contentsline {section}{\numberline {1.2}DVB-SimulCrypt}{2}{section.1.2}
-\contentsline {section}{\numberline {1.3}Common Interface}{2}{section.1.3}
-\contentsline {section}{\numberline {1.4}Set-up}{3}{section.1.4}
+\contentsline {section}{\numberline {1.1}Set-up}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Conditional Access System}{2}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Standards}{2}{subsection.1.2.1}
+\contentsline {subsubsection}{Viaccess}{2}{subsection.1.2.1}
+\contentsline {subsubsection}{Conax}{2}{subsection.1.2.1}
+\contentsline {subsubsection}{Strong}{2}{subsection.1.2.1}
+\contentsline {section}{\numberline {1.3}DVB-SimulCrypt}{2}{section.1.3}
+\contentsline {section}{\numberline {1.4}Common Interface}{3}{section.1.4}
+\contentsline {section}{\numberline {1.5}Conditional Access Module}{3}{section.1.5}
 \contentsline {chapter}{\numberline {2}Scrambling}{5}{chapter.2}
-\contentsline {section}{\numberline {2.1}Data packets}{5}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}TS packets}{6}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}PES packets}{6}{subsection.2.1.2}
-\contentsline {section}{\numberline {2.2}Scrambling or Encrypting?}{7}{section.2.2}
-\contentsline {section}{\numberline {2.3}What is the need for cryptography?}{7}{section.2.3}
-\contentsline {section}{\numberline {2.4}Encryption and decryption}{7}{section.2.4}
+\contentsline {section}{\numberline {2.1}What is the need for cryptography?}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Scrambling or Encrypting}{6}{section.2.2}
+\contentsline {section}{\numberline {2.3}Data packets}{6}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}TS packets}{6}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}PES packets}{7}{subsection.2.3.2}
+\contentsline {section}{\numberline {2.4}Encryption and Decryption}{7}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Symmetric-key encryption}{8}{subsection.2.4.1}
-\contentsline {section}{\numberline {2.5}Public-key encryption}{8}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Combinational encryption}{8}{subsection.2.5.1}
-\contentsline {section}{\numberline {2.6}Ciphers}{9}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}Block cipher}{9}{subsection.2.6.1}
-\contentsline {subsection}{\numberline {2.6.2}Stream cipher}{10}{subsection.2.6.2}
-\contentsline {section}{\numberline {2.7}Confusion and Diffusion}{10}{section.2.7}
-\contentsline {subsection}{\numberline {2.7.1}S-boxes}{10}{subsection.2.7.1}
-\contentsline {subsection}{\numberline {2.7.2}P-Boxes}{10}{subsection.2.7.2}
-\contentsline {section}{\numberline {2.8}Secrecy}{11}{section.2.8}
+\contentsline {subsection}{\numberline {2.4.2}Public-key encryption}{8}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Combination}{8}{subsection.2.4.3}
+\contentsline {section}{\numberline {2.5}Ciphers}{8}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Block cipher}{9}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Stream cipher}{10}{subsection.2.5.2}
+\contentsline {section}{\numberline {2.6}Confusion and Diffusion}{10}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}S-boxes}{10}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}P-Boxes}{10}{subsection.2.6.2}
+\contentsline {section}{\numberline {2.7}Secrecy}{11}{section.2.7}
 \contentsline {chapter}{\numberline {3}CSA}{13}{chapter.3}
-\contentsline {section}{\numberline {3.1}History}{13}{section.3.1}
+\contentsline {section}{\numberline {3.1}Why do we need a new standard?}{13}{section.3.1}
 \contentsline {section}{\numberline {3.2}Layout of the CSA}{14}{section.3.2}
 \contentsline {section}{\numberline {3.3}Security}{14}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Brute force}{15}{subsection.3.3.1}
-\contentsline {section}{\numberline {3.4}Why do we need a new standard?}{15}{section.3.4}
-\contentsline {chapter}{\numberline {4}CSA3 and CISSA}{17}{chapter.4}
+\contentsline {chapter}{\numberline {4}CISSA and CSA3}{17}{chapter.4}
 \contentsline {section}{\numberline {4.1}CISSA}{17}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Software friendly}{18}{subsection.4.1.1}
 \contentsline {section}{\numberline {4.2}CSA3}{18}{section.4.2}

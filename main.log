@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.1.29)  3 MAR 2014 15:53
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.1.29)  4 MAR 2014 14:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1996,67 +1996,60 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 40.54503pt on input line 1.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 108.12012pt on input line 1.
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 4.74998pt on input line 23.
 
-Underfull \hbox (badness 5050) in paragraph at lines 23--23
-[]\T1/phv/m/n/5 You need to find
- []
-
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 23--23
-[][][][] 
+Overfull \hbox (7.83934pt too wide) in paragraph at lines 22--32
+\T1/jkpk/m/n/10 con-tent provider also gen-er-ates an \T1/jkpk/m/sl/10 en-ti-tl
+e-ment man-age-ment mes-sage \T1/jkpk/m/n/10 (EMM) which
  []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.33 
+l.32 
       [1
 
 
 
 ]
-Overfull \hbox (1.36078pt too wide) in paragraph at lines 38--38
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 4.74998pt on input line 43.
+
+Underfull \hbox (badness 5050) in paragraph at lines 43--43
+[]\T1/phv/m/n/5 You need to find
+ []
+
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 43--43
+[][][][] 
+ []
+
+
+Overfull \hbox (1.36078pt too wide) in paragraph at lines 55--55
 [][]\T1/jkpk/b/sl/10 Remove?:[] 
  []
 
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 38--38
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 55--55
 [][][][] 
  []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 70--70
-[]\T1/phv/m/n/5 This sec-tion with
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 70--70
-\T1/phv/m/n/5 some rel-e-vant
- []
-
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 70--70
-[][][][] 
- []
-
-
-Underfull \vbox (badness 1436) has occurred while \output is active []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.82 
-      [2])
-Overfull \hbox (7.83934pt too wide) in paragraph at lines 83--36
-\T1/jkpk/m/n/10 con-tent provider also gen-er-ates an \T1/jkpk/m/sl/10 en-ti-tl
-e-ment man-age-ment mes-sage \T1/jkpk/m/n/10 (EMM) which
- []
+l.81 T
+      his is done by sending the same CW to many CAS at the same time, and then
+[2]
 
-[3]
+Package natbib Warning: Citation `CI:1997' on page 3 undefined on input line 94
+.
+
+
+Package natbib Warning: Citation `CI+:2011' on page 3 undefined on input line 9
+6.
+
+) [3]
 \openout2 = `Scrambling.aux'.
 
  (./Scrambling.tex [4
@@ -2065,29 +2058,24 @@ e-ment man-age-ment mes-sage \T1/jkpk/m/n/10 (EMM) which
 
 ]
 Chapter 2.
-[5] <fig/TSpacket.png, id=413, 969.6225pt x 113.42375pt>
-File: fig/TSpacket.png Graphic file (type png)
-
-<use fig/TSpacket.png>
-Package pdftex.def Info: fig/TSpacket.png used on input line 35.
-(pdftex.def)             Requested size: 355.65944pt x 41.6044pt.
- <fig/PES.png, id=420, 993.7125pt x 405.515pt>
-File: fig/PES.png Graphic file (type png)
-
-<use fig/PES.png>
-Package pdftex.def Info: fig/PES.png used on input line 78.
-(pdftex.def)             Requested size: 355.65944pt x 145.13757pt.
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 89--89
+[5]
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 40--40
 [][][][] 
  []
+
+<fig/TSpacket.png, id=413, 969.6225pt x 113.42375pt>
+File: fig/TSpacket.png Graphic file (type png)
+ <use fig/TSpacket.png>
+Package pdftex.def Info: fig/TSpacket.png used on input line 60.
+(pdftex.def)             Requested size: 355.65944pt x 41.6044pt.
 
 [6 <./fig/TSpacket.png (PNG copy)>]
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 108--108
-[][][][] 
- []
-
-[7 <./fig/PES.png (PNG copy)>]
+<fig/PES.png, id=426, 993.7125pt x 405.515pt>
+File: fig/PES.png Graphic file (type png)
+ <use fig/PES.png>
+Package pdftex.def Info: fig/PES.png used on input line 103.
+(pdftex.def)             Requested size: 355.65944pt x 145.13757pt.
+ [7 <./fig/PES.png (PNG copy)>]
 Underfull \hbox (badness 2173) in paragraph at lines 152--152
 []\T1/phv/m/n/5 feels like a given,
  []
@@ -2097,11 +2085,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 152--152
 [][][][] 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [8]
-<fig/cipher.png, id=453, 501.875pt x 299.1175pt>
+<fig/cipher.png, id=446, 501.875pt x 299.1175pt>
 File: fig/cipher.png Graphic file (type png)
  <use fig/cipher.png>
 Package pdftex.def Info: fig/cipher.png used on input line 160.
@@ -2121,7 +2105,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 170--170
 [][][][] 
  []
 
-[9 <./fig/cipher.png>]
+[8] [9 <./fig/cipher.png>]
 Underfull \hbox (badness 3291) in paragraph at lines 230--230
 []\T1/phv/m/n/5 You need sources
  []
@@ -2137,7 +2121,10 @@ File: fig/SPnetwork.pdf Graphic file (type pdf)
 Package pdftex.def Info: fig/SPnetwork.pdf used on input line 242.
 (pdftex.def)             Requested size: 284.52863pt x 189.98953pt.
 )
-[10] [11 <./fig/SPnetwork.pdf>]
+Underfull \vbox (badness 5077) has occurred while \output is active []
+
+ [10]
+[11 <./fig/SPnetwork.pdf>]
 \openout2 = `CSA.aux'.
 
  (./CSA.tex [12
@@ -2146,52 +2133,41 @@ Package pdftex.def Info: fig/SPnetwork.pdf used on input line 242.
 
 ]
 Chapter 3.
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--29
-[]\T1/phv/m/n/5 Is this rel-e-vant,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--29
-\T1/phv/m/n/5 and you need
- []
-
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 29--29
-[][][][] 
- []
-
-[13] <fig/blockcipher.pdf, id=533, 252.945pt x 179.2296pt>
+<fig/blockcipher.pdf, id=527, 252.945pt x 179.2296pt>
 File: fig/blockcipher.pdf Graphic file (type pdf)
 
 <use fig/blockcipher.pdf>
-Package pdftex.def Info: fig/blockcipher.pdf used on input line 36.
+Package pdftex.def Info: fig/blockcipher.pdf used on input line 26.
 (pdftex.def)             Requested size: 252.94438pt x 179.22914pt.
 
-Underfull \hbox (badness 1622) in paragraph at lines 69--69
-[]\T1/phv/m/n/5 Except from Pa-trik
- []
-
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 69--69
-[][][][] 
- []
-
-[14 <./fig/blockcipher.pdf>]
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 89--89
-[][][][] 
- []
-
-
-Overfull \hbox (1.00937pt too wide) in paragraph at lines 112--117
+Overfull \hbox (1.00937pt too wide) in paragraph at lines 33--38
 []\T1/jkpk/m/n/10 The DVB-CSA stan-dard of-fers short-term pro-tec-tion (it as-
 sumed con-tent is viewed
  []
 
-) [15] [16]
+[13] [14 <./fig/blockcipher.pdf>]
+Underfull \hbox (badness 1622) in paragraph at lines 76--76
+[]\T1/phv/m/n/5 Except from Pa-trik
+ []
+
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 76--76
+[][][][] 
+ []
+
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 96--96
+[][][][] 
+ []
+
+) [15]
 \openout2 = `cissaORCSA3.aux'.
 
- (./cissaORCSA3.tex
+ (./cissaORCSA3.tex [16
+
+
+
+]
 Chapter 4.
 
 Overfull \hbox (6.79999pt too wide) in paragraph at lines 18--18
@@ -2208,11 +2184,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 30--30
 [][][][] 
  []
 
-[17
-
-
-
-]
+[17]
 
 LaTeX Warning: Marginpar on page 18 moved.
 
@@ -2312,7 +2284,7 @@ Overfull \hbox (16.60016pt too wide) detected at line 26
 [][]
  []
 
-<fig/flowchart.pdf, id=695, 415.5525pt x 912.40875pt>
+<fig/flowchart.pdf, id=696, 415.5525pt x 912.40875pt>
 File: fig/flowchart.pdf Graphic file (type pdf)
  <use fig/flowchart.pdf>
 Package pdftex.def Info: fig/flowchart.pdf used on input line 69.
@@ -2321,7 +2293,7 @@ Package pdftex.def Info: fig/flowchart.pdf used on input line 69.
 
 LaTeX Warning: Float too large for page by 22.0pt on input line 73.
 
-<fig/CBCmode.png, id=696, 2007.5pt x 700.6175pt>
+<fig/CBCmode.png, id=697, 2007.5pt x 700.6175pt>
 File: fig/CBCmode.png Graphic file (type png)
  <use fig/CBCmode.png>
 Package pdftex.def Info: fig/CBCmode.png used on input line 77.
@@ -2466,9 +2438,12 @@ onomy .
 
 [32])
 No file main.ind.
+
+Package natbib Warning: There were undefined citations.
+
 [33] [34
 
-] <fig/LinkUniv_staende_pms.pdf, id=835, 260.975pt x 172.645pt>
+] <fig/LinkUniv_staende_pms.pdf, id=838, 260.975pt x 172.645pt>
 File: fig/LinkUniv_staende_pms.pdf Graphic file (type pdf)
 
 <use fig/LinkUniv_staende_pms.pdf>
@@ -2489,17 +2464,17 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 57.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 57.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 57.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: EAA1D20D7D8261B6E1509925D83CBA6B;3969.
+(rerunfilecheck)             Checksum: 4FA939805F5D3E829978BD84FF752456;4004.
 Package rerunfilecheck Info: File `main.brf' has not changed.
-(rerunfilecheck)             Checksum: 26FBAF27109BED01D47F0E6B3CC15BD2;2440.
+(rerunfilecheck)             Checksum: BAEE424F65D12DC8AC7006698A63FF1C;2453.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 57.
  )
 (\end occurred when \ifx on line 20 was incomplete) 
 Here is how much of TeX's memory you used:
- 14522 strings out of 493307
- 207601 string characters out of 6139905
- 349511 words of memory out of 5000000
- 17335 multiletter control sequences out of 15000+600000
+ 14524 strings out of 493307
+ 207626 string characters out of 6139905
+ 349551 words of memory out of 5000000
+ 17337 multiletter control sequences out of 15000+600000
  224537 words of font info for 172 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  45i,12n,77p,585b,544s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2521,10 +2496,10 @@ texlive/texmf-dist/fonts/type1/public/kpfonts/jkpsya.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 helvetic/uhvr8a.pfb>
-Output written on main.pdf (47 pages, 460021 bytes).
+Output written on main.pdf (47 pages, 459337 bytes).
 PDF statistics:
- 937 PDF objects out of 1000 (max. 8388607)
- 830 compressed objects within 9 object streams
+ 940 PDF objects out of 1000 (max. 8388607)
+ 833 compressed objects within 9 object streams
  161 named destinations out of 1000 (max. 500000)
  18979 words of extra memory for PDF output out of 20736 (max. 10000000)
 

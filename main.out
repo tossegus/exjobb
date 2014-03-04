@@ -5,35 +5,35 @@
 \BOOKMARK [0][]{section*.2}{Notation}{}% 5
 \BOOKMARK [0][]{thetocanchor.0}{Contents}{}% 6
 \BOOKMARK [0][]{chapter.1}{1 Encryption of the DVB}{}% 7
-\BOOKMARK [1][-]{section.1.1}{1.1 CAS}{chapter.1}% 8
-\BOOKMARK [2][-]{subsection.1.1.1}{1.1.1 Standards}{section.1.1}% 9
-\BOOKMARK [1][-]{section.1.2}{1.2 DVB-SimulCrypt}{chapter.1}% 10
-\BOOKMARK [1][-]{section.1.3}{1.3 Common Interface}{chapter.1}% 11
-\BOOKMARK [1][-]{section.1.4}{1.4 Set-up}{chapter.1}% 12
-\BOOKMARK [0][]{chapter.2}{2 Scrambling}{}% 13
-\BOOKMARK [1][-]{section.2.1}{2.1 Data packets}{chapter.2}% 14
-\BOOKMARK [2][-]{subsection.2.1.1}{2.1.1 TS packets}{section.2.1}% 15
-\BOOKMARK [2][-]{subsection.2.1.2}{2.1.2 PES packets}{section.2.1}% 16
-\BOOKMARK [1][-]{section.2.2}{2.2 Scrambling or Encrypting?}{chapter.2}% 17
-\BOOKMARK [1][-]{section.2.3}{2.3 What is the need for cryptography?}{chapter.2}% 18
-\BOOKMARK [1][-]{section.2.4}{2.4 Encryption and decryption}{chapter.2}% 19
-\BOOKMARK [2][-]{subsection.2.4.1}{2.4.1 Symmetric-key encryption}{section.2.4}% 20
-\BOOKMARK [1][-]{section.2.5}{2.5 Public-key encryption}{chapter.2}% 21
-\BOOKMARK [2][-]{subsection.2.5.1}{2.5.1 Combinational encryption}{section.2.5}% 22
-\BOOKMARK [1][-]{section.2.6}{2.6 Ciphers}{chapter.2}% 23
-\BOOKMARK [2][-]{subsection.2.6.1}{2.6.1 Block cipher}{section.2.6}% 24
-\BOOKMARK [2][-]{subsection.2.6.2}{2.6.2 Stream cipher}{section.2.6}% 25
-\BOOKMARK [1][-]{section.2.7}{2.7 Confusion and Diffusion}{chapter.2}% 26
-\BOOKMARK [2][-]{subsection.2.7.1}{2.7.1 S-boxes}{section.2.7}% 27
-\BOOKMARK [2][-]{subsection.2.7.2}{2.7.2 P-Boxes}{section.2.7}% 28
-\BOOKMARK [1][-]{section.2.8}{2.8 Secrecy}{chapter.2}% 29
-\BOOKMARK [0][]{chapter.3}{3 CSA}{}% 30
-\BOOKMARK [1][-]{section.3.1}{3.1 History}{chapter.3}% 31
-\BOOKMARK [1][-]{section.3.2}{3.2 Layout of the CSA}{chapter.3}% 32
-\BOOKMARK [1][-]{section.3.3}{3.3 Security}{chapter.3}% 33
-\BOOKMARK [2][-]{subsection.3.3.1}{3.3.1 Brute force}{section.3.3}% 34
-\BOOKMARK [1][-]{section.3.4}{3.4 Why do we need a new standard?}{chapter.3}% 35
-\BOOKMARK [0][]{chapter.4}{4 CSA3 and CISSA}{}% 36
+\BOOKMARK [1][-]{section.1.1}{1.1 Set-up}{chapter.1}% 8
+\BOOKMARK [1][-]{section.1.2}{1.2 Conditional Access System}{chapter.1}% 9
+\BOOKMARK [2][-]{subsection.1.2.1}{1.2.1 Standards}{section.1.2}% 10
+\BOOKMARK [1][-]{section.1.3}{1.3 DVB-SimulCrypt}{chapter.1}% 11
+\BOOKMARK [1][-]{section.1.4}{1.4 Common Interface}{chapter.1}% 12
+\BOOKMARK [1][-]{section.1.5}{1.5 Conditional Access Module}{chapter.1}% 13
+\BOOKMARK [0][]{chapter.2}{2 Scrambling}{}% 14
+\BOOKMARK [1][-]{section.2.1}{2.1 What is the need for cryptography?}{chapter.2}% 15
+\BOOKMARK [1][-]{section.2.2}{2.2 Scrambling or Encrypting}{chapter.2}% 16
+\BOOKMARK [1][-]{section.2.3}{2.3 Data packets}{chapter.2}% 17
+\BOOKMARK [2][-]{subsection.2.3.1}{2.3.1 TS packets}{section.2.3}% 18
+\BOOKMARK [2][-]{subsection.2.3.2}{2.3.2 PES packets}{section.2.3}% 19
+\BOOKMARK [1][-]{section.2.4}{2.4 Encryption and Decryption}{chapter.2}% 20
+\BOOKMARK [2][-]{subsection.2.4.1}{2.4.1 Symmetric-key encryption}{section.2.4}% 21
+\BOOKMARK [2][-]{subsection.2.4.2}{2.4.2 Public-key encryption}{section.2.4}% 22
+\BOOKMARK [2][-]{subsection.2.4.3}{2.4.3 Combination}{section.2.4}% 23
+\BOOKMARK [1][-]{section.2.5}{2.5 Ciphers}{chapter.2}% 24
+\BOOKMARK [2][-]{subsection.2.5.1}{2.5.1 Block cipher}{section.2.5}% 25
+\BOOKMARK [2][-]{subsection.2.5.2}{2.5.2 Stream cipher}{section.2.5}% 26
+\BOOKMARK [1][-]{section.2.6}{2.6 Confusion and Diffusion}{chapter.2}% 27
+\BOOKMARK [2][-]{subsection.2.6.1}{2.6.1 S-boxes}{section.2.6}% 28
+\BOOKMARK [2][-]{subsection.2.6.2}{2.6.2 P-Boxes}{section.2.6}% 29
+\BOOKMARK [1][-]{section.2.7}{2.7 Secrecy}{chapter.2}% 30
+\BOOKMARK [0][]{chapter.3}{3 CSA}{}% 31
+\BOOKMARK [1][-]{section.3.1}{3.1 Why do we need a new standard?}{chapter.3}% 32
+\BOOKMARK [1][-]{section.3.2}{3.2 Layout of the CSA}{chapter.3}% 33
+\BOOKMARK [1][-]{section.3.3}{3.3 Security}{chapter.3}% 34
+\BOOKMARK [2][-]{subsection.3.3.1}{3.3.1 Brute force}{section.3.3}% 35
+\BOOKMARK [0][]{chapter.4}{4 CISSA and CSA3}{}% 36
 \BOOKMARK [1][-]{section.4.1}{4.1 CISSA}{chapter.4}% 37
 \BOOKMARK [2][-]{subsection.4.1.1}{4.1.1 Software friendly}{section.4.1}% 38
 \BOOKMARK [1][-]{section.4.2}{4.2 CSA3}{chapter.4}% 39
