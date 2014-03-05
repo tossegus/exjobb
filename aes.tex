@@ -1,13 +1,13 @@
-\chapter{Advanced Encryption standard}
+\chapter{Advanced Encryption standard}\label{ch:AES}
 The AES is based on an SP-network and is fast both in hardware as well as 
 software. Rijndael, which is used in AES, has key-sizes of at least 128 bits, 
 block lengths of 128 bits, 8 to 8 bit S-boxes and a minimum of 10 rounds of 
 repetition \citep[p. 79]{Stinson:2006}. It is a symmetric-key algorithm with a 
 fixed block size of 128 bits, where the key-size can vary between 128, 192 or 
 256 bits. The number of cycles needed to convert the plaintext into ciphertext 
-depends on the size of the key. For a 128-bit key 10 cycles of repetitions are 
-needed. A 192-bit key needs 12 cycles and a 256-bit key needs 14 cycles 
-\citep[p. 103]{Stinson:2006}.
+depends on the size of the key. The 128-bit key requires 10 cycles of 
+repetitions (rounds). The 192-bit key requires 12 rounds and the 256-bit key 
+requires 14 rounds \citep[p. 103]{Stinson:2006}.
 
 \section{Method}
 The AES consists of a number of steps that are repeated for each block to be 
@@ -82,25 +82,33 @@ using bitwise xor. They are then combined to a state matrix (figure
 \section{KeyExpansion}\label{sec:KeySch}
 To generate round keys from the cipher key, we use the Rijndael's key schedule. 
 This is done since AES requires a separate 128-bit round key for each round, 
-plus one extra key for the initialization.
+plus one extra key for the initialization which means that the AES-128 requires 
+176 bytes, since AES-128 consists of 10 rounds. 
 
-\Warning[Todo]{This includes more steps than this} 
-%Have a look at wikipedia. It takes like 5 steps or something, and depends on previous values of the key. This is REALLY hard! You need to explain this properly as fuck! :)
-The schedule consists of a loop, and a key-schedule core.
+%Beskrivningen här behöver antingen vara en punktlista, som jag skulle kunna försöka hitta via referenser och dylikt. Eller en flowchart. Men isåfall måste jag kunna berätta varifrån jag har fått faktan till hur jag producerat min flowchart.
 
-INPUT A FLOWCHART OR SOMETHING HERE!
-\Warning[Todo]{Explain the general algorithm here. You might input a flowchart if you want to}
+The schedule consists of a loop, and a key-schedule core. The schedule core is 
+the part that branches out from the check if c modulo 16 is zero. The entire 
+KeyExpansion can be viewed in Figure \ref{img:keysch}. To change the key schedule
+to fit a key size of 192 bits, you simply change the value c is compared to in 
+the first branch in the flowchart from 176 to 206. 
 
-\subsection{Key-schedule core}
+\begin{figure}
+  \includegraphics[width=\textwidth]{keyschedule}
+  \caption{Flowchart of the key schedule}
+  \label{img:keysch}
+\end{figure}
+
+\subsection{Key-schedule core}\label{sec:kCore}
 The key-schedule core takes an input of 4 bytes (32 bits) which it then rotates 
 1 byte (8 bits) to the left. Let us say that our key is \emph{AB CD EF 01}. This 
 would give us the key \emph{CD EF 01 AB} after the rotation. This operation is 
 also called the RotWord-operation \citep[p. 107]{Stinson:2006}. The next step is 
 to apply Rijndael's S-box to each of these bytes, giving us 4 new bytes. The 
 bytes {AB CD EF 01} would give us {62 BD DF 7C} when input in the Rijndael 
-S-box (Figure Table \ref{matrix:rijSbox}).
+S-box (Figure \ref{matrix:rijSbox}).
 
-Each of these bytes are then XORed with a value from the Rcon function depending 
+The left-most byte is then XORed with a value from the Rcon function depending 
 on what round you are currently at. You can read more about the Rcon function in 
 section \ref{ch:Rcon}.
 
@@ -113,9 +121,9 @@ output from the Rijndael's S-box.
 
  \subsection{Rcon} \label{ch:Rcon}
 The value input into the Rcon function depends on what round you are currently 
-at. Which means that you would choose Rcon(1) the first round, Rcon(2) the 
-second, and so on. The values in the Rcon array are calculated mathematically, 
-and can then be accessed through a simple vector or such.
+at. Which means that you would choose Rcon(1) for the first round, Rcon(2) for 
+the second round, and so on. The values in the Rcon array are calculated 
+mathematically, but might as well be accessed through a simple vector or such.
 
 %I translated the steps to be performed in the Rcon function into a flowchart which can be viewed in figure \ref{app:flowchart} in appendix \ref{app:misc}. 
 

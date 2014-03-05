@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.1.29)  4 MAR 2014 16:12
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.1.29)  5 MAR 2014 17:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1898,7 +1898,7 @@ LaTeX Font Info:    Try loading font information for U+jkpsyc on input line 18.
 (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ujkpsyc.fd
 File: ujkpsyc.fd 2006/08/15 v1.0
 )
-<fig/LiTH_staende_sv.pdf, id=253, 260.975pt x 190.7125pt>
+<fig/LiTH_staende_sv.pdf, id=249, 260.975pt x 190.7125pt>
 File: fig/LiTH_staende_sv.pdf Graphic file (type pdf)
 
 <use fig/LiTH_staende_sv.pdf>
@@ -1925,7 +1925,7 @@ Overfull \hbox (35.56596pt too wide) in paragraph at lines 23--23
 
 ] [2
 
-] <fig/LiTH_sigill_sv.pdf, id=277, 124.465pt x 124.465pt>
+] <fig/LiTH_sigill_sv.pdf, id=273, 124.465pt x 124.465pt>
 File: fig/LiTH_sigill_sv.pdf Graphic file (type pdf)
 
 <use fig/LiTH_sigill_sv.pdf>
@@ -2054,14 +2054,14 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 40--40
 [][][][] 
  []
 
-<fig/TSpacket.png, id=420, 969.6225pt x 113.42375pt>
+<fig/TSpacket.png, id=415, 969.6225pt x 113.42375pt>
 File: fig/TSpacket.png Graphic file (type png)
  <use fig/TSpacket.png>
 Package pdftex.def Info: fig/TSpacket.png used on input line 60.
 (pdftex.def)             Requested size: 355.65944pt x 41.6044pt.
 
 [6 <./fig/TSpacket.png (PNG copy)>]
-<fig/PES.png, id=433, 993.7125pt x 405.515pt>
+<fig/PES.png, id=428, 993.7125pt x 405.515pt>
 File: fig/PES.png Graphic file (type png)
  <use fig/PES.png>
 Package pdftex.def Info: fig/PES.png used on input line 103.
@@ -2076,7 +2076,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 152--152
 [][][][] 
  []
 
-<fig/cipher.png, id=453, 501.875pt x 299.1175pt>
+<fig/cipher.png, id=448, 501.875pt x 299.1175pt>
 File: fig/cipher.png Graphic file (type png)
  <use fig/cipher.png>
 Package pdftex.def Info: fig/cipher.png used on input line 160.
@@ -2106,7 +2106,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 230--230
 [][][][] 
  []
 
-<fig/SPnetwork.pdf, id=503, 452.4102pt x 302.0886pt>
+<fig/SPnetwork.pdf, id=498, 452.4102pt x 302.0886pt>
 File: fig/SPnetwork.pdf Graphic file (type pdf)
  <use fig/SPnetwork.pdf>
 Package pdftex.def Info: fig/SPnetwork.pdf used on input line 242.
@@ -2124,7 +2124,7 @@ Underfull \vbox (badness 5077) has occurred while \output is active []
 
 ]
 Chapter 3.
-<fig/blockcipher.pdf, id=534, 252.945pt x 179.2296pt>
+<fig/blockcipher.pdf, id=529, 252.945pt x 179.2296pt>
 File: fig/blockcipher.pdf Graphic file (type pdf)
 
 <use fig/blockcipher.pdf>
@@ -2155,30 +2155,42 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 91--91
 ]
 Chapter 4.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 24--24
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 25--25
 [][][][] 
  []
 
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 38--38
-[][]\T1/jkpk/b/sl/10 Find
+Overfull \hbox (9.11879pt too wide) in paragraph at lines 39--43
+[]\T1/jkpk/m/n/10 An FPGA im-ple-men-ta-tion of the CISSA al-go-rithm seems lik
+ely to be im-ple-mentable,
  []
 
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 38--38
+Underfull \hbox (badness 10000) in paragraph at lines 53--53
+[]\T1/phv/m/n/5 No no, not
+ []
+
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 53--53
 [][][][] 
  []
 
-) [18]
+
+Overfull \hbox (6.31201pt too wide) in paragraph at lines 68--74
+[]\T1/jkpk/m/n/10 The CSA3 is de-signed to be hardware-friendly, mean-ing that 
+de-scram-bling through
+ []
+
+[18]) [19]
 \openout2 = `aes.aux'.
 
- (./aes.tex
-Chapter 5.
-[19
+ (./aes.tex [20
 
 
 
 ]
+Chapter 5.
+[21]
 Overfull \hbox (9.31085pt too wide) in paragraph at lines 71--71
 [][]\T1/jkpk/b/sl/10 DOODOO:[] 
  []
@@ -2188,38 +2200,25 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 71--71
 [][][][] 
  []
 
-[20]
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 87--87
+[22] <fig/keyschedule.png, id=656, 822.272pt x 822.272pt>
+File: fig/keyschedule.png Graphic file (type png)
+
+<use fig/keyschedule.png>
+Package pdftex.def Info: fig/keyschedule.png used on input line 97.
+(pdftex.def)             Requested size: 355.65944pt x 355.66539pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 135--135
 [][][][] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 92--92
-\T1/phv/m/n/5 al-go-rithm here.
- []
-
-
-Underfull \hbox (badness 1960) in paragraph at lines 92--92
-\T1/phv/m/n/5 You might in-put a
- []
-
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 92--92
-[][][][] 
- []
-
-
-LaTeX Warning: Marginpar on page 21 moved.
-
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 127--127
-[][][][] 
- []
-
-[21]) [22]
+[23] [24 <./fig/keyschedule.png (PNG copy)>]) [25]
 \openout2 = `Result.aux'.
 
- (./Result.tex
+ (./Result.tex [26
+
+
+
+]
 Chapter 6.
 
 Underfull \hbox (badness 10000) in paragraph at lines 6--7
@@ -2245,27 +2244,215 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-) [23
-
-
-
-] [24]
+) [27] [28]
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 23.63593pt on input line 45.
- [25
+ [29
 
 
-] [26]
+] [30]
 \openout2 = `images.aux'.
 
  (./images.tex
 Appendix A.
 
+! Package array Error:  Illegal pream-token (C): `c' used.
+
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 ...array}{C | C C C C C C C C C C C C C C C c}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package array Error:  Illegal pream-token (C): `c' used.
+
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 ...array}{C | C C C C C C C C C C C C C C C c}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package array Error:  Illegal pream-token (C): `c' used.
+
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 ...array}{C | C C C C C C C C C C C C C C C c}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package array Error:  Illegal pream-token (C): `c' used.
+
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 ...array}{C | C C C C C C C C C C C C C C C c}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package array Error:  Illegal pream-token (C): `c' used.
+
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 ...array}{C | C C C C C C C C C C C C C C C c}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package array Error:  Illegal pream-token (C): `c' used.
+
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 ...array}{C | C C C C C C C C C C C C C C C c}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package array Error:  Illegal pream-token (C): `c' used.
+
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 ...array}{C | C C C C C C C C C C C C C C C c}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package array Error:  Illegal pream-token (C): `c' used.
+
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 ...array}{C | C C C C C C C C C C C C C C C c}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package array Error:  Illegal pream-token (C): `c' used.
+
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 ...array}{C | C C C C C C C C C C C C C C C c}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package array Error:  Illegal pream-token (C): `c' used.
+
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 ...array}{C | C C C C C C C C C C C C C C C c}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package array Error:  Illegal pream-token (C): `c' used.
+
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 ...array}{C | C C C C C C C C C C C C C C C c}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package array Error:  Illegal pream-token (C): `c' used.
+
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 ...array}{C | C C C C C C C C C C C C C C C c}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package array Error:  Illegal pream-token (C): `c' used.
+
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 ...array}{C | C C C C C C C C C C C C C C C c}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package array Error:  Illegal pream-token (C): `c' used.
+
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 ...array}{C | C C C C C C C C C C C C C C C c}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package array Error:  Illegal pream-token (C): `c' used.
+
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 ...array}{C | C C C C C C C C C C C C C C C c}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package array Error:  Illegal pream-token (C): `c' used.
+
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 ...array}{C | C C C C C C C C C C C C C C C c}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
 Overfull \hbox (16.60016pt too wide) detected at line 26
 [][]
  []
 
-<fig/flowchart.pdf, id=703, 415.5525pt x 912.40875pt>
+<fig/flowchart.pdf, id=717, 415.5525pt x 912.40875pt>
 File: fig/flowchart.pdf Graphic file (type pdf)
  <use fig/flowchart.pdf>
 Package pdftex.def Info: fig/flowchart.pdf used on input line 69.
@@ -2274,69 +2461,93 @@ Package pdftex.def Info: fig/flowchart.pdf used on input line 69.
 
 LaTeX Warning: Float too large for page by 22.0pt on input line 73.
 
-<fig/CBCmode.png, id=704, 2007.5pt x 700.6175pt>
+! Missing $ inserted.
+<inserted text> 
+                $
+l.76 ...{array}{l l l l l l l l l l l l l l l l l}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.93   \end{array}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (40.79588pt too wide) in paragraph at lines 76--94
+[]$[]$ 
+ []
+
+<fig/CBCmode.png, id=718, 2007.5pt x 700.6175pt>
 File: fig/CBCmode.png Graphic file (type png)
  <use fig/CBCmode.png>
-Package pdftex.def Info: fig/CBCmode.png used on input line 77.
+Package pdftex.def Info: fig/CBCmode.png used on input line 100.
 (pdftex.def)             Requested size: 355.65944pt x 124.11726pt.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.85 C_
-       {0} \text{ is the IV and the XOR-operation is noted with }\oplus.
+l.108 C_
+        {0} \text{ is the IV, and the XOR-operation is noted with }\oplus.
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.86 
-     
+l.109 
+      
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.87 C_
-       i \text{ is the ciphertext} \newline
+l.110 C_
+        i \text{ is the ciphertext} \newline
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.91 
-     
+l.114 
+      
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--91
+Underfull \hbox (badness 10000) in paragraph at lines 110--114
 
  []
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.96 The inverse of the encryption algorithm E_
-                                               {k} \text{ is the decryption
+l.119 The inverse of the encryption algorithm E_
+                                                {k} \text{ is the decryption
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.98 
-     
+l.121 
+      
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-) [27
+) [31
 
 
-] [28] [29 <./fig/flowchart.pdf>] [30 <./fig/CBCmode.png>] (./main.bbl
+] [32] [33 <./fig/flowchart.pdf>] [34 <./fig/CBCmode.png>] (./main.bbl
 (./main.brf)
 \tf@brf=\write6
 \openout6 = `main.brf'.
@@ -2353,7 +2564,7 @@ Underfull \hbox (badness 2591) in paragraph at lines 43--43
 eliver / etsi _ ts / 103100 _
  []
 
-[31
+[35
 
 
 
@@ -2423,7 +2634,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 148--148
 / CBC _
  []
 
-[32]
+[36]
 Underfull \hbox (badness 1371) in paragraph at lines 155--155
 []\T1/jkpk/m/n/10 Unknown Wikipedia.  Cipher-taxanomy, 2014b.  URL []$\T1/pcr/m
 /n/10 http : / / upload .
@@ -2437,9 +2648,9 @@ onomy .
 
 )
 No file main.ind.
-[33] [34
+[37] [38
 
-] <fig/LinkUniv_staende_pms.pdf, id=853, 260.975pt x 172.645pt>
+] <fig/LinkUniv_staende_pms.pdf, id=869, 260.975pt x 172.645pt>
 File: fig/LinkUniv_staende_pms.pdf Graphic file (type pdf)
 
 <use fig/LinkUniv_staende_pms.pdf>
@@ -2451,7 +2662,7 @@ Overfull \hbox (0.16193pt too wide) in paragraph at lines 57--57
 doc-u-ment in-tegrity, please
  []
 
-[35 <./fig/LinkUniv_staende_pms.pdf>]
+[39 <./fig/LinkUniv_staende_pms.pdf>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 57.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 57.
  (./main.aux (./notation.aux) (./cas.aux)
@@ -2460,17 +2671,17 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 57.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 57.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 57.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 177B0F45992945B72A2C58611E20EFBB;4000.
+(rerunfilecheck)             Checksum: F2CA8ADCDBBCF5EAB77F10F41B682D51;3937.
 Package rerunfilecheck Info: File `main.brf' has not changed.
-(rerunfilecheck)             Checksum: EFE40E4439AF7C514947254D121ADCA1;2540.
+(rerunfilecheck)             Checksum: C8F56016B11619EC16E549412E092511;2533.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 57.
  )
 (\end occurred when \ifx on line 20 was incomplete) 
 Here is how much of TeX's memory you used:
- 14542 strings out of 493307
- 207867 string characters out of 6139905
- 351053 words of memory out of 5000000
- 17353 multiletter control sequences out of 15000+600000
+ 14555 strings out of 493307
+ 208049 string characters out of 6139905
+ 366295 words of memory out of 5000000
+ 17360 multiletter control sequences out of 15000+600000
  224537 words of font info for 172 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  45i,12n,77p,585b,544s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2492,10 +2703,10 @@ texlive/texmf-dist/fonts/type1/public/kpfonts/jkpsya.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 helvetic/uhvr8a.pfb>
-Output written on main.pdf (47 pages, 460480 bytes).
+Output written on main.pdf (51 pages, 527632 bytes).
 PDF statistics:
- 956 PDF objects out of 1000 (max. 8388607)
- 849 compressed objects within 9 object streams
- 163 named destinations out of 1000 (max. 500000)
- 18979 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 972 PDF objects out of 1000 (max. 8388607)
+ 860 compressed objects within 9 object streams
+ 168 named destinations out of 1000 (max. 500000)
+ 18976 words of extra memory for PDF output out of 20736 (max. 10000000)
 
