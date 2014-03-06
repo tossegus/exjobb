@@ -16,7 +16,8 @@
 \contentsline {subsubsection}{Strong}{2}{subsection.1.2.1}
 \contentsline {section}{\numberline {1.3}DVB-SimulCrypt}{2}{section.1.3}
 \contentsline {section}{\numberline {1.4}Common Interface}{3}{section.1.4}
-\contentsline {section}{\numberline {1.5}Conditional Access Module}{3}{section.1.5}
+\contentsline {subsection}{\numberline {1.4.1}CIPlus}{3}{subsection.1.4.1}
+\contentsline {section}{\numberline {1.5}Conditional Access Module}{4}{section.1.5}
 \contentsline {chapter}{\numberline {2}Scrambling}{5}{chapter.2}
 \contentsline {section}{\numberline {2.1}What is the need for cryptography?}{5}{section.2.1}
 \contentsline {section}{\numberline {2.2}Scrambling or Encrypting}{6}{section.2.2}
@@ -63,7 +64,8 @@
 \contentsline {section}{\numberline {6.4}How much of the CSA3 standard has been implemented?}{28}{section.6.4}
 \contentsline {chapter}{\numberline {A}Matrixes}{31}{appendix.A}
 \contentsline {section}{\numberline {A.1}Calculations on the CBC-mode}{31}{section.A.1}
-\contentsline {chapter}{Bibliography}{35}{appendix*.16}
+\contentsline {chapter}{List of Figures}{35}{section*.17}
+\contentsline {chapter}{Bibliography}{37}{appendix*.18}
 \select@language {swedish}
 \select@language {english}
 \select@language {english}

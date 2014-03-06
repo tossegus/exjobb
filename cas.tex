@@ -95,6 +95,20 @@ host, that can be copied. The data sent between the CI+ and host can not be
 copied due to it being encrypted, and therefore provides more security for 
 content providers \citep{CI:1997}.
 
+\subsection{CIPlus}
+The CIPlus realizes the possibility of yet another means of protecting content 
+which is called \emph{Content Control}. CC is a means of encrypting the content 
+inside of the CAM connected to the CIPlus Module. The key used for the CC 
+encryption is paired with the Digital TV Receiver, where the TS is decrypted 
+before being made available to users. The general idea can be viewed in Figure \ref{img:CIPlus}.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.5\textwidth]{CIPlus}
+  \caption{CIPlus interface. Image remade from \citep[p. 10]{CI+:2011}}
+  \label{img:CIPlus}
+\end{figure}
+
 \section{Conditional Access Module}\label{sec:CAM}
 CA modules (CAMs) are responsible of decoding the scrambled TS received from 
 the host. The CAM is often input to a PCMCIA slot (Personal Computer Memory 
