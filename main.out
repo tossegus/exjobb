@@ -13,7 +13,7 @@
 \BOOKMARK [2][-]{subsection.1.4.1}{1.4.1 CIPlus}{section.1.4}% 13
 \BOOKMARK [1][-]{section.1.5}{1.5 Conditional Access Module}{chapter.1}% 14
 \BOOKMARK [0][]{chapter.2}{2 Scrambling}{}% 15
-\BOOKMARK [1][-]{section.2.1}{2.1 What is the need for cryptography?}{chapter.2}% 16
+\BOOKMARK [1][-]{section.2.1}{2.1 Why do we need cryptography?}{chapter.2}% 16
 \BOOKMARK [1][-]{section.2.2}{2.2 Scrambling or Encrypting}{chapter.2}% 17
 \BOOKMARK [1][-]{section.2.3}{2.3 Data packets}{chapter.2}% 18
 \BOOKMARK [2][-]{subsection.2.3.1}{2.3.1 TS packets}{section.2.3}% 19

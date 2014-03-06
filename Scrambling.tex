@@ -1,35 +1,38 @@
 \chapter{Scrambling}\label{ch:Scrambling}
 Security is not only about cryptography. But there is a main reason why 
-cryptography is attacked , and that is because there is a very low chance 
-of being detected. There will be no traces of the attack, since the attacker’s 
-access will look just like a legitimate /"good" access. 
+cryptography is attacked, and that is because there is a very low chance of being
+detected. There will be no traces of the attack, since the attacker’s access will
+look just like an ordinary access.
 
 This can be compared to a real-life break-in. The break-in will be noticed if 
-the thief breaks in using a crowbar. If the thief, on the other hand, would be 
-to pick the lock, there is a possibility that you will never notice that your 
-security has been breached \citep{Schneier:2003}.
+the thief breaks in using a crowbar. On the other hand, you might never notice 
+that the security had been breached, if the the thief were to pick the lock 
+instead. \citep{Schneier:2003}
 
-There are many rules concerning cryptography, as there are to all sciences. 
-The one I found most noteworthy was that one is to always assume that someone 
-is "out to get you". Because of this, \citet[pp. 12--14]{Schneier:2003} say that 
-we always need  to look for possible ways to break systems, to make sure that
-we are safe.
+One of the more noteworthy cryptography rule is that you always are to assume 
+that someone is out to get you. Because of this, 
+\citet[pp. 12--14]{Schneier:2003} says that we always need to look for possible 
+ways to break systems, to ensure that the security can not be breached, and 
+thereby provides security.
 
-\section{What is the need for cryptography?}
-If we communicate without encrypting the data we are sending, someone 
-else will most likely be eavesdropping. For most people this isn’t a problem, 
-but in some instances sending secure messages can be extremely important. One 
-example is communication during war, where a single piece of intelligence might 
-turn the tide of the entire war. Another example is sending manuscripts, and 
-drafts of books over the internet. These are some of the reasons as to why we 
-want to encode messages.
+\section{Why do we need cryptography?}
+If we communicate without encrypting the data we are sending, someone else will 
+most likely be eavesdropping. For most people this isn’t a problem, but in some 
+instances sending secure messages can be extremely important. One example is 
+communication during war, where a single piece of intelligence might turn the 
+tide of the entire war. Another example is sending manuscripts, and drafts of 
+books over the internet. You might also not want people to be able to read your 
+account information and card numbers when buying things online either. These are 
+some of the reasons as to why we want to encode communication.
 
 Another reason for scrambling is to reduce the number of adjacent data-bits with 
-the same value, as in long strings of zeros or ones. 
+the same value, like strings of zeroes or ones. It could also serve to balance 
+the number of zeroes and ones in strings. This is done as to try to obtain DC 
+balance. DC balance is desired since it avoids voltage imbalance during 
+communication between connected systems. 
 
-%Balancing the amount of 
-%zeros and ones gives a DC balance, which means that the signal is stronger when 
-%sent.
+\Warning[Rewrite]{And find a good source for this}
+%Det är osannolikt att det här stämmer helt och hållet :)
 
 \section{Scrambling or Encrypting}
 The difference between scrambling and encryption is that scrambling is the
@@ -38,17 +41,18 @@ data unreadable to outsiders while encryption is the way we protect the control
 word during transmission.
 
 \Warning[Todo]{Det här måste jag bli säkrare på}
-% What is the difference between scrambling and encryption? 
-
+%What is the main difference between scrambling and encryption? 
+%%%%%%%%%%
+%"The main difference between scrambling and encryption methods is that scrambling methods change the values of some bits in a data block or stream with the purpose of spreading the signal across spectrums to decrease the electromagnetic interference or to introduce security, whereas encryption methods processes the information (plain-text) through an algorithm (cipher) to make it unreadable for others that do not poses certain knowledge about the key"
+%%%%%%%%%%
 \section{Data packets}\label{sec:Data}
 The data processed by the DVB systems is sent in data packets. All of them are 
-created from ES packets (elementary streams) which generally is the output from 
+created from ES packets (Elementary Streams) which generally is the output from 
 an audio or video encoder. The ES packets are then packeted into PS, TS or PES 
-packets and then distributed. There are three different ways of packing data, 
-but only two of them are commonly used. The types are called TS, PS and PES. PS 
-packets are used while data isbeing stored, while TS and PES are used when data 
-is being transmitted. The ones interresting when working with DVB are therefore 
-the TS packets as well as the PES packets.
+packets and then distributed. Among the three ways of packing data, only two are 
+commonly used. PS packets are used for storing data, while TS and PES are used 
+for transmitting data. The interresting types, when working with DVB, are 
+therefore the TS packets as well as the PES packets.
 
 \subsection{TS packets}
 TS packets are the ones used by the DVB society, possibly due to their fixed 
@@ -62,48 +66,81 @@ viewed in figure \ref{img:Package}.
   \label{img:Package}
 \end{figure}
 
-The building blocks that the TS packets consist of are:
+The TS packet consists of 4 different kinds of building blocks where only the 
+header is guaranteed to be present. Those blocks are:
 
 \begin{itemize}
 \item Header
-\item Adaptation field - might not exist
-\item Encrypted payload - might not exist
+\item Adaptation field
+\item Encrypted payload
 \item Clear payload
 \end{itemize}
 
-The header consist of information regarding the packet. The header provides 
-information as to whether there is an adaptation field in the packet, what id 
-the packet has, the sync byte and two bits telling us whether the data is 
-scrambled using an odd or even key, if it is scrambled. The header is never to 
-be encrypted and is always found in the beginning of the packets.
+The byte-sizes of the building blocks are:
 
-The adaptation field is a padding that you input when the end of the data is not 
-aligned with the end of the TS packet. This is done to make sure that the TS 
-packet is filled. We only find adaptation fields we are working with the last 
-string of data, if the data does not align. Adaptation fields are not encrypted.
+\begin{itemize}
+\item header\_size = 4
+\item adaptation\_field\_size = the size of the adaptation field
+\item payload\_size = 188 - (header\_size + adaptation\_field\_size)
+\item encrypted\_payload\_size = payload\_size - [payload\_size mod block\_size]
+\item clear\_payload\_size = [payload\_size mod block\_size] 
+  (or simply payload\_size - encrypted\_payload\_size)
+\end{itemize}
 
-We are prone to end up with clear bytes of data in the TS packets when we work 
-with block ciphers, since block ciphers only encrypt fixed sizes of data. The 
-clear data is always located at the end of the packets and can in a worst case 
-scenario be up to one byte smaller than the block size, since that will be the 
-largest amount of bytes that does not fill an entire block. The encrypted 
-payload is always located in front of the clear payload 
-\cite[pp. 10--11]{DVB:2013}.
+\subsubsection{Header}
+The header consists of information regarding the packet, and has a sync\_byte 
+(with a hex-value of 0x47, or bit-value of 01000111) to display the beginning of 
+the packet. The header also contains information as to whether there is an 
+adaptation field and payload in the packet, what PID the packet has, if it is to 
+be prioritized, whether the data is scrambled - and in that case if it was 
+scrambled with an odd or even key, among others \citep[pp. 25--26]{etsiMPEG:2009}
+. The header is never to be encrypted and is always found at the beginning of a 
+packet. \citep[pp. 10--11]{DVB:2013}
+
+%% The header contains the following:
+%% \begin{figure}
+%%   \begin{array}{l l l}
+%%     Number of bits & Name & Description \\
+%%     8 & Sync byte & Fixed byte value 0x47 \\
+%%     1 & Transport Error Indicator & Uncorrectable bit errors exist. \\
+%%     1 & Payload Unit Start Indicator & TS packets contains PES packets or PSI 
+%%     data\\
+%%     2 & Transport Scrambling Control & 00 No scramling, 10 Even key, 11 Odd key \\
+%%     1 & Transport Priority & 1 gives this packet higher priority \\
+%%     13 & PID & Type and number of data stored in packet payload \\
+%%     1 & Adaptation Field Control & 1 means that an adaptation field exists\\
+%%     1 & Contains Payload & 1 means that payload exists \\
+%%     4 & Continuity Counter & Sequence number of payload packets\\
+%%   \end{array}
+%% \end{figure}
+
+\subsubsection{Adaptation field}
+The adaptation field is a sort of padding that you input when the end of the 
+data does not align with the end of the TS packet. This is done to make sure 
+that the TS packet is filled with known data. We only find adaptation fields we 
+are working with the last string of data, if the data does not align. Adaptation 
+fields are not encrypted. \cite[pp. 10--11]{DVB:2013}
+
+\subsubsection{Encrypted and clear payload}
+When working with block ciphers, we tend to end up with clear bytes of data 
+since block ciphers only encrypt data blocks of fixed sizes. The clear data 
+is always located at the end of the TS packets and might be of sizes up to one 
+byte smaller than the block size at the most. The encrypted payload is always 
+located in front of the clear payload. \cite[pp. 10--11]{DVB:2013}
 
 \subsection{PES packets}
-The PES packets have varying lengths of up to 64 KBytes.
-
-PES-packets can be of any size less than 64 Kbytes. They are often packed into 
-TS packets when distributed, due to the strength of the TS packets. The payload
-data in the TS packets consists of the entire PES packets, which consists of the 
-header and the data. PES packets do not use adaptation fields, since they can be 
-of more or less any length, as long as the packet do not exceed 64 KBytes.
+The PES packets have varying lengths of up to 64 KBytes, and are often packed 
+into TS packets when distributed, due to the strength of the TS packets. The 
+payload data in the TS packets consists of the entire PES packets, which 
+consists of the header and the data. PES packets do not use adaptation fields, 
+since they can be of more or less any length, as long as the packet do not 
+exceed 64 KBytes.
 
 \begin{figure}
   \includegraphics[width=\textwidth]{PES.png}
   \label{img:PES}
-  \caption{PES packet derived from TS packets (inspiration for the image 
-taken from \citep[p. 9]{ETR:289} ) }
+  \caption{PES packet derived from TS packets (inspiration taken from 
+    \citep[p. 9]{ETR:289} ) }
 \end{figure}
 
 \section{Encryption and Decryption}
@@ -167,7 +204,7 @@ cryptosystems. Those ciphers are called block ciphers and stream ciphers.
 Many systems use a combination of block ciphers and stream ciphers to provide 
 security. 
 \Warning[Source]{At least the CSA uses it. But you need a source if you want 
-this to be here}
+  this to be here}
 
 \subsection{Block cipher}\label{sec:BlockCipher}
 A block cipher operates on blocks where each block consists of a fixed number 

@@ -33,7 +33,10 @@ supposed to able to be implemented efficiently on hardware as well as in
 software \citep[p. 9]{DVB:2013}.
 
 CISSA is to use the AES-128 block cipher in CBC-mode with a 16 byte IV with the 
-value 0x445642544d4350544145534349535341. \citep[p. 11]{DVB:2013}
+value 0x445642544d4350544145534349535341. Each TS packet is to be process 
+independetly of other TS packets, but each block of data in the payload depends 
+on the previous blocks of data in the same payload. Both the header and 
+adaptation field are to be left unscrambled. \citep[p. 11]{DVB:2013}
 
 \subsection{Software friendly}
 An FPGA implementation of the CISSA algorithm seems likely to be implementable, 
