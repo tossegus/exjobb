@@ -23,15 +23,8 @@ ETSI.
   conditional access (ca) withing digital video broadcasting systems.
 \newblock \emph{ETR 289}, October 1996.
 \newblock URL
-  \url{http://www.etsi.org/deliver/etsi\_etr/200_299/289/01\_60/etr\_289e01p.pdf}.
+  \url{http://www.etsi.org/deliver/etsi\_etr/200\_299/289/01\_60/etr\_289e01p.pdf}.
 \newblock Accessed: 21 Feb 2014.
-
-\bibitem[ETSI(2009)]{etsiMPEG:2009}
-ETSI.
-\newblock Digital video broadcasting (dvb); specification for the use of video
-  and audio coding in broadcasting applications based on the mpeg-2 transport
-  stream.
-\newblock \emph{ETSI TS 101 154}, 9 2009.
 
 \bibitem[ETSI{\ }TS(2008)]{SimulCrypt:2008}
 ETSI{\ }TS.
@@ -40,8 +33,18 @@ ETSI{\ }TS.
 \newblock \emph{ETSI{\ }TS{\ }103{\ }197}, 10 2008.
 \newblock Accessed: 13 Feb 2014.
 
-\bibitem[ETSI{\ }TS{\ }(2013)]{DVB:2013}
-ETSI{\ }TS{\ }.
+\bibitem[ETSI{\ }TS(2009)]{etsiMPEG:2009}
+ETSI{\ }TS.
+\newblock Digital video broadcasting (dvb); specification for the use of video
+  and audio coding in broadcasting applications based on the mpeg-2 transport
+  stream.
+\newblock \emph{ETSI{\ }TS{\ }101{\ }154}, 9 2009.
+\newblock URL
+  \url{http://www.etsi.org/deliver/etsi\_ts/101100\_101199/101154/01.09.01\_60/ts\_101154v010901p.pdf}.
+\newblock Accessed: 6 March 2014.
+
+\bibitem[ETSI{\ }TS(2013)]{DVB:2013}
+ETSI{\ }TS.
 \newblock Digital video broadcasting (dvb).
 \newblock \emph{ETSI{\ }TS{\ }103{\ }127}, 05 2013.
 \newblock URL
@@ -69,14 +72,14 @@ Simon Fischer.
 \newblock Analysis of lightweight stream ciphers.
 \newblock \emph{\'Ecole Polytechnique F\'ed\'erale De Lausanne}, 2008.
 \newblock URL
-  \url{http://biblion.epfl.ch/EPFL/theses/2008/4040/EPFL_TH4040.pdf}.
+  \url{http://biblion.epfl.ch/EPFL/theses/2008/4040/EPFL\_TH4040.pdf}.
 \newblock Accessed: 3 Feb 2014.
 
 \bibitem[Internet(2014)]{Angelfire}
 Mr~Internet.
 \newblock Mixcolumns step for aes.
 \newblock \emph{Empty}, January 2014.
-\newblock URL \url{http://www.angelfire.com/biz7/atleast/mix_columns.pdf}.
+\newblock URL \url{http://www.angelfire.com/biz7/atleast/mix\_columns.pdf}.
 \newblock Accessed: 28 jan 2014.
 
 \bibitem[Li and Gu(2007)]{WeiLi:2007}
@@ -103,7 +106,7 @@ Bruce Schneier and Niels Fergusson.
 G.J. Schrijen.
 \newblock Use case: Control word protection, May 2011.
 \newblock URL
-  \url{http://www.hisinitiative.org/_lib/img/Intrinsic\-ID\_CWProtection\_May\_25.pdf}.
+  \url{http://www.hisinitiative.org/\_lib/img/Intrinsic\-ID\_CWProtection\_May\_25.pdf}.
 \newblock Accessed: 18 Feb, 2014.
 
 \bibitem[Shannon(1949)]{Shannon:1949}
@@ -150,7 +153,7 @@ Ralf-Philipp Weimann and Kai Wirt.
 Unknown Wikipedia.
 \newblock Cbc encryption, 2014{\natexlab{a}}.
 \newblock URL
-  \url{http://upload.wikimedia.org/wikipedia/commons/thumb/8/80/CBC_encryption.svg/2000px-CBC\_encryption.svg.png}.
+  \url{http://upload.wikimedia.org/wikipedia/commons/thumb/8/80/CBC\_encryption.svg/2000px-CBC\_encryption.svg.png}.
 \newblock Accessed: 7 Feb 2014.
 
 \bibitem[Wikipedia(2014{\natexlab{b}})]{CipherTax:2013}
@@ -164,7 +167,7 @@ Unknown Wikipedia.
 Wikipedia~Jr Wikipedia.
 \newblock Rijndael's key schedule.
 \newblock \emph{Empty}, January 2014{\natexlab{c}}.
-\newblock URL \url{http://en.wikipedia.org/wiki/Rijndael_key_schedule}.
+\newblock URL \url{http://en.wikipedia.org/wiki/Rijndael\_key\_schedule}.
 \newblock Accessed: 28 jan 2014.
 
 \bibitem[Wirt(2004)]{Wirt:2004}

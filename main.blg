@@ -13,16 +13,16 @@ A level-1 auxiliary file: images.aux
 Database file #1: myrefs.bib
 You've used 24 entries,
             2773 wiz_defined-function locations,
-            762 strings with 8968 characters,
-and the built_in function-call counts, 8130 in all, are:
-= -- 740
+            763 strings with 9086 characters,
+and the built_in function-call counts, 8153 in all, are:
+= -- 745
 > -- 313
 < -- 23
 + -- 119
 - -- 93
-* -- 491
-:= -- 1300
-add.period$ -- 102
+* -- 493
+:= -- 1305
+add.period$ -- 104
 call.type$ -- 24
 change.case$ -- 100
 chr.to.int$ -- 22
@@ -30,13 +30,13 @@ cite$ -- 48
 duplicate$ -- 440
 empty$ -- 762
 format.name$ -- 123
-if$ -- 1710
+if$ -- 1715
 int.to.chr$ -- 3
 int.to.str$ -- 1
 missing$ -- 20
-newline$ -- 158
+newline$ -- 160
 num.names$ -- 96
-pop$ -- 236
+pop$ -- 234
 preamble$ -- 1
 purify$ -- 79
 quote$ -- 0
@@ -51,4 +51,4 @@ type$ -- 244
 warning$ -- 0
 while$ -- 75
 width$ -- 0
-write$ -- 358
+write$ -- 362

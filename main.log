@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.1.29)  6 MAR 2014 15:37
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.1.29)  6 MAR 2014 15:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2029,12 +2029,12 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 58--58
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--76
+Underfull \hbox (badness 10000) in paragraph at lines 75--75
 []\T1/phv/m/n/5 Relevant? Plus
  []
 
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 76--76
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 75--75
 [][][][] 
  []
 
@@ -2042,12 +2042,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.83 
+l.82 
       [2] <fig/CIPlus.png, id=405, 434.62375pt x 523.9575pt>
 File: fig/CIPlus.png Graphic file (type png)
 
 <use fig/CIPlus.png>
-Package pdftex.def Info: fig/CIPlus.png used on input line 112.
+Package pdftex.def Info: fig/CIPlus.png used on input line 111.
 (pdftex.def)             Requested size: 177.82971pt x 214.38425pt.
 ) [3] [4 <./fig/CIPlus.png>]
 \openout2 = `Scrambling.aux'.
@@ -2085,76 +2085,76 @@ Overfull \hbox (2.49pt too wide) in paragraph at lines 86--88
 ly pay-load_size
  []
 
-<fig/PES.png, id=454, 993.7125pt x 405.515pt>
+<fig/PES.png, id=455, 993.7125pt x 405.515pt>
 File: fig/PES.png Graphic file (type png)
  <use fig/PES.png>
-Package pdftex.def Info: fig/PES.png used on input line 140.
+Package pdftex.def Info: fig/PES.png used on input line 143.
 (pdftex.def)             Requested size: 355.65944pt x 145.13757pt.
- [7] [8 <./fig/PES.png (PNG copy)>]
-Underfull \hbox (badness 2173) in paragraph at lines 189--189
+ [7]
+Underfull \vbox (badness 2922) has occurred while \output is active []
+
+ [8 <./fig/PES.png (PNG copy)>]
+Underfull \hbox (badness 2173) in paragraph at lines 192--192
 []\T1/phv/m/n/5 feels like a given,
  []
 
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 189--189
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 192--192
 [][][][] 
  []
 
-<fig/cipher.png, id=484, 501.875pt x 299.1175pt>
+<fig/cipher.png, id=485, 501.875pt x 299.1175pt>
 File: fig/cipher.png Graphic file (type png)
  <use fig/cipher.png>
-Package pdftex.def Info: fig/cipher.png used on input line 197.
+Package pdftex.def Info: fig/cipher.png used on input line 200.
 (pdftex.def)             Requested size: 355.65944pt x 211.98238pt.
 
-Underfull \hbox (badness 3623) in paragraph at lines 207--207
+Underfull \hbox (badness 3623) in paragraph at lines 210--210
 []\T1/phv/m/n/5 At least the CSA
  []
 
 
-Underfull \hbox (badness 1622) in paragraph at lines 207--207
+Underfull \hbox (badness 1622) in paragraph at lines 210--210
 \T1/phv/m/n/5 uses it. But you
  []
 
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 207--207
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 210--210
 [][][][] 
  []
 
-
-Underfull \vbox (badness 3019) has occurred while \output is active []
-
- [9 <./fig/cipher.png>] [10]
-Underfull \hbox (badness 3291) in paragraph at lines 267--267
+[9 <./fig/cipher.png>] [10]
+Underfull \hbox (badness 3291) in paragraph at lines 270--270
 []\T1/phv/m/n/5 You need sources
  []
 
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 267--267
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 270--270
 [][][][] 
  []
 
-<fig/SPnetwork.pdf, id=531, 452.4102pt x 302.0886pt>
+<fig/SPnetwork.pdf, id=532, 452.4102pt x 302.0886pt>
 File: fig/SPnetwork.pdf Graphic file (type pdf)
  <use fig/SPnetwork.pdf>
-Package pdftex.def Info: fig/SPnetwork.pdf used on input line 279.
+Package pdftex.def Info: fig/SPnetwork.pdf used on input line 282.
 (pdftex.def)             Requested size: 284.52863pt x 189.98953pt.
 )
-[11 <./fig/SPnetwork.pdf>]
+[11 <./fig/SPnetwork.pdf>] [12]
 \openout2 = `CSA.aux'.
 
- (./CSA.tex [12
-
-
-
-]
+ (./CSA.tex
 Chapter 3.
-<fig/blockcipher.pdf, id=556, 252.945pt x 179.2296pt>
+<fig/blockcipher.pdf, id=557, 252.945pt x 179.2296pt>
 File: fig/blockcipher.pdf Graphic file (type pdf)
 
 <use fig/blockcipher.pdf>
 Package pdftex.def Info: fig/blockcipher.pdf used on input line 26.
 (pdftex.def)             Requested size: 252.94438pt x 179.22914pt.
- [13]
+ [13
+
+
+
+]
 Underfull \hbox (badness 1622) in paragraph at lines 71--71
 []\T1/phv/m/n/5 Except from Pa-trik
  []
@@ -2228,7 +2228,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 71--71
 [][][][] 
  []
 
-[22] <fig/keyschedule.png, id=683, 822.272pt x 822.272pt>
+[22] <fig/keyschedule.png, id=684, 822.272pt x 822.272pt>
 File: fig/keyschedule.png Graphic file (type png)
 
 <use fig/keyschedule.png>
@@ -2480,7 +2480,7 @@ Overfull \hbox (16.60016pt too wide) detected at line 26
 [][]
  []
 
-<fig/flowchart.pdf, id=744, 415.5525pt x 912.40875pt>
+<fig/flowchart.pdf, id=745, 415.5525pt x 912.40875pt>
 File: fig/flowchart.pdf Graphic file (type pdf)
  <use fig/flowchart.pdf>
 Package pdftex.def Info: fig/flowchart.pdf used on input line 69.
@@ -2513,7 +2513,7 @@ Overfull \hbox (40.79588pt too wide) in paragraph at lines 76--94
 []$[]$ 
  []
 
-<fig/CBCmode.png, id=745, 2007.5pt x 700.6175pt>
+<fig/CBCmode.png, id=746, 2007.5pt x 700.6175pt>
 File: fig/CBCmode.png Graphic file (type png)
  <use fig/CBCmode.png>
 Package pdftex.def Info: fig/CBCmode.png used on input line 100.
@@ -2683,7 +2683,7 @@ onomy .
 No file main.ind.
 [39] [40
 
-] <fig/LinkUniv_staende_pms.pdf, id=939, 260.975pt x 172.645pt>
+] <fig/LinkUniv_staende_pms.pdf, id=940, 260.975pt x 172.645pt>
 File: fig/LinkUniv_staende_pms.pdf Graphic file (type pdf)
 
 <use fig/LinkUniv_staende_pms.pdf>
@@ -2706,14 +2706,14 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 58.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 3F8DD1D3DB407B9E539F4531C0A57CE8;4049.
 Package rerunfilecheck Info: File `main.brf' has not changed.
-(rerunfilecheck)             Checksum: 19F11295E2E7ECD2484712CBDAC3FB67;3027.
+(rerunfilecheck)             Checksum: 4D16145A6491B0829EF7854F9C055566;3027.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 58.
  )
 (\end occurred when \ifx on line 20 was incomplete) 
 Here is how much of TeX's memory you used:
  14583 strings out of 493307
  208455 string characters out of 6139905
- 366612 words of memory out of 5000000
+ 366653 words of memory out of 5000000
  17376 multiletter control sequences out of 15000+600000
  225298 words of font info for 174 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -2736,10 +2736,10 @@ texlive/texmf-dist/fonts/type1/public/kpfonts/jkpsya.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 helvetic/uhvr8a.pfb>
-Output written on main.pdf (53 pages, 604910 bytes).
+Output written on main.pdf (53 pages, 605443 bytes).
 PDF statistics:
- 1043 PDF objects out of 1200 (max. 8388607)
- 924 compressed objects within 10 object streams
+ 1044 PDF objects out of 1200 (max. 8388607)
+ 925 compressed objects within 10 object streams
  174 named destinations out of 1000 (max. 500000)
  18997 words of extra memory for PDF output out of 20736 (max. 10000000)
 

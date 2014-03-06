@@ -27,10 +27,10 @@
 \contentsline {subsubsection}{Adaptation field}{7}{figure.caption.5}
 \contentsline {subsubsection}{Encrypted and clear payload}{7}{figure.caption.5}
 \contentsline {subsection}{\numberline {2.3.2}PES packets}{7}{subsection.2.3.2}
-\contentsline {section}{\numberline {2.4}Encryption and Decryption}{7}{section.2.4}
+\contentsline {section}{\numberline {2.4}Encryption and Decryption}{8}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Symmetric-key encryption}{8}{subsection.2.4.1}
 \contentsline {subsection}{\numberline {2.4.2}Public-key encryption}{8}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Combination}{8}{subsection.2.4.3}
+\contentsline {subsection}{\numberline {2.4.3}Combination}{9}{subsection.2.4.3}
 \contentsline {section}{\numberline {2.5}Ciphers}{9}{section.2.5}
 \contentsline {subsection}{\numberline {2.5.1}Block cipher}{10}{subsection.2.5.1}
 \contentsline {subsection}{\numberline {2.5.2}Stream cipher}{10}{subsection.2.5.2}

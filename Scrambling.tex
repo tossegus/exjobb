@@ -130,17 +130,22 @@ located in front of the clear payload. \cite[pp. 10--11]{DVB:2013}
 
 \subsection{PES packets}
 The PES packets have varying lengths of up to 64 KBytes, and are often packed 
-into TS packets when distributed, due to the strength of the TS packets. The 
-payload data in the TS packets consists of the entire PES packets, which 
-consists of the header and the data. PES packets do not use adaptation fields, 
-since they can be of more or less any length, as long as the packet do not 
-exceed 64 KBytes.
+into TS packets when distributed, due to the strength of TS packets. The payload 
+data in the TS packets, when carrying PES packets, consist of the entire PES 
+packets, which is the header as well as the data. PES packets do not use 
+adaptation fields, since they are of adaptable lengths, as long as the length of 
+the packet does not exceed 64 KBytes.
+
+Since DVB seldom uses itself of PES packets, an analyzation of the header will 
+not be done. The derivation of PES packets from TS packets can be seen in Figure \ref{img:PES}.
+
+%Fick OK på att inte gå in och analysera PES headern
 
 \begin{figure}
   \includegraphics[width=\textwidth]{PES.png}
-  \label{img:PES}
   \caption{PES packet derived from TS packets (inspiration taken from 
     \citep[p. 9]{ETR:289} ) }
+  \label{img:PES}
 \end{figure}
 
 \section{Encryption and Decryption}
