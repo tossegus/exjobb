@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.1.29)  6 MAR 2014 15:57
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.1.29)  6 MAR 2014 16:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1945,19 +1945,19 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 13.67995pt on input line 29.
+(Font)              scaled to size 13.67995pt on input line 32.
  (./abstract.tex)pdfTeX warning (ext4): destination with the same identifier (n
 ame{page.iii}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.31 \end{abstract}
+l.34 \end{abstract}
                     [3
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.iv}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.31 \end{abstract}
+l.34 \end{abstract}
                     [4
 
 ]
@@ -2088,55 +2088,55 @@ ly pay-load_size
 <fig/PES.png, id=455, 993.7125pt x 405.515pt>
 File: fig/PES.png Graphic file (type png)
  <use fig/PES.png>
-Package pdftex.def Info: fig/PES.png used on input line 143.
+Package pdftex.def Info: fig/PES.png used on input line 145.
 (pdftex.def)             Requested size: 355.65944pt x 145.13757pt.
  [7]
 Underfull \vbox (badness 2922) has occurred while \output is active []
 
  [8 <./fig/PES.png (PNG copy)>]
-Underfull \hbox (badness 2173) in paragraph at lines 192--192
+Underfull \hbox (badness 2173) in paragraph at lines 194--194
 []\T1/phv/m/n/5 feels like a given,
  []
 
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 192--192
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 194--194
 [][][][] 
  []
 
 <fig/cipher.png, id=485, 501.875pt x 299.1175pt>
 File: fig/cipher.png Graphic file (type png)
  <use fig/cipher.png>
-Package pdftex.def Info: fig/cipher.png used on input line 200.
+Package pdftex.def Info: fig/cipher.png used on input line 202.
 (pdftex.def)             Requested size: 355.65944pt x 211.98238pt.
 
-Underfull \hbox (badness 3623) in paragraph at lines 210--210
+Underfull \hbox (badness 3623) in paragraph at lines 212--212
 []\T1/phv/m/n/5 At least the CSA
  []
 
 
-Underfull \hbox (badness 1622) in paragraph at lines 210--210
+Underfull \hbox (badness 1622) in paragraph at lines 212--212
 \T1/phv/m/n/5 uses it. But you
  []
 
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 210--210
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 212--212
 [][][][] 
  []
 
 [9 <./fig/cipher.png>] [10]
-Underfull \hbox (badness 3291) in paragraph at lines 270--270
+Underfull \hbox (badness 3291) in paragraph at lines 272--272
 []\T1/phv/m/n/5 You need sources
  []
 
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 270--270
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 272--272
 [][][][] 
  []
 
 <fig/SPnetwork.pdf, id=532, 452.4102pt x 302.0886pt>
 File: fig/SPnetwork.pdf Graphic file (type pdf)
  <use fig/SPnetwork.pdf>
-Package pdftex.def Info: fig/SPnetwork.pdf used on input line 282.
+Package pdftex.def Info: fig/SPnetwork.pdf used on input line 284.
 (pdftex.def)             Requested size: 284.52863pt x 189.98953pt.
 )
 [11 <./fig/SPnetwork.pdf>] [12]
@@ -2274,7 +2274,7 @@ my insertion and my current dilemma will both disappear.
 
 ) [27] [28]
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 23.63593pt on input line 45.
+(Font)              scaled to size 23.63593pt on input line 48.
  [29
 
 
@@ -2590,91 +2590,109 @@ you left one out. Proceed, with fingers crossed.
 ] [36
 
 ]
-Underfull \hbox (badness 6396) in paragraph at lines 50--50
-[]\T1/jkpk/m/n/10 ETSI TS .  Dig-i-tal video broad-cast-ing (dvb).  \T1/jkpk/m/
-sl/10 ETSI TS 103 127\T1/jkpk/m/n/10 ,
+Underfull \hbox (badness 3838) in paragraph at lines 45--45
+[]\T1/jkpk/m/n/10 ETSI TS.  Dig-i-tal video broad-cast-ing (dvb); spec-i-fi-ca-
+tion for the use
  []
 
 
-Underfull \hbox (badness 2591) in paragraph at lines 50--50
-\T1/jkpk/m/n/10 05 2013.  URL []$\T1/pcr/m/n/10 http : / / www . etsi . org / d
-eliver / etsi _ ts / 103100 _
+Underfull \hbox (badness 10000) in paragraph at lines 45--45
+\T1/jkpk/m/n/10 of video and au-dio cod-ing in broad-cast-ing ap-pli-ca-tions b
+ased on
+ []
+
+
+Underfull \hbox (badness 4279) in paragraph at lines 45--45
+\T1/jkpk/m/n/10 the mpeg-2 trans-port stream.  \T1/jkpk/m/sl/10 ETSI TS 101 154
+\T1/jkpk/m/n/10 , 9 2009.  URL
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--45
+[]$\T1/pcr/m/n/10 http : / / www . etsi . org / deliver / etsi _ ts / 101100 _ 
+101199 / 101154 /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--53
+[]$\T1/pcr/m/n/10 http : / / www . etsi . org / deliver / etsi _ ts / 103100 _ 
+103199 / 103127 /
  []
 
 [37]
-Underfull \hbox (badness 4713) in paragraph at lines 96--96
+Underfull \hbox (badness 4713) in paragraph at lines 99--99
 []\T1/jkpk/m/n/10 CI Plus LLP.  Ci plus overview.  \T1/jkpk/m/sl/10 Com-mon In-
 ter-face Plus\T1/jkpk/m/n/10 , Novem-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--96
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
 \T1/jkpk/m/n/10 ber 2011.  URL []$\T1/pcr/m/n/10 http : / / www . ci \ discreti
 onary{-[]}{}{}plus .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--96
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
 \T1/pcr/m/n/10 com / data / ci \ discretionary{-[]}{}{}plus _ overview _ v2011 
 \
  []
 
 
-Underfull \hbox (badness 2903) in paragraph at lines 108--108
+Underfull \hbox (badness 2903) in paragraph at lines 111--111
 []\T1/jkpk/m/n/10 G.J. Schri-jen.  Use case: Con-trol word pro-tec-tion, May 20
 11.  URL
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
+Underfull \hbox (badness 10000) in paragraph at lines 111--111
 []$\T1/pcr/m/n/10 http : / / www . hisinitiative . org / _lib / img / Intrinsic
  \
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
+Underfull \hbox (badness 10000) in paragraph at lines 111--111
 \T1/pcr/m/n/10 discretionary{-[]}{}{}ID _ CWProtection _ May _ 25 . pdf$[]\T1/j
 kpk/m/n/10 .  Ac-cessed:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--141
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
 []\T1/jkpk/m/n/10 Erik Tews, Ju-lian Wälde, and Michael Weiner.  Break-ing dvb-
 csa.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--141
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
 \T1/jkpk/m/sl/10 http://hgpu.org/?p=6038\T1/jkpk/m/n/10 , pages 45 -- 61, 2012.
   URL []$\T1/pcr/m/n/10 http :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--141
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
 \T1/pcr/m/n/10 / / link . springer . com . lt . ltag . bibl . liu . se / chapte
 r / 10 . 1007 %
  []
 
 [38]
-Underfull \hbox (badness 10000) in paragraph at lines 155--155
+Underfull \hbox (badness 10000) in paragraph at lines 158--158
 []\T1/jkpk/m/n/10 Unknown Wikipedia.  Cbc en-cryp-tion, 2014a.  URL []$\T1/pcr/
 m/n/10 http : / /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--155
+Underfull \hbox (badness 10000) in paragraph at lines 158--158
 \T1/pcr/m/n/10 upload . wikimedia . org / wikipedia / commons / thumb / 8 / 80 
 / CBC _
  []
 
 
-Underfull \hbox (badness 1371) in paragraph at lines 162--162
+Underfull \hbox (badness 1371) in paragraph at lines 165--165
 []\T1/jkpk/m/n/10 Unknown Wikipedia.  Cipher-taxanomy, 2014b.  URL []$\T1/pcr/m
 /n/10 http : / / upload .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 162--162
+Underfull \hbox (badness 10000) in paragraph at lines 165--165
 \T1/pcr/m/n/10 wikimedia . org / wikipedia / en / thumb / 8 / 85 / Cipher-[]tax
 onomy .
  []
@@ -2683,37 +2701,37 @@ onomy .
 No file main.ind.
 [39] [40
 
-] <fig/LinkUniv_staende_pms.pdf, id=940, 260.975pt x 172.645pt>
+] <fig/LinkUniv_staende_pms.pdf, id=944, 260.975pt x 172.645pt>
 File: fig/LinkUniv_staende_pms.pdf Graphic file (type pdf)
 
 <use fig/LinkUniv_staende_pms.pdf>
-Package pdftex.def Info: fig/LinkUniv_staende_pms.pdf used on input line 58.
+Package pdftex.def Info: fig/LinkUniv_staende_pms.pdf used on input line 61.
 (pdftex.def)             Requested size: 77.41702pt x 51.21495pt.
 
-Overfull \hbox (0.16193pt too wide) in paragraph at lines 58--58
+Overfull \hbox (0.16193pt too wide) in paragraph at lines 61--61
 \T1/jkpk/m/n/10 and its pro-ce-dures for pub-li-ca-tion and for as-sur-ance of 
 doc-u-ment in-tegrity, please
  []
 
 [41 <./fig/LinkUniv_staende_pms.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 58.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 58.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 61.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 61.
  (./main.aux (./notation.aux) (./cas.aux)
 (./Scrambling.aux) (./CSA.aux) (./cissaORCSA3.aux) (./aes.aux) (./Result.aux)
 (./images.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 58.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 58.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 61.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 61.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 3F8DD1D3DB407B9E539F4531C0A57CE8;4049.
 Package rerunfilecheck Info: File `main.brf' has not changed.
 (rerunfilecheck)             Checksum: 4D16145A6491B0829EF7854F9C055566;3027.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 58.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 61.
  )
 (\end occurred when \ifx on line 20 was incomplete) 
 Here is how much of TeX's memory you used:
  14583 strings out of 493307
  208455 string characters out of 6139905
- 366653 words of memory out of 5000000
+ 366788 words of memory out of 5000000
  17376 multiletter control sequences out of 15000+600000
  225298 words of font info for 174 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -2736,10 +2754,10 @@ texlive/texmf-dist/fonts/type1/public/kpfonts/jkpsya.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 helvetic/uhvr8a.pfb>
-Output written on main.pdf (53 pages, 605443 bytes).
+Output written on main.pdf (53 pages, 605602 bytes).
 PDF statistics:
- 1044 PDF objects out of 1200 (max. 8388607)
- 925 compressed objects within 10 object streams
+ 1048 PDF objects out of 1200 (max. 8388607)
+ 929 compressed objects within 10 object streams
  174 named destinations out of 1000 (max. 500000)
  18997 words of extra memory for PDF output out of 20736 (max. 10000000)
 
