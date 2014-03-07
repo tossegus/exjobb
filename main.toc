@@ -7,7 +7,7 @@
 \select@language {english}
 \select@language {english}
 \contentsline {chapter}{Notation}{v}{section*.2}
-\contentsline {chapter}{\numberline {1}DVB Transmissions}{1}{chapter.1}
+\contentsline {chapter}{\numberline {1}Digital Video Broadcasting}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Set-up}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Conditional Access System}{2}{section.1.2}
 \contentsline {subsection}{\numberline {1.2.1}Standards}{2}{subsection.1.2.1}
@@ -38,7 +38,7 @@
 \contentsline {subsection}{\numberline {2.6.1}S-boxes}{11}{subsection.2.6.1}
 \contentsline {subsection}{\numberline {2.6.2}P-Boxes}{11}{subsection.2.6.2}
 \contentsline {section}{\numberline {2.7}Secrecy}{11}{section.2.7}
-\contentsline {chapter}{\numberline {3}CSA}{13}{chapter.3}
+\contentsline {chapter}{\numberline {3}Common Scrambling Algorithm}{13}{chapter.3}
 \contentsline {section}{\numberline {3.1}Why do we need a new standard?}{13}{section.3.1}
 \contentsline {section}{\numberline {3.2}Layout of the CSA}{14}{section.3.2}
 \contentsline {section}{\numberline {3.3}Security}{14}{section.3.3}
@@ -49,7 +49,7 @@
 \contentsline {section}{\numberline {4.2}CSA3}{18}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Hardware friendly}{18}{subsection.4.2.1}
 \contentsline {section}{\numberline {4.3}Conclusion}{19}{section.4.3}
-\contentsline {chapter}{\numberline {5}Advanced Encryption standard}{21}{chapter.5}
+\contentsline {chapter}{\numberline {5}Advanced Encryption Standard}{21}{chapter.5}
 \contentsline {section}{\numberline {5.1}Method}{21}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}InitialRound}{22}{subsection.5.1.1}
 \contentsline {subsection}{\numberline {5.1.2}SubBytes}{22}{subsection.5.1.2}
@@ -61,10 +61,11 @@
 \contentsline {subsection}{\numberline {5.2.2}Rijndael's S-Box}{23}{subsection.5.2.2}
 \contentsline {subsection}{\numberline {5.2.3}Rcon}{23}{subsection.5.2.3}
 \contentsline {chapter}{\numberline {6}Result}{25}{chapter.6}
-\contentsline {section}{\numberline {6.1}Hardware}{25}{section.6.1}
-\contentsline {section}{\numberline {6.2}Flow}{25}{section.6.2}
-\contentsline {section}{\numberline {6.3}Special solutions}{25}{section.6.3}
-\contentsline {section}{\numberline {6.4}How much of the CSA3 standard has been implemented?}{26}{section.6.4}
+\contentsline {section}{\numberline {6.1}Problems}{25}{section.6.1}
+\contentsline {section}{\numberline {6.2}Hardware}{25}{section.6.2}
+\contentsline {section}{\numberline {6.3}Flow}{26}{section.6.3}
+\contentsline {section}{\numberline {6.4}Special solutions}{26}{section.6.4}
+\contentsline {section}{\numberline {6.5}How much of the CSA3 standard has been implemented?}{26}{section.6.5}
 \contentsline {chapter}{\numberline {A}Matrixes}{29}{appendix.A}
 \contentsline {chapter}{\numberline {B}Illustrations}{33}{appendix.B}
 \contentsline {chapter}{\numberline {C}Test vectors}{37}{appendix.C}
