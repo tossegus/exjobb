@@ -55,20 +55,23 @@
 \contentsline {subsection}{\numberline {5.1.2}SubBytes}{22}{subsection.5.1.2}
 \contentsline {subsection}{\numberline {5.1.3}ShiftRows}{22}{subsection.5.1.3}
 \contentsline {subsection}{\numberline {5.1.4}MixColumns}{22}{subsection.5.1.4}
-\contentsline {subsection}{\numberline {5.1.5}AddRoundKey}{23}{subsection.5.1.5}
+\contentsline {subsection}{\numberline {5.1.5}AddRoundKey}{22}{subsection.5.1.5}
 \contentsline {section}{\numberline {5.2}KeyExpansion}{23}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}Key-schedule core}{23}{subsection.5.2.1}
 \contentsline {subsection}{\numberline {5.2.2}Rijndael's S-Box}{23}{subsection.5.2.2}
 \contentsline {subsection}{\numberline {5.2.3}Rcon}{23}{subsection.5.2.3}
-\contentsline {chapter}{\numberline {6}Result}{27}{chapter.6}
-\contentsline {section}{\numberline {6.1}Hardware}{27}{section.6.1}
-\contentsline {section}{\numberline {6.2}Flow}{27}{section.6.2}
-\contentsline {section}{\numberline {6.3}Special solutions}{27}{section.6.3}
-\contentsline {section}{\numberline {6.4}How much of the CSA3 standard has been implemented?}{28}{section.6.4}
-\contentsline {chapter}{\numberline {A}Matrixes}{31}{appendix.A}
-\contentsline {section}{\numberline {A.1}Calculations on the CBC-mode}{31}{section.A.1}
-\contentsline {chapter}{List of Figures}{35}{section*.17}
-\contentsline {chapter}{Bibliography}{37}{appendix*.18}
+\contentsline {chapter}{\numberline {6}Result}{25}{chapter.6}
+\contentsline {section}{\numberline {6.1}Hardware}{25}{section.6.1}
+\contentsline {section}{\numberline {6.2}Flow}{25}{section.6.2}
+\contentsline {section}{\numberline {6.3}Special solutions}{25}{section.6.3}
+\contentsline {section}{\numberline {6.4}How much of the CSA3 standard has been implemented?}{26}{section.6.4}
+\contentsline {chapter}{\numberline {A}Matrixes}{29}{appendix.A}
+\contentsline {chapter}{\numberline {B}Illustrations}{33}{appendix.B}
+\contentsline {chapter}{\numberline {C}Test vectors}{37}{appendix.C}
+\contentsline {chapter}{\numberline {D}Examples}{41}{appendix.D}
+\contentsline {section}{\numberline {D.1}CBC-mode calculations}{41}{section.D.1}
+\contentsline {chapter}{List of Figures}{43}{section*.17}
+\contentsline {chapter}{Bibliography}{45}{appendix*.18}
 \select@language {swedish}
 \select@language {english}
 \select@language {english}

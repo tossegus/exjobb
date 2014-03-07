@@ -1,0 +1,16 @@
+\chapter{Flowcharts} \label{app:fig}
+
+\begin{figure}
+  \begin{center}
+    \includegraphics[height=\textheight]{flowchart}
+  \end{center}
+  \caption{Flowchart of the Rcon function}
+  \label{app:flowchart}
+\end{figure}
+
+\begin{figure}
+  \includegraphics[width=\textwidth]{keyschedule}
+  \caption{Flowchart of the key schedule}
+  \label{img:keysch}
+\end{figure}
+

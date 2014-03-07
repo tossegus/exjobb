@@ -16,15 +16,18 @@
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Image from \citet [pp. 49]{Breaking:2012}\relax }}{14}{figure.caption.9}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Flowchart of the key schedule\relax }}{24}{figure.caption.10}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Rijndael S-box\relax }}{32}{figure.caption.11}
-\contentsline {figure}{\numberline {A.2}{\ignorespaces State-Matrix\relax }}{32}{figure.caption.12}
-\contentsline {figure}{\numberline {A.3}{\ignorespaces Rijndael MixColumns equation\relax }}{32}{figure.caption.13}
-\contentsline {figure}{\numberline {A.4}{\ignorespaces Flowchart of the Rcon function\relax }}{33}{figure.caption.14}
-\contentsline {figure}{\numberline {A.5}{\ignorespaces The Rcon function represented as a vector\relax }}{34}{figure.caption.15}
-\contentsline {figure}{\numberline {A.6}{\ignorespaces Cipher block chaining mode, \citep {CBCmode:2014}\relax }}{34}{figure.caption.16}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Rijndael S-box\relax }}{30}{figure.caption.10}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces State-Matrix\relax }}{30}{figure.caption.11}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Rijndael MixColumns equation\relax }}{30}{figure.caption.12}
+\contentsline {figure}{\numberline {A.4}{\ignorespaces The Rcon function represented as a vector\relax }}{31}{figure.caption.13}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Flowchart of the Rcon function\relax }}{34}{figure.caption.14}
+\contentsline {figure}{\numberline {B.2}{\ignorespaces Flowchart of the key schedule\relax }}{35}{figure.caption.15}
+\contentsline {figure}{\numberline {B.3}{\ignorespaces Cipher block chaining mode, \citep {CBCmode:2014}\relax }}{35}{figure.caption.16}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
 \select@language {swedish}
 \select@language {english}
 \select@language {english}

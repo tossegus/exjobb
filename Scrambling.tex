@@ -16,14 +16,20 @@ ways to break systems, to ensure that the security can not be breached, and
 thereby provides security.
 
 \section{Why do we need cryptography?}
-If we communicate without encrypting the data we are sending, someone else will 
-most likely be eavesdropping. For most people this isn’t a problem, but in some 
-instances sending secure messages can be extremely important. One example is 
-communication during war, where a single piece of intelligence might turn the 
-tide of the entire war. Another example is sending manuscripts, and drafts of 
-books over the internet. You might also not want people to be able to read your 
-account information and card numbers when buying things online either. These are 
-some of the reasons as to why we want to encode communication.
+Cryptography is the science of rendering plaintexts into ciphertexts to 
+protect contents from unauthorized viewing. It is used in electronic 
+communication for protection of e-mail messages and credit card information 
+among other things. If we send data without encrypting it, someone who is 
+eavesdropping to the transmission channel will most likely access the data.
+
+For most people this is not a problem, but in some instances sending secure 
+messages can be extremely important. One example is communication during war, 
+where a single piece of intelligence might turn the tide of the entire war. You 
+might also not want people to be able to read your account information and card 
+numbers when buying things online either.
+
+\Warning[Source]{Typ Schneier har jag för mig? Låna om boken?}
+%This might need a rework!
 
 Another reason for scrambling is to reduce the number of adjacent data-bits with 
 the same value, like strings of zeroes or ones. It could also serve to balance 
@@ -190,7 +196,7 @@ Decryption is often performed by reversing the encryption. You need to know the
 algorithm, preferably through a mathematical representation, to calculate how 
 to obtain the plaintext from the ciphertext. A description of how this is done 
 for the CBC-mode (described in \ref{sec:BlockCipher}) is described in 
-\ref{sec:CBCcalc} in appendix \ref{app:misc}. We assume that we know the 
+\ref{sec:CBCcalc} in appendix \ref{app:examples}. We assume that we know the 
 decryption algorithm here for simplicity. \Warning[Source]{feels like a given, but still}
 
 \section{Ciphers}
@@ -225,7 +231,7 @@ CBC stands for \emph{cipher block chaining} and is performed by first encrypting
 the result of an XOR between an IV and the plaintext. This is the ciphertext 
 that corresponds to the first plaintext. This is then put into an XOR with the 
 next plaintext, and then encrypted \citep[pp. 109--111]{Stinson:2006}. For 
-reference, see image \ref{img:CBCmode} in appendix \ref{app:misc}.
+reference, see image \ref{img:CBCmode} in appendix \ref{app:fig}.
 
 CTR stands for \emph{counter}, and refers to the way the IV is generated. The
 counter outputs a value, which is encoded with the key. The output is then run 
@@ -269,7 +275,7 @@ implemented as lookup tables. Each input has to correspond to a unique output,
 to make sure that the input can be recreated in the descrambler.
 
 %One way of making it harder to find the relation between the input and the output is to place adjacent bits far from each other in the lookup table 
-\Warning[TODO]{You need sources for this!}. 
+\Warning[TODO]{You need sources for this!}
 
 % CONFUSION OR DIFFUSION?
 
@@ -281,7 +287,7 @@ dotted rectangle in the middle.
 
 \begin{figure}
   \begin{center}
-    \includegraphics[width=0.8\textwidth]{SPnetwork}
+    \includegraphics[width=0.5\textwidth]{SPnetwork}
     \caption{SP-Network}
     \label{img:SPNetwork}
   \end{center}
