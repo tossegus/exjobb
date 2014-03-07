@@ -9,46 +9,49 @@ A level-1 auxiliary file: CSA.aux
 A level-1 auxiliary file: cissaORCSA3.aux
 A level-1 auxiliary file: aes.aux
 A level-1 auxiliary file: Result.aux
-A level-1 auxiliary file: images.aux
+A level-1 auxiliary file: matrix.aux
+A level-1 auxiliary file: flowcharts.aux
+A level-1 auxiliary file: vectors.aux
+A level-1 auxiliary file: examples.aux
 Database file #1: myrefs.bib
-You've used 24 entries,
+You've used 25 entries,
             2773 wiz_defined-function locations,
-            763 strings with 9086 characters,
-and the built_in function-call counts, 8153 in all, are:
-= -- 745
-> -- 313
-< -- 23
-+ -- 119
-- -- 93
-* -- 493
-:= -- 1305
-add.period$ -- 104
-call.type$ -- 24
-change.case$ -- 100
-chr.to.int$ -- 22
-cite$ -- 48
-duplicate$ -- 440
-empty$ -- 762
-format.name$ -- 123
-if$ -- 1715
+            774 strings with 9365 characters,
+and the built_in function-call counts, 8461 in all, are:
+= -- 773
+> -- 323
+< -- 24
++ -- 123
+- -- 96
+* -- 510
+:= -- 1352
+add.period$ -- 108
+call.type$ -- 25
+change.case$ -- 104
+chr.to.int$ -- 23
+cite$ -- 50
+duplicate$ -- 455
+empty$ -- 794
+format.name$ -- 127
+if$ -- 1781
 int.to.chr$ -- 3
 int.to.str$ -- 1
 missing$ -- 20
-newline$ -- 160
-num.names$ -- 96
-pop$ -- 234
+newline$ -- 166
+num.names$ -- 100
+pop$ -- 246
 preamble$ -- 1
-purify$ -- 79
+purify$ -- 82
 quote$ -- 0
-skip$ -- 320
+skip$ -- 332
 stack$ -- 0
-substring$ -- 80
-swap$ -- 48
+substring$ -- 82
+swap$ -- 50
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 244
+type$ -- 255
 warning$ -- 0
-while$ -- 75
+while$ -- 78
 width$ -- 0
-write$ -- 362
+write$ -- 376

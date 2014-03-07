@@ -1,4 +1,4 @@
-\begin{thebibliography}{24}
+\begin{thebibliography}{25}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -96,6 +96,14 @@ CI~Plus LLP.
 \newblock URL
   \url{http://www.ci\-plus.com/data/ci\-plus\_overview\_v2011\-11\-11.pdf}.
 \newblock Accessed: 4 March 2014.
+
+\bibitem[NIST(2001)]{AES:2001}
+NIST.
+\newblock Specification for the advanced encryption standard (aes), November
+  2001.
+\newblock URL
+  \url{http://csrc.nist.gov/publications/fips/fips197/fips\-197.pdf}.
+\newblock Accessed: 17 Feb 2014. Looks like shit but wth.
 
 \bibitem[Schneier and Fergusson(2003)]{Schneier:2003}
 Bruce Schneier and Niels Fergusson.
