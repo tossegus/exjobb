@@ -1,13 +1,16 @@
 \chapter{Test vectors}
 
-Test vector taken from \citet[pp. 35--36]{AES:2001} \\
+Test vector taken from \citet[pp. 35--36]{AES:2001}. \\
 AES-128 (Nk=4, Nr=10) \\
-PLAINTEXT: 00112233445566778899aabbccddeeff \\
-KEY: 000102030405060708090a0b0c0d0e0f \\
+\begin{tabbing}
+  \hspace*{3cm}\=\hspace*{3cm}\= \kill
+  PLAINTEXT: \> 00112233445566778899AABBCCDDEEFF \\
+  KEY: \> 000102030405060708090A0B0C0D0E0F \\
+\end{tabbing}
 
 
 \begin{tabbing}
-  \hspace*{4cm}\=\hspace*{3cm}\= \kill
+  \hspace*{3cm}\=\hspace*{3cm}\= \kill
   CIPHER (ENCRYPT): \\
   round[0].input \> 00112233445566778899AABBCCDDEEFF \\
   round[0].k\_sch \> 000102030405060708090A0B0C0D0E0F \\
