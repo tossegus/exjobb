@@ -94,7 +94,7 @@ CI~Plus LLP.
 \newblock Ci plus overview.
 \newblock \emph{Common Interface Plus}, November 2011.
 \newblock URL
-  \url{http://www.ci\-plus.com/data/ci\-plus\_overview\_v2011\-11\-11.pdf}.
+  \url{http://www.ci-plus.com/data/ci-plus\_overview\_v2011-11-11.pdf}.
 \newblock Accessed: 4 March 2014.
 
 \bibitem[NIST(2001)]{AES:2001}
@@ -102,8 +102,8 @@ NIST.
 \newblock Specification for the advanced encryption standard (aes), November
   2001.
 \newblock URL
-  \url{http://csrc.nist.gov/publications/fips/fips197/fips\-197.pdf}.
-\newblock Accessed: 17 Feb 2014. Looks like shit but wth.
+  \url{http://csrc.nist.gov/publications/fips/fips197/fips-197.pdf}.
+\newblock Accessed: 17 Feb 2014.
 
 \bibitem[Schneier and Fergusson(2003)]{Schneier:2003}
 Bruce Schneier and Niels Fergusson.
@@ -114,7 +114,7 @@ Bruce Schneier and Niels Fergusson.
 G.J. Schrijen.
 \newblock Use case: Control word protection, May 2011.
 \newblock URL
-  \url{http://www.hisinitiative.org/\_lib/img/Intrinsic\-ID\_CWProtection\_May\_25.pdf}.
+  \url{http://www.hisinitiative.org/\_lib/img/Intrinsic-ID\_CWProtection\_May\_25.pdf}.
 \newblock Accessed: 18 Feb, 2014.
 
 \bibitem[Shannon(1949)]{Shannon:1949}

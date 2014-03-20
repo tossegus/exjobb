@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.1.29)  10 MAR 2014 08:26
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.1.29)  20 MAR 2014 11:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2672,18 +2672,6 @@ ter-face Plus\T1/jkpk/m/n/10 , Novem-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--99
-\T1/jkpk/m/n/10 ber 2011.  URL []$\T1/pcr/m/n/10 http : / / www . ci \ discreti
-onary{-[]}{}{}plus .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 99--99
-\T1/pcr/m/n/10 com / data / ci \ discretionary{-[]}{}{}plus _ overview _ v2011 
-\
- []
-
-
 Underfull \hbox (badness 2903) in paragraph at lines 119--119
 []\T1/jkpk/m/n/10 G.J. Schri-jen.  Use case: Con-trol word pro-tec-tion, May 20
 11.  URL
@@ -2692,13 +2680,7 @@ Underfull \hbox (badness 2903) in paragraph at lines 119--119
 
 Underfull \hbox (badness 10000) in paragraph at lines 119--119
 []$\T1/pcr/m/n/10 http : / / www . hisinitiative . org / _lib / img / Intrinsic
- \
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 119--119
-\T1/pcr/m/n/10 discretionary{-[]}{}{}ID _ CWProtection _ May _ 25 . pdf$[]\T1/j
-kpk/m/n/10 .  Ac-cessed:
+-[]ID _
  []
 
 
@@ -2747,7 +2729,7 @@ onomy .
 No file main.ind.
 [45] [46
 
-] <fig/LinkUniv_staende_pms.pdf, id=992, 260.975pt x 172.645pt>
+] <fig/LinkUniv_staende_pms.pdf, id=993, 260.975pt x 172.645pt>
 File: fig/LinkUniv_staende_pms.pdf Graphic file (type pdf)
 
 <use fig/LinkUniv_staende_pms.pdf>
@@ -2800,10 +2782,10 @@ texlive/texmf-dist/fonts/type1/public/kpfonts/jkpsya.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 helvetic/uhvr8a.pfb>
-Output written on main.pdf (59 pages, 614941 bytes).
+Output written on main.pdf (59 pages, 614602 bytes).
 PDF statistics:
- 1099 PDF objects out of 1200 (max. 8388607)
- 975 compressed objects within 10 object streams
+ 1100 PDF objects out of 1200 (max. 8388607)
+ 976 compressed objects within 10 object streams
  185 named destinations out of 1000 (max. 500000)
  19029 words of extra memory for PDF output out of 20736 (max. 10000000)
 

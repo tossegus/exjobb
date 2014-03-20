@@ -16,7 +16,7 @@ A level-1 auxiliary file: examples.aux
 Database file #1: myrefs.bib
 You've used 25 entries,
             2773 wiz_defined-function locations,
-            774 strings with 9365 characters,
+            774 strings with 9335 characters,
 and the built_in function-call counts, 8461 in all, are:
 = -- 773
 > -- 323
