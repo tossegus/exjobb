@@ -126,19 +126,15 @@
   Url                      = {http://www.angelfire.com/biz7/atleast/mix\_columns.pdf}
 }
 
-@InProceedings{WeiLi:2007,
-  Title                    = {Security analysis of dvb common scrambling algorithm},
-  Author                   = {Li, Wei},
-  Booktitle                = {Data, Privacy, and E-Commerce, 2007. ISDPE 2007. The First International Symposium on},
-  Year                     = {2007},
-  Note                     = {Accessed: 12 Feb 2014},
-  Organization             = {IEEE},
-  Pages                    = {271--273},
-  Publisher                = {IEEE Xplore},
+@Misc{WeiLi:2007,
+  Title                    = {Security Analysis of DVB Common Scrambling Algorithm},
 
-  Owner                    = {gustaf},
+  Author                   = {Wei Li and Dawu Gu},
+  Note                     = {Accessed: 12 Feb 2014},
+  Year                     = {2007},
+
+  Publisher                = {IEEE Xplore},
   Reference                = {First International Symposium on Data, Privacy and E-Commerce},
-  Timestamp                = {2014.03.21},
   Url                      = {http://ieeexplore.ieee.org.lt.ltag.bibl.liu.se/stamp/stamp.jsp?tp=&arnumber=4402690}
 }
 
@@ -216,17 +212,13 @@
   Subtitle                 = {The Science of Information Integrity}
 }
 
-@InProceedings{Simpson:2009,
-  Title                    = {Improved cryptanalysis of the common scrambling algorithm stream cipher},
-  Author                   = {Simpson, Leonie and Henricksen, Matt and Yap, Wun-She},
-  Booktitle                = {Information Security and Privacy},
-  Year                     = {2009},
-  Note                     = {Accessed: 12 Feb 2014.},
-  Organization             = {Springer},
-  Pages                    = {108--121},
+@Misc{Simpson:2009,
+  Title                    = {Improved Cryptanalysis of the Common Scrambling Algorithm Stream Cipher},
 
-  Owner                    = {gustaf},
-  Timestamp                = {2014.03.21},
+  Author                   = {Leonie R. Simpson and Matthew Hendricksen and Wun-She Yap},
+  Note                     = {Accessed: 12 Feb 2014. VET INTE OM DEN ÄR VÄRD ATT HA MED FÖR 1 SIFFRA},
+  Year                     = {2009},
+
   Url                      = {http://eprints.qut.edu.au/27578/1/c27578.pdf}
 }
 
@@ -240,17 +232,15 @@
   Page                     = {73--100?}
 }
 
-@InCollection{Breaking:2012,
+@Article{Breaking:2012,
   Title                    = {Breaking DVB-CSA},
-  Author                   = {Tews, Erik and W{\"a}lde, Julian and Weiner, Michael},
-  Booktitle                = {Research in Cryptology},
-  Publisher                = {Springer},
+  Author                   = {Erik Tews and Julian Wälde and Michael Weiner},
+  Journal                  = {http://hgpu.org/?p=6038},
   Year                     = {2012},
   Note                     = {Accessed: 3 Feb 2014},
-  Pages                    = {45--61},
-  Journal                  = {http://hgpu.org/?p=6038},
-  Owner                    = {gustaf},
-  Timestamp                = {2014.03.21},
+  Pages                    = {45 -- 61},
+
+  Book                     = {Research in Cryptology},
   Url                      = {http://link.springer.com.lt.ltag.bibl.liu.se/chapter/10.1007\%2F978-3-642-34159-5\_4\#page-14}
 }
 
@@ -276,18 +266,14 @@
   Url                      = {http://biblion.epfl.ch/EPFL/theses/2008/4040/EPFL\_TH4040.pdf}
 }
 
-@InProceedings{DVBAnalysis:2006,
+@Misc{DVBAnalysis:2006,
   Title                    = {Analysis of the DVB Common Scrambling Algorithm},
-  Author                   = {Weinmann, Ralf-Philipp and Wirt, Kai},
-  Booktitle                = {Communications and Multimedia Security},
-  Year                     = {2006},
+
+  Author                   = {Ralf-Philipp Weimann and Kai Wirt},
   Month                    = {October},
   Note                     = {Accessed: 31 Jan 2014},
-  Organization             = {Springer},
-  Pages                    = {195--207},
+  Year                     = {2006},
 
-  Owner                    = {gustaf},
-  Timestamp                = {2014.03.21},
   Url                      = {http//sec.cs.kent.ac.uk/cms2004/Program/CMS2004final/p5a1.pdf}
 }
 

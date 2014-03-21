@@ -67,14 +67,6 @@ Farncombe{\ }Consulting{\ }Group.
 \newblock URL \url{http://farncombe.eu/whitepapers/FTLCAWhitePaperTwo.pdf}.
 \newblock Accessed: 28 jan 2014.
 
-\bibitem[Fischer(2008)]{LFSR:2008}
-Simon Fischer.
-\newblock Analysis of lightweight stream ciphers.
-\newblock \emph{\'Ecole Polytechnique F\'ed\'erale De Lausanne}, 2008.
-\newblock URL
-  \url{http://biblion.epfl.ch/EPFL/theses/2008/4040/EPFL\_TH4040.pdf}.
-\newblock Accessed: 3 Feb 2014.
-
 \bibitem[Internet(2014)]{Angelfire}
 Mr~Internet.
 \newblock Mixcolumns step for aes.
@@ -82,9 +74,11 @@ Mr~Internet.
 \newblock URL \url{http://www.angelfire.com/biz7/atleast/mix\_columns.pdf}.
 \newblock Accessed: 28 jan 2014.
 
-\bibitem[Li and Gu(2007)]{WeiLi:2007}
-Wei Li and Dawu Gu.
-\newblock Security analysis of dvb common scrambling algorithm, 2007.
+\bibitem[Li(2007)]{WeiLi:2007}
+Wei Li.
+\newblock Security analysis of dvb common scrambling algorithm.
+\newblock In \emph{Data, Privacy, and E-Commerce, 2007. ISDPE 2007. The First
+  International Symposium on}, pages 271--273. IEEE, IEEE Xplore, 2007.
 \newblock URL
   \url{http://ieeexplore.ieee.org.lt.ltag.bibl.liu.se/stamp/stamp.jsp?tp=&arnumber=4402690}.
 \newblock Accessed: 12 Feb 2014.
@@ -118,10 +112,12 @@ G.J. Schrijen.
 \newblock Accessed: 18 Feb, 2014.
 
 \bibitem[Shannon(1949)]{Shannon:1949}
-Claude~Elwood Shannon.
-\newblock \emph{Communication Theory of Secrecy Systems*}.
-\newblock Bell System Technical Journal, 1949.
-\newblock URL \url{netlab.cs.ucla.edu/wiki/files/shannon1949.pdf}.
+C.~E. Shannon.
+\newblock Communication theory of secrecy systems*.
+\newblock \emph{Bell System Technical Journal}, 28\penalty0 (4), 1949.
+\newblock ISSN 1538-7305.
+\newblock \doi{10.1002/j.1538-7305.1949.tb00928.x}.
+\newblock URL \url{http://dx.doi.org/10.1002/j.1538-7305.1949.tb00928.x}.
 \newblock Accessed: 28 Jan 2014.
 
 \bibitem[Simmons(1992)]{Simmons:1992}
@@ -129,30 +125,41 @@ Gustavus~J. Simmons.
 \newblock \emph{Contemporary Cryptology}.
 \newblock IEEE Press, 1992.
 
-\bibitem[Simpson et~al.(2009)Simpson, Hendricksen, and Yap]{Simpson:2009}
-Leonie~R. Simpson, Matthew Hendricksen, and Wun-She Yap.
+\bibitem[Simpson et~al.(2009)Simpson, Henricksen, and Yap]{Simpson:2009}
+Leonie Simpson, Matt Henricksen, and Wun-She Yap.
 \newblock Improved cryptanalysis of the common scrambling algorithm stream
-  cipher, 2009.
+  cipher.
+\newblock In \emph{Information Security and Privacy}, pages 108--121. Springer,
+  2009.
 \newblock URL \url{http://eprints.qut.edu.au/27578/1/c27578.pdf}.
-\newblock Accessed: 12 Feb 2014. VET INTE OM DEN ÄR VÄRD ATT HA MED FÖR 1
-  SIFFRA.
+\newblock Accessed: 12 Feb 2014.
 
 \bibitem[Stinson(2006)]{Stinson:2006}
 Douglas~R. Stinson.
 \newblock \emph{Cryptography : Theory and practice}.
 \newblock Chapman \& Hall / CRC, third edition, 2006.
 
-\bibitem[Tews et~al.(2012)Tews, Wälde, and Weiner]{Breaking:2012}
-Erik Tews, Julian Wälde, and Michael Weiner.
+\bibitem[Tews et~al.(2012)Tews, W{\"a}lde, and Weiner]{Breaking:2012}
+Erik Tews, Julian W{\"a}lde, and Michael Weiner.
 \newblock Breaking dvb-csa.
-\newblock \emph{http://hgpu.org/?p=6038}, pages 45 -- 61, 2012.
+\newblock In \emph{Research in Cryptology}, pages 45--61. Springer, 2012.
 \newblock URL
   \url{http://link.springer.com.lt.ltag.bibl.liu.se/chapter/10.1007\%2F978-3-642-34159-5\_4\#page-14}.
 \newblock Accessed: 3 Feb 2014.
 
-\bibitem[Weimann and Wirt(2006)]{DVBAnalysis:2006}
-Ralf-Philipp Weimann and Kai Wirt.
-\newblock Analysis of the dvb common scrambling algorithm, October 2006.
+\bibitem[Vaudenay et~al.(2008)Vaudenay, Meier, Fischer, et~al.]{LFSR:2008}
+Serge Vaudenay, Willi Meier, Simon Fischer, et~al.
+\newblock Analysis of lightweight stream ciphers.
+\newblock \emph{\'Ecole Polytechnique F\'ed\'erale De Lausanne}, 2008.
+\newblock URL
+  \url{http://biblion.epfl.ch/EPFL/theses/2008/4040/EPFL\_TH4040.pdf}.
+\newblock Accessed: 3 Feb 2014.
+
+\bibitem[Weinmann and Wirt(2006)]{DVBAnalysis:2006}
+Ralf-Philipp Weinmann and Kai Wirt.
+\newblock Analysis of the dvb common scrambling algorithm.
+\newblock In \emph{Communications and Multimedia Security}, pages 195--207.
+  Springer, October 2006.
 \newblock URL
   \url{http//sec.cs.kent.ac.uk/cms2004/Program/CMS2004final/p5a1.pdf}.
 \newblock Accessed: 31 Jan 2014.
