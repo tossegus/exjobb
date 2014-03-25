@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.1.29)  21 MAR 2014 11:03
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.1.29)  25 MAR 2014 16:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2556,13 +2556,45 @@ BCmode.png>]
 ]
 Appendix C.
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--5
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 5--5
+[][][][] 
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.19 ...{array}{| c | c | c | c | c | c | c | c |}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.74   \end{array}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (38.94354pt too wide) in paragraph at lines 19--75
+ []$[]$ 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--81
 
  []
 
 [37]
 ! Extra }, or forgotten \endgroup.
-l.66 ...utput \> 69C4E0D86A7B0430D8CDB78070B4C55A}
+l.141 ...tput \> 69C4E0D86A7B0430D8CDB78070B4C55A}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2570,10 +2602,14 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-) [38]
+) [38] [39]
 \openout2 = `examples.aux'.
 
- (./examples.tex
+ (./examples.tex [40
+
+
+
+]
 Appendix D.
 ! Missing $ inserted.
 <inserted text> 
@@ -2628,11 +2664,7 @@ l.18
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-) [39
-
-
-
-] [40
+) [41] [42
 
 
 ] (./main.lof)
@@ -2643,7 +2675,7 @@ you left one out. Proceed, with fingers crossed.
 \tf@brf=\write7
 \openout7 = `main.brf'.
 
- [41] [42
+ [43] [44
 
 ]
 Underfull \hbox (badness 3838) in paragraph at lines 45--45
@@ -2675,7 +2707,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--53
 103199 / 103127 /
  []
 
-[43]
+[45]
 Underfull \hbox (badness 2653) in paragraph at lines 85--85
 []\T1/jkpk/m/n/10 Wei Li.  Se-cu-rity anal-y-sis of dvb com-mon scram-bling al-
 go-rithm.  In
@@ -2735,7 +2767,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 149--149
 r / 10 . 1007 %
  []
 
-[44]
+[46]
 Underfull \hbox (badness 10000) in paragraph at lines 173--173
 []\T1/jkpk/m/n/10 Unknown Wikipedia.  Cbc en-cryp-tion, 2014a.  URL []$\T1/pcr/
 m/n/10 http : / /
@@ -2761,9 +2793,9 @@ onomy .
 
 )
 No file main.ind.
-[45] [46
+[47] [48
 
-] <fig/LinkUniv_staende_pms.pdf, id=971, 260.975pt x 172.645pt>
+] <fig/LinkUniv_staende_pms.pdf, id=980, 260.975pt x 172.645pt>
 File: fig/LinkUniv_staende_pms.pdf Graphic file (type pdf)
 
 <use fig/LinkUniv_staende_pms.pdf>
@@ -2775,7 +2807,7 @@ Overfull \hbox (0.16193pt too wide) in paragraph at lines 64--64
 doc-u-ment in-tegrity, please
  []
 
-[47 <./fig/LinkUniv_staende_pms.pdf>]
+[49 <./fig/LinkUniv_staende_pms.pdf>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 64.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 64.
  (./main.aux (./notation.aux) (./cas.aux)
@@ -2784,15 +2816,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 64.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 64.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 64.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 7A56C8B67D3C427CDA8F76E3425F1BE4;4281.
+(rerunfilecheck)             Checksum: C6F115F4EC88964AB9194D85BB1E8B50;4281.
 Package rerunfilecheck Info: File `main.brf' has not changed.
-(rerunfilecheck)             Checksum: E972B55443F9A3423E25C55FAF164FE8;2879.
+(rerunfilecheck)             Checksum: BE063A7247D6AB4FF1C020E91CC012DD;2886.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 64.
  )
 (\end occurred when \ifx on line 20 was incomplete) 
 Here is how much of TeX's memory you used:
- 14632 strings out of 493307
- 209035 string characters out of 6139905
+ 14635 strings out of 493307
+ 209066 string characters out of 6139905
  366877 words of memory out of 5000000
  17394 multiletter control sequences out of 15000+600000
  225298 words of font info for 174 fonts, out of 8000000 for 9000
@@ -2816,10 +2848,10 @@ texlive/texmf-dist/fonts/type1/public/kpfonts/jkpsya.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 helvetic/uhvr8a.pfb>
-Output written on main.pdf (59 pages, 614351 bytes).
+Output written on main.pdf (61 pages, 621302 bytes).
 PDF statistics:
- 1078 PDF objects out of 1200 (max. 8388607)
- 960 compressed objects within 10 object streams
- 185 named destinations out of 1000 (max. 500000)
+ 1089 PDF objects out of 1200 (max. 8388607)
+ 969 compressed objects within 10 object streams
+ 188 named destinations out of 1000 (max. 500000)
  19029 words of extra memory for PDF output out of 20736 (max. 10000000)
 

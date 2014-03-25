@@ -69,10 +69,10 @@
 \contentsline {chapter}{\numberline {A}Matrixes}{29}{appendix.A}
 \contentsline {chapter}{\numberline {B}Illustrations}{33}{appendix.B}
 \contentsline {chapter}{\numberline {C}Test vectors}{37}{appendix.C}
-\contentsline {chapter}{\numberline {D}Examples}{39}{appendix.D}
-\contentsline {section}{\numberline {D.1}CBC-mode calculations}{39}{section.D.1}
-\contentsline {chapter}{List of Figures}{41}{section*.17}
-\contentsline {chapter}{Bibliography}{43}{appendix*.18}
+\contentsline {chapter}{\numberline {D}Examples}{41}{appendix.D}
+\contentsline {section}{\numberline {D.1}CBC-mode calculations}{41}{section.D.1}
+\contentsline {chapter}{List of Figures}{43}{section*.18}
+\contentsline {chapter}{Bibliography}{45}{appendix*.19}
 \select@language {swedish}
 \select@language {english}
 \select@language {english}
