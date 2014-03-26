@@ -1,92 +1,17 @@
 \chapter{Test vectors}
 
-\arraycolsep=1pt
-
-\Warning[Todo]{Fixa så det här blir fint}
-A.1 Expansion of a 128-bit Cipher Key
-This section contains the key expansion of the following cipher key:
-
-Cipher Key = 2b 7e 15 16 28 ae d2 a6 ab f7 15 88 09 cf 4f 3c
-
-for Nk = 4, which results in 
-w0 = 2b7e1516 
-w1 = 28aed2a6 
-w2 = abf71588 
-w3 = 09cf4f3ci
-
-\begin{figure}[h]
-  \centering
-  \begin{array}{| c | c | c | c | c | c | c | c |}
-    \hline
-    &  & After & After &  & After \oplus &  & w[i] = \\
-    i(dec) & temp & RotWord & SubWord & Rcon(i) & with Rcon & w[i-Nk] & temp 
-    \oplus w[i-Nk] \\ \hline
-    4 & 09cf4f3c & cf4f3c09 & 8a84eb01 & 01000000 & 8b84eb01 & 2b7e1516 & 
-    a0fafe17 \\ \hline
-    5 & a0fafe17 & & & & & 28aed2a6 & 88542cb1 \\ \hline
-    6 & 88542cb1 & & & & & abf71588 & 23a33939 \\ \hline
-    7 & 23a33939 & & & & & 09cf4f3c & 2a6c7605 \\ \hline
-    8 & 2a6c7605 & 6c76052a & 50386be5 & 02000000 & 52386be5 & a0fafe17 & 
-    f2c295f2 \\ \hline
-    9 & f2c295f2 & & & & & 88542cb1 & 7a96b943 \\ \hline
-    10 & 7a96b943 & & & & & 23a33939 & 5935807a \\ \hline
-    11 & 5935807a & & & & & 2a6c7605 & 7359f67f \\ \hline
-    12 & 7359f67f & 59f67f73 & cb42d28f & 04000000 & cf42d28f & f2c295f2 & 
-    3d80477d \\ \hline
-    13 & 3d80477d & & & & & 7a96b943 & 4716fe3e \\ \hline
-    14 & 4716fe3e & & & & & 5935807a & 1e237e44 \\ \hline
-    15 & 1e237e44 & & & & & 7359f67f & 6d7a883b \\ \hline
-    16 & 6d7a883b & 7a883b6d & dac4e23c & 08000000 & d2c4e23c & 3d80477d &
-    ef44a541 \\ \hline
-    17 & ef44a541 & & & & & 4716fe3e & a8525b7f \\ \hline
-    18 & a8525b7f & & & & & 1e237e44 & b671253b \\ \hline
-    19 & b671253b & & & & & 6d7a883b & db0bad00 \\ \hline
-    20 & db0bad00 & 0bad00db & 2b9563b9 & 10000000 & 3b9563b9 & ef44a541 & 
-    d4d1c6f8 \\ \hline
-    21 & d4d1c6f8 & & & & & a8525b7f & 7c839d87 \\ \hline
-    22 & 7c839d87 & & & & & b671253b & caf2b8bc \\ \hline
-    23 & caf2b8bc & & & & & db0bad00 & 11f915bc \\ \hline
-    24 & 11f915bc & f915bc11 & 99596582 & 20000000 & b9596582 & d4d1c6f8 & 
-    6d88a37a \\ \hline
-    25 & 6d88a37a & & & & & 7c839d87 & 110b3efd \\ \hline
-    26 & 110b3efd & & & & & caf2b8bc & dbf98641 \\ \hline
-    27 & dbf98641 & & & & & 11f915bc & ca0093fd \\ \hline
-    28 & ca0093fd & 0093fdca & 63dc5474 & 40000000 & 23dc5474 & 6d88a37a &
-    4e54f70e \\ \hline
-    29 & 4e54f70e & & & & & 110b3efd & 5f5fc9f3 \\ \hline
-    30 & 5f5fc9f3 & & & & & dbf98641 & 84a64fb2 \\ \hline
-    31 & 84a64fb2 & & & & & ca0093fd & 4ea6dc4f \\ \hline
-    32 & 4ea6dc4f & a6dc4f4e & 2486842f & 80000000 & a486842f & 4e54f70e & 
-    ead27321 \\ \hline
-    33 & ead27321 & & & & & 5f5fc9f3 & b58dbad2 \\ \hline
-    34 & b58dbad2 & & & & & 84a64fb2 & 312bf560 \\ \hline
-    35 & 312bf560 & & & & & 4ea6dc4f & 7f8d292f \\ \hline
-    36 & 7f8d292f & 8d292f7f & 5da515d2 & 1b000000 & 46a515d2 & ead27321 & 
-    ac7766f3 \\ \hline
-    37 & ac7766f3 & & & & & b58dbad2 & 19fadc21 \\ \hline
-    38 & 19fadc21 & & & & & 312bf560 & 28d12941 \\ \hline
-    39 & 28d12941 & & & & & 7f8d292f & 575c006e \\ \hline
-    40 & 575c006e & 5c006e57 & 4a639f5b & 36000000 & 7c639f5b & ac7766f3 &
-    d014f9a8 \\ \hline
-    41 & d014f9a8 & & & & & 19fadc21 & c9ee2589 \\ \hline
-    42 & c9ee2589 & & & & & 28d12941 & e13f0cc8 \\ \hline
-    43 & e13f0cc8 & & & & & 575c006e & b6630ca6 \\ \hline
-  \end{array}
-\end{figure}
-
-
-
 Test vector taken from \citet[pp. 35--36]{AES:2001}. \\
+This vector is run on a single aes-128 cipher. \\
 AES-128 (Nk=4, Nr=10) \\
 \begin{tabbing}
   \hspace*{3cm}\=\hspace*{3cm}\= \kill
-  PLAINTEXT: \> 00112233445566778899AABBCCDDEEFF \\
-  KEY: \> 000102030405060708090A0B0C0D0E0F \\
+  Plaintext: \> 00112233445566778899AABBCCDDEEFF \\
+  Key: \> 000102030405060708090A0B0C0D0E0F \\
 \end{tabbing}
 
 \begin{tabbing}
   \hspace*{3cm}\=\hspace*{3cm}\= \kill
-  CIPHER (ENCRYPT): \\
+  Cipher (Encrypt): \\
   round[0].input \> 00112233445566778899AABBCCDDEEFF \\
   round[0].k\_sch \> 000102030405060708090A0B0C0D0E0F \\
   round[1].start \> 00102030405060708090A0B0C0D0E0F0 \\
@@ -140,3 +65,570 @@ AES-128 (Nk=4, Nr=10) \\
   round[10].k\_sch \> 13111D7FE3944A17F307A78B4D2B30C5 \\
   round[10].output \> 69C4E0D86A7B0430D8CDB78070B4C55A}
 \end{tabbing}
+
+Keyexpansion based on test vector taken from \citet[pp. 35--36]{AES:2001}. \\
+Key = 2B 7E 15 16 28 AE D2 A6 AB F7 15 88 09 CF 4F 3C
+
+\begin{figure}[h]
+  \centering
+  \begin{array}{| c | c | c | c | c | c | c | c |}
+    \hline
+    &  & After & After &  & After \oplus &  & w[i] = temp\\
+    i(dec) & temp & RotWord & SubWord & Rcon(i) & with Rcon & w[i-Nk] &  
+    \oplus w[i-Nk] \\ \hline
+    4 & \text{09cf4f3c} & \text{cf4f3c09} & \text{8a84eb01} & \text{01000000} 
+    & \text{8b84eb01} & \text{2b7e1516} & \text{a0fafe17} \\ \hline
+    5 & \text{a0fafe17} & & & & & \text{28aed2a6} & \text{88542cb1} \\ \hline
+    6 & \text{88542cb1} & & & & & \text{abf71588} & \text{23a33939} \\ \hline
+    7 & \text{23a33939} & & & & & \text{09cf4f3c} & \text{2a6c7605} \\ \hline
+    8 & \text{2a6c7605} & \text{6c76052a} & \text{50386be5} & \text{02000000} 
+    & \text{52386be5} & \text{a0fafe17} & \text{f2c295f2} \\ \hline
+    9 & \text{f2c295f2} & & & & & \text{88542cb1} & \text{7a96b943} \\ \hline
+    10 & \text{7a96b943} & & & & & \text{23a33939} & \text{5935807a} \\ \hline
+    11 & \text{5935807a} & & & & & \text{2a6c7605} & \text{7359f67f} \\ \hline
+    12 & \text{7359f67f} & \text{59f67f73} & \text{cb42d28f} & \text{04000000} 
+    & \text{cf42d28f} & \text{f2c295f2} & \text{3d80477d} \\ \hline
+    13 & \text{3d80477d} & & & & & \text{7a96b943} & \text{4716fe3e} \\ \hline
+    14 & \text{4716fe3e} & & & & & \text{5935807a} & \text{1e237e44} \\ \hline
+    15 & \text{1e237e44} & & & & & \text{7359f67f} & \text{6d7a883b} \\ \hline
+    16 & \text{6d7a883b} & \text{7a883b6d} & \text{dac4e23c} & \text{08000000} 
+    & \text{d2c4e23c} & \text{3d80477d} & \text{ef44a541} \\ \hline
+    17 & \text{ef44a541} & & & & & \text{4716fe3e} & \text{a8525b7f} \\ \hline
+    18 & \text{a8525b7f} & & & & & \text{1e237e44} & \text{b671253b} \\ \hline
+    19 & \text{b671253b} & & & & & \text{6d7a883b} & \text{db0bad00} \\ \hline
+    20 & \text{db0bad00} & \text{0bad00db} & \text{2b9563b9} & \text{10000000}
+    & \text{3b9563b9} & \text{ef44a541} & \text{d4d1c6f8} \\ \hline
+    21 & \text{d4d1c6f8} & & & & & \text{a8525b7f} & \text{7c839d87} \\ \hline
+    22 & \text{7c839d87} & & & & & \text{b671253b} & \text{caf2b8bc} \\ \hline
+    23 & \text{caf2b8bc} & & & & & \text{db0bad00} & \text{11f915bc} \\ \hline
+    24 & \text{11f915bc} & \text{f915bc11} & \text{99596582} & \text{20000000}
+    & \text{b9596582} & \text{d4d1c6f8} & \text{6d88a37a} \\ \hline
+    25 & \text{6d88a37a} & & & & & \text{7c839d87} & \text{110b3efd} \\ \hline
+    26 & \text{110b3efd} & & & & & \text{caf2b8bc} & \text{dbf98641} \\ \hline
+    27 & \text{dbf98641} & & & & & \text{11f915bc} & \text{ca0093fd} \\ \hline
+    28 & \text{ca0093fd} & \text{0093fdca} & \text{63dc5474} & \text{40000000}
+    & \text{23dc5474} & \text{6d88a37a} & \text{4e54f70e} \\ \hline
+    29 & \text{4e54f70e} & & & & & \text{110b3efd} & \text{5f5fc9f3} \\ \hline
+    30 & \text{5f5fc9f3} & & & & & \text{dbf98641} & \text{84a64fb2} \\ \hline
+    31 & \text{84a64fb2} & & & & & \text{ca0093fd} & \text{4ea6dc4f} \\ \hline
+    32 & \text{4ea6dc4f} & \text{a6dc4f4e} & \text{2486842f} & \text{80000000}
+    & \text{a486842f} & \text{4e54f70e} & \text{ead27321} \\ \hline
+    33 & \text{ead27321} & & & & & \text{5f5fc9f3} & \text{b58dbad2} \\ \hline
+    34 & \text{b58dbad2} & & & & & \text{84a64fb2} & \text{312bf560} \\ \hline
+    35 & \text{312bf560} & & & & & \text{4ea6dc4f} & \text{7f8d292f} \\ \hline
+    36 & \text{7f8d292f} & \text{8d292f7f} & \text{5da515d2} & \text{1b000000}
+    & \text{46a515d2} & \text{ead27321} & \text{ac7766f3} \\ \hline
+    37 & \text{ac7766f3} & & & & & \text{b58dbad2} & \text{19fadc21} \\ \hline
+    38 & \text{19fadc21} & & & & & \text{312bf560} & \text{28d12941} \\ \hline
+    39 & \text{28d12941} & & & & & \text{7f8d292f} & \text{575c006e} \\ \hline
+    40 & \text{575c006e} & \text{5c006e57} & \text{4a639f5b} & \text{36000000}
+    & \text{7c639f5b} & \text{ac7766f3} & \text{d014f9a8} \\ \hline
+    41 & \text{d014f9a8} & & & & & \text{19fadc21} & \text{c9ee2589} \\ \hline
+    42 & \text{c9ee2589} & & & & & \text{28d12941} & \text{e13f0cc8} \\ \hline
+    43 & \text{e13f0cc8} & & & & & \text{575c006e} & \text{b6630ca6} \\ \hline
+  \end{array}
+\end{figure}
+
+Test vector taken from \citet[pp. 35--36]{AES:2001}. \\
+This vector is run on a single aes-128 cipher.
+
+\begin{tabbing}
+  \hspace*{3cm}\=\hspace*{3cm}\= \kill
+  Plaintext: \> 32 43 f6 a8 88 5a 30 8d 31 31 98 a2 e0 32 07 34 \\
+  Key: \> 2B 7E 15 16 28 AE D2 A6 AB F7 15 88 09 CF 4F 3C \\
+\end{tabbing}
+
+\begin{figure}
+  \begin{small}
+    \begin{array}{l c c c c c c}
+      Round  & Start of & After & After & After &  & Round Key \\
+      Number & Round & SubBytes & ShiftRows & MixColumns & & Value \\
+      input & 
+      \begin{array}{|c|c|c|c|}
+        \hline
+        32 & 88 & 31 & e0 \\ \hline
+        43 & 5a & 31 & 37 \\ \hline
+        f6 & 30 & 98 & 07 \\ \hline
+        a8 & 8d & a2 & 34 \\ \hline
+      \end{array} &
+      \begin{array}{|c|c|c|c|}
+        \hline
+        &  &  &  \\ \hline
+        &  &  &  \\ \hline
+        &  &  &  \\ \hline
+        &  &  &  \\ \hline
+      \end{array} &
+      \begin{array}{|c|c|c|c|}
+        \hline
+        &  &  &  \\ \hline
+        &  &  &  \\ \hline
+        &  &  &  \\ \hline
+        &  &  &  \\ \hline
+      \end{array} &
+      \begin{array}{|c|c|c|c|}
+        \hline
+        &  &  &  \\ \hline
+        &  &  &  \\ \hline
+        &  &  &  \\ \hline
+        &  &  &  \\ \hline
+      \end{array} &
+      \oplus &
+      \begin{array}{|c|c|c|c|}
+        \hline
+        2b & 28 & ab & 09 \\ \hline
+        7e & ae & f7 & cf \\ \hline
+        15 & d2 & 15 & 4f \\ \hline
+        16 & a6 & 88 & 3c \\ \hline
+      \end{array} \\ \\
+      1 & 
+      \begin{array}{|c|c|c|c|}
+        \hline
+        19 & a0 & 9a & e9 \\ \hline
+        3d & f4 & c6 & f8 \\ \hline
+        e3 & e2 & 8d & 48 \\ \hline
+        be & 2b & 2a & 08 \\ \hline
+      \end{array} &
+      \begin{array}{|c|c|c|c|}
+        \hline
+        d4 & e0 & b8 & 1e \\ \hline
+        27 & bf & b4 & 41 \\ \hline
+        11 & 98 & 5d & 52 \\ \hline
+        ae & f1 & e5 & 30 \\ \hline
+      \end{array} &
+      \begin{array}{|c|c|c|c|}
+        \hline
+        d4 & e0 & b8 & 1e \\ \hline
+        bf & b4 & 41 & 27 \\ \hline
+        5d & 52 & 11 & 98 \\ \hline
+        30 & ae & f1 & e5 \\ \hline
+      \end{array} &
+      \begin{array}{|c|c|c|c|}
+        \hline
+        04 & e0 & 48 & 28 \\ \hline
+        66 & cb & f8 & 06 \\ \hline
+        81 & 19 & d3 & 26 \\ \hline
+        e5 & 9a & 7a & 4c \\ \hline
+      \end{array} &
+      \oplus &
+      \begin{array}{|c|c|c|c|}
+        \hline
+        a0 & 88 & 23 & 2a \\ \hline
+        fa & 54 & a3 & 6c \\ \hline
+        fe & 2c & 39 & 76 \\ \hline
+        17 & b1 & 39 & 05 \\ \hline
+      \end{array}
+    \end{array}
+  \end{small}
+\end{figure}
+
+\begin{figure}
+  \begin{small}
+    \begin{array}{l c c c c c c}
+      2 & 
+      \begin{array}{|c|c|c|c|}
+        \hline
+        a4 & 68 & 6b & 02 \\ \hline
+        9c & 9f & 5b & 6a \\ \hline
+        7f & 35 & ea & 50 \\ \hline
+        f2 & 2b & 43 & 49 \\ \hline
+      \end{array} &
+      \begin{array}{|c|c|c|c|}
+        \hline
+        49 & 45 & 7f & 77 \\ \hline
+        de & db & 39 & 02 \\ \hline
+        d2 & 96 & 87 & 53 \\ \hline
+        89 & f1 & 1a & 3b \\ \hline
+      \end{array} &
+      \begin{array}{|c|c|c|c|}
+        \hline
+        49 & 45 & 7f & 77 \\ \hline
+        db & 39 & 02 & de \\ \hline
+        87 & 53 & d2 & 96 \\ \hline
+        3b & 89 & f1 & 1a \\ \hline
+      \end{array} &
+      \begin{array}{|c|c|c|c|}
+        \hline
+        58 & 1b & db & 1b \\ \hline
+        4d & 4b & e7 & 6b \\ \hline
+        ca & 5a & ca & b0 \\ \hline
+        f1 & ac & a8 & e5 \\ \hline
+      \end{array} &
+      \oplus &
+      \begin{array}{|c|c|c|c|}
+        \hline
+        f2 & 7a & 59 & 73 \\ \hline
+        c2 & 96 & 35 & 59 \\ \hline
+        95 & b9 & 80 & f6 \\ \hline
+        f2 & 43 & 7a & 7f \\ \hline
+      \end{array}
+    \end{array}
+  \end{small}
+\end{figure}
+
+\begin{figure}
+  \begin{small}
+    \begin{array}{l c c c c c c}
+      3 & 
+      \begin{array}{|c|c|c|c|}
+        \hline
+        aa & 61 & 82 & 68 \\ \hline
+        8f & dd & d2 & 32 \\ \hline
+        5f & e3 & 4a & 46 \\ \hline
+        03 & ef & d2 & 9a \\ \hline
+      \end{array} &
+      \begin{array}{|c|c|c|c|}
+        \hline
+        ac & ef & 13 & 45 \\ \hline
+        73 & c1 & b5 & 23 \\ \hline
+        cf & 11 & d6 & 5a \\ \hline
+        7b & df & b5 & b8 \\ \hline
+      \end{array} &
+      \begin{array}{|c|c|c|c|}
+        \hline
+        ac & ef & 13 & 45 \\ \hline
+        c1 & b5 & 23 & 73 \\ \hline
+        d6 & 5a & cf & 11 \\ \hline
+        b8 & 7b & df & b5 \\ \hline
+      \end{array} &
+      \begin{array}{|c|c|c|c|}
+        \hline
+        75 & 20 & 53 & bb \\ \hline
+        ec & 0b & c0 & 25 \\ \hline
+        09 & 63 & cf & d0 \\ \hline
+        93 & 33 & 7c & dc \\ \hline
+      \end{array} &
+      \oplus &
+      \begin{array}{|c|c|c|c|}
+        \hline
+        3d & 47 & 1e & 6d \\ \hline
+        80 & 16 & 23 & 7a \\ \hline
+        47 & fe & 7e & 88 \\ \hline
+        7d & 3e & 44 & 3b \\ \hline
+      \end{array}
+    \end{array}
+  \end{small}
+\end{figure}
+
+\begin{figure}
+  \begin{small}
+    \begin{array}{l c c c c c c}
+      4 & 
+      \begin{array}{|c|c|c|c|}
+        \hline
+        48 & 67 & 4d & d6 \\ \hline
+        6c & 1d & e3 & 5f \\ \hline
+        4e & 9d & b1 & 58 \\ \hline
+        ee & 0d & 38 & e7 \\ \hline
+      \end{array} &
+      \begin{array}{|c|c|c|c|}
+        \hline
+        52 & 85 & e3 & f6 \\ \hline
+        50 & a4 & 11 & cf \\ \hline
+        2f & 5e & c8 & 6a \\ \hline
+        28 & d7 & 07 & 94 \\ \hline
+      \end{array} &
+      \begin{array}{|c|c|c|c|}
+        \hline
+        52 & 85 & e3 & f6 \\ \hline
+        a4 & 11 & cf & 50 \\ \hline
+        c8 & 6a & 2f & 5e \\ \hline
+        94 & 28 & d7 & 07 \\ \hline
+      \end{array} &
+      \begin{array}{|c|c|c|c|}
+        \hline
+        0f & 60 & 6f & 5e \\ \hline
+        d6 & 31 & c0 & b3 \\ \hline
+        da & 38 & 10 & 13 \\ \hline
+        a9 & bf & 6b & 01 \\ \hline
+      \end{array} &
+      \oplus &
+      \begin{array}{|c|c|c|c|}
+        \hline
+        ef & a8 & b6 & db \\ \hline
+        44 & 52 & 71 & 0b \\ \hline
+        a5 & 5b & 25 & ad \\ \hline
+        4a & 7f & 3b & 00 \\ \hline
+      \end{array}
+    \end{array}
+  \end{small}
+\end{figure}
+
+\begin{figure}
+  \begin{small}
+    \begin{array}{l c c c c c c}
+      5 & 
+      \begin{array}{|c|c|c|c|}
+        \hline
+        e0 & c8 & d9 & 85 \\ \hline
+        92 & 63 & b1 & b8 \\ \hline
+        7f & 63 & 35 & be \\ \hline
+        e8 & c0 & 50 & 01 \\ \hline
+      \end{array} &
+      \begin{array}{|c|c|c|c|}
+        \hline
+        e1 & e8 & 35 & 97 \\ \hline
+        4f & fb & c8 & 6c \\ \hline
+        d2 & fb & 96 & ae \\ \hline
+        9b & ba & 53 & 7c \\ \hline
+      \end{array} &
+      \begin{array}{|c|c|c|c|}
+        \hline
+        e1 & e8 & 35 & 97 \\ \hline
+        fb & c8 & 6c & 4f \\ \hline
+        96 & ae & d2 & fb \\ \hline
+        7c & 9b & ba & 53 \\ \hline
+      \end{array} &
+      \begin{array}{|c|c|c|c|}
+        \hline
+        25 & bd & b6 & 4c \\ \hline
+        d1 & 11 & 3a & 4c \\ \hline
+        a9 & d1 & 33 & c0 \\ \hline
+        ad & 68 & 8e & b0 \\ \hline
+      \end{array} &
+      \oplus &
+      \begin{array}{|c|c|c|c|}
+        \hline
+        d4 & 7c & ca & 11 \\ \hline
+        d1 & 8d & f2 & f9 \\ \hline
+        c6 & 9d & b8 & 15 \\ \hline
+        f8 & 87 & bc & bc \\ \hline
+      \end{array}
+    \end{array}
+  \end{small}
+\end{figure}
+
+\begin{figure}
+  \begin{small}
+    \begin{array}{l c c c c c c}
+      6 & 
+      \begin{array}{|c|c|c|c|}
+        \hline
+        f1 & c1 & 7c & 5d \\ \hline
+        00 & 92 & c8 & b5 \\ \hline
+        6f & 4c & 8b & d5 \\ \hline
+        55 & ef & 32 & 0c \\ \hline
+      \end{array} &
+      \begin{array}{|c|c|c|c|}
+        \hline
+        a1 & 78 & 10 & 4c \\ \hline
+        63 & 4f & e8 & d5 \\ \hline
+        a8 & 29 & 3d & 03 \\ \hline
+        fc & df & 23 & fe \\ \hline
+      \end{array} &
+      \begin{array}{|c|c|c|c|}
+        \hline
+        a1 & 78 & 10 & 4c \\ \hline
+        4f & e8 & d5 & 63 \\ \hline
+        3d & 03 & a8 & 29 \\ \hline
+        fe & fc & df & 23 \\ \hline
+      \end{array} &
+      \begin{array}{|c|c|c|c|}
+        \hline
+        4b & 2c & 33 & 37 \\ \hline
+        86 & 4a & 9d & d2 \\ \hline
+        8d & 89 & f4 & 18 \\ \hline
+        6d & 80 & e8 & d8 \\ \hline
+      \end{array} &
+      \oplus &
+      \begin{array}{|c|c|c|c|}
+        \hline
+        6d & 11 & db & ca \\ \hline
+        88 & 0b & f9 & 00 \\ \hline
+        a3 & 3e & 86 & 93 \\ \hline
+        7a & fd & 41 & fd \\ \hline
+      \end{array}
+    \end{array}
+  \end{small}
+\end{figure}
+
+\begin{figure}
+  \begin{small}
+    \begin{array}{l c c c c c c}
+      7 & 
+      \begin{array}{|c|c|c|c|}
+        \hline
+        26 & 3d & e8 & fd \\ \hline
+        0e & 41 & 64 & d2 \\ \hline
+        2e & b7 & 72 & 8b \\ \hline
+        17 & 7d & a9 & 25 \\ \hline
+      \end{array} &
+      \begin{array}{|c|c|c|c|}
+        \hline
+        f7 & 27 & 9b & 54 \\ \hline
+        ab & 83 & 43 & b5 \\ \hline
+        31 & a9 & 40 & 3d \\ \hline
+        f0 & ff & d3 & 3f \\ \hline
+      \end{array} &
+      \begin{array}{|c|c|c|c|}
+        \hline
+        f7 & 27 & 9b & 54 \\ \hline
+        83 & 43 & b5 & ab \\ \hline
+        40 & 3d & 31 & a9 \\ \hline
+        3f & f0 & ff & d3 \\ \hline
+      \end{array} &
+      \begin{array}{|c|c|c|c|}
+        \hline
+        14 & 46 & 27 & 34 \\ \hline
+        15 & 16 & 46 & 2a \\ \hline
+        b5 & 15 & 56 & d8 \\ \hline
+        bf & ec & d7 & 43 \\ \hline
+      \end{array} &
+      \oplus &
+      \begin{array}{|c|c|c|c|}
+        \hline
+        4e & 5f & 84 & 4e \\ \hline
+        54 & 5f & a6 & a6 \\ \hline
+        f7 & c9 & 4f & dc \\ \hline
+        0e & f3 & b2 & 4f \\ \hline
+      \end{array}
+    \end{array}
+  \end{small}
+\end{figure}
+
+\begin{figure}
+  \begin{small}
+    \begin{array}{l c c c c c c}
+      8 & 
+      \begin{array}{|c|c|c|c|}
+        \hline
+        5a & 19 & a3 & 7a \\ \hline
+        41 & 49 & e0 & 8c \\ \hline
+        42 & dc & 19 & 04 \\ \hline
+        b1 & 1f & 65 & 0c \\ \hline
+      \end{array} &
+      \begin{array}{|c|c|c|c|}
+        \hline
+        be & d4 & 0a & da \\ \hline
+        83 & 3b & e1 & 64 \\ \hline
+        2c & 86 & d4 & f2 \\ \hline
+        c8 & c0 & 4d & fe \\ \hline
+      \end{array} &
+      \begin{array}{|c|c|c|c|}
+        \hline
+        be & d4 & 0a & da \\ \hline
+        3b & e1 & 64 & 83 \\ \hline
+        d4 & f2 & 2c & 86 \\ \hline
+        fe & c8 & c0 & 4d \\ \hline
+      \end{array} &
+      \begin{array}{|c|c|c|c|}
+        \hline
+        00 & b1 & 54 & fa \\ \hline
+        51 & c8 & 76 & 1b \\ \hline
+        2f & 89 & 6d & 99 \\ \hline
+        d1 & ff & cd & ea \\ \hline
+      \end{array} &
+      \oplus &
+      \begin{array}{|c|c|c|c|}
+        \hline
+        ea & b5 & 31 & 7f \\ \hline
+        d2 & 8d & 2b & 8d \\ \hline
+        73 & ba & f5 & 29 \\ \hline
+        21 & d2 & 60 & 2f \\ \hline
+      \end{array}
+    \end{array}
+  \end{small}
+\end{figure}
+
+\begin{figure}
+  \begin{small}
+    \begin{array}{l c c c c c c}
+      9 & 
+      \begin{array}{|c|c|c|c|}
+        \hline
+        ea & 04 & 65 & 85 \\ \hline
+        83 & 45 & 5d & 96 \\ \hline
+        5c & 33 & 98 & b0 \\ \hline
+        f0 & 2d & ad & c5 \\ \hline
+      \end{array} &
+      \begin{array}{|c|c|c|c|}
+        \hline
+        87 & f2 & 4d & 97 \\ \hline
+        ec & 6e & 4c & 90 \\ \hline
+        4a & c3 & 46 & e7 \\ \hline
+        8c & d8 & 95 & a6 \\ \hline
+      \end{array} &
+      \begin{array}{|c|c|c|c|}
+        \hline
+        87 & f2 & 4d & 97 \\ \hline
+        6e & 4c & 90 & ec \\ \hline
+        46 & e7 & 4a & c3 \\ \hline
+        a6 & 8c & d8 & 95 \\ \hline
+      \end{array} &
+      \begin{array}{|c|c|c|c|}
+        \hline
+        47 & 40 & a3 & 4c \\ \hline
+        37 & d4 & 70 & 9f \\ \hline
+        94 & e4 & 3a & 42 \\ \hline
+        ed & a5 & a6 & bc \\ \hline
+      \end{array} &
+      \oplus &
+      \begin{array}{|c|c|c|c|}
+        \hline
+        ac & 19 & 28 & 57 \\ \hline
+        77 & fa & d1 & 5c \\ \hline
+        66 & dc & 29 & 00 \\ \hline
+        f3 & 21 & 41 & 6e \\ \hline
+      \end{array} \\ \\
+    \end{small}
+  \end{array}
+\end{figure}
+
+\begin{figure}
+  \begin{small}
+    \begin{array}{l c c c c c c}      
+      10 & 
+      \begin{array}{|c|c|c|c|}
+        \hline
+        eb & 59 & 8b & 1b \\ \hline
+        40 & 2e & a1 & c3 \\ \hline
+        f2 & 38 & 13 & 42 \\ \hline
+        1e & 84 & e7 & d2 \\ \hline
+      \end{array} &
+      \begin{array}{|c|c|c|c|}
+        \hline
+        e9 & cb & 3d & af \\ \hline
+        09 & 31 & 32 & e2 \\ \hline
+        89 & 07 & 7d & 2c \\ \hline
+        72 & 5f & 94 & b5 \\ \hline
+      \end{array} &
+      \begin{array}{|c|c|c|c|}
+        \hline
+        e9 & cb & 3d & af \\ \hline
+        31 & 32 & e2 & 09 \\ \hline
+        7d & 2c & 89 & 07 \\ \hline
+        b5 & 72 & 5f & 94 \\ \hline
+      \end{array} &
+      \begin{array}{|c|c|c|c|}
+        \hline
+         &  &  &  \\ \hline
+         &  &  &  \\ \hline
+         &  &  &  \\ \hline
+         &  &  &  \\ \hline
+      \end{array} &
+      \oplus &
+      \begin{array}{|c|c|c|c|}
+        \hline
+        d0 & c9 & e1 & b6 \\ \hline
+        14 & ee & 3f & 63 \\ \hline
+        f9 & 25 & 0c & 0c \\ \hline
+        a8 & 89 & c8 & a6 \\ \hline
+      \end{array}
+    \end{array}    
+  \end{small}
+\end{figure}
+
+\begin{figure}
+  \begin{small}
+    \begin{array}{c c c c c c}
+      output &
+      \begin{array}{|c|c|c|c|}
+        \hline
+        39 & 02 & dc & 19 \\ \hline
+        25 & dc & 11 & 6a \\ \hline
+        84 & 09 & 85 & 0b \\ \hline
+        1d & fb & 97 & 32 \\ \hline
+      \end{array} & & & & &      
+    \end{array}
+  \end{small}
+\end{figure}
+
