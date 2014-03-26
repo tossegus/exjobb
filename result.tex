@@ -34,7 +34,7 @@ Berätta om flödet på implementationen.
 \section{Special solutions}
 Berätta om hur det fungerar.
 
-\section{What has been implemented?}
+\section{Implementation}
 My design is very hierarchical. The top layer is an aes128 block in CBC-mode, 
 which takes an input of one TS-stream, and from there takes the packets to be 
 scrambled, depending on whether or not there is an adaptation field and such.
@@ -54,7 +54,7 @@ The keyexpansion entity is divided into 3 keyblock entities. The first keyblock
 entity decides what 4 bytes of the expanded key we want to expand. The second 
 keyblock entity is the keycore, which is only performed on every 4th set of 
 4 bytes. The third keyblock entity performs an xor and an incrementation of the 
-internal counter used for reference.
+internal counter used as an index when accessing 4 byte blocks of data.
 
 \subsubsection{Keycore entitites}
 The keycore entity consists of four entities. Rotword, Sbox, Rcon and a counter. 
@@ -87,7 +87,8 @@ of the time.
 The mulblock entity consists of one mul3 entity and one mul2 entity, which 
 performs a special kind of hardware multiplication of 3, and 2, on the input. It 
 also takes two inputs which it leaves alone. The four results are then XOR:ed 
-with eachother, and returned to the mixcolumns entity.
+with eachother, and returned to the mixcolumns entity which puts the result in 
+the correct index in the matrix.
 
 \section{Tests}
 \Warning[omformulera]{Är det här för casual? Du måste nog omformulera varför du inte lagt til fler simuleringsresultat}
