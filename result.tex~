@@ -1,0 +1,38 @@
+\chapter{Result}
+Här är väl tanken att jag ska skriva lite om hur jag implementerat
+och bearbetat allt relevant som har med implementationen att göra. 
+Vad jag gjort som blivit bättre än andra lösningar. Vad jag fokuserat
+ på (throughput kontra mängd använd hårdvara).
+
+\section{Problems}
+Encountered problems:
+
+\begin{itemize}
+\item Not possible to get the license for CSA3
+\item Small interrest for CSA3
+\item Next to no documentation of the CISSA algorithm
+\end{itemize}
+
+% Fortsätt fylla i när du stöter på problem
+
+\section{Hardware}
+Såhär ser hårdvaran ut i en sjukt snygg bild jag ritat: \newline
+
+\begin{array}{r l c r l}
+  Inputs & &  \_\_\_\_\_\_\_ & & Outputs \\
+  1 & --| & & | -- & 1 \\
+  2 & --| & & | -- & 2 \\
+  3 & --| & HW & | -- & 3 \\
+  4 & --| & & | -- & 4 \\
+  5 & --| & & | -- & 5 \\
+  &     &   \_\_\_\_\_\_\_ & & \\
+\end{array}
+
+\section{Flow}
+Berätta om flödet på implementationen.
+
+\section{Special solutions}
+Berätta om hur det fungerar.
+
+\section{How much of the CSA3 standard has been implemented?}
+Berätta om vilka delar du realiserat.

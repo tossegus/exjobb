@@ -56,12 +56,16 @@
 \BOOKMARK [1][-]{section.6.2}{6.2 Hardware}{chapter.6}% 56
 \BOOKMARK [1][-]{section.6.3}{6.3 Flow}{chapter.6}% 57
 \BOOKMARK [1][-]{section.6.4}{6.4 Special solutions}{chapter.6}% 58
-\BOOKMARK [1][-]{section.6.5}{6.5 How much of the CSA3 standard has been implemented?}{chapter.6}% 59
-\BOOKMARK [0][]{appendix.A}{A Matrixes}{}% 60
-\BOOKMARK [0][]{appendix.B}{B Illustrations}{}% 61
-\BOOKMARK [0][]{appendix.C}{C Test vectors}{}% 62
-\BOOKMARK [0][]{appendix.D}{D Examples}{}% 63
-\BOOKMARK [1][-]{section.D.1}{D.1 CBC-mode calculations}{appendix.D}% 64
-\BOOKMARK [0][]{section*.17}{List of Figures}{}% 65
-\BOOKMARK [0][]{appendix*.18}{Bibliography}{}% 66
-\BOOKMARK [0][]{Copyright.0}{Copyright}{}% 67
+\BOOKMARK [1][-]{section.6.5}{6.5 What has been implemented?}{chapter.6}% 59
+\BOOKMARK [2][-]{subsection.6.5.1}{6.5.1 Cipher blocks}{section.6.5}% 60
+\BOOKMARK [2][-]{subsection.6.5.2}{6.5.2 Keyexpansion blocks}{section.6.5}% 61
+\BOOKMARK [2][-]{subsection.6.5.3}{6.5.3 Round entities}{section.6.5}% 62
+\BOOKMARK [1][-]{section.6.6}{6.6 Tests}{chapter.6}% 63
+\BOOKMARK [0][]{appendix.A}{A Matrixes}{}% 64
+\BOOKMARK [0][]{appendix.B}{B Illustrations}{}% 65
+\BOOKMARK [0][]{appendix.C}{C Test vectors}{}% 66
+\BOOKMARK [0][]{appendix.D}{D Examples}{}% 67
+\BOOKMARK [1][-]{section.D.1}{D.1 CBC-mode calculations}{appendix.D}% 68
+\BOOKMARK [0][]{section*.20}{List of Figures}{}% 69
+\BOOKMARK [0][]{appendix*.21}{Bibliography}{}% 70
+\BOOKMARK [0][]{Copyright.0}{Copyright}{}% 71

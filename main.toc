@@ -1,10 +1,7 @@
 \cftpagenumbersoff {part}
 \select@language {english}
 \select@language {english}
-\select@language {english}
 \select@language {swedish}
-\select@language {english}
-\select@language {english}
 \select@language {english}
 \contentsline {chapter}{Notation}{v}{section*.2}
 \contentsline {chapter}{\numberline {1}Digital Video Broadcasting}{1}{chapter.1}
@@ -65,15 +62,20 @@
 \contentsline {section}{\numberline {6.2}Hardware}{25}{section.6.2}
 \contentsline {section}{\numberline {6.3}Flow}{26}{section.6.3}
 \contentsline {section}{\numberline {6.4}Special solutions}{26}{section.6.4}
-\contentsline {section}{\numberline {6.5}How much of the CSA3 standard has been implemented?}{26}{section.6.5}
-\contentsline {chapter}{\numberline {A}Matrixes}{29}{appendix.A}
-\contentsline {chapter}{\numberline {B}Illustrations}{33}{appendix.B}
-\contentsline {chapter}{\numberline {C}Test vectors}{37}{appendix.C}
-\contentsline {chapter}{\numberline {D}Examples}{43}{appendix.D}
-\contentsline {section}{\numberline {D.1}CBC-mode calculations}{43}{section.D.1}
-\contentsline {chapter}{List of Figures}{45}{section*.17}
-\contentsline {chapter}{Bibliography}{47}{appendix*.18}
+\contentsline {section}{\numberline {6.5}What has been implemented?}{26}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}Cipher blocks}{26}{subsection.6.5.1}
+\contentsline {subsection}{\numberline {6.5.2}Keyexpansion blocks}{26}{subsection.6.5.2}
+\contentsline {subsubsection}{Keycore entitites}{26}{subsection.6.5.2}
+\contentsline {subsection}{\numberline {6.5.3}Round entities}{26}{subsection.6.5.3}
+\contentsline {subsubsection}{Addroundkey entity}{27}{subsection.6.5.3}
+\contentsline {subsubsection}{The mulblock entity}{27}{subsection.6.5.3}
+\contentsline {section}{\numberline {6.6}Tests}{27}{section.6.6}
+\contentsline {chapter}{\numberline {A}Matrixes}{31}{appendix.A}
+\contentsline {chapter}{\numberline {B}Illustrations}{35}{appendix.B}
+\contentsline {chapter}{\numberline {C}Test vectors}{39}{appendix.C}
+\contentsline {chapter}{\numberline {D}Examples}{45}{appendix.D}
+\contentsline {section}{\numberline {D.1}CBC-mode calculations}{45}{section.D.1}
+\contentsline {chapter}{List of Figures}{47}{section*.20}
+\contentsline {chapter}{Bibliography}{49}{appendix*.21}
 \select@language {swedish}
-\select@language {english}
-\select@language {english}
 \select@language {english}
