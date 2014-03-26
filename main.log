@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.1.29)  26 MAR 2014 12:18
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.1.29)  26 MAR 2014 14:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1302,56 +1302,73 @@ LaTeX Font Info:    Redeclaring font encoding TS1 on input line 46.
 \symgreek=\mathgroup9
 (/usr/share/texlive/texmf-dist/tex/latex/SIunits/SIunits.cfg)
 Option `squaren' provided!
-)) (./main.aux (./notation.aux) (./cas.aux) (./Scrambling.aux) (./CSA.aux)
-(./cissaORCSA3.aux) (./aes.aux) (./Result.aux) (./matrix.aux) (./flowcharts.aux
-) (./vectors.aux) (./examples.aux))
+)) (/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip118
+\LTright=\skip119
+\LTpre=\skip120
+\LTpost=\skip121
+\LTchunksize=\count155
+\LTcapwidth=\dimen181
+\LT@head=\box34
+\LT@firsthead=\box35
+\LT@foot=\box36
+\LT@lastfoot=\box37
+\LT@cols=\count156
+\LT@rows=\count157
+\c@LT@tables=\count158
+\c@LT@chunks=\count159
+\LT@p@ftn=\toks39
+) (./main.aux
+(./notation.aux) (./cas.aux) (./Scrambling.aux) (./CSA.aux) (./cissaORCSA3.aux)
+(./aes.aux) (./Result.aux) (./matrix.aux) (./flowcharts.aux) (./vectors.aux)
+(./examples.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/jkpw/m/it on input line 16.
-LaTeX Font Info:    Try loading font information for OML+jkpw on input line 16.
+LaTeX Font Info:    Checking defaults for OML/jkpw/m/it on input line 17.
+LaTeX Font Info:    Try loading font information for OML+jkpw on input line 17.
 
-
-(/usr/share/texlive/texmf-dist/tex/latex/kpfonts/omljkpw.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/omljkpw.fd
 File: omljkpw.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/jkpw/m/n on input line 16.
-LaTeX Font Info:    Try loading font information for OMS+jkpw on input line 16.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/jkpw/m/n on input line 17.
+LaTeX Font Info:    Try loading font information for OMS+jkpw on input line 17.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/omsjkpw.fd
 File: omsjkpw.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/jkp/m/n on input line 16.
-LaTeX Font Info:    Try loading font information for OMX+jkp on input line 16.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/jkp/m/n on input line 17.
+LaTeX Font Info:    Try loading font information for OMX+jkp on input line 17.
 
 (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/omxjkp.fd
 File: omxjkp.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for U/jkpexa/m/n on input line 16.
-LaTeX Font Info:    Try loading font information for U+jkpexa on input line 16.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/jkpexa/m/n on input line 17.
+LaTeX Font Info:    Try loading font information for U+jkpexa on input line 17.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ujkpexa.fd
 File: ujkpexa.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 16.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 17.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Try loading font information for T1+jkpk on input line 16.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Try loading font information for T1+jkpk on input line 17.
 
 (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/t1jkpk.fd
 File: t1jkpk.fd 2007/01/24 Fontinst v1.928 font definitions for T1/jkpk.
@@ -1395,17 +1412,17 @@ File: t1jkpk.fd 2007/01/24 Fontinst v1.928 font definitions for T1/jkpk.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count155
-\scratchdimen=\dimen181
-\scratchbox=\box34
-\nofMPsegments=\count156
-\nofMParguments=\count157
-\everyMPshowfont=\toks39
-\MPscratchCnt=\count158
-\MPscratchDim=\dimen182
-\MPnumerator=\count159
-\makeMPintoPDFobject=\count160
-\everyMPtoPDFconversion=\toks40
+\scratchcounter=\count160
+\scratchdimen=\dimen182
+\scratchbox=\box38
+\nofMPsegments=\count161
+\nofMParguments=\count162
+\everyMPshowfont=\toks40
+\MPscratchCnt=\count163
+\MPscratchDim=\dimen183
+\MPnumerator=\count164
+\makeMPintoPDFobject=\count165
+\everyMPtoPDFconversion=\toks41
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -1422,434 +1439,439 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 Package pdfcprot Info: I didn't find jkpkbnT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 16.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 17.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/pdfcprot/pplmnT1.cpa)
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
-LaTeX Font Info:    Try loading font information for TS1+jkpk on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
+LaTeX Font Info:    Try loading font information for TS1+jkpk on input line 17.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ts1jkpk.fd
 File: ts1jkpk.fd 2007/08/30 Fontinst v1.928 font definitions for TS1/jkpk.
 )
 Package pdfcprot Info: I didn't find jkpkbnTS1.cpa.
-(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 16
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 17
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/pdfcprot/pplmnTS1.cpa)
 Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 Package pdfcprot Info: I didn't find jkpkbnT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 16.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 17.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 Package pdfcprot Info: I didn't find jkpkbnTS1.cpa.
-(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 16
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 17
 .
 Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 Package pdfcprot Info: I didn't find jkpkbnT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 16.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 17.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 Package pdfcprot Info: I didn't find jkpkbnTS1.cpa.
-(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 16
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 17
 .
 Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 Package pdfcprot Info: I didn't find jkpkbnT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 16.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 17.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 Package pdfcprot Info: I didn't find jkpkbnTS1.cpa.
-(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 16
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 17
 .
 Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 17.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 9.49997pt on input line 16.
+(Font)              scaled to size 9.49997pt on input line 17.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 9.49997pt on input line 16.
+(Font)              scaled to size 9.49997pt on input line 17.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 11.39996pt on input line 16.
+(Font)              scaled to size 11.39996pt on input line 17.
 Package pdfcprot Info: I didn't find phvbnT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 16.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 17.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
-LaTeX Font Info:    Try loading font information for TS1+phv on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
+LaTeX Font Info:    Try loading font information for TS1+phv on input line 17.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
 )
 LaTeX Font Info:    Font shape `TS1/phv/b/n' will be
-(Font)              scaled to size 11.39996pt on input line 16.
+(Font)              scaled to size 11.39996pt on input line 17.
 Package pdfcprot Info: I didn't find phvbnTS1.cpa.
-(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 16
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 17
 .
 Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 Package pdfcprot Info: I didn't find phvbnT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 16.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 17.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 LaTeX Font Info:    Font shape `TS1/phv/b/n' will be
-(Font)              scaled to size 9.49997pt on input line 16.
+(Font)              scaled to size 9.49997pt on input line 17.
 Package pdfcprot Info: I didn't find phvbnTS1.cpa.
-(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 16
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 17
 .
 Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 8.54997pt on input line 16.
+(Font)              scaled to size 8.54997pt on input line 17.
 Package pdfcprot Info: I didn't find phvbnT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 16.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 17.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 LaTeX Font Info:    Font shape `TS1/phv/b/n' will be
-(Font)              scaled to size 8.54997pt on input line 16.
+(Font)              scaled to size 8.54997pt on input line 17.
 Package pdfcprot Info: I didn't find phvbnTS1.cpa.
-(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 16
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 17
 .
 Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 7.59998pt on input line 16.
+(Font)              scaled to size 7.59998pt on input line 17.
 Package pdfcprot Info: I didn't find phvbnT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 16.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 17.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 LaTeX Font Info:    Font shape `TS1/phv/b/n' will be
-(Font)              scaled to size 7.59998pt on input line 16.
+(Font)              scaled to size 7.59998pt on input line 17.
 Package pdfcprot Info: I didn't find phvbnTS1.cpa.
-(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 16
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 17
 .
 Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 Package pdfcprot Info: I didn't find jkpkmnT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 16.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 17.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 Package pdfcprot Info: I didn't find jkpkmnTS1.cpa.
-(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 16
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 17
 .
 Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 Package pdfcprot Info: I didn't find jkpkmnT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 16.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 17.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 Package pdfcprot Info: I didn't find jkpkmnTS1.cpa.
-(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 16
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 17
 .
 Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 Package pdfcprot Info: I didn't find jkpkmnT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 16.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 17.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 Package pdfcprot Info: I didn't find jkpkmnTS1.cpa.
-(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 16
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 17
 .
 Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 Package pdfcprot Info: I didn't find jkpkmnT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 16.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 17.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 Package pdfcprot Info: I didn't find jkpkmnTS1.cpa.
-(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 16
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 17
 .
 Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 Package pdfcprot Info: I didn't find jkpkmitT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 16.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 17.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 Package pdfcprot Info: I didn't find jkpkmitTS1.cpa.
-(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 16
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 17
 .
 Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 Package pdfcprot Info: I didn't find jkpkmitT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 16.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 17.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 Package pdfcprot Info: I didn't find jkpkmitTS1.cpa.
-(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 16
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 17
 .
 Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 Package pdfcprot Info: I didn't find jkpkmitT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 16.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 17.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 Package pdfcprot Info: I didn't find jkpkmitTS1.cpa.
-(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 16
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 17
 .
 Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 Package pdfcprot Info: I didn't find jkpkmitT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 16.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 17.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 Package pdfcprot Info: I didn't find jkpkmitTS1.cpa.
-(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 16
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 17
 .
 Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 11.39996pt on input line 16.
+(Font)              scaled to size 11.39996pt on input line 17.
 Package pdfcprot Info: I didn't find phvmnT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 16.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 17.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
-(Font)              scaled to size 11.39996pt on input line 16.
+(Font)              scaled to size 11.39996pt on input line 17.
 Package pdfcprot Info: I didn't find phvmnTS1.cpa.
-(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 16
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 17
 .
 Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 Package pdfcprot Info: I didn't find phvmnT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 16.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 17.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
-(Font)              scaled to size 9.49997pt on input line 16.
+(Font)              scaled to size 9.49997pt on input line 17.
 Package pdfcprot Info: I didn't find phvmnTS1.cpa.
-(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 16
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 17
 .
 Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 16.
+(Font)              scaled to size 8.54997pt on input line 17.
 Package pdfcprot Info: I didn't find phvmnT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 16.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 17.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 16.
+(Font)              scaled to size 8.54997pt on input line 17.
 Package pdfcprot Info: I didn't find phvmnTS1.cpa.
-(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 16
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 17
 .
 Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 7.59998pt on input line 16.
+(Font)              scaled to size 7.59998pt on input line 17.
 Package pdfcprot Info: I didn't find phvmnT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 16.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 17.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
-(Font)              scaled to size 7.59998pt on input line 16.
+(Font)              scaled to size 7.59998pt on input line 17.
 Package pdfcprot Info: I didn't find phvmnTS1.cpa.
-(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 16
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 17
 .
 Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 16.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 17.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 7.59998pt on input line 16.
+(Font)              scaled to size 7.59998pt on input line 17.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 16.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 17.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 11.39996pt on input line 16.
+(Font)              scaled to size 11.39996pt on input line 17.
 Package pdfcprot Info: I didn't find phvmitT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 16.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 17.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 LaTeX Font Info:    Font shape `TS1/phv/m/it' in size <12> not available
-(Font)              Font shape `TS1/phv/m/sl' tried instead on input line 16.
+(Font)              Font shape `TS1/phv/m/sl' tried instead on input line 17.
 LaTeX Font Info:    Font shape `TS1/phv/m/sl' will be
-(Font)              scaled to size 11.39996pt on input line 16.
+(Font)              scaled to size 11.39996pt on input line 17.
 Package pdfcprot Info: I didn't find phvmitTS1.cpa.
-(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 16
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 17
 .
 Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 16.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 17.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 9.49997pt on input line 16.
+(Font)              scaled to size 9.49997pt on input line 17.
 Package pdfcprot Info: I didn't find phvmitT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 16.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 17.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 LaTeX Font Info:    Font shape `TS1/phv/m/it' in size <10> not available
-(Font)              Font shape `TS1/phv/m/sl' tried instead on input line 16.
+(Font)              Font shape `TS1/phv/m/sl' tried instead on input line 17.
 LaTeX Font Info:    Font shape `TS1/phv/m/sl' will be
-(Font)              scaled to size 9.49997pt on input line 16.
+(Font)              scaled to size 9.49997pt on input line 17.
 Package pdfcprot Info: I didn't find phvmitTS1.cpa.
-(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 16
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 17
 .
 Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 16.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 17.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 8.54997pt on input line 16.
+(Font)              scaled to size 8.54997pt on input line 17.
 Package pdfcprot Info: I didn't find phvmitT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 16.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 17.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 LaTeX Font Info:    Font shape `TS1/phv/m/it' in size <9> not available
-(Font)              Font shape `TS1/phv/m/sl' tried instead on input line 16.
+(Font)              Font shape `TS1/phv/m/sl' tried instead on input line 17.
 LaTeX Font Info:    Font shape `TS1/phv/m/sl' will be
-(Font)              scaled to size 8.54997pt on input line 16.
+(Font)              scaled to size 8.54997pt on input line 17.
 Package pdfcprot Info: I didn't find phvmitTS1.cpa.
-(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 16
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 17
 .
 Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 Package pdfcprot Info: I didn't find phvmitT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 16.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 17.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 LaTeX Font Info:    Font shape `TS1/phv/m/it' in size <8> not available
-(Font)              Font shape `TS1/phv/m/sl' tried instead on input line 16.
+(Font)              Font shape `TS1/phv/m/sl' tried instead on input line 17.
 LaTeX Font Info:    Font shape `TS1/phv/m/sl' will be
-(Font)              scaled to size 7.59998pt on input line 16.
+(Font)              scaled to size 7.59998pt on input line 17.
 Package pdfcprot Info: I didn't find phvmitTS1.cpa.
-(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 16
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 17
 .
 Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 Package pdfcprot Info: I didn't find phvmslT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 16.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 17.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 Package pdfcprot Info: I didn't find phvmslTS1.cpa.
-(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 16
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 17
 .
 Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 Package pdfcprot Info: I didn't find phvmslT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 16.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 17.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 Package pdfcprot Info: I didn't find phvmslTS1.cpa.
-(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 16
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 17
 .
 Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 Package pdfcprot Info: I didn't find phvmslT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 16.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 17.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 Package pdfcprot Info: I didn't find phvmslTS1.cpa.
-(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 16
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 17
 .
 Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 Package pdfcprot Info: I didn't find phvmslT1.cpa.
-(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 16.
+(pdfcprot)              As a fallback I will try pplmnT1.cpa. on input line 17.
 
 Package pdfcprot Info: File pplmnT1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
 Package pdfcprot Info: I didn't find phvmslTS1.cpa.
-(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 16
+(pdfcprot)              As a fallback I will try pplmnTS1.cpa. on input line 17
 .
 Package pdfcprot Info: File pplmnTS1.cpa{} used for the adjustment
 (pdfcprot)             of the char protruding. It seems that it isn't the one
-(pdfcprot)             you intended to use. on input line 16.
+(pdfcprot)             you intended to use. on input line 17.
  (./main.bbl)
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
+)
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box35
-Package backref Info: ** backref set up for natbib ** on input line 16.
-Package hyperref Info: Link coloring OFF on input line 16.
+\AtBeginShipoutBox=\box39
+Package backref Info: ** backref set up for natbib ** on input line 17.
+Package hyperref Info: Link coloring OFF on input line 17.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1857,11 +1879,11 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count161
+\c@section@level=\count166
 )
-LaTeX Info: Redefining \ref on input line 16.
-LaTeX Info: Redefining \pageref on input line 16.
-LaTeX Info: Redefining \nameref on input line 16.
+LaTeX Info: Redefining \ref on input line 17.
+LaTeX Info: Redefining \pageref on input line 17.
+LaTeX Info: Redefining \nameref on input line 17.
 
 (./main.out) (./main.out)
 \@outlinefile=\write4
@@ -1871,29 +1893,29 @@ LaTeX Info: Redefining \nameref on input line 16.
 Option `squaren' provided! 
  Command \squaren defined by SIunits package!
 
-LaTeX Font Info:    Try loading font information for OT1+jkp on input line 18.
+LaTeX Font Info:    Try loading font information for OT1+jkp on input line 19.
 (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ot1jkp.fd
 File: ot1jkp.fd 2007/08/30 Fontinst v1.928 font definitions for OT1/jkp.
 )
-LaTeX Font Info:    Try loading font information for U+jkpmiaw on input line 18
+LaTeX Font Info:    Try loading font information for U+jkpmiaw on input line 19
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ujkpmiaw.fd
 File: ujkpmiaw.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Try loading font information for U+jkpsya on input line 18.
+LaTeX Font Info:    Try loading font information for U+jkpsya on input line 19.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ujkpsya.fd
 File: ujkpsya.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Try loading font information for U+jkpsybw on input line 18
+LaTeX Font Info:    Try loading font information for U+jkpsybw on input line 19
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ujkpsybw.fd
 File: ujkpsybw.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Try loading font information for U+jkpsyc on input line 18.
+LaTeX Font Info:    Try loading font information for U+jkpsyc on input line 19.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ujkpsyc.fd
@@ -1903,10 +1925,10 @@ File: ujkpsyc.fd 2006/08/15 v1.0
 File: fig/LiTH_staende_sv.pdf Graphic file (type pdf)
 
 <use fig/LiTH_staende_sv.pdf>
-Package pdftex.def Info: fig/LiTH_staende_sv.pdf used on input line 18.
+Package pdftex.def Info: fig/LiTH_staende_sv.pdf used on input line 19.
 (pdftex.def)             Requested size: 233.62096pt x 170.71652pt.
 
-Overfull \hbox (19.91695pt too wide) in paragraph at lines 18--18
+Overfull \hbox (19.91695pt too wide) in paragraph at lines 19--19
 []| [] 
  []
 
@@ -1917,7 +1939,7 @@ Overfull \hbox (19.91695pt too wide) in paragraph at lines 18--18
 ] [2
 
 ]
-Overfull \hbox (35.56596pt too wide) in paragraph at lines 23--23
+Overfull \hbox (35.56596pt too wide) in paragraph at lines 24--24
 []| [] 
  []
 
@@ -1930,13 +1952,13 @@ Overfull \hbox (35.56596pt too wide) in paragraph at lines 23--23
 File: fig/LiTH_sigill_sv.pdf Graphic file (type pdf)
 
 <use fig/LiTH_sigill_sv.pdf>
-Package pdftex.def Info: fig/LiTH_sigill_sv.pdf used on input line 24.
+Package pdftex.def Info: fig/LiTH_sigill_sv.pdf used on input line 25.
 (pdftex.def)             Requested size: 56.9055pt x 56.90704pt.
 
 
-Package hyperref Warning: Suppressing link with empty target on input line 24.
+Package hyperref Warning: Suppressing link with empty target on input line 25.
 
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 24.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 25.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ) (./introduktion.tex)
@@ -1946,19 +1968,19 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 13.67995pt on input line 32.
+(Font)              scaled to size 13.67995pt on input line 33.
  (./abstract.tex)pdfTeX warning (ext4): destination with the same identifier (n
 ame{page.iii}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.34 \end{abstract}
+l.35 \end{abstract}
                     [3
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.iv}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.34 \end{abstract}
+l.35 \end{abstract}
                     [4
 
 ]
@@ -2285,7 +2307,7 @@ my insertion and my current dilemma will both disappear.
 
 ]) [26]
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 23.63593pt on input line 48.
+(Font)              scaled to size 23.63593pt on input line 49.
  [27
 
 
@@ -2294,198 +2316,6 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 
  (./matrix.tex
 Appendix A.
-
-! Package array Error:  Illegal pream-token (C): `c' used.
-
-See the array package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.7 ...array}{C | C C C C C C C C C C C C C C C c}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package array Error:  Illegal pream-token (C): `c' used.
-
-See the array package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.7 ...array}{C | C C C C C C C C C C C C C C C c}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package array Error:  Illegal pream-token (C): `c' used.
-
-See the array package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.7 ...array}{C | C C C C C C C C C C C C C C C c}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package array Error:  Illegal pream-token (C): `c' used.
-
-See the array package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.7 ...array}{C | C C C C C C C C C C C C C C C c}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package array Error:  Illegal pream-token (C): `c' used.
-
-See the array package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.7 ...array}{C | C C C C C C C C C C C C C C C c}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package array Error:  Illegal pream-token (C): `c' used.
-
-See the array package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.7 ...array}{C | C C C C C C C C C C C C C C C c}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package array Error:  Illegal pream-token (C): `c' used.
-
-See the array package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.7 ...array}{C | C C C C C C C C C C C C C C C c}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package array Error:  Illegal pream-token (C): `c' used.
-
-See the array package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.7 ...array}{C | C C C C C C C C C C C C C C C c}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package array Error:  Illegal pream-token (C): `c' used.
-
-See the array package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.7 ...array}{C | C C C C C C C C C C C C C C C c}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package array Error:  Illegal pream-token (C): `c' used.
-
-See the array package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.7 ...array}{C | C C C C C C C C C C C C C C C c}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package array Error:  Illegal pream-token (C): `c' used.
-
-See the array package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.7 ...array}{C | C C C C C C C C C C C C C C C c}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package array Error:  Illegal pream-token (C): `c' used.
-
-See the array package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.7 ...array}{C | C C C C C C C C C C C C C C C c}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package array Error:  Illegal pream-token (C): `c' used.
-
-See the array package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.7 ...array}{C | C C C C C C C C C C C C C C C c}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package array Error:  Illegal pream-token (C): `c' used.
-
-See the array package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.7 ...array}{C | C C C C C C C C C C C C C C C c}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package array Error:  Illegal pream-token (C): `c' used.
-
-See the array package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.7 ...array}{C | C C C C C C C C C C C C C C C c}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package array Error:  Illegal pream-token (C): `c' used.
-
-See the array package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.7 ...array}{C | C C C C C C C C C C C C C C C c}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
 
 Overfull \hbox (16.60016pt too wide) detected at line 26
 [][]
@@ -2556,463 +2386,259 @@ BCmode.png>]
 ]
 Appendix C.
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--6
+Underfull \hbox (badness 10000) in paragraph at lines 5--8
 
  []
 
 [37]
-! Extra }, or forgotten \endgroup.
-l.66 ...utput \> 69C4E0D86A7B0430D8CDB78070B4C55A}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
+Underfull \hbox (badness 6236) in paragraph at lines 74--74
+[]\T1/phv/m/n/5 Fix the lay-out of
+ []
+
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 74--74
+[][][][] 
+ []
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.74 ...{array}{| c | c | c | c | c | c | c | c |}
-                                                  
+l.78     &  & After & After &  & After \oplus
+                                              &  & w[i] = temp\\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.129   \end{array}
-                   
+l.78     &  & After & After &  & After \oplus &
+                                                 & w[i] = temp\\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-
-Overfull \hbox (40.50049pt too wide) in paragraph at lines 74--130
- []$[]$ 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.143     \begin{array}{l c c c c c c}
-                                      
+l.80     \oplus
+                w[i-16] \\ \hline
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.220     \end{array}
-                     
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-Overfull \hbox (62.88615pt too wide) in paragraph at lines 143--222
-[]$[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 143--222
-
- []
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.226     \begin{array}{l c c c c c c}
-                                      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.264     \end{array}
-                     
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-Overfull \hbox (31.96222pt too wide) in paragraph at lines 226--266
-[]$[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 226--266
-
- []
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.270     \begin{array}{l c c c c c c}
-                                      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.308     \end{array}
-                     
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-Overfull \hbox (32.23215pt too wide) in paragraph at lines 270--310
-[]$[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 270--310
-
- []
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.314     \begin{array}{l c c c c c c}
-                                      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.352     \end{array}
-                     
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-Overfull \hbox (33.65419pt too wide) in paragraph at lines 314--354
-[]$[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 314--354
-
- []
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.358     \begin{array}{l c c c c c c}
-                                      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.396     \end{array}
-                     
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-Overfull \hbox (33.1142pt too wide) in paragraph at lines 358--398
-[]$[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 358--398
-
- []
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.402     \begin{array}{l c c c c c c}
-                                      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.440     \end{array}
-                     
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-Overfull \hbox (36.55211pt too wide) in paragraph at lines 402--442
-[]$[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 402--442
-
- []
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.446     \begin{array}{l c c c c c c}
-                                      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.484     \end{array}
-                     
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-Overfull \hbox (39.19814pt too wide) in paragraph at lines 446--486
-[]$[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 446--486
-
- []
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.490     \begin{array}{l c c c c c c}
-                                      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.528     \end{array}
-                     
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-Overfull \hbox (35.11218pt too wide) in paragraph at lines 490--530
-[]$[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 490--530
-
- []
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.534     \begin{array}{l c c c c c c}
-                                      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-! LaTeX Error: \begin{array} on input line 534 ended by \end{small}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.572     \end{small}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.572     \end{small}
-                     
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.572     \end{small}
-                     
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.572     \end{small}
-                     
-I'm guessing that you meant to end an alignment here.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.572     \end{small}
-                     
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.572     \end{small}
-                     
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.572     \end{small}
-                     
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Misplaced \crcr.
-\endarray ->\crcr 
-                  \egroup \egroup \@arrayright \gdef \@preamble {}
-l.573   \end{array}
-                   
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Extra }, or forgotten \endgroup.
-\endarray ->\crcr \egroup 
-                          \egroup \@arrayright \gdef \@preamble {}
-l.573   \end{array}
-                   
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten \endgroup.
-\endarray ->\crcr \egroup \egroup 
-                                  \@arrayright \gdef \@preamble {}
-l.573   \end{array}
-                   
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-
-! LaTeX Error: \begin{small} on input line 533 ended by \end{array}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.573   \end{array}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Overfull \hbox (31.89023pt too wide) in paragraph at lines 534--574
-[]$[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 534--574
-
- []
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.578     \begin{array}{l c c c c c c}
-                                      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.616     \end{array}
-                     
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.622     \begin{array}{c c c c c c}
-                                    
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.630       \end{array} & & & & &
+l.80     \oplus w[i-16] \\ \hline
                                  
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.631     \end{array}
-                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-) [38] [39] [40] [41]
+
+Overfull \hbox (52.91017pt too wide) in alignment at lines 76--103
+ [] [] [] [] [] [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 103
+ []
+
+
+Overfull \hbox (52.91017pt too wide) in alignment at lines 103--128
+ [] [] [] [] [] [] [] [] 
+ []
+
+[38]
+Overfull \hbox (52.91017pt too wide) in alignment at lines 128--131
+ [] [] [] [] [] [] [] [] 
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.181     \oplus
+                 &
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.181     \oplus &
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.220     \oplus
+                 &
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.220     \oplus &
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.258     \oplus
+                 &
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.258     \oplus &
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.296     \oplus
+                 &
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.296     \oplus &
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.334     \oplus
+                 &
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.334     \oplus &
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.372     \oplus
+                 &
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.372     \oplus &
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.410     \oplus
+                 &
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.410     \oplus &
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (45.07985pt too wide) in alignment at lines 144--494
+ [] [] [] [] [] [] [] 
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.524     \oplus
+                 &
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.524     \oplus &
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.563     \oplus
+                 &
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.563     \oplus &
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (45.07985pt too wide) in alignment at lines 494--580
+ [] [] [] [] [] [] [] 
+ []
+
+[39] [40]) [41]
 \openout2 = `examples.aux'.
 
  (./examples.tex [42
@@ -3205,41 +2831,41 @@ onomy .
 No file main.ind.
 [49] [50
 
-] <fig/LinkUniv_staende_pms.pdf, id=1006, 260.975pt x 172.645pt>
+] <fig/LinkUniv_staende_pms.pdf, id=996, 260.975pt x 172.645pt>
 File: fig/LinkUniv_staende_pms.pdf Graphic file (type pdf)
 
 <use fig/LinkUniv_staende_pms.pdf>
-Package pdftex.def Info: fig/LinkUniv_staende_pms.pdf used on input line 64.
+Package pdftex.def Info: fig/LinkUniv_staende_pms.pdf used on input line 65.
 (pdftex.def)             Requested size: 77.41702pt x 51.21495pt.
 
-Overfull \hbox (0.16193pt too wide) in paragraph at lines 64--64
+Overfull \hbox (0.16193pt too wide) in paragraph at lines 65--65
 \T1/jkpk/m/n/10 and its pro-ce-dures for pub-li-ca-tion and for as-sur-ance of 
 doc-u-ment in-tegrity, please
  []
 
 [51 <./fig/LinkUniv_staende_pms.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 64.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 64.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 65.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 65.
  (./main.aux (./notation.aux) (./cas.aux)
 (./Scrambling.aux) (./CSA.aux) (./cissaORCSA3.aux) (./aes.aux) (./Result.aux)
 (./matrix.aux) (./flowcharts.aux) (./vectors.aux) (./examples.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 64.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 64.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 65.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 65.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 1A8B699FC035FA7F1D420B8B6863D0A6;4281.
+(rerunfilecheck)             Checksum: 7A56C8B67D3C427CDA8F76E3425F1BE4;4281.
 Package rerunfilecheck Info: File `main.brf' has not changed.
-(rerunfilecheck)             Checksum: F957A2C256CD4F188B592D0DE1EF7FC1;2970.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 64.
+(rerunfilecheck)             Checksum: 08BE1BBC54E15E69C3E66B615CE09C86;2962.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 65.
  )
 (\end occurred when \ifx on line 20 was incomplete) 
 Here is how much of TeX's memory you used:
- 14662 strings out of 493307
- 209431 string characters out of 6139905
- 423877 words of memory out of 5000000
- 17405 multiletter control sequences out of 15000+600000
+ 14769 strings out of 493307
+ 210847 string characters out of 6139905
+ 450932 words of memory out of 5000000
+ 17517 multiletter control sequences out of 15000+600000
  229741 words of font info for 186 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 45i,13n,77p,585b,536s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 45i,12n,77p,585b,536s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-di
 st/fonts/enc/dvips/base/8r.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/k
 pfonts/kpfonts-expert.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/kpfont
@@ -3258,10 +2884,10 @@ texlive/texmf-dist/fonts/type1/public/kpfonts/jkpsya.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 helvetic/uhvr8a.pfb>
-Output written on main.pdf (63 pages, 637070 bytes).
+Output written on main.pdf (63 pages, 635986 bytes).
 PDF statistics:
- 1115 PDF objects out of 1200 (max. 8388607)
- 993 compressed objects within 10 object streams
- 201 named destinations out of 1000 (max. 500000)
+ 1104 PDF objects out of 1200 (max. 8388607)
+ 982 compressed objects within 10 object streams
+ 191 named destinations out of 1000 (max. 500000)
  19029 words of extra memory for PDF output out of 20736 (max. 10000000)
 
