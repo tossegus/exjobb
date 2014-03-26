@@ -35,11 +35,19 @@ Berätta om flödet på implementationen.
 Berätta om hur det fungerar.
 
 \section{Implementation}
-My design is very hierarchical. The top layer is an aes128 block in CBC-mode, 
-which takes an input of one TS-stream, and from there takes the packets to be 
-scrambled, depending on whether or not there is an adaptation field and such.
+My design is very hierarchical. The top layer is an aes128 block in CBC-mode. 
+It takes an input TS-stream, scrambles it, and outputs a TS-stream. 
 
-\subsection{Cipher blocks}
+\subsection{CBC entity}
+\Warning[Write this]{when you have started implementing the cbc mode of aes 
+  encryption}
+The CBC entity consists of ??!??! entities. It is responsible for looking for an 
+adaptation field in the header, since the amount of and placement of data depends
+on if it exists or not. There is only going to be one aes128 cipher block 
+implemented, instead of running all of the TS-packets in parallell, they are to 
+be scrambled in sequence to decrease the amount of hardware usage.
+
+\subsection{Cipher entities}
 The aes-128 cipher entity consists of 4 components. The data2state entity, which 
 transforms the array into a matrix of data. A keyexpansion entity, which takes 
 an input of a key, and generates an extended key as an output. An entity, which I
@@ -49,7 +57,7 @@ again. The cipher entity itself keeps track of timing mainly between the
 keyexpansion and the round entity, and makes sure to provide the round entity 
 with the correct roundkey at the right time.
 
-\subsection{Keyexpansion blocks}
+\subsection{Keyexpansion entities}
 The keyexpansion entity is divided into 3 keyblock entities. The first keyblock 
 entity decides what 4 bytes of the expanded key we want to expand. The second 
 keyblock entity is the keycore, which is only performed on every 4th set of 
@@ -91,12 +99,13 @@ with eachother, and returned to the mixcolumns entity which puts the result in
 the correct index in the matrix.
 
 \section{Tests}
-\Warning[omformulera]{Är det här för casual? Du måste nog omformulera varför du inte lagt til fler simuleringsresultat}
-Even though I only display a few simulations in this part, I simulated all of 
-the subblocks one by one, to make sure that they had the correct functionality. 
-The reason as to why not more simulations than this are included is both since 
+\Warning[omformulera]{Är det här för casual? Du måste nog omformulera varför du 
+  inte lagt till fler simuleringsresultat}
+I simulated all of the subblocks I have written, one by one, to make sure that 
+they had the correct functionality Even though I've only input a few simulations 
+in this part. The reason why not more simulations are included is mainly since 
 I do not think anyone will find it interresting enough to look through, and since
-I do not want to double the volume of the thesis through simulation-results.
+I do not want to double the volume of the thesis through simulation results.
 
 Figure \ref{test:1} through \ref{test:3} are tests performed on the complete 
 aes-128 block, before CBC-mode. In the figures, in\_key is the input key to be 

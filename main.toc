@@ -63,12 +63,13 @@
 \contentsline {section}{\numberline {6.3}Flow}{26}{section.6.3}
 \contentsline {section}{\numberline {6.4}Special solutions}{26}{section.6.4}
 \contentsline {section}{\numberline {6.5}Implementation}{26}{section.6.5}
-\contentsline {subsection}{\numberline {6.5.1}Cipher blocks}{26}{subsection.6.5.1}
-\contentsline {subsection}{\numberline {6.5.2}Keyexpansion blocks}{26}{subsection.6.5.2}
-\contentsline {subsubsection}{Keycore entitites}{26}{subsection.6.5.2}
-\contentsline {subsection}{\numberline {6.5.3}Round entities}{26}{subsection.6.5.3}
-\contentsline {subsubsection}{Addroundkey entity}{27}{subsection.6.5.3}
-\contentsline {subsubsection}{The mulblock entity}{27}{subsection.6.5.3}
+\contentsline {subsection}{\numberline {6.5.1}CBC entity}{26}{subsection.6.5.1}
+\contentsline {subsection}{\numberline {6.5.2}Cipher entities}{26}{subsection.6.5.2}
+\contentsline {subsection}{\numberline {6.5.3}Keyexpansion entities}{26}{subsection.6.5.3}
+\contentsline {subsubsection}{Keycore entitites}{26}{subsection.6.5.3}
+\contentsline {subsection}{\numberline {6.5.4}Round entities}{27}{subsection.6.5.4}
+\contentsline {subsubsection}{Addroundkey entity}{27}{subsection.6.5.4}
+\contentsline {subsubsection}{The mulblock entity}{27}{subsection.6.5.4}
 \contentsline {section}{\numberline {6.6}Tests}{27}{section.6.6}
 \contentsline {chapter}{\numberline {A}Matrixes}{31}{appendix.A}
 \contentsline {chapter}{\numberline {B}Illustrations}{35}{appendix.B}
