@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.1.29)  26 MAR 2014 17:22
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.1.29)  27 MAR 2014 10:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2520,14 +2520,14 @@ Your command will be ignored, type <return> to proceed
  (./result.tex
 Chapter 6.
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--20
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
 
  []
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.21 \begin{array}{r l c r l}
+l.22 \begin{array}{r l c r l}
                              
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2535,7 +2535,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.29 \end{array}
+l.30 \end{array}
                 
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2543,27 +2543,30 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-[25
+
+Underfull \vbox (badness 6510) has occurred while \output is active []
+
+ [25
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 43--43
+Underfull \hbox (badness 10000) in paragraph at lines 44--44
 [][]\T1/jkpk/b/sl/10 Write
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--43
+Underfull \hbox (badness 10000) in paragraph at lines 44--44
 []\T1/phv/m/n/5 when you have
  []
 
 
-Underfull \hbox (badness 6428) in paragraph at lines 43--43
+Underfull \hbox (badness 6428) in paragraph at lines 44--44
 \T1/phv/m/n/5 started im-ple-ment-
  []
 
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 43--43
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 44--44
 [][][][] 
  []
 
@@ -2574,36 +2577,29 @@ See the babel package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.76 \subsection{Round entities}
-                                
+l.68 \subsubsection{Keycore entitites}
+                                      
 Your command will be ignored, type <return> to proceed
 
 [26]
-Overfull \hbox (21.21074pt too wide) in paragraph at lines 103--103
+Overfull \hbox (21.21074pt too wide) in paragraph at lines 104--104
 [][]\T1/jkpk/b/sl/10 omformulera:[] 
  []
 
 
-Underfull \hbox (badness 1112) in paragraph at lines 103--103
+Underfull \hbox (badness 1112) in paragraph at lines 104--104
 []\T1/phv/m/n/5 Är det här för ca-
  []
 
 
-Underfull \hbox (badness 4467) in paragraph at lines 103--103
+Underfull \hbox (badness 4467) in paragraph at lines 104--104
 \T1/phv/m/n/5 om-for-mulera var-för
  []
 
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 103--103
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 104--104
 [][][][] 
  []
-
-<fig/successtv1.png, id=770, 831.85782pt x 106.14656pt>
-File: fig/successtv1.png Graphic file (type png)
-
-<use fig/successtv1.png>
-Package pdftex.def Info: fig/successtv1.png used on input line 122.
-(pdftex.def)             Requested size: 355.65944pt x 45.38298pt.
 
 
 ! Package babel Error: You haven't defined the language eng yet.
@@ -2612,23 +2608,29 @@ See the babel package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.131 
+l.119 
       
 Your command will be ignored, type <return> to proceed
 
-[27] <fig/successtv2.png, id=780, 832.61063pt x 112.16907pt>
+[27] <fig/successtv1.png, id=776, 831.85782pt x 106.14656pt>
+File: fig/successtv1.png Graphic file (type png)
+
+<use fig/successtv1.png>
+Package pdftex.def Info: fig/successtv1.png used on input line 126.
+(pdftex.def)             Requested size: 355.65944pt x 45.38298pt.
+
+<fig/successtv2.png, id=778, 832.61063pt x 112.16907pt>
 File: fig/successtv2.png Graphic file (type png)
 
 <use fig/successtv2.png>
-Package pdftex.def Info: fig/successtv2.png used on input line 133.
+Package pdftex.def Info: fig/successtv2.png used on input line 137.
 (pdftex.def)             Requested size: 355.65944pt x 47.9151pt.
-
-<fig/successtv3.png, id=782, 726.46407pt x 110.66344pt>
+ <fig/successtv3.png, id=780, 726.46407pt x 108.405pt>
 File: fig/successtv3.png Graphic file (type png)
 
 <use fig/successtv3.png>
-Package pdftex.def Info: fig/successtv3.png used on input line 144.
-(pdftex.def)             Requested size: 355.65944pt x 54.17995pt.
+Package pdftex.def Info: fig/successtv3.png used on input line 148.
+(pdftex.def)             Requested size: 355.65944pt x 53.07423pt.
 )
 
 ! Package babel Error: You haven't defined the language eng yet.
@@ -2642,7 +2644,7 @@ l.47 \include{result}
 Your command will be ignored, type <return> to proceed
 
 [28 <./fig/successtv1.png (PNG copy)> <./fig/successtv2.png (PNG copy)> <./fig/
-successtv3.png (PNG copy)>]
+successtv3.png>]
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 23.63593pt on input line 49.
  [29
@@ -3307,7 +3309,7 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 65.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 79E76A22B1CE2D4342915036952F6789;4600.
 Package rerunfilecheck Info: File `main.brf' has not changed.
-(rerunfilecheck)             Checksum: BDA61313BB62A7876CB18BB551431928;3007.
+(rerunfilecheck)             Checksum: E5A5E731853BEDD75A9B3279DC8C176E;3007.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 65.
  )
 (\end occurred when \ifx on line 20 was incomplete) 
@@ -3337,7 +3339,7 @@ texlive/texmf-dist/fonts/type1/public/kpfonts/jkpsya.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 helvetic/uhvr8a.pfb>
-Output written on main.pdf (65 pages, 688282 bytes).
+Output written on main.pdf (65 pages, 685494 bytes).
 PDF statistics:
  1157 PDF objects out of 1200 (max. 8388607)
  1029 compressed objects within 11 object streams

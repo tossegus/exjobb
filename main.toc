@@ -66,7 +66,7 @@
 \contentsline {subsection}{\numberline {6.5.1}CBC entity}{26}{subsection.6.5.1}
 \contentsline {subsection}{\numberline {6.5.2}Cipher entities}{26}{subsection.6.5.2}
 \contentsline {subsection}{\numberline {6.5.3}Keyexpansion entities}{26}{subsection.6.5.3}
-\contentsline {subsubsection}{Keycore entitites}{26}{subsection.6.5.3}
+\contentsline {subsubsection}{Keycore entitites}{27}{subsection.6.5.3}
 \contentsline {subsection}{\numberline {6.5.4}Round entities}{27}{subsection.6.5.4}
 \contentsline {subsubsection}{Addroundkey entity}{27}{subsection.6.5.4}
 \contentsline {subsubsection}{The mulblock entity}{27}{subsection.6.5.4}

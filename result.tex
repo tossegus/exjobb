@@ -11,6 +11,7 @@ Encountered problems:
 \item Not possible to get the license for CSA3
 \item Small interrest for CSA3
 \item Next to no documentation of the CISSA algorithm
+\item Hard finding reliable test vectors
 \end{itemize}
 
 % Fortsätt fylla i när du stöter på problem
@@ -36,7 +37,8 @@ Berätta om hur det fungerar.
 
 \section{Implementation}
 My design is very hierarchical. The top layer is an aes128 block in CBC-mode. 
-It takes an input TS-stream, scrambles it, and outputs a TS-stream. 
+It takes an input TS-stream, selects data from it which it scrambles, and then 
+it outputs a TS-stream. 
 
 \subsection{CBC entity}
 \Warning[Write this]{when you have started implementing the cbc mode of aes 
@@ -101,11 +103,13 @@ the correct index in the matrix.
 \section{Tests}
 \Warning[omformulera]{Är det här för casual? Du måste nog omformulera varför du 
   inte lagt till fler simuleringsresultat}
-I simulated all of the subblocks I have written, one by one, to make sure that 
-they had the correct functionality Even though I've only input a few simulations 
-in this part. The reason why not more simulations are included is mainly since 
-I do not think anyone will find it interresting enough to look through, and since
-I do not want to double the volume of the thesis through simulation results.
+All of the entities in the design have been simulated and evaluated seperately 
+before being merged and tested together, to make sure that they had the desired 
+functionality both seperately and when combined together. 
+
+%%Few simulations have 
+%%been attached to this report, to save the reader from having to search through 
+%%pages for the simulation they wish to see.
 
 Figure \ref{test:1} through \ref{test:3} are tests performed on the complete 
 aes-128 block, before CBC-mode. In the figures, in\_key is the input key to be 
