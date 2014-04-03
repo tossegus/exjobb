@@ -65,8 +65,10 @@
 \BOOKMARK [0][]{appendix.A}{A Matrixes}{}% 65
 \BOOKMARK [0][]{appendix.B}{B Illustrations}{}% 66
 \BOOKMARK [0][]{appendix.C}{C Test vectors}{}% 67
-\BOOKMARK [0][]{appendix.D}{D Examples}{}% 68
-\BOOKMARK [1][-]{section.D.1}{D.1 CBC-mode calculations}{appendix.D}% 69
-\BOOKMARK [0][]{section*.20}{List of Figures}{}% 70
-\BOOKMARK [0][]{appendix*.21}{Bibliography}{}% 71
-\BOOKMARK [0][]{Copyright.0}{Copyright}{}% 72
+\BOOKMARK [1][-]{section.C.1}{C.1 Test cases}{appendix.C}% 68
+\BOOKMARK [1][-]{section.C.2}{C.2 Keyexpansion}{appendix.C}% 69
+\BOOKMARK [0][]{appendix.D}{D Examples}{}% 70
+\BOOKMARK [1][-]{section.D.1}{D.1 CBC-mode calculations}{appendix.D}% 71
+\BOOKMARK [0][]{section*.20}{List of Figures}{}% 72
+\BOOKMARK [0][]{appendix*.21}{Bibliography}{}% 73
+\BOOKMARK [0][]{Copyright.0}{Copyright}{}% 74

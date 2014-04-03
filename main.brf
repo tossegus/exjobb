@@ -53,9 +53,9 @@
 \backcite {RijndaelKeySchedule}{{24}{5.2.3}{subsection.5.2.3}}
 \backcite {AES:2001}{{28}{6.6}{section.6.6}}
 \backcite {CBCmode:2014}{{37}{B.3}{figure.caption.19}}
-\backcite {AES:2001}{{39}{C}{appendix.C}}
-\backcite {AES:2001}{{40}{C}{appendix.C}}
-\backcite {AES:2001}{{41}{C}{table.C.1}}
-\backcite {CI+:2011}{{47}{D.1}{section*.20}}
-\backcite {CipherTax:2013}{{47}{D.1}{section*.20}}
-\backcite {CBCmode:2014}{{47}{D.1}{section*.20}}
+\backcite {AES:2001}{{39}{C.1}{section.C.1}}
+\backcite {AES:2001}{{40}{C.1}{section.C.1}}
+\backcite {AES:2001}{{41}{C.1}{table.C.1}}
+\backcite {CI+:2011}{{49}{D.1}{section*.20}}
+\backcite {CipherTax:2013}{{49}{D.1}{section*.20}}
+\backcite {CBCmode:2014}{{49}{D.1}{section*.20}}

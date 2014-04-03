@@ -74,9 +74,11 @@
 \contentsline {chapter}{\numberline {A}Matrixes}{31}{appendix.A}
 \contentsline {chapter}{\numberline {B}Illustrations}{35}{appendix.B}
 \contentsline {chapter}{\numberline {C}Test vectors}{39}{appendix.C}
-\contentsline {chapter}{\numberline {D}Examples}{45}{appendix.D}
-\contentsline {section}{\numberline {D.1}CBC-mode calculations}{45}{section.D.1}
-\contentsline {chapter}{List of Figures}{47}{section*.20}
-\contentsline {chapter}{Bibliography}{49}{appendix*.21}
+\contentsline {section}{\numberline {C.1}Test cases}{39}{section.C.1}
+\contentsline {section}{\numberline {C.2}Keyexpansion}{44}{section.C.2}
+\contentsline {chapter}{\numberline {D}Examples}{47}{appendix.D}
+\contentsline {section}{\numberline {D.1}CBC-mode calculations}{47}{section.D.1}
+\contentsline {chapter}{List of Figures}{49}{section*.20}
+\contentsline {chapter}{Bibliography}{51}{appendix*.21}
 \select@language {swedish}
 \select@language {english}

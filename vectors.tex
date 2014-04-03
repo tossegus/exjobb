@@ -1,10 +1,13 @@
 \chapter{Test vectors}
 
-\arraycolsep=0.5pt
+\arraycolsep=0pt
 
-Test vector taken from \citet[pp. 35--36]{AES:2001}. \\
-This vector is run on a single aes-128 cipher. \\
-AES-128 (Nk=4, Nr=10) \\
+\section{Test cases}
+This section contains test cases, which can be followed one step at the time.
+
+The following test case is taken from \citet[pp. 35--36]{AES:2001}. The 
+plaintext is input into a single aes-128 cipher. \\
+
 \begin{tabbing}
   \hspace*{3cm}\=\hspace*{3cm}\= \kill
   Plaintext: \> 00112233445566778899AABBCCDDEEFF \\
@@ -66,12 +69,14 @@ AES-128 (Nk=4, Nr=10) \\
   round[10].s\_row \> 7AD5FDA789EF4E272BCA100B3D9FF59F \\
   round[10].k\_sch \> 13111D7FE3944A17F307A78B4D2B30C5 \\
   round[10].output \> 69C4E0D86A7B0430D8CDB78070B4C55A
+  \caption{AES-128 Scrambling of one data packet}
+  \label{tv:aes128_1}
 \end{tabbing}
 
-Keyexpansion based on test vector taken from \citet[pp. 35--36]{AES:2001}. \\
+Table \ref{tv:keyexpansion} displays a keyexpansion based on a test case taken 
+from \citet[pp. 35--36]{AES:2001}. \\
 Key = 2B 7E 15 16 28 AE D2 A6 AB F7 15 88 09 CF 4F 3C
 
-\Warning[Todo]{Fix the layout of this table. Probably needs to be centered}
 \begin{small}    
   \begin{longtable}{| c | c | c | c | c | c | c | c |}
     \hline
@@ -128,11 +133,13 @@ Key = 2B 7E 15 16 28 AE D2 A6 AB F7 15 88 09 CF 4F 3C
     41 & d014f9a8 & & & & & 19fadc21 & c9ee2589 \\ \hline
     42 & c9ee2589 & & & & & 28d12941 & e13f0cc8 \\ \hline
     43 & e13f0cc8 & & & & & 575c006e & b6630ca6 \\ \hline
+    \caption{Keyexpansion}
+    \label{tv:keyexpansion}
   \end{longtable}
 \end{small}
 
-Test vector taken from \citet[pp. 35--36]{AES:2001}. \\
-This vector is run on a single aes-128 cipher.
+Table \ref{tv:aes128_2} is a test case taken from \citet[pp. 35--36]{AES:2001}.\\
+16 bytes of data are run on a single aes-128 cipher.
 
 \begin{tabbing}
   \hspace*{3cm}\=\hspace*{3cm}\= \kill
@@ -140,441 +147,560 @@ This vector is run on a single aes-128 cipher.
   Key: \> 2B 7E 15 16 28 AE D2 A6 AB F7 15 88 09 CF 4F 3C \\
 \end{tabbing}
 
+\begin{longtable}{c c c c c c c}
+  Round  & Start of & After & After & After &  & Round Key \\
+  Number & Round & SubBytes & ShiftRows & MixColumns & & Value \\
 
- \begin{longtable}{c c c c c c c}
-     Round  & Start of & After & After & After &  & Round Key \\
-     Number & Round & SubBytes & ShiftRows & MixColumns & & Value \\
+  input & 
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    32 & 88 & 31 & e0 \\ \hline
+    43 & 5a & 31 & 37 \\ \hline
+    f6 & 30 & 98 & 07 \\ \hline
+    a8 & 8d & a2 & 34 \\ \hline
+  \end{array}$ &
+  $\begin{array}{|c|c|c|c|}
+    \hline
+        {\ }{\ }{\ }{\ } & {\ }{\ }{\ }{\ } & {\ }{\ }{\ }{\ } & 
+        {\ }{\ }{\ }{\ } \\ \hline
+        &  &  &  \\ \hline
+        &  &  &  \\ \hline
+        &  &  &  \\ \hline
+  \end{array}$ &
+  $\begin{array}{|c|c|c|c|}
+    \hline
+        {\ }{\ }{\ }{\ } & {\ }{\ }{\ }{\ } & {\ }{\ }{\ }{\ } & 
+        {\ }{\ }{\ }{\ } \\ \hline
+        &  &  &  \\ \hline
+        &  &  &  \\ \hline
+        &  &  &  \\ \hline
+  \end{array}$ &
+  $\begin{array}{|c|c|c|c|}
+    \hline
+        {\ }{\ }{\ }{\ } & {\ }{\ }{\ }{\ } & {\ }{\ }{\ }{\ } & 
+        {\ }{\ }{\ }{\ } \\ \hline
+        &  &  &  \\ \hline
+        &  &  &  \\ \hline
+        &  &  &  \\ \hline
+  \end{array}$ &
 
-     input & 
-     $\begin{array}{|c|c|c|c|}
-       \hline
-       32 & 88 & 31 & e0 \\ \hline
-       43 & 5a & 31 & 37 \\ \hline
-       f6 & 30 & 98 & 07 \\ \hline
-       a8 & 8d & a2 & 34 \\ \hline
-    \end{array}$ &
-    $\begin{array}{|c|c|c|c|}
-      \hline
-     {\ }{\ }{\ }{\ } & {\ }{\ }{\ }{\ } & {\ }{\ }{\ }{\ } & 
-     {\ }{\ }{\ }{\ } \\ \hline
-      &  &  &  \\ \hline
-      &  &  &  \\ \hline
-      &  &  &  \\ \hline
-    \end{array}$ &
-    $\begin{array}{|c|c|c|c|}
-      \hline
-     {\ }{\ }{\ }{\ } & {\ }{\ }{\ }{\ } & {\ }{\ }{\ }{\ } & 
-     {\ }{\ }{\ }{\ } \\ \hline
-      &  &  &  \\ \hline
-      &  &  &  \\ \hline
-      &  &  &  \\ \hline
-    \end{array}$ &
-    $\begin{array}{|c|c|c|c|}
-      \hline
-     {\ }{\ }{\ }{\ } & {\ }{\ }{\ }{\ } & {\ }{\ }{\ }{\ } & 
-     {\ }{\ }{\ }{\ } \\ \hline
-      &  &  &  \\ \hline
-      &  &  &  \\ \hline
-      &  &  &  \\ \hline
-    \end{array}$ &
+  \oplus &
 
-    \oplus &
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    2b & 28 & ab & 09 \\ \hline
+    7e & ae & f7 & cf \\ \hline
+    15 & d2 & 15 & 4f \\ \hline
+    16 & a6 & 88 & 3c \\ \hline
+  \end{array}$ \\ \\
+  
+  1 & 
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    19 & a0 & 9a & e9 \\ \hline
+    3d & f4 & c6 & f8 \\ \hline
+    e3 & e2 & 8d & 48 \\ \hline
+    be & 2b & 2a & 08 \\ \hline
+  \end{array}$ &
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    d4 & e0 & b8 & 1e \\ \hline
+    27 & bf & b4 & 41 \\ \hline
+    11 & 98 & 5d & 52 \\ \hline
+    ae & f1 & e5 & 30 \\ \hline
+  \end{array}$ &
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    d4 & e0 & b8 & 1e \\ \hline
+    bf & b4 & 41 & 27 \\ \hline
+    5d & 52 & 11 & 98 \\ \hline
+    30 & ae & f1 & e5 \\ \hline
+  \end{array}$ &
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    04 & e0 & 48 & 28 \\ \hline
+    66 & cb & f8 & 06 \\ \hline
+    81 & 19 & d3 & 26 \\ \hline
+    e5 & 9a & 7a & 4c \\ \hline
+  \end{array}$ &
+  \oplus &
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    a0 & 88 & 23 & 2a \\ \hline
+    fa & 54 & a3 & 6c \\ \hline
+    fe & 2c & 39 & 76 \\ \hline
+    17 & b1 & 39 & 05 \\ \hline
+  \end{array}$ \\ \\
 
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      2b & 28 & ab & 09 \\ \hline
-      7e & ae & f7 & cf \\ \hline
-      15 & d2 & 15 & 4f \\ \hline
-      16 & a6 & 88 & 3c \\ \hline
-    \end{array}$ \\ \\
-    
-    1 & 
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      19 & a0 & 9a & e9 \\ \hline
-      3d & f4 & c6 & f8 \\ \hline
-      e3 & e2 & 8d & 48 \\ \hline
-      be & 2b & 2a & 08 \\ \hline
-    \end{array}$ &
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      d4 & e0 & b8 & 1e \\ \hline
-      27 & bf & b4 & 41 \\ \hline
-      11 & 98 & 5d & 52 \\ \hline
-      ae & f1 & e5 & 30 \\ \hline
-    \end{array}$ &
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      d4 & e0 & b8 & 1e \\ \hline
-      bf & b4 & 41 & 27 \\ \hline
-      5d & 52 & 11 & 98 \\ \hline
-      30 & ae & f1 & e5 \\ \hline
-    \end{array}$ &
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      04 & e0 & 48 & 28 \\ \hline
-      66 & cb & f8 & 06 \\ \hline
-      81 & 19 & d3 & 26 \\ \hline
-      e5 & 9a & 7a & 4c \\ \hline
-    \end{array}$ &
-    \oplus &
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      a0 & 88 & 23 & 2a \\ \hline
-      fa & 54 & a3 & 6c \\ \hline
-      fe & 2c & 39 & 76 \\ \hline
-      17 & b1 & 39 & 05 \\ \hline
-    \end{array}$ \\ \\
+  2 & 
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    a4 & 68 & 6b & 02 \\ \hline
+    9c & 9f & 5b & 6a \\ \hline
+    7f & 35 & ea & 50 \\ \hline
+    f2 & 2b & 43 & 49 \\ \hline
+  \end{array}$ &
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    49 & 45 & 7f & 77 \\ \hline
+    de & db & 39 & 02 \\ \hline
+    d2 & 96 & 87 & 53 \\ \hline
+    89 & f1 & 1a & 3b \\ \hline
+  \end{array}$ &
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    49 & 45 & 7f & 77 \\ \hline
+    db & 39 & 02 & de \\ \hline
+    87 & 53 & d2 & 96 \\ \hline
+    3b & 89 & f1 & 1a \\ \hline
+  \end{array}$ &
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    58 & 1b & db & 1b \\ \hline
+    4d & 4b & e7 & 6b \\ \hline
+    ca & 5a & ca & b0 \\ \hline
+    f1 & ac & a8 & e5 \\ \hline
+  \end{array}$ &
+  \oplus &
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    f2 & 7a & 59 & 73 \\ \hline
+    c2 & 96 & 35 & 59 \\ \hline
+    95 & b9 & 80 & f6 \\ \hline
+    f2 & 43 & 7a & 7f \\ \hline
+  \end{array}$ \\ \\
+  
+  3 & 
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    aa & 61 & 82 & 68 \\ \hline
+    8f & dd & d2 & 32 \\ \hline
+    5f & e3 & 4a & 46 \\ \hline
+    03 & ef & d2 & 9a \\ \hline
+  \end{array}$ &
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    ac & ef & 13 & 45 \\ \hline
+    73 & c1 & b5 & 23 \\ \hline
+    cf & 11 & d6 & 5a \\ \hline
+    7b & df & b5 & b8 \\ \hline
+  \end{array}$ &
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    ac & ef & 13 & 45 \\ \hline
+    c1 & b5 & 23 & 73 \\ \hline
+    d6 & 5a & cf & 11 \\ \hline
+    b8 & 7b & df & b5 \\ \hline
+  \end{array}$ &
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    75 & 20 & 53 & bb \\ \hline
+    ec & 0b & c0 & 25 \\ \hline
+    09 & 63 & cf & d0 \\ \hline
+    93 & 33 & 7c & dc \\ \hline
+  \end{array}$ &
+  \oplus &
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    3d & 47 & 1e & 6d \\ \hline
+    80 & 16 & 23 & 7a \\ \hline
+    47 & fe & 7e & 88 \\ \hline
+    7d & 3e & 44 & 3b \\ \hline
+  \end{array}$ \\ \\
+  
+  4 & 
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    48 & 67 & 4d & d6 \\ \hline
+    6c & 1d & e3 & 5f \\ \hline
+    4e & 9d & b1 & 58 \\ \hline
+    ee & 0d & 38 & e7 \\ \hline
+  \end{array}$ &
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    52 & 85 & e3 & f6 \\ \hline
+    50 & a4 & 11 & cf \\ \hline
+    2f & 5e & c8 & 6a \\ \hline
+    28 & d7 & 07 & 94 \\ \hline
+  \end{array}$ &
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    52 & 85 & e3 & f6 \\ \hline
+    a4 & 11 & cf & 50 \\ \hline
+    c8 & 6a & 2f & 5e \\ \hline
+    94 & 28 & d7 & 07 \\ \hline
+  \end{array}$ &
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    0f & 60 & 6f & 5e \\ \hline
+    d6 & 31 & c0 & b3 \\ \hline
+    da & 38 & 10 & 13 \\ \hline
+    a9 & bf & 6b & 01 \\ \hline
+  \end{array}$ &
+  \oplus &
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    ef & a8 & b6 & db \\ \hline
+    44 & 52 & 71 & 0b \\ \hline
+    a5 & 5b & 25 & ad \\ \hline
+    4a & 7f & 3b & 00 \\ \hline
+  \end{array}$ \\ \\
+  
+  5 & 
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    e0 & c8 & d9 & 85 \\ \hline
+    92 & 63 & b1 & b8 \\ \hline
+    7f & 63 & 35 & be \\ \hline
+    e8 & c0 & 50 & 01 \\ \hline
+  \end{array}$ &
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    e1 & e8 & 35 & 97 \\ \hline
+    4f & fb & c8 & 6c \\ \hline
+    d2 & fb & 96 & ae \\ \hline
+    9b & ba & 53 & 7c \\ \hline
+  \end{array}$ &
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    e1 & e8 & 35 & 97 \\ \hline
+    fb & c8 & 6c & 4f \\ \hline
+    96 & ae & d2 & fb \\ \hline
+    7c & 9b & ba & 53 \\ \hline
+  \end{array}$ &
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    25 & bd & b6 & 4c \\ \hline
+    d1 & 11 & 3a & 4c \\ \hline
+    a9 & d1 & 33 & c0 \\ \hline
+    ad & 68 & 8e & b0 \\ \hline
+  \end{array}$ &
+  \oplus &
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    d4 & 7c & ca & 11 \\ \hline
+    d1 & 8d & f2 & f9 \\ \hline
+    c6 & 9d & b8 & 15 \\ \hline
+    f8 & 87 & bc & bc \\ \hline
+  \end{array}$ \\ \\
 
-    2 & 
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      a4 & 68 & 6b & 02 \\ \hline
-      9c & 9f & 5b & 6a \\ \hline
-      7f & 35 & ea & 50 \\ \hline
-      f2 & 2b & 43 & 49 \\ \hline
-    \end{array}$ &
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      49 & 45 & 7f & 77 \\ \hline
-      de & db & 39 & 02 \\ \hline
-      d2 & 96 & 87 & 53 \\ \hline
-      89 & f1 & 1a & 3b \\ \hline
-    \end{array}$ &
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      49 & 45 & 7f & 77 \\ \hline
-      db & 39 & 02 & de \\ \hline
-      87 & 53 & d2 & 96 \\ \hline
-      3b & 89 & f1 & 1a \\ \hline
-    \end{array}$ &
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      58 & 1b & db & 1b \\ \hline
-      4d & 4b & e7 & 6b \\ \hline
-      ca & 5a & ca & b0 \\ \hline
-      f1 & ac & a8 & e5 \\ \hline
-    \end{array}$ &
-    \oplus &
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      f2 & 7a & 59 & 73 \\ \hline
-      c2 & 96 & 35 & 59 \\ \hline
-      95 & b9 & 80 & f6 \\ \hline
-      f2 & 43 & 7a & 7f \\ \hline
-    \end{array}$ \\ \\
-    
-    3 & 
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      aa & 61 & 82 & 68 \\ \hline
-      8f & dd & d2 & 32 \\ \hline
-      5f & e3 & 4a & 46 \\ \hline
-      03 & ef & d2 & 9a \\ \hline
-    \end{array}$ &
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      ac & ef & 13 & 45 \\ \hline
-      73 & c1 & b5 & 23 \\ \hline
-      cf & 11 & d6 & 5a \\ \hline
-      7b & df & b5 & b8 \\ \hline
-    \end{array}$ &
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      ac & ef & 13 & 45 \\ \hline
-      c1 & b5 & 23 & 73 \\ \hline
-      d6 & 5a & cf & 11 \\ \hline
-      b8 & 7b & df & b5 \\ \hline
-    \end{array}$ &
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      75 & 20 & 53 & bb \\ \hline
-      ec & 0b & c0 & 25 \\ \hline
-      09 & 63 & cf & d0 \\ \hline
-      93 & 33 & 7c & dc \\ \hline
-    \end{array}$ &
-    \oplus &
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      3d & 47 & 1e & 6d \\ \hline
-      80 & 16 & 23 & 7a \\ \hline
-      47 & fe & 7e & 88 \\ \hline
-        7d & 3e & 44 & 3b \\ \hline
-    \end{array}$ \\ \\
-    
-    4 & 
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      48 & 67 & 4d & d6 \\ \hline
-      6c & 1d & e3 & 5f \\ \hline
-      4e & 9d & b1 & 58 \\ \hline
-      ee & 0d & 38 & e7 \\ \hline
-    \end{array}$ &
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      52 & 85 & e3 & f6 \\ \hline
-      50 & a4 & 11 & cf \\ \hline
-      2f & 5e & c8 & 6a \\ \hline
-      28 & d7 & 07 & 94 \\ \hline
-    \end{array}$ &
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      52 & 85 & e3 & f6 \\ \hline
-      a4 & 11 & cf & 50 \\ \hline
-      c8 & 6a & 2f & 5e \\ \hline
-      94 & 28 & d7 & 07 \\ \hline
-    \end{array}$ &
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      0f & 60 & 6f & 5e \\ \hline
-      d6 & 31 & c0 & b3 \\ \hline
-      da & 38 & 10 & 13 \\ \hline
-      a9 & bf & 6b & 01 \\ \hline
-    \end{array}$ &
-    \oplus &
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      ef & a8 & b6 & db \\ \hline
-      44 & 52 & 71 & 0b \\ \hline
-      a5 & 5b & 25 & ad \\ \hline
-      4a & 7f & 3b & 00 \\ \hline
-    \end{array}$ \\ \\
-    
-    5 & 
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      e0 & c8 & d9 & 85 \\ \hline
-      92 & 63 & b1 & b8 \\ \hline
-      7f & 63 & 35 & be \\ \hline
-      e8 & c0 & 50 & 01 \\ \hline
-    \end{array}$ &
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      e1 & e8 & 35 & 97 \\ \hline
-      4f & fb & c8 & 6c \\ \hline
-      d2 & fb & 96 & ae \\ \hline
-      9b & ba & 53 & 7c \\ \hline
-    \end{array}$ &
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      e1 & e8 & 35 & 97 \\ \hline
-      fb & c8 & 6c & 4f \\ \hline
-      96 & ae & d2 & fb \\ \hline
-      7c & 9b & ba & 53 \\ \hline
-    \end{array}$ &
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      25 & bd & b6 & 4c \\ \hline
-      d1 & 11 & 3a & 4c \\ \hline
-      a9 & d1 & 33 & c0 \\ \hline
-      ad & 68 & 8e & b0 \\ \hline
-    \end{array}$ &
-    \oplus &
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      d4 & 7c & ca & 11 \\ \hline
-      d1 & 8d & f2 & f9 \\ \hline
-      c6 & 9d & b8 & 15 \\ \hline
-      f8 & 87 & bc & bc \\ \hline
-    \end{array}$ \\ \\
+  6 & 
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    f1 & c1 & 7c & 5d \\ \hline
+    00 & 92 & c8 & b5 \\ \hline
+    6f & 4c & 8b & d5 \\ \hline
+    55 & ef & 32 & 0c \\ \hline
+  \end{array}$ &
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    a1 & 78 & 10 & 4c \\ \hline
+    63 & 4f & e8 & d5 \\ \hline
+    a8 & 29 & 3d & 03 \\ \hline
+    fc & df & 23 & fe \\ \hline
+  \end{array}$ &
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    a1 & 78 & 10 & 4c \\ \hline
+    4f & e8 & d5 & 63 \\ \hline
+    3d & 03 & a8 & 29 \\ \hline
+    fe & fc & df & 23 \\ \hline
+  \end{array}$ &
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    4b & 2c & 33 & 37 \\ \hline
+    86 & 4a & 9d & d2 \\ \hline
+    8d & 89 & f4 & 18 \\ \hline
+    6d & 80 & e8 & d8 \\ \hline
+  \end{array}$ &
+  \oplus &
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    6d & 11 & db & ca \\ \hline
+    88 & 0b & f9 & 00 \\ \hline
+    a3 & 3e & 86 & 93 \\ \hline
+    7a & fd & 41 & fd \\ \hline
+  \end{array}$ \\ \\
+  
+  7 & 
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    26 & 3d & e8 & fd \\ \hline
+    0e & 41 & 64 & d2 \\ \hline
+    2e & b7 & 72 & 8b \\ \hline
+    17 & 7d & a9 & 25 \\ \hline
+  \end{array}$ &
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    f7 & 27 & 9b & 54 \\ \hline
+    ab & 83 & 43 & b5 \\ \hline
+    31 & a9 & 40 & 3d \\ \hline
+    f0 & ff & d3 & 3f \\ \hline
+  \end{array}$ &
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    f7 & 27 & 9b & 54 \\ \hline
+    83 & 43 & b5 & ab \\ \hline
+    40 & 3d & 31 & a9 \\ \hline
+    3f & f0 & ff & d3 \\ \hline
+  \end{array}$ &
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    14 & 46 & 27 & 34 \\ \hline
+    15 & 16 & 46 & 2a \\ \hline
+    b5 & 15 & 56 & d8 \\ \hline
+    bf & ec & d7 & 43 \\ \hline
+  \end{array}$ &
+  $\oplus$ &
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    4e & 5f & 84 & 4e \\ \hline
+    54 & 5f & a6 & a6 \\ \hline
+    f7 & c9 & 4f & dc \\ \hline
+    0e & f3 & b2 & 4f \\ \hline
+  \end{array}$ \\ \\
+  
+  8 & 
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    5a & 19 & a3 & 7a \\ \hline
+    41 & 49 & e0 & 8c \\ \hline
+    42 & dc & 19 & 04 \\ \hline
+    b1 & 1f & 65 & 0c \\ \hline
+  \end{array}$ &
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    be & d4 & 0a & da \\ \hline
+    83 & 3b & e1 & 64 \\ \hline
+    2c & 86 & d4 & f2 \\ \hline
+    c8 & c0 & 4d & fe \\ \hline
+  \end{array}$ &
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    be & d4 & 0a & da \\ \hline
+    3b & e1 & 64 & 83 \\ \hline
+    d4 & f2 & 2c & 86 \\ \hline
+    fe & c8 & c0 & 4d \\ \hline
+  \end{array}$ &
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    00 & b1 & 54 & fa \\ \hline
+    51 & c8 & 76 & 1b \\ \hline
+    2f & 89 & 6d & 99 \\ \hline
+    d1 & ff & cd & ea \\ \hline
+  \end{array}$ &
+  $\oplus$ &
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    ea & b5 & 31 & 7f \\ \hline
+    d2 & 8d & 2b & 8d \\ \hline
+    73 & ba & f5 & 29 \\ \hline
+    21 & d2 & 60 & 2f \\ \hline
+  \end{array}$ \\ \\
+  
+  9 & 
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    ea & 04 & 65 & 85 \\ \hline
+    83 & 45 & 5d & 96 \\ \hline
+    5c & 33 & 98 & b0 \\ \hline
+    f0 & 2d & ad & c5 \\ \hline
+  \end{array}$ &
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    87 & f2 & 4d & 97 \\ \hline
+    ec & 6e & 4c & 90 \\ \hline
+    4a & c3 & 46 & e7 \\ \hline
+    8c & d8 & 95 & a6 \\ \hline
+  \end{array}$ &
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    87 & f2 & 4d & 97 \\ \hline
+    6e & 4c & 90 & ec \\ \hline
+    46 & e7 & 4a & c3 \\ \hline
+    a6 & 8c & d8 & 95 \\ \hline
+  \end{array}$ &
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    47 & 40 & a3 & 4c \\ \hline
+    37 & d4 & 70 & 9f \\ \hline
+    94 & e4 & 3a & 42 \\ \hline
+    ed & a5 & a6 & bc \\ \hline
+  \end{array}$ &
+  \oplus &
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    ac & 19 & 28 & 57 \\ \hline
+    77 & fa & d1 & 5c \\ \hline
+    66 & dc & 29 & 00 \\ \hline
+    f3 & 21 & 41 & 6e \\ \hline
+  \end{array}$ \\ \\
 
-    6 & 
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      f1 & c1 & 7c & 5d \\ \hline
-      00 & 92 & c8 & b5 \\ \hline
-      6f & 4c & 8b & d5 \\ \hline
-      55 & ef & 32 & 0c \\ \hline
-    \end{array}$ &
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      a1 & 78 & 10 & 4c \\ \hline
-      63 & 4f & e8 & d5 \\ \hline
-      a8 & 29 & 3d & 03 \\ \hline
-      fc & df & 23 & fe \\ \hline
-    \end{array}$ &
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      a1 & 78 & 10 & 4c \\ \hline
-      4f & e8 & d5 & 63 \\ \hline
-      3d & 03 & a8 & 29 \\ \hline
-      fe & fc & df & 23 \\ \hline
-    \end{array}$ &
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      4b & 2c & 33 & 37 \\ \hline
-      86 & 4a & 9d & d2 \\ \hline
-      8d & 89 & f4 & 18 \\ \hline
-      6d & 80 & e8 & d8 \\ \hline
-    \end{array}$ &
-    \oplus &
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      6d & 11 & db & ca \\ \hline
-      88 & 0b & f9 & 00 \\ \hline
-      a3 & 3e & 86 & 93 \\ \hline
-      7a & fd & 41 & fd \\ \hline
-    \end{array}$ \\ \\
-    
-    7 & 
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      26 & 3d & e8 & fd \\ \hline
-      0e & 41 & 64 & d2 \\ \hline
-      2e & b7 & 72 & 8b \\ \hline
-      17 & 7d & a9 & 25 \\ \hline
-    \end{array}$ &
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      f7 & 27 & 9b & 54 \\ \hline
-      ab & 83 & 43 & b5 \\ \hline
-      31 & a9 & 40 & 3d \\ \hline
-      f0 & ff & d3 & 3f \\ \hline
-    \end{array}$ &
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      f7 & 27 & 9b & 54 \\ \hline
-      83 & 43 & b5 & ab \\ \hline
-      40 & 3d & 31 & a9 \\ \hline
-      3f & f0 & ff & d3 \\ \hline
-    \end{array}$ &
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      14 & 46 & 27 & 34 \\ \hline
-      15 & 16 & 46 & 2a \\ \hline
-      b5 & 15 & 56 & d8 \\ \hline
-      bf & ec & d7 & 43 \\ \hline
-    \end{array}$ &
-    $\oplus$ &
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      4e & 5f & 84 & 4e \\ \hline
-      54 & 5f & a6 & a6 \\ \hline
-      f7 & c9 & 4f & dc \\ \hline
-      0e & f3 & b2 & 4f \\ \hline
-    \end{array}$ \\ \\
-    
-    8 & 
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      5a & 19 & a3 & 7a \\ \hline
-      41 & 49 & e0 & 8c \\ \hline
-      42 & dc & 19 & 04 \\ \hline
-      b1 & 1f & 65 & 0c \\ \hline
-    \end{array}$ &
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      be & d4 & 0a & da \\ \hline
-      83 & 3b & e1 & 64 \\ \hline
-      2c & 86 & d4 & f2 \\ \hline
-      c8 & c0 & 4d & fe \\ \hline
-    \end{array}$ &
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      be & d4 & 0a & da \\ \hline
-      3b & e1 & 64 & 83 \\ \hline
-      d4 & f2 & 2c & 86 \\ \hline
-      fe & c8 & c0 & 4d \\ \hline
-    \end{array}$ &
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      00 & b1 & 54 & fa \\ \hline
-      51 & c8 & 76 & 1b \\ \hline
-      2f & 89 & 6d & 99 \\ \hline
-      d1 & ff & cd & ea \\ \hline
-    \end{array}$ &
-    $\oplus$ &
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      ea & b5 & 31 & 7f \\ \hline
-      d2 & 8d & 2b & 8d \\ \hline
-      73 & ba & f5 & 29 \\ \hline
-      21 & d2 & 60 & 2f \\ \hline
-    \end{array}$ \\ \\
-    
-    9 & 
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      ea & 04 & 65 & 85 \\ \hline
-      83 & 45 & 5d & 96 \\ \hline
-      5c & 33 & 98 & b0 \\ \hline
-      f0 & 2d & ad & c5 \\ \hline
-    \end{array}$ &
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      87 & f2 & 4d & 97 \\ \hline
-      ec & 6e & 4c & 90 \\ \hline
-      4a & c3 & 46 & e7 \\ \hline
-      8c & d8 & 95 & a6 \\ \hline
-    \end{array}$ &
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      87 & f2 & 4d & 97 \\ \hline
-      6e & 4c & 90 & ec \\ \hline
-      46 & e7 & 4a & c3 \\ \hline
-      a6 & 8c & d8 & 95 \\ \hline
-    \end{array}$ &
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      47 & 40 & a3 & 4c \\ \hline
-      37 & d4 & 70 & 9f \\ \hline
-      94 & e4 & 3a & 42 \\ \hline
-      ed & a5 & a6 & bc \\ \hline
-    \end{array}$ &
-    \oplus &
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      ac & 19 & 28 & 57 \\ \hline
-      77 & fa & d1 & 5c \\ \hline
-      66 & dc & 29 & 00 \\ \hline
-      f3 & 21 & 41 & 6e \\ \hline
-    \end{array}$ \\ \\
+  10 & 
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    eb & 59 & 8b & 1b \\ \hline
+    40 & 2e & a1 & c3 \\ \hline
+    f2 & 38 & 13 & 42 \\ \hline
+    1e & 84 & e7 & d2 \\ \hline
+  \end{array}$ &
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    e9 & cb & 3d & af \\ \hline
+    09 & 31 & 32 & e2 \\ \hline
+    89 & 07 & 7d & 2c \\ \hline
+    72 & 5f & 94 & b5 \\ \hline
+  \end{array}$ &
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    e9 & cb & 3d & af \\ \hline
+    31 & 32 & e2 & 09 \\ \hline
+    7d & 2c & 89 & 07 \\ \hline
+    b5 & 72 & 5f & 94 \\ \hline
+  \end{array}$ &
+  $\begin{array}{|c|c|c|c|}
+    \hline
+        {\ }{\ }{\ }{\ } & {\ }{\ }{\ }{\ } & {\ }{\ }{\ }{\ } & 
+        {\ }{\ }{\ }{\ }\\ \hline
+        &  &  &  \\ \hline
+        &  &  &  \\ \hline
+        &  &  &  \\ \hline
+  \end{array}$ &
+  \oplus &
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    d0 & c9 & e1 & b6 \\ \hline
+    14 & ee & 3f & 63 \\ \hline
+    f9 & 25 & 0c & 0c \\ \hline
+    a8 & 89 & c8 & a6 \\ \hline
+  \end{array}$ \\ \\
 
-    10 & 
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      eb & 59 & 8b & 1b \\ \hline
-      40 & 2e & a1 & c3 \\ \hline
-      f2 & 38 & 13 & 42 \\ \hline
-      1e & 84 & e7 & d2 \\ \hline
-    \end{array}$ &
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      e9 & cb & 3d & af \\ \hline
-      09 & 31 & 32 & e2 \\ \hline
-      89 & 07 & 7d & 2c \\ \hline
-      72 & 5f & 94 & b5 \\ \hline
-    \end{array}$ &
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      e9 & cb & 3d & af \\ \hline
-      31 & 32 & e2 & 09 \\ \hline
-      7d & 2c & 89 & 07 \\ \hline
-      b5 & 72 & 5f & 94 \\ \hline
-    \end{array}$ &
-    $\begin{array}{|c|c|c|c|}
-      \hline
-     {\ }{\ }{\ }{\ } & {\ }{\ }{\ }{\ } & {\ }{\ }{\ }{\ } & 
-     {\ }{\ }{\ }{\ }\\ \hline
-      &  &  &  \\ \hline
-      &  &  &  \\ \hline
-      &  &  &  \\ \hline
-    \end{array}$ &
-    \oplus &
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      d0 & c9 & e1 & b6 \\ \hline
-      14 & ee & 3f & 63 \\ \hline
-      f9 & 25 & 0c & 0c \\ \hline
-      a8 & 89 & c8 & a6 \\ \hline
-    \end{array}$ \\ \\
-
-    output &
-    $\begin{array}{|c|c|c|c|}
-      \hline
-      39 & 02 & dc & 19 \\ \hline
-      25 & dc & 11 & 6a \\ \hline
-      84 & 09 & 85 & 0b \\ \hline
-      1d & fb & 97 & 32 \\ \hline
-    \end{array}$ & & & & &    
+  output &
+  $\begin{array}{|c|c|c|c|}
+    \hline
+    39 & 02 & dc & 19 \\ \hline
+    25 & dc & 11 & 6a \\ \hline
+    84 & 09 & 85 & 0b \\ \hline
+    1d & fb & 97 & 32 \\ \hline
+  \end{array}$ & & & & & \\
+  \caption{AES-128 Scrambling on 16 byte packet}
+  \label{tv:aes128_2}
 \end{longtable}
+
+Table \ref{tv:cbcmode} is a test case for the CBC-mode scrambling performed on a 
+TS-packet. The highlighted bytes are left in the clear, due to the scrambling 
+only working with packets consisting of 16 bytes.
+
+\begin{longtable}{| l | l |}
+  \hline
+  Clear Packet & \fbox{47 60 80 11} 54 68 69 73 20 69 73  20 74 68 65 20 \\
+  & 70 61 79 6C 6F 61 64 20 75 73 65 64 20 66 6F 72 \\
+  & 20 63 72 65 61 74 69 6E 67 20 74 68 65 20 74 65 \\
+  & 73 74 20 76 65 63 74 6F 72 73 20 66 6F 72 20 74 \\
+  & 68 65 20 44 56 42 20 49 50 54 56 20 73 63 72 61 \\
+  & 6D 62 6C 65 72 2F 64 65 73 63 72 61 6D 62 6C 65 \\
+  & 72 7E 20 54 68 69 73 20 69 73 20 74 68 65 20 70 \\
+  & 61 79 6C 6F 61 64 20 75 73 65 64 20 66 6F 72 20 \\
+  & 63 72 65 61 74 69 6E 67 20 74 68 65 20 74 65 73 \\
+  & 74 20 76 65 63 74 6F 72 73 20 66 6F 72 20 74 68 \\
+  & 65 20 44 56 42 20 49 50 54 56 20 73 63 72 61 6D \\
+  & 62 6C 65 72 \hl{2F 64 65 73 63 72 61 6D} \\ \hline
+
+  Scrambled Packet & \fbox{47 60 80 11} 15 CE 67 E0 CB 01 B5 3C E7 60 54 E5 \\
+  & 7A 4A D1 20 A0 DF A4 EA AA E9 32 C6 78 3F 51 AE \\
+  & 19 FA EE 10 8B DB 78 F3 11 3E C2 B5 72 CC 20 85 \\
+  & 00 A5 2C EC A1 14 12 6C 58 24 4D F5 63 E7 A9 B4 \\
+  & E0 41 CB C3 FB FF FB D8 3C 8F BF FB 10 E8 3E A3 \\
+  & 82 04 BA D7 02 FB 01 A2 7B 62 2C 4F 85 AA B6 AA \\
+  & 75 55 97 20 D6 5A B8 44 CE A2 8C F2 E1 FE 5E 7A \\
+  & C1 9D 44 81 89 19 C2 32 49 F1 40 75 7B 5D 16 C0 \\
+  & AF 45 B2 5F 50 9B 9D A0 61 97 12 C5 9F 0B 30 B0 \\
+  & 6F 1F BE 90 12 3F 21 29 83 93 6A 95 31 7F CB 62 \\
+  & F4 34 6A 1B 1E 16 48 40 30 3A FF 83 8A 01 9B F8 \\
+  & 10 A8 E0 B2 \hl{2F 64 65 73 63 72 6A 6D} \\
+  \hline
+  \caption{TS packet scrambled in cbc-mode}
+  \label{tv:cbcmode} % FIXME
+\end{longtable}
+
+\section{Keyexpansion}
+This section only contains input keys, and the respective expanded keys.
+
+\begin{small}
+  Input key: 00 00 00 00 00 00 00 00 00 00 00 00
+
+  \begin{longtable}{l l l l l l l l l l l l l l l l l}
+    Output key: & 00 & 00 & 00 & 00 & 00 & 00 & 00 & 00 & 00 & 00 & 00 & 00 & 00
+    & 00 & 00 & 00 \\
+    & 62 & 63 & 63 & 63 & 62 & 63 & 63 & 63 & 62 & 63 & 63 & 63 & 62 & 63 & 63
+    & 63 \\
+    & 9b & 98 & 98 & c9 & f9 & fb & fb & aa & 9b & 98 & 98 & c9 & f9 & fb & fb
+    & aa \\
+    & 90 & 97 & 34 & 50 & 69 & 6c & cf & fa & f2 & f4 & 57 & 33 & 0b & 0f & ac
+    & 99 \\
+    & ee & 06 & da & 7b & 87 & 6a & 15 & 81 & 75 & 9e & 42 & b2 & 7e & 91 & ee 
+    & 2b \\
+    & 7f & 2e & 2b & 88 & f8 & 44 & 3e & 09 & 8d & da & 7c & bb & f3 & 4b & 92 
+    & 90 \\ 
+    & ec & 61 & 4b & 85 & 14 & 25 & 75 & 8c & 99 & ff & 09 & 37 & 6a & b4 & 9b
+    & a7 \\ 
+    & 21 & 75 & 17 & 87 & 35 & 50 & 62 & 0b & ac & af & 6b & 3c & c6 & 1b & f0
+    & 9b \\ 
+    & 0e & f9 & 03 & 33 & 3b & a9 & 61 & 38 & 97 & 06 & 0a & 04 & 51 & 1d & fa
+    & 9f \\ 
+    & b1 & d4 & d8 & e2 & 8a & 7d & b9 & da & 1d & 7b & b3 & de & 4c & 66 & 49
+    & 41 \\ 
+    & b4 & ef & 5b & cb & 3e & 92 & e2 & 11 & 23 & e9 & 51 & cf & 6f & 8f & 18
+    & 8e \\ 
+  \end{longtable}
+
+  Input key : ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff
+
+  \begin{longtable}{l l l l l l l l l l l l l l l l l}
+    Output key: & ff & ff & ff & ff & ff & ff & ff & ff & ff & ff & ff & ff & ff & ff & ff & ff \\
+    & e8 & e9 & e9 & e9 & 17 & 16 & 16 & 16 & e8 & e9 & e9 & e9 & 17 & 16 & 16 & 16\\
+    & ad & ae & ae & 19 & ba & b8 & b8 & 0f & 52 & 51 & 51 & e6 & 45 & 47 & 47 & f0\\
+    & 09 & 0e & 22 & 77 & b3 & b6 & 9a & 78 & e1 & e7 & cb & 9e & a4 & a0 & 8c & 6e\\
+    & e1 & 6a & bd & 3e & 52 & dc & 27 & 46 & b3 & 3b & ec & d8 & 17 & 9b & 60 & b6\\
+    & e5 & ba & f3 & ce & b7 & 66 & d4 & 88 & 04 & 5d & 38 & 50 & 13 & c6 & 58 & e6\\
+    & 71 & d0 & 7d & b3 & c6 & b6 & a9 & 3b & c2 & eb & 91 & 6b & d1 & 2d & c9 & 8d\\
+    & e9 & 0d & 20 & 8d & 2f & bb & 89 & b6 & ed & 50 & 18 & dd & 3c & 7d & d1 & 50\\
+    & 96 & 33 & 73 & 66 & b9 & 88 & fa & d0 & 54 & d8 & e2 & 0d & 68 & a5 & 33 & 5d\\
+    & 8b & f0 & 3f & 23 & 32 & 78 & c5 & f3 & 66 & a0 & 27 & fe & 0e & 05 & 14 & a3\\
+    & d6 & 0a & 35 & 88 & e4 & 72 & f0 & 7b & 82 & d2 & d7 & 85 & 8c & d7 & c3 & 26\\
+  \end{longtable}
+
+  Input key : 00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f
+
+  \begin{longtable}{l l l l l l l l l l l l l l l l l}
+    Output key: & 00 & 01 & 02 & 03 & 04 & 05 & 06 & 07 & 08 & 09 & 0a & 0b & 
+    0c & 0d & 0e & 0f \\
+    & d6 & aa & 74 & fd & d2 & af & 72 & fa & da & a6 & 78 & f1 & d6 & ab & 76 & fe \\
+    & b6 & 92 & cf & 0b & 64 & 3d & bd & f1 & be & 9b & c5 & 00 & 68 & 30 & b3 & fe \\
+    & b6 & ff & 74 & 4e & d2 & c2 & c9 & bf & 6c & 59 & 0c & bf & 04 & 69 & bf & 41 \\
+    & 47 & f7 & f7 & bc & 95 & 35 & 3e & 03 & f9 & 6c & 32 & bc & fd & 05 & 8d & fd \\
+    & 3c & aa & a3 & e8 & a9 & 9f & 9d & eb & 50 & f3 & af & 57 & ad & f6 & 22 & aa \\
+    & 5e & 39 & 0f & 7d & f7 & a6 & 92 & 96 & a7 & 55 & 3d & c1 & 0a & a3 & 1f & 6b \\
+    & 14 & f9 & 70 & 1a & e3 & 5f & e2 & 8c & 44 & 0a & df & 4d & 4e & a9 & c0 & 26 \\
+    & 47 & 43 & 87 & 35 & a4 & 1c & 65 & b9 & e0 & 16 & ba & f4 & ae & bf & 7a & d2 \\
+    & 54 & 99 & 32 & d1 & f0 & 85 & 57 & 68 & 10 & 93 & ed & 9c & be & 2c & 97 & 4e \\
+    & 13 & 11 & 1d & 7f & e3 & 94 & 4a & 17 & f3 & 07 & a7 & 8b & 4d & 2b & 30 & c5 \\
+  \end{longtable}
+
+  Input key : 00 11 22 33 44 55 66 77 88 99 aa bb cc dd ee ff 
+
+  \begin{longtable}{l l l l l l l l l l l l l l l l l}
+    Output key: & 00 & 11 & 22 & 33 & 44 & 55 & 66 & 77 & 88 & 99 & aa & bb & cc & dd & ee & ff  \\
+    & c0 & 39 & 34 & 78 & 84 & 6c & 52 & 0f & 0c & f5 & f8 & b4 & c0 & 28 & 16 & 4b \\
+    & f6 & 7e & 87 & c2 & 72 & 12 & d6 & cd & 7e & e7 & 2d & 79 & be & cf & 3b & 32 \\
+    & 78 & 9c & a4 & 6c & 0a & 8e & 71 & a1 & 74 & 69 & 5c & d8 & ca & a6 & 67 & ea \\
+    & 54 & 19 & 23 & 18 & 5e & 97 & 52 & b9 & 2a & fe & 0e & 61 & e0 & 58 & 69 & 8b \\
+    & 2e & e0 & 1e & f9 & 70 & 77 & 4c & 40 & 5a & 89 & 42 & 21 & ba & d1 & 2b & aa \\
+    & 30 & 11 & b2 & 0d & 40 & 66 & fe & 4d & 1a & ef & bc & 6c & a0 & 3e & 97 & c6 \\
+    & c2 & 99 & 06 & ed & 82 & ff & f8 & a0 & 98 & 10 & 44 & cc & 38 & 2e & d3 & 0a \\
+    & 73 & ff & 61 & ea & f1 & 00 & 99 & 4a & 69 & 10 & dd & 86 & 51 & 3e & 0e & 8c \\
+    & da & 54 & 05 & 3b & 2b & 52 & 9c & 71 & 42 & 44 & 41 & f7 & 13 & 7a & 4f & 7b \\
+    & 36 & d0 & 24 & 46 & 1d & 84 & b8 & 37 & 5f & c0 & f9 & c0 & 4c & ba & b6 & bb \\
+  \end{longtable}
+\end{small}
+
