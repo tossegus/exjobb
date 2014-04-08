@@ -14,6 +14,14 @@
 \usepackage{mythesis}
 \usepackage{longtable}
 \usepackage{color, soul}
+\usepackage{tikz}
+
+\newcommand{\hcancel}[1]{%
+    \tikz[baseline=(tocancel.base)]{
+        \node[inner sep=0pt,outer sep=0pt] (tocancel) {#1};
+        \draw[red] (tocancel.south west) -- (tocancel.north east);
+    }%
+}%
 
 \begin{document}
 \selectlanguage{eng}
@@ -54,8 +62,9 @@
 \include{flowcharts}
 \include{vectors}
 \include{examples}
+\include{blocks}
 % Include the libraries used here. Remember to input the objects into myrefs.bib 
-% and run the command bibtex main, when located in Documents/Exjobb/ 
+% and run the command bibtex main from ~/Documents/Exjobb/ 
 \backmatter
 
 \listoffigures

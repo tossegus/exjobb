@@ -1,0 +1,9 @@
+\chapter{Layout of the circuit}
+This purpose of this chapter is to give an overview of what the circuit is supposed to look like, realized using blocks.
+The top entity is the aes\_scrambler.
+
+\begin{figure}
+  \includegraphics{manager}
+  \caption{This is the manager}
+  \label{block:manager}
+\end{figure}

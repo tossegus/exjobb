@@ -1,4 +1,16 @@
 \chapter{Result}
+The focus of my implementation has been to minimize the amount of hardware usage,
+while meeting the timing constraints provided from the rest of the circuit. The 
+clock frequency used on the FPGA has been 100 MHz. A throughput in the scale of 
+Gbits/s is sufficient for the current design.
+
+The implemented scrambler processes 16 bytes of data in 11 clock pulses with a 
+clock frequency of roughly 100MHz, which would correspond roughly to a throughput
+of 1.16 Gbits/s. I don't know if it can deal with 100MHz just yet, but probably. 
+The scrambler needs to process the key before scrambling input data. A 
+keyexpansion takes roughly 45 clock pulses, and is only performed when a new key 
+is sent, which is very seldom.
+
 Här är väl tanken att jag ska skriva lite om hur jag implementerat
 och bearbetat allt relevant som har med implementationen att göra. 
 Vad jag gjort som blivit bättre än andra lösningar. Vad jag fokuserat
@@ -12,61 +24,107 @@ Encountered problems:
 \item Small interrest for CSA3
 \item Next to no documentation of the CISSA algorithm
 \item Hard finding reliable test vectors
+\item Merging
+\item Timing
 \end{itemize}
 
-% Fortsätt fylla i när du stöter på problem
+Most of these problems are, in my mind, self-explanatory. The one that I will 
+discuss here is my problem with merging. This problem occured due to the fact 
+that I started the project by implementing small entities, that were to be used 
+in higher hierarchies, instead of what signals would be needed to be sent from 
+different entities to eachother, as well as what they would actually mean.
+
+The pro of my method of working has been that I have been able to get results 
+quickly. The con is that a large portion of the time has been spent on going back
+to entities that were already functional, and reworking them by adding signals, 
+and finding the right timing conditions to make sure that they provided 
+nescessary information for entities higher up in the hierarchy.
+
+Since I tried to optimize this implementation to just meet the demands on speed, 
+while trying to minimize the amount of hardware needed, I introduced timing into 
+a circuit that could otherwise be completely combinatorial. This has, as 
+expected, introduced quite a bunch of timing-issues. I dare say that all of them 
+are gone now, but it is quite hard to know without testing the circuit more 
+extensively.
 
 \section{Hardware}
-Såhär ser hårdvaran ut i en sjukt snygg bild jag ritat: \newline
+The top entity can be viewed in Figure \ref{b:scr}, and the rest of the entities 
+can be found in appendix \ref{app:blocks}.
 
-\begin{array}{r l c r l}
-  Inputs & &  \_\_\_\_\_\_\_ & & Outputs \\
-  1 & --| & & | -- & 1 \\
-  2 & --| & & | -- & 2 \\
-  3 & --| & HW & | -- & 3 \\
-  4 & --| & & | -- & 4 \\
-  5 & --| & & | -- & 5 \\
-  &     &   \_\_\_\_\_\_\_ & & \\
-\end{array}
+\begin{figure}
+  \includegraphics[width=\textwidth]{scrambler}
+  \caption{The top entity}
+  \label{b:scr}
+\end{figure}
+
+%% Såhär ser hårdvaran ut i en sjukt snygg bild jag ritat: \newline
+
+%% \begin{array}{r l c r l}
+%%   Inputs & &  \_\_\_\_\_\_\_ & & Outputs \\
+%%   1 & --| & & | -- & 1 \\
+%%   2 & --| & & | -- & 2 \\
+%%   3 & --| & HW & | -- & 3 \\
+%%   4 & --| & & | -- & 4 \\
+%%   5 & --| & & | -- & 5 \\
+%%   &     &   \_\_\_\_\_\_\_ & & \\
+%% \end{array}
 
 \section{Flow}
 Berätta om flödet på implementationen.
 
-\section{Special solutions}
-Berätta om hur det fungerar.
-
 \section{Implementation}
 My design is very hierarchical. The top layer is an aes128 block in CBC-mode. 
-It takes an input TS-stream, selects data from it which it scrambles, and then 
-it outputs a TS-stream. 
+It takes an input TS-packet, selects data from it which it scrambles, and then 
+outputs the data in the form of a TS-packet once again.
+
+The scrambler consists of two entities. An entity which i call the cbc-entity, 
+which deals with the scrambling of the received data. The other entity is a 
+data-manager. The manager deals with reading data from the interface towards the 
+rest of the FPGA as well as sending the right data-bits to the CBC-entity. It 
+also tells the CBC-entity how to handle the data, since different things are to 
+be done depending on if the data is the first data packet sent, or not.
+
+\subsection{Manager entity}
+The manager (Figure \ref{block:manager}) consists of a FIFO, an FSM and a couple 
+of registers. The FIFO is needed since the data sent to the scrambler from the 
+FPGA is sent in bursts. The FIFO therefore writes the data bursts into a memory, 
+from which it later reads, processes and sends the data to the CBC-entity. The 
+data written to the FIFO is written in packets of 32 bits, but are read 8 bits 
+at the time. The manager looks through the data packets to see if there is an 
+adaptation field or not, since that changes the way we handle the data. The 
+payload is written to the first set of registers as the data is found, and then 
+sent to the next set of registers. This is simply done to allow the manager to 
+deal with two sets of data in parallell. When the packet is ready to be sent, a 
+flag is set and the data is sent to the CBC-entity. 
 
 \subsection{CBC entity}
-\Warning[Write this]{when you have started implementing the cbc mode of aes 
-  encryption}
-The CBC entity consists of ??!??! entities. It is responsible for looking for an 
-adaptation field in the header, since the amount of and placement of data depends
-on if it exists or not. There is only going to be one aes128 cipher block 
-implemented, instead of running all of the TS-packets in parallell, they are to 
-be scrambled in sequence to decrease the amount of hardware usage.
+The CBC-entity (Figure \ref{block:cbc}) consists of three small entities. An 
+xor, a multiplexer and a cipher-entity. The multiplexer is needed since we want 
+to input the first plaintext into the XOR together with an IV. We want to use 
+the output ciphertext instead of the IV for the rest of the plaintexts contained 
+within the same TS-packet. There is only going to be one aes128 cipher in the 
+CBC-entity, in order to save hardware. It will be run in sequence instead of in 
+parallell, even though it might reduce the maximal speed of the circuit.
 
-\subsection{Cipher entities}
-The aes-128 cipher entity consists of 4 components. The data2state entity, which 
-transforms the array into a matrix of data. A keyexpansion entity, which takes 
-an input of a key, and generates an extended key as an output. An entity, which I
-chose to call rounds, which deals with the encryption of the 16 byte blocks. And 
-finally a state2data entity, which transforms the data-matrix into an array once 
-again. The cipher entity itself keeps track of timing mainly between the 
-keyexpansion and the round entity, and makes sure to provide the round entity 
-with the correct roundkey at the right time.
+\subsection{Cipher entity}
+The aes-128 cipher-entity (Figure \ref{block:cipher}) consists of 4 components. 
+The data2state entity, which transforms the array into a matrix of data. A 
+keyexpansion entity, which takes an input of a key, and generates an extended 
+key as an output. An entity, which I chose to call rounds, which deals with the 
+encryption of the 16 byte blocks. And finally a state2data entity, which 
+transforms the data-matrix into an array once again. The cipher entity itself 
+keeps track of timing mainly between the keyexpansion and the round entity, and 
+makes sure to provide the round entity with the correct roundkey at the right 
+time.
 
-\subsection{Keyexpansion entities}
-The keyexpansion entity is divided into 3 keyblock entities. The first keyblock 
+\subsection{Keyexpansion entity}
+The keyexpansion-entity is divided into 3 keyblock entities. The first keyblock 
 entity decides what 4 bytes of the expanded key we want to expand. The second 
 keyblock entity is the keycore, which is only performed on every 4th set of 
 4 bytes. The third keyblock entity performs an xor and an incrementation of the 
 internal counter used as an index when accessing 4 byte blocks of data.
 
-\subsubsection{Keycore entitites}
+\subsubsection{Keycore entity}
 The keycore entity consists of four entities. Rotword, Sbox, Rcon and a counter. 
 The counter is used to get the right data-byte from the Rcon, and the index is 
 only used in the keycore, and is thus best suited to be placed inside the 
@@ -75,16 +133,17 @@ Sbox replaces the input bytes according to the Rijndael Sbox. The Rcon entity
 both collects the correct rcon value from a precalculated vector, as well as 
 inputs it into an xor together with the input.
 
-\subsection{Round entities}
-The round block consists of four entities. Subbytes, shiftrows, mixcolumns and 
-addroundkey. Addroundkey is a somewhat special XOR. Subbytes is an Rijndael 
-Sbox, which takes an input 16-byte state, substitutes it, and outputs another 
-16-byte state. Shiftrows transposes the rows of the second, third and fourth 
-row of the state. Last, but not least, is the mixcolumns entity. It consists of 
-16 mulblock entities. The input state of mixcolumns is split into columns, and 
-each column is sent to a mulblock entity, which multiplies the inputs according 
-to an amount of rules. The function of the mixcolumns block is a rather complex 
-matrix multiplication.
+\subsection{Round entity}
+The round-entity (Figure \ref{block:round}) consists of four entities. Subbytes, 
+shiftrows, mixcolumns and addroundkey. Addroundkey is a somewhat special XOR. 
+Subbytes is an Rijndael Sbox, which takes an input 16-byte state, substitutes 
+it, and outputs another 16-byte state. Shiftrows transposes the rows of the 
+second, third and fourth row of the state. Last, but not least, is the 
+mixcolumns entity. It consists of 16 mulblock entities. The input state of 
+mixcolumns is split into columns, and each column is sent to a mulblock entity, 
+which multiplies the inputs with 1, 2 or 3, then performs a bitwise XOR on them, 
+outputting the result of the XOR. The function of the mixcolumns block is a 
+rather complex matrix multiplication.
 
 \subsubsection{Addroundkey entity}
 Addroundkey is an entity which takes different inputs depending on 
@@ -97,19 +156,19 @@ of the time.
 The mulblock entity consists of one mul3 entity and one mul2 entity, which 
 performs a special kind of hardware multiplication of 3, and 2, on the input. It 
 also takes two inputs which it leaves alone. The four results are then XOR:ed 
-with eachother, and returned to the mixcolumns entity which puts the result in 
-the correct index in the matrix.
+with eachother, and returned to the mixcolumns entity. The result is then input 
+into the correct index in the matrix. 
+
+Mul3 means multiplication with 3, and mul2 means multiplication with 2. A 
+multiplication with 2 is a left-shift, followed by an XOR with the fix value 0x1B
+if the shifted value exceeds 0xFF. A multiplication with 3 is the same as a 
+multiplication with 2, followed by an XOR with the input value.
 
 \section{Tests}
-\Warning[omformulera]{Är det här för casual? Du måste nog omformulera varför du 
-  inte lagt till fler simuleringsresultat}
 All of the entities in the design have been simulated and evaluated seperately 
 before being merged and tested together, to make sure that they had the desired 
-functionality both seperately and when combined together. 
-
-%%Few simulations have 
-%%been attached to this report, to save the reader from having to search through 
-%%pages for the simulation they wish to see.
+functionality both seperately and when combined together. The simulations for the
+seperate blocks are trivial, and therefore not included in the report.
 
 Figure \ref{test:1} through \ref{test:3} are tests performed on the complete 
 aes-128 block, before CBC-mode. In the figures, in\_key is the input key to be 

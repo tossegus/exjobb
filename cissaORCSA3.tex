@@ -33,10 +33,11 @@ supposed to able to be implemented efficiently on hardware as well as in
 software \citep[p. 9]{DVB:2013}.
 
 CISSA is to use the AES-128 block cipher in CBC-mode with a 16 byte IV with the 
-value 0x445642544d4350544145534349535341. Each TS packet is to be process 
-independetly of other TS packets, but each block of data in the payload depends 
-on the previous blocks of data in the same payload. Both the header and 
-adaptation field are to be left unscrambled. \citep[p. 11]{DVB:2013}
+value 0x445642544d4350544145534349535341. Each TS packet is to be processed 
+independently of other TS packets, but each block of data in the payload depends 
+on the previous blocks of data in the same payload, except the first block of 
+data, which depends on the IV. Both the header and adaptation field are to be 
+left unscrambled. \citep[p. 11]{DVB:2013}
 
 \subsection{Software friendly}
 An FPGA implementation of the CISSA algorithm seems likely to be implementable, 
@@ -76,11 +77,11 @@ theft, it closes the door to expansion onto the CPU-based units market, which is
 becoming larger and larger.
 
 \section{Conclusion}
-From what I've seen, both CISSA and CSA3 implement the AES-128 for scrambling, 
-combined with a secret cipher. The secret cipher for CSA3 is the XRC cipher, and 
-the secret CISSA cipher is yet to be known. It is not even sure that CISSA is to 
-use a secret Cipher, but might instead use itself of merely the CBC-mode of 
-operation for the AES128 cipher, or something. 
+Both CISSA and CSA3 seem to implement the AES-128 for scrambling, combined with 
+some kind of a secret cipher. The secret cipher for CSA3 is the XRC cipher, while
+even the name of CISSAs secret cipher has been hard to find. It is not even sure 
+that CISSA is to use a secret Cipher, but might instead use itself of merely the 
+CBC-mode of operation for the AES128 cipher. 
 
 CISSA sounds like a great idea in my opinion, allowing CPU-based units to 
 descramble data streams without a dedicated HW-Chip. While that is good and all, 

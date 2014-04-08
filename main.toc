@@ -59,26 +59,27 @@
 \contentsline {subsection}{\numberline {5.2.3}Rcon}{23}{subsection.5.2.3}
 \contentsline {chapter}{\numberline {6}Result}{25}{chapter.6}
 \contentsline {section}{\numberline {6.1}Problems}{25}{section.6.1}
-\contentsline {section}{\numberline {6.2}Hardware}{25}{section.6.2}
+\contentsline {section}{\numberline {6.2}Hardware}{26}{section.6.2}
 \contentsline {section}{\numberline {6.3}Flow}{26}{section.6.3}
-\contentsline {section}{\numberline {6.4}Special solutions}{26}{section.6.4}
-\contentsline {section}{\numberline {6.5}Implementation}{26}{section.6.5}
-\contentsline {subsection}{\numberline {6.5.1}CBC entity}{26}{subsection.6.5.1}
-\contentsline {subsection}{\numberline {6.5.2}Cipher entities}{26}{subsection.6.5.2}
-\contentsline {subsection}{\numberline {6.5.3}Keyexpansion entities}{26}{subsection.6.5.3}
-\contentsline {subsubsection}{Keycore entitites}{27}{subsection.6.5.3}
-\contentsline {subsection}{\numberline {6.5.4}Round entities}{27}{subsection.6.5.4}
-\contentsline {subsubsection}{Addroundkey entity}{27}{subsection.6.5.4}
-\contentsline {subsubsection}{The mulblock entity}{27}{subsection.6.5.4}
-\contentsline {section}{\numberline {6.6}Tests}{27}{section.6.6}
-\contentsline {chapter}{\numberline {A}Matrixes}{31}{appendix.A}
-\contentsline {chapter}{\numberline {B}Illustrations}{35}{appendix.B}
-\contentsline {chapter}{\numberline {C}Test vectors}{39}{appendix.C}
-\contentsline {section}{\numberline {C.1}Test cases}{39}{section.C.1}
-\contentsline {section}{\numberline {C.2}Keyexpansion}{44}{section.C.2}
-\contentsline {chapter}{\numberline {D}Examples}{47}{appendix.D}
-\contentsline {section}{\numberline {D.1}CBC-mode calculations}{47}{section.D.1}
-\contentsline {chapter}{List of Figures}{49}{section*.20}
-\contentsline {chapter}{Bibliography}{51}{appendix*.21}
+\contentsline {section}{\numberline {6.4}Implementation}{26}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Manager entity}{27}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}CBC entity}{27}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.3}Cipher entity}{28}{subsection.6.4.3}
+\contentsline {subsection}{\numberline {6.4.4}Keyexpansion entity}{28}{subsection.6.4.4}
+\contentsline {subsubsection}{Keycore entity}{28}{subsection.6.4.4}
+\contentsline {subsection}{\numberline {6.4.5}Round entity}{28}{subsection.6.4.5}
+\contentsline {subsubsection}{Addroundkey entity}{28}{subsection.6.4.5}
+\contentsline {subsubsection}{The mulblock entity}{29}{subsection.6.4.5}
+\contentsline {section}{\numberline {6.5}Tests}{29}{section.6.5}
+\contentsline {chapter}{\numberline {A}Matrixes}{33}{appendix.A}
+\contentsline {chapter}{\numberline {B}Illustrations}{37}{appendix.B}
+\contentsline {chapter}{\numberline {C}Test vectors}{41}{appendix.C}
+\contentsline {section}{\numberline {C.1}Test cases}{41}{section.C.1}
+\contentsline {section}{\numberline {C.2}Keyexpansion}{46}{section.C.2}
+\contentsline {chapter}{\numberline {D}Examples}{49}{appendix.D}
+\contentsline {section}{\numberline {D.1}CBC-mode calculations}{49}{section.D.1}
+\contentsline {chapter}{\numberline {E}Layout of the circuit}{51}{appendix.E}
+\contentsline {chapter}{List of Figures}{57}{section*.26}
+\contentsline {chapter}{Bibliography}{59}{appendix*.27}
 \select@language {swedish}
 \select@language {english}
