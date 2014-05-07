@@ -51,29 +51,36 @@ the user is allowed to access the requested material or not. The content provide
 also generates an ECM based on the CW, which the smart-card decrypts and passes 
 to the descrambler if the EMM allows it.
 
-%Är verkligen den här delen nödvändig? Vad ska stå här? Jag måste fundera på vad 
-%jag vill lägga in här, om det ska få vara kvar. Vad är relevant? Vilka 
-%distributörer som använder vilket system? Det kan man hitta på google. Vad de 
-%olika systemen använder för ECMG och EMMG? Det är konfidentiellt.
-\subsection{Standards}\Warning[Remove?]{Or keep?}
+\subsection{Standards}
 Some of the CA systems currently in use are Viaccess, Conax, Irdeto, NDS, Strong 
 and NagraVision. There are different \emph{Conditional Access Module}s (CAM) 
 that are used, and which one is needed depends on the content provider. NDS is 
 used by Viasat, Conax is used by Com Hem, Viaccess is used by Boxer and Strong 
 is used by Canal Digital for instance.
 
-\subsubsection{Viaccess}
-Viaccess is one of the most common CA systems. In Sweden it is used by Boxer and SVT. Viaccess supports CI+.
+\begin{array}{l | c | c}
+  CA system & Used by & Supports CI+ \\ \hline
+  
+  Viaccess & Boxer, SVT & Yes \\ \hline
+  Conax & Com Hem & Yes \\ \hline
+  Strong & Canal Digital & Yes \\
+  Irdeto & & \\ \hline
+    NDS & & \\ \hline
+    NagraVision & & \\
+\end{array}
 
-\subsubsection{Conax}
-Conax is the CA-module used by Com Hem. Conax has got its headquarter in Norway 
-and is a part of the Telenor Group, which deals with mobile telecommunications 
-\citep{Conax}. Conax supports CI+.
+%% \subsubsection{Viaccess}
+%% Viaccess is one of the most common CA systems. In Sweden it is used by Boxer and SVT. Viaccess supports CI+.
 
-\subsubsection{Strong}
-Strong is the CA-module used by Canal Digital. This is currently the third most 
-used content provider in Sweden.. \Warning[Check]{Relevant? Plus source..} 
-According to Wikipedia.. Strong supports CI+.
+%% \subsubsection{Conax}
+%% Conax is the CA-module used by Com Hem. Conax has got its headquarter in Norway 
+%% and is a part of the Telenor Group, which deals with mobile telecommunications 
+%% \citep{Conax}. Conax supports CI+.
+
+%% \subsubsection{Strong}
+%% Strong is the CA-module used by Canal Digital. This is currently the third most 
+%% used content provider in Sweden.. \Warning[Check]{Relevant? Plus source..} 
+%% According to Wikipedia.. Strong supports CI+.
 
 \section{DVB-SimulCrypt} \label{sec:Simul}
 DVB-SimulCrypt is widespread in Europe, and works as an interface between the 

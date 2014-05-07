@@ -3,7 +3,7 @@
 \select@language {swedish}
 \select@language {english}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces CIPlus interface. Image remade from \citep [p. 10]{CI+:2011}\relax }}{4}{figure.caption.4}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces CIPlus interface. Image remade from \citep [p. 10]{CI+:2011}\relax }}{3}{figure.caption.4}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces General layout of a data packet\relax }}{6}{figure.caption.5}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces PES packet derived from TS packets\relax }}{8}{figure.caption.6}

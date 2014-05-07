@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.1.29)  8 APR 2014 15:28
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.29)  7 MAY 2014 14:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -95,7 +95,7 @@ Package graphics Info: Driver file: pdftex.def on input line 91.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
-Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
@@ -1108,13 +1108,13 @@ is class
    defining Unicode char U+C5A1 (decimal 50593)
 )
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2013/05/16 v3.9f The Babel package
+Package: babel 2013/12/03 3.9h The Babel package
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel-swedish/swedish.ldf
 Language: swedish 2005/03/31 v2.3d Swedish support from the babel system
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2013/05/16 v3.9f Babel common definitions
+File: babel.def 2013/12/03 3.9h Babel common definitions
 \babel@savecnt=\count140
 \U@D=\dimen136
 )
@@ -1193,7 +1193,7 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \backup@length=\skip112
 )
 (/usr/share/texlive/texmf-dist/tex/latex/ctable/ctable.sty
-Package: ctable 2013/06/15 v1.26 ctable package for \ flexible typesetting of t
+Package: ctable 2013/12/19 v1.27 ctable package for \ flexible typesetting of t
 able and figure floats using key/value directives
 
 (/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
@@ -2125,6 +2125,10 @@ LaTeX Info: Redefining \nameref on input line 26.
 \openout5 = `main.out'.
 
 
+
+Package ctable Warning:  Transparency disabled: incompatible with tikz package 
+ on input line 26.
+
 Option `squaren' provided! 
  Command \squaren defined by SIunits package!
 
@@ -2360,25 +2364,24 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 46--46
 [][][][] 
  []
 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.62 \begin{array}{l | c | c}
+                             
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
-Overfull \hbox (1.36078pt too wide) in paragraph at lines 58--58
-[][]\T1/jkpk/b/sl/10 Remove?:[] 
- []
-
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 58--58
-[][][][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 75--75
-[]\T1/phv/m/n/5 Relevant? Plus
- []
-
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 75--75
-[][][][] 
- []
+! Missing $ inserted.
+<inserted text> 
+                $
+l.71 \end{array}
+                
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
 
 
 ! Package babel Error: You haven't defined the language eng yet.
@@ -2387,7 +2390,7 @@ See the babel package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.82 
+l.96 
      
 Your command will be ignored, type <return> to proceed
 
@@ -2395,14 +2398,17 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.82 
-      [2] <fig/CIPlus.png, id=476, 434.62375pt x 523.9575pt>
+l.96 
+      [2] <fig/CIPlus.png, id=475, 434.62375pt x 523.9575pt>
 File: fig/CIPlus.png Graphic file (type png)
 
 <use fig/CIPlus.png>
-Package pdftex.def Info: fig/CIPlus.png used on input line 111.
+Package pdftex.def Info: fig/CIPlus.png used on input line 119.
 (pdftex.def)             Requested size: 177.82971pt x 214.38425pt.
 )
+Underfull \vbox (badness 4752) has occurred while \output is active []
+
+
 
 ! Package babel Error: You haven't defined the language eng yet.
 
@@ -2414,7 +2420,7 @@ l.49 \include{cas}
                   
 Your command will be ignored, type <return> to proceed
 
-[3]
+[3 <./fig/CIPlus.png>]
 
 ! Package babel Error: You haven't defined the language eng yet.
 
@@ -2426,7 +2432,7 @@ l.49 \include{cas}
                   
 Your command will be ignored, type <return> to proceed
 
-[4 <./fig/CIPlus.png>]
+[4]
 \openout2 = `Scrambling.aux'.
 
  (./Scrambling.tex
@@ -2459,7 +2465,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 49--49
 [][][][] 
  []
 
-<fig/TSpacket.png, id=510, 969.6225pt x 113.42375pt>
+<fig/TSpacket.png, id=508, 969.6225pt x 113.42375pt>
 File: fig/TSpacket.png Graphic file (type png)
  <use fig/TSpacket.png>
 Package pdftex.def Info: fig/TSpacket.png used on input line 70.
@@ -2482,7 +2488,7 @@ Overfull \hbox (2.49pt too wide) in paragraph at lines 92--94
 ly pay-load_size
  []
 
-<fig/PES.png, id=528, 993.7125pt x 405.515pt>
+<fig/PES.png, id=526, 993.7125pt x 405.515pt>
 File: fig/PES.png Graphic file (type png)
  <use fig/PES.png>
 Package pdftex.def Info: fig/PES.png used on input line 151.
@@ -2521,7 +2527,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 199--199
 [][][][] 
  []
 
-<fig/cipher.png, id=552, 501.875pt x 299.1175pt>
+<fig/cipher.png, id=549, 501.875pt x 299.1175pt>
 File: fig/cipher.png Graphic file (type png)
  <use fig/cipher.png>
 Package pdftex.def Info: fig/cipher.png used on input line 207.
@@ -2584,7 +2590,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 278--278
 [][][][] 
  []
 
-<fig/SPnetwork.png, id=599, 451.6875pt x 301.3659pt>
+<fig/SPnetwork.png, id=596, 451.6875pt x 301.3659pt>
 File: fig/SPnetwork.png Graphic file (type png)
  <use fig/SPnetwork.png>
 Package pdftex.def Info: fig/SPnetwork.png used on input line 290.
@@ -2610,7 +2616,7 @@ Your command will be ignored, type <return> to proceed
 
 ]
 Chapter 3.
-<fig/blockcipher.pdf, id=620, 252.945pt x 179.2296pt>
+<fig/blockcipher.pdf, id=617, 252.945pt x 179.2296pt>
 File: fig/blockcipher.pdf Graphic file (type pdf)
 
 <use fig/blockcipher.pdf>
@@ -2776,7 +2782,7 @@ Chapter 6.
 
 
 
-] <fig/scrambler.png, id=788, 742.775pt x 428.60126pt>
+] <fig/scrambler.png, id=785, 742.775pt x 428.60126pt>
 File: fig/scrambler.png Graphic file (type png)
 
 <use fig/scrambler.png>
@@ -2821,20 +2827,20 @@ l.161
       
 Your command will be ignored, type <return> to proceed
 
-[28] <fig/successtv1.png, id=816, 831.85782pt x 106.14656pt>
+[28] <fig/successtv1.png, id=813, 831.85782pt x 106.14656pt>
 File: fig/successtv1.png Graphic file (type png)
 
 <use fig/successtv1.png>
 Package pdftex.def Info: fig/successtv1.png used on input line 185.
 (pdftex.def)             Requested size: 355.65944pt x 45.38298pt.
 
-<fig/successtv2.png, id=818, 832.61063pt x 112.16907pt>
+<fig/successtv2.png, id=815, 832.61063pt x 112.16907pt>
 File: fig/successtv2.png Graphic file (type png)
 
 <use fig/successtv2.png>
 Package pdftex.def Info: fig/successtv2.png used on input line 196.
 (pdftex.def)             Requested size: 355.65944pt x 47.9151pt.
- <fig/successtv3.png, id=820, 726.46407pt x 108.405pt>
+ <fig/successtv3.png, id=817, 726.46407pt x 108.405pt>
 File: fig/successtv3.png Graphic file (type png)
 
 <use fig/successtv3.png>
@@ -2929,19 +2935,19 @@ Your command will be ignored, type <return> to proceed
 
 ]
 Appendix B.
-<fig/flowchart.pdf, id=865, 415.5525pt x 912.40875pt>
+<fig/flowchart.pdf, id=862, 415.5525pt x 912.40875pt>
 File: fig/flowchart.pdf Graphic file (type pdf)
  <use fig/flowchart.pdf>
 Package pdftex.def Info: fig/flowchart.pdf used on input line 5.
 (pdftex.def)             Requested size: 151.61516pt x 332.90062pt.
 
-<fig/keyschedule.png, id=866, 822.272pt x 822.272pt>
+<fig/keyschedule.png, id=863, 822.272pt x 822.272pt>
 File: fig/keyschedule.png Graphic file (type png)
  <use fig/keyschedule.png>
 Package pdftex.def Info: fig/keyschedule.png used on input line 12.
 (pdftex.def)             Requested size: 355.65944pt x 355.66539pt.
 
-<fig/CBCmode.png, id=867, 2007.5pt x 700.6175pt>
+<fig/CBCmode.png, id=864, 2007.5pt x 700.6175pt>
 File: fig/CBCmode.png Graphic file (type png)
  <use fig/CBCmode.png>
 Package pdftex.def Info: fig/CBCmode.png used on input line 19.
@@ -3395,25 +3401,25 @@ File: fig/scrambler.png Graphic file (type png)
 <use fig/scrambler.png>
 Package pdftex.def Info: fig/scrambler.png used on input line 8.
 (pdftex.def)             Requested size: 355.65944pt x 205.22923pt.
- <fig/manager.png, id=975, 794.97pt x 492.84125pt>
+ <fig/manager.png, id=972, 794.97pt x 492.84125pt>
 File: fig/manager.png Graphic file (type png)
 
 <use fig/manager.png>
 Package pdftex.def Info: fig/manager.png used on input line 14.
 (pdftex.def)             Requested size: 355.65944pt x 220.49808pt.
- <fig/cbc.png, id=976, 484.81125pt x 561.09625pt>
+ <fig/cbc.png, id=973, 484.81125pt x 561.09625pt>
 File: fig/cbc.png Graphic file (type png)
 
 <use fig/cbc.png>
 Package pdftex.def Info: fig/cbc.png used on input line 20.
 (pdftex.def)             Requested size: 355.65944pt x 411.64308pt.
- <fig/cipherblock.png, id=977, 658.46pt x 478.78876pt>
+ <fig/cipherblock.png, id=974, 658.46pt x 478.78876pt>
 File: fig/cipherblock.png Graphic file (type png)
 
 <use fig/cipherblock.png>
 Package pdftex.def Info: fig/cipherblock.png used on input line 26.
 (pdftex.def)             Requested size: 355.65944pt x 258.61513pt.
- <fig/round.png, id=978, 652.4375pt x 630.355pt>
+ <fig/round.png, id=975, 652.4375pt x 630.355pt>
 File: fig/round.png Graphic file (type png)
 
 <use fig/round.png>
@@ -3620,7 +3626,7 @@ Your command will be ignored, type <return> to proceed
 
 [62
 
-] <fig/LinkUniv_staende_pms.pdf, id=1155, 260.975pt x 172.645pt>
+] <fig/LinkUniv_staende_pms.pdf, id=1151, 260.975pt x 172.645pt>
 File: fig/LinkUniv_staende_pms.pdf Graphic file (type pdf)
 
 <use fig/LinkUniv_staende_pms.pdf>
@@ -3667,18 +3673,18 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 75.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: A7D67FBF8E594F954E346E526972C229;4785.
 Package rerunfilecheck Info: File `main.brf' has not changed.
-(rerunfilecheck)             Checksum: E962DF00F97BEE48734AD6B1940243D7;3009.
+(rerunfilecheck)             Checksum: 1F26336D95459C5B18DBFFA2B414A5F7;2961.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 75.
  )
 (\end occurred when \ifx on line 20 was incomplete) 
 Here is how much of TeX's memory you used:
- 22847 strings out of 493307
- 373693 string characters out of 6139905
- 598924 words of memory out of 5000000
- 25351 multiletter control sequences out of 15000+600000
+ 22859 strings out of 493304
+ 373913 string characters out of 6139871
+ 599489 words of memory out of 5000000
+ 25366 multiletter control sequences out of 15000+600000
  230054 words of font info for 187 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 56i,12n,87p,585b,555s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,12n,87p,587b,555s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-di
 st/fonts/enc/dvips/base/8r.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/k
 pfonts/kpfonts-expert.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/kpfont
@@ -3697,10 +3703,10 @@ texlive/texmf-dist/fonts/type1/public/kpfonts/jkpsya.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 helvetic/uhvr8a.pfb>
-Output written on main.pdf (77 pages, 898192 bytes).
+Output written on main.pdf (77 pages, 899758 bytes).
 PDF statistics:
- 1273 PDF objects out of 1440 (max. 8388607)
- 1122 compressed objects within 12 object streams
+ 1269 PDF objects out of 1440 (max. 8388607)
+ 1118 compressed objects within 12 object streams
  227 named destinations out of 1000 (max. 500000)
  19145 words of extra memory for PDF output out of 20736 (max. 10000000)
 
