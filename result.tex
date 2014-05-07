@@ -26,30 +26,44 @@ Encountered problems:
 \item Hard finding reliable test vectors
 \item Merging
 \item Timing
+\item Latches
 \end{itemize}
 
-Most of these problems are, in my mind, self-explanatory. The one that I will 
-discuss here is my problem with merging. This problem occured due to the fact 
-that I started the project by implementing small entities, that were to be used 
-in higher hierarchies, instead of what signals would be needed to be sent from 
-different entities to eachother, as well as what they would actually mean.
+Most of these problems are, in my mind, self-explanatory. The one that 
+I will discuss here is my problem with merging. This problem occured 
+due to the fact that I started the project by implementing small 
+entities, that were to be used in higher hierarchies, instead of what 
+signals would be needed to be sent from different entities to 
+eachother, as well as what they would actually mean.
 
-The pro of my method of working has been that I have been able to get results 
-quickly. The con is that a large portion of the time has been spent on going back
-to entities that were already functional, and reworking them by adding signals, 
-and finding the right timing conditions to make sure that they provided 
-nescessary information for entities higher up in the hierarchy.
+The pro of my method of working has been that I have been able to get 
+results quickly. The con is that a large portion of the time has been 
+spent on going back to entities that were already functional, and 
+reworking them by adding signals, and finding the right timing 
+conditions to make sure that they provided nescessary information for 
+entities higher up in the hierarchy.
 
-Since I tried to optimize this implementation to just meet the demands on speed, 
-while trying to minimize the amount of hardware needed, I introduced timing into 
-a circuit that could otherwise be completely combinatorial. This has, as 
-expected, introduced quite a bunch of timing-issues. I dare say that all of them 
-are gone now, but it is quite hard to know without testing the circuit more 
-extensively.
+Since I tried to optimize this implementation to just meet the demands 
+on speed, while trying to minimize the amount of hardware needed, I 
+introduced timing into a circuit that could otherwise be completely 
+combinatorial. This has, as expected, introduced quite a bunch of 
+timing-issues. I dare say that all of them are gone now, but it is 
+quite hard to know without testing the circuit more extensively.
+
+When I first synthesized the circuit, towards the end of the 
+implementation, I found that the circuit synthesized a large amount of 
+latches. This made my circuit take up roughly 15\% of the FPGA, and use 
+11830 Flip-Flops. There were roughly 3000 latches.
+When I managed to remove all of them, my entire circuit used roughly 8\%
+of the FPGA, and used about 4500 Flip-Flops instead.
+
+This is the entire hardware usage, including the interface towards the 
+FPGA, which is one of the reasons why it might appear large, when 
+compared to other implementations.
 
 \section{Hardware}
-The top entity can be viewed in Figure \ref{b:scr}, and the rest of the entities 
-can be found in appendix \ref{app:blocks}.
+The top entity can be viewed in Figure \ref{b:scr}, and the rest of 
+the entities can be viewed in appendix \ref{app:blocks}.
 
 \begin{figure}
   \includegraphics[width=\textwidth]{scrambler}
@@ -57,81 +71,94 @@ can be found in appendix \ref{app:blocks}.
   \label{b:scr}
 \end{figure}
 
-%% Såhär ser hårdvaran ut i en sjukt snygg bild jag ritat: \newline
+\subsection{Hardware usage}
+I've run three rounds of synthesis on my circuit. The first two ones 
+were performed on the entire scrambler, including the manager 
+(interface towrads the rest of the FPGA), while the last synthesis was 
+performed on each block of the circuit seperately.
 
-%% \begin{array}{r l c r l}
-%%   Inputs & &  \_\_\_\_\_\_\_ & & Outputs \\
-%%   1 & --| & & | -- & 1 \\
-%%   2 & --| & & | -- & 2 \\
-%%   3 & --| & HW & | -- & 3 \\
-%%   4 & --| & & | -- & 4 \\
-%%   5 & --| & & | -- & 5 \\
-%%   &     &   \_\_\_\_\_\_\_ & & \\
-%% \end{array}
+\subsubsection{First synthesis}
+The circuit after the first synthesis used up 15\% of the FPGA, and had 
+quite a large amount of unnescessary latches and flip-flops included. 
 
-\section{Flow}
-Berätta om flödet på implementationen.
+\subsubsection{Second synthesis}
+The synthesis report said that 8\% of the FPGA was occupied by the 
+circuit. The keyblock3 entity, as well as keyblock1 entity 
+
+\section{Further development}
+
+\subsection{SBox}
+The Rijndael Sbox implemented in my design does not synthesize into a 
+ROM, which it should be able to do, alternatively into a couple of LUT6.
+I have not been able to find out why my code 
 
 \section{Implementation}
-My design is very hierarchical. The top layer is an aes128 block in CBC-mode. 
-It takes an input TS-packet, selects data from it which it scrambles, and then 
-outputs the data in the form of a TS-packet once again.
+My design is very hierarchical. The top layer is an aes128 block in 
+CBC-mode. It takes an input TS-packet, selects data from it which it 
+scrambles, and then outputs the data in the form of a TS-packet once 
+again.
 
-The scrambler consists of two entities. An entity which i call the cbc-entity, 
-which deals with the scrambling of the received data. The other entity is a 
-data-manager. The manager deals with reading data from the interface towards the 
-rest of the FPGA as well as sending the right data-bits to the CBC-entity. It 
-also tells the CBC-entity how to handle the data, since different things are to 
-be done depending on if the data is the first data packet sent, or not.
+The scrambler consists of two entities. An entity which I call the 
+cbc-entity, which deals with the scrambling of the received data. The 
+other entity is a data-manager. The manager deals with reading data 
+from the interface towards the rest of the FPGA as well as sending the 
+right data-bits to the CBC-entity. It also tells the CBC-entity how to 
+handle the data, since different things are to be done depending on if 
+the data is the first data packet sent, or not.
 
 \subsection{Manager entity}
-The manager (Figure \ref{block:manager}) consists of a FIFO, an FSM and a couple 
-of registers. The FIFO is needed since the data sent to the scrambler from the 
-FPGA is sent in bursts. The FIFO therefore writes the data bursts into a memory, 
-from which it later reads, processes and sends the data to the CBC-entity. The 
-data written to the FIFO is written in packets of 32 bits, but are read 8 bits 
-at the time. The manager looks through the data packets to see if there is an 
-adaptation field or not, since that changes the way we handle the data. The 
-payload is written to the first set of registers as the data is found, and then 
-sent to the next set of registers. This is simply done to allow the manager to 
-deal with two sets of data in parallell. When the packet is ready to be sent, a 
-flag is set and the data is sent to the CBC-entity. 
+The manager (Figure \ref{block:manager}) consists of a FIFO, an FSM and 
+a couple of registers. The FIFO is needed since the data sent to the 
+scrambler from the FPGA is sent in bursts. The FIFO therefore writes 
+the data bursts into a memory, from which it later reads, processes and 
+sends the data to the CBC-entity. The data written to the FIFO is 
+written in packets of 32 bits, but are read 8 bits at the time. The 
+manager looks through the data packets to see if there is an adaptation 
+field or not, since that changes the way we handle the data. The 
+payload is written to the first set of registers as the data is found, 
+and then sent to the next set of registers. This is simply done to 
+allow the manager to deal with two sets of data in parallell. When the 
+packet is ready to be sent, a flag is set and the data is sent to the 
+CBC-entity. 
 
 \subsection{CBC entity}
-The CBC-entity (Figure \ref{block:cbc}) consists of three small entities. An 
-xor, a multiplexer and a cipher-entity. The multiplexer is needed since we want 
-to input the first plaintext into the XOR together with an IV. We want to use 
-the output ciphertext instead of the IV for the rest of the plaintexts contained 
-within the same TS-packet. There is only going to be one aes128 cipher in the 
-CBC-entity, in order to save hardware. It will be run in sequence instead of in 
-parallell, even though it might reduce the maximal speed of the circuit.
+The CBC-entity (Figure \ref{block:cbc}) consists of three small 
+entities. An XOR, a multiplexer and a cipher-entity. The multiplexer is 
+needed since we want to input the first plaintext into the XOR together 
+with an IV. We want to use the output ciphertext instead of the IV for 
+the rest of the plaintexts contained within the same TS-packet. There 
+is only going to be one aes128 cipher in the CBC-entity, in order to 
+save hardware. It will be run in sequence instead of in parallell, even 
+though it might reduce the maximal speed of the circuit.
 
 \subsection{Cipher entity}
-The aes-128 cipher-entity (Figure \ref{block:cipher}) consists of 4 components. 
-The data2state entity, which transforms the array into a matrix of data. A 
-keyexpansion entity, which takes an input of a key, and generates an extended 
-key as an output. An entity, which I chose to call rounds, which deals with the 
-encryption of the 16 byte blocks. And finally a state2data entity, which 
-transforms the data-matrix into an array once again. The cipher entity itself 
-keeps track of timing mainly between the keyexpansion and the round entity, and 
-makes sure to provide the round entity with the correct roundkey at the right 
-time.
+The aes-128 cipher-entity (Figure \ref{block:cipher}) consists of 4 
+components. The data2state entity, which transforms the array into a 
+matrix of data. A keyexpansion entity, which takes an input of a key, 
+and generates an extended key as an output. An entity, which I chose to 
+call rounds, which deals with the encryption of the 16 byte blocks. And 
+finally a state2data entity, which transforms the data-matrix into an 
+array once again. The cipher entity itself keeps track of timing mainly 
+between the keyexpansion and the round entity, and makes sure to 
+provide the round entity with the correct roundkey at the right time.
 
 \subsection{Keyexpansion entity}
-The keyexpansion-entity is divided into 3 keyblock entities. The first keyblock 
-entity decides what 4 bytes of the expanded key we want to expand. The second 
-keyblock entity is the keycore, which is only performed on every 4th set of 
-4 bytes. The third keyblock entity performs an xor and an incrementation of the 
-internal counter used as an index when accessing 4 byte blocks of data.
+The keyexpansion-entity is divided into 3 keyblock entities. The first 
+keyblock entity decides what 4 bytes of the expanded key we want to 
+expand. The second keyblock entity is the keycore, which is only 
+performed on every 4th set of 4 bytes. The third keyblock entity 
+performs an xor and an incrementation of the internal counter used as 
+an index when accessing 4 byte blocks of data.
 
 \subsubsection{Keycore entity}
-The keycore entity consists of four entities. Rotword, Sbox, Rcon and a counter. 
-The counter is used to get the right data-byte from the Rcon, and the index is 
-only used in the keycore, and is thus best suited to be placed inside the 
-keycore entity. Rotword rotates the bytes of the input one step to the left. 
-Sbox replaces the input bytes according to the Rijndael Sbox. The Rcon entity 
-both collects the correct rcon value from a precalculated vector, as well as 
-inputs it into an xor together with the input.
+The keycore entity consists of four entities. Rotword, Sbox, Rcon and a 
+counter. The counter is used to get the right data-byte from the Rcon 
+entity, and the index is only used in the keycore, and is thus best 
+suited to be placed inside the keycore entity. Rotword rotates the 
+bytes of the input one step to the left. Sbox replaces the input bytes 
+according to the Rijndael Sbox. The Rcon entity both collects the 
+correct rcon value from a precalculated vector, as well as inputs it 
+into an xor together with the input.
 
 \subsection{Round entity}
 The round-entity (Figure \ref{block:round}) consists of four entities. Subbytes, 
