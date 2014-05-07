@@ -54,22 +54,25 @@
 \BOOKMARK [0][]{chapter.6}{6 Result}{}% 54
 \BOOKMARK [1][-]{section.6.1}{6.1 Problems}{chapter.6}% 55
 \BOOKMARK [1][-]{section.6.2}{6.2 Hardware}{chapter.6}% 56
-\BOOKMARK [1][-]{section.6.3}{6.3 Flow}{chapter.6}% 57
-\BOOKMARK [1][-]{section.6.4}{6.4 Implementation}{chapter.6}% 58
-\BOOKMARK [2][-]{subsection.6.4.1}{6.4.1 Manager entity}{section.6.4}% 59
-\BOOKMARK [2][-]{subsection.6.4.2}{6.4.2 CBC entity}{section.6.4}% 60
-\BOOKMARK [2][-]{subsection.6.4.3}{6.4.3 Cipher entity}{section.6.4}% 61
-\BOOKMARK [2][-]{subsection.6.4.4}{6.4.4 Keyexpansion entity}{section.6.4}% 62
-\BOOKMARK [2][-]{subsection.6.4.5}{6.4.5 Round entity}{section.6.4}% 63
-\BOOKMARK [1][-]{section.6.5}{6.5 Tests}{chapter.6}% 64
-\BOOKMARK [0][]{appendix.A}{A Matrixes}{}% 65
-\BOOKMARK [0][]{appendix.B}{B Illustrations}{}% 66
-\BOOKMARK [0][]{appendix.C}{C Test vectors}{}% 67
-\BOOKMARK [1][-]{section.C.1}{C.1 Test cases}{appendix.C}% 68
-\BOOKMARK [1][-]{section.C.2}{C.2 Keyexpansion}{appendix.C}% 69
-\BOOKMARK [0][]{appendix.D}{D Examples}{}% 70
-\BOOKMARK [1][-]{section.D.1}{D.1 CBC-mode calculations}{appendix.D}% 71
-\BOOKMARK [0][]{appendix.E}{E Layout of the circuit}{}% 72
-\BOOKMARK [0][]{section*.26}{List of Figures}{}% 73
-\BOOKMARK [0][]{appendix*.27}{Bibliography}{}% 74
-\BOOKMARK [0][]{Copyright.0}{Copyright}{}% 75
+\BOOKMARK [2][-]{subsection.6.2.1}{6.2.1 Hardware usage}{section.6.2}% 57
+\BOOKMARK [1][-]{section.6.3}{6.3 Further development}{chapter.6}% 58
+\BOOKMARK [2][-]{subsection.6.3.1}{6.3.1 VETINTE}{section.6.3}% 59
+\BOOKMARK [2][-]{subsection.6.3.2}{6.3.2 SBox}{section.6.3}% 60
+\BOOKMARK [1][-]{section.6.4}{6.4 Implementation}{chapter.6}% 61
+\BOOKMARK [2][-]{subsection.6.4.1}{6.4.1 Manager entity}{section.6.4}% 62
+\BOOKMARK [2][-]{subsection.6.4.2}{6.4.2 CBC entity}{section.6.4}% 63
+\BOOKMARK [2][-]{subsection.6.4.3}{6.4.3 Cipher entity}{section.6.4}% 64
+\BOOKMARK [2][-]{subsection.6.4.4}{6.4.4 Keyexpansion entity}{section.6.4}% 65
+\BOOKMARK [2][-]{subsection.6.4.5}{6.4.5 Round entity}{section.6.4}% 66
+\BOOKMARK [1][-]{section.6.5}{6.5 Tests}{chapter.6}% 67
+\BOOKMARK [0][]{appendix.A}{A Matrixes}{}% 68
+\BOOKMARK [0][]{appendix.B}{B Illustrations}{}% 69
+\BOOKMARK [0][]{appendix.C}{C Test vectors}{}% 70
+\BOOKMARK [1][-]{section.C.1}{C.1 Test cases}{appendix.C}% 71
+\BOOKMARK [1][-]{section.C.2}{C.2 Keyexpansion}{appendix.C}% 72
+\BOOKMARK [0][]{appendix.D}{D Examples}{}% 73
+\BOOKMARK [1][-]{section.D.1}{D.1 CBC-mode calculations}{appendix.D}% 74
+\BOOKMARK [0][]{appendix.E}{E Layout of the circuit}{}% 75
+\BOOKMARK [0][]{section*.26}{List of Figures}{}% 76
+\BOOKMARK [0][]{appendix*.27}{Bibliography}{}% 77
+\BOOKMARK [0][]{Copyright.0}{Copyright}{}% 78

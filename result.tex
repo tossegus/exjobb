@@ -72,25 +72,40 @@ the entities can be viewed in appendix \ref{app:blocks}.
 \end{figure}
 
 \subsection{Hardware usage}
-I've run three rounds of synthesis on my circuit. The first two ones 
+I have run three rounds of synthesis on my circuit. The first two ones 
 were performed on the entire scrambler, including the manager 
-(interface towrads the rest of the FPGA), while the last synthesis was 
+(interface towards the rest of the FPGA), while the last synthesis were 
 performed on each block of the circuit seperately.
 
 \subsubsection{First synthesis}
 The circuit after the first synthesis used up 15\% of the FPGA, and had 
-quite a large amount of unnescessary latches and flip-flops included. 
+quite a large amount of unnescessary latches and FFs included. It used 
+11830 FFs, and roughly 3000 latches. I re-designed the circuit to 
+remove the latches and ran the second synthesis.
 
 \subsubsection{Second synthesis}
-The synthesis report said that 8\% of the FPGA was occupied by the 
-circuit. The keyblock3 entity, as well as keyblock1 entity 
+The second synthesis report said that 8\% of the FPGA was occupied by 
+the circuit. The keyblock3 entity, as well as keyblock1 entity seemed 
+to use a lot of registers and multiplexers, which could possibly be 
+replaced by RAMs or LUTs.
 
 \section{Further development}
+There are, as usual, an amount of optimization that could be performed 
+on the circuit. They consist of optimization of code, as well as some 
+deeper research into how to write VHDL code to turn the registers in 
+this implementation into RAMs, ROMs or LUTs.
+
+\subsection{VETINTE}
 
 \subsection{SBox}
 The Rijndael Sbox implemented in my design does not synthesize into a 
 ROM, which it should be able to do, alternatively into a couple of LUT6.
-I have not been able to find out why my code 
+I have not been able to find out why my code is implemented into 
+registers, but it is. 
+\Warning[Check]{If this is true!}
+It would also be possible to implement this into a set of four LUTs, 
+and only run one at the time. OR SOMETHING.
+\Warning[Check]{If this is true!}
 
 \section{Implementation}
 My design is very hierarchical. The top layer is an aes128 block in 
