@@ -89,6 +89,33 @@ the circuit. The keyblock3 entity, as well as keyblock1 entity seemed
 to use a lot of registers and multiplexers, which could possibly be 
 replaced by RAMs or LUTs.
 
+\subsubsection{Third synthesis}
+The third synthesis was performed on each block seperately, to find out
+where optimization might be performed. The usage can be viewed in Table 
+\ref{synt:third}.
+
+\begin{longtable}{ l | c | c }
+  Entity & \% of FPGA & Noteworthy \\
+  scrambler & & \\
+  manager & & \\
+  cbc & & \\
+  cipher & & \\
+  keyexpansion & & \\
+  keyblock1 & & \\
+  keyblock2 & & \\
+  keyblock3 & & \\
+  keycore & & \\
+  data2state & & \\
+  round & & \\
+  state2data & & \\
+  manager (round) & & \\
+  subbytes & & \\
+  shiftrows & & \\
+  mixcolumns & & \\
+  \caption{Hardware usage of entities}
+  \label{synt:third}
+\end{longtable}
+
 \section{Further development}
 There are, as usual, an amount of optimization that could be performed 
 on the circuit. They consist of optimization of code, as well as some 

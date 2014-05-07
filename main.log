@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.29)  7 MAY 2014 15:44
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.29)  7 MAY 2014 16:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2303,7 +2303,7 @@ See the babel package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.84 ...chapter}{List of Figures}{59}{section*.26}
+l.85 ...chapter}{List of Figures}{59}{section*.26}
                                                   
 Your command will be ignored, type <return> to proceed
 
@@ -2789,15 +2789,6 @@ l.85
 Your command will be ignored, type <return> to proceed
 
 [26]
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 105--105
-[][][][] 
- []
-
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 108--108
-[][][][] 
- []
-
 
 ! Package babel Error: You haven't defined the language eng yet.
 
@@ -2805,11 +2796,23 @@ See the babel package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.109 
-      
+l.117 \end{longtable}
+                     
 Your command will be ignored, type <return> to proceed
 
 [27 <./fig/scrambler.png>]
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 132--132
+[][][][] 
+ []
+
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 135--135
+[][][][] 
+ []
+
+
+LaTeX Warning: Marginpar on page 28 moved.
+
 
 ! Package babel Error: You haven't defined the language eng yet.
 
@@ -2817,7 +2820,7 @@ See the babel package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.159 
+l.165 
       
 Your command will be ignored, type <return> to proceed
 
@@ -2829,28 +2832,40 @@ See the babel package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.209 \section{Tests}
-                     
+l.216 
+      
 Your command will be ignored, type <return> to proceed
 
-[29] <fig/successtv1.png, id=835, 831.85782pt x 106.14656pt>
+[29] <fig/successtv1.png, id=837, 831.85782pt x 106.14656pt>
 File: fig/successtv1.png Graphic file (type png)
 
 <use fig/successtv1.png>
-Package pdftex.def Info: fig/successtv1.png used on input line 227.
+Package pdftex.def Info: fig/successtv1.png used on input line 254.
 (pdftex.def)             Requested size: 355.65944pt x 45.38298pt.
 
-<fig/successtv2.png, id=837, 832.61063pt x 112.16907pt>
+<fig/successtv2.png, id=839, 832.61063pt x 112.16907pt>
 File: fig/successtv2.png Graphic file (type png)
 
 <use fig/successtv2.png>
-Package pdftex.def Info: fig/successtv2.png used on input line 238.
+Package pdftex.def Info: fig/successtv2.png used on input line 265.
 (pdftex.def)             Requested size: 355.65944pt x 47.9151pt.
- <fig/successtv3.png, id=839, 726.46407pt x 108.405pt>
+
+
+! Package babel Error: You haven't defined the language eng yet.
+
+See the babel package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.274 
+      
+Your command will be ignored, type <return> to proceed
+
+[30] <fig/successtv3.png, id=849, 726.46407pt x 108.405pt>
 File: fig/successtv3.png Graphic file (type png)
 
 <use fig/successtv3.png>
-Package pdftex.def Info: fig/successtv3.png used on input line 249.
+Package pdftex.def Info: fig/successtv3.png used on input line 276.
 (pdftex.def)             Requested size: 355.65944pt x 53.07423pt.
 )
 
@@ -2864,19 +2879,8 @@ l.56 \include{result}
                      
 Your command will be ignored, type <return> to proceed
 
-[30 <./fig/successtv1.png (PNG copy)> <./fig/successtv2.png (PNG copy)>]
-
-! Package babel Error: You haven't defined the language eng yet.
-
-See the babel package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.56 \include{result}
-                     
-Your command will be ignored, type <return> to proceed
-
-[31 <./fig/successtv3.png>] [32
+[31 <./fig/successtv1.png (PNG copy)> <./fig/successtv2.png (PNG copy)> <./fig/
+successtv3.png>] [32
 
 
 ]
@@ -2940,19 +2944,19 @@ Your command will be ignored, type <return> to proceed
 
 ]
 Appendix B.
-<fig/flowchart.pdf, id=886, 415.5525pt x 912.40875pt>
+<fig/flowchart.pdf, id=888, 415.5525pt x 912.40875pt>
 File: fig/flowchart.pdf Graphic file (type pdf)
  <use fig/flowchart.pdf>
 Package pdftex.def Info: fig/flowchart.pdf used on input line 5.
 (pdftex.def)             Requested size: 151.61516pt x 332.90062pt.
 
-<fig/keyschedule.png, id=887, 822.272pt x 822.272pt>
+<fig/keyschedule.png, id=889, 822.272pt x 822.272pt>
 File: fig/keyschedule.png Graphic file (type png)
  <use fig/keyschedule.png>
 Package pdftex.def Info: fig/keyschedule.png used on input line 12.
 (pdftex.def)             Requested size: 355.65944pt x 355.66539pt.
 
-<fig/CBCmode.png, id=888, 2007.5pt x 700.6175pt>
+<fig/CBCmode.png, id=890, 2007.5pt x 700.6175pt>
 File: fig/CBCmode.png Graphic file (type png)
  <use fig/CBCmode.png>
 Package pdftex.def Info: fig/CBCmode.png used on input line 19.
@@ -3406,25 +3410,25 @@ File: fig/scrambler.png Graphic file (type png)
 <use fig/scrambler.png>
 Package pdftex.def Info: fig/scrambler.png used on input line 8.
 (pdftex.def)             Requested size: 355.65944pt x 205.22923pt.
- <fig/manager.png, id=996, 794.97pt x 492.84125pt>
+ <fig/manager.png, id=998, 794.97pt x 492.84125pt>
 File: fig/manager.png Graphic file (type png)
 
 <use fig/manager.png>
 Package pdftex.def Info: fig/manager.png used on input line 14.
 (pdftex.def)             Requested size: 355.65944pt x 220.49808pt.
- <fig/cbc.png, id=997, 484.81125pt x 561.09625pt>
+ <fig/cbc.png, id=999, 484.81125pt x 561.09625pt>
 File: fig/cbc.png Graphic file (type png)
 
 <use fig/cbc.png>
 Package pdftex.def Info: fig/cbc.png used on input line 20.
 (pdftex.def)             Requested size: 355.65944pt x 411.64308pt.
- <fig/cipherblock.png, id=998, 658.46pt x 478.78876pt>
+ <fig/cipherblock.png, id=1000, 658.46pt x 478.78876pt>
 File: fig/cipherblock.png Graphic file (type png)
 
 <use fig/cipherblock.png>
 Package pdftex.def Info: fig/cipherblock.png used on input line 26.
 (pdftex.def)             Requested size: 355.65944pt x 258.61513pt.
- <fig/round.png, id=999, 652.4375pt x 630.355pt>
+ <fig/round.png, id=1001, 652.4375pt x 630.355pt>
 File: fig/round.png Graphic file (type png)
 
 <use fig/round.png>
@@ -3631,7 +3635,7 @@ Your command will be ignored, type <return> to proceed
 
 [64
 
-] <fig/LinkUniv_staende_pms.pdf, id=1175, 260.975pt x 172.645pt>
+] <fig/LinkUniv_staende_pms.pdf, id=1177, 260.975pt x 172.645pt>
 File: fig/LinkUniv_staende_pms.pdf Graphic file (type pdf)
 
 <use fig/LinkUniv_staende_pms.pdf>
@@ -3683,13 +3687,13 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 75.
  )
 (\end occurred when \ifx on line 20 was incomplete) 
 Here is how much of TeX's memory you used:
- 22868 strings out of 493304
- 374033 string characters out of 6139871
- 598538 words of memory out of 5000000
- 25369 multiletter control sequences out of 15000+600000
+ 22871 strings out of 493304
+ 374059 string characters out of 6139871
+ 598639 words of memory out of 5000000
+ 25371 multiletter control sequences out of 15000+600000
  230054 words of font info for 187 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 56i,12n,87p,587b,555s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,12n,87p,587b,556s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-di
 st/fonts/enc/dvips/base/8r.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/k
 pfonts/kpfonts-expert.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/kpfont
@@ -3708,10 +3712,10 @@ texlive/texmf-dist/fonts/type1/public/kpfonts/jkpsya.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 helvetic/uhvr8a.pfb>
-Output written on main.pdf (79 pages, 900513 bytes).
+Output written on main.pdf (79 pages, 901489 bytes).
 PDF statistics:
- 1295 PDF objects out of 1440 (max. 8388607)
- 1142 compressed objects within 12 object streams
- 233 named destinations out of 1000 (max. 500000)
+ 1297 PDF objects out of 1440 (max. 8388607)
+ 1144 compressed objects within 12 object streams
+ 234 named destinations out of 1000 (max. 500000)
  19169 words of extra memory for PDF output out of 20736 (max. 10000000)
 

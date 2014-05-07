@@ -60,18 +60,19 @@
 \contentsline {subsection}{\numberline {6.2.1}Hardware usage}{26}{subsection.6.2.1}
 \contentsline {subsubsection}{First synthesis}{27}{subsection.6.2.1}
 \contentsline {subsubsection}{Second synthesis}{27}{subsection.6.2.1}
-\contentsline {section}{\numberline {6.3}Further development}{27}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}VETINTE}{27}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}SBox}{27}{subsection.6.3.2}
+\contentsline {subsubsection}{Third synthesis}{27}{subsection.6.2.1}
+\contentsline {section}{\numberline {6.3}Further development}{28}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}VETINTE}{28}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}SBox}{28}{subsection.6.3.2}
 \contentsline {section}{\numberline {6.4}Implementation}{28}{section.6.4}
 \contentsline {subsection}{\numberline {6.4.1}Manager entity}{28}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}CBC entity}{28}{subsection.6.4.2}
-\contentsline {subsection}{\numberline {6.4.3}Cipher entity}{28}{subsection.6.4.3}
+\contentsline {subsection}{\numberline {6.4.2}CBC entity}{29}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.3}Cipher entity}{29}{subsection.6.4.3}
 \contentsline {subsection}{\numberline {6.4.4}Keyexpansion entity}{29}{subsection.6.4.4}
 \contentsline {subsubsection}{Keycore entity}{29}{subsection.6.4.4}
 \contentsline {subsection}{\numberline {6.4.5}Round entity}{29}{subsection.6.4.5}
-\contentsline {subsubsection}{Addroundkey entity}{29}{subsection.6.4.5}
-\contentsline {subsubsection}{The mulblock entity}{29}{subsection.6.4.5}
+\contentsline {subsubsection}{Addroundkey entity}{30}{subsection.6.4.5}
+\contentsline {subsubsection}{The mulblock entity}{30}{subsection.6.4.5}
 \contentsline {section}{\numberline {6.5}Tests}{30}{section.6.5}
 \contentsline {chapter}{\numberline {A}Matrixes}{35}{appendix.A}
 \contentsline {chapter}{\numberline {B}Illustrations}{39}{appendix.B}
