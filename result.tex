@@ -89,10 +89,62 @@ the circuit. The keyblock3 entity, as well as keyblock1 entity seemed
 to use a lot of registers and multiplexers, which could possibly be 
 replaced by RAMs or LUTs.
 
+To be able to compare the third synthesis with this one, I will just say
+that the keyexpansion entity used 1538 D-type FFs and 16 Comparators.
+It used up 176 8-bit registers, which were used by the expanded key.
+
+The maximum frequency obtained was 92MHz after this synthesis. This 
+was largely due to routing, which made up for 75\% of the minimum 
+period.
+
 \subsubsection{Third synthesis}
+I noticed that I at one point waited for the expanded key to become done,
+while this is a good idea, no problems were caused in simulation when I 
+assigned the expanded key while it was being updated. Therefore I managed
+to theoretically cut down the hardware by 176 8-bit registers, which should 
+corespond to roughly 1408 D-type FFs. 
+
+The vector that was removed was a vector containing 11 * 16 bytes of data, 
+which corresponds to 176 * 8 bits of data. 176 times 8 is 1408, which is 
+the number of D-type FFs needed to store the value, which also corresponds 
+to 176 8-bit registers.
+
+The keyexpansion entity used 130 D-type FFs and 16 Comparators this time.
+This corresponds to a decrease of 1408 D-type FFs.
+
+The maximum frequency obtained this time was 94MHz. The number of 
+Slice Registers went down from 4357 to 2945, and the percentage of Slice 
+Registers decresed from a 3\% usage to a 2\% usage.
+
+The keyblock3 module seems to be using the most hardware from what can be 
+seen. It uses roughly 1302 multiplexers, which should be reducable.
+
+\subsubsection{Fourth synthesis}
+The next synthesis was made after the state2data module was re-written, to 
+remove yet another signal. This should have decreased the design by 
+a 128-bit register. It was mostly done to try to allow for a synthesis of 
+the module, while also reducing hardware usage. This should decrease the 
+number of D-type FFs by yet another 128. A comparison between report 3 and 
+4 displays a decrease from 130 D-type FFs to 2 D-type FFs.
+
+The maximum frequency obtained this time was . The number of Flip-Flops 
+went from 2945 to 2817. This did not affect the number of Slice Registers.
+
+The circuit still uses roughly 8\% of the hardware on the FPGA.
+
+\subsubsection{Fifth synthesis}
+When I got about to this point of synthesis and optimization I found that 
+two files were created during each synthesis. A Synthesis Report as well 
+as a Place and Route Report. The ones I have been taking a look at this far 
+have been the Synthesis Reports, and to make sure that there are not any
+huge gaps in numbers between the reports, I will continue to read them, 
+and not the Place and Route Reports. Many of the entities can not be 
+mapped seperately, due to the amount of IOs on the FPGA, compared to the 
+number of IOs required by the modules.
+
 The third synthesis was performed on each block seperately, to find out
 where optimization might be performed. The usage can be viewed in Table 
-\ref{synt:third}.
+\ref{synt:fifth}.
 
 \begin{longtable}{ l | c | c }
   Entity & \% of FPGA & Noteworthy \\
@@ -103,18 +155,43 @@ where optimization might be performed. The usage can be viewed in Table
   keyexpansion & & \\
   keyblock1 & & \\
   keyblock2 & & \\
-  keyblock3 & & \\
+  demux & & \\ \\
+
   keycore & & \\
-  data2state & & \\
+  ctr & & \\
+  rotw & & \\
+  sbox & & \\
+  rcon & & \\ \\
+
+  keyblock3 & & \\
+  data2state & & \\ \\
+
   round & & \\
-  state2data & & \\
-  manager (round) & & \\
   subbytes & & \\
   shiftrows & & \\
   mixcolumns & & \\
+  addkey & & \\
+
+  state2data & & \\
+
   \caption{Hardware usage of entities}
-  \label{synt:third}
+  \label{synt:fifth}
 \end{longtable}
+
+My plan was to try to reduce the critical path by inserting a FF in the 
+middle of it and then run another synthesis. This would have increased the 
+hardware by a bunch of FFs, but increased the maximum frequency. But due 
+to timing issues this was hard to do, and I decided to change the UCFs 
+instead of spending the time trying to decrease the critical path, only to 
+increase the amount of hardware.
+
+\subsubsection{Sixth synthesis}
+For this synthesis I used a UCF (User Configured File) to configure the synthesis. 
+I chose to set a desired frequency of 110 MHz, while minimizing the area used by 
+the circuit.
+
+Taking a look at the Place and Route Report shows that the circuit can manage a 
+speed of ALSKJLASKJFLASKJF. Add more HW to increase fq!
 
 \section{Further development}
 There are, as usual, an amount of optimization that could be performed 
