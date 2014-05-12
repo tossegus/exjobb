@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.29)  7 MAY 2014 16:00
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.29)  12 MAY 2014 15:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2172,7 +2172,7 @@ LaTeX Font Info:    Try loading font information for U+jkpsyc on input line 28.
 (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ujkpsyc.fd
 File: ujkpsyc.fd 2006/08/15 v1.0
 )
-<fig/LiTH_staende_sv.pdf, id=320, 260.975pt x 190.7125pt>
+<fig/LiTH_staende_sv.pdf, id=316, 260.975pt x 190.7125pt>
 File: fig/LiTH_staende_sv.pdf Graphic file (type pdf)
 
 <use fig/LiTH_staende_sv.pdf>
@@ -2211,7 +2211,7 @@ Overfull \hbox (35.56596pt too wide) in paragraph at lines 33--33
 
 ] [2
 
-] <fig/LiTH_sigill_sv.pdf, id=344, 124.465pt x 124.465pt>
+] <fig/LiTH_sigill_sv.pdf, id=340, 124.465pt x 124.465pt>
 File: fig/LiTH_sigill_sv.pdf Graphic file (type pdf)
 
 <use fig/LiTH_sigill_sv.pdf>
@@ -2303,7 +2303,7 @@ See the babel package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.85 ...chapter}{List of Figures}{59}{section*.26}
+l.88 ... {chapter}{Bibliography}{65}{appendix*.29}
                                                   
 Your command will be ignored, type <return> to proceed
 
@@ -2388,7 +2388,7 @@ been already used, duplicate ignored
                    \relax 
 l.96 \section{Common Interface}
                                 \label{sec:CI} [2]
-<fig/CIPlus.png, id=490, 434.62375pt x 523.9575pt>
+<fig/CIPlus.png, id=485, 434.62375pt x 523.9575pt>
 File: fig/CIPlus.png Graphic file (type png)
  <use fig/CIPlus.png>
 Package pdftex.def Info: fig/CIPlus.png used on input line 116.
@@ -2453,7 +2453,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 49--49
 [][][][] 
  []
 
-<fig/TSpacket.png, id=523, 969.6225pt x 113.42375pt>
+<fig/TSpacket.png, id=518, 969.6225pt x 113.42375pt>
 File: fig/TSpacket.png Graphic file (type png)
  <use fig/TSpacket.png>
 Package pdftex.def Info: fig/TSpacket.png used on input line 70.
@@ -2476,7 +2476,7 @@ Overfull \hbox (2.49pt too wide) in paragraph at lines 92--94
 ly pay-load_size
  []
 
-<fig/PES.png, id=541, 993.7125pt x 405.515pt>
+<fig/PES.png, id=536, 993.7125pt x 405.515pt>
 File: fig/PES.png Graphic file (type png)
  <use fig/PES.png>
 Package pdftex.def Info: fig/PES.png used on input line 151.
@@ -2515,7 +2515,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 199--199
 [][][][] 
  []
 
-<fig/cipher.png, id=565, 501.875pt x 299.1175pt>
+<fig/cipher.png, id=560, 501.875pt x 299.1175pt>
 File: fig/cipher.png Graphic file (type png)
  <use fig/cipher.png>
 Package pdftex.def Info: fig/cipher.png used on input line 207.
@@ -2578,7 +2578,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 278--278
 [][][][] 
  []
 
-<fig/SPnetwork.png, id=613, 451.6875pt x 301.3659pt>
+<fig/SPnetwork.png, id=607, 451.6875pt x 301.3659pt>
 File: fig/SPnetwork.png Graphic file (type png)
  <use fig/SPnetwork.png>
 Package pdftex.def Info: fig/SPnetwork.png used on input line 290.
@@ -2604,7 +2604,7 @@ Your command will be ignored, type <return> to proceed
 
 ]
 Chapter 3.
-<fig/blockcipher.pdf, id=633, 252.945pt x 179.2296pt>
+<fig/blockcipher.pdf, id=628, 252.945pt x 179.2296pt>
 File: fig/blockcipher.pdf Graphic file (type pdf)
 
 <use fig/blockcipher.pdf>
@@ -2770,7 +2770,7 @@ Chapter 6.
 
 
 
-] <fig/scrambler.png, id=801, 742.775pt x 428.60126pt>
+] <fig/scrambler.png, id=796, 742.775pt x 428.60126pt>
 File: fig/scrambler.png Graphic file (type png)
 
 <use fig/scrambler.png>
@@ -2796,23 +2796,11 @@ See the babel package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.117 \end{longtable}
-                     
+l.111 
+      
 Your command will be ignored, type <return> to proceed
 
 [27 <./fig/scrambler.png>]
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 132--132
-[][][][] 
- []
-
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 135--135
-[][][][] 
- []
-
-
-LaTeX Warning: Marginpar on page 28 moved.
-
 
 ! Package babel Error: You haven't defined the language eng yet.
 
@@ -2820,11 +2808,20 @@ See the babel package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.165 
-      
+l.179 \end{longtable}
+                     
 Your command will be ignored, type <return> to proceed
 
 [28]
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 214--214
+[][][][] 
+ []
+
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 217--217
+[][][][] 
+ []
+
 
 ! Package babel Error: You haven't defined the language eng yet.
 
@@ -2832,40 +2829,58 @@ See the babel package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.216 
+l.218 
       
 Your command will be ignored, type <return> to proceed
 
-[29] <fig/successtv1.png, id=837, 831.85782pt x 106.14656pt>
+[29]
+
+LaTeX Warning: Marginpar on page 30 moved.
+
+
+LaTeX Warning: Marginpar on page 30 moved.
+
+
+! Package babel Error: You haven't defined the language eng yet.
+
+See the babel package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.268 
+      
+Your command will be ignored, type <return> to proceed
+
+[30]
+
+! Package babel Error: You haven't defined the language eng yet.
+
+See the babel package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.317 
+      
+Your command will be ignored, type <return> to proceed
+
+[31] <fig/successtv1.png, id=840, 831.85782pt x 106.14656pt>
 File: fig/successtv1.png Graphic file (type png)
 
 <use fig/successtv1.png>
-Package pdftex.def Info: fig/successtv1.png used on input line 254.
+Package pdftex.def Info: fig/successtv1.png used on input line 336.
 (pdftex.def)             Requested size: 355.65944pt x 45.38298pt.
 
-<fig/successtv2.png, id=839, 832.61063pt x 112.16907pt>
+<fig/successtv2.png, id=842, 832.61063pt x 112.16907pt>
 File: fig/successtv2.png Graphic file (type png)
 
 <use fig/successtv2.png>
-Package pdftex.def Info: fig/successtv2.png used on input line 265.
+Package pdftex.def Info: fig/successtv2.png used on input line 347.
 (pdftex.def)             Requested size: 355.65944pt x 47.9151pt.
-
-
-! Package babel Error: You haven't defined the language eng yet.
-
-See the babel package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.274 
-      
-Your command will be ignored, type <return> to proceed
-
-[30] <fig/successtv3.png, id=849, 726.46407pt x 108.405pt>
+ <fig/successtv3.png, id=844, 726.46407pt x 108.405pt>
 File: fig/successtv3.png Graphic file (type png)
 
 <use fig/successtv3.png>
-Package pdftex.def Info: fig/successtv3.png used on input line 276.
+Package pdftex.def Info: fig/successtv3.png used on input line 358.
 (pdftex.def)             Requested size: 355.65944pt x 53.07423pt.
 )
 
@@ -2879,14 +2894,25 @@ l.56 \include{result}
                      
 Your command will be ignored, type <return> to proceed
 
-[31 <./fig/successtv1.png (PNG copy)> <./fig/successtv2.png (PNG copy)> <./fig/
-successtv3.png>] [32
+[32 <./fig/successtv1.png (PNG copy)> <./fig/successtv2.png (PNG copy)>]
+
+! Package babel Error: You haven't defined the language eng yet.
+
+See the babel package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 \include{result}
+                     
+Your command will be ignored, type <return> to proceed
+
+[33 <./fig/successtv3.png>] [34
 
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 23.63593pt on input line 58.
- [33] [34]
+ [35] [36]
 \openout2 = `matrix.aux'.
 
  (./matrix.tex
@@ -2920,7 +2946,7 @@ Overfull \hbox (40.79588pt too wide) in paragraph at lines 66--84
 []$[]$ 
  []
 
-) [35
+) [37
 
 
 ]
@@ -2935,34 +2961,34 @@ l.61 \include{matrix}
                      
 Your command will be ignored, type <return> to proceed
 
-[36] [37]
+[38] [39]
 \openout2 = `flowcharts.aux'.
 
- (./flowcharts.tex [38
+ (./flowcharts.tex [40
 
 
 
 ]
 Appendix B.
-<fig/flowchart.pdf, id=888, 415.5525pt x 912.40875pt>
+<fig/flowchart.pdf, id=891, 415.5525pt x 912.40875pt>
 File: fig/flowchart.pdf Graphic file (type pdf)
  <use fig/flowchart.pdf>
 Package pdftex.def Info: fig/flowchart.pdf used on input line 5.
 (pdftex.def)             Requested size: 151.61516pt x 332.90062pt.
 
-<fig/keyschedule.png, id=889, 822.272pt x 822.272pt>
+<fig/keyschedule.png, id=892, 822.272pt x 822.272pt>
 File: fig/keyschedule.png Graphic file (type png)
  <use fig/keyschedule.png>
 Package pdftex.def Info: fig/keyschedule.png used on input line 12.
 (pdftex.def)             Requested size: 355.65944pt x 355.66539pt.
 
-<fig/CBCmode.png, id=890, 2007.5pt x 700.6175pt>
+<fig/CBCmode.png, id=893, 2007.5pt x 700.6175pt>
 File: fig/CBCmode.png Graphic file (type png)
  <use fig/CBCmode.png>
 Package pdftex.def Info: fig/CBCmode.png used on input line 19.
 (pdftex.def)             Requested size: 355.65944pt x 124.11726pt.
 )
-[39]
+[41]
 
 ! Package babel Error: You haven't defined the language eng yet.
 
@@ -2974,11 +3000,11 @@ l.62 \include{flowcharts}
                          
 Your command will be ignored, type <return> to proceed
 
-[40 <./fig/flowchart.pdf>] [41 <./fig/keyschedule.png (PNG copy)> <./fig/CBCmod
+[42 <./fig/flowchart.pdf>] [43 <./fig/keyschedule.png (PNG copy)> <./fig/CBCmod
 e.png>]
 \openout2 = `vectors.aux'.
 
- (./vectors.tex [42
+ (./vectors.tex [44
 
 
 
@@ -2989,7 +3015,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--10
 
  []
 
-[43]
+[45]
 
 ! Package caption Error: \caption outside float.
 
@@ -3068,7 +3094,7 @@ l.133 ...8 & & & & & 19fadc21 & c9ee2589 \\ \hline
                                                   
 Your command will be ignored, type <return> to proceed
 
-[44]
+[46]
 Overfull \hbox (52.91017pt too wide) in alignment at lines 133--138
  [] [] [] [] [] [] [] [] 
  []
@@ -3265,7 +3291,7 @@ l.588 \end{longtable}
                      
 Your command will be ignored, type <return> to proceed
 
-[45]
+[47]
 
 ! Package babel Error: You haven't defined the language eng yet.
 
@@ -3277,7 +3303,7 @@ l.588 \end{longtable}
                      
 Your command will be ignored, type <return> to proceed
 
-[46]
+[48]
 Underfull \vbox (badness 10000) detected at line 617
  []
 
@@ -3292,7 +3318,7 @@ l.624 \end{longtable}
                      
 Your command will be ignored, type <return> to proceed
 
-[47]
+[49]
 Overfull \hbox (57.23956pt too wide) in alignment at lines 632--655
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
@@ -3318,7 +3344,7 @@ l.688   \end{longtable}
                        
 Your command will be ignored, type <return> to proceed
 
-[48]
+[50]
 Overfull \hbox (58.7516pt too wide) in alignment at lines 692--704
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
@@ -3335,10 +3361,10 @@ l.63 \include{vectors}
                       
 Your command will be ignored, type <return> to proceed
 
-[49]
+[51]
 \openout2 = `examples.aux'.
 
- (./examples.tex [50
+ (./examples.tex [52
 
 
 
@@ -3397,10 +3423,10 @@ l.18
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-) [51]
+) [53]
 \openout2 = `blocks.aux'.
 
- (./blocks.tex [52
+ (./blocks.tex [54
 
 
 
@@ -3410,31 +3436,44 @@ File: fig/scrambler.png Graphic file (type png)
 <use fig/scrambler.png>
 Package pdftex.def Info: fig/scrambler.png used on input line 8.
 (pdftex.def)             Requested size: 355.65944pt x 205.22923pt.
- <fig/manager.png, id=998, 794.97pt x 492.84125pt>
+ <fig/manager.png, id=1002, 794.97pt x 492.84125pt>
 File: fig/manager.png Graphic file (type png)
 
 <use fig/manager.png>
 Package pdftex.def Info: fig/manager.png used on input line 14.
 (pdftex.def)             Requested size: 355.65944pt x 220.49808pt.
- <fig/cbc.png, id=999, 484.81125pt x 561.09625pt>
+ <fig/cbc.png, id=1003, 484.81125pt x 561.09625pt>
 File: fig/cbc.png Graphic file (type png)
 
 <use fig/cbc.png>
 Package pdftex.def Info: fig/cbc.png used on input line 20.
 (pdftex.def)             Requested size: 355.65944pt x 411.64308pt.
- <fig/cipherblock.png, id=1000, 658.46pt x 478.78876pt>
+ <fig/cipherblock.png, id=1004, 658.46pt x 478.78876pt>
 File: fig/cipherblock.png Graphic file (type png)
 
 <use fig/cipherblock.png>
 Package pdftex.def Info: fig/cipherblock.png used on input line 26.
 (pdftex.def)             Requested size: 355.65944pt x 258.61513pt.
- <fig/round.png, id=1001, 652.4375pt x 630.355pt>
+ <fig/round.png, id=1005, 652.4375pt x 630.355pt>
 File: fig/round.png Graphic file (type png)
 
 <use fig/round.png>
 Package pdftex.def Info: fig/round.png used on input line 32.
 (pdftex.def)             Requested size: 355.65944pt x 343.62804pt.
-) [53]
+ <fig/keyexpansion.png, id=1006, 602.25pt x 542.025pt>
+File: fig/keyexpansion.png Graphic file (type png)
+
+<use fig/keyexpansion.png>
+Package pdftex.def Info: fig/keyexpansion.png used on input line 38.
+(pdftex.def)             Requested size: 355.65944pt x 320.10625pt.
+
+<fig/keyblock2.png, id=1007, 579.16376pt x 485.815pt>
+File: fig/keyblock2.png Graphic file (type png)
+ <use fig/keyblock2.png>
+Package pdftex.def Info: fig/keyblock2.png used on input line 44.
+(pdftex.def)             Requested size: 355.65944pt x 298.33337pt.
+)
+[55]
 
 ! Package babel Error: You haven't defined the language eng yet.
 
@@ -3446,7 +3485,7 @@ l.65 \include{blocks}
                      
 Your command will be ignored, type <return> to proceed
 
-[54 <./fig/manager.png>] [55 <./fig/cbc.png>]
+[56 <./fig/manager.png>] [57 <./fig/cbc.png>]
 
 ! Package babel Error: You haven't defined the language eng yet.
 
@@ -3458,7 +3497,19 @@ l.65 \include{blocks}
                      
 Your command will be ignored, type <return> to proceed
 
-[56 <./fig/cipherblock.png>] [57 <./fig/round.png>]
+[58 <./fig/cipherblock.png>] [59 <./fig/round.png>]
+
+! Package babel Error: You haven't defined the language eng yet.
+
+See the babel package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.65 \include{blocks}
+                     
+Your command will be ignored, type <return> to proceed
+
+[60 <./fig/keyexpansion.png>] [61 <./fig/keyblock2.png>]
 
 ! Package babel Error: You haven't defined the language eng yet.
 
@@ -3470,7 +3521,7 @@ l.68 \backmatter
                 
 Your command will be ignored, type <return> to proceed
 
-[58
+[62
 
 
 ] (./main.lof)
@@ -3481,7 +3532,7 @@ Your command will be ignored, type <return> to proceed
 \tf@brf=\write8
 \openout8 = `main.brf'.
 
- [59] [60
+ [63] [64
 
 ]
 Underfull \hbox (badness 3838) in paragraph at lines 45--45
@@ -3513,7 +3564,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--53
 103199 / 103127 /
  []
 
-[61]
+[65]
 Underfull \hbox (badness 2653) in paragraph at lines 85--85
 []\T1/jkpk/m/n/10 Wei Li.  Se-cu-rity anal-y-sis of dvb com-mon scram-bling al-
 go-rithm.  In
@@ -3584,7 +3635,7 @@ l.157
       
 Your command will be ignored, type <return> to proceed
 
-[62]
+[66]
 Underfull \hbox (badness 10000) in paragraph at lines 173--173
 []\T1/jkpk/m/n/10 Unknown Wikipedia.  Cbc en-cryp-tion, 2014a.  URL []$\T1/pcr/
 m/n/10 http : / /
@@ -3621,7 +3672,7 @@ l.75 \end{document}
                    
 Your command will be ignored, type <return> to proceed
 
-[63]
+[67]
 
 ! Package babel Error: You haven't defined the language eng yet.
 
@@ -3633,9 +3684,9 @@ l.75 \end{document}
                    
 Your command will be ignored, type <return> to proceed
 
-[64
+[68
 
-] <fig/LinkUniv_staende_pms.pdf, id=1177, 260.975pt x 172.645pt>
+] <fig/LinkUniv_staende_pms.pdf, id=1197, 260.975pt x 172.645pt>
 File: fig/LinkUniv_staende_pms.pdf Graphic file (type pdf)
 
 <use fig/LinkUniv_staende_pms.pdf>
@@ -3670,7 +3721,7 @@ Overfull \hbox (0.16193pt too wide) in paragraph at lines 75--75
 doc-u-ment in-tegrity, please
  []
 
-[65 <./fig/LinkUniv_staende_pms.pdf>]
+[69 <./fig/LinkUniv_staende_pms.pdf>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 75.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 75.
  (./main.aux (./notation.aux) (./cas.aux)
@@ -3680,17 +3731,17 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 75.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 75.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 75.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 186CDA260B19CF1EE02AE66863F90F34;5005.
+(rerunfilecheck)             Checksum: EF99A404B2BD999179D1E4F44608C86B;4938.
 Package rerunfilecheck Info: File `main.brf' has not changed.
-(rerunfilecheck)             Checksum: 9F6A99D80F55AC5F5939B07136DCEA08;2961.
+(rerunfilecheck)             Checksum: FD52A3306AA06364C3B748B01C330B55;2961.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 75.
  )
 (\end occurred when \ifx on line 20 was incomplete) 
 Here is how much of TeX's memory you used:
- 22871 strings out of 493304
- 374059 string characters out of 6139871
- 598639 words of memory out of 5000000
- 25371 multiletter control sequences out of 15000+600000
+ 22887 strings out of 493304
+ 374339 string characters out of 6139871
+ 598741 words of memory out of 5000000
+ 25380 multiletter control sequences out of 15000+600000
  230054 words of font info for 187 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  56i,12n,87p,587b,556s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3712,10 +3763,10 @@ texlive/texmf-dist/fonts/type1/public/kpfonts/jkpsya.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 helvetic/uhvr8a.pfb>
-Output written on main.pdf (79 pages, 901489 bytes).
+Output written on main.pdf (83 pages, 982156 bytes).
 PDF statistics:
- 1297 PDF objects out of 1440 (max. 8388607)
- 1144 compressed objects within 12 object streams
- 234 named destinations out of 1000 (max. 500000)
- 19169 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 1317 PDF objects out of 1440 (max. 8388607)
+ 1156 compressed objects within 12 object streams
+ 239 named destinations out of 1000 (max. 500000)
+ 19171 words of extra memory for PDF output out of 20736 (max. 10000000)
 

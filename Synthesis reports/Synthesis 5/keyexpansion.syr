@@ -1,0 +1,853 @@
+Release 14.4 - xst P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Reading design: keyexpansion.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "keyexpansion.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "keyexpansion"
+Output Format                      : NGC
+Target Device                      : xc6slx100t-2-fgg484
+
+---- Source Options
+Top Module Name                    : keyexpansion
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"coregen" "ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\byte.vhd" into library work
+Parsing package <byte>.
+Parsing VHDL file "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\word_p.vhd" into library work
+Parsing package <word>.
+Parsing package <packet>.
+Parsing VHDL file "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\key_p.vhd" into library work
+Parsing package <key>.
+Parsing VHDL file "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\xor_b.vhd" into library work
+Parsing entity <xor_k>.
+Parsing architecture <behav> of entity <xor_k>.
+Parsing entity <xor_b>.
+Parsing architecture <behav> of entity <xor_b>.
+Parsing entity <xor1>.
+Parsing architecture <behav> of entity <xor1>.
+Parsing entity <xor_iv>.
+Parsing architecture <behav> of entity <xor_iv>.
+Parsing VHDL file "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\sbox_p.vhd" into library work
+Parsing package <sbox>.
+Parsing VHDL file "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\rotword_p.vhd" into library work
+Parsing package <rotword>.
+Parsing VHDL file "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\rcon_p.vhd" into library work
+Parsing package <rcon>.
+Parsing VHDL file "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\sbox.vhd" into library work
+Parsing entity <substitutebox>.
+Parsing architecture <behav> of entity <substitutebox>.
+Parsing VHDL file "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\rotword.vhd" into library work
+Parsing entity <rword>.
+Parsing architecture <behav> of entity <rword>.
+Parsing VHDL file "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\rcon.vhd" into library work
+Parsing entity <rcon_e>.
+Parsing architecture <behav> of entity <rcon_e>.
+Parsing VHDL file "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\counter.vhd" into library work
+Parsing entity <counter>.
+Parsing architecture <behav> of entity <counter>.
+Parsing VHDL file "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\keycore.vhd" into library work
+Parsing entity <keycore>.
+Parsing architecture <struct> of entity <keycore>.
+Parsing VHDL file "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\ex_key_p.vhd" into library work
+Parsing package <exkey>.
+Parsing VHDL file "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\demux.vhd" into library work
+Parsing entity <demux>.
+Parsing architecture <behav> of entity <demux>.
+Parsing VHDL file "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\state_p.vhd" into library work
+Parsing package <state>.
+Parsing VHDL file "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\keyblock3.vhd" into library work
+Parsing entity <keyblock3>.
+Parsing architecture <behav> of entity <keyblock3>.
+Parsing VHDL file "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\keyblock2.vhd" into library work
+Parsing entity <keyblock2>.
+Parsing architecture <behav> of entity <keyblock2>.
+Parsing VHDL file "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\keyblock1.vhd" into library work
+Parsing entity <keyblock1>.
+Parsing architecture <behav> of entity <keyblock1>.
+Parsing VHDL file "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\expandkey.vhd" into library work
+Parsing entity <keyexpansion>.
+Parsing architecture <structural> of entity <keyexpansion>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <keyexpansion> (architecture <structural>) from library <work>.
+
+Elaborating entity <keyblock1> (architecture <behav>) from library <work>.
+
+Elaborating entity <keyblock2> (architecture <behav>) from library <work>.
+
+Elaborating entity <keycore> (architecture <struct>) from library <work>.
+
+Elaborating entity <counter> (architecture <behav>) from library <work>.
+
+Elaborating entity <rword> (architecture <behav>) from library <work>.
+
+Elaborating entity <substitutebox> (architecture <behav>) from library <work>.
+
+Elaborating entity <rcon_e> (architecture <behav>) from library <work>.
+
+Elaborating entity <xor_b> (architecture <behav>) from library <work>.
+
+Elaborating entity <xor1> (architecture <behav>) from library <work>.
+
+Elaborating entity <demux> (architecture <behav>) from library <work>.
+WARNING:HDLCompiler:871 - "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\demux.vhd" Line 24: Using initial value ("00000000","00000000","00000000","00000000") for temp since it is never assigned
+
+Elaborating entity <keyblock3> (architecture <behav>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <keyexpansion>.
+    Related source file is "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\expandkey.vhd".
+    Register <reset_i> equivalent to <force_go> has been removed
+    Found 8-bit register for signal <temp_k<14>>.
+    Found 8-bit register for signal <temp_k<13>>.
+    Found 8-bit register for signal <temp_k<12>>.
+    Found 8-bit register for signal <temp_k<11>>.
+    Found 8-bit register for signal <temp_k<10>>.
+    Found 8-bit register for signal <temp_k<9>>.
+    Found 8-bit register for signal <temp_k<8>>.
+    Found 8-bit register for signal <temp_k<7>>.
+    Found 8-bit register for signal <temp_k<6>>.
+    Found 8-bit register for signal <temp_k<5>>.
+    Found 8-bit register for signal <temp_k<4>>.
+    Found 8-bit register for signal <temp_k<3>>.
+    Found 8-bit register for signal <temp_k<2>>.
+    Found 8-bit register for signal <temp_k<1>>.
+    Found 8-bit register for signal <temp_k<0>>.
+    Found 1-bit register for signal <force_go>.
+    Found 1-bit register for signal <lock>.
+    Found 8-bit register for signal <temp_k<15>>.
+    Found 8-bit comparator equal for signal <input[0][7]_temp_k[0][7]_equal_1_o> created at line 86
+    Found 8-bit comparator equal for signal <input[1][7]_temp_k[1][7]_equal_2_o> created at line 86
+    Found 8-bit comparator equal for signal <input[2][7]_temp_k[2][7]_equal_3_o> created at line 86
+    Found 8-bit comparator equal for signal <input[3][7]_temp_k[3][7]_equal_4_o> created at line 86
+    Found 8-bit comparator equal for signal <input[4][7]_temp_k[4][7]_equal_5_o> created at line 86
+    Found 8-bit comparator equal for signal <input[5][7]_temp_k[5][7]_equal_6_o> created at line 86
+    Found 8-bit comparator equal for signal <input[6][7]_temp_k[6][7]_equal_7_o> created at line 86
+    Found 8-bit comparator equal for signal <input[7][7]_temp_k[7][7]_equal_8_o> created at line 86
+    Found 8-bit comparator equal for signal <input[8][7]_temp_k[8][7]_equal_9_o> created at line 86
+    Found 8-bit comparator equal for signal <input[9][7]_temp_k[9][7]_equal_10_o> created at line 86
+    Found 8-bit comparator equal for signal <input[10][7]_temp_k[10][7]_equal_11_o> created at line 86
+    Found 8-bit comparator equal for signal <input[11][7]_temp_k[11][7]_equal_12_o> created at line 86
+    Found 8-bit comparator equal for signal <input[12][7]_temp_k[12][7]_equal_13_o> created at line 86
+    Found 8-bit comparator equal for signal <input[13][7]_temp_k[13][7]_equal_14_o> created at line 86
+    Found 8-bit comparator equal for signal <input[14][7]_temp_k[14][7]_equal_15_o> created at line 86
+    Found 8-bit comparator equal for signal <input[15][7]_temp_k[15][7]_equal_16_o> created at line 86
+    Summary:
+	inferred 130 D-type flip-flop(s).
+	inferred  16 Comparator(s).
+Unit <keyexpansion> synthesized.
+
+Synthesizing Unit <keyblock1>.
+    Related source file is "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\keyblock1.vhd".
+WARNING:Xst:647 - Input <input<0><15>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <input<0><14>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <input<0><13>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <input<0><12>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <input<0><11>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <input<0><10>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <input<0><9>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <input<0><8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <input<0><7>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <input<0><6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <input<0><5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <input<0><4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <input<10><3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <input<10><2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <input<10><1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <input<10><0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <keyblock1> synthesized.
+
+Synthesizing Unit <keyblock2>.
+    Related source file is "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\keyblock2.vhd".
+WARNING:Xst:647 - Input <c<7:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <keyblock2> synthesized.
+
+Synthesizing Unit <keycore>.
+    Related source file is "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\keycore.vhd".
+    Summary:
+	no macro.
+Unit <keycore> synthesized.
+
+Synthesizing Unit <counter>.
+    Related source file is "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\counter.vhd".
+    Found 1-bit register for signal <pd>.
+    Found 8-bit register for signal <temp>.
+    Found 8-bit adder for signal <temp[7]_GND_39_o_add_1_OUT> created at line 27.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   9 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <counter> synthesized.
+
+Synthesizing Unit <rword>.
+    Related source file is "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\rotword.vhd".
+    Summary:
+	no macro.
+Unit <rword> synthesized.
+
+Synthesizing Unit <substitutebox>.
+    Related source file is "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\sbox.vhd".
+    Found 8-bit 16-to-1 multiplexer for signal <output<3>> created at line 289.
+    Found 8-bit 16-to-1 multiplexer for signal <output<2>> created at line 289.
+    Found 8-bit 16-to-1 multiplexer for signal <output<1>> created at line 289.
+    Found 8-bit 16-to-1 multiplexer for signal <output<0>> created at line 289.
+    Summary:
+	inferred   4 Multiplexer(s).
+Unit <substitutebox> synthesized.
+
+Synthesizing Unit <rcon_e>.
+    Related source file is "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\rcon.vhd".
+    Found 256x8-bit Read Only RAM for signal <temp<3>>
+    Summary:
+	inferred   1 RAM(s).
+Unit <rcon_e> synthesized.
+
+Synthesizing Unit <xor_b>.
+    Related source file is "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\xor_b.vhd".
+    Summary:
+	no macro.
+Unit <xor_b> synthesized.
+
+Synthesizing Unit <xor1>.
+    Related source file is "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\xor_b.vhd".
+    Summary:
+	no macro.
+Unit <xor1> synthesized.
+
+Synthesizing Unit <demux>.
+    Related source file is "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\demux.vhd".
+    Summary:
+	inferred   8 Multiplexer(s).
+Unit <demux> synthesized.
+
+Synthesizing Unit <keyblock3>.
+    Related source file is "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\keyblock3.vhd".
+    Found 1-bit register for signal <first>.
+    Found 1-bit register for signal <t_lock>.
+    Found 8-bit register for signal <xkey<0><15>>.
+    Found 8-bit register for signal <xkey<0><14>>.
+    Found 8-bit register for signal <xkey<0><13>>.
+    Found 8-bit register for signal <xkey<0><12>>.
+    Found 8-bit register for signal <xkey<0><11>>.
+    Found 8-bit register for signal <xkey<0><10>>.
+    Found 8-bit register for signal <xkey<0><9>>.
+    Found 8-bit register for signal <xkey<0><8>>.
+    Found 8-bit register for signal <xkey<0><7>>.
+    Found 8-bit register for signal <xkey<0><6>>.
+    Found 8-bit register for signal <xkey<0><5>>.
+    Found 8-bit register for signal <xkey<0><4>>.
+    Found 8-bit register for signal <xkey<0><3>>.
+    Found 8-bit register for signal <xkey<0><2>>.
+    Found 8-bit register for signal <xkey<0><1>>.
+    Found 8-bit register for signal <xkey<0><0>>.
+    Found 8-bit register for signal <xkey<1><15>>.
+    Found 8-bit register for signal <xkey<1><14>>.
+    Found 8-bit register for signal <xkey<1><13>>.
+    Found 8-bit register for signal <xkey<1><12>>.
+    Found 8-bit register for signal <xkey<1><11>>.
+    Found 8-bit register for signal <xkey<1><10>>.
+    Found 8-bit register for signal <xkey<1><9>>.
+    Found 8-bit register for signal <xkey<1><8>>.
+    Found 8-bit register for signal <xkey<1><7>>.
+    Found 8-bit register for signal <xkey<1><6>>.
+    Found 8-bit register for signal <xkey<1><5>>.
+    Found 8-bit register for signal <xkey<1><4>>.
+    Found 8-bit register for signal <xkey<1><3>>.
+    Found 8-bit register for signal <xkey<1><2>>.
+    Found 8-bit register for signal <xkey<1><1>>.
+    Found 8-bit register for signal <xkey<1><0>>.
+    Found 8-bit register for signal <xkey<2><15>>.
+    Found 8-bit register for signal <xkey<2><14>>.
+    Found 8-bit register for signal <xkey<2><13>>.
+    Found 8-bit register for signal <xkey<2><12>>.
+    Found 8-bit register for signal <xkey<2><11>>.
+    Found 8-bit register for signal <xkey<2><10>>.
+    Found 8-bit register for signal <xkey<2><9>>.
+    Found 8-bit register for signal <xkey<2><8>>.
+    Found 8-bit register for signal <xkey<2><7>>.
+    Found 8-bit register for signal <xkey<2><6>>.
+    Found 8-bit register for signal <xkey<2><5>>.
+    Found 8-bit register for signal <xkey<2><4>>.
+    Found 8-bit register for signal <xkey<2><3>>.
+    Found 8-bit register for signal <xkey<2><2>>.
+    Found 8-bit register for signal <xkey<2><1>>.
+    Found 8-bit register for signal <xkey<2><0>>.
+    Found 8-bit register for signal <xkey<3><15>>.
+    Found 8-bit register for signal <xkey<3><14>>.
+    Found 8-bit register for signal <xkey<3><13>>.
+    Found 8-bit register for signal <xkey<3><12>>.
+    Found 8-bit register for signal <xkey<3><11>>.
+    Found 8-bit register for signal <xkey<3><10>>.
+    Found 8-bit register for signal <xkey<3><9>>.
+    Found 8-bit register for signal <xkey<3><8>>.
+    Found 8-bit register for signal <xkey<3><7>>.
+    Found 8-bit register for signal <xkey<3><6>>.
+    Found 8-bit register for signal <xkey<3><5>>.
+    Found 8-bit register for signal <xkey<3><4>>.
+    Found 8-bit register for signal <xkey<3><3>>.
+    Found 8-bit register for signal <xkey<3><2>>.
+    Found 8-bit register for signal <xkey<3><1>>.
+    Found 8-bit register for signal <xkey<3><0>>.
+    Found 8-bit register for signal <xkey<4><15>>.
+    Found 8-bit register for signal <xkey<4><14>>.
+    Found 8-bit register for signal <xkey<4><13>>.
+    Found 8-bit register for signal <xkey<4><12>>.
+    Found 8-bit register for signal <xkey<4><11>>.
+    Found 8-bit register for signal <xkey<4><10>>.
+    Found 8-bit register for signal <xkey<4><9>>.
+    Found 8-bit register for signal <xkey<4><8>>.
+    Found 8-bit register for signal <xkey<4><7>>.
+    Found 8-bit register for signal <xkey<4><6>>.
+    Found 8-bit register for signal <xkey<4><5>>.
+    Found 8-bit register for signal <xkey<4><4>>.
+    Found 8-bit register for signal <xkey<4><3>>.
+    Found 8-bit register for signal <xkey<4><2>>.
+    Found 8-bit register for signal <xkey<4><1>>.
+    Found 8-bit register for signal <xkey<4><0>>.
+    Found 8-bit register for signal <xkey<5><15>>.
+    Found 8-bit register for signal <xkey<5><14>>.
+    Found 8-bit register for signal <xkey<5><13>>.
+    Found 8-bit register for signal <xkey<5><12>>.
+    Found 8-bit register for signal <xkey<5><11>>.
+    Found 8-bit register for signal <xkey<5><10>>.
+    Found 8-bit register for signal <xkey<5><9>>.
+    Found 8-bit register for signal <xkey<5><8>>.
+    Found 8-bit register for signal <xkey<5><7>>.
+    Found 8-bit register for signal <xkey<5><6>>.
+    Found 8-bit register for signal <xkey<5><5>>.
+    Found 8-bit register for signal <xkey<5><4>>.
+    Found 8-bit register for signal <xkey<5><3>>.
+    Found 8-bit register for signal <xkey<5><2>>.
+    Found 8-bit register for signal <xkey<5><1>>.
+    Found 8-bit register for signal <xkey<5><0>>.
+    Found 8-bit register for signal <xkey<6><15>>.
+    Found 8-bit register for signal <xkey<6><14>>.
+    Found 8-bit register for signal <xkey<6><13>>.
+    Found 8-bit register for signal <xkey<6><12>>.
+    Found 8-bit register for signal <xkey<6><11>>.
+    Found 8-bit register for signal <xkey<6><10>>.
+    Found 8-bit register for signal <xkey<6><9>>.
+    Found 8-bit register for signal <xkey<6><8>>.
+    Found 8-bit register for signal <xkey<6><7>>.
+    Found 8-bit register for signal <xkey<6><6>>.
+    Found 8-bit register for signal <xkey<6><5>>.
+    Found 8-bit register for signal <xkey<6><4>>.
+    Found 8-bit register for signal <xkey<6><3>>.
+    Found 8-bit register for signal <xkey<6><2>>.
+    Found 8-bit register for signal <xkey<6><1>>.
+    Found 8-bit register for signal <xkey<6><0>>.
+    Found 8-bit register for signal <xkey<7><15>>.
+    Found 8-bit register for signal <xkey<7><14>>.
+    Found 8-bit register for signal <xkey<7><13>>.
+    Found 8-bit register for signal <xkey<7><12>>.
+    Found 8-bit register for signal <xkey<7><11>>.
+    Found 8-bit register for signal <xkey<7><10>>.
+    Found 8-bit register for signal <xkey<7><9>>.
+    Found 8-bit register for signal <xkey<7><8>>.
+    Found 8-bit register for signal <xkey<7><7>>.
+    Found 8-bit register for signal <xkey<7><6>>.
+    Found 8-bit register for signal <xkey<7><5>>.
+    Found 8-bit register for signal <xkey<7><4>>.
+    Found 8-bit register for signal <xkey<7><3>>.
+    Found 8-bit register for signal <xkey<7><2>>.
+    Found 8-bit register for signal <xkey<7><1>>.
+    Found 8-bit register for signal <xkey<7><0>>.
+    Found 8-bit register for signal <xkey<8><15>>.
+    Found 8-bit register for signal <xkey<8><14>>.
+    Found 8-bit register for signal <xkey<8><13>>.
+    Found 8-bit register for signal <xkey<8><12>>.
+    Found 8-bit register for signal <xkey<8><11>>.
+    Found 8-bit register for signal <xkey<8><10>>.
+    Found 8-bit register for signal <xkey<8><9>>.
+    Found 8-bit register for signal <xkey<8><8>>.
+    Found 8-bit register for signal <xkey<8><7>>.
+    Found 8-bit register for signal <xkey<8><6>>.
+    Found 8-bit register for signal <xkey<8><5>>.
+    Found 8-bit register for signal <xkey<8><4>>.
+    Found 8-bit register for signal <xkey<8><3>>.
+    Found 8-bit register for signal <xkey<8><2>>.
+    Found 8-bit register for signal <xkey<8><1>>.
+    Found 8-bit register for signal <xkey<8><0>>.
+    Found 8-bit register for signal <xkey<9><15>>.
+    Found 8-bit register for signal <xkey<9><14>>.
+    Found 8-bit register for signal <xkey<9><13>>.
+    Found 8-bit register for signal <xkey<9><12>>.
+    Found 8-bit register for signal <xkey<9><11>>.
+    Found 8-bit register for signal <xkey<9><10>>.
+    Found 8-bit register for signal <xkey<9><9>>.
+    Found 8-bit register for signal <xkey<9><8>>.
+    Found 8-bit register for signal <xkey<9><7>>.
+    Found 8-bit register for signal <xkey<9><6>>.
+    Found 8-bit register for signal <xkey<9><5>>.
+    Found 8-bit register for signal <xkey<9><4>>.
+    Found 8-bit register for signal <xkey<9><3>>.
+    Found 8-bit register for signal <xkey<9><2>>.
+    Found 8-bit register for signal <xkey<9><1>>.
+    Found 8-bit register for signal <xkey<9><0>>.
+    Found 8-bit register for signal <xkey<10><15>>.
+    Found 8-bit register for signal <xkey<10><14>>.
+    Found 8-bit register for signal <xkey<10><13>>.
+    Found 8-bit register for signal <xkey<10><12>>.
+    Found 8-bit register for signal <xkey<10><11>>.
+    Found 8-bit register for signal <xkey<10><10>>.
+    Found 8-bit register for signal <xkey<10><9>>.
+    Found 8-bit register for signal <xkey<10><8>>.
+    Found 8-bit register for signal <xkey<10><7>>.
+    Found 8-bit register for signal <xkey<10><6>>.
+    Found 8-bit register for signal <xkey<10><5>>.
+    Found 8-bit register for signal <xkey<10><4>>.
+    Found 8-bit register for signal <xkey<10><3>>.
+    Found 8-bit register for signal <xkey<10><2>>.
+    Found 8-bit register for signal <xkey<10><1>>.
+    Found 8-bit register for signal <xkey<10><0>>.
+    Found 8-bit register for signal <temp>.
+    Found 8-bit adder for signal <temp[7]_GND_49_o_add_75_OUT> created at line 1241.
+    Found 4-bit subtractor for signal <x<3:0>> created at line 38.
+    Found 4-bit subtractor for signal <y> created at line 39.
+    Found 4-bit subtractor for signal <GND_49_o_GND_49_o_sub_37_OUT<3:0>> created at line 69.
+    Found 4-bit subtractor for signal <GND_49_o_GND_49_o_sub_55_OUT<3:0>> created at line 70.
+    Found 4-bit subtractor for signal <GND_49_o_GND_49_o_sub_73_OUT<3:0>> created at line 71.
+    Found 8-bit 11-to-1 multiplexer for signal <y[3]_X_25_o_wide_mux_3_OUT> created at line 68.
+    Found 8-bit 11-to-1 multiplexer for signal <y[3]_X_25_o_wide_mux_4_OUT> created at line 68.
+    Found 8-bit 11-to-1 multiplexer for signal <y[3]_X_25_o_wide_mux_5_OUT> created at line 68.
+    Found 8-bit 11-to-1 multiplexer for signal <y[3]_X_25_o_wide_mux_6_OUT> created at line 68.
+    Found 8-bit 11-to-1 multiplexer for signal <y[3]_X_25_o_wide_mux_7_OUT> created at line 68.
+    Found 8-bit 11-to-1 multiplexer for signal <y[3]_X_25_o_wide_mux_8_OUT> created at line 68.
+    Found 8-bit 11-to-1 multiplexer for signal <y[3]_X_25_o_wide_mux_9_OUT> created at line 68.
+    Found 8-bit 11-to-1 multiplexer for signal <y[3]_X_25_o_wide_mux_10_OUT> created at line 68.
+    Found 8-bit 11-to-1 multiplexer for signal <y[3]_X_25_o_wide_mux_11_OUT> created at line 68.
+    Found 8-bit 11-to-1 multiplexer for signal <y[3]_X_25_o_wide_mux_12_OUT> created at line 68.
+    Found 8-bit 11-to-1 multiplexer for signal <y[3]_X_25_o_wide_mux_13_OUT> created at line 68.
+    Found 8-bit 11-to-1 multiplexer for signal <y[3]_X_25_o_wide_mux_14_OUT> created at line 68.
+    Found 8-bit 11-to-1 multiplexer for signal <y[3]_X_25_o_wide_mux_15_OUT> created at line 68.
+    Found 8-bit 11-to-1 multiplexer for signal <y[3]_X_25_o_wide_mux_16_OUT> created at line 68.
+    Found 8-bit 11-to-1 multiplexer for signal <y[3]_X_25_o_wide_mux_17_OUT> created at line 68.
+    Found 8-bit 11-to-1 multiplexer for signal <y[3]_X_25_o_wide_mux_18_OUT> created at line 68.
+    Found 8-bit 16-to-1 multiplexer for signal <tmp3> created at line 68.
+    Found 8-bit 16-to-1 multiplexer for signal <tmp2> created at line 69.
+    Found 8-bit 16-to-1 multiplexer for signal <tmp1> created at line 70.
+    Found 8-bit 16-to-1 multiplexer for signal <tmp0> created at line 71.
+    Found 8-bit comparator greater for signal <count[7]_PWR_25_o_LessThan_75_o> created at line 84
+    Summary:
+	inferred   6 Adder/Subtractor(s).
+	inferred 1418 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred 1302 Multiplexer(s).
+Unit <keyblock3> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 256x8-bit single-port Read Only RAM                   : 1
+# Adders/Subtractors                                   : 7
+ 4-bit subtractor                                      : 5
+ 8-bit adder                                           : 2
+# Registers                                            : 199
+ 1-bit register                                        : 5
+ 8-bit register                                        : 194
+# Comparators                                          : 17
+ 8-bit comparator equal                                : 16
+ 8-bit comparator greater                              : 1
+# Multiplexers                                         : 1315
+ 8-bit 11-to-1 multiplexer                             : 16
+ 8-bit 16-to-1 multiplexer                             : 8
+ 8-bit 2-to-1 multiplexer                              : 1291
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <counter>.
+The following registers are absorbed into counter <temp>: 1 register on signal <temp>.
+Unit <counter> synthesized (advanced).
+
+Synthesizing (advanced) Unit <rcon_e>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_temp<3>> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <i>             |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <temp<3>>       |          |
+    -----------------------------------------------------------------------
+Unit <rcon_e> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 256x8-bit single-port distributed Read Only RAM       : 1
+# Adders/Subtractors                                   : 6
+ 4-bit subtractor                                      : 5
+ 8-bit adder                                           : 1
+# Counters                                             : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 1549
+ Flip-Flops                                            : 1549
+# Comparators                                          : 17
+ 8-bit comparator equal                                : 16
+ 8-bit comparator greater                              : 1
+# Multiplexers                                         : 1314
+ 8-bit 11-to-1 multiplexer                             : 16
+ 8-bit 16-to-1 multiplexer                             : 8
+ 8-bit 2-to-1 multiplexer                              : 1290
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <temp_0> has a constant value of 0 in block <keyblock3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <temp_1> has a constant value of 0 in block <keyblock3>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <keyexpansion> ...
+
+Optimizing unit <keyblock3> ...
+
+Optimizing unit <substitutebox> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block keyexpansion, actual ratio is 7.
+FlipFlop block3/temp_2 has been replicated 8 time(s)
+FlipFlop block3/temp_3 has been replicated 11 time(s)
+FlipFlop block3/temp_4 has been replicated 3 time(s)
+FlipFlop block3/temp_5 has been replicated 15 time(s)
+FlipFlop block3/temp_6 has been replicated 6 time(s)
+FlipFlop block3/temp_7 has been replicated 3 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1601
+ Flip-Flops                                            : 1601
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : keyexpansion.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 3193
+#      GND                         : 1
+#      INV                         : 2
+#      LUT2                        : 7
+#      LUT3                        : 940
+#      LUT4                        : 72
+#      LUT5                        : 807
+#      LUT6                        : 1086
+#      MUXCY                       : 50
+#      MUXF7                       : 179
+#      MUXF8                       : 40
+#      VCC                         : 1
+#      XORCY                       : 8
+# FlipFlops/Latches                : 1601
+#      FD                          : 133
+#      FDE                         : 1460
+#      FDRE                        : 7
+#      FDSE                        : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 1538
+#      IBUF                        : 129
+#      OBUF                        : 1409
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx100tfgg484-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            1601  out of  126576     1%  
+ Number of Slice LUTs:                 2914  out of  63288     4%  
+    Number used as Logic:              2914  out of  63288     4%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   3183
+   Number with an unused Flip Flop:    1582  out of   3183    49%  
+   Number with an unused LUT:           269  out of   3183     8%  
+   Number of fully used LUT-FF pairs:  1332  out of   3183    41%  
+   Number of unique control sets:        45
+
+IO Utilization: 
+ Number of IOs:                        1539
+ Number of bonded IOBs:                1539  out of    296   519% (*) 
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 1601  |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 10.677ns (Maximum Frequency: 93.659MHz)
+   Minimum input arrival time before clock: 8.545ns
+   Maximum output required time after clock: 4.202ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 10.677ns (frequency: 93.659MHz)
+  Total number of paths / destination ports: 4359866 / 2821
+-------------------------------------------------------------------------
+Delay:               10.677ns (Levels of Logic = 8)
+  Source:            block3/temp_6_1 (FF)
+  Destination:       block3/xkey<10>_1_2 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: block3/temp_6_1 to block3/xkey<10>_1_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             15   0.525   1.383  block3/temp_6_1 (block3/temp_6_1)
+     LUT4:I1->O           22   0.235   1.334  block1/GND_12_o_temp[31]_equal_31_o<7>11 (block1/GND_12_o_temp[31]_equal_31_o<7>1)
+     LUT6:I5->O            1   0.254   0.958  block1/t<1><0>6 (block1/t<1><0>5)
+     LUT5:I1->O            2   0.254   0.726  block1/t<1><0>9 (block1/t<1><0>8)
+     LUT6:I5->O           16   0.254   1.612  block1/t<1><0>22_1 (block1/t<1><0>22)
+     LUT6:I1->O            1   0.254   0.000  block2/Core/sbox/Mmux_output<2>_43 (block2/Core/sbox/Mmux_output<2>_43)
+     MUXF7:I1->O           3   0.175   0.874  block2/Core/sbox/Mmux_output<2>_3_f7_2 (block2/Core/sbox/Mmux_output<2>_3_f73)
+     LUT6:I4->O           19   0.250   1.261  block3/U1/U3/output1_1 (block3/U1/U3/output1)
+     LUT3:I2->O            1   0.254   0.000  block3/Mmux_count[7]_GND_49_o_wide_mux_240_OUT41 (block3/count[7]_GND_49_o_wide_mux_240_OUT<3>)
+     FDE:D                     0.074          block3/xkey<10>_14_3
+    ----------------------------------------
+    Total                     10.677ns (2.529ns logic, 8.148ns route)
+                                       (23.7% logic, 76.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 2323 / 1780
+-------------------------------------------------------------------------
+Offset:              8.545ns (Levels of Logic = 4)
+  Source:            reset (PAD)
+  Destination:       block3/xkey<7>_0_7 (FF)
+  Destination Clock: clk rising
+
+  Data Path: reset to block3/xkey<7>_0_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            12   1.328   1.177  reset_IBUF (reset_IBUF)
+     LUT2:I0->O           13   0.250   1.553  block2/Core/ctr/reset_reset_i_OR_111_o1 (block2/Core/ctr/reset_reset_i_OR_111_o)
+     LUT6:I0->O           28   0.254   1.908  block3/_n8261_inv2 (block3/_n8261_inv2)
+     LUT6:I0->O           32   0.254   1.519  block3/_n21250_inv1 (block3/_n21250_inv)
+     FDE:CE                    0.302          block3/xkey<3>_1_0
+    ----------------------------------------
+    Total                      8.545ns (2.388ns logic, 6.157ns route)
+                                       (27.9% logic, 72.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 1409 / 1409
+-------------------------------------------------------------------------
+Offset:              4.202ns (Levels of Logic = 1)
+  Source:            block3/xkey<0>_3_7 (FF)
+  Destination:       output<0><3><7> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: block3/xkey<0>_3_7 to output<0><3><7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              3   0.525   0.765  block3/xkey<0>_3_7 (block3/xkey<0>_3_7)
+     OBUF:I->O                 2.912          output_0__3__7_OBUF (output<0><3><7>)
+    ----------------------------------------
+    Total                      4.202ns (3.437ns logic, 0.765ns route)
+                                       (81.8% logic, 18.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   10.677|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 156.00 secs
+Total CPU time to Xst completion: 155.61 secs
+ 
+--> 
+
+Total memory usage is 320124 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   21 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

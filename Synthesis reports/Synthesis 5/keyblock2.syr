@@ -1,0 +1,554 @@
+Release 14.4 - xst P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Reading design: keyblock2.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "keyblock2.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "keyblock2"
+Output Format                      : NGC
+Target Device                      : xc6slx100t-2-fgg484
+
+---- Source Options
+Top Module Name                    : keyblock2
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"coregen" "ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\byte.vhd" into library work
+Parsing package <byte>.
+Parsing VHDL file "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\word_p.vhd" into library work
+Parsing package <word>.
+Parsing package <packet>.
+Parsing VHDL file "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\key_p.vhd" into library work
+Parsing package <key>.
+Parsing VHDL file "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\xor_b.vhd" into library work
+Parsing entity <xor_k>.
+Parsing architecture <behav> of entity <xor_k>.
+Parsing entity <xor_b>.
+Parsing architecture <behav> of entity <xor_b>.
+Parsing entity <xor1>.
+Parsing architecture <behav> of entity <xor1>.
+Parsing entity <xor_iv>.
+Parsing architecture <behav> of entity <xor_iv>.
+Parsing VHDL file "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\sbox_p.vhd" into library work
+Parsing package <sbox>.
+Parsing VHDL file "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\rotword_p.vhd" into library work
+Parsing package <rotword>.
+Parsing VHDL file "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\rcon_p.vhd" into library work
+Parsing package <rcon>.
+Parsing VHDL file "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\sbox.vhd" into library work
+Parsing entity <substitutebox>.
+Parsing architecture <behav> of entity <substitutebox>.
+Parsing VHDL file "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\rotword.vhd" into library work
+Parsing entity <rword>.
+Parsing architecture <behav> of entity <rword>.
+Parsing VHDL file "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\rcon.vhd" into library work
+Parsing entity <rcon_e>.
+Parsing architecture <behav> of entity <rcon_e>.
+Parsing VHDL file "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\counter.vhd" into library work
+Parsing entity <counter>.
+Parsing architecture <behav> of entity <counter>.
+Parsing VHDL file "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\keycore.vhd" into library work
+Parsing entity <keycore>.
+Parsing architecture <struct> of entity <keycore>.
+Parsing VHDL file "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\demux.vhd" into library work
+Parsing entity <demux>.
+Parsing architecture <behav> of entity <demux>.
+Parsing VHDL file "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\keyblock2.vhd" into library work
+Parsing entity <keyblock2>.
+Parsing architecture <behav> of entity <keyblock2>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <keyblock2> (architecture <behav>) from library <work>.
+
+Elaborating entity <keycore> (architecture <struct>) from library <work>.
+
+Elaborating entity <counter> (architecture <behav>) from library <work>.
+
+Elaborating entity <rword> (architecture <behav>) from library <work>.
+
+Elaborating entity <substitutebox> (architecture <behav>) from library <work>.
+
+Elaborating entity <rcon_e> (architecture <behav>) from library <work>.
+
+Elaborating entity <xor_b> (architecture <behav>) from library <work>.
+
+Elaborating entity <xor1> (architecture <behav>) from library <work>.
+
+Elaborating entity <demux> (architecture <behav>) from library <work>.
+WARNING:HDLCompiler:871 - "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\demux.vhd" Line 24: Using initial value ("00000000","00000000","00000000","00000000") for temp since it is never assigned
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <keyblock2>.
+    Related source file is "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\keyblock2.vhd".
+WARNING:Xst:647 - Input <c<7:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <keyblock2> synthesized.
+
+Synthesizing Unit <keycore>.
+    Related source file is "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\keycore.vhd".
+    Summary:
+	no macro.
+Unit <keycore> synthesized.
+
+Synthesizing Unit <counter>.
+    Related source file is "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\counter.vhd".
+    Found 1-bit register for signal <pd>.
+    Found 8-bit register for signal <temp>.
+    Found 8-bit adder for signal <temp[7]_GND_8_o_add_1_OUT> created at line 27.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   9 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <counter> synthesized.
+
+Synthesizing Unit <rword>.
+    Related source file is "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\rotword.vhd".
+    Summary:
+	no macro.
+Unit <rword> synthesized.
+
+Synthesizing Unit <substitutebox>.
+    Related source file is "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\sbox.vhd".
+    Found 8-bit 16-to-1 multiplexer for signal <output<3>> created at line 289.
+    Found 8-bit 16-to-1 multiplexer for signal <output<2>> created at line 289.
+    Found 8-bit 16-to-1 multiplexer for signal <output<1>> created at line 289.
+    Found 8-bit 16-to-1 multiplexer for signal <output<0>> created at line 289.
+    Summary:
+	inferred   4 Multiplexer(s).
+Unit <substitutebox> synthesized.
+
+Synthesizing Unit <rcon_e>.
+    Related source file is "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\rcon.vhd".
+    Found 256x8-bit Read Only RAM for signal <temp<3>>
+    Summary:
+	inferred   1 RAM(s).
+Unit <rcon_e> synthesized.
+
+Synthesizing Unit <xor_b>.
+    Related source file is "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\xor_b.vhd".
+    Summary:
+	no macro.
+Unit <xor_b> synthesized.
+
+Synthesizing Unit <xor1>.
+    Related source file is "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\xor_b.vhd".
+    Summary:
+	no macro.
+Unit <xor1> synthesized.
+
+Synthesizing Unit <demux>.
+    Related source file is "C:\Users\gustaf.bengtz\Documents\aes\aes\rtl\demux.vhd".
+    Summary:
+	inferred   8 Multiplexer(s).
+Unit <demux> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 256x8-bit single-port Read Only RAM                   : 1
+# Adders/Subtractors                                   : 1
+ 8-bit adder                                           : 1
+# Registers                                            : 2
+ 1-bit register                                        : 1
+ 8-bit register                                        : 1
+# Multiplexers                                         : 13
+ 8-bit 16-to-1 multiplexer                             : 4
+ 8-bit 2-to-1 multiplexer                              : 9
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <counter>.
+The following registers are absorbed into counter <temp>: 1 register on signal <temp>.
+Unit <counter> synthesized (advanced).
+
+Synthesizing (advanced) Unit <rcon_e>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_temp<3>> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <i>             |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <temp<3>>       |          |
+    -----------------------------------------------------------------------
+Unit <rcon_e> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 256x8-bit single-port distributed Read Only RAM       : 1
+# Counters                                             : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 1
+ Flip-Flops                                            : 1
+# Multiplexers                                         : 12
+ 8-bit 16-to-1 multiplexer                             : 4
+ 8-bit 2-to-1 multiplexer                              : 8
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <keyblock2> ...
+
+Optimizing unit <substitutebox> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block keyblock2, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 9
+ Flip-Flops                                            : 9
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : keyblock2.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 344
+#      GND                         : 1
+#      LUT1                        : 1
+#      LUT2                        : 3
+#      LUT3                        : 1
+#      LUT4                        : 9
+#      LUT6                        : 194
+#      MUXCY                       : 7
+#      MUXF7                       : 80
+#      MUXF8                       : 40
+#      XORCY                       : 8
+# FlipFlops/Latches                : 9
+#      FDE                         : 1
+#      FDRE                        : 7
+#      FDSE                        : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 71
+#      IBUF                        : 39
+#      OBUF                        : 32
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx100tfgg484-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:               9  out of  126576     0%  
+ Number of Slice LUTs:                  208  out of  63288     0%  
+    Number used as Logic:               208  out of  63288     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    209
+   Number with an unused Flip Flop:     200  out of    209    95%  
+   Number with an unused LUT:             1  out of    209     0%  
+   Number of fully used LUT-FF pairs:     8  out of    209     3%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                          76
+ Number of bonded IOBs:                  72  out of    296    24%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 9     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 4.863ns (Maximum Frequency: 205.625MHz)
+   Minimum input arrival time before clock: 4.539ns
+   Maximum output required time after clock: 7.848ns
+   Maximum combinational path delay: 8.639ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.863ns (frequency: 205.625MHz)
+  Total number of paths / destination ports: 318 / 17
+-------------------------------------------------------------------------
+Delay:               4.863ns (Levels of Logic = 10)
+  Source:            Core/ctr/temp_2 (FF)
+  Destination:       Core/ctr/temp_7 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: Core/ctr/temp_2 to Core/ctr/temp_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            34   0.525   1.781  Core/ctr/temp_2 (Core/ctr/temp_2)
+     LUT3:I0->O            8   0.235   0.944  Core/ctr/PWR_8_o_temp[7]_equal_1_o<7>_SW0 (N01)
+     LUT6:I5->O            1   0.254   0.681  Core/ctr/PWR_8_o_temp[7]_equal_1_o_inv (Core/ctr/PWR_8_o_temp[7]_equal_1_o_inv)
+     MUXCY:CI->O           1   0.023   0.000  Core/ctr/Mcount_temp_cy<0> (Core/ctr/Mcount_temp_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Core/ctr/Mcount_temp_cy<1> (Core/ctr/Mcount_temp_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Core/ctr/Mcount_temp_cy<2> (Core/ctr/Mcount_temp_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Core/ctr/Mcount_temp_cy<3> (Core/ctr/Mcount_temp_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Core/ctr/Mcount_temp_cy<4> (Core/ctr/Mcount_temp_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Core/ctr/Mcount_temp_cy<5> (Core/ctr/Mcount_temp_cy<5>)
+     MUXCY:CI->O           0   0.023   0.000  Core/ctr/Mcount_temp_cy<6> (Core/ctr/Mcount_temp_cy<6>)
+     XORCY:CI->O           1   0.206   0.000  Core/ctr/Mcount_temp_xor<7> (Core/ctr/Mcount_temp7)
+     FDRE:D                    0.074          Core/ctr/temp_7
+    ----------------------------------------
+    Total                      4.863ns (1.457ns logic, 3.406ns route)
+                                       (30.0% logic, 70.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 63 / 18
+-------------------------------------------------------------------------
+Offset:              4.539ns (Levels of Logic = 2)
+  Source:            c<2> (PAD)
+  Destination:       Core/ctr/temp_2 (FF)
+  Destination Clock: clk rising
+
+  Data Path: c<2> to Core/ctr/temp_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            27   1.328   1.712  c_2_IBUF (c_2_IBUF)
+     LUT6:I2->O            8   0.254   0.943  Core/ctr/go1 (Core/ctr/go)
+     FDRE:CE                   0.302          Core/ctr/temp_2
+    ----------------------------------------
+    Total                      4.539ns (1.884ns logic, 2.655ns route)
+                                       (41.5% logic, 58.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 216 / 8
+-------------------------------------------------------------------------
+Offset:              7.848ns (Levels of Logic = 5)
+  Source:            Core/ctr/temp_5 (FF)
+  Destination:       output<3><5> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: Core/ctr/temp_5 to output<3><5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            40   0.525   2.109  Core/ctr/temp_5 (Core/ctr/temp_5)
+     LUT6:I0->O            1   0.254   0.000  Core/rcon/Mram_temp<3>10 (Core/rcon/Mram_temp<3>10)
+     MUXF7:I1->O           1   0.175   0.000  Core/rcon/Mram_temp<3>10_f7 (Core/rcon/Mram_temp<3>10_f7)
+     MUXF8:I1->O           1   0.152   0.790  Core/rcon/Mram_temp<3>10_f8 (Core/rcon/temp<3><5>)
+     LUT4:I2->O            1   0.250   0.681  Dmux/Mmux_output<3>61 (output_3__5_OBUF)
+     OBUF:I->O                 2.912          output_3__5_OBUF (output<3><5>)
+    ----------------------------------------
+    Total                      7.848ns (4.268ns logic, 3.580ns route)
+                                       (54.4% logic, 45.6% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1024 / 32
+-------------------------------------------------------------------------
+Delay:               8.639ns (Levels of Logic = 6)
+  Source:            input<2><6> (PAD)
+  Destination:       output<3><7> (PAD)
+
+  Data Path: input<2><6> to output<3><7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            33   1.328   1.992  input_2__6_IBUF (input_2__6_IBUF)
+     LUT6:I0->O            1   0.254   0.000  Core/sbox/Mmux_output<3>_42 (Core/sbox/Mmux_output<3>_42)
+     MUXF7:I1->O           1   0.175   0.000  Core/sbox/Mmux_output<3>_3_f7_1 (Core/sbox/Mmux_output<3>_3_f72)
+     MUXF8:I1->O           1   0.152   0.910  Core/sbox/Mmux_output<3>_2_f8_1 (Core/k2<3><2>)
+     LUT4:I1->O            1   0.235   0.681  Dmux/Mmux_output<3>31 (output_3__2_OBUF)
+     OBUF:I->O                 2.912          output_3__2_OBUF (output<3><2>)
+    ----------------------------------------
+    Total                      8.639ns (5.056ns logic, 3.583ns route)
+                                       (58.5% logic, 41.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    4.863|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 17.00 secs
+Total CPU time to Xst completion: 17.17 secs
+ 
+--> 
+
+Total memory usage is 269052 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+
