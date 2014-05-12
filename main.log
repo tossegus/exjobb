@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.29)  12 MAY 2014 15:59
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.29)  12 MAY 2014 18:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2303,7 +2303,7 @@ See the babel package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.88 ... {chapter}{Bibliography}{65}{appendix*.29}
+l.88 ... {chapter}{Bibliography}{63}{appendix*.29}
                                                   
 Your command will be ignored, type <return> to proceed
 
@@ -2801,6 +2801,386 @@ l.111
 Your command will be ignored, type <return> to proceed
 
 [27 <./fig/scrambler.png>]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.156   \MyIndent \triangleright
+                                 manager      &  858 &  699 \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.156   \MyIndent \triangleright manager      &
+                                                 858 &  699 \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.157   \MyIndent \triangleright
+                                 cbc          & 4321 & 2127 \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.157   \MyIndent \triangleright cbc          &
+                                                4321 & 2127 \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.159   \MyIndent \MyIndent \triangleright
+                                           cipher       & 4229 & 1994 \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.159 ...t \MyIndent \triangleright cipher       &
+                                                   4229 & 1994 \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.161 ...Indent \MyIndent \MyIndent \triangleright
+                                                   keyexpansion & 2914
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.161 ...t \MyIndent \triangleright keyexpansion &
+                                                   2914
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.164 ...Indent \MyIndent \MyIndent \triangleright
+                                                   keyblock1
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.165   &
+          689 & 0 \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.166 ...Indent \MyIndent \MyIndent \triangleright
+                                                   keyblock2
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.167   &
+          208 & 9 \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.169 ...Indent \MyIndent \MyIndent \triangleright
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.170   demux &
+                32   & 0 \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.171 ...Indent \MyIndent \MyIndent \triangleright
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.172   keycore &
+                  183 & 9 \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.175   \triangleright
+                       ctr & 14 & 9 \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.175   \triangleright ctr &
+                             14 & 9 \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.177   \triangleright
+                       rotw & 0 & 0 \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.177   \triangleright rotw &
+                              0 & 0 \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.179   \triangleright
+                       sbox & 128 & 0 \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.179   \triangleright sbox &
+                              128 & 0 \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.181   \triangleright
+                       rcon & 40 & 0 \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.181   \triangleright rcon &
+                              40 & 0 \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.183 ...Indent \MyIndent \MyIndent \triangleright
+                                                   keyblock3
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.184   &
+          1854 & 1365 \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.186 ...Indent \MyIndent \MyIndent \triangleright
+                                                   data2state & 0
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.186 ...ent \MyIndent \triangleright data2state &
+                                                   0
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.188 ...Indent \MyIndent \MyIndent \triangleright
+                                                   round & 1535 & 272 \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.188 ...MyIndent \MyIndent \triangleright round &
+                                                   1535 & 272 \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.190 ...Indent \MyIndent \MyIndent \triangleright
+                                                   subbytes
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.191   &
+          512 & 0 \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.192 ...Indent \MyIndent \MyIndent \triangleright
+                                                   shiftrows
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.193   &
+          0 & 0 \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.194 ...Indent \MyIndent \MyIndent \triangleright
+                                                   mixcolumns
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.195   &
+          176 & 0 \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.196 ...Indent \MyIndent \MyIndent \triangleright
+                                                   addkey & 128
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.196 ...yIndent \MyIndent \triangleright addkey &
+                                                   128
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.199 ...Indent \MyIndent \MyIndent \triangleright
+                                                   state2data & 1 & 2 \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.199 ...ent \MyIndent \triangleright state2data &
+                                                   1 & 2 \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
 
 ! Package babel Error: You haven't defined the language eng yet.
 
@@ -2808,19 +3188,22 @@ See the babel package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.179 \end{longtable}
+l.203 \end{longtable}
                      
 Your command will be ignored, type <return> to proceed
 
 [28]
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 214--214
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 238--238
 [][][][] 
  []
 
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 217--217
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 241--241
 [][][][] 
  []
+
+
+LaTeX Warning: Marginpar on page 29 moved.
 
 
 ! Package babel Error: You haven't defined the language eng yet.
@@ -2829,25 +3212,19 @@ See the babel package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.218 
+l.248 
       
 Your command will be ignored, type <return> to proceed
 
 [29]
 
-LaTeX Warning: Marginpar on page 30 moved.
-
-
-LaTeX Warning: Marginpar on page 30 moved.
-
-
 ! Package babel Error: You haven't defined the language eng yet.
 
 See the babel package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.268 
+l.300 
       
 Your command will be ignored, type <return> to proceed
 
@@ -2859,7 +3236,7 @@ See the babel package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.317 
+l.347 
       
 Your command will be ignored, type <return> to proceed
 
@@ -2867,20 +3244,20 @@ Your command will be ignored, type <return> to proceed
 File: fig/successtv1.png Graphic file (type png)
 
 <use fig/successtv1.png>
-Package pdftex.def Info: fig/successtv1.png used on input line 336.
+Package pdftex.def Info: fig/successtv1.png used on input line 360.
 (pdftex.def)             Requested size: 355.65944pt x 45.38298pt.
 
 <fig/successtv2.png, id=842, 832.61063pt x 112.16907pt>
 File: fig/successtv2.png Graphic file (type png)
 
 <use fig/successtv2.png>
-Package pdftex.def Info: fig/successtv2.png used on input line 347.
+Package pdftex.def Info: fig/successtv2.png used on input line 371.
 (pdftex.def)             Requested size: 355.65944pt x 47.9151pt.
  <fig/successtv3.png, id=844, 726.46407pt x 108.405pt>
 File: fig/successtv3.png Graphic file (type png)
 
 <use fig/successtv3.png>
-Package pdftex.def Info: fig/successtv3.png used on input line 358.
+Package pdftex.def Info: fig/successtv3.png used on input line 382.
 (pdftex.def)             Requested size: 355.65944pt x 53.07423pt.
 )
 
@@ -2894,25 +3271,14 @@ l.56 \include{result}
                      
 Your command will be ignored, type <return> to proceed
 
-[32 <./fig/successtv1.png (PNG copy)> <./fig/successtv2.png (PNG copy)>]
-
-! Package babel Error: You haven't defined the language eng yet.
-
-See the babel package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.56 \include{result}
-                     
-Your command will be ignored, type <return> to proceed
-
-[33 <./fig/successtv3.png>] [34
-
-
-]
+[32 <./fig/successtv1.png (PNG copy)> <./fig/successtv2.png (PNG copy)> <./fig/
+successtv3.png>]
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 23.63593pt on input line 58.
- [35] [36]
+ [33
+
+
+] [34]
 \openout2 = `matrix.aux'.
 
  (./matrix.tex
@@ -2946,7 +3312,7 @@ Overfull \hbox (40.79588pt too wide) in paragraph at lines 66--84
 []$[]$ 
  []
 
-) [37
+) [35
 
 
 ]
@@ -2961,34 +3327,34 @@ l.61 \include{matrix}
                      
 Your command will be ignored, type <return> to proceed
 
-[38] [39]
+[36] [37]
 \openout2 = `flowcharts.aux'.
 
- (./flowcharts.tex [40
+ (./flowcharts.tex [38
 
 
 
 ]
 Appendix B.
-<fig/flowchart.pdf, id=891, 415.5525pt x 912.40875pt>
+<fig/flowchart.pdf, id=883, 415.5525pt x 912.40875pt>
 File: fig/flowchart.pdf Graphic file (type pdf)
  <use fig/flowchart.pdf>
 Package pdftex.def Info: fig/flowchart.pdf used on input line 5.
 (pdftex.def)             Requested size: 151.61516pt x 332.90062pt.
 
-<fig/keyschedule.png, id=892, 822.272pt x 822.272pt>
+<fig/keyschedule.png, id=884, 822.272pt x 822.272pt>
 File: fig/keyschedule.png Graphic file (type png)
  <use fig/keyschedule.png>
 Package pdftex.def Info: fig/keyschedule.png used on input line 12.
 (pdftex.def)             Requested size: 355.65944pt x 355.66539pt.
 
-<fig/CBCmode.png, id=893, 2007.5pt x 700.6175pt>
+<fig/CBCmode.png, id=885, 2007.5pt x 700.6175pt>
 File: fig/CBCmode.png Graphic file (type png)
  <use fig/CBCmode.png>
 Package pdftex.def Info: fig/CBCmode.png used on input line 19.
 (pdftex.def)             Requested size: 355.65944pt x 124.11726pt.
 )
-[41]
+[39]
 
 ! Package babel Error: You haven't defined the language eng yet.
 
@@ -3000,11 +3366,11 @@ l.62 \include{flowcharts}
                          
 Your command will be ignored, type <return> to proceed
 
-[42 <./fig/flowchart.pdf>] [43 <./fig/keyschedule.png (PNG copy)> <./fig/CBCmod
+[40 <./fig/flowchart.pdf>] [41 <./fig/keyschedule.png (PNG copy)> <./fig/CBCmod
 e.png>]
 \openout2 = `vectors.aux'.
 
- (./vectors.tex [44
+ (./vectors.tex [42
 
 
 
@@ -3015,7 +3381,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--10
 
  []
 
-[45]
+[43]
 
 ! Package caption Error: \caption outside float.
 
@@ -3094,7 +3460,7 @@ l.133 ...8 & & & & & 19fadc21 & c9ee2589 \\ \hline
                                                   
 Your command will be ignored, type <return> to proceed
 
-[46]
+[44]
 Overfull \hbox (52.91017pt too wide) in alignment at lines 133--138
  [] [] [] [] [] [] [] [] 
  []
@@ -3291,7 +3657,7 @@ l.588 \end{longtable}
                      
 Your command will be ignored, type <return> to proceed
 
-[47]
+[45]
 
 ! Package babel Error: You haven't defined the language eng yet.
 
@@ -3303,7 +3669,7 @@ l.588 \end{longtable}
                      
 Your command will be ignored, type <return> to proceed
 
-[48]
+[46]
 Underfull \vbox (badness 10000) detected at line 617
  []
 
@@ -3318,7 +3684,7 @@ l.624 \end{longtable}
                      
 Your command will be ignored, type <return> to proceed
 
-[49]
+[47]
 Overfull \hbox (57.23956pt too wide) in alignment at lines 632--655
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
@@ -3344,7 +3710,7 @@ l.688   \end{longtable}
                        
 Your command will be ignored, type <return> to proceed
 
-[50]
+[48]
 Overfull \hbox (58.7516pt too wide) in alignment at lines 692--704
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
@@ -3361,10 +3727,10 @@ l.63 \include{vectors}
                       
 Your command will be ignored, type <return> to proceed
 
-[51]
+[49]
 \openout2 = `examples.aux'.
 
- (./examples.tex [52
+ (./examples.tex [50
 
 
 
@@ -3423,10 +3789,10 @@ l.18
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-) [53]
+) [51]
 \openout2 = `blocks.aux'.
 
- (./blocks.tex [54
+ (./blocks.tex [52
 
 
 
@@ -3436,44 +3802,44 @@ File: fig/scrambler.png Graphic file (type png)
 <use fig/scrambler.png>
 Package pdftex.def Info: fig/scrambler.png used on input line 8.
 (pdftex.def)             Requested size: 355.65944pt x 205.22923pt.
- <fig/manager.png, id=1002, 794.97pt x 492.84125pt>
+ <fig/manager.png, id=993, 794.97pt x 492.84125pt>
 File: fig/manager.png Graphic file (type png)
 
 <use fig/manager.png>
 Package pdftex.def Info: fig/manager.png used on input line 14.
 (pdftex.def)             Requested size: 355.65944pt x 220.49808pt.
- <fig/cbc.png, id=1003, 484.81125pt x 561.09625pt>
+ <fig/cbc.png, id=994, 484.81125pt x 561.09625pt>
 File: fig/cbc.png Graphic file (type png)
 
 <use fig/cbc.png>
 Package pdftex.def Info: fig/cbc.png used on input line 20.
 (pdftex.def)             Requested size: 355.65944pt x 411.64308pt.
- <fig/cipherblock.png, id=1004, 658.46pt x 478.78876pt>
+ <fig/cipherblock.png, id=995, 658.46pt x 478.78876pt>
 File: fig/cipherblock.png Graphic file (type png)
 
 <use fig/cipherblock.png>
 Package pdftex.def Info: fig/cipherblock.png used on input line 26.
 (pdftex.def)             Requested size: 355.65944pt x 258.61513pt.
- <fig/round.png, id=1005, 652.4375pt x 630.355pt>
+ <fig/round.png, id=996, 652.4375pt x 630.355pt>
 File: fig/round.png Graphic file (type png)
 
 <use fig/round.png>
 Package pdftex.def Info: fig/round.png used on input line 32.
 (pdftex.def)             Requested size: 355.65944pt x 343.62804pt.
- <fig/keyexpansion.png, id=1006, 602.25pt x 542.025pt>
+ <fig/keyexpansion.png, id=997, 602.25pt x 542.025pt>
 File: fig/keyexpansion.png Graphic file (type png)
 
 <use fig/keyexpansion.png>
 Package pdftex.def Info: fig/keyexpansion.png used on input line 38.
 (pdftex.def)             Requested size: 355.65944pt x 320.10625pt.
 
-<fig/keyblock2.png, id=1007, 579.16376pt x 485.815pt>
+<fig/keyblock2.png, id=998, 579.16376pt x 485.815pt>
 File: fig/keyblock2.png Graphic file (type png)
  <use fig/keyblock2.png>
 Package pdftex.def Info: fig/keyblock2.png used on input line 44.
 (pdftex.def)             Requested size: 355.65944pt x 298.33337pt.
 )
-[55]
+[53]
 
 ! Package babel Error: You haven't defined the language eng yet.
 
@@ -3485,7 +3851,7 @@ l.65 \include{blocks}
                      
 Your command will be ignored, type <return> to proceed
 
-[56 <./fig/manager.png>] [57 <./fig/cbc.png>]
+[54 <./fig/manager.png>] [55 <./fig/cbc.png>]
 
 ! Package babel Error: You haven't defined the language eng yet.
 
@@ -3497,7 +3863,7 @@ l.65 \include{blocks}
                      
 Your command will be ignored, type <return> to proceed
 
-[58 <./fig/cipherblock.png>] [59 <./fig/round.png>]
+[56 <./fig/cipherblock.png>] [57 <./fig/round.png>]
 
 ! Package babel Error: You haven't defined the language eng yet.
 
@@ -3509,7 +3875,7 @@ l.65 \include{blocks}
                      
 Your command will be ignored, type <return> to proceed
 
-[60 <./fig/keyexpansion.png>] [61 <./fig/keyblock2.png>]
+[58 <./fig/keyexpansion.png>] [59 <./fig/keyblock2.png>]
 
 ! Package babel Error: You haven't defined the language eng yet.
 
@@ -3521,7 +3887,7 @@ l.68 \backmatter
                 
 Your command will be ignored, type <return> to proceed
 
-[62
+[60
 
 
 ] (./main.lof)
@@ -3532,7 +3898,7 @@ Your command will be ignored, type <return> to proceed
 \tf@brf=\write8
 \openout8 = `main.brf'.
 
- [63] [64
+ [61] [62
 
 ]
 Underfull \hbox (badness 3838) in paragraph at lines 45--45
@@ -3564,7 +3930,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--53
 103199 / 103127 /
  []
 
-[65]
+[63]
 Underfull \hbox (badness 2653) in paragraph at lines 85--85
 []\T1/jkpk/m/n/10 Wei Li.  Se-cu-rity anal-y-sis of dvb com-mon scram-bling al-
 go-rithm.  In
@@ -3635,7 +4001,7 @@ l.157
       
 Your command will be ignored, type <return> to proceed
 
-[66]
+[64]
 Underfull \hbox (badness 10000) in paragraph at lines 173--173
 []\T1/jkpk/m/n/10 Unknown Wikipedia.  Cbc en-cryp-tion, 2014a.  URL []$\T1/pcr/
 m/n/10 http : / /
@@ -3672,7 +4038,7 @@ l.75 \end{document}
                    
 Your command will be ignored, type <return> to proceed
 
-[67]
+[65]
 
 ! Package babel Error: You haven't defined the language eng yet.
 
@@ -3684,9 +4050,9 @@ l.75 \end{document}
                    
 Your command will be ignored, type <return> to proceed
 
-[68
+[66
 
-] <fig/LinkUniv_staende_pms.pdf, id=1197, 260.975pt x 172.645pt>
+] <fig/LinkUniv_staende_pms.pdf, id=1189, 260.975pt x 172.645pt>
 File: fig/LinkUniv_staende_pms.pdf Graphic file (type pdf)
 
 <use fig/LinkUniv_staende_pms.pdf>
@@ -3721,7 +4087,7 @@ Overfull \hbox (0.16193pt too wide) in paragraph at lines 75--75
 doc-u-ment in-tegrity, please
  []
 
-[69 <./fig/LinkUniv_staende_pms.pdf>]
+[67 <./fig/LinkUniv_staende_pms.pdf>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 75.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 75.
  (./main.aux (./notation.aux) (./cas.aux)
@@ -3733,15 +4099,15 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 75.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: EF99A404B2BD999179D1E4F44608C86B;4938.
 Package rerunfilecheck Info: File `main.brf' has not changed.
-(rerunfilecheck)             Checksum: FD52A3306AA06364C3B748B01C330B55;2961.
+(rerunfilecheck)             Checksum: 5EB90BF6D7929F84757DC9FE4515C663;2961.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 75.
  )
 (\end occurred when \ifx on line 20 was incomplete) 
 Here is how much of TeX's memory you used:
- 22887 strings out of 493304
- 374339 string characters out of 6139871
- 598741 words of memory out of 5000000
- 25380 multiletter control sequences out of 15000+600000
+ 22886 strings out of 493304
+ 374333 string characters out of 6139871
+ 599745 words of memory out of 5000000
+ 25381 multiletter control sequences out of 15000+600000
  230054 words of font info for 187 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  56i,12n,87p,587b,556s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3763,10 +4129,10 @@ texlive/texmf-dist/fonts/type1/public/kpfonts/jkpsya.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 helvetic/uhvr8a.pfb>
-Output written on main.pdf (83 pages, 982156 bytes).
+Output written on main.pdf (81 pages, 983458 bytes).
 PDF statistics:
- 1317 PDF objects out of 1440 (max. 8388607)
- 1156 compressed objects within 12 object streams
- 239 named destinations out of 1000 (max. 500000)
+ 1309 PDF objects out of 1440 (max. 8388607)
+ 1150 compressed objects within 12 object streams
+ 237 named destinations out of 1000 (max. 500000)
  19171 words of extra memory for PDF output out of 20736 (max. 10000000)
 

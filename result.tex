@@ -146,33 +146,57 @@ The third synthesis was performed on each block seperately, to find out
 where optimization might be performed. The usage can be viewed in Table 
 \ref{synt:fifth}.
 
+%
+\newcommand{\MyIndent}{\hspace*{0.2cm}}%
+
 \begin{longtable}{ l | c | c }
-  Entity & \% of FPGA & Noteworthy \\
-  scrambler & & \\
-  manager & & \\
-  cbc & & \\
-  cipher & & \\
-  keyexpansion & & \\
-  keyblock1 & & \\
-  keyblock2 & & \\
-  demux & & \\ \\
+  Entity       & Slice LUTs out of 63288 & Slice Registers out of 
+  126576 \\ \hline
+  scrambler              & 5167 & 2817 \\
+  \MyIndent \triangleright manager      &  858 &  699 \\ 
+  \MyIndent \triangleright cbc          & 4321 & 2127 \\
 
-  keycore & & \\
-  ctr & & \\
-  rotw & & \\
-  sbox & & \\
-  rcon & & \\ \\
+  \MyIndent \MyIndent \triangleright cipher       & 4229 & 1994 \\
 
-  keyblock3 & & \\
-  data2state & & \\ \\
+  \MyIndent \MyIndent \MyIndent \triangleright keyexpansion & 2914 
+  & 1601 \\
 
-  round & & \\
-  subbytes & & \\
-  shiftrows & & \\
-  mixcolumns & & \\
-  addkey & & \\
+  \MyIndent \MyIndent \MyIndent \MyIndent \triangleright keyblock1 
+  & 689 & 0 \\
+  \MyIndent \MyIndent \MyIndent \MyIndent \triangleright keyblock2 
+  & 208 & 9 \\
 
-  state2data & & \\
+  \MyIndent \MyIndent \MyIndent \MyIndent \MyIndent \triangleright 
+  demux & 32   & 0 \\
+  \MyIndent \MyIndent \MyIndent \MyIndent \MyIndent \triangleright 
+  keycore & 183 & 9 \\
+
+  \MyIndent \MyIndent \MyIndent \MyIndent \MyIndent \MyIndent 
+  \triangleright ctr & 14 & 9 \\
+  \MyIndent \MyIndent \MyIndent \MyIndent \MyIndent \MyIndent 
+  \triangleright rotw & 0 & 0 \\
+  \MyIndent \MyIndent \MyIndent \MyIndent \MyIndent \MyIndent 
+  \triangleright sbox & 128 & 0 \\
+  \MyIndent \MyIndent \MyIndent \MyIndent \MyIndent \MyIndent 
+  \triangleright rcon & 40 & 0 \\
+
+  \MyIndent \MyIndent \MyIndent \MyIndent \triangleright keyblock3 
+  & 1854 & 1365 \\
+
+  \MyIndent \MyIndent \MyIndent \triangleright data2state & 0 
+  & 0 \\
+  \MyIndent \MyIndent \MyIndent \triangleright round & 1535 & 272 \\
+
+  \MyIndent \MyIndent \MyIndent \MyIndent \triangleright subbytes 
+  & 512 & 0 \\
+  \MyIndent \MyIndent \MyIndent \MyIndent \triangleright shiftrows 
+  & 0 & 0 \\
+  \MyIndent \MyIndent \MyIndent \MyIndent \triangleright mixcolumns 
+  & 176 & 0 \\
+  \MyIndent \MyIndent \MyIndent \MyIndent \triangleright addkey & 128 
+  & 0 \\
+
+  \MyIndent \MyIndent \MyIndent \triangleright state2data & 1 & 2 \\
 
   \caption{Hardware usage of entities}
   \label{synt:fifth}
