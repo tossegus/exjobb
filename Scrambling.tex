@@ -41,30 +41,26 @@ communication between connected systems.
 %Det är osannolikt att det här stämmer helt och hållet :)
 
 \section{Scrambling or Encrypting}
-The difference between scrambling and encryption is that scrambling is the
-way we generate the secret control word (key) which is used when we make the
-data unreadable to outsiders while encryption is the way we protect the control 
-word during transmission.
+Scrambling can be seen as the distortion of a plain-text, using a CW. Encryption 
+can, on the other hand, be seen as the entire process of protecting content, 
+from generating the CW to scrambling the data. Scrambling can therefore be seen 
+as a subset of encryption.
 
-\Warning[Todo]{Det här måste jag bli säkrare på}
-%What is the main difference between scrambling and encryption? 
-%%%%%%%%%%
-%"The main difference between scrambling and encryption methods is that scrambling methods change the values of some bits in a data block or stream with the purpose of spreading the signal across spectrums to decrease the electromagnetic interference or to introduce security, whereas encryption methods processes the information (plain-text) through an algorithm (cipher) to make it unreadable for others that do not poses certain knowledge about the key"
-%%%%%%%%%%
 \section{Data packets}\label{sec:Data}
 The data processed by the DVB systems is sent in data packets. All of them are 
-created from ES packets (Elementary Streams) which generally is the output from 
-an audio or video encoder. The ES packets are then packeted into PS, TS or PES 
-packets and then distributed. Among the three ways of packing data, only two are 
-commonly used. PS packets are used for storing data, while TS and PES are used 
-for transmitting data. The interresting types, when working with DVB, are 
-therefore the TS packets as well as the PES packets.
+created from Elementary Stream packets (ES) which are generally the output from 
+an audio or video encoder. The ES-packets are then packeted into Program Stream-
+(PS), Transport Stream- (TS) or Packatized Elementary Stream packets (PES) and 
+then distributed. Among the three ways of packing data, only two are commonly 
+used. PS packets are used for storing data, while TS and PES are used for 
+transmitting data. The interresting types, when working with DVB, are therefore 
+the TS packets as well as the PES packets, where only the TS packets are used.
 
 \subsection{TS packets}
 TS packets are the ones used by the DVB society, possibly due to their fixed 
-lenghts. TS packets have got a length of 188 bytes with a 4 byte long header, 
-meaning the payload consists of 184 bytes. The layout of a TS packet can be 
-viewed in figure \ref{img:Package}\citep{DVB:2013}.
+lenghts. TS packets have got a length of 188 bytes with a 4 byte long header. 
+This means that the payload consists of 184 bytes. The layout of a TS packet 
+can be viewed in figure \ref{img:Package}\citep{DVB:2013}.
 
 \begin{figure}
   \includegraphics[width=\textwidth]{TSpacket}
@@ -95,30 +91,32 @@ The byte-sizes of the building blocks are:
 
 \subsubsection{Header}
 The header consists of information regarding the packet, and has a sync\_byte 
-(with a hex-value of 0x47, or bit-value of 01000111) to display the beginning of 
-the packet. The header also contains information as to whether there is an 
+(with a hex-value of 0x47, or bit-value of 01000111) to announce the beginning 
+of a packet. The header also contains information as to whether there is an 
 adaptation field and payload in the packet, what PID the packet has, if it is to 
 be prioritized, whether the data is scrambled - and in that case if it was 
 scrambled with an odd or even key, among others \citep[pp. 25--26]{etsiMPEG:2009}
 . The header is never to be encrypted and is always found at the beginning of a 
 packet. \citep[pp. 10--11]{DVB:2013}
 
-%% The header contains the following:
-%% \begin{figure}
-%%   \begin{array}{l l l}
-%%     Number of bits & Name & Description \\
-%%     8 & Sync byte & Fixed byte value 0x47 \\
-%%     1 & Transport Error Indicator & Uncorrectable bit errors exist. \\
-%%     1 & Payload Unit Start Indicator & TS packets contains PES packets or PSI 
-%%     data\\
-%%     2 & Transport Scrambling Control & 00 No scramling, 10 Even key, 11 Odd key \\
-%%     1 & Transport Priority & 1 gives this packet higher priority \\
-%%     13 & PID & Type and number of data stored in packet payload \\
-%%     1 & Adaptation Field Control & 1 means that an adaptation field exists\\
-%%     1 & Contains Payload & 1 means that payload exists \\
-%%     4 & Continuity Counter & Sequence number of payload packets\\
-%%   \end{array}
-%% \end{figure}
+The header contains the following:
+\begin{small}
+\begin{figure}[h!]
+  \begin{longtable}{l l l}
+    Number of bits & Name & Description \\
+    8 & Sync byte & Fixed byte value 0x47 \\
+    1 & Transport Error Indicator & Uncorrectable bit errors exist. \\
+    1 & Payload Unit Start Indicator & TS packets contains PES packets or PSI 
+    data\\
+    2 & Transport Scrambling Control & 00 No scramling, 10 Even key, 11 Odd key \\
+    1 & Transport Priority & 1 gives this packet higher priority \\
+    13 & PID & Type and number of data stored in packet payload \\
+    1 & Adaptation Field Control & 1 means that an adaptation field exists\\
+    1 & Contains Payload & 1 means that payload exists \\
+    4 & Continuity Counter & Sequence number of payload packets\\
+  \end{longtable}
+\end{figure}
+\end{small}
 
 \subsubsection{Adaptation field}
 The adaptation field is a sort of padding that you input when the end of the 

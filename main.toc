@@ -18,17 +18,17 @@
 \contentsline {section}{\numberline {2.3}Data packets}{6}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}TS packets}{6}{subsection.2.3.1}
 \contentsline {subsubsection}{Header}{7}{figure.caption.5}
-\contentsline {subsubsection}{Adaptation field}{7}{figure.caption.5}
-\contentsline {subsubsection}{Encrypted and clear payload}{7}{figure.caption.5}
-\contentsline {subsection}{\numberline {2.3.2}PES packets}{7}{subsection.2.3.2}
+\contentsline {subsubsection}{Adaptation field}{7}{table.2.1}
+\contentsline {subsubsection}{Encrypted and clear payload}{8}{table.2.1}
+\contentsline {subsection}{\numberline {2.3.2}PES packets}{8}{subsection.2.3.2}
 \contentsline {section}{\numberline {2.4}Encryption and Decryption}{8}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Symmetric-key encryption}{8}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Public-key encryption}{8}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.1}Symmetric-key encryption}{9}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Public-key encryption}{9}{subsection.2.4.2}
 \contentsline {subsection}{\numberline {2.4.3}Combination}{9}{subsection.2.4.3}
 \contentsline {section}{\numberline {2.5}Ciphers}{9}{section.2.5}
 \contentsline {subsection}{\numberline {2.5.1}Block cipher}{10}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}Stream cipher}{10}{subsection.2.5.2}
-\contentsline {section}{\numberline {2.6}Confusion and Diffusion}{10}{section.2.6}
+\contentsline {subsection}{\numberline {2.5.2}Stream cipher}{11}{subsection.2.5.2}
+\contentsline {section}{\numberline {2.6}Confusion and Diffusion}{11}{section.2.6}
 \contentsline {subsection}{\numberline {2.6.1}S-boxes}{11}{subsection.2.6.1}
 \contentsline {subsection}{\numberline {2.6.2}P-Boxes}{11}{subsection.2.6.2}
 \contentsline {section}{\numberline {2.7}Secrecy}{11}{section.2.7}
@@ -84,7 +84,7 @@
 \contentsline {chapter}{\numberline {D}Examples}{51}{appendix.D}
 \contentsline {section}{\numberline {D.1}CBC-mode calculations}{51}{section.D.1}
 \contentsline {chapter}{\numberline {E}Layout of the circuit}{53}{appendix.E}
-\contentsline {chapter}{List of Figures}{61}{section*.28}
-\contentsline {chapter}{Bibliography}{63}{appendix*.29}
+\contentsline {chapter}{List of Figures}{61}{section*.29}
+\contentsline {chapter}{Bibliography}{63}{appendix*.30}
 \select@language {swedish}
 \select@language {english}

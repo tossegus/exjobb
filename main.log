@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.29)  12 MAY 2014 18:01
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.29)  14 MAY 2014 11:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2303,7 +2303,7 @@ See the babel package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.88 ... {chapter}{Bibliography}{63}{appendix*.29}
+l.88 ... {chapter}{Bibliography}{63}{appendix*.30}
                                                   
 Your command will be ignored, type <return> to proceed
 
@@ -2448,15 +2448,10 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 40--40
 [][][][] 
  []
 
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 49--49
-[][][][] 
- []
-
 <fig/TSpacket.png, id=518, 969.6225pt x 113.42375pt>
 File: fig/TSpacket.png Graphic file (type png)
  <use fig/TSpacket.png>
-Package pdftex.def Info: fig/TSpacket.png used on input line 70.
+Package pdftex.def Info: fig/TSpacket.png used on input line 66.
 (pdftex.def)             Requested size: 355.65944pt x 41.6044pt.
 
 
@@ -2466,21 +2461,20 @@ See the babel package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.83 \end{itemize}
-                  
+l.78 \item C
+            lear payload
 Your command will be ignored, type <return> to proceed
 
 [6 <./fig/TSpacket.png (PNG copy)>]
-Overfull \hbox (2.49pt too wide) in paragraph at lines 92--94
+Overfull \hbox (2.49pt too wide) in paragraph at lines 88--90
 []\T1/jkpk/m/n/10 clear_payload_size = [pay-load_size mod block_size] (or sim-p
 ly pay-load_size
  []
 
-<fig/PES.png, id=536, 993.7125pt x 405.515pt>
-File: fig/PES.png Graphic file (type png)
- <use fig/PES.png>
-Package pdftex.def Info: fig/PES.png used on input line 151.
-(pdftex.def)             Requested size: 355.65944pt x 145.13757pt.
+
+Overfull \hbox (103.25978pt too wide) in alignment at lines 105--117
+ [] [] [] 
+ []
 
 
 ! Package babel Error: You haven't defined the language eng yet.
@@ -2489,11 +2483,19 @@ See the babel package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.154 \end{figure}
-                  
+l.134 
+      
 Your command will be ignored, type <return> to proceed
 
-[7]
+[7] <fig/PES.png, id=544, 993.7125pt x 405.515pt>
+File: fig/PES.png Graphic file (type png)
+ <use fig/PES.png>
+Package pdftex.def Info: fig/PES.png used on input line 149.
+(pdftex.def)             Requested size: 355.65944pt x 145.13757pt.
+
+Underfull \vbox (badness 3492) has occurred while \output is active []
+
+
 
 ! Package babel Error: You haven't defined the language eng yet.
 
@@ -2501,47 +2503,47 @@ See the babel package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.193 
+l.170 
       
 Your command will be ignored, type <return> to proceed
 
 [8 <./fig/PES.png (PNG copy)>]
-Underfull \hbox (badness 2173) in paragraph at lines 199--199
+Underfull \hbox (badness 2173) in paragraph at lines 197--197
 []\T1/phv/m/n/5 feels like a given,
  []
 
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 199--199
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 197--197
 [][][][] 
  []
 
-<fig/cipher.png, id=560, 501.875pt x 299.1175pt>
+<fig/cipher.png, id=559, 501.875pt x 299.1175pt>
 File: fig/cipher.png Graphic file (type png)
  <use fig/cipher.png>
-Package pdftex.def Info: fig/cipher.png used on input line 207.
+Package pdftex.def Info: fig/cipher.png used on input line 205.
 (pdftex.def)             Requested size: 355.65944pt x 211.98238pt.
 
-Overfull \hbox (1.27078pt too wide) in paragraph at lines 211--211
+Overfull \hbox (1.27078pt too wide) in paragraph at lines 209--209
 [][]\T1/jkpk/b/sl/10 Decision:[] 
  []
 
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 211--211
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 209--209
 [][][][] 
  []
 
 
-Underfull \hbox (badness 3623) in paragraph at lines 218--218
+Underfull \hbox (badness 3623) in paragraph at lines 216--216
 []\T1/phv/m/n/5 At least the CSA
  []
 
 
-Underfull \hbox (badness 1622) in paragraph at lines 218--218
+Underfull \hbox (badness 1622) in paragraph at lines 216--216
 \T1/phv/m/n/5 uses it. But you
  []
 
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 218--218
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 216--216
 [][][][] 
  []
 
@@ -2552,11 +2554,14 @@ See the babel package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.219 
+l.217 
       
 Your command will be ignored, type <return> to proceed
 
-[9 <./fig/cipher.png>]
+[9]
+Underfull \vbox (badness 3872) has occurred while \output is active []
+
+
 
 ! Package babel Error: You haven't defined the language eng yet.
 
@@ -2564,24 +2569,24 @@ See the babel package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.269 
+l.247 
       
 Your command will be ignored, type <return> to proceed
 
-[10]
-Underfull \hbox (badness 3291) in paragraph at lines 278--278
+[10 <./fig/cipher.png>]
+Underfull \hbox (badness 3291) in paragraph at lines 276--276
 []\T1/phv/m/n/5 You need sources
  []
 
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 278--278
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 276--276
 [][][][] 
  []
 
 <fig/SPnetwork.png, id=607, 451.6875pt x 301.3659pt>
 File: fig/SPnetwork.png Graphic file (type png)
  <use fig/SPnetwork.png>
-Package pdftex.def Info: fig/SPnetwork.png used on input line 290.
+Package pdftex.def Info: fig/SPnetwork.png used on input line 288.
 (pdftex.def)             Requested size: 177.82971pt x 118.64964pt.
 )
 
@@ -2595,22 +2600,34 @@ l.50 \include{Scrambling}
                          
 Your command will be ignored, type <return> to proceed
 
-[11 <./fig/SPnetwork.png>]
+[11]
+
+! Package babel Error: You haven't defined the language eng yet.
+
+See the babel package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.50 \include{Scrambling}
+                         
+Your command will be ignored, type <return> to proceed
+
+[12 <./fig/SPnetwork.png>]
 \openout2 = `CSA.aux'.
 
- (./CSA.tex [12
-
-
-
-]
+ (./CSA.tex
 Chapter 3.
-<fig/blockcipher.pdf, id=628, 252.945pt x 179.2296pt>
+<fig/blockcipher.pdf, id=630, 252.945pt x 179.2296pt>
 File: fig/blockcipher.pdf Graphic file (type pdf)
 
 <use fig/blockcipher.pdf>
 Package pdftex.def Info: fig/blockcipher.pdf used on input line 26.
 (pdftex.def)             Requested size: 252.94438pt x 179.22914pt.
- [13]
+ [13
+
+
+
+]
 Underfull \hbox (badness 1622) in paragraph at lines 71--71
 []\T1/phv/m/n/5 Except from Pa-trik
  []
@@ -2770,7 +2787,7 @@ Chapter 6.
 
 
 
-] <fig/scrambler.png, id=796, 742.775pt x 428.60126pt>
+] <fig/scrambler.png, id=798, 742.775pt x 428.60126pt>
 File: fig/scrambler.png Graphic file (type png)
 
 <use fig/scrambler.png>
@@ -3240,20 +3257,20 @@ l.347
       
 Your command will be ignored, type <return> to proceed
 
-[31] <fig/successtv1.png, id=840, 831.85782pt x 106.14656pt>
+[31] <fig/successtv1.png, id=842, 831.85782pt x 106.14656pt>
 File: fig/successtv1.png Graphic file (type png)
 
 <use fig/successtv1.png>
 Package pdftex.def Info: fig/successtv1.png used on input line 360.
 (pdftex.def)             Requested size: 355.65944pt x 45.38298pt.
 
-<fig/successtv2.png, id=842, 832.61063pt x 112.16907pt>
+<fig/successtv2.png, id=844, 832.61063pt x 112.16907pt>
 File: fig/successtv2.png Graphic file (type png)
 
 <use fig/successtv2.png>
 Package pdftex.def Info: fig/successtv2.png used on input line 371.
 (pdftex.def)             Requested size: 355.65944pt x 47.9151pt.
- <fig/successtv3.png, id=844, 726.46407pt x 108.405pt>
+ <fig/successtv3.png, id=846, 726.46407pt x 108.405pt>
 File: fig/successtv3.png Graphic file (type png)
 
 <use fig/successtv3.png>
@@ -3336,19 +3353,19 @@ Your command will be ignored, type <return> to proceed
 
 ]
 Appendix B.
-<fig/flowchart.pdf, id=883, 415.5525pt x 912.40875pt>
+<fig/flowchart.pdf, id=885, 415.5525pt x 912.40875pt>
 File: fig/flowchart.pdf Graphic file (type pdf)
  <use fig/flowchart.pdf>
 Package pdftex.def Info: fig/flowchart.pdf used on input line 5.
 (pdftex.def)             Requested size: 151.61516pt x 332.90062pt.
 
-<fig/keyschedule.png, id=884, 822.272pt x 822.272pt>
+<fig/keyschedule.png, id=886, 822.272pt x 822.272pt>
 File: fig/keyschedule.png Graphic file (type png)
  <use fig/keyschedule.png>
 Package pdftex.def Info: fig/keyschedule.png used on input line 12.
 (pdftex.def)             Requested size: 355.65944pt x 355.66539pt.
 
-<fig/CBCmode.png, id=885, 2007.5pt x 700.6175pt>
+<fig/CBCmode.png, id=887, 2007.5pt x 700.6175pt>
 File: fig/CBCmode.png Graphic file (type png)
  <use fig/CBCmode.png>
 Package pdftex.def Info: fig/CBCmode.png used on input line 19.
@@ -3802,38 +3819,38 @@ File: fig/scrambler.png Graphic file (type png)
 <use fig/scrambler.png>
 Package pdftex.def Info: fig/scrambler.png used on input line 8.
 (pdftex.def)             Requested size: 355.65944pt x 205.22923pt.
- <fig/manager.png, id=993, 794.97pt x 492.84125pt>
+ <fig/manager.png, id=995, 794.97pt x 492.84125pt>
 File: fig/manager.png Graphic file (type png)
 
 <use fig/manager.png>
 Package pdftex.def Info: fig/manager.png used on input line 14.
 (pdftex.def)             Requested size: 355.65944pt x 220.49808pt.
- <fig/cbc.png, id=994, 484.81125pt x 561.09625pt>
+ <fig/cbc.png, id=996, 484.81125pt x 561.09625pt>
 File: fig/cbc.png Graphic file (type png)
 
 <use fig/cbc.png>
 Package pdftex.def Info: fig/cbc.png used on input line 20.
 (pdftex.def)             Requested size: 355.65944pt x 411.64308pt.
- <fig/cipherblock.png, id=995, 658.46pt x 478.78876pt>
+ <fig/cipherblock.png, id=997, 658.46pt x 478.78876pt>
 File: fig/cipherblock.png Graphic file (type png)
 
 <use fig/cipherblock.png>
 Package pdftex.def Info: fig/cipherblock.png used on input line 26.
 (pdftex.def)             Requested size: 355.65944pt x 258.61513pt.
- <fig/round.png, id=996, 652.4375pt x 630.355pt>
+ <fig/round.png, id=998, 652.4375pt x 630.355pt>
 File: fig/round.png Graphic file (type png)
 
 <use fig/round.png>
 Package pdftex.def Info: fig/round.png used on input line 32.
 (pdftex.def)             Requested size: 355.65944pt x 343.62804pt.
- <fig/keyexpansion.png, id=997, 602.25pt x 542.025pt>
+ <fig/keyexpansion.png, id=999, 602.25pt x 542.025pt>
 File: fig/keyexpansion.png Graphic file (type png)
 
 <use fig/keyexpansion.png>
 Package pdftex.def Info: fig/keyexpansion.png used on input line 38.
 (pdftex.def)             Requested size: 355.65944pt x 320.10625pt.
 
-<fig/keyblock2.png, id=998, 579.16376pt x 485.815pt>
+<fig/keyblock2.png, id=1000, 579.16376pt x 485.815pt>
 File: fig/keyblock2.png Graphic file (type png)
  <use fig/keyblock2.png>
 Package pdftex.def Info: fig/keyblock2.png used on input line 44.
@@ -4052,7 +4069,7 @@ Your command will be ignored, type <return> to proceed
 
 [66
 
-] <fig/LinkUniv_staende_pms.pdf, id=1189, 260.975pt x 172.645pt>
+] <fig/LinkUniv_staende_pms.pdf, id=1191, 260.975pt x 172.645pt>
 File: fig/LinkUniv_staende_pms.pdf Graphic file (type pdf)
 
 <use fig/LinkUniv_staende_pms.pdf>
@@ -4097,17 +4114,17 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 75.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 75.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 75.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: EF99A404B2BD999179D1E4F44608C86B;4938.
+(rerunfilecheck)             Checksum: 15DB9936473968C819A0A278BBBF81C6;4938.
 Package rerunfilecheck Info: File `main.brf' has not changed.
-(rerunfilecheck)             Checksum: 5EB90BF6D7929F84757DC9FE4515C663;2961.
+(rerunfilecheck)             Checksum: E1E63882A59B13F0325C2A73BB0C4E37;2948.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 75.
  )
 (\end occurred when \ifx on line 20 was incomplete) 
 Here is how much of TeX's memory you used:
- 22886 strings out of 493304
- 374333 string characters out of 6139871
- 599745 words of memory out of 5000000
- 25381 multiletter control sequences out of 15000+600000
+ 22889 strings out of 493304
+ 374363 string characters out of 6139871
+ 599802 words of memory out of 5000000
+ 25382 multiletter control sequences out of 15000+600000
  230054 words of font info for 187 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  56i,12n,87p,587b,556s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -4129,10 +4146,10 @@ texlive/texmf-dist/fonts/type1/public/kpfonts/jkpsya.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 helvetic/uhvr8a.pfb>
-Output written on main.pdf (81 pages, 983458 bytes).
+Output written on main.pdf (81 pages, 984214 bytes).
 PDF statistics:
- 1309 PDF objects out of 1440 (max. 8388607)
- 1150 compressed objects within 12 object streams
- 237 named destinations out of 1000 (max. 500000)
+ 1311 PDF objects out of 1440 (max. 8388607)
+ 1152 compressed objects within 12 object streams
+ 239 named destinations out of 1000 (max. 500000)
  19171 words of extra memory for PDF output out of 20736 (max. 10000000)
 
