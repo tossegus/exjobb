@@ -1,0 +1,16 @@
+Addroundkey:
+Slice Logic Utilization: 
+ Number of Slice LUTs:                  128  out of  63288     0%  
+    Number used as Logic:               128  out of  63288     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    128
+   Number with an unused Flip Flop:     128  out of    128   100%  
+   Number with an unused LUT:             0  out of    128     0%  
+   Number of fully used LUT-FF pairs:     0  out of    128     0%  
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                         384
+ Number of bonded IOBs:                 384  out of    296   129% (*) 
+

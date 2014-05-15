@@ -1,0 +1,41 @@
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x8-bit dual-port distributed RAM                    : 1
+ 256x8-bit single-port distributed Read Only RAM       : 1
+# Adders/Subtractors                                   : 17
+ 32-bit subtractor                                     : 3
+ 4-bit adder                                           : 2
+ 4-bit subtractor                                      : 5
+ 5-bit adder                                           : 1
+ 5-bit subtractor                                      : 1
+ 8-bit adder                                           : 4
+ 9-bit subtractor                                      : 1
+# Counters                                             : 8
+ 2-bit down counter                                    : 1
+ 32-bit down counter                                   : 3
+ 32-bit up counter                                     : 1
+ 4-bit down counter                                    : 2
+ 8-bit up counter                                      : 1
+# Registers                                            : 2667
+ Flip-Flops                                            : 2667
+# Comparators                                          : 26
+ 2-bit comparator lessequal                            : 1
+ 32-bit comparator greater                             : 6
+ 32-bit comparator lessequal                           : 1
+ 4-bit comparator greater                              : 1
+ 8-bit comparator equal                                : 16
+ 8-bit comparator greater                              : 1
+# Multiplexers                                         : 1775
+ 1-bit 2-to-1 multiplexer                              : 181
+ 128-bit 2-to-1 multiplexer                            : 1
+ 32-bit 2-to-1 multiplexer                             : 11
+ 4-bit 2-to-1 multiplexer                              : 6
+ 8-bit 11-to-1 multiplexer                             : 32
+ 8-bit 16-to-1 multiplexer                             : 24
+ 8-bit 2-to-1 multiplexer                              : 1520
+# Xors                                                 : 65
+ 128-bit xor2                                          : 1
+ 8-bit xor2                                            : 48
+ 8-bit xor4                                            : 16

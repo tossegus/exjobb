@@ -1,0 +1,24 @@
+\chapter{Synthesis 3}
+Slice Logic Utilization: 
+ Number of Slice Registers:            2945  out of  126576     2\%  
+ Number of Slice LUTs:                 5167  out of  63288     8\%  
+    Number used as Logic:              5159  out of  63288     8\%  
+    Number used as Memory:                8  out of  15616     0\%  
+       Number used as RAM:                8
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   6124
+   Number with an unused Flip Flop:    3179  out of   6124    51\%  
+   Number with an unused LUT:           957  out of   6124    15\%  
+   Number of fully used LUT-FF pairs:  1988  out of   6124    32\%  
+   Number of unique control sets:       102
+
+IO Utilization: 
+ Number of IOs:                         194
+ Number of bonded IOBs:                 194  out of    296    65\%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                1  out of    268     0\%  
+    Number using Block RAM only:          1
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6\%  
+

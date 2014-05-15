@@ -12,6 +12,7 @@
 ]{rtthesis}
 
 \usepackage{mythesis}
+
 \usepackage{longtable}
 \usepackage{color, soul}
 \usepackage{tikz}
@@ -24,7 +25,7 @@
 }%
 
 \begin{document}
-\selectlanguage{eng}
+%% \selectlanguage{eng}
 \makeFrontPage
 \frontmatter
 \title{Genomgång av nya och alternativa krypterings- och scramblingssystem för 
@@ -46,6 +47,8 @@
 
 \tableofcontents
 \mainmatter
+
+\include{introduction}
 \include{cas}
 \include{Scrambling}
 \include{CSA}
@@ -63,6 +66,7 @@
 \include{vectors}
 \include{examples}
 \include{blocks}
+\include{synthesis}
 % Include the libraries used here. Remember to input the objects into myrefs.bib 
 % and run the command bibtex main from ~/Documents/Exjobb/ 
 \backmatter

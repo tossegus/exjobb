@@ -17,13 +17,6 @@ was to be easily implemented in hardware and hard to implement in
 software to make reverse-engineering of the algorithm difficult 
 \citep{DVBScene:2013}.
 
-%\section{History} \label{sec:History}
-%CSA was largely kept secret until 2002, possibly since it was designed to be hard to reverse-engineered. The patent papers gave some hints of the layout, but important details like the layout of the S-boxes remained secret. Without the S-boxes, free implementations of the algorithm were out of question. Initially, CSA was to remain implemented in hardware only, but software implementations were found on the internet, which made it possible to analyze the entire solution.
-
-%In 2002 FreeDec was released, implementing CSA in software. Though released as binary only, disassembly revealed the missing details and allowed reimplementation of the algorithm in higher-level programming languages. \Warning[source]{Is this relevant, and you need another source than Wikipedia}
-
-%With CSA now publicly known in its entirety, cryptanalysts started looking for weaknesses.
-
 \begin{figure}
   \begin{center}
     \includegraphics{blockcipher}
@@ -80,8 +73,7 @@ We also need to be aware of people trying to break the algorithm
 through forced ways as well as CW sharing and hardware methods of 
 stealing content.
 
-%\subsection{Breaking the CSA}
-
+\subsection{Breaking the CSA}
 There are a few standard ways to try, when you want to break a cipher. 
 Those are the brute force-, known plaintext-, chosen plaintext- and 
 birthday attacks \citep[pp. 31-34]{Schneier:2003}. You choose what 
@@ -89,7 +81,7 @@ method to use depending on what the cipher looks like. I will not
 discuss all of them, but I will talk about the most relevant ones for 
 CSA here.
 
-\subsection{Brute force}
+\subsubsection{Brute force}
 The CSA uses a key consisting of 64-bits, which gives us 18.5 
 Quintillion possible keys (Quintillion is $10^{18}$). But byte 3 and 7 
 are often used as parity bytes in CA systems which leads to only 48 
@@ -113,7 +105,7 @@ precisely allowing us to be certain to find the key in two minutes, we
 could just change the key more often. As such, the brute force method 
 of obtaining the key is not a feasible option.
 
-\subsection{Known plaintext attack}
+\subsubsection{Known plaintext attack}
 The known plaintext attack is performed to find out the key, which can 
 then be used to decrypt following ciphertexts. To be able to try this, 
 a known plaintext-ciphertext pair is needed. You can try to find the keyif you have the both of them. This is done by identifying ciphertexts 
