@@ -1,23 +1,24 @@
 \chapter{Result}
-The focus of my implementation has been to minimize the amount of hardware usage,
-while meeting the timing constraints provided from the rest of the circuit. The 
-clock frequency used on the FPGA has been 100 MHz. A throughput in the scale of 
-Gbits/s is sufficient for the current design.
+The focus of my implementation has been to minimize the amount of 
+hardware usage, while trying to meet the timing constraints provided 
+from the rest of the circuit. The clock frequency used on the FPGA has 
+been 100 MHz. A throughput in the scale of Gbits/s is sufficient for the
+current design.
 
-The implemented scrambler processes 16 bytes of data in 11 clock pulses with a 
-clock frequency of roughly 100MHz, which would correspond roughly to a throughput
-of 1.16 Gbits/s. I don't know if it can deal with 100MHz just yet, but probably. 
-The scrambler needs to process the key before scrambling input data. A 
-keyexpansion takes roughly 45 clock pulses, and is only performed when a new key 
-is sent, which is very seldom.
-
-Här är väl tanken att jag ska skriva lite om hur jag implementerat
-och bearbetat allt relevant som har med implementationen att göra. 
-Vad jag gjort som blivit bättre än andra lösningar. Vad jag fokuserat
-på (throughput kontra mängd använd hårdvara).
+The implemented scrambler processes 16 bytes of data in 11 clock pulses 
+with a clock frequency of 94MHz, which would correspond 
+roughly to a throughput of 1.16 Gbits/s. The scrambler needs to first
+process the key, before being able to scramble data. A keyexpansion 
+takes roughly 45 clock pulses, and is only performed when a new key is 
+sent, which is very seldom. The scrambler then deals with 16 bytes of 
+data on 13 clock pulses, but outputs 1 byte of data per clock cycle. 
+This is done so that one byte of data from the scrambled package is 
+read into a register on every clock pulse. When four bytes are collected
+the 32-bit output is sent out. I work with 32-bits, since the data-bus 
+is a 32-bit bus.
 
 \section{Problems}
-Encountered problems:
+The main problems that I encoutered were:
 
 \begin{itemize}
 \item Not possible to get the license for CSA3
@@ -29,12 +30,20 @@ Encountered problems:
 \item Latches
 \end{itemize}
 
+When I first started writing this Thesis, the thought was that I was to 
+implement the CSA3 algorithm. Due to problems with licensing, and the 
+fact that AES-128 in CBC-mode seemed like a better idea led to a rework 
+of the planning.
+
 Most of these problems are, in my mind, self-explanatory. The one that 
 I will discuss here is my problem with merging. This problem occured 
-due to the fact that I started the project by implementing small 
-entities, that were to be used in higher hierarchies, instead of what 
-signals would be needed to be sent from different entities to 
-eachother, as well as what they would actually mean.
+due to the fact that I made a bottoms-up design, instead of the more 
+common top-down design. I started the project by implementing small 
+entities, that were to be used in higher hierarchies. Doing this caused 
+some problems when merging entities into higher level blocks, since 
+some signals, which I had not thought about, needed to be produced. 
+This was not a huge problem, and only occurred on a few instances, but 
+were rather troublesome at those times.
 
 The pro of my method of working has been that I have been able to get 
 results quickly. The con is that a large portion of the time has been 
@@ -45,17 +54,17 @@ entities higher up in the hierarchy.
 
 Since I tried to optimize this implementation to just meet the demands 
 on speed, while trying to minimize the amount of hardware needed, I 
-introduced timing into a circuit that could otherwise be completely 
-combinatorial. This has, as expected, introduced quite a bunch of 
-timing-issues. I dare say that all of them are gone now, but it is 
-quite hard to know without testing the circuit more extensively.
+introduced timing into a few circuits that could have otherwise been 
+completely combinatorial. This has, as expected, introduced quite a 
+bunch of timing-issues. I dare say that all of them are gone now, but 
+it is quite hard to know without testing the circuit more extensively.
 
 When I first synthesized the circuit, towards the end of the 
 implementation, I found that the circuit synthesized a large amount of 
 latches. This made my circuit take up roughly 15\% of the FPGA, and use 
-11830 Flip-Flops. There were roughly 3000 latches.
-When I managed to remove all of them, my entire circuit used roughly 8\%
-of the FPGA, and used about 4500 Flip-Flops instead.
+11830 Flip-Flops (FFs). At this time, there were roughly 3000 latches. 
+When I managed to remove all of them, my entire circuit used up roughly 
+8\% of the FPGA, and used about 4500 FFs instead.
 
 This is the entire hardware usage, including the interface towards the 
 FPGA, which is one of the reasons why it might appear large, when 
@@ -72,75 +81,80 @@ the entities can be viewed in appendix \ref{app:blocks}.
 \end{figure}
 
 \subsection{Hardware usage}
-I have run three rounds of synthesis on my circuit. The first two ones 
-were performed on the entire scrambler, including the manager 
-(interface towards the rest of the FPGA), while the last synthesis were 
-performed on each block of the circuit seperately.
+REWRITE WO SHITE
+
+%% I have run five rounds of synthesis on my circuit. The first two ones 
+%% were performed on the entire scrambler, including the manager 
+%% (interface towards the rest of the FPGA), while the last synthesis were 
+%% performed on each block of the circuit seperately.
 
 \subsubsection{First synthesis}
-The circuit after the first synthesis used up 15\% of the FPGA, and had 
-quite a large amount of unnescessary latches and FFs included. It used 
-11830 FFs, and roughly 3000 latches. I re-designed the circuit to 
-remove the latches and ran the second synthesis.
+The circuit used up 15\% of the FPGA, and had quite a large amount of 
+unnescessary latches and FFs included. It used 11830 FFs, and roughly 
+3000 latches. I redesigned the circuit to remove the latches and ran 
+the second synthesis.
 
 \subsubsection{Second synthesis}
-The second synthesis report said that 8\% of the FPGA was occupied by 
-the circuit. The keyblock3 entity, as well as keyblock1 entity seemed 
-to use a lot of registers and multiplexers, which could possibly be 
-replaced by RAMs or LUTs.
-
-To be able to compare the third synthesis with this one, I will just say
-that the keyexpansion entity used 1538 D-type FFs and 16 Comparators.
-It used up 176 8-bit registers, which were used by the expanded key.
+The circuit used up 8\% of the FPGA this time. The keyblock3 entity, as 
+well as keyblock1 entity seemed to use a lot of registers and 
+multiplexers, which could possibly be replaced by RAMs or LUTs.
 
 The maximum frequency obtained was 92MHz after this synthesis. This 
 was largely due to routing, which made up for 75\% of the minimum 
 period.
 
+To be able to compare the third synthesis with this one, you need to 
+know that the keyexpansion entity used 1538 D-type FFs and 16 
+Comparators. It used up 176 8-bit registers, which were used by the 
+expanded key.
+
 \subsubsection{Third synthesis}
-I noticed that I at one point waited for the expanded key to become done,
-while this is a good idea, no problems were caused in simulation when I 
-assigned the expanded key while it was being updated. Therefore I managed
-to theoretically cut down the hardware by 176 8-bit registers, which should 
-corespond to roughly 1408 D-type FFs. 
+Before running this synthesis, I noticed that at one point the circuit 
+waited for the expanded key to become done before outputting it. While 
+this is a good idea, no problems were noticed I assigned the expanded 
+key while it was being updated. Therefore I managed to theoretically 
+cut down the hardware by 176 8-bit registers, which should corespond to 
+roughly 1408 D-type FFs. 
 
-The vector that was removed was a vector containing 11 * 16 bytes of data, 
-which corresponds to 176 * 8 bits of data. 176 times 8 is 1408, which is 
-the number of D-type FFs needed to store the value, which also corresponds 
-to 176 8-bit registers.
+The vector that was removed was a vector containing 11 * 16 bytes of 
+data, which corresponds to 176 * 8 bits of data. 176 times 8 is 1408, 
+which is the number of D-type FFs needed to store the value, which 
+also corresponds to 176 8-bit registers.
 
-The keyexpansion entity used 130 D-type FFs and 16 Comparators this time.
-This corresponds to a decrease of 1408 D-type FFs.
+The entire circuit still used up roughly 8\% of the FPGA. The 
+keyexpansion entity used 130 D-type FFs and 16 Comparators this 
+time. This corresponds to a decrease of 1408 D-type FFs.
 
 The maximum frequency obtained this time was 94MHz. The number of 
-Slice Registers went down from 4357 to 2945, and the percentage of Slice 
-Registers decresed from a 3\% usage to a 2\% usage.
+Slice Registers went down from 4357 to 2945, and the percentage of 
+Slice Registers decreased from 3\% usage to 2\% usage.
 
-The keyblock3 module seems to be using the most hardware from what can be 
-seen. It uses roughly 1302 multiplexers, which should be reducable.
+The keyblock3 module seems to be using the most hardware from what can 
+be seen. It uses roughly 1302 multiplexers, which should be reducable.
 
 \subsubsection{Fourth synthesis}
-The next synthesis was made after the state2data module was re-written, to 
-remove yet another signal. This should have decreased the design by 
-a 128-bit register. It was mostly done to try to allow for a synthesis of 
-the module, while also reducing hardware usage. This should decrease the 
-number of D-type FFs by yet another 128. A comparison between report 3 and 
-4 displays a decrease from 130 D-type FFs to 2 D-type FFs.
+The next synthesis was made after the state2data module was rewritten, 
+to remove yet another signal. This should have decreased the design by 
+a 128-bit register. It was mostly done to try to allow for a synthesis 
+of the module, while also reducing hardware usage. This should decrease 
+the number of D-type FFs by yet another 128. A comparison between 
+report 3 and 4 displays a decrease from 130 D-type FFs to 2 D-type FFs.
 
-The maximum frequency obtained this time was . The number of Flip-Flops 
-went from 2945 to 2817. This did not affect the number of Slice Registers.
+The maximum frequency obtained this time was 94MHz. The number of 
+Flip-Flops went from 2945 to 2817. This did not affect the number of 
+Slice Registers.
 
 The circuit still uses roughly 8\% of the hardware on the FPGA.
 
 \subsubsection{Fifth synthesis}
-When I got about to this point of synthesis and optimization I found that 
-two files were created during each synthesis. A Synthesis Report as well 
-as a Place and Route Report. The ones I have been taking a look at this far 
-have been the Synthesis Reports, and to make sure that there are not any
-huge gaps in numbers between the reports, I will continue to read them, 
-and not the Place and Route Reports. Many of the entities can not be 
-mapped seperately, due to the amount of IOs on the FPGA, compared to the 
-number of IOs required by the modules.
+When I got about to this point of synthesis and optimization I found 
+that two files were created during each synthesis. A Synthesis Report 
+as well as a Place and Route Report. The ones I have been taking a look 
+at this far have been the Synthesis Reports, and to make sure that 
+there are not any huge gaps in numbers between the reports, I will 
+continue to read them, and not the Place and Route Reports. Many of the 
+entities can not be mapped seperately, due to the amount of IOs on the 
+FPGA, compared to the number of IOs required by the modules.
 
 The third synthesis was performed on each block seperately, to find out
 where optimization might be performed. The usage can be viewed in Table 
@@ -150,7 +164,7 @@ where optimization might be performed. The usage can be viewed in Table
 \newcommand{\MyIndent}{\hspace*{0.2cm}}%
 
 \begin{longtable}{ l | c | c }
-  Entity       & Slice LUTs out of 63288 & Slice Registers out of 
+  Entity & Slice LUTs out of 63288 & Slice Registers out of 
   126576 \\ \hline
   scrambler              & 5167 & 2817 \\
   \MyIndent \triangleright manager      &  858 &  699 \\ 
@@ -202,17 +216,27 @@ where optimization might be performed. The usage can be viewed in Table
   \label{synt:fifth}
 \end{longtable}
 
-My plan was to try to reduce the critical path by inserting a FF in the 
-middle of it and then run another synthesis. This would have increased the 
-hardware by a bunch of FFs, but increased the maximum frequency. But due 
-to timing issues this was hard to do, and I decided to change the UCFs 
-instead of spending the time trying to decrease the critical path, only to 
-increase the amount of hardware.
 
-Running this synthesis let me know that you are not informed whether the 
-desired frequency can be achieved or not, when you run the synthesis using 
-an UCF. Because of this, I once again plan on trying to add the FFs to 
-shorten the cricical path. 
+
+
+
+REWRITE WO SHITE
+\Warning[todo]{skriv om det här stycket, och troligen nästa}
+
+
+
+
+My plan was to try to reduce the critical path by inserting a FF in the 
+middle of it and then run another synthesis. This would have increased 
+the hardware by a bunch of FFs, but increased the maximum frequency. 
+But due to timing issues this was hard to do, and I decided to change 
+the UCFs instead of spending the time trying to decrease the critical 
+path, only to increase the amount of hardware.
+
+Running this synthesis let me know that you are not informed whether the
+desired frequency can be achieved or not, when you run the synthesis 
+using an UCF. Because of this, I once again plan on trying to add the 
+FFs to shorten the cricical path. 
 
 I plan on adding the FFs in the keyexpansion block between keyblock2 and 
 keyblock3, according to basic ASIC theory, where you draw a line from one 
