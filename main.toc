@@ -8,7 +8,7 @@
 \contentsline {chapter}{Notation}{v}{section*.2}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Background}{1}{section.1.1}
-\contentsline {section}{\numberline {1.2}Problem specification}{2}{section.1.2}
+\contentsline {section}{\numberline {1.2}Problem specification}{1}{section.1.2}
 \contentsline {section}{\numberline {1.3}Fr\IeC {\r a}gest\IeC {\"a}llning}{2}{section.1.3}
 \contentsline {section}{\numberline {1.4}Constraints}{2}{section.1.4}
 \contentsline {section}{\numberline {1.5}Method}{2}{section.1.5}
@@ -100,12 +100,12 @@
 \contentsline {chapter}{\numberline {E}Layout of the circuit}{57}{appendix.E}
 \contentsline {chapter}{\numberline {F}Synthesis reports}{65}{appendix.F}
 \contentsline {section}{\numberline {F.1}Synthesis 2}{65}{section.F.1}
-\contentsline {section}{\numberline {F.2}Synthesis 3}{66}{section.F.2}
+\contentsline {section}{\numberline {F.2}Synthesis 3}{65}{section.F.2}
 \contentsline {section}{\numberline {F.3}Synthesis 4}{66}{section.F.3}
-\contentsline {section}{\numberline {F.4}Synthesis 5}{67}{section.F.4}
-\contentsline {section}{\numberline {F.5}Synthesis 6}{75}{section.F.5}
-\contentsline {chapter}{List of Figures}{79}{section*.28}
-\contentsline {chapter}{Bibliography}{81}{appendix*.29}
+\contentsline {section}{\numberline {F.4}Synthesis 5}{66}{section.F.4}
+\contentsline {section}{\numberline {F.5}Synthesis 6}{73}{section.F.5}
+\contentsline {chapter}{List of Figures}{77}{section*.28}
+\contentsline {chapter}{Bibliography}{79}{appendix*.29}
 \select@language {swedish}
 \select@language {english}
 \select@language {english}

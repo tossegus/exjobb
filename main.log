@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.29)  15 MAY 2014 14:32
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.29)  15 MAY 2014 14:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2267,14 +2267,17 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 108.12012pt on input line 1.
 
-Underfull \vbox (badness 6445) has occurred while \output is active []
+Overfull \hbox (0.43pt too wide) in paragraph at lines 2--6
+\T1/jkpk/m/n/10 a-m-en-sar-betet hand-lade om utv�rder-ing och im-ple-menter-in
+g av po-ten-tiella scram-
+ []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.33 
-      [1
+l.40 J
+      AG FÖRSTÅR INTE VAD DET HÄR ÄR. [1
 
 
 ])pdfTeX warning (ext4): destination with the same identifier (name{page.2}) ha
@@ -3390,187 +3393,7 @@ Package pdftex.def Info: fig/keyblock2.png used on input line 44.
 
 ]
 Appendix F.
-(./synthesis2.tex
-Overfull \hbox (40.34056pt too wide) in paragraph at lines 25--25
-[] \T1/pcr/m/n/10 Number of Slice Registers:            4357  out of  126576   
-  3%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 25--25
-[] \T1/pcr/m/n/10 Number of Slice LUTs:                 5121  out of  63288    
- 8%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 25--25
-[]    \T1/pcr/m/n/10 Number used as Logic:              5113  out of  63288    
- 8%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 25--25
-[]    \T1/pcr/m/n/10 Number used as Memory:                8  out of  15616    
- 0%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 25--25
-[]   \T1/pcr/m/n/10 Number with an unused Flip Flop:    3031  out of   7388    
-41%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 25--25
-[]   \T1/pcr/m/n/10 Number with an unused LUT:          2267  out of   7388    
-30%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 25--25
-[]   \T1/pcr/m/n/10 Number of fully used LUT-FF pairs:  2090  out of   7388    
-28%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 25--25
-[] \T1/pcr/m/n/10 Number of bonded IOBs:                 194  out of    296    
-65%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 25--25
-[] \T1/pcr/m/n/10 Number of Block RAM/FIFO:                1  out of    268    
- 0%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 25--25
-[] \T1/pcr/m/n/10 Number of BUFG/BUFGCTRLs:                1  out of     16    
- 6%[] 
- []
-
-[65]) (./synthesis3.tex
-Overfull \hbox (40.34056pt too wide) in paragraph at lines 25--25
-[] \T1/pcr/m/n/10 Number of Slice Registers:            2945  out of  126576   
-  2%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 25--25
-[] \T1/pcr/m/n/10 Number of Slice LUTs:                 5167  out of  63288    
- 8%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 25--25
-[]    \T1/pcr/m/n/10 Number used as Logic:              5159  out of  63288    
- 8%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 25--25
-[]    \T1/pcr/m/n/10 Number used as Memory:                8  out of  15616    
- 0%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 25--25
-[]   \T1/pcr/m/n/10 Number with an unused Flip Flop:    3179  out of   6124    
-51%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 25--25
-[]   \T1/pcr/m/n/10 Number with an unused LUT:           957  out of   6124    
-15%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 25--25
-[]   \T1/pcr/m/n/10 Number of fully used LUT-FF pairs:  1988  out of   6124    
-32%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 25--25
-[] \T1/pcr/m/n/10 Number of bonded IOBs:                 194  out of    296    
-65%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 25--25
-[] \T1/pcr/m/n/10 Number of Block RAM/FIFO:                1  out of    268    
- 0%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 25--25
-[] \T1/pcr/m/n/10 Number of BUFG/BUFGCTRLs:                1  out of     16    
- 6%[] 
- []
-
-) (./synthesis4.tex
-Overfull \hbox (40.34056pt too wide) in paragraph at lines 25--25
-[] \T1/pcr/m/n/10 Number of Slice Registers:            2817  out of  126576   
-  2%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 25--25
-[] \T1/pcr/m/n/10 Number of Slice LUTs:                 5167  out of  63288    
- 8%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 25--25
-[]    \T1/pcr/m/n/10 Number used as Logic:              5159  out of  63288    
- 8%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 25--25
-[]    \T1/pcr/m/n/10 Number used as Memory:                8  out of  15616    
- 0%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 25--25
-[]   \T1/pcr/m/n/10 Number with an unused Flip Flop:    3179  out of   5996    
-53%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 25--25
-[]   \T1/pcr/m/n/10 Number with an unused LUT:           829  out of   5996    
-13%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 25--25
-[]   \T1/pcr/m/n/10 Number of fully used LUT-FF pairs:  1988  out of   5996    
-33%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 25--25
-[] \T1/pcr/m/n/10 Number of bonded IOBs:                 194  out of    296    
-65%[] 
- []
-
-[66]
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 25--25
-[] \T1/pcr/m/n/10 Number of Block RAM/FIFO:                1  out of    268    
- 0%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 25--25
-[] \T1/pcr/m/n/10 Number of BUFG/BUFGCTRLs:                1  out of     16    
- 6%[] 
- []
-
-) (./synthesis5.tex
+(./synthesis2.tex) (./synthesis3.tex [65]) (./synthesis4.tex) (./synthesis5.tex
 ! Undefined control sequence.
 l.2 \subsubsubsection
                      {Addroundkey}
@@ -3580,42 +3403,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 18--18
-[] \T1/pcr/m/n/10 Number of Slice LUTs:                  128  out of  63288    
- 0%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 18--18
-[]    \T1/pcr/m/n/10 Number used as Logic:               128  out of  63288    
- 0%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 18--18
-[]   \T1/pcr/m/n/10 Number with an unused Flip Flop:     128  out of    128   1
-00%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 18--18
-[]   \T1/pcr/m/n/10 Number with an unused LUT:             0  out of    128    
- 0%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 18--18
-[]   \T1/pcr/m/n/10 Number of fully used LUT-FF pairs:     0  out of    128    
- 0%[] 
- []
-
-
-Overfull \hbox (58.34056pt too wide) in paragraph at lines 18--18
-[] \T1/pcr/m/n/10 Number of bonded IOBs:                 384  out of    296   1
-29% (*)[] 
- []
-
+[66]
 ! Undefined control sequence.
 l.20 \subsubsubsection
                       {CBC}
@@ -3624,54 +3412,6 @@ of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
-
-
-Overfull \hbox (40.34056pt too wide) in paragraph at lines 40--40
-[] \T1/pcr/m/n/10 Number of Slice Registers:            2127  out of  126576   
-  1%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 40--40
-[] \T1/pcr/m/n/10 Number of Slice LUTs:                 4321  out of  63288    
- 6%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 40--40
-[]    \T1/pcr/m/n/10 Number used as Logic:              4321  out of  63288    
- 6%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 40--40
-[]   \T1/pcr/m/n/10 Number with an unused Flip Flop:    2613  out of   4740    
-55%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 40--40
-[]   \T1/pcr/m/n/10 Number with an unused LUT:           419  out of   4740    
- 8%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 40--40
-[]   \T1/pcr/m/n/10 Number of fully used LUT-FF pairs:  1708  out of   4740    
-36%[] 
- []
-
-
-Overfull \hbox (58.34056pt too wide) in paragraph at lines 40--40
-[] \T1/pcr/m/n/10 Number of bonded IOBs:                 390  out of    296   1
-31% (*)[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 40--40
-[] \T1/pcr/m/n/10 Number of BUFG/BUFGCTRLs:                1  out of     16    
- 6%[] 
- []
 
 ! Undefined control sequence.
 l.42 \subsubsubsection
@@ -3682,54 +3422,6 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[67]
-Overfull \hbox (40.34056pt too wide) in paragraph at lines 62--62
-[] \T1/pcr/m/n/10 Number of Slice Registers:            1994  out of  126576   
-  1%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 62--62
-[] \T1/pcr/m/n/10 Number of Slice LUTs:                 4229  out of  63288    
- 6%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 62--62
-[]    \T1/pcr/m/n/10 Number used as Logic:              4229  out of  63288    
- 6%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 62--62
-[]   \T1/pcr/m/n/10 Number with an unused Flip Flop:    2577  out of   4571    
-56%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 62--62
-[]   \T1/pcr/m/n/10 Number with an unused LUT:           342  out of   4571    
- 7%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 62--62
-[]   \T1/pcr/m/n/10 Number of fully used LUT-FF pairs:  1652  out of   4571    
-36%[] 
- []
-
-
-Overfull \hbox (58.34056pt too wide) in paragraph at lines 62--62
-[] \T1/pcr/m/n/10 Number of bonded IOBs:                 390  out of    296   1
-31% (*)[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 62--62
-[] \T1/pcr/m/n/10 Number of BUFG/BUFGCTRLs:                1  out of     16    
- 6%[] 
- []
-
 ! Undefined control sequence.
 l.64 \subsubsubsection
                       {Counter}
@@ -3739,54 +3431,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-
-Overfull \hbox (40.34056pt too wide) in paragraph at lines 84--84
-[] \T1/pcr/m/n/10 Number of Slice Registers:               9  out of  126576   
-  0%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 84--84
-[] \T1/pcr/m/n/10 Number of Slice LUTs:                   14  out of  63288    
- 0%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 84--84
-[]    \T1/pcr/m/n/10 Number used as Logic:                14  out of  63288    
- 0%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 84--84
-[]   \T1/pcr/m/n/10 Number with an unused Flip Flop:       6  out of     15    
-40%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 84--84
-[]   \T1/pcr/m/n/10 Number with an unused LUT:             1  out of     15    
- 6%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 84--84
-[]   \T1/pcr/m/n/10 Number of fully used LUT-FF pairs:     8  out of     15    
-53%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 84--84
-[] \T1/pcr/m/n/10 Number of bonded IOBs:                  13  out of    296    
- 4%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 84--84
-[] \T1/pcr/m/n/10 Number of BUFG/BUFGCTRLs:                1  out of     16    
- 6%[] 
- []
-
+[67]
 ! Undefined control sequence.
 l.86 \subsubsubsection
                       {Data2state}
@@ -3795,12 +3440,6 @@ of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
-
-[68]
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 100--100
-[] \T1/pcr/m/n/10 Number of bonded IOBs:                 256  out of    296    
-86%[] 
- []
 
 ! Undefined control sequence.
 l.102 \subsubsubsection
@@ -3811,42 +3450,6 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 120--120
-[] \T1/pcr/m/n/10 Number of Slice LUTs:                   32  out of  63288    
- 0%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 120--120
-[]    \T1/pcr/m/n/10 Number used as Logic:                32  out of  63288    
- 0%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 120--120
-[]   \T1/pcr/m/n/10 Number with an unused Flip Flop:      32  out of     32   1
-00%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 120--120
-[]   \T1/pcr/m/n/10 Number with an unused LUT:             0  out of     32    
- 0%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 120--120
-[]   \T1/pcr/m/n/10 Number of fully used LUT-FF pairs:     0  out of     32    
- 0%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 120--120
-[] \T1/pcr/m/n/10 Number of bonded IOBs:                  97  out of    296    
-32%[] 
- []
-
 ! Undefined control sequence.
 l.122 \subsubsubsection
                        {Keyblock1}
@@ -3856,42 +3459,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 140--140
-[] \T1/pcr/m/n/10 Number of Slice LUTs:                  689  out of  63288    
- 1%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 140--140
-[]    \T1/pcr/m/n/10 Number used as Logic:               689  out of  63288    
- 1%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 140--140
-[]   \T1/pcr/m/n/10 Number with an unused Flip Flop:     689  out of    689   1
-00%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 140--140
-[]   \T1/pcr/m/n/10 Number with an unused LUT:             0  out of    689    
- 0%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 140--140
-[]   \T1/pcr/m/n/10 Number of fully used LUT-FF pairs:     0  out of    689    
- 0%[] 
- []
-
-
-Overfull \hbox (58.34056pt too wide) in paragraph at lines 140--140
-[] \T1/pcr/m/n/10 Number of bonded IOBs:                1320  out of    296   4
-45% (*)[] 
- []
-
+[68]
 ! Undefined control sequence.
 l.142 \subsubsubsection
                        {Keyblock2}
@@ -3900,54 +3468,6 @@ of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
-
-[69]
-Overfull \hbox (40.34056pt too wide) in paragraph at lines 162--162
-[] \T1/pcr/m/n/10 Number of Slice Registers:               9  out of  126576   
-  0%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 162--162
-[] \T1/pcr/m/n/10 Number of Slice LUTs:                  208  out of  63288    
- 0%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 162--162
-[]    \T1/pcr/m/n/10 Number used as Logic:               208  out of  63288    
- 0%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 162--162
-[]   \T1/pcr/m/n/10 Number with an unused Flip Flop:     200  out of    209    
-95%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 162--162
-[]   \T1/pcr/m/n/10 Number with an unused LUT:             1  out of    209    
- 0%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 162--162
-[]   \T1/pcr/m/n/10 Number of fully used LUT-FF pairs:     8  out of    209    
- 3%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 162--162
-[] \T1/pcr/m/n/10 Number of bonded IOBs:                  72  out of    296    
-24%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 162--162
-[] \T1/pcr/m/n/10 Number of BUFG/BUFGCTRLs:                1  out of     16    
- 6%[] 
- []
 
 ! Undefined control sequence.
 l.164 \subsubsubsection
@@ -3958,54 +3478,6 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-
-Overfull \hbox (40.34056pt too wide) in paragraph at lines 185--185
-[] \T1/pcr/m/n/10 Number of Slice Registers:            1365  out of  126576   
-  1%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 185--185
-[] \T1/pcr/m/n/10 Number of Slice LUTs:                 1854  out of  63288    
- 2%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 185--185
-[]    \T1/pcr/m/n/10 Number used as Logic:              1854  out of  63288    
- 2%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 185--185
-[]   \T1/pcr/m/n/10 Number with an unused Flip Flop:     542  out of   1907    
-28%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 185--185
-[]   \T1/pcr/m/n/10 Number with an unused LUT:            53  out of   1907    
- 2%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 185--185
-[]   \T1/pcr/m/n/10 Number of fully used LUT-FF pairs:  1312  out of   1907    
-68%[] 
- []
-
-
-Overfull \hbox (64.34056pt too wide) in paragraph at lines 185--185
-[] \T1/pcr/m/n/10 Number of bonded IOBs:                2989  out of    296   1
-009% (*)[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 185--185
-[] \T1/pcr/m/n/10 Number of BUFG/BUFGCTRLs:                1  out of     16    
- 6%[] 
- []
-
 ! Undefined control sequence.
 l.187 \subsubsubsection
                        {Keycore}
@@ -4015,54 +3487,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-
-Overfull \hbox (40.34056pt too wide) in paragraph at lines 207--207
-[] \T1/pcr/m/n/10 Number of Slice Registers:               9  out of  126576   
-  0%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 207--207
-[] \T1/pcr/m/n/10 Number of Slice LUTs:                  183  out of  63288    
- 0%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 207--207
-[]    \T1/pcr/m/n/10 Number used as Logic:               183  out of  63288    
- 0%[] 
- []
-
-[70]
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 207--207
-[]   \T1/pcr/m/n/10 Number with an unused Flip Flop:     175  out of    184    
-95%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 207--207
-[]   \T1/pcr/m/n/10 Number with an unused LUT:             1  out of    184    
- 0%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 207--207
-[]   \T1/pcr/m/n/10 Number of fully used LUT-FF pairs:     8  out of    184    
- 4%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 207--207
-[] \T1/pcr/m/n/10 Number of bonded IOBs:                  69  out of    296    
-23%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 207--207
-[] \T1/pcr/m/n/10 Number of BUFG/BUFGCTRLs:                1  out of     16    
- 6%[] 
- []
-
+[69]
 ! Undefined control sequence.
 l.209 \subsubsubsection
                        {Keyexpansion}
@@ -4071,54 +3496,6 @@ of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
-
-
-Overfull \hbox (40.34056pt too wide) in paragraph at lines 229--229
-[] \T1/pcr/m/n/10 Number of Slice Registers:            1601  out of  126576   
-  1%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 229--229
-[] \T1/pcr/m/n/10 Number of Slice LUTs:                 2914  out of  63288    
- 4%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 229--229
-[]    \T1/pcr/m/n/10 Number used as Logic:              2914  out of  63288    
- 4%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 229--229
-[]   \T1/pcr/m/n/10 Number with an unused Flip Flop:    1582  out of   3183    
-49%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 229--229
-[]   \T1/pcr/m/n/10 Number with an unused LUT:           269  out of   3183    
- 8%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 229--229
-[]   \T1/pcr/m/n/10 Number of fully used LUT-FF pairs:  1332  out of   3183    
-41%[] 
- []
-
-
-Overfull \hbox (58.34056pt too wide) in paragraph at lines 229--229
-[] \T1/pcr/m/n/10 Number of bonded IOBs:                1539  out of    296   5
-19% (*)[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 229--229
-[] \T1/pcr/m/n/10 Number of BUFG/BUFGCTRLs:                1  out of     16    
- 6%[] 
- []
 
 ! Undefined control sequence.
 l.231 \subsubsubsection
@@ -4129,66 +3506,6 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-
-Overfull \hbox (40.34056pt too wide) in paragraph at lines 255--255
-[] \T1/pcr/m/n/10 Number of Slice Registers:             699  out of  126576   
-  0%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 255--255
-[] \T1/pcr/m/n/10 Number of Slice LUTs:                  858  out of  63288    
- 1%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 255--255
-[]    \T1/pcr/m/n/10 Number used as Logic:               850  out of  63288    
- 1%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 255--255
-[]    \T1/pcr/m/n/10 Number used as Memory:                8  out of  15616    
- 0%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 255--255
-[]   \T1/pcr/m/n/10 Number with an unused Flip Flop:     558  out of   1257    
-44%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 255--255
-[]   \T1/pcr/m/n/10 Number with an unused LUT:           399  out of   1257    
-31%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 255--255
-[]   \T1/pcr/m/n/10 Number of fully used LUT-FF pairs:   300  out of   1257    
-23%[] 
- []
-
-[71]
-Overfull \hbox (58.34056pt too wide) in paragraph at lines 255--255
-[] \T1/pcr/m/n/10 Number of bonded IOBs:                 325  out of    296   1
-09% (*)[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 255--255
-[] \T1/pcr/m/n/10 Number of Block RAM/FIFO:                1  out of    268    
- 0%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 255--255
-[] \T1/pcr/m/n/10 Number of BUFG/BUFGCTRLs:                1  out of     16    
- 6%[] 
- []
-
 ! Undefined control sequence.
 l.257 \subsubsubsection
                        {Mixcolumns}
@@ -4198,42 +3515,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 275--275
-[] \T1/pcr/m/n/10 Number of Slice LUTs:                  176  out of  63288    
- 0%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 275--275
-[]    \T1/pcr/m/n/10 Number used as Logic:               176  out of  63288    
- 0%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 275--275
-[]   \T1/pcr/m/n/10 Number with an unused Flip Flop:     176  out of    176   1
-00%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 275--275
-[]   \T1/pcr/m/n/10 Number with an unused LUT:             0  out of    176    
- 0%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 275--275
-[]   \T1/pcr/m/n/10 Number of fully used LUT-FF pairs:     0  out of    176    
- 0%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 275--275
-[] \T1/pcr/m/n/10 Number of bonded IOBs:                 256  out of    296    
-86%[] 
- []
-
+[70]
 ! Undefined control sequence.
 l.277 \subsubsubsection
                        {Rcon}
@@ -4243,43 +3525,6 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 295--295
-[] \T1/pcr/m/n/10 Number of Slice LUTs:                   40  out of  63288    
- 0%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 295--295
-[]    \T1/pcr/m/n/10 Number used as Logic:                40  out of  63288    
- 0%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 295--295
-[]   \T1/pcr/m/n/10 Number with an unused Flip Flop:      40  out of     40   1
-00%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 295--295
-[]   \T1/pcr/m/n/10 Number with an unused LUT:             0  out of     40    
- 0%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 295--295
-[]   \T1/pcr/m/n/10 Number of fully used LUT-FF pairs:     0  out of     40    
- 0%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 295--295
-[] \T1/pcr/m/n/10 Number of bonded IOBs:                  72  out of    296    
-24%[] 
- []
-
-[72]
 ! Undefined control sequence.
 l.297 \subsubsubsection
                        {Round}
@@ -4288,54 +3533,6 @@ of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
-
-
-Overfull \hbox (40.34056pt too wide) in paragraph at lines 317--317
-[] \T1/pcr/m/n/10 Number of Slice Registers:             272  out of  126576   
-  0%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 317--317
-[] \T1/pcr/m/n/10 Number of Slice LUTs:                 1535  out of  63288    
- 2%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 317--317
-[]    \T1/pcr/m/n/10 Number used as Logic:              1535  out of  63288    
- 2%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 317--317
-[]   \T1/pcr/m/n/10 Number with an unused Flip Flop:    1278  out of   1550    
-82%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 317--317
-[]   \T1/pcr/m/n/10 Number with an unused LUT:            15  out of   1550    
- 0%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 317--317
-[]   \T1/pcr/m/n/10 Number of fully used LUT-FF pairs:   257  out of   1550    
-16%[] 
- []
-
-
-Overfull \hbox (58.34056pt too wide) in paragraph at lines 317--317
-[] \T1/pcr/m/n/10 Number of bonded IOBs:                 388  out of    296   1
-31% (*)[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 317--317
-[] \T1/pcr/m/n/10 Number of BUFG/BUFGCTRLs:                1  out of     16    
- 6%[] 
- []
 
 ! Undefined control sequence.
 l.319 \subsubsubsection
@@ -4346,12 +3543,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 335--335
-[] \T1/pcr/m/n/10 Number of bonded IOBs:                  64  out of    296    
-21%[] 
- []
-
+[71]
 ! Undefined control sequence.
 l.337 \subsubsubsection
                        {Scrambler}
@@ -4360,66 +3552,6 @@ of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
-
-
-Overfull \hbox (40.34056pt too wide) in paragraph at lines 361--361
-[] \T1/pcr/m/n/10 Number of Slice Registers:            2817  out of  126576   
-  2%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 361--361
-[] \T1/pcr/m/n/10 Number of Slice LUTs:                 5167  out of  63288    
- 8%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 361--361
-[]    \T1/pcr/m/n/10 Number used as Logic:              5159  out of  63288    
- 8%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 361--361
-[]    \T1/pcr/m/n/10 Number used as Memory:                8  out of  15616    
- 0%[] 
- []
-
-[73]
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 361--361
-[]   \T1/pcr/m/n/10 Number with an unused Flip Flop:    3179  out of   5996    
-53%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 361--361
-[]   \T1/pcr/m/n/10 Number with an unused LUT:           829  out of   5996    
-13%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 361--361
-[]   \T1/pcr/m/n/10 Number of fully used LUT-FF pairs:  1988  out of   5996    
-33%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 361--361
-[] \T1/pcr/m/n/10 Number of bonded IOBs:                 194  out of    296    
-65%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 361--361
-[] \T1/pcr/m/n/10 Number of Block RAM/FIFO:                1  out of    268    
- 0%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 361--361
-[] \T1/pcr/m/n/10 Number of BUFG/BUFGCTRLs:                1  out of     16    
- 6%[] 
- []
 
 ! Undefined control sequence.
 l.363 \subsubsubsection
@@ -4430,12 +3562,6 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 379--379
-[] \T1/pcr/m/n/10 Number of bonded IOBs:                 256  out of    296    
-86%[] 
- []
-
 ! Undefined control sequence.
 l.381 \subsubsubsection
                        {State2data}
@@ -4445,54 +3571,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-
-Overfull \hbox (40.34056pt too wide) in paragraph at lines 401--401
-[] \T1/pcr/m/n/10 Number of Slice Registers:               2  out of  126576   
-  0%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 401--401
-[] \T1/pcr/m/n/10 Number of Slice LUTs:                    1  out of  63288    
- 0%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 401--401
-[]    \T1/pcr/m/n/10 Number used as Logic:                 1  out of  63288    
- 0%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 401--401
-[]   \T1/pcr/m/n/10 Number with an unused Flip Flop:       1  out of      3    
-33%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 401--401
-[]   \T1/pcr/m/n/10 Number with an unused LUT:             2  out of      3    
-66%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 401--401
-[]   \T1/pcr/m/n/10 Number of fully used LUT-FF pairs:     0  out of      3    
- 0%[] 
- []
-
-[74]
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 401--401
-[] \T1/pcr/m/n/10 Number of bonded IOBs:                 259  out of    296    
-87%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 401--401
-[] \T1/pcr/m/n/10 Number of BUFG/BUFGCTRLs:                1  out of     16    
- 6%[] 
- []
-
+[72]
 ! Undefined control sequence.
 l.403 \subsubsubsection
                        {Subbytes}
@@ -4501,42 +3580,6 @@ of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 421--421
-[] \T1/pcr/m/n/10 Number of Slice LUTs:                  512  out of  63288    
- 0%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 421--421
-[]    \T1/pcr/m/n/10 Number used as Logic:               512  out of  63288    
- 0%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 421--421
-[]   \T1/pcr/m/n/10 Number with an unused Flip Flop:     512  out of    512   1
-00%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 421--421
-[]   \T1/pcr/m/n/10 Number with an unused LUT:             0  out of    512    
- 0%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 421--421
-[]   \T1/pcr/m/n/10 Number of fully used LUT-FF pairs:     0  out of    512    
- 0%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 421--421
-[] \T1/pcr/m/n/10 Number of bonded IOBs:                 256  out of    296    
-86%[] 
- []
 
 ! Undefined control sequence.
 l.423 \subsubsubsection
@@ -4547,280 +3590,17 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 441--441
-[] \T1/pcr/m/n/10 Number of Slice LUTs:                  128  out of  63288    
- 0%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 441--441
-[]    \T1/pcr/m/n/10 Number used as Logic:               128  out of  63288    
- 0%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 441--441
-[]   \T1/pcr/m/n/10 Number with an unused Flip Flop:     128  out of    128   1
-00%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 441--441
-[]   \T1/pcr/m/n/10 Number with an unused LUT:             0  out of    128    
- 0%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 441--441
-[]   \T1/pcr/m/n/10 Number of fully used LUT-FF pairs:     0  out of    128    
- 0%[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 441--441
-[] \T1/pcr/m/n/10 Number of bonded IOBs:                  64  out of    296    
-21%[] 
- []
-
-) (./synthesis6.tex
-Overfull \hbox (70.34056pt too wide) in paragraph at lines 72--72
-[]  \T1/pcr/m/n/10 Number of Slice Registers:                 2,805 out of 126,
-576    2%[] 
- []
-
-[75]
-Overfull \hbox (70.34056pt too wide) in paragraph at lines 72--72
-[]  \T1/pcr/m/n/10 Number of Slice LUTs:                      4,930 out of  63,
-288    7%[] 
- []
-
-
-Overfull \hbox (70.34056pt too wide) in paragraph at lines 72--72
-[]    \T1/pcr/m/n/10 Number used as logic:                    4,872 out of  63,
-288    7%[] 
- []
-
-
-Overfull \hbox (70.34056pt too wide) in paragraph at lines 72--72
-[]    \T1/pcr/m/n/10 Number used as Memory:                       8 out of  15,
-616    1%[] 
- []
-
-
-Overfull \hbox (70.34056pt too wide) in paragraph at lines 72--72
-[]  \T1/pcr/m/n/10 Number of occupied Slices:                 1,727 out of  15,
-822   10%[] 
- []
-
-
-Overfull \hbox (70.34056pt too wide) in paragraph at lines 72--72
-[]  \T1/pcr/m/n/10 Number of MUXCYs used:                       196 out of  31,
-644    1%[] 
- []
-
-
-Overfull \hbox (70.34056pt too wide) in paragraph at lines 72--72
-[]    \T1/pcr/m/n/10 Number with an unused Flip Flop:         2,915 out of   5,
-554   52%[] 
- []
-
-
-Overfull \hbox (70.34056pt too wide) in paragraph at lines 72--72
-[]    \T1/pcr/m/n/10 Number with an unused LUT:                 624 out of   5,
-554   11%[] 
- []
-
-
-Overfull \hbox (70.34056pt too wide) in paragraph at lines 72--72
-[]    \T1/pcr/m/n/10 Number of fully used LUT-FF pairs:       2,015 out of   5,
-554   36%[] 
- []
-
-
-Overfull \hbox (70.34056pt too wide) in paragraph at lines 72--72
-[]      \T1/pcr/m/n/10 to control set restrictions:               0 out of 126,
-576    0%[] 
- []
-
-
-Overfull \hbox (94.34056pt too wide) in paragraph at lines 72--72
-[]  \T1/pcr/m/n/10 A LUT Flip Flop pair for this architecture represents one LU
-T paired with[] 
- []
-
-
-Overfull \hbox (82.34056pt too wide) in paragraph at lines 72--72
-[]  \T1/pcr/m/n/10 one Flip Flop within a slice.  A control set is a unique com
-bination of[] 
- []
-
-
-Overfull \hbox (34.34056pt too wide) in paragraph at lines 72--72
-[]  \T1/pcr/m/n/10 clock, reset, set, and enable signals for a registered eleme
-nt.[] 
- []
-
-
-Overfull \hbox (76.34056pt too wide) in paragraph at lines 72--72
-[]  \T1/pcr/m/n/10 The Slice Logic Distribution report is not meaningful if the
- design is[] 
- []
-
-
-Overfull \hbox (10.34056pt too wide) in paragraph at lines 72--72
-[]  \T1/pcr/m/n/10 over-mapped for a non-slice resource or if Placement fails.[
-] 
- []
-
-
-Overfull \hbox (70.34056pt too wide) in paragraph at lines 72--72
-[]  \T1/pcr/m/n/10 Number of bonded IOBs:                       194 out of     
-296   65%[] 
- []
-
-
-Overfull \hbox (70.34056pt too wide) in paragraph at lines 72--72
-[]  \T1/pcr/m/n/10 Number of RAMB16BWERs:                         1 out of     
-268    1%[] 
- []
-
-
-Overfull \hbox (70.34056pt too wide) in paragraph at lines 72--72
-[]  \T1/pcr/m/n/10 Number of RAMB8BWERs:                          0 out of     
-536    0%[] 
- []
-
-
-Overfull \hbox (70.34056pt too wide) in paragraph at lines 72--72
-[]  \T1/pcr/m/n/10 Number of BUFIO2/BUFIO2_2CLKs:                 0 out of     
- 32    0%[] 
- []
-
-
-Overfull \hbox (70.34056pt too wide) in paragraph at lines 72--72
-[]  \T1/pcr/m/n/10 Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of     
- 32    0%[] 
+) (./synthesis6.tex [73]
+Overfull \hbox (4.34079pt too wide) in paragraph at lines 72--72
+[]  \T1/pcr/m/n/8 A LUT Flip Flop pair for this architecture represents one LUT
+ paired with[] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [76]
-Overfull \hbox (70.34056pt too wide) in paragraph at lines 72--72
-[]  \T1/pcr/m/n/10 Number of BUFG/BUFGMUXs:                       1 out of     
- 16    6%[] 
- []
-
-
-Overfull \hbox (70.34056pt too wide) in paragraph at lines 72--72
-[]  \T1/pcr/m/n/10 Number of DCM/DCM_CLKGENs:                     0 out of     
- 12    0%[] 
- []
-
-
-Overfull \hbox (70.34056pt too wide) in paragraph at lines 72--72
-[]  \T1/pcr/m/n/10 Number of ILOGIC2/ISERDES2s:                   0 out of     
-506    0%[] 
- []
-
-
-Overfull \hbox (70.34056pt too wide) in paragraph at lines 72--72
-[]  \T1/pcr/m/n/10 Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     
-506    0%[] 
- []
-
-
-Overfull \hbox (70.34056pt too wide) in paragraph at lines 72--72
-[]  \T1/pcr/m/n/10 Number of OLOGIC2/OSERDES2s:                   0 out of     
-506    0%[] 
- []
-
-
-Overfull \hbox (70.34056pt too wide) in paragraph at lines 72--72
-[]  \T1/pcr/m/n/10 Number of BSCANs:                              0 out of     
-  4    0%[] 
- []
-
-
-Overfull \hbox (70.34056pt too wide) in paragraph at lines 72--72
-[]  \T1/pcr/m/n/10 Number of BUFHs:                               0 out of     
-384    0%[] 
- []
-
-
-Overfull \hbox (70.34056pt too wide) in paragraph at lines 72--72
-[]  \T1/pcr/m/n/10 Number of BUFPLLs:                             0 out of     
-  8    0%[] 
- []
-
-
-Overfull \hbox (70.34056pt too wide) in paragraph at lines 72--72
-[]  \T1/pcr/m/n/10 Number of BUFPLL_MCBs:                         0 out of     
-  4    0%[] 
- []
-
-
-Overfull \hbox (70.34056pt too wide) in paragraph at lines 72--72
-[]  \T1/pcr/m/n/10 Number of DSP48A1s:                            0 out of     
-180    0%[] 
- []
-
-
-Overfull \hbox (70.34056pt too wide) in paragraph at lines 72--72
-[]  \T1/pcr/m/n/10 Number of GTPA1_DUALs:                         0 out of     
-  2    0%[] 
- []
-
-
-Overfull \hbox (70.34056pt too wide) in paragraph at lines 72--72
-[]  \T1/pcr/m/n/10 Number of ICAPs:                               0 out of     
-  1    0%[] 
- []
-
-
-Overfull \hbox (70.34056pt too wide) in paragraph at lines 72--72
-[]  \T1/pcr/m/n/10 Number of MCBs:                                0 out of     
-  4    0%[] 
- []
-
-
-Overfull \hbox (70.34056pt too wide) in paragraph at lines 72--72
-[]  \T1/pcr/m/n/10 Number of PCIE_A1s:                            0 out of     
-  1    0%[] 
- []
-
-
-Overfull \hbox (70.34056pt too wide) in paragraph at lines 72--72
-[]  \T1/pcr/m/n/10 Number of PCILOGICSEs:                         0 out of     
-  2    0%[] 
- []
-
-
-Overfull \hbox (70.34056pt too wide) in paragraph at lines 72--72
-[]  \T1/pcr/m/n/10 Number of PLL_ADVs:                            0 out of     
-  6    0%[] 
- []
-
-
-Overfull \hbox (70.34056pt too wide) in paragraph at lines 72--72
-[]  \T1/pcr/m/n/10 Number of PMVs:                                0 out of     
-  1    0%[] 
- []
-
-
-Overfull \hbox (70.34056pt too wide) in paragraph at lines 72--72
-[]  \T1/pcr/m/n/10 Number of STARTUPs:                            0 out of     
-  1    0%[] 
- []
-
-
-Overfull \hbox (70.34056pt too wide) in paragraph at lines 72--72
-[]  \T1/pcr/m/n/10 Number of SUSPEND_SYNCs:                       0 out of     
-  1    0%[] 
- []
-
-)) [77] [78
+ [74]))
+[75] [76
 
 
 ] (./main.lof)
@@ -4831,7 +3611,7 @@ Overfull \hbox (70.34056pt too wide) in paragraph at lines 72--72
 \tf@brf=\write8
 \openout8 = `main.brf'.
 
- [79] [80
+ [77] [78
 
 ]
 Underfull \hbox (badness 3838) in paragraph at lines 45--45
@@ -4863,7 +3643,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--53
 103199 / 103127 /
  []
 
-[81]
+[79]
 Underfull \hbox (badness 2653) in paragraph at lines 85--85
 []\T1/jkpk/m/n/10 Wei Li.  Se-cu-rity anal-y-sis of dvb com-mon scram-bling al-
 go-rithm.  In
@@ -4923,7 +3703,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 149--149
 r / 10 . 1007 %
  []
 
-[82]
+[80]
 Underfull \hbox (badness 10000) in paragraph at lines 173--173
 []\T1/jkpk/m/n/10 Unknown Wikipedia.  Cbc en-cryp-tion, 2014a.  URL []$\T1/pcr/
 m/n/10 http : / /
@@ -4949,44 +3729,44 @@ onomy .
 
 )
 No file main.ind.
-[83] [84
+[81] [82
 
-] <fig/LinkUniv_staende_pms.pdf, id=1357, 260.975pt x 172.645pt>
+] <fig/LinkUniv_staende_pms.pdf, id=1348, 260.975pt x 172.645pt>
 File: fig/LinkUniv_staende_pms.pdf Graphic file (type pdf)
 
 <use fig/LinkUniv_staende_pms.pdf>
-Package pdftex.def Info: fig/LinkUniv_staende_pms.pdf used on input line 79.
+Package pdftex.def Info: fig/LinkUniv_staende_pms.pdf used on input line 82.
 (pdftex.def)             Requested size: 77.41702pt x 51.21495pt.
 
-Overfull \hbox (0.16193pt too wide) in paragraph at lines 79--79
+Overfull \hbox (0.16193pt too wide) in paragraph at lines 82--82
 \T1/jkpk/m/n/10 and its pro-ce-dures for pub-li-ca-tion and for as-sur-ance of 
 doc-u-ment in-tegrity, please
  []
 
-[85 <./fig/LinkUniv_staende_pms.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 79.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 79.
+[83 <./fig/LinkUniv_staende_pms.pdf>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 82.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 82.
  (./main.aux (./notation.aux)
 (./introduction.aux) (./cas.aux) (./Scrambling.aux) (./CSA.aux)
 (./cissaORCSA3.aux) (./aes.aux) (./result.aux) (./matrix.aux) (./flowcharts.aux
 ) (./vectors.aux) (./examples.aux) (./blocks.aux) (./synthesis.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 79.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 79.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 82.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 82.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: BB7C95660DAAC517DCFDAD52CA99A806;5991.
 Package rerunfilecheck Info: File `main.brf' has not changed.
-(rerunfilecheck)             Checksum: 92DEECC00736C146E9C2F7DCF8086C28;3169.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 79.
+(rerunfilecheck)             Checksum: CD58298F6CDC11E89957947D2A60611E;3163.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 82.
  )
 (\end occurred when \ifx on line 20 was incomplete) 
 Here is how much of TeX's memory you used:
- 22968 strings out of 493304
- 375312 string characters out of 6139871
+ 22971 strings out of 493304
+ 375344 string characters out of 6139871
  601659 words of memory out of 5000000
- 25399 multiletter control sequences out of 15000+600000
- 230054 words of font info for 187 fonts, out of 8000000 for 9000
+ 25401 multiletter control sequences out of 15000+600000
+ 231446 words of font info for 191 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 56i,12n,87p,587b,559s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,12n,87p,587b,578s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-di
 st/fonts/enc/dvips/base/8r.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/k
 pfonts/kpfonts-expert.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/kpfont
@@ -5005,10 +3785,10 @@ texlive/texmf-dist/fonts/type1/public/kpfonts/jkpsya.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 helvetic/uhvr8a.pfb>
-Output written on main.pdf (99 pages, 1006757 bytes).
+Output written on main.pdf (97 pages, 1004894 bytes).
 PDF statistics:
- 1485 PDF objects out of 1728 (max. 8388607)
- 1306 compressed objects within 14 object streams
- 272 named destinations out of 1000 (max. 500000)
+ 1475 PDF objects out of 1728 (max. 8388607)
+ 1299 compressed objects within 13 object streams
+ 270 named destinations out of 1000 (max. 500000)
  19299 words of extra memory for PDF output out of 20736 (max. 10000000)
 
