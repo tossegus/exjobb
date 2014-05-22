@@ -1,7 +1,7 @@
-\chapter{Digital Video Broadcasting}
-There are many parts that are needed to provide DVB with a secure way of 
-transmitting streams without facing the risk of content getting stolen. The 
-following parts will be treated in this thesis:
+\chapter{Digital Video Broadcasting (DVB)}
+There are many parts that are needed to provide DVB with a secure way 
+of transmitting streams without facing the risk of content getting 
+stolen. The following parts will be treated in this thesis:
 
 \begin{itemize}
 \item CAS - explained in section \ref{sec:CAS}
@@ -11,45 +11,50 @@ following parts will be treated in this thesis:
 \end{itemize}
 
 \section{Set-up} \label{sec:setup}
-\emph{Transport Stream}s (TS) which contains data received from distributors are 
-scrambled using a key which is called a \emph{control word} (CW). Although the CW
-is required to be changed every 120th second, it is common to change it as often 
-as every 10th seconds. Finding out just one CW has very little effect, since it 
-will only be usable for a few seconds before it is changed. The high frequency in
-which the CW is changed thereby provides the system with security. The control 
-word is generated randomly to make sure that consecutive control words are not 
-related to each other.
+\emph{Transport Stream}s (TS) which contains data received from 
+distributors are scrambled using a key which is called a 
+\emph{control word}. Although the control word is required to be changed
+every 120th second, it is common to change it as often as every 
+10th seconds. Finding out just one control word has very little effect, 
+since it will only be usable for a few seconds before it is changed. 
+The high frequency in which the control words are changed thereby 
+provides the system with security. The control word is generated 
+randomly to make sure that consecutive control words are not related 
+to each other.
 
-The control word is sent to a \emph{Conditional Access System} (CAS) where it is 
-encrypted as an \emph{Entitlement Control Message} (ECM). The CAS also generates 
-an \emph{Entitlement Management Message} (EMM) which tells the smart-card what 
-content the user is allowed access to. The ECM and EMM are then sent back to the 
-scrambler where it is attached to the scrambled TS using a multiplexer. This 
-package is sent to a receiver, where the ECM, EMM and TS are separated. The 
-ECM and TS are sent through the \emph{Common Interface} (CI) to the 
-\emph{Conditional Access Module} (CAM), where the ECM is decrypted using the 
-smart card. The resulting CW is then used to descramble the TS. The TS is 
-encrypted once more if the CI is a CIPlus, otherwise it is sent in the clear 
-back to the receiver where the data is processed before it is dispatched to the 
-user. The CI and CIPlus as well as the extra encryption are all discussed in 
-section \ref{sec:CI}.
+The control word is sent to a \emph{Conditional Access System} (CAS) 
+where it is encrypted as an \emph{Entitlement Control Message} (ECM). 
+The CAS also generates an \emph{Entitlement Management Message} (EMM) 
+which tells the smart-card what content the user is allowed access to. 
+The ECM and EMM are then sent back to the scrambler where it is 
+attached to the scrambled TS using a multiplexer. This package is sent 
+to a receiver, where the ECM, EMM and TS are separated. The ECM and TS 
+are sent through the \emph{Common Interface} (CI) to the 
+\emph{Conditional Access Module} (CAM), where the ECM is decrypted 
+using the smart card. The resulting CW is then used to descramble the 
+TS. The TS is encrypted once more if the CI is a CIPlus, otherwise it 
+is sent in the clear back to the receiver where the data is processed 
+before it is dispatched to the user. The CI and CIPlus as well as the 
+extra encryption are all discussed in section \ref{sec:CI}.
 
 \section{Conditional Access System} \label{sec:CAS}
-\emph{Conditional Access} (CA) is used to make sure that a user fulfills an 
-amount of criteria before being able to view content. A CA system (CAS) consists 
-among other of an EMM-generator (EMMG) and an ECM-generator (ECMG). %We are only interrested in the ECMG and EMMG since they are the parts that affect the scrambler. 
+\emph{Conditional Access} (CA) is used to make sure that a user 
+fulfills an amount of criteria before being able to view content. A 
+CA system (CAS) consists among other of an EMM-generator (EMMG) and an 
+ECM-generator (ECMG). %We are only interrested in the ECMG and EMMG since they are the parts that affect the scrambler. 
 The ECM is generated using the CW, while the EMM is generated based on 
-information related to the user. That information varies, but might relate to 
-what channels the user is subscribing to as well as when the subscription ends. 
-A TV will not broadcast any channels without receiving an EMM telling it to do 
-so.
+information related to the user. That information varies, but might 
+relate to what channels the user is subscribing to as well as when the 
+subscription ends. A TV will not broadcast any channels without 
+receiving an EMM telling it to do so.
 \Warning[Source]{You need to find more sources than just Patrik}
 
-A simple example is that a user needs to pay for TV-services to be able to access
-content. The content provider generates an EMM which tells the smart-card whether
-the user is allowed to access the requested material or not. The content provider
-also generates an ECM based on the CW, which the smart-card decrypts and passes 
-to the descrambler if the EMM allows it.
+A simple example is that a user needs to pay for TV-services to be able 
+to access content. The content provider generates an EMM which tells 
+the smart-card whether the user is allowed to access the requested 
+material or not. The content provider also generates an ECM based on 
+the control word, which the smart-card decrypts and passes to the 
+descrambler if the EMM allows it.
 
 \subsection{Standards}
 Some of the CA systems currently in use are Viaccess, Conax, Irdeto, NDS, Strong 
@@ -81,27 +86,30 @@ is used by Canal Digital for instance.
 %% According to Wikipedia.. Strong supports CI+.
 
 \section{DVB-SimulCrypt} \label{sec:Simul}
-DVB-SimulCrypt is widespread in Europe, and works as an interface between the 
-head-end and the CA system \citep{SimulCrypt:2008}. SimulCrypt encourages the 
-use of several CAS at once \citep[p. 17]{SimulCrypt:2008}.
+DVB-SimulCrypt is widespread in Europe, and works as an interface 
+between the head-end and the CA system \citep{SimulCrypt:2008}. 
+SimulCrypt encourages the use of several CAS at once 
+\citep[p. 17]{SimulCrypt:2008}.
 
-This is done by sending the same CW to many CA systems at the same time, and 
-then allowing them to generate an ECM and EMM based on the CW. The multiplexer 
-in the head-end then creates TS packets based on those, since the EMMs will 
-determine whether the user is allowed access or not. 
+This is done by sending the same CW to many CA systems at the same 
+time, and then allowing them to generate an ECM and EMM based on the 
+CW. The multiplexer in the head-end then creates TS packets based on 
+those, since the EMMs will determine whether the user is allowed 
+access or not. 
 %OERHÖRT CHANSAT DETTA JA OKEJ KOLLA ÖVER DET! Allt i detta stycke är chansat.
 
 %Why and how can we do that? Is that because the scrambling is the same, where the only thing differentiating the CAS is the encoding of the control word?
 
 \section{Common Interface} \label{sec:CI}
-The Common Interface is the interface between the CAM and the host (Digital TV 
-receiver-decoder). There are currently two versions of common interfaces in use, 
-which are the CI and the CI+. The difference between them is that the output 
-from the CI is unencrypted, while the output from the CI+ is encrypted 
-\citep{CI+:2011}. This means that a clear TS is sent between the CI and the 
-host, that can be copied. The data sent between the CI+ and host can not be 
-copied due to it being encrypted, and therefore provides more security for 
-content providers \citep{CI:1997}.
+The Common Interface is the interface between the CAM and the host 
+(Digital TV receiver-decoder). There are currently two versions of 
+common interfaces in use, which are the CI and the CI+. The difference 
+between them is that the output from the CI is unencrypted, while the 
+output from the CI+ is encrypted \citep{CI+:2011}. This means that a 
+clear TS is sent between the CI and the host, that can be copied. The 
+data sent between the CI+ and host can not be copied due to it being 
+encrypted, and therefore provides more security for content providers 
+\citep{CI:1997}.
 
 \subsection{CIPlus}
 The CIPlus realizes the possibility of yet another means of protecting content 
@@ -121,9 +129,10 @@ before being made available to users. The general idea can be viewed in Figure
 %CIPlus encoding is often used to protect HD content, but not SD content. Since HD content is more high-profile, content distributors are more tend to want to protect it than the SD content. (High Defintion, Standard Definition. HD > 720p)
 
 \section{Conditional Access Module}\label{sec:CAM}
-CA modules (CAMs) are responsible of decoding the scrambled TS received from the 
-host. The CAM is often input to a PCMCIA slot (Personal Computer Memory 
-International Association) either in the TV or the STB. The CAM consists of a 
-slot for a smart-card and a descrambler. The smart card decodes the ECM and 
-sends the CW to the descrambler. The TS is then descrambled and the clear TS is 
-sent back to the host from the CAM.
+CA modules (CAMs) are responsible of decoding the scrambled TS 
+received from the host. The CAM is often input to a PCMCIA slot 
+(Personal Computer Memory International Association) either in the TV 
+or the STB. The CAM consists of a slot for a smart-card and a 
+descrambler. The smart card decodes the ECM and sends the CW to the 
+descrambler. The TS is then descrambled and the clear TS is sent back 
+to the host from the CAM.

@@ -6,41 +6,35 @@
 \select@language {english}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces CIPlus interface. Image remade from \citep [p. 10]{CI+:2011}\relax }}{5}{figure.caption.4}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces CIPlus interface. Image remade from \citep [p. 10]{CI+:2011}\relax }}{9}{figure.caption.4}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces General layout of a data packet\relax }}{8}{figure.caption.5}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces PES packet derived from TS packets\relax }}{10}{figure.caption.6}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Different kinds of ciphers \citep {CipherTax:2013}\relax }}{12}{figure.caption.7}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces SP-Network\relax }}{14}{figure.caption.8}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces General layout of a data packet\relax }}{12}{figure.caption.5}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces PES packet derived from TS packets\relax }}{14}{figure.caption.6}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Different kinds of ciphers \citep {CipherTax:2013}\relax }}{16}{figure.caption.7}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces SP-Network\relax }}{18}{figure.caption.8}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Number of bits in key used\relax }}{16}{figure.caption.9}
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces The top entity\relax }}{29}{figure.caption.10}
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Test vector 1\relax }}{34}{figure.caption.11}
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Test vector 2\relax }}{34}{figure.caption.12}
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Test vector 3\relax }}{35}{figure.caption.13}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Rijndael S-box\relax }}{40}{figure.caption.14}
-\contentsline {figure}{\numberline {A.2}{\ignorespaces State-Matrix\relax }}{40}{figure.caption.15}
-\contentsline {figure}{\numberline {A.3}{\ignorespaces Rijndael MixColumns equation\relax }}{40}{figure.caption.16}
-\contentsline {figure}{\numberline {A.4}{\ignorespaces The Rcon function represented as a vector\relax }}{41}{figure.caption.17}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Flowchart of the Rcon function\relax }}{44}{figure.caption.18}
-\contentsline {figure}{\numberline {B.2}{\ignorespaces Flowchart of the key schedule\relax }}{45}{figure.caption.19}
-\contentsline {figure}{\numberline {B.3}{\ignorespaces Cipher block chaining mode, \citep {CBCmode:2014}\relax }}{45}{figure.caption.20}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Number of bits in key used\relax }}{20}{figure.caption.9}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {E.1}{\ignorespaces Scrambler-block\relax }}{58}{figure.caption.21}
-\contentsline {figure}{\numberline {E.2}{\ignorespaces Manager-block\relax }}{58}{figure.caption.22}
-\contentsline {figure}{\numberline {E.3}{\ignorespaces CBC-block\relax }}{59}{figure.caption.23}
-\contentsline {figure}{\numberline {E.4}{\ignorespaces Cipher-block\relax }}{60}{figure.caption.24}
-\contentsline {figure}{\numberline {E.5}{\ignorespaces Round-block\relax }}{61}{figure.caption.25}
-\contentsline {figure}{\numberline {E.6}{\ignorespaces Keyexpansion-block\relax }}{62}{figure.caption.26}
-\contentsline {figure}{\numberline {E.7}{\ignorespaces Keyblock2-block\relax }}{63}{figure.caption.27}
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces The top entity\relax }}{35}{figure.caption.10}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Test vector 1\relax }}{40}{figure.caption.11}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Test vector 2\relax }}{40}{figure.caption.12}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Test vector 3\relax }}{41}{figure.caption.13}
+\contentsline {figure}{\numberline {5}{\ignorespaces Rijndael S-box\relax }}{46}{figure.caption.15}
+\contentsline {figure}{\numberline {6}{\ignorespaces State-Matrix\relax }}{46}{figure.caption.16}
+\contentsline {figure}{\numberline {7}{\ignorespaces Rijndael MixColumns equation\relax }}{46}{figure.caption.17}
+\contentsline {figure}{\numberline {8}{\ignorespaces The Rcon function represented as a vector\relax }}{47}{figure.caption.18}
+\contentsline {figure}{\numberline {9}{\ignorespaces Flowchart of the Rcon function\relax }}{50}{figure.caption.20}
+\contentsline {figure}{\numberline {10}{\ignorespaces Flowchart of the key schedule\relax }}{51}{figure.caption.21}
+\contentsline {figure}{\numberline {11}{\ignorespaces Cipher block chaining mode, \citep {CBCmode:2014}\relax }}{51}{figure.caption.22}
+\contentsline {figure}{\numberline {12}{\ignorespaces Scrambler-block\relax }}{64}{figure.caption.26}
+\contentsline {figure}{\numberline {13}{\ignorespaces Manager-block\relax }}{64}{figure.caption.27}
+\contentsline {figure}{\numberline {14}{\ignorespaces CBC-block\relax }}{65}{figure.caption.28}
+\contentsline {figure}{\numberline {15}{\ignorespaces Cipher-block\relax }}{66}{figure.caption.29}
+\contentsline {figure}{\numberline {16}{\ignorespaces Round-block\relax }}{67}{figure.caption.30}
+\contentsline {figure}{\numberline {17}{\ignorespaces Keyexpansion-block\relax }}{68}{figure.caption.31}
+\contentsline {figure}{\numberline {18}{\ignorespaces Keyblock2-block\relax }}{69}{figure.caption.32}
 \select@language {swedish}
 \select@language {english}
 \select@language {english}
