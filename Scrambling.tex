@@ -1,8 +1,10 @@
-\chapter{Scrambling}\label{ch:Scrambling}
-Security is not only about cryptography. But there is a main reason why 
-cryptography is attacked, and that is because there is a very low 
-chance of being detected. There will be no traces of the attack, since 
-the attacker’s access will look just like an ordinary access.
+\chapter{Cryptography}\label{ch:Scrambling}
+Cryptography is the science of rendering content incomprehensible for 
+undesired readers. However, securing content is not only about 
+cryptography. However there is a main reason why cryptography is 
+attacked, and that is because there is a very low chance of being 
+detected. There will be no traces of the attack, since the attacker’s 
+access will look just like an ordinary access. \citep{Schneier:2003}
 
 This can be compared to a real-life break-in. The break-in will be 
 noticed if the thief breaks in using a crowbar. On the other hand, you 
@@ -11,29 +13,38 @@ thief were to pick the lock instead. \citep{Schneier:2003}
 
 One of the more noteworthy cryptography rule is that you always are to 
 assume that someone is out to get you. Because of this, 
-\citet[pp. 12--14]{Schneier:2003} says that we always need to look for 
-possible ways to break systems, to ensure that the security can not be 
-breached, and thereby provides security.
+\citet[pp. 12--14]{Schneier:2003} claims that we always need to look 
+for possible ways to break systems, to ensure that the security can not 
+be breached, and thereby provides security.
 
 \section{Why do we need cryptography?}
 Cryptography is the science of rendering plaintexts into ciphertexts to 
 protect contents from unauthorized viewing. It is used in electronic 
 communication for protection of e-mail messages and credit card 
 information among other things. If we send data without encrypting it, 
-someone who is eavesdropping to the transmission channel will most 
-likely access the data.
+someone listening in to the transmission channel will access the data.
 
 For most people this is not a problem, but in some instances sending 
 secure messages can be extremely important. One example is 
 communication during war, where a single piece of intelligence might 
-turn the tide of the entire war. You might also not want people to be 
-able to read your account information and card numbers when buying 
-things online either.
+turn the tide of the entire war. Moreover, you do not want people to 
+read your account information or credit card number when you do online 
+shopping. Both of these problems can be solved by cryptography and 
+encryption.
 
 \Warning[Source]{Typ Schneier har jag för mig? Låna om boken?}
 %This might need a rework!
 
-Another reason for scrambling is to reduce the number of adjacent 
+\section{Scrambling and Encrypting}
+Scrambling can be seen as the distortion of a plain-text, using a 
+control word. However, encryption can be seen as the entire process of 
+protecting content. This includes everything from generating the 
+control word to scrambling data. Scrambling can therefore be seen as a 
+part of encryption.
+
+%Jag vet inte om det här är relevant, eller stämmer
+
+Yet another reason to scramble, is to reduce the number of adjacent 
 data bits with the same value, like strings of zeroes or ones. It could 
 also serve to balance the number of zeroes and ones in strings. This is 
 done as to try to obtain DC balance. DC balance is desired since it 
@@ -41,12 +52,6 @@ avoids voltage imbalance during communication between connected systems.
 
 \Warning[Rewrite]{And find a good source for this}
 %Det är osannolikt att det här stämmer helt och hållet :)
-
-\section{Scrambling or Encrypting}
-Scrambling can be seen as the distortion of a plain-text, using a CW. 
-Encryption can, on the other hand, be seen as the entire process of 
-protecting content, from generating the CW to scrambling the data. 
-Scrambling can therefore be seen as a subset of encryption.
 
 \section{Data packets}\label{sec:Data}
 The data processed by the DVB systems is sent in data packets. All of 
@@ -59,16 +64,18 @@ perspective. This is due to PS packets being used for storing data,
 while TS and PES are used for transmitting data. The interresting 
 types, when working with DVB, are therefore the TS packets as well as 
 the PES packets. PES packets are often packed into the payload of TS 
-packets.
+packets. The payload is the part of the packets which is the actual 
+data, which is everything except the header and adaptation field.
 
 \subsection{TS packets}
-TS packets are the ones used by the DVB society, possibly due to their 
-fixed lenghts. TS packets have got a length of 188 bytes with a 4 byte 
-long header. This means that the payload consists of 184 bytes. The 
-layout of a TS packet can be viewed in figure 
-\ref{img:Package}\citep{DVB:2013}.
+TS packets are used by the DVB society due to their fixed length, and 
+the fact that TS packets are meant to be used for streaming services, 
+while PS packets are used for storing packets of data. TS packets have 
+got a length of 188 bytes with a 4 byte long header. This means that 
+the payload consists of a maximum of 184 bytes. The layout of a TS 
+packet can be viewed in figure \ref{img:Package}\citep{DVB:2013}.
 
-\begin{figure}
+\begin{figure}[h!]
   \includegraphics[width=\textwidth]{TSpacket}
   \caption{General layout of a data packet}
   \label{img:Package}
@@ -84,7 +91,7 @@ only the header is guaranteed to be present. Those blocks are:
 \item Clear payload
 \end{itemize}
 
-The byte-sizes of the building blocks are:
+The byte-sizes of the building blocks of a TS packet are:
 
 \begin{itemize}
 \item header\_size = 4
@@ -94,6 +101,11 @@ The byte-sizes of the building blocks are:
 \item clear\_payload\_size = [payload\_size mod block\_size] 
   (or simply payload\_size - encrypted\_payload\_size)
 \end{itemize}
+
+The header is always 4 bytes, while the adaptation field can have any 
+size between 0 and 183 bytes. This means that the clear payload can 
+be of any size stretching from 0 bytes, to one byte smaller than the 
+block size. The rest of the data consists of the payload.
 
 \subsubsection{Header}
 The header consists of information regarding the packet, 

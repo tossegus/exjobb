@@ -3,50 +3,53 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 The style file: plainnat.bst
 A level-1 auxiliary file: notation.aux
+A level-1 auxiliary file: introduction.aux
 A level-1 auxiliary file: cas.aux
 A level-1 auxiliary file: Scrambling.aux
 A level-1 auxiliary file: CSA.aux
 A level-1 auxiliary file: cissaORCSA3.aux
 A level-1 auxiliary file: aes.aux
-A level-1 auxiliary file: Result.aux
+A level-1 auxiliary file: result.aux
 A level-1 auxiliary file: matrix.aux
 A level-1 auxiliary file: flowcharts.aux
 A level-1 auxiliary file: vectors.aux
 A level-1 auxiliary file: examples.aux
+A level-1 auxiliary file: blocks.aux
+A level-1 auxiliary file: synthesis.aux
 Database file #1: myrefs.bib
 You've used 25 entries,
             2773 wiz_defined-function locations,
-            788 strings with 9611 characters,
-and the built_in function-call counts, 9313 in all, are:
-= -- 885
+            793 strings with 9739 characters,
+and the built_in function-call counts, 9337 in all, are:
+= -- 889
 > -- 340
 < -- 26
-+ -- 129
++ -- 130
 - -- 102
-* -- 578
-:= -- 1458
-add.period$ -- 117
+* -- 586
+:= -- 1466
+add.period$ -- 118
 call.type$ -- 25
-change.case$ -- 106
-chr.to.int$ -- 23
+change.case$ -- 107
+chr.to.int$ -- 22
 cite$ -- 50
-duplicate$ -- 508
-empty$ -- 862
+duplicate$ -- 512
+empty$ -- 860
 format.name$ -- 131
-if$ -- 1998
-int.to.chr$ -- 3
+if$ -- 2000
+int.to.chr$ -- 4
 int.to.str$ -- 1
-missing$ -- 22
-newline$ -- 171
+missing$ -- 23
+newline$ -- 172
 num.names$ -- 100
-pop$ -- 237
+pop$ -- 233
 preamble$ -- 1
 purify$ -- 83
 quote$ -- 0
-skip$ -- 363
+skip$ -- 357
 stack$ -- 0
 substring$ -- 170
-swap$ -- 78
+swap$ -- 81
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
@@ -54,4 +57,4 @@ type$ -- 260
 warning$ -- 0
 while$ -- 87
 width$ -- 0
-write$ -- 395
+write$ -- 397

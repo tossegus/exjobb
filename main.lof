@@ -6,7 +6,7 @@
 \select@language {english}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces CIPlus interface. Image remade from \citep [p. 10]{CI+:2011}\relax }}{11}{figure.caption.4}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces CI-Plus interface. Image remade from \citep [p. 10]{CI+:2011}\relax }}{12}{figure.caption.4}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces General layout of a data packet\relax }}{14}{figure.caption.5}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces PES packet derived from TS packets\relax }}{16}{figure.caption.6}
