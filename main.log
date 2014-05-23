@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.29)  23 MAY 2014 16:47
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.29)  23 MAY 2014 17:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2344,67 +2344,72 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 53--53
 <fig/TSpacket.png, id=591, 969.6225pt x 113.42375pt>
 File: fig/TSpacket.png Graphic file (type png)
  <use fig/TSpacket.png>
-Package pdftex.def Info: fig/TSpacket.png used on input line 77.
+Package pdftex.def Info: fig/TSpacket.png used on input line 79.
 (pdftex.def)             Requested size: 355.65944pt x 41.6044pt.
 
 [14 <./fig/TSpacket.png (PNG copy)>]
-Overfull \hbox (2.49pt too wide) in paragraph at lines 99--101
+Overfull \hbox (2.49pt too wide) in paragraph at lines 101--103
 []\T1/jkpk/m/n/10 clear_payload_size = [pay-load_size mod block_size] (or sim-p
 ly pay-load_size
  []
 
 
-Overfull \hbox (7.75002pt too wide) in alignment at lines 116--130
+Overfull \hbox (7.75002pt too wide) in alignment at lines 123--137
  [] [] [] 
  []
 
 [15] <fig/PES.png, id=617, 993.7125pt x 405.515pt>
 File: fig/PES.png Graphic file (type png)
  <use fig/PES.png>
-Package pdftex.def Info: fig/PES.png used on input line 162.
+Package pdftex.def Info: fig/PES.png used on input line 169.
 (pdftex.def)             Requested size: 355.65944pt x 145.13757pt.
  [16 <./fig/PES.png (PNG copy)>]
-Underfull \hbox (badness 2173) in paragraph at lines 216--216
+Underfull \hbox (badness 2173) in paragraph at lines 223--223
 []\T1/phv/m/n/5 feels like a given,
  []
 
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 216--216
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 223--223
 [][][][] 
  []
 
-[17] <fig/cipher.png, id=644, 501.875pt x 299.1175pt>
+[17]
+
+LaTeX Warning: Marginpar on page 18 moved.
+
+<fig/cipher.png, id=643, 501.875pt x 299.1175pt>
 File: fig/cipher.png Graphic file (type png)
  <use fig/cipher.png>
-Package pdftex.def Info: fig/cipher.png used on input line 229.
+Package pdftex.def Info: fig/cipher.png used on input line 236.
 (pdftex.def)             Requested size: 355.65944pt x 211.98238pt.
 
-Underfull \hbox (badness 3623) in paragraph at lines 240--240
+Underfull \hbox (badness 3623) in paragraph at lines 247--247
 []\T1/phv/m/n/5 At least the CSA
  []
 
 
-Underfull \hbox (badness 1622) in paragraph at lines 240--240
+Underfull \hbox (badness 1622) in paragraph at lines 247--247
 \T1/phv/m/n/5 uses it. But you
  []
 
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 240--240
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 247--247
 [][][][] 
  []
 
-[18 <./fig/cipher.png>] <fig/SPnetwork.png, id=685, 451.6875pt x 301.3659pt>
+[18 <./fig/cipher.png>] [19]
+<fig/SPnetwork.png, id=693, 451.6875pt x 301.3659pt>
 File: fig/SPnetwork.png Graphic file (type png)
-
-<use fig/SPnetwork.png>
-Package pdftex.def Info: fig/SPnetwork.png used on input line 314.
+ <use fig/SPnetwork.png>
+Package pdftex.def Info: fig/SPnetwork.png used on input line 321.
 (pdftex.def)             Requested size: 177.82971pt x 118.64964pt.
-) [19] [20 <./fig/SPnetwork.png>]
+)
+[20 <./fig/SPnetwork.png>]
 \openout2 = `CSA.aux'.
 
  (./CSA.tex
 Chapter 4.
-<fig/blockcipher.pdf, id=705, 252.945pt x 179.2296pt>
+<fig/blockcipher.pdf, id=707, 252.945pt x 179.2296pt>
 File: fig/blockcipher.pdf Graphic file (type pdf)
 
 <use fig/blockcipher.pdf>
@@ -2494,7 +2499,7 @@ Chapter 7.
 [35
 
 
-] <fig/scrambler.png, id=893, 742.775pt x 428.60126pt>
+] <fig/scrambler.png, id=895, 742.775pt x 428.60126pt>
 File: fig/scrambler.png Graphic file (type png)
 
 <use fig/scrambler.png>
@@ -2881,20 +2886,20 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-[38] [39] [40] [41] <fig/successtv1.png, id=937, 831.85782pt x 106.14656pt>
+[38] [39] [40] [41] <fig/successtv1.png, id=939, 831.85782pt x 106.14656pt>
 File: fig/successtv1.png Graphic file (type png)
 
 <use fig/successtv1.png>
 Package pdftex.def Info: fig/successtv1.png used on input line 377.
 (pdftex.def)             Requested size: 355.65944pt x 45.38298pt.
 
-<fig/successtv2.png, id=939, 832.61063pt x 112.16907pt>
+<fig/successtv2.png, id=941, 832.61063pt x 112.16907pt>
 File: fig/successtv2.png Graphic file (type png)
 
 <use fig/successtv2.png>
 Package pdftex.def Info: fig/successtv2.png used on input line 388.
 (pdftex.def)             Requested size: 355.65944pt x 47.9151pt.
- <fig/successtv3.png, id=941, 726.46407pt x 108.405pt>
+ <fig/successtv3.png, id=943, 726.46407pt x 108.405pt>
 File: fig/successtv3.png Graphic file (type png)
 
 <use fig/successtv3.png>
@@ -2947,19 +2952,19 @@ Overfull \hbox (40.79588pt too wide) in paragraph at lines 83--101
 
 
 ]
-<fig/flowchart.pdf, id=989, 415.5525pt x 912.40875pt>
+<fig/flowchart.pdf, id=991, 415.5525pt x 912.40875pt>
 File: fig/flowchart.pdf Graphic file (type pdf)
  <use fig/flowchart.pdf>
 Package pdftex.def Info: fig/flowchart.pdf used on input line 5.
 (pdftex.def)             Requested size: 151.61516pt x 332.90062pt.
 
-<fig/keyschedule.png, id=990, 822.272pt x 822.272pt>
+<fig/keyschedule.png, id=992, 822.272pt x 822.272pt>
 File: fig/keyschedule.png Graphic file (type png)
  <use fig/keyschedule.png>
 Package pdftex.def Info: fig/keyschedule.png used on input line 12.
 (pdftex.def)             Requested size: 355.65944pt x 355.66539pt.
 
-<fig/CBCmode.png, id=991, 2007.5pt x 700.6175pt>
+<fig/CBCmode.png, id=993, 2007.5pt x 700.6175pt>
 File: fig/CBCmode.png Graphic file (type png)
  <use fig/CBCmode.png>
 Package pdftex.def Info: fig/CBCmode.png used on input line 19.
@@ -3333,38 +3338,38 @@ File: fig/scrambler.png Graphic file (type png)
 Package pdftex.def Info: fig/scrambler.png used on input line 8.
 (pdftex.def)             Requested size: 355.65944pt x 205.22923pt.
 
-<fig/manager.png, id=1100, 794.97pt x 492.84125pt>
+<fig/manager.png, id=1102, 794.97pt x 492.84125pt>
 File: fig/manager.png Graphic file (type png)
  <use fig/manager.png>
 Package pdftex.def Info: fig/manager.png used on input line 14.
 (pdftex.def)             Requested size: 355.65944pt x 220.49808pt.
 
-<fig/cbc.png, id=1101, 484.81125pt x 561.09625pt>
+<fig/cbc.png, id=1103, 484.81125pt x 561.09625pt>
 File: fig/cbc.png Graphic file (type png)
  <use fig/cbc.png>
 Package pdftex.def Info: fig/cbc.png used on input line 20.
 (pdftex.def)             Requested size: 355.65944pt x 411.64308pt.
 
-<fig/cipherblock.png, id=1102, 658.46pt x 478.78876pt>
+<fig/cipherblock.png, id=1104, 658.46pt x 478.78876pt>
 File: fig/cipherblock.png Graphic file (type png)
 
 <use fig/cipherblock.png>
 Package pdftex.def Info: fig/cipherblock.png used on input line 26.
 (pdftex.def)             Requested size: 355.65944pt x 258.61513pt.
- <fig/round.png, id=1103, 652.4375pt x 630.355pt>
+ <fig/round.png, id=1105, 652.4375pt x 630.355pt>
 File: fig/round.png Graphic file (type png)
 
 <use fig/round.png>
 Package pdftex.def Info: fig/round.png used on input line 32.
 (pdftex.def)             Requested size: 355.65944pt x 343.62804pt.
- <fig/keyexpansion.png, id=1104, 602.25pt x 542.025pt>
+ <fig/keyexpansion.png, id=1106, 602.25pt x 542.025pt>
 File: fig/keyexpansion.png Graphic file (type png)
 
 <use fig/keyexpansion.png>
 Package pdftex.def Info: fig/keyexpansion.png used on input line 38.
 (pdftex.def)             Requested size: 355.65944pt x 320.10625pt.
 
-<fig/keyblock2.png, id=1105, 579.16376pt x 485.815pt>
+<fig/keyblock2.png, id=1107, 579.16376pt x 485.815pt>
 File: fig/keyblock2.png Graphic file (type png)
  <use fig/keyblock2.png>
 Package pdftex.def Info: fig/keyblock2.png used on input line 44.
@@ -3735,7 +3740,7 @@ Class rtthesis Warning: Class loaded with indication that there would be no
 
 [89] [90
 
-] <fig/LinkUniv_staende_pms.pdf, id=1353, 260.975pt x 172.645pt>
+] <fig/LinkUniv_staende_pms.pdf, id=1354, 260.975pt x 172.645pt>
 File: fig/LinkUniv_staende_pms.pdf Graphic file (type pdf)
 
 <use fig/LinkUniv_staende_pms.pdf>
@@ -3757,9 +3762,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 84.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 84.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 84.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 1C7D2A26B1DB2025C9226F948EE46FDB;5485.
+(rerunfilecheck)             Checksum: 47D2DCD3AF25FCAB45968EA304C09F39;5486.
 Package rerunfilecheck Info: File `main.brf' has not changed.
-(rerunfilecheck)             Checksum: F8CC91B2E9D3482A54D72E642415150B;3279.
+(rerunfilecheck)             Checksum: 12FFD9FC943280CAC4FEB1FD7660350D;3279.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 84.
  )
 (\end occurred when \ifx on line 20 was incomplete) 
@@ -3789,10 +3794,10 @@ texlive/texmf-dist/fonts/type1/public/kpfonts/jkpsya.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 helvetic/uhvr8a.pfb>
-Output written on main.pdf (105 pages, 1007871 bytes).
+Output written on main.pdf (105 pages, 1008129 bytes).
 PDF statistics:
- 1480 PDF objects out of 1728 (max. 8388607)
- 1296 compressed objects within 13 object streams
+ 1481 PDF objects out of 1728 (max. 8388607)
+ 1297 compressed objects within 13 object streams
  275 named destinations out of 1000 (max. 500000)
  19227 words of extra memory for PDF output out of 20736 (max. 10000000)
 
