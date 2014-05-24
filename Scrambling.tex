@@ -108,49 +108,63 @@ be of any size stretching from 0 bytes, to one byte smaller than the
 block size. The rest of the data consists of the payload.
 
 \subsubsection{Header}
-The header consists of information regarding the packet, 
-and has a sync\_byte (with a hex-value of 0x47, or bit-value of 
-01000111) to announce the beginning of a packet. The header also 
-contains information as to whether there is an adaptation field and 
-payload in the packet, what PID the packet has, if it is to be 
-prioritized, whether the data is scrambled - and in that case if it 
-was scrambled with an odd or even key, among others 
-\citep[pp. 25--26]{etsiMPEG:2009}. The header is never to be encrypted 
-and is always found at the beginning of a packet 
+The header consists of information regarding the packet, and has a 
+sync\_byte (with a hex-value of 0x47, or bit-value of 01000111) to 
+announce the beginning of a packet. The value of the sync\_byte 
+corresponds to the ASCII-value of the letter G, for go. 
+The header also contains information as to whether there is an 
+adaptation field and payload in the packet, what Packet ID (PID) the 
+packet has, if it should be prioritized, whether the data is 
+scrambled - and in that case if it was scrambled with an odd or even 
+key, among others \citep[pp. 25--26]{etsiMPEG:2009}. The header should 
+never be encrypted and is always found at the beginning of a packet 
 \citep[pp. 10--11]{DVB:2013}.
 
 The header contains the following:
-\begin{longtable}{l l l}
-  Bits & Name & Description \\
-  8 & Sync byte & Fixed byte value 0x47 \\
-  1 & Transport Error Indicator & Uncorrectable bit errors exist. \\
+\begin{longtable}{| l | l | l |}
+  \hline
+  Bits & Name & Description \\ \hline
+  8 & Sync byte & Fixed byte value 0x47 \\ \hline
+  1 & Transport Error Indicator & Uncorrectable bit errors exist. \\ 
+  \hline
   1 & Payload Unit Start Indicator & TS packet contains PES packets or\\
-  & & Program Specific Information (PSI data)\\
+  & & Program Specific Information (PSI data)\\ \hline
   2 & Transport Scrambling Control & 00 No scramling, 01 Reserved, \\
-  & & 10 Even key, 11 Odd key \\
-  1 & Transport Priority & 1 gives this packet higher priority \\
+  & & 10 Even key, 11 Odd key \\ \hline
+  1 & Transport Priority & 1 gives this packet higher priority \\ \hline
   13 & PID & Type and number of data \\
-  & & stored in packet payload \\
-  1 & Adaptation Field Control & 1 means that an adaptation field exists\\
-    1 & Contains Payload & 1 means that payload exists \\
-    4 & Continuity Counter & Sequence number of payload packets\\
+  & & stored in packet payload \\ \hline
+  1 & Adaptation Field Control & 1 means that an adaptation field 
+  exists\\ \hline
+  1 & Contains Payload & 1 means that payload exists \\ \hline
+  4 & Continuity Counter & Sequence number of payload packets\\ \hline
 \end{longtable}
 
 \subsubsection{Adaptation field}
-The adaptation field is a sort of padding that is input when the end of 
-the data does not align with the end of the TS packet. This is done to 
-make sure that the TS packet is filled with known data. We only find 
-adaptation fields when we are working with the last string of data, if 
-the data does not align. Adaptation fields are not encrypted.
+The adaptation field is a sort of padding that is inserted when the 
+end of the data does not align with the end of the TS packet. This is 
+done to make sure that the TS packet is filled with known data. We 
+only find adaptation fields when we are working with the last string 
+of data, if the end of data does not align with the end of the TS 
+packet. Adaptation fields are never encrypted. 
 \cite[pp. 10--11]{DVB:2013}
 
 \subsubsection{Encrypted and clear payload}
 When working with block ciphers, we tend to end up with clear bytes of 
-data since block ciphers only encrypt data blocks of fixed sizes. The 
-clear data is always located at the end of the TS packets and might be 
-of sizes up to one byte smaller than the block size (15 bytes for 
-AES-128) at the most. The encrypted payload is always located in front 
-of the clear payload. \cite[pp. 10--11]{DVB:2013}
+data since block ciphers only encrypt data blocks of fixed sizes. 
+The clear data is always the data located at the end of the received TS 
+packet. When receiving a TS packet, the first thing to be done is to 
+find the start of the payload. While there is no adaptation field, this 
+is the data right after the header. If there is an adaptation field, 
+some searching for the data is needed to be done. After the start of 
+the payload is found, blocks of a given size are sent to the scrambler.
+The remainder of data, when all of the blocks of the right size have 
+been scrambled, is to be left clear. The number of unscrambled bytes 
+might be of sizes up to one byte smaller than the block size. This 
+means that the AES-128, which works on block sizes of 16 bytes, can 
+have a maximum of 15 clear bytes at the most. The encrypted payload is 
+always located in front of the clear payload. 
+\cite[pp. 10--11]{DVB:2013}
 
 \subsection{PES packets}
 The PES packets have varying lengths of up to 64 kilo bytes, and are 
@@ -159,24 +173,26 @@ TS packets. The payload data in the TS packets, when carrying PES
 packets, consist of the entire PES packets, which is the header as well 
 as the data. PES packets do not use adaptation fields, since they are 
 of adaptable lengths, as long as the length of the packet does not 
-exceed 64 KBytes.
+exceed 64 kilo bytes.
 
-Since DVB seldom uses itself of PES packets, an analyzation of the 
-header will not be done. The derivation of PES packets from TS packets 
-can be seen in Figure \ref{img:PES} \citep[p. 9]{ETR:289}.
+Since Digital Video Broadcasting seldom uses itself of PES packets, an 
+analyzation of the header will not be done in this report. The 
+derivation of PES packets from TS packets can be seen in Figure 
+\ref{img:PES} \citep[p. 9]{ETR:289}.
 
-\begin{figure}
+\begin{figure}[h!]
   \includegraphics[width=\textwidth]{PES.png}
   \caption{PES packet derived from TS packets}
   \label{img:PES}
 \end{figure}
 
 \section{Encryption and Decryption}
-There are two things that you need when you encrypt and decrypt 
+There are three things that you need when you encrypt and decrypt 
 messages. Those are the algorithm, plaintext and the key. Even though 
 there are plenty of ways to encrypt messages, there are mainly two ways 
 of sharing the encryption-key. The first method is the symmetric-key 
-encryption, and the second method is the public-key encryption.
+encryption, and the second method is the public-key encryption. 
+\Warning[Source]{Please! I think Schneier wrote something about this}
 
 \subsection{Symmetric-key encryption}\label{ch:symmetric}
 The symmetric-key encryption uses the same key to encode and decode 
@@ -184,11 +200,13 @@ messages. Distrubution of the key, when using the symmetric-key
 encryption is troublesome and the fact that both parties need access to 
 the same secret key is a major drawback of the symmetric key 
 encryption, as compared to the public-key encryption method. Sending 
-the key in an email is a bad idea, since the persons who wants to read 
-our messages most likely already will be listening, and they will 
-therefore obtain the key as well as the means to decode the messages we 
-send. Both the CSA and the AES encryption methods are symmetric-key 
-encryptions, using the same key for encryption and decryption.
+the key in an email is a bad idea, since the persons who want to read 
+our messages are most likely already listening. They will therefore 
+obtain the key as well as the means to decode the messages. Both the 
+CSA and the AES encryption methods are symmetric-key encryptions, using 
+the same key for encryption and decryption.
+
+\Warning[Source]{Schneier har jag för mig igen}
 
 \subsection{Public-key encryption}\label{ch:public}
 The public-key encryption uses a public key that anyone can look up, 
@@ -199,31 +217,28 @@ persons, Bob and Alice, want to communicate. Bob produces a keypair
 publishes \(P_{Bob}\) for anyone to see. When Alice wants to send Bob a 
 message, she looks up Bob’s public key \(P_{Bob}\), which she then uses 
 to encode her message. When she sends Bob the message, Bob decodes the 
-message using his secret key \(S_{Bob}\) \citep{Schneier:2003}.
+message using his secret key \(S_{Bob}\) \citep{Schneier:2003}. 
+Since Alice now knows both the plaintext, and can find out what the 
+corresponding ciphertext will be, she could potentially try to find 
+Bob's secret key, as described in section \ref{sec:kpa}.
 
-\subsection{Combination}
-The big question now is why we would use anything other than the 
-public-key encryption, since it seems secure and easy to manage. The 
-reason is that the public-key encryption is not as effective as the 
-symmetric-key encryption. It is common to use a combination of those 
-two since an easy and effective way to encrypt messages is what we 
-desire. To do this we use a symmetric-key algorithm to encode the 
-plaintext into ciphertext, and then we use the public-key encryption to 
-encode the symmeteric-key we used to encode the plaintext. The encoded 
-key is then sent together with the ciphertext to the recipient, who 
-uses the secret key to decode the symmetric key, which is then used 
-to decipher the ciphertext to obtain the plaintext.
+\subsection{Combination of encryption}
+Since the public-key encryption seems secure and easy to manage, how 
+come it is not the only used encryption method? The reason is that the 
+public-key encryption is not as effective as the symmetric-key 
+encryption. It is common to utilize a combination of those two since an 
+easy and effective way to encrypt messages is what we desire. 
 
-Decryption is often performed by reversing the encryption. You need to 
-know the algorithm, preferably through a mathematical representation, 
-to calculate how to obtain the plaintext from the ciphertext. A 
-description of how this is done for the CBC-mode (described in 
-\ref{sec:BlockCipher}) is described in \ref{sec:CBCcalc} in appendix 
-\ref{app:examples}. We assume that we know the decryption algorithm 
-here for simplicity. \Warning[Source]{feels like a given, but still}
+To combine the two encryption methods, the symmetric-key algorithm 
+encodes the plaintext into a ciphertext. Then the public-key encryption 
+encrypts the key used by the symmeteric-key encryption. 
+The encoded key is then sent together with the ciphertext to the 
+recipient, who decodes the symmetric key using the secret key. The 
+plaintext is once again received through decrypting the ciphertext 
+with that key.
 
 \section{Ciphers}
-A cipher is the same as an algorithm, that operates on either 
+A cipher is the same as an algorithm, which operates on either 
 plaintexts or ciphertexts to perform encryption or decryption. Figure 
 \ref{img:ciphers} describes how the different kinds of ciphers can be 
 split into sub-groups. The first branch splits into Classical-, 
@@ -279,6 +294,15 @@ feedback shift-register which uses the current internal state (key) to
 produce the next state by a simple XOR-addition between two or more of 
 the bits in the state. This is mainly used because of how easy it is to 
 construct in hardware \citep{LFSR:2008}.
+
+\subsection{Decryption}
+Decryption is often performed by reversing the encryption. You need to 
+know the algorithm, preferably through a mathematical representation, 
+to calculate how to obtain the plaintext from the ciphertext. A 
+description of how this is done for the CBC-mode (described in 
+\ref{sec:BlockCipher}) is described in \ref{sec:CBCcalc} in appendix 
+\ref{app:examples}. We assume that we know the decryption algorithm 
+here for simplicity. \Warning[Source]{feels like a given, but still}
 
 \section{Confusion and Diffusion}\label{ch:ConfDiff}
 Two properties that are needed to ensure that a cipher provides 

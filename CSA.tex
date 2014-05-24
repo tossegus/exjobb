@@ -1,7 +1,7 @@
 \chapter{Common Scrambling Algorithm} \label{ch:CSA}
-The CSA is currently the most commonly used encryption algorithm in DVB 
-for encryption of video-streams. There are two versions of the DVB-CSA, 
-CSA1 and CSA2, where the key-length is the only difference between them 
+The CSA is currently the most commonly used encryption algorithm in DVB
+for encryption of video-streams. There are two versions of the DVB-CSA,
+CSA1 and CSA2, where the key-length is the only difference between them
 \citep[p. 23]{DVBScene:2013}. 
 
 The CSA uses a combination of a block cipher, taking an input of a 
@@ -105,7 +105,7 @@ precisely allowing us to be certain to find the key in two minutes, we
 could just change the key more often. As such, the brute force method 
 of obtaining the key is not a feasible option.
 
-\subsubsection{Known plaintext attack}
+\subsubsection{Known plaintext attack}\label{sec:kpa}
 The known plaintext attack is performed to find out the key, which can 
 then be used to decrypt following ciphertexts. To be able to try this, 
 a known plaintext-ciphertext pair is needed. You can try to find the keyif you have the both of them. This is done by identifying ciphertexts 
