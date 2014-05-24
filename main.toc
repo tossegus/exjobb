@@ -35,21 +35,21 @@
 \contentsline {section}{\numberline {3.4}Encryption and Decryption}{16}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}Symmetric-key encryption}{17}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}Public-key encryption}{17}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Combination}{18}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.3}Combination of encryption}{18}{subsection.3.4.3}
 \contentsline {section}{\numberline {3.5}Ciphers}{18}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Block cipher}{18}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.1}Block cipher}{19}{subsection.3.5.1}
 \contentsline {subsection}{\numberline {3.5.2}Stream cipher}{19}{subsection.3.5.2}
-\contentsline {section}{\numberline {3.6}Confusion and Diffusion}{19}{section.3.6}
-\contentsline {subsection}{\numberline {3.6.1}S-boxes}{20}{subsection.3.6.1}
-\contentsline {subsection}{\numberline {3.6.2}P-Boxes}{20}{subsection.3.6.2}
-\contentsline {section}{\numberline {3.7}Secrecy}{20}{section.3.7}
+\contentsline {subsection}{\numberline {3.5.3}Decryption}{19}{subsection.3.5.3}
+\contentsline {section}{\numberline {3.6}Confusion and Diffusion}{20}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}S-boxes and P-boxes}{20}{subsection.3.6.1}
+\contentsline {section}{\numberline {3.7}Secrecy}{21}{section.3.7}
 \contentsline {chapter}{\numberline {4}Common Scrambling Algorithm}{23}{chapter.4}
 \contentsline {section}{\numberline {4.1}Why do we need a new standard?}{23}{section.4.1}
 \contentsline {section}{\numberline {4.2}Layout of the CSA}{24}{section.4.2}
 \contentsline {section}{\numberline {4.3}Security}{24}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Breaking the CSA}{25}{subsection.4.3.1}
-\contentsline {subsubsection}{Brute force}{25}{subsection.4.3.1}
-\contentsline {subsubsection}{Known plaintext attack}{25}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.1}Breaking the CSA}{24}{subsection.4.3.1}
+\contentsline {subsubsection}{Brute force}{24}{subsection.4.3.1}
+\contentsline {subsubsection}{Known plaintext attack}{25}{figure.caption.9}
 \contentsline {chapter}{\numberline {5}CISSA and CSA3}{27}{chapter.5}
 \contentsline {section}{\numberline {5.1}CISSA}{27}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}Software friendly}{28}{subsection.5.1.1}

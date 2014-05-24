@@ -1,12 +1,9 @@
 \chapter{Common Scrambling Algorithm} \label{ch:CSA}
-The CSA is currently the most commonly used encryption algorithm in DVB
-for encryption of video-streams. There are two versions of the DVB-CSA,
-CSA1 and CSA2, where the key-length is the only difference between them
-\citep[p. 23]{DVBScene:2013}. 
-
-The CSA uses a combination of a block cipher, taking an input of a 
-64-bit block, and a stream cipher. Both of the ciphers use the same 
-key, so that the entire system uses the same key 
+The Common Scrambling Algorithm (CSA) is currently the most commonly 
+used encryption algorithm for encryption of video-streams, in the DVB 
+context. The CSA uses a combination of a block cipher, taking an input 
+of a 64-bit block, and a stream cipher. Both of the ciphers use the 
+same key, so that the entire system uses the same key 
 \citep[pp. 271--272]{WeiLi:2007}. This means that the complete 
 algorithm would break if the key would be recovered. Using the same key 
 does on the other hand allow us to easily change the key at regular 
@@ -17,13 +14,10 @@ was to be easily implemented in hardware and hard to implement in
 software to make reverse-engineering of the algorithm difficult 
 \citep{DVBScene:2013}.
 
-\begin{figure}
-  \begin{center}
-    \includegraphics{blockcipher}
-  \end{center}
-  \caption{Number of bits in key used}
-  \label{fig:blockcipher}
-\end{figure}
+
+There are two versions of the DVB-CSA, CSA1 and CSA2, where the
+key-length is the only difference between them. 
+\citep[p. 23]{DVBScene:2013}
 
 \section{Why do we need a new standard?}
 The DVB-CSA standard offers short-term protection (it assumes content 
@@ -93,6 +87,14 @@ possible through on a modern x86 processor using software methods
 \Warning[Todo]{How did I get this number?}, which means it would take 
 roughly 3258 days to force brake the keys, which translates into 
 roughly 8.8 years.
+
+\begin{figure}[h!]
+  \begin{center}
+    \includegraphics{blockcipher}
+  \end{center}
+  \caption{Number of bits in key used}
+  \label{fig:blockcipher}
+\end{figure}
 
 Moreover, systems need to change the key at least every 120 seconds 
 \citep{Simpson:2009} and most systems issues new keys every 10-120 

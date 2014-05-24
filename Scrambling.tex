@@ -227,25 +227,25 @@ Since the public-key encryption seems secure and easy to manage, how
 come it is not the only used encryption method? The reason is that the 
 public-key encryption is not as effective as the symmetric-key 
 encryption. It is common to utilize a combination of those two since an 
-easy and effective way to encrypt messages is what we desire. 
+easy, effective way to encrypt messages is desirable.
 
 To combine the two encryption methods, the symmetric-key algorithm 
 encodes the plaintext into a ciphertext. Then the public-key encryption 
-encrypts the key used by the symmeteric-key encryption. 
-The encoded key is then sent together with the ciphertext to the 
-recipient, who decodes the symmetric key using the secret key. The 
-plaintext is once again received through decrypting the ciphertext 
-with that key.
+encrypts the key used by the symmeteric-key encryption. The encoded key 
+is then sent together with the ciphertext to the recipient, which 
+decodes the symmetric key using the secret key. The plaintext is once 
+again received through decrypting the ciphertext with that key.
 
 \section{Ciphers}
-A cipher is the same as an algorithm, which operates on either 
-plaintexts or ciphertexts to perform encryption or decryption. Figure 
-\ref{img:ciphers} describes how the different kinds of ciphers can be 
-split into sub-groups. The first branch splits into Classical-, 
+A cipher is the same as an encryption algorithm, which operates on 
+either plaintexts or ciphertexts to perform encryption or decryption. 
+Figure \ref{img:ciphers} describes how the different kinds of ciphers 
+can be split into sub-groups. The first branch splits into Classical-, 
 Rotor Machine- and Modern ciphers. Substitution and Transposition are 
 still used in modern algorithms. The Modern ciphers are the Private 
 key and Public key (descibed in chapter \ref{ch:symmetric} and 
-\ref{ch:public}). The CSA algorithm uses both the stream- and block ciphers, while the AES algorithm only uses a block cipher.
+\ref{ch:public}). The CSA algorithm uses both the stream- and block 
+ciphers, while the AES algorithm only uses a block cipher.
 
 \begin{figure}
   \includegraphics[width=\textwidth]{cipher.png}
@@ -258,42 +258,45 @@ modern cryptosystems. Those ciphers are called block ciphers and
 stream ciphers. Many systems use a combination of block ciphers and 
 stream ciphers to provide security. 
 
-\Warning[Source]{At least the CSA uses it. But you need a source if you 
-want this to be here}
+\Warning[Source]{At least the CSA uses it. But you need a source}
 
 \subsection{Block cipher}\label{sec:BlockCipher}
-A block cipher operates on blocks where each block consists of a fixed 
-number of bytes. This might cause a need for padding the blocks, in 
-case the plaintext contains a number of bytes that is not even with the 
-blocksize. Block cipher often use itself of a combination of S-boxes 
-(Substitution boxes) and P-boxes (Permutation-boxes) in a so-called 
-SP-network (Figure \ref{img:SPNetwork}).
+A block cipher operates on fixed sized sets of data. These sets are 
+called blocks, hence the reason that they are called block ciphers. 
+Them being fixed sizes might cause a need for padding the blocks, in 
+case the plaintext contains a number of bytes that is not a denominator
+of the blocksize. Block ciphers often use a combination of S-boxes 
+(Substitution boxes) and P-boxes (Permutation boxes) in a so-called 
+SP-network (S-box / P-box network) (Figure \ref{img:SPNetwork}).
 
 There are many modes of block ciphers, but the two recommended by 
 \citet{Schneier:2003} are the CBC-mode and the CTR-mode.
 
 \emph{CBC} stands for \emph{cipher block chaining} and is performed by 
-first encrypting the result of an XOR between an IV and the plaintext. 
-This is the ciphertext that corresponds to the first plaintext. This is 
-then put into an XOR with the next plaintext, and then encrypted 
-\citep[pp. 109--111]{Stinson:2006}. For reference, see image 
-\ref{img:CBCmode} in appendix \ref{app:fig}.
+encrypting the result of an XOR (basic logic component) between 
+an Initialization Vector (IV) and the plaintext. The resulting 
+ciphertext is then fed back to the XOR, this time replacing the IV.
+This means that the data input into the cipher will be the result of 
+an XOR between the previous result, and the upcoming data. This is 
+then put into an XOR with the next plaintext, which is then encrypted 
+in the cipher. For reference, see image \ref{img:CBCmode} in 
+appendix \ref{app:fig}. \citep[pp. 109--111]{Stinson:2006}
 
 \emph{CTR} stands for \emph{counter}, and refers to the way the IV is 
 generated. The counter outputs a value, which is encoded with the key. 
-The output is then run in an XOR together with the plaintext, producing 
-the ciphertext. The counter is then incremented and the procedure is 
-iterated \citep[p. 111]{Stinson:2006}.
+The encoded output is sent to an XOR together with the plaintext, 
+producing the ciphertext. The counter is incremented and the procedure 
+is iterated \citep[p. 111]{Stinson:2006}.
 
 \subsection{Stream cipher} \label{sec:StreamCipher}
-Stream ciphers work on a stream of data (as implied by the name). They 
-usually consist of some kind of a keystream generator which performs a 
-modulo 2 addition with the data \cite[pp. 67]{Simmons:1992}. An 
-effective implementation of the stream cipher is to use a linear 
-feedback shift-register which uses the current internal state (key) to 
-produce the next state by a simple XOR-addition between two or more of 
-the bits in the state. This is mainly used because of how easy it is to 
-construct in hardware \citep{LFSR:2008}.
+Stream ciphers work on streams of data. They usually consist of a 
+keystream generator which performs an XOR with the data 
+\cite[pp. 67]{Simmons:1992}. An effective implementation of the stream 
+cipher is to use a linear feedback shift-register which uses the 
+current internal state (key) to produce the next state by a simple 
+XOR-addition between two or more of the bits in the state. This is 
+mainly used because of how easy it is to construct in hardware 
+\citep{LFSR:2008}.
 
 \subsection{Decryption}
 Decryption is often performed by reversing the encryption. You need to 
@@ -306,41 +309,42 @@ here for simplicity. \Warning[Source]{feels like a given, but still}
 
 \section{Confusion and Diffusion}\label{ch:ConfDiff}
 Two properties that are needed to ensure that a cipher provides 
-security are confusion and diffusion \citep{Shannon:1949}. Note that a 
-cipher is not secure just because these two properties are obtained.
-
+security are confusion and diffusion \citep{Shannon:1949}. 
 \emph{Confusion} refers to making the relationship between ciphertext 
 and key as complex as possible. \emph{Diffusion} refers to replacing 
 and shuffling the data, to make it impossible to analyze data 
 statistically. This is usually done by performing substitutions and 
 permutations in a simple pattern multiple times. This can easily be 
 done by using an SP-network (S-box / P-box network) 
-\citep[pp. 74--79]{Stinson:2006}. The very first, as well as last step, 
-of SP-Networks is usually an XOR between the subkey and the data. This 
-is called \emph{whitening}, and is according to 
+\citep[pp. 74--79]{Stinson:2006}. The very first, as well as the last 
+step, of SP-Networks is usually an XOR between the subkey and the data. 
+This is called \emph{whitening}, and is according to 
 \citet[p. 75]{Stinson:2006} regarded as a very effective way to prevent 
 encryption/decryption without a known key. The goal of this is to make 
 it hard to find the key, even though one has access to multiple 
 plaintext/ciphertext pairs produced with the same key 
 \citep{Shannon:1949}.
 
-\subsection{S-boxes}
+However, a cipher is not guaranteed to be secure just because it 
+provides these two properties.
+
+\subsection{S-boxes and P-boxes}
 The S-box is one of the basic components that is used when creating 
-ciphers. An S-box takes a number of input bits and creates a number of 
-output bits in a non-linear fashion \citep[pp. 74--75]{Stinson:2006}. 
-They can effectively be implemented as lookup tables. Each input has to 
-correspond to a unique output, to make sure that the input can be 
-recreated in the descrambler.
+ciphers. An S-box takes a number of input bits and creates an equal 
+number of output bits. The way they are generated is non-linear. 
+Implementing an S-box can effectively be done using lookup tables. 
+Each input has to correspond to a unique output, to make sure that the 
+functionality of the S-Box can be uniquely reversed. If it can not be 
+reversed, descrambling will be impossible. 
+\citep[pp. 74--75]{Stinson:2006}
 
 % CONFUSION OR DIFFUSION?
-
-\subsection{P-Boxes}
 The second basic component used in cryptography is the P-box. A P-box 
-shuffles / rearranges the order of given bits. This can be viewed in 
-the SP-network in figure \ref{img:SPNetwork}, where the P-box is 
-represented by the dotted rectangle in the middle.
+shuffles and thereby rearranges the order of given bits. This can be 
+viewed in the SP-network in figure \ref{img:SPNetwork}, where the P-box 
+is represented by the dotted rectangle in the middle.
 
-\begin{figure}
+\begin{figure}[h!]
   \begin{center}
     \includegraphics[width=0.5\textwidth]{SPnetwork}
     \caption{SP-Network}
