@@ -254,8 +254,7 @@ complexity of the circuit if FFs were to be added.
 The decision whether to reduce the critical path, or not, is a hard 
 decision due to the vast amount of hardware that needs to be added to
 increase the frequency.
-
-\subsection{HARDUNÅGOTMERDUVILLFÖRBÄTTRA?}
+%% \subsection{HARDUNÅGOTMERDUVILLFÖRBÄTTRA?}
 
 \section{Implementation}
 My design is very hierarchical. The top layer is an aes128 block in 
@@ -326,47 +325,50 @@ correct rcon value from a precalculated vector, as well as inputs it
 into an xor together with the input.
 
 \subsection{Round entity}
-The round-entity (Figure \ref{block:round}) consists of four entities. Subbytes, 
-shiftrows, mixcolumns and addroundkey. Addroundkey is a somewhat special XOR. 
-Subbytes is an Rijndael Sbox, which takes an input 16-byte state, substitutes 
-it, and outputs another 16-byte state. Shiftrows transposes the rows of the 
-second, third and fourth row of the state. Last, but not least, is the 
-mixcolumns entity. It consists of 16 mulblock entities. The input state of 
-mixcolumns is split into columns, and each column is sent to a mulblock entity, 
-which multiplies the inputs with 1, 2 or 3, then performs a bitwise XOR on them, 
-outputting the result of the XOR. The function of the mixcolumns block is a 
-rather complex matrix multiplication.
+The round-entity (Figure \ref{block:round}) consists of four entities. 
+Subbytes, shiftrows, mixcolumns and addroundkey. Addroundkey is a 
+somewhat special XOR. Subbytes is an Rijndael Sbox, which takes an 
+input 16-byte state, substitutes it, and outputs another 16-byte state. 
+Shiftrows transposes the rows of the second, third and fourth row of 
+the state. Last, but not least, is the mixcolumns entity. It consists 
+of 16 mulblock entities. The input state of mixcolumns is split into 
+columns, and each column is sent to a mulblock entity, which multiplies 
+the inputs with 1, 2 or 3, then performs a bitwise XOR on them, 
+outputting the result of the XOR. The function of the mixcolumns block 
+is a rather complex matrix multiplication.
 
 \subsubsection{Addroundkey entity}
 Addroundkey is an entity which takes different inputs depending on 
-what round we are currently dealing with. On the first round, addroundkey takes 
-the input to the round entity. On the last round, it takes the output from the 
-subbytes entity. The input to addroundkey is the output from mixcolumns the rest 
-of the time.
+what round we are currently dealing with. On the first round, 
+addroundkey takes the input to the round entity. On the last round, it 
+takes the output from the subbytes entity. The input to addroundkey is 
+the output from mixcolumns the rest of the time.
 
 \subsubsection{The mulblock entity}
-The mulblock entity consists of one mul3 entity and one mul2 entity, which 
-performs a special kind of hardware multiplication of 3, and 2, on the input. It 
-also takes two inputs which it leaves alone. The four results are then XOR:ed 
-with eachother, and returned to the mixcolumns entity. The result is then input 
-into the correct index in the matrix. 
+The mulblock entity consists of one mul3 entity and one mul2 entity, 
+which performs a special kind of hardware multiplication of 3, and 2, 
+on the input. It also takes two inputs which it leaves alone. The four 
+results are then XOR:ed with eachother, and returned to the mixcolumns 
+entity. The result is then input into the correct index in the matrix. 
 
-Mul3 means multiplication with 3, and mul2 means multiplication with 2. A 
-multiplication with 2 is a left-shift, followed by an XOR with the fix value 0x1B
-if the shifted value exceeds 0xFF. A multiplication with 3 is the same as a 
-multiplication with 2, followed by an XOR with the input value.
+Mul3 means multiplication with 3, and mul2 means multiplication with 2. 
+A multiplication with 2 is a left-shift, followed by an XOR with the 
+fix value 0x1B if the shifted value exceeds 0xFF. A multiplication with 
+3 is the same as a multiplication with 2, followed by an XOR with the 
+input value.
 
 \section{Tests}
-All of the entities in the design have been simulated and evaluated seperately 
-before being merged and tested together, to make sure that they had the desired 
-functionality both seperately and when combined together. The simulations for the
-seperate blocks are trivial, and therefore not included in the report.
+All of the entities in the design have been simulated and evaluated 
+seperately before being merged and tested together, to make sure that 
+they had the desired functionality both seperately and when combined 
+together. The simulations for the seperate blocks are trivial, and 
+therefore not included in the report.
 
-Figure \ref{test:1} through \ref{test:3} are tests performed on the complete 
-aes-128 block, before CBC-mode. In the figures, in\_key is the input key to be 
-extended and used, and datapacket is one packet from a TS. Test vector 1 and 2 
-are taken from \citep{AES:2001}, while test vector 3 is generated using a 
-webpage.
+Figure \ref{test:1} through \ref{test:3} are tests performed on the 
+complete aes-128 block, before CBC-mode. In the figures, in\_key is the 
+input key to be extended and used, and datapacket is one packet from a 
+TS. Test vector 1 and 2 are taken from \citep{AES:2001}, while test 
+vector 3 is generated using a webpage.
 
 \emph{Test vector 1 (Figure \ref{test:1})}\\
 Input key: 2b 7e 15 16 28 ae d2 a6 ab f7 15 88 09 cf 4f 3c\\
@@ -402,7 +404,34 @@ Ciphertext: bf 99 1f aa 8b 0f e6 48 36 46 a0 2d 33 9e de a5
 \end{figure}
 
 \section{Discussion}
-Vad var bra och dåligt med metoden?
+The main reason for choosing a bottoms-up methodology, was since the 
+functionality of the smaller blocks were very basic, but the timing was 
+rather complex. In addition to the fact that there were no concrete 
+guidlines, performing the work on the smaller entities, and then 
+implementing the higher ones minimized the probability of performing 
+tasks that were to be discarded in later stages of the implementation.
 
 \section{Conclusions}
-Vad har jag kommit fram till?
+One of the first things I learned during this thesis was that industrial
+secrecy can put a quick halt to projects. A license had to be written 
+and approved by ETSI before WISI Norden was allowed information about 
+the specifications of one of the algorithms that I was supposed to 
+analyze. Due to restrictions, this could not be done, meaning that 
+this specific analyzis came to a halt before it even started. This 
+led to the comparison between a software- and hardware-friendly 
+algorithm becoming impossible to do. 
+
+While WISI Norden and ETSI were discussing the license, I tried to find 
+out specifics about the CSA3 and CISSA algorithm, since those were the 
+ones that I was to analyze. From the little information available about 
+the CSA3, only the names of the two ciphers were possible to find. 
+Since one of the two ciphers in the CSA3 algorithm corresponded to one 
+of the ciphers in the CISSA algorithm, I decided to look into this 
+cipher as much as possible. This was the AES-128 cipher.
+
+Both the key generation, and the functionality of the entities in 
+AES-128 algorithm could be found in litterature, since the AES 
+encryption is a public algorithm. From what I could find out about 
+the CISSA algorithm, through an official ETSI journal, it seemed to 
+just use the AES-128 algorithm, but in a certain mode, with a specific 
+Initialization Vector. This 

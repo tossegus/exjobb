@@ -9,10 +9,9 @@
 \contentsline {part}{I\hspace {1em}Background}{1}{part.1}
 \contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.1}
 \contentsline {section}{\numberline {1.1}Background}{3}{section.1.1}
-\contentsline {section}{\numberline {1.2}Problem specification}{3}{section.1.2}
-\contentsline {section}{\numberline {1.3}Fr\IeC {\r a}gest\IeC {\"a}llning}{4}{section.1.3}
-\contentsline {section}{\numberline {1.4}Constraints}{4}{section.1.4}
-\contentsline {section}{\numberline {1.5}Methodology}{4}{section.1.5}
+\contentsline {section}{\numberline {1.2}Problem specification}{4}{section.1.2}
+\contentsline {section}{\numberline {1.3}Constraints}{4}{section.1.3}
+\contentsline {section}{\numberline {1.4}Methodology}{4}{section.1.4}
 \contentsline {part}{II\hspace {1em}Theory}{7}{part.2}
 \contentsline {chapter}{\numberline {2}Digital Video Broadcasting (DVB)}{9}{chapter.2}
 \contentsline {section}{\numberline {2.1}Head-end}{9}{section.2.1}
@@ -48,8 +47,8 @@
 \contentsline {section}{\numberline {4.2}Layout of the CSA}{24}{section.4.2}
 \contentsline {section}{\numberline {4.3}Security}{24}{section.4.3}
 \contentsline {subsection}{\numberline {4.3.1}Breaking the CSA}{24}{subsection.4.3.1}
-\contentsline {subsubsection}{Brute force}{24}{subsection.4.3.1}
-\contentsline {subsubsection}{Known plaintext attack}{25}{figure.caption.9}
+\contentsline {subsubsection}{Brute force}{25}{subsection.4.3.1}
+\contentsline {subsubsection}{Known plaintext attack}{26}{figure.caption.9}
 \contentsline {chapter}{\numberline {5}CISSA and CSA3}{27}{chapter.5}
 \contentsline {section}{\numberline {5.1}CISSA}{27}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}Software friendly}{28}{subsection.5.1.1}
@@ -81,7 +80,6 @@
 \contentsline {section}{\numberline {7.3}Further development}{41}{section.7.3}
 \contentsline {subsection}{\numberline {7.3.1}Rijndael's S-Box}{41}{subsection.7.3.1}
 \contentsline {subsection}{\numberline {7.3.2}Critical Path}{41}{subsection.7.3.2}
-\contentsline {subsection}{\numberline {7.3.3}HARDUN\IeC {\r A}GOTMERDUVILLF\IeC {\"O}RB\IeC {\"A}TTRA?}{42}{subsection.7.3.3}
 \contentsline {section}{\numberline {7.4}Implementation}{42}{section.7.4}
 \contentsline {subsection}{\numberline {7.4.1}Manager entity}{42}{subsection.7.4.1}
 \contentsline {subsection}{\numberline {7.4.2}CBC entity}{42}{subsection.7.4.2}

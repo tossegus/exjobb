@@ -3,28 +3,29 @@ The Common Scrambling Algorithm (CSA) is currently the most commonly
 used encryption algorithm for encryption of video-streams, in the DVB 
 context. The CSA uses a combination of a block cipher, taking an input 
 of a 64-bit block, and a stream cipher. Both of the ciphers use the 
-same key, so that the entire system uses the same key 
-\citep[pp. 271--272]{WeiLi:2007}. This means that the complete 
-algorithm would break if the key would be recovered. Using the same key 
-does on the other hand allow us to easily change the key at regular 
-intervals. 
+same key, which means that the entire system uses the same key. This 
+means that the complete algorithm would break if the key would be 
+recovered, as long as the person recovering the key knows what the 
+decryption algorithm looks like. Using the same key does on the other 
+hand allow us to easily change the key at regular intervals. 
+\citep[pp. 271--272]{WeiLi:2007}
 
-CSA has been the official scrambling method for DVB since may 1994. CSA 
-was to be easily implemented in hardware and hard to implement in 
-software to make reverse-engineering of the algorithm difficult 
-\citep{DVBScene:2013}.
+CSA has been the official scrambling method for protecting DVB content 
+ since may 1994. CSA was to be easily implemented in hardware and hard 
+to implement in software to, among other reasons, make 
+reverse-engineering of the algorithm difficult \citep{DVBScene:2013}.
 
-
-There are two versions of the DVB-CSA, CSA1 and CSA2, where the
-key-length is the only difference between them. 
+There are two versions of the DVB-CSA, CSA1 and CSA2, where the 
+key-length is the only difference.
 \citep[p. 23]{DVBScene:2013}
 
 \section{Why do we need a new standard?}
-The DVB-CSA standard offers short-term protection (it assumes content 
-is viewed in real time and not stored). Due to the development of how 
-content is viewed during recent years, we now primarily need to be able 
-to distribute content across homes. This means that the focus needs to 
-be moved from securing delivery to securing content. \citep{Farncombe}
+The DVB-CSA standard offers short-term protection, while it assumes 
+content is viewed in real time and not stored. Due to the development 
+of how content has come to be consumed during recent years, we 
+primarily need to be able to distribute content across homes. As a 
+result of this, focus needs to be moved from securing the delivery of 
+content, to securing content. \citep{Farncombe}
 
 Another thing to bear in mind is the fact that more CPU-based units, 
 such as smart-phones, tablets and computers are used to access contents 
@@ -32,29 +33,32 @@ now more than ever. In order to allow for descrambling on CPU-based
 units, a software-friendly scrambling algorithm might be needed.
 
 \section{Layout of the CSA}
-The CSA consists a block cipher and a stream cipher connected in 
-sequence \citep[p. 271]{WeiLi:2007}. The block cipher reads 64-bit 
-blocks of data, which is then run in Cipher Block Chaining-mode. The 
-block cipher processes these blocks of data in 56 rounds. The output of 
-this is sent to the stream cipher where additional encoding is 
+The CSA consists of a block cipher and a stream cipher which are 
+connected in sequence \citep[p. 271]{WeiLi:2007}. The block cipher 
+reads blocks of data, each consisting of 64-bits, which are run in 
+CBC-mode (see section \ref{sec:BlockCipher}). The block cipher 
+processes these blocks of data in 56 rounds. The output of the block 
+cipher is sent to the stream cipher, where additional encoding is 
 performed. The first block of data sent from the block cipher to the 
-stream cipher is used as an IV for the stream cipher, and is not 
-encoded in this phase. \citep{DVBAnalysis:2006}
+stream cipher is used as an IV for the stream cipher. Therefore it is 
+not encoded at this point, in the stream cipher. 
+\citep{DVBAnalysis:2006}
 
 \section{Security}
-One of the problems associated with CW distribution is the fact that CW 
-sharing has become rather common \citep{Farncombe}. This is possibly 
-due to the fact that the CW is sent in the clear between the smart card 
-and the STB, meaning that a user might grab the clear CW during 
-transmission and redistribute it over the internet. This has become a 
-financial problem for content distributors, since people stop paying 
-for the content which they are watching.
+One of the problems associated with control word distribution is that 
+control word sharing has become rather common \citep{Farncombe}. This 
+is possibly since the control words are sent in the clear between the 
+smart card and the STB, meaning that a user might grab the clear 
+control word during transmission and redistribute it over the internet. 
+This has become a financial problem for content distributors, since 
+people have stopped paying for the content that they are watching.
 
-One way of dealing with CW sharing is to decode the encrypted CW on the 
-CI system, and then encrypt it once again on the CI, before sending it 
-to the STB. The latter key is setup between the CI system and the STB  
-through a one time sychronization. This means that users are not able 
-to grab the clear CW and redistribute it. \citep[pp. 12--13]{HIS:2011}
+One way of dealing with control word sharing is to decode the encrypted 
+control word on the CI system, and then encrypt it once again on the CI,
+before sending it to the STB. The latter key is setup between the CI 
+system and the STB through a one time sychronization. This means that 
+users are not able to grab the clear control word and redistribute it. 
+\citep[pp. 12--13]{HIS:2011}
 
 Another security issue that you need to think of when designing the 
 hardware, to prevent content theft, is to make sure that no contacts 
@@ -68,25 +72,60 @@ through forced ways as well as CW sharing and hardware methods of
 stealing content.
 
 \subsection{Breaking the CSA}
-There are a few standard ways to try, when you want to break a cipher. 
-Those are the brute force-, known plaintext-, chosen plaintext- and 
-birthday attacks \citep[pp. 31-34]{Schneier:2003}. You choose what 
-method to use depending on what the cipher looks like. I will not 
-discuss all of them, but I will talk about the most relevant ones for 
-CSA here.
+There are a few standard ways to try to break ciphers. The most common 
+ones are the brute force-, known plaintext-, chosen plaintext- and 
+birthday attacks. You choose what method to use depending on what design
+of the cipher is. The most relevant ones, in the context of the CSA, 
+will be explained in the following subsections. 
+\citep[pp. 31-34]{Schneier:2003}
 
 \subsubsection{Brute force}
-The CSA uses a key consisting of 64-bits, which gives us 18.5 
-Quintillion possible keys (Quintillion is $10^{18}$). But byte 3 and 7 
-are often used as parity bytes in CA systems which leads to only 48 
-bits being used in the key \citep{Breaking:2012}. This can be seen in 
-figure \ref{fig:blockcipher}. 48 bits on other hand leads to $2^{48}$ 
-combinations, which corresponds to 281 trillion possible keys (Trillion 
-is $10^{12}$). Testing a million keys per second is about what is 
-possible through on a modern x86 processor using software methods
+The number of unique keys that can be extracted depends solely on the 
+length of the key. The number of combinations corresponds to the 
+largest number, plus one. The formula for the largest possible number 
+obtainable, when working on keys represented as binary numbers, where 
+the key-length is represented by the letter n, can be viewed in equation
+\ref{eq:num}. Note that the key-length is in bit size.
+
+\begin{equation} 
+  \text{Largest possible number} = 2^{n} - 1
+  \label{eq:num}
+\end{equation}
+
+Since the CSA uses keys consisting of 64-bits (8 bytes), this gives us 
+18.5 Quintillion ($10^{18}$) possible keys. However, \emph{byte} 3 and 
+7 are often used as parity bytes in CA systems, which leads to only 48 
+bits being used in the key.  This can be seen in figure 
+\ref{fig:blockcipher}. 48 bits on other hand would lead to $2^{48}$ 
+combinations, which corresponds to 281 Trillion ($10^{12}$) possible 
+unique keys. 
+
+Testing a million keys per second is about what is possible through a 
+modern x86 processor using software methods 
 \Warning[Todo]{How did I get this number?}, which means it would take 
 roughly 3258 days to force brake the keys, which translates into 
-roughly 8.8 years.
+roughly 8.8 years. The calculations are done in equation \ref{eq:keys} 
+through \ref{eq:days}. \citep{Breaking:2012}
+
+Number of unique keys, for a 48-bit key:
+\begin{equation}
+  2^{48} = 2,814749767*10^{14} \text{ keys}
+  \label{eq:keys}
+\end{equation}
+
+By dividing by the number of tested keys per second, we will get the 
+number of seconds it will take to test all keys:
+\begin{equation}
+  281*10^{12} / 10^{6} = 281,4749767*10^{6} \text{ seconds}
+  \label{eq:seconds}
+\end{equation}
+
+By substituting seconds, with day * (seconds/day), we will get the 
+number of keys per day instead:
+\begin{equation}
+  281,4749767*10^{6} / 86400 = 3257,8 \text{ days}
+  \label{eq:days}
+\end{equation}
 
 \begin{figure}[h!]
   \begin{center}
@@ -97,22 +136,33 @@ roughly 8.8 years.
 \end{figure}
 
 Moreover, systems need to change the key at least every 120 seconds 
-\citep{Simpson:2009} and most systems issues new keys every 10-120 
-second \citep{Wirt:2004}.
+\citep{Simpson:2009}. Changing the key every second minute would mean 
+that we would need to scan 140 trillion keys per minute, to cover the 
+most of the keys in the two minutes we have got before the key is 
+changed. However, most systems issues new keys between every 10th - 
+120th second, which means that for some systems we need to scan through 
+28.1 trillion keys per second \citep{Wirt:2004}.
 
 It is possible to use dedicated hardware and FPGA implementations to 
-speed this up, using hardware accelerations and other methods. But even 
-if we would be able to scan through 2.8 trillion keys per second, 
-precisely allowing us to be certain to find the key in two minutes, we 
-could just change the key more often. As such, the brute force method 
-of obtaining the key is not a feasible option.
+speed this up, through hardware accelerations and other methods. This 
+could make it possible to scan through 2.8 trillion keys per second, 
+just barely allowing us to be certain to find the key in two minutes. 
+Even so, we could just change the key more often than every second 
+minute. As such, the brute force method of is not a reasonable method 
+to obtain the key.
 
 \subsubsection{Known plaintext attack}\label{sec:kpa}
-The known plaintext attack is performed to find out the key, which can 
-then be used to decrypt following ciphertexts. To be able to try this, 
-a known plaintext-ciphertext pair is needed. You can try to find the keyif you have the both of them. This is done by identifying ciphertexts 
-known to correspond to zero-filled plaintexts when breaking CSA 
-\citep{Breaking:2012}. Then memories filled with precalculated keys are 
-used to find which key the current pair corresponds to. This method is 
-supposed to recover a key in roughly 7 seconds with a 97\% certainty 
-according to \citet{Breaking:2012}.
+The known plaintext attacks are performed to figure out the key. What 
+is interresting is that this kind of attack only is applicable for 
+symmetric ciphers. That means that we can not use the known plaintext 
+attack to retrieve the secret key during public-key encryption 
+(section \ref{ch:public}). The key can then be used to decrypt 
+following ciphertexts. To perform this kind of attack, a known 
+plaintext-ciphertext pair is needed. You can try to find the key if 
+you have the both of them. This is done by identifying ciphertexts 
+known to correspond to zero-filled plaintexts, when trying to break the 
+CSA \citep{Breaking:2012}. Memories are then filled with precalculated 
+keys, which are used to find which key the current plaintext-ciphertext 
+pair corresponds to. This method is supposed to recover a key in 
+roughly 7 seconds with a 97\% certainty according to 
+\citet{Breaking:2012}.

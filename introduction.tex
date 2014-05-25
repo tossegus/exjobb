@@ -1,70 +1,67 @@
 \chapter{Introduction}
-Den här rapporten baseras på ett examensarbete utfört på WISI NORDEN 
-AB. Examensarbetet handlade om utvärdering och implementering av 
-potentiella scrambling metoder som ersättare åt DVB-CSA och tog plats 
-under vårterminen 2014.
+WISI Norden AB, previously A2B Electronics, is a Swedish company 
+founded in 1997. The company is a developer of headend cable-TV 
+distribution systems. WISI Norden develops and designs both hardware and
+software, with the purpose of providing Digital TV solutions. 
 
-Vad ska stå här??
+The purpose of this thesis has been to find a replacement to the 
+currently implemented scrambler, located in the head-end solutions. The 
+previous scrambler needed to be replaced, since it was designed in 
+1994 to last for ten years. The scrambler is used to render the 
+digital television streams unreadable if the user does not subscribe to 
+the encoded channels.
+
+The task was to evaluate and analyze a few potential scrambling 
+algorithms, and then choose which was the most suitable to replace the 
+currently implemented algorithm in WISI Norden's devices.
 
 \section{Background}
 The formerly used \emph{common scrambling algorithm} (CSA) has due to 
 recent progresses in television broadcasting become obsolete. CSA was 
-designed to make software descrambling hard, if possible.
+designed to make software descrambling hard, if possible, while making 
+hardware descrambling fast. 
 
+There are two suggested replacements of CSA. The first one is named 
+after the CSA, and is called CSA3. There already exists an algorithm 
+called CSA2 , which is basically the same as CSA, just with a different 
+key-length. The second algorithm is the software-friendly descrambling 
+algorithm CISSA. Both of them are based on the public Advanced 
+Encryption Standard - 128 (commonly known as the AES-128). There are 
+three versions of the AES, with varying numbers. The number depicts 
+what key-length the AES uses.
 
-
-There are two suggested replacements of CSA. Those are the software-
-friendly CISSA and the hardware-friendly CSA3. Both of them are based 
-on the AES-128 algorithm.
-
-Varför gjordes exjobbet?
-
-%UTVECKLA DET HÄR. JAG MINNS INTE EXAKT VAD ANLEDNINGEN VAR. 
-%LÄS IGENOM LANTTOS MAIL.
+WISI Norden asked me to evaluate the replacement algorithms, even 
+though the CSA is still used in the DVB world. This was done to make 
+sure that there was an alternative to the CSA, when other companies 
+would start to switch scrambling methods. WISI Norden has also had some 
+requests to implement other scrambling methods from clients.
 
 \section{Problem specification}
-The task was to analyze what possible replacements existed for the 
-common scrambling algorithm, and which one would be the most suitable 
-replacement. 
-After choosing an algorithm, I was to implement the chosen algorithm.
+The task was to analyze the possible replacements for the common 
+scrambling algorithm, and decide which one was the most suitable 
+replacement. After choosing an algorithm, that algorithm was to be 
+implemented from scratch, making decisions to minimize the hardware 
+usage while achieving a suitable frequency. The decisions made were to 
+be motivated either through simulations or reference litterature.
 
 There were two proposed replacements to be compared and analyzed 
 to find what made one of them software-friendly and the other one 
-hardware-friendly.
-
-Vad var uppgiften. Frågor att besvara.
-
-%ÄR DET HÄR KOPPLAT TILL NAMNET JAG HAR SKRIVIT PÅ MIN RAPPORT?
-
-\section{Frågeställning}
-Kan sammanbindas med problemformuleringen.
-
-JAG FÖRSTÅR INTE VAD DET HÄR ÄR.
+hardware-friendly. 
 
 \section{Constraints}
-The thesis has been limited to implementing the chosen scrambling 
-algorithm. The implementation was be optimized towards hardware usage, 
-while achieving the desired frequency used in the rest of the 
-Field-Programmable Gate Array (FPGA).
+The thesis has been limited to implement the scrambing algorithm chosen 
+in consent between me and the supervisor at WISI Norden. The 
+implementation should be optimized towards hardware usage, while 
+achieving a suitable frequency, preferably the one used in the rest of 
+the Field-Programmable Gate Array (FPGA).
 
-
-This limitation is very diffuse, since there are many 
-ways of increasing the speed, while the different ways require more or 
-less hardware.
-
-
-While the entire circuit can be made as a combinatorial circuit, it 
-will most likely fill up the entire FPGA.
-
-Hur har exjobbet begränsats? Det har väl knappt funnits begränsningar?
-
-HÄR FÅR DU UTVECKLA LITE. ÄR DET BRA ELLER DÅLIGT ATT HA MED DET HÄR?? 
-VAD ÄR DE FAKTISKA BEGRÄNSNINGARNA?
+%% While the entire circuit can be made as a combinatorial circuit, it 
+%% will most likely fill up the entire FPGA.
 
 \section{Methodology}
 The project was split into a set of tasks, to be performed in the order 
 written below. Performing the tasks in this order was done to decrease 
-the difficulty of the work.
+the complexity of the seperate tasks.
 
 \begin{itemize}
 \item Litterature study
@@ -86,8 +83,8 @@ the system. Since I already knew that they functioned properly, due to
 low level testing, it was easier to merge them with other entities, to 
 build the system bottom-up. 
 
-Hur har exjobbet genomförts? Det här behöver skrivas om och förbättras. 
-Det är ju hur jag jobbat, men jag vet inte hur vettigt det jag skrev 
-var.
+%% Hur har exjobbet genomförts? Det här behöver skrivas om och förbättras. 
+%% Det är ju hur jag jobbat, men jag vet inte hur vettigt det jag skrev 
+%% var.
 
 %JAG HAR INGEN ANING.
