@@ -1,6 +1,6 @@
 \chapter{Result}
-The focus of my implementation has been to minimize the amount of 
-hardware usage, while trying to meet the timing constraints provided 
+The focus of this thesis has been to minimize the amount of hardware 
+usage, while trying to meet the timing constraints provided 
 from the rest of the circuit. The clock frequency used on the FPGA has 
 been 100 MHz. A throughput in the scale of Gbits/s is sufficient for the
 current design.
@@ -14,11 +14,11 @@ sent, which is very seldom. The scrambler then deals with 16 bytes of
 data on 13 clock pulses, but outputs 1 byte of data per clock cycle. 
 This is done so that one byte of data from the scrambled package is 
 read into a register on every clock pulse. When four bytes are collected
-the 32-bit output is sent out. I work with 32-bits, since the data-bus 
-is a 32-bit bus.
+the 32-bit output is sent out. 32-bits were processed at a time, since 
+the data-bus is a 32-bit bus.
 
 \section{Problems}
-The main problems that I encoutered were:
+The main problems that were encoutered were:
 
 \begin{itemize}
 \item Not possible to get the license for CSA3
@@ -30,41 +30,41 @@ The main problems that I encoutered were:
 \item Latches
 \end{itemize}
 
-When I first started writing this Thesis, the thought was that I was to 
-implement the CSA3 algorithm. Due to problems with licensing, and the 
-fact that AES-128 in CBC-mode seemed like a better idea led to a rework 
-of the planning.
+When the Thesis was first started, the idea was that the CSA3 algorithm 
+was to be implemented. However, licensing problems, and the 
+fact that AES-128 in CBC-mode seemed like a better idea, led to a 
+rework of the project.
 
-Most of these problems are, in my mind, self-explanatory. The one that 
-I will discuss here is my problem with merging. This problem occured 
-due to the fact that I made a bottoms-up design, instead of the more 
-common top-down design. I started the project by implementing small 
-entities, that were to be used in higher hierarchies. Doing this caused 
-some problems when merging entities into higher level blocks, since 
-some signals, which I had not thought about, needed to be produced. 
-This was not a huge problem, and only occurred on a few instances, but 
-were rather troublesome at those times.
+Most of these problems are self-explanatory. The one that 
+will be discussed here is the merging problem. This problem occured 
+due to the fact that this design was a bottoms-up design, instead of 
+the more common top-down design. This project was done by implementing 
+low level entities first, that were to be used in higher hierarchies. 
+Doing this caused some problems when merging entities into higher level 
+blocks, since some signals, needed to be produced. This was not a huge 
+problem, and only occurred on a few instances, but were rather 
+troublesome at those times.
 
-The pro of my method of working has been that I have been able to get 
-results quickly. The con is that a large portion of the time has been 
+The pro of this method of working has been that it produced results 
+quickly. The con is that a large portion of the time has been 
 spent on going back to entities that were already functional, and 
 reworking them by adding signals, and finding the right timing 
 conditions to make sure that they provided nescessary information for 
 entities higher up in the hierarchy.
 
-Since I tried to optimize this implementation to just meet the demands 
-on speed, while trying to minimize the amount of hardware needed, I 
-introduced timing into a few circuits that could have otherwise been 
-completely combinatorial. This has, as expected, introduced quite a 
-bunch of timing-issues. I dare say that all of them are gone now, but 
-it is quite hard to know without testing the circuit more extensively.
+Since the plan was to optimize this implementation to just meet the 
+demands on speed, while trying to minimize the amount of hardware 
+needed, timing was introduced into a few circuits that could have 
+otherwise been completely combinatorial. This has, as expected, 
+introduced quite a bunch of timing-issues. All of them seem to be gone 
+now, but without more exhaustive testing, it is quite hard to know.
 
-When I first synthesized the circuit, towards the end of the 
-implementation, I found that the circuit synthesized a large amount of 
-latches. This made my circuit take up roughly 15\% of the FPGA, and use 
-11830 Flip-Flops (FFs). At this time, there were roughly 3000 latches. 
-When I managed to remove all of them, my entire circuit used up roughly 
-8\% of the FPGA, and used about 4500 FFs instead.
+When the circuit was first synthesized, towards the end of the 
+implementation, it was noted that the circuit synthesized a large 
+amount of latches. This made the circuit take up roughly 15\% of the 
+FPGA, and use 11830 Flip-Flops (FFs). At this time, there were roughly 
+3000 latches. When all of them were removed, the entire circuit 
+used up roughly 8\% of the FPGA, and used about 4500 FFs instead.
 
 This is the entire hardware usage, including the interface towards the 
 FPGA, which is one of the reasons why it might appear large, when 
@@ -91,7 +91,7 @@ REWRITE WO SHITE
 \subsubsection{First synthesis}
 The circuit used up 15\% of the FPGA, and had quite a large amount of 
 unnescessary latches and FFs included. It used 11830 FFs, and roughly 
-3000 latches. I redesigned the circuit to remove the latches and ran 
+3000 latches. The circuit was redesigned to remove the latches and ran 
 the second synthesis.
 
 \subsubsection{Second synthesis}
@@ -109,12 +109,11 @@ Comparators. It used up 176 8-bit registers, which were used by the
 expanded key.
 
 \subsubsection{Third synthesis}
-Before running this synthesis, I noticed that at one point the circuit 
-waited for the expanded key to become done before outputting it. While 
-this is a good idea, no problems were noticed I assigned the expanded 
-key while it was being updated. Therefore I managed to theoretically 
-cut down the hardware by 176 8-bit registers, which should corespond to 
-roughly 1408 D-type FFs. 
+Before running this synthesis, it was noticed that at one point the 
+circuit waited for the expanded key to become done before outputting 
+it. While this is a good idea, no problems were noticed as the expanded 
+keys was assigned values while it was being updated. Therefore a 
+theoretical cut down the hardware by 176 8-bit registers was possible. 
 
 The vector that was removed was a vector containing 11 * 16 bytes of 
 data, which corresponds to 176 * 8 bits of data. 176 times 8 is 1408, 
@@ -147,12 +146,12 @@ Slice Registers.
 The circuit still uses roughly 8\% of the hardware on the FPGA.
 
 \subsubsection{Fifth synthesis}
-When I got about to this point of synthesis and optimization I found 
-that two files were created during each synthesis. A Synthesis Report 
-as well as a Place and Route Report. The ones I have been taking a look 
-at this far have been the Synthesis Reports, and to make sure that 
-there are not any huge gaps in numbers between the reports, I will 
-continue to read them, and not the Place and Route Reports. Many of the 
+During the fifth synthesis, it was noted that two reports were made 
+during synthesis and optimization. Those were a Synthesis Report as 
+well as a Place and Route Report. The ones that have been examined 
+this far have been the Synthesis Reports, and to make sure that 
+there are not any huge gaps in numbers between the reports, they will 
+be the ones analyzed, and not the Place and Route Reports. Many of the 
 entities can not be mapped seperately, due to the amount of IOs on the 
 FPGA, compared to the number of IOs required by the modules.
 
@@ -216,20 +215,20 @@ where optimization might be performed. The usage can be viewed in Table
   \label{synt:fifth}
 \end{longtable}
 
-My plan was to try to reduce the critical path by inserting FFs in the 
+The plan was to try to reduce the critical path by inserting FFs in the 
 middle of it and then run another synthesis. This would have increased 
 the hardware by a lot of FFs, but also increased the maximum frequency. 
-This was hard to do due to timing issues, which is why I decided to 
-change the UCF instead of spending the time trying to decrease the 
-critical path, only to increase the amount of hardware.
+This was hard to do due to timing issues, which is why a decision was 
+made, to change the UCF instead of spending the time trying to 
+decrease the critical path, only to increase the amount of hardware.
 
-Running this synthesis let me know that you are not informed whether the
-desired frequency can be achieved or not, when you run the synthesis 
-using an UCF. Because of this, I once again tried to add the FFs to 
-shorten the cricical path. 
+Running the synthesis with an UCF made it clear that you are not 
+informed, from the synthesis, whether the desired frequency can be 
+achieved or not. Because of this, the FFs were once again inserted, in 
+an attempt to try to shorten the cricical path. 
 
 \subsubsection{Sixth synthesis}
-The final synthesis I ran on the circuit gave the following results:
+The final synthesis yielded the following results:
 
 \section{Further development}
 There are, as usual, an amount of optimization that could be performed 
@@ -238,11 +237,11 @@ deeper research into how to rewrite VHDL code to turn the registers in
 this implementation into RAMs, ROMs or LUTs.
 
 \subsection{Rijndael's S-Box}
-The Rijndael Sbox implemented in my design does not synthesize into a 
+The Rijndael Sbox implemented in this design does not synthesize into a 
 ROM, which it should be able to do. Other than a ROM, it should also be 
 able to be synthesized into a couple of LUT6.
-I have not been able to find out why my code is implemented into 
-registers instead of more efficient solutions, but it is. 
+It has not been possible to find out why the code was implemented into 
+registers instead of more efficient solutions.
 
 \subsection{Critical Path}
 To increase the maximum frequency of the circuit, the critical path 
@@ -257,12 +256,12 @@ increase the frequency.
 %% \subsection{HARDUNÅGOTMERDUVILLFÖRBÄTTRA?}
 
 \section{Implementation}
-My design is very hierarchical. The top layer is an aes128 block in 
+This design is very hierarchical. The top layer is an aes128 block in 
 CBC-mode. It takes an input TS-packet, selects data from it which it 
 scrambles, and then outputs the data in the form of a TS-packet once 
 again.
 
-The scrambler consists of two entities. An entity which I call the 
+The scrambler consists of two entities. An entity which is called the 
 cbc-entity, which deals with the scrambling of the received data. The 
 other entity is a data-manager. The manager deals with reading data 
 from the interface towards the rest of the FPGA as well as sending the 
@@ -278,7 +277,7 @@ the data bursts into a memory, from which it later reads, processes and
 sends the data to the CBC-entity. The data written to the FIFO is 
 written in packets of 32 bits, but are read 8 bits at the time. The 
 manager looks through the data packets to see if there is an adaptation 
-field or not, since that changes the way we handle the data. The 
+field or not, since that changes the way that data is handled. The 
 payload is written to the first set of registers as the data is found, 
 and then sent to the next set of registers. This is simply done to 
 allow the manager to deal with two sets of data in parallell. When the 
@@ -288,31 +287,31 @@ CBC-entity.
 \subsection{CBC entity}
 The CBC-entity (Figure \ref{block:cbc}) consists of three small 
 entities. An XOR, a multiplexer and a cipher-entity. The multiplexer is 
-needed since we want to input the first plaintext into the XOR together 
-with an IV. We want to use the output ciphertext instead of the IV for 
-the rest of the plaintexts contained within the same TS-packet. There 
-is only going to be one aes128 cipher in the CBC-entity, in order to 
-save hardware. It will be run in sequence instead of in parallell, even 
-though it might reduce the maximal speed of the circuit.
+needed since the first plaintext should be sent to the XOR together 
+with an IV. For the rest of the plaintexts contained within the same 
+TS packet, the output ciphertext should be used instead of the IV. 
+There is only going to be one aes128 cipher in the CBC-entity, in order 
+to save hardware. It will be run in sequence instead of in parallell, 
+even though it might reduce the maximal speed of the circuit.
 
 \subsection{Cipher entity}
 The aes-128 cipher-entity (Figure \ref{block:cipher}) consists of 4 
 components. The data2state entity, which transforms the array into a 
 matrix of data. A keyexpansion entity, which takes an input of a key, 
-and generates an extended key as an output. An entity, which I chose to 
-call rounds, which deals with the encryption of the 16 byte blocks. And 
-finally a state2data entity, which transforms the data-matrix into an 
-array once again. The cipher entity itself keeps track of timing mainly 
-between the keyexpansion and the round entity, and makes sure to 
+and generates an extended key as an output. An entity, which was named  
+rounds. That entity deals with the encryption of the 16 byte blocks. 
+And finally a state2data entity, which transforms the data-matrix into 
+an array once again. The cipher entity itself keeps track of timing 
+mainly between the keyexpansion and the round entity, and makes sure to 
 provide the round entity with the correct roundkey at the right time.
 
 \subsection{Keyexpansion entity}
 The keyexpansion-entity is divided into 3 keyblock entities. The first 
-keyblock entity decides what 4 bytes of the expanded key we want to 
-expand. The second keyblock entity contains the keycore, which is only 
-performed on every 4th set of 4 bytes, and a demux entity. The third 
-keyblock entity performs an xor and an incrementation of the internal 
-counter used as an index when accessing 4 byte blocks of data.
+keyblock entity decides what 4 bytes of the expanded key are to be 
+expanded. The second keyblock entity contains the keycore, which is 
+only performed on every 4th set of 4 bytes, and a demux entity. The 
+third keyblock entity performs an xor and an incrementation of the 
+internal counter used as an index when accessing 4 byte blocks of data.
 
 \subsubsection{Keycore entity}
 The keycore entity consists of four entities. Rotword, Sbox, Rcon and a 
@@ -339,7 +338,7 @@ is a rather complex matrix multiplication.
 
 \subsubsection{Addroundkey entity}
 Addroundkey is an entity which takes different inputs depending on 
-what round we are currently dealing with. On the first round, 
+what round is currently being dealt with. On the first round, 
 addroundkey takes the input to the round entity. On the last round, it 
 takes the output from the subbytes entity. The input to addroundkey is 
 the output from mixcolumns the rest of the time.
@@ -412,26 +411,26 @@ implementing the higher ones minimized the probability of performing
 tasks that were to be discarded in later stages of the implementation.
 
 \section{Conclusions}
-One of the first things I learned during this thesis was that industrial
+One of the first things noticed during this thesis was that industrial
 secrecy can put a quick halt to projects. A license had to be written 
 and approved by ETSI before WISI Norden was allowed information about 
-the specifications of one of the algorithms that I was supposed to 
-analyze. Due to restrictions, this could not be done, meaning that 
+the specifications of one of the algorithms that were supposed to be
+analyzed. Due to restrictions, this could not be done, meaning that 
 this specific analyzis came to a halt before it even started. This 
 led to the comparison between a software- and hardware-friendly 
 algorithm becoming impossible to do. 
 
-While WISI Norden and ETSI were discussing the license, I tried to find 
-out specifics about the CSA3 and CISSA algorithm, since those were the 
-ones that I was to analyze. From the little information available about 
+While WISI Norden and ETSI were discussing the license, specifics about 
+the CSA3 and CISSa algorithms were investigated, since those were the 
+ones to be analyzed. From the little information available about 
 the CSA3, only the names of the two ciphers were possible to find. 
 Since one of the two ciphers in the CSA3 algorithm corresponded to one 
-of the ciphers in the CISSA algorithm, I decided to look into this 
-cipher as much as possible. This was the AES-128 cipher.
+of the ciphers in the CISSA algorithm, this cipher was examined as much 
+as possible. This was the AES-128 cipher.
 
 Both the key generation, and the functionality of the entities in 
 AES-128 algorithm could be found in litterature, since the AES 
-encryption is a public algorithm. From what I could find out about 
+encryption is a public algorithm. From what could be found out about 
 the CISSA algorithm, through an official ETSI journal, it seemed to 
 just use the AES-128 algorithm, but in a certain mode, with a specific 
 Initialization Vector. This 

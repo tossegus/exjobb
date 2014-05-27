@@ -19,13 +19,13 @@ There are two versions of the DVB-CSA, CSA1 and CSA2, where the
 key-length is the only difference.
 \citep[p. 23]{DVBScene:2013}
 
-\section{Why do we need a new standard?}
+\section{The need for a new standard}
 The DVB-CSA standard offers short-term protection, while it assumes 
 content is viewed in real time and not stored. Due to the development 
-of how content has come to be consumed during recent years, we 
-primarily need to be able to distribute content across homes. As a 
-result of this, focus needs to be moved from securing the delivery of 
-content, to securing content. \citep{Farncombe}
+of how content has come to be consumed during recent years, the focus 
+has shifted to primarily being able to distribute content across homes. 
+As a result of this, functionality needs to be changed from securing 
+the delivery of content, to securing the content. \citep{Farncombe}
 
 Another thing to bear in mind is the fact that more CPU-based units, 
 such as smart-phones, tablets and computers are used to access contents 
@@ -67,9 +67,9 @@ due to the fact that people would be able to connect hardware to the
 board and download the material that way, if they were. 
 \Warning[Source]{Except from Patrik Lantto}
 
-We also need to be aware of people trying to break the algorithm 
-through forced ways as well as CW sharing and hardware methods of 
-stealing content.
+There also exists a need to be aware of people trying to break the 
+algorithm through forced ways, as well as CW sharing and hardware 
+methods of stealing content.
 
 \subsection{Breaking the CSA}
 There are a few standard ways to try to break ciphers. The most common 
@@ -113,15 +113,15 @@ Number of unique keys, for a 48-bit key:
   \label{eq:keys}
 \end{equation}
 
-By dividing by the number of tested keys per second, we will get the 
-number of seconds it will take to test all keys:
+By dividing by the number of tested keys per second, the number of 
+seconds to test all the keys will be found:
 \begin{equation}
   281*10^{12} / 10^{6} = 281,4749767*10^{6} \text{ seconds}
   \label{eq:seconds}
 \end{equation}
 
-By substituting seconds, with day * (seconds/day), we will get the 
-number of keys per day instead:
+By substituting seconds, with day * (seconds/day), the number of keys 
+per days is found insteal:
 \begin{equation}
   281,4749767*10^{6} / 86400 = 3257,8 \text{ days}
   \label{eq:days}
@@ -137,25 +137,25 @@ number of keys per day instead:
 
 Moreover, systems need to change the key at least every 120 seconds 
 \citep{Simpson:2009}. Changing the key every second minute would mean 
-that we would need to scan 140 trillion keys per minute, to cover the 
-most of the keys in the two minutes we have got before the key is 
+that 140 trillion keys would need to be scanned per minute, to cover 
+the most of the keys in the two minutes available before the key is 
 changed. However, most systems issues new keys between every 10th - 
-120th second, which means that for some systems we need to scan through 
-28.1 trillion keys per second \citep{Wirt:2004}.
+120th second, which means that for some systems 28.1 trillion keys need 
+to be scanned per second \citep{Wirt:2004}.
 
 It is possible to use dedicated hardware and FPGA implementations to 
 speed this up, through hardware accelerations and other methods. This 
 could make it possible to scan through 2.8 trillion keys per second, 
 just barely allowing us to be certain to find the key in two minutes. 
-Even so, we could just change the key more often than every second 
-minute. As such, the brute force method of is not a reasonable method 
-to obtain the key.
+Even so, the key could just be changed more frequenctly than every 
+second minute. As such, the brute force method of is not a reasonable 
+method to obtain the key.
 
 \subsubsection{Known plaintext attack}\label{sec:kpa}
 The known plaintext attacks are performed to figure out the key. What 
 is interresting is that this kind of attack only is applicable for 
-symmetric ciphers. That means that we can not use the known plaintext 
-attack to retrieve the secret key during public-key encryption 
+symmetric ciphers. That means that the known plaintext attack can not 
+be used to retrieve the secret key during public-key encryption 
 (section \ref{ch:public}). The key can then be used to decrypt 
 following ciphertexts. To perform this kind of attack, a known 
 plaintext-ciphertext pair is needed. You can try to find the key if 

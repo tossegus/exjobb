@@ -30,7 +30,7 @@ Encryption Standard - 128 (commonly known as the AES-128). There are
 three versions of the AES, with varying numbers. The number depicts 
 what key-length the AES uses.
 
-WISI Norden asked me to evaluate the replacement algorithms, even 
+WISI Norden wanted to evaluate the replacement algorithms, even 
 though the CSA is still used in the DVB world. This was done to make 
 sure that there was an alternative to the CSA, when other companies 
 would start to switch scrambling methods. WISI Norden has also had some 
@@ -50,7 +50,7 @@ hardware-friendly.
 
 \section{Constraints}
 The thesis has been limited to implement the scrambing algorithm chosen 
-in consent between me and the supervisor at WISI Norden. The 
+in consent between the author and the supervisor at WISI Norden. The 
 implementation should be optimized towards hardware usage, while 
 achieving a suitable frequency, preferably the one used in the rest of 
 the Field-Programmable Gate Array (FPGA).
@@ -71,17 +71,17 @@ the complexity of the seperate tasks.
 \item Optimization
 \end{itemize}
 
-I began the research by studying litterature, to find out what 
-cryptography was about. This provided some insight into what the 
-strenghts and weaknesses the algorithms actually were. This gave me 
-some depth, and I chose to start of with a cipher that was actually 
-used in both of the algorithms that I studied. Using the gathered 
-background information about how the algorithm worked made design 
-and testing of the entities rather easy. I initially designed the lower
-level entities, which allowed for easier testing of seperate parts of 
-the system. Since I already knew that they functioned properly, due to 
-low level testing, it was easier to merge them with other entities, to 
-build the system bottom-up. 
+To gain some knowledge about cryptography, a litterature study was 
+first conducted. This provided some insight into what the strenghts and 
+weaknesses the algorithms actually were. This provided some depth, and 
+a cipher that was used in both analyzed algorithms was chosen. Using 
+the gathered background information about how the algorithm worked made 
+design and testing of the entities rather easy. The lower level 
+entities were designed first, which allowed for easier testing of 
+seperate parts of the system. 
+Knowing that the functionality, of low level entities, was already 
+present allowed for easier merging of entities. This led to the system 
+being built bottoms-up.
 
 %% Hur har exjobbet genomförts? Det här behöver skrivas om och förbättras. 
 %% Det är ju hur jag jobbat, men jag vet inte hur vettigt det jag skrev 

@@ -31,7 +31,7 @@ to be encoded. The steps to be performed are, according to
 \item AddRoundKey - The state matrix is once again combined with 
   round-keys.
 \end{enumerate}
-\emph{In the final round we do everything except the MixColumns step}
+\emph{In the final round everything except the MixColumns step are done}
 \begin{enumerate}
 \item SubBytes
 \item ShiftRows
@@ -89,8 +89,8 @@ matrix (figure \ref{matrix:state} in appendix \ref{app:matrix})
 containing 4x4 bytes.
 
 \section{KeyExpansion}\label{sec:KeySch}
-To generate round keys from the cipher key, we use the Rijndael's key 
-schedule. This is done since AES requires a separate 128-bit (16-byte) 
+To generate round keys from the cipher key, the Rijndael's key schedule
+is used. This is done since AES requires a separate 128-bit (16-byte) 
 round key for each round, plus one extra key for the initialization 
 which means that the AES-128 requires 176 bytes, since AES-128 consists 
 of 10 rounds.
@@ -121,7 +121,7 @@ Rijndael's S-box takes an input byte which it transforms according to a
 LUT (Figure \ref{matrix:rijSbox} in appendix \ref{app:matrix}). Where 
 the most significant nibble is placed on the Y axis, and the least 
 significant nibble is set on the X axis. Given the input \emph{0x31}, 
-we would receive an output of \emph{0xC7} from the Rijndael's S-box.
+the output \emph{0xC7} would be received from the Rijndael's S-box.
 
 \subsection{Rcon} \label{ch:Rcon}
 The value input into the Rcon function depends on what round you are 
@@ -135,7 +135,7 @@ I illustrated the steps to be performed in the Rcon function, using a
 flowchart, which can be viewed in figure \ref{img:rcon} in appendix 
 \ref{app:fig}.
 
-If the input value is 0 or 1, we just return that value, otherwise the 
+If the input value is 0 or 1, the same value is returned, otherwise the 
 following steps are performed \citep{RijndaelKeySchedule}. This can 
 also be replaced by an S-box where you input your byte, and get another 
 back, since the input byte is just used as a counter that decides how 
@@ -153,9 +153,9 @@ many times you perform steps \ref{item:step1} through \ref{item:step3}
   \ref{item:step3}.
 \item Store the result of a bitwise XOR between c and 0x1B in c.
   \label{item:step2}
-\item The input value is decreased by one, and we go back to 
+\item Decrease the input value by one, then go back to  
   \ref{item:step1}.
   \label{item:step3}
-\item We set the output to c.
+\item The output is set to c.
   \label{item:exit_loop}
 \end{enumerate}
