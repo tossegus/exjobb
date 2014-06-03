@@ -7,15 +7,19 @@ current design.
 
 The implemented scrambler processes 16 bytes of data in 11 clock pulses 
 with a clock frequency of 94MHz, which would correspond 
-roughly to a throughput of 1.16 Gbits/s. The scrambler needs to first
-process the key, before being able to scramble data. A keyexpansion 
-takes roughly 45 clock pulses, and is only performed when a new key is 
-sent, which is very seldom. The scrambler then deals with 16 bytes of 
-data on 13 clock pulses, but outputs 1 byte of data per clock cycle. 
-This is done so that one byte of data from the scrambled package is 
-read into a register on every clock pulse. When four bytes are collected
-the 32-bit output is sent out. 32-bits were processed at a time, since 
-the data-bus is a 32-bit bus.
+roughly to a throughput of 1.16 Gbits/s. The reason why the design does 
+not meet the frequency of the rest of the circuit is due to the 
+critical path being too long. This is further discussed in section 
+\ref{sec:c_path}.
+The scrambler needs to process the key first, before being able to 
+scramble data. A keyexpansion takes roughly 45 clock pulses, and is 
+only performed when a new key is sent, which is very seldom. The 
+scrambler then deals with 16 bytes of data on 13 clock pulses, but 
+outputs 1 byte of data per clock cycle. This is done so that one byte 
+of data from the scrambled package is read into a register on every 
+clock pulse. When four bytes are collected the 32-bit output is sent 
+out. 32-bits are processed at a time, since the data-bus is a 32-bit 
+bus.
 
 \section{Problems}
 The main problems that were encoutered were:
@@ -27,13 +31,13 @@ The main problems that were encoutered were:
 \item Hard finding reliable test vectors
 \item Merging
 \item Timing
-\item Latches
+%\item Latches
 \end{itemize}
 
 When the Thesis was first started, the idea was that the CSA3 algorithm 
-was to be implemented. However, licensing problems, and the 
-fact that AES-128 in CBC-mode seemed like a better idea, led to a 
-rework of the project.
+was to be implemented. However, licensing problems, and the fact that 
+AES-128 in CBC-mode seemed like a better idea, led to a rework of the 
+project.
 
 Most of these problems are self-explanatory. The one that 
 will be discussed here is the merging problem. This problem occured 
@@ -59,20 +63,22 @@ otherwise been completely combinatorial. This has, as expected,
 introduced quite a bunch of timing-issues. All of them seem to be gone 
 now, but without more exhaustive testing, it is quite hard to know.
 
-When the circuit was first synthesized, towards the end of the 
-implementation, it was noted that the circuit synthesized a large 
-amount of latches. This made the circuit take up roughly 15\% of the 
-FPGA, and use 11830 Flip-Flops (FFs). At this time, there were roughly 
-3000 latches. When all of them were removed, the entire circuit 
-used up roughly 8\% of the FPGA, and used about 4500 FFs instead.
+%% When the circuit was first synthesized, towards the end of the 
+%% implementation, it was noted that the circuit synthesized a large 
+%% amount of latches. This made the circuit take up roughly 15\% of the 
+%% FPGA, and use 11830 Flip-Flops (FFs). At this time, there were roughly 
+%% 3000 latches. When all of them were removed, the entire circuit 
+%% used up roughly 8\% of the FPGA, and used about 4500 FFs instead. They 
+%% appeared in the design due to a
 
 This is the entire hardware usage, including the interface towards the 
 FPGA, which is one of the reasons why it might appear large, when 
 compared to other implementations.
 
 \section{Hardware}
-The top entity can be viewed in Figure \ref{b:scr}, and the rest of 
-the entities can be viewed in appendix \ref{app:blocks}.
+The top entity can be viewed in Figure \ref{b:scr}, and the rest of the 
+entities are placed near the explanation of the entities in the 
+following sections.
 
 \begin{figure}
   \includegraphics[width=\textwidth]{scrambler}
@@ -81,49 +87,52 @@ the entities can be viewed in appendix \ref{app:blocks}.
 \end{figure}
 
 \subsection{Hardware usage}
-REWRITE WO SHITE
-
-%% I have run five rounds of synthesis on my circuit. The first two ones 
-%% were performed on the entire scrambler, including the manager 
-%% (interface towards the rest of the FPGA), while the last synthesis were 
-%% performed on each block of the circuit seperately.
+The circuit that was first implemented has during the course of the 
+project been optimized, after synthesis have been run, to either 
+minimize hardware usage, or the speed of the circuit. A total of six 
+synthesises were run. A table displaying the differences of the results 
+can be viewed in figure \ref{table:synthesis}.
+The optimizations performed between the synthesizes are discussed in 
+this section.
 
 \subsubsection{First synthesis}
-The circuit used up 15\% of the FPGA, and had quite a large amount of 
-unnescessary latches and FFs included. It used 11830 FFs, and roughly 
-3000 latches. The circuit was redesigned to remove the latches and ran 
-the second synthesis.
+This was the initial synthesis performed on the FPGA. This did not hold 
+any interresting information, except indications about some minor 
+errors that could be found in the initial version of the code.
+%The circuit used up 15\% of the FPGA, and had quite a large amount of 
+%unnescessary latches and FFs included. It used 11830 FFs, and roughly 
+%3000 latches. The circuit was redesigned to remove the latches and ran 
+%the second synthesis.
 
 \subsubsection{Second synthesis}
-The circuit used up 8\% of the FPGA this time. The keyblock3 entity, as 
-well as keyblock1 entity seemed to use a lot of registers and 
-multiplexers, which could possibly be replaced by RAMs or LUTs.
+%The circuit used up 8\% of the FPGA this time. 
+What was noticed from the second synthesis was that the keyblock3 
+entity, as well as keyblock1 entity seemed to use a lot of registers 
+and multiplexers. It should be possible to replace them with RAMs or 
+LUTs.
 
-The maximum frequency obtained was 92MHz after this synthesis. This 
-was largely due to routing, which made up for 75\% of the minimum 
-period.
+The maximum frequency obtained was 92MHz after this synthesis, where a 
+lot of the minimum period was due to the routing of the circuit, which 
+made up for 75\% of the period.
 
-To be able to compare the third synthesis with this one, you need to 
-know that the keyexpansion entity used 1538 D-type FFs and 16 
-Comparators. It used up 176 8-bit registers, which were used by the 
-expanded key.
+%% To be able to compare the third synthesis with this one, you need to 
+%% know that the keyexpansion entity used 1538 D-type FFs and 16 
+%% Comparators. It used up 176 8-bit registers, which were used by the 
+%% expanded key.
+Before running the next synthesis, it was noticed that the circuit 
+waited for the expanded key to become completely filled before updating 
+the output at one point. The expanded key was stored in a vector 
+located in keyblock3 while it was updated. However, the expanded key 
+used by other entities was not updated until the entire expanded key 
+was filled, in keyblock3. Rewriting the code decreased the amount of 
+registers by 176 8-bit registers, which could be removed by adding an 
+enable signal. The enable signal tells the other entities when the 
+expanded key is usable.
 
+%% The entire circuit still used up roughly 8\% of the FPGA. The 
+%% keyexpansion entity used 130 D-type FFs and 16 Comparators this 
+%% time.
 \subsubsection{Third synthesis}
-Before running this synthesis, it was noticed that at one point the 
-circuit waited for the expanded key to become done before outputting 
-it. While this is a good idea, no problems were noticed as the expanded 
-keys was assigned values while it was being updated. Therefore a 
-theoretical cut down the hardware by 176 8-bit registers was possible. 
-
-The vector that was removed was a vector containing 11 * 16 bytes of 
-data, which corresponds to 176 * 8 bits of data. 176 times 8 is 1408, 
-which is the number of D-type FFs needed to store the value, which 
-also corresponds to 176 8-bit registers.
-
-The entire circuit still used up roughly 8\% of the FPGA. The 
-keyexpansion entity used 130 D-type FFs and 16 Comparators this 
-time. This corresponds to a decrease of 1408 D-type FFs.
-
 The maximum frequency obtained this time was 94MHz. The number of 
 Slice Registers went down from 4357 to 2945, and the percentage of 
 Slice Registers decreased from 3\% usage to 2\% usage.
@@ -135,15 +144,16 @@ be seen. It uses roughly 1302 multiplexers, which should be reducable.
 The next synthesis was made after the state2data module was rewritten, 
 to remove yet another signal. This should have decreased the design by 
 a 128-bit register. It was mostly done to try to allow for a synthesis 
-of the module, while also reducing hardware usage. This should decrease 
+of the module, while also reducing hardware usage. This would decrease 
 the number of D-type FFs by yet another 128. A comparison between 
-report 3 and 4 displays a decrease from 130 D-type FFs to 2 D-type FFs.
+report 3 and 4 displays a decrease from 130 D-type FFs to 2 D-type FFs, 
+which confirms that 128 FFs were removed.
 
 The maximum frequency obtained this time was 94MHz. The number of 
-Flip-Flops went from 2945 to 2817. This did not affect the number of 
+FFs went from 2945 to 2817. However, this did not affect the number of 
 Slice Registers.
 
-The circuit still uses roughly 8\% of the hardware on the FPGA.
+%The circuit still uses roughly 8\% of the hardware on the FPGA.
 
 \subsubsection{Fifth synthesis}
 During the fifth synthesis, it was noted that two reports were made 
@@ -218,17 +228,50 @@ where optimization might be performed. The usage can be viewed in Table
 The plan was to try to reduce the critical path by inserting FFs in the 
 middle of it and then run another synthesis. This would have increased 
 the hardware by a lot of FFs, but also increased the maximum frequency. 
-This was hard to do due to timing issues, which is why a decision was 
-made, to change the UCF instead of spending the time trying to 
+This was hard to do due to timing issues in the key generation. Adding 
+some signal delay after keyblock3 would have reduced the critical path, 
+but also changed a lot of timing constraints in the keygeneration 
+block FSM. Therefore a decision was made to change the \emph{User 
+Constraints File} (UCF) instead of spending the time trying to 
 decrease the critical path, only to increase the amount of hardware.
 
-Running the synthesis with an UCF made it clear that you are not 
-informed, from the synthesis, whether the desired frequency can be 
-achieved or not. Because of this, the FFs were once again inserted, in 
-an attempt to try to shorten the cricical path. 
+Running the synthesis with an UCF is supposed to make the synthesis 
+program optimize the layout of the circuit according to a number of 
+constraints provided by the user. The constraint made here, was to 
+reach the desired frequency of 100 MHz. However, no information about 
+whether that frequency could be reached or not was found in the reports.
 
 \subsubsection{Sixth synthesis}
-The final synthesis yielded the following results:
+The final place and route yielded the following results:
+\begin{verbatim}
+Number of Slice Registers: 2,805 out of 126,576    2%
+Number of Slice LUTs:      4,930 out of  63,288    7%
+\end{verbatim}
+
+There is a difference of one register between the fifth and sixth 
+synthesis reports. That register is most likely a residue after the 
+attempts to reduce the critical path, and can be disregarded.
+
+\subsubsection{Comparison of synthesis results}
+The most interresting numbers from the synthesizes are the number of 
+LUTs used, number of ROMs and number of FFs. However, only one ROM has 
+been implemented in this design, which was present in all synthesizes, 
+which is why it will not be included in the comparison.
+\begin{figure}[h!]
+  \begin{equation}
+    \begin{array}{l | l | l | l | l | l}
+      & Second & Third & Fourth & Fifth & Final \\ \hline
+      LUTs       & 5121   & 5167  & 5167   & 5167  & 5167  \\ \hline
+      Registers  & 4537   & 2945  & 2817   & 2817  & 2818  \\
+    \end{array}
+  \end{equation}
+  \caption{Synthesis results}
+  \label{table:synthesis}
+\end{figure}
+
+%Noteworthy is that the number of LUTs increases between the second and third synthesis, and does not decrease thereafter. The reason why this 
+%happens is possibly due to routing of signals, and 
+\Warning[Todo]{Why is this?}
 
 \section{Further development}
 There are, as usual, an amount of optimization that could be performed 
@@ -243,7 +286,7 @@ able to be synthesized into a couple of LUT6.
 It has not been possible to find out why the code was implemented into 
 registers instead of more efficient solutions.
 
-\subsection{Critical Path}
+\subsection{Critical Path}\label{sec:c_path}
 To increase the maximum frequency of the circuit, the critical path 
 needs to be decreased. This is done by adding FFs in the middle of the 
 critical path. This will be hard to solve, due to the complexity of the 
@@ -251,8 +294,11 @@ keyexpansion, and would increase the amount of hardware as well as the
 complexity of the circuit if FFs were to be added.
 
 The decision whether to reduce the critical path, or not, is a hard 
-decision due to the vast amount of hardware that needs to be added to
-increase the frequency.
+decision due to the amount of hardware that might need to be added to
+increase the frequency. However, since LUTs and FFs are located on 
+same slice, it is not sure wether the design would use more slices or 
+not.
+
 %% \subsection{HARDUNÅGOTMERDUVILLFÖRBÄTTRA?}
 
 \section{Implementation}
@@ -261,13 +307,21 @@ CBC-mode. It takes an input TS-packet, selects data from it which it
 scrambles, and then outputs the data in the form of a TS-packet once 
 again.
 
-The scrambler consists of two entities. An entity which is called the 
-cbc-entity, which deals with the scrambling of the received data. The 
-other entity is a data-manager. The manager deals with reading data 
-from the interface towards the rest of the FPGA as well as sending the 
-right data-bits to the CBC-entity. It also tells the CBC-entity how to 
-handle the data, since different things are to be done depending on if 
-the data is the first data packet sent, or not.
+The scrambler (Figure \ref{block:scrambler}) consists of two entities. 
+An entity which is called the cbc-entity, which deals with the 
+scrambling of the received data. The other entity is a data-manager. 
+The manager deals with reading data from the interface towards the rest 
+of the FPGA as well as sending the right data-bits to the CBC-entity. 
+It also tells the CBC-entity how to handle the data, since different 
+things are to be done depending on if the data is the first data packet 
+sent, or not.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.75\textwidth]{scrambler}
+  \caption{Scrambler-block}
+  \label{block:scrambler}
+\end{figure}
 
 \subsection{Manager entity}
 The manager (Figure \ref{block:manager}) consists of a FIFO, an FSM and 
@@ -284,6 +338,13 @@ allow the manager to deal with two sets of data in parallell. When the
 packet is ready to be sent, a flag is set and the data is sent to the 
 CBC-entity. 
 
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.75\textwidth]{manager}
+  \caption{Manager-block}
+  \label{block:manager}
+\end{figure}
+
 \subsection{CBC entity}
 The CBC-entity (Figure \ref{block:cbc}) consists of three small 
 entities. An XOR, a multiplexer and a cipher-entity. The multiplexer is 
@@ -294,34 +355,78 @@ There is only going to be one aes128 cipher in the CBC-entity, in order
 to save hardware. It will be run in sequence instead of in parallell, 
 even though it might reduce the maximal speed of the circuit.
 
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.75\textwidth]{cbc}
+  \caption{CBC-block}
+  \label{block:cbc}
+\end{figure}
+
 \subsection{Cipher entity}
 The aes-128 cipher-entity (Figure \ref{block:cipher}) consists of 4 
 components. The data2state entity, which transforms the array into a 
 matrix of data. A keyexpansion entity, which takes an input of a key, 
 and generates an extended key as an output. An entity, which was named  
-rounds. That entity deals with the encryption of the 16 byte blocks. 
+rounds, that deals with the encryption of the 16 byte data blocks. 
 And finally a state2data entity, which transforms the data-matrix into 
 an array once again. The cipher entity itself keeps track of timing 
-mainly between the keyexpansion and the round entity, and makes sure to 
-provide the round entity with the correct roundkey at the right time.
+mainly between the keyexpansion and the round entity. It uses itself of 
+an FSM to make sure that the round entity is provided with the correct 
+roundkey at the right time, and data is output when it is scrambled. 
+What can not be seen in figure \ref{block:cipher} is that the 
+keyexpansion entity also sends an enable signal, that tells the cipher 
+entity that the expanded key is complete.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.75\textwidth]{cipherblock}
+  \caption{Cipher-block}
+  \label{block:cipher}
+\end{figure}
 
 \subsection{Keyexpansion entity}
-The keyexpansion-entity is divided into 3 keyblock entities. The first 
-keyblock entity decides what 4 bytes of the expanded key are to be 
-expanded. The second keyblock entity contains the keycore, which is 
-only performed on every 4th set of 4 bytes, and a demux entity. The 
-third keyblock entity performs an xor and an incrementation of the 
-internal counter used as an index when accessing 4 byte blocks of data.
+The keyexpansion-entity (Figure \ref{block:keyexpansion}) is divided 
+into 3 keyblock entities. The first keyblock entity decides what 4 
+bytes of the expanded key are to be expanded. The second keyblock 
+entity (Figure \ref{block:keyblock2}) contains the keycore, which is 
+only performed on every 4th set of 4 bytes, and a demux entity. 
+The third keyblock entity performs an xor between either the first or 
+second keyblock depending on if the keycore was supposed to be run. It 
+also increments the internal counter, which is used as an index when 
+accessing and generating the 4 byte blocks of data.
+
+The FSM seen in figure \ref{block:keyexpansion} keeps track of when the 
+key generation is done, and and produces a lock signal at that time. 
+The lock signal is used by keyblock3 to produce the done signal, that 
+is passed to other entities. 
+The FSM also keeps track of when a new key is received, and forces a 
+reset of keyblock2 and keyblock3, since they are not entirely 
+combinatorial. The reset\_i signal is the force reset signal. 
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.75\textwidth]{keyexpansion2}
+  \caption{Keyexpansion-block}
+  \label{block:keyexpansion}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.75\textwidth]{keyblock2}
+  \caption{Keyblock2-block}
+  \label{block:keyblock2}
+\end{figure}
 
 \subsubsection{Keycore entity}
 The keycore entity consists of four entities. Rotword, Sbox, Rcon and a 
 counter. The counter is used to get the right data-byte from the Rcon 
 entity, and the index is only used in the keycore, and is thus best 
 suited to be placed inside the keycore entity. Rotword rotates the 
-bytes of the input one step to the left. Sbox replaces the input bytes 
-according to the Rijndael Sbox. The Rcon entity both collects the 
-correct rcon value from a precalculated vector, as well as inputs it 
-into an xor together with the input.
+bytes of the input one step to the left through a simple left shift. 
+Sbox replaces the input bytes according to the Rijndael Sbox, through 
+a LUT. The Rcon entity both collects the correct rcon value from a 
+precalculated vector, as well as inputs it into an xor together with 
+the input.
 
 \subsection{Round entity}
 The round-entity (Figure \ref{block:round}) consists of four entities. 
@@ -335,6 +440,13 @@ columns, and each column is sent to a mulblock entity, which multiplies
 the inputs with 1, 2 or 3, then performs a bitwise XOR on them, 
 outputting the result of the XOR. The function of the mixcolumns block 
 is a rather complex matrix multiplication.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.75\textwidth]{round}
+  \caption{Round-block}
+  \label{block:round}
+\end{figure}
 
 \subsubsection{Addroundkey entity}
 Addroundkey is an entity which takes different inputs depending on 
@@ -402,6 +514,58 @@ Ciphertext: bf 99 1f aa 8b 0f e6 48 36 46 a0 2d 33 9e de a5
   \label{test:3}
 \end{figure}
 
+\section{Comparison to other implementations}
+Since there exists more implementations of the AES-128 algorithm, an 
+analyzis between the implementations is interresting. To be noted is 
+that this report and implementation have been made in effort to 
+minimize the hardware usage, while achieving a suitable frequency.
+Since it is possible to achieve an entirely combinatorial AES128 
+scrambler, as well as pipelined version, the focus has been to try to 
+find an implementation as similar as this one as possible, to compare 
+results. 
+
+Note that this implementation has got a couple of entities, that are 
+usually not present in these kinds of designs, in order to allow 
+insertion of the implementation into the FPGA used by WISI.
+
+The design implemented in this thesis scrambles a block of 16 bytes 
+of data in 13 clock pulses. It uses 4930 LUTs, occupies 1727 slices and 
+can be run at a maximum frequency of 94 MHz. The circuit is implemented 
+on a Xilinx Spartan-6.
+
+This can be compared to the Fast AES XTS/CBC implementation (Helion) 
+made by Xilinx themselves. It uses 1041 slices and 4047 LUTs with a 
+maximum frequency of 130 MHz. \cite{Xilinx:AES} 
+
+The implementation by Xilinx uses custom FPGA optimization techniques 
+through hand crafted macros. A comparison between the two 
+implementations can be found in table \ref{fig:imp_diff}. When these 
+two implementations are compared, the most important difference is the 
+frequency at which the two circuits can be run. The amount of LUTs that 
+are used does in fact not tell a lot, since a LUT is said to be used
+even if just a small part is used in the circuit. Also, LUTs can spand 
+from anything between The same goes for slices. If only one LUT in a 
+slice is used, it still counts the slice as used. 
+%Considering the Xilinx version being implemented to optimize the LUT and slice usage, the data has to be seen critically.
+
+The percentage row in table \ref{fig:imp_diff} indicates how many more 
+percent LUTs and slices that are used in this implementation compared 
+to the Xilinx implementation. However, the frequency shows how much 
+higher the frequency of the Xilinx implementation is.
+
+\begin{table}[h!]
+  \centering
+  \begin{array}{| l | l | l | l |}
+    \hline
+    & Slices & LUTs & Frequency (MHz) \\ \hline
+    This & 1727 & 4930 & 94 \\ \hline
+    Xilinx & 1041 & 4047 & 130 \\ \hline
+    Percentage & 65\% & 21.8\% & 27.7\% \\ \hline
+  \end{array}
+  \caption{Comparison between implementations}
+  \label{fig:imp_diff}
+\end{table}
+
 \section{Discussion}
 The main reason for choosing a bottoms-up methodology, was since the 
 functionality of the smaller blocks were very basic, but the timing was 
@@ -433,4 +597,4 @@ AES-128 algorithm could be found in litterature, since the AES
 encryption is a public algorithm. From what could be found out about 
 the CISSA algorithm, through an official ETSI journal, it seemed to 
 just use the AES-128 algorithm, but in a certain mode, with a specific 
-Initialization Vector. This 
+Initialization Vector.

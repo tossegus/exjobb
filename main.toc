@@ -6,95 +6,93 @@
 \select@language {english}
 \select@language {english}
 \contentsline {chapter}{Notation}{v}{section*.2}
-\contentsline {part}{I\hspace {1em}Background}{1}{part.1}
-\contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.1}
-\contentsline {section}{\numberline {1.1}Background}{3}{section.1.1}
-\contentsline {section}{\numberline {1.2}Problem specification}{4}{section.1.2}
-\contentsline {section}{\numberline {1.3}Constraints}{4}{section.1.3}
-\contentsline {section}{\numberline {1.4}Methodology}{4}{section.1.4}
-\contentsline {part}{II\hspace {1em}Theory}{7}{part.2}
-\contentsline {chapter}{\numberline {2}Digital Video Broadcasting (DVB)}{9}{chapter.2}
-\contentsline {section}{\numberline {2.1}Head-end}{9}{section.2.1}
-\contentsline {section}{\numberline {2.2}Control word}{9}{section.2.2}
-\contentsline {section}{\numberline {2.3}Conditional Access System}{11}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Standards}{11}{subsection.2.3.1}
-\contentsline {section}{\numberline {2.4}DVB-SimulCrypt}{11}{section.2.4}
-\contentsline {section}{\numberline {2.5}Common Interface}{12}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}CI-Plus}{12}{subsection.2.5.1}
-\contentsline {section}{\numberline {2.6}Conditional Access Module}{13}{section.2.6}
-\contentsline {chapter}{\numberline {3}Cryptography}{15}{chapter.3}
-\contentsline {section}{\numberline {3.1}Why cryptography is needed}{15}{section.3.1}
-\contentsline {section}{\numberline {3.2}Scrambling and Encrypting}{16}{section.3.2}
-\contentsline {section}{\numberline {3.3}Data packets}{16}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}TS packets}{16}{subsection.3.3.1}
-\contentsline {subsubsection}{Header}{17}{figure.caption.6}
-\contentsline {subsubsection}{Adaptation field}{18}{table.3.1}
-\contentsline {subsubsection}{Encrypted and clear payload}{18}{table.3.1}
-\contentsline {subsection}{\numberline {3.3.2}PES packets}{18}{subsection.3.3.2}
-\contentsline {section}{\numberline {3.4}Encryption and Decryption}{18}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Symmetric-key encryption}{19}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Public-key encryption}{19}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Combination of encryption}{20}{subsection.3.4.3}
-\contentsline {section}{\numberline {3.5}Ciphers}{20}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Block cipher}{21}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Stream cipher}{21}{subsection.3.5.2}
-\contentsline {subsection}{\numberline {3.5.3}Decryption}{21}{subsection.3.5.3}
-\contentsline {section}{\numberline {3.6}Confusion and Diffusion}{22}{section.3.6}
-\contentsline {subsection}{\numberline {3.6.1}S-boxes and P-boxes}{22}{subsection.3.6.1}
-\contentsline {section}{\numberline {3.7}Secrecy}{23}{section.3.7}
-\contentsline {chapter}{\numberline {4}Common Scrambling Algorithm}{25}{chapter.4}
-\contentsline {section}{\numberline {4.1}The need for a new standard}{25}{section.4.1}
-\contentsline {section}{\numberline {4.2}Layout of the CSA}{26}{section.4.2}
-\contentsline {section}{\numberline {4.3}Security}{26}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Breaking the CSA}{26}{subsection.4.3.1}
-\contentsline {subsubsection}{Brute force}{27}{subsection.4.3.1}
-\contentsline {subsubsection}{Known plaintext attack}{28}{figure.caption.10}
-\contentsline {chapter}{\numberline {5}CISSA and CSA3}{29}{chapter.5}
-\contentsline {section}{\numberline {5.1}CISSA}{29}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Software friendly}{30}{subsection.5.1.1}
-\contentsline {section}{\numberline {5.2}CSA3}{30}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Hardware friendly}{30}{subsection.5.2.1}
-\contentsline {section}{\numberline {5.3}Conclusion}{31}{section.5.3}
-\contentsline {chapter}{\numberline {6}Advanced Encryption Standard}{33}{chapter.6}
-\contentsline {section}{\numberline {6.1}Method}{33}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}InitialRound}{34}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}SubBytes}{34}{subsection.6.1.2}
-\contentsline {subsection}{\numberline {6.1.3}ShiftRows}{34}{subsection.6.1.3}
-\contentsline {subsection}{\numberline {6.1.4}MixColumns}{34}{subsection.6.1.4}
-\contentsline {subsection}{\numberline {6.1.5}AddRoundKey}{35}{subsection.6.1.5}
-\contentsline {section}{\numberline {6.2}KeyExpansion}{35}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Key-schedule core}{35}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Rijndael's S-Box}{35}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Rcon}{35}{subsection.6.2.3}
-\contentsline {part}{III\hspace {1em}Result}{37}{part.3}
-\contentsline {chapter}{\numberline {7}Result}{39}{chapter.7}
-\contentsline {section}{\numberline {7.1}Problems}{39}{section.7.1}
-\contentsline {section}{\numberline {7.2}Hardware}{40}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Hardware usage}{40}{subsection.7.2.1}
-\contentsline {subsubsection}{First synthesis}{41}{subsection.7.2.1}
-\contentsline {subsubsection}{Second synthesis}{41}{subsection.7.2.1}
-\contentsline {subsubsection}{Third synthesis}{41}{subsection.7.2.1}
-\contentsline {subsubsection}{Fourth synthesis}{42}{subsection.7.2.1}
-\contentsline {subsubsection}{Fifth synthesis}{42}{subsection.7.2.1}
-\contentsline {subsubsection}{Sixth synthesis}{43}{table.7.1}
-\contentsline {section}{\numberline {7.3}Further development}{43}{section.7.3}
-\contentsline {subsection}{\numberline {7.3.1}Rijndael's S-Box}{43}{subsection.7.3.1}
-\contentsline {subsection}{\numberline {7.3.2}Critical Path}{43}{subsection.7.3.2}
-\contentsline {section}{\numberline {7.4}Implementation}{44}{section.7.4}
-\contentsline {subsection}{\numberline {7.4.1}Manager entity}{44}{subsection.7.4.1}
-\contentsline {subsection}{\numberline {7.4.2}CBC entity}{44}{subsection.7.4.2}
-\contentsline {subsection}{\numberline {7.4.3}Cipher entity}{44}{subsection.7.4.3}
-\contentsline {subsection}{\numberline {7.4.4}Keyexpansion entity}{45}{subsection.7.4.4}
-\contentsline {subsubsection}{Keycore entity}{45}{subsection.7.4.4}
-\contentsline {subsection}{\numberline {7.4.5}Round entity}{45}{subsection.7.4.5}
-\contentsline {subsubsection}{Addroundkey entity}{45}{subsection.7.4.5}
-\contentsline {subsubsection}{The mulblock entity}{45}{subsection.7.4.5}
-\contentsline {section}{\numberline {7.5}Tests}{46}{section.7.5}
-\contentsline {section}{\numberline {7.6}Discussion}{47}{section.7.6}
-\contentsline {section}{\numberline {7.7}Conclusions}{47}{section.7.7}
-\contentsline {part}{IV\hspace {1em}Appendix}{49}{part.4}
-\contentsline {chapter}{List of Figures}{89}{section*.35}
-\contentsline {chapter}{Bibliography}{91}{appendix*.36}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Background}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Problem specification}{2}{section.1.2}
+\contentsline {section}{\numberline {1.3}Constraints}{2}{section.1.3}
+\contentsline {section}{\numberline {1.4}Methodology}{2}{section.1.4}
+\contentsline {chapter}{\numberline {2}Digital Video Broadcasting (DVB)}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Head-end}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Control word}{6}{section.2.2}
+\contentsline {section}{\numberline {2.3}Conditional Access System}{7}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Standards}{7}{subsection.2.3.1}
+\contentsline {section}{\numberline {2.4}DVB-SimulCrypt}{7}{section.2.4}
+\contentsline {section}{\numberline {2.5}Common Interface}{8}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}CI-Plus}{8}{subsection.2.5.1}
+\contentsline {section}{\numberline {2.6}Conditional Access Module}{8}{section.2.6}
+\contentsline {chapter}{\numberline {3}Cryptography}{11}{chapter.3}
+\contentsline {section}{\numberline {3.1}Why cryptography is needed}{11}{section.3.1}
+\contentsline {section}{\numberline {3.2}Scrambling and Encrypting}{12}{section.3.2}
+\contentsline {section}{\numberline {3.3}Data packets}{12}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}TS packets}{12}{subsection.3.3.1}
+\contentsline {subsubsection}{Header}{13}{figure.caption.6}
+\contentsline {subsubsection}{Adaptation field}{14}{table.3.1}
+\contentsline {subsubsection}{Encrypted and clear payload}{14}{table.3.1}
+\contentsline {subsection}{\numberline {3.3.2}PES packets}{14}{subsection.3.3.2}
+\contentsline {section}{\numberline {3.4}Encryption and Decryption}{14}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Symmetric-key encryption}{15}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Public-key encryption}{15}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Combination of encryption}{15}{subsection.3.4.3}
+\contentsline {section}{\numberline {3.5}Ciphers}{16}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Block cipher}{17}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Stream cipher}{17}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Decryption}{17}{subsection.3.5.3}
+\contentsline {section}{\numberline {3.6}Confusion and Diffusion}{17}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}S-boxes and P-boxes}{18}{subsection.3.6.1}
+\contentsline {section}{\numberline {3.7}Secrecy}{18}{section.3.7}
+\contentsline {chapter}{\numberline {4}Common Scrambling Algorithm}{21}{chapter.4}
+\contentsline {section}{\numberline {4.1}The need for a new standard}{21}{section.4.1}
+\contentsline {section}{\numberline {4.2}Layout of the CSA}{22}{section.4.2}
+\contentsline {section}{\numberline {4.3}Security}{22}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Breaking the CSA}{22}{subsection.4.3.1}
+\contentsline {subsubsection}{Brute force}{23}{subsection.4.3.1}
+\contentsline {subsubsection}{Known plaintext attack}{24}{figure.caption.10}
+\contentsline {chapter}{\numberline {5}CISSA and CSA3}{25}{chapter.5}
+\contentsline {section}{\numberline {5.1}CISSA}{25}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Software friendly}{26}{subsection.5.1.1}
+\contentsline {section}{\numberline {5.2}CSA3}{26}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Hardware friendly}{26}{subsection.5.2.1}
+\contentsline {section}{\numberline {5.3}Conclusion}{27}{section.5.3}
+\contentsline {chapter}{\numberline {6}Advanced Encryption Standard}{29}{chapter.6}
+\contentsline {section}{\numberline {6.1}Method}{29}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}InitialRound}{30}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}SubBytes}{30}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}ShiftRows}{30}{subsection.6.1.3}
+\contentsline {subsection}{\numberline {6.1.4}MixColumns}{30}{subsection.6.1.4}
+\contentsline {subsection}{\numberline {6.1.5}AddRoundKey}{31}{subsection.6.1.5}
+\contentsline {section}{\numberline {6.2}KeyExpansion}{31}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Key-schedule core}{31}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Rijndael's S-Box}{31}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Rcon}{31}{subsection.6.2.3}
+\contentsline {chapter}{\numberline {7}Result}{33}{chapter.7}
+\contentsline {section}{\numberline {7.1}Problems}{33}{section.7.1}
+\contentsline {section}{\numberline {7.2}Hardware}{34}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Hardware usage}{34}{subsection.7.2.1}
+\contentsline {subsubsection}{First synthesis}{35}{subsection.7.2.1}
+\contentsline {subsubsection}{Second synthesis}{35}{subsection.7.2.1}
+\contentsline {subsubsection}{Third synthesis}{35}{subsection.7.2.1}
+\contentsline {subsubsection}{Fourth synthesis}{36}{subsection.7.2.1}
+\contentsline {subsubsection}{Fifth synthesis}{36}{subsection.7.2.1}
+\contentsline {subsubsection}{Sixth synthesis}{37}{table.7.1}
+\contentsline {subsubsection}{Comparison of synthesis results}{37}{table.7.1}
+\contentsline {section}{\numberline {7.3}Further development}{38}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Rijndael's S-Box}{38}{subsection.7.3.1}
+\contentsline {subsection}{\numberline {7.3.2}Critical Path}{38}{subsection.7.3.2}
+\contentsline {section}{\numberline {7.4}Implementation}{38}{section.7.4}
+\contentsline {subsection}{\numberline {7.4.1}Manager entity}{38}{subsection.7.4.1}
+\contentsline {subsection}{\numberline {7.4.2}CBC entity}{39}{subsection.7.4.2}
+\contentsline {subsection}{\numberline {7.4.3}Cipher entity}{40}{subsection.7.4.3}
+\contentsline {subsection}{\numberline {7.4.4}Keyexpansion entity}{41}{subsection.7.4.4}
+\contentsline {subsubsection}{Keycore entity}{41}{figure.caption.18}
+\contentsline {subsection}{\numberline {7.4.5}Round entity}{42}{subsection.7.4.5}
+\contentsline {subsubsection}{Addroundkey entity}{43}{figure.caption.19}
+\contentsline {subsubsection}{The mulblock entity}{43}{figure.caption.19}
+\contentsline {section}{\numberline {7.5}Tests}{44}{section.7.5}
+\contentsline {section}{\numberline {7.6}Comparison to other implementations}{45}{section.7.6}
+\contentsline {section}{\numberline {7.7}Discussion}{45}{section.7.7}
+\contentsline {section}{\numberline {7.8}Conclusions}{46}{section.7.8}
+\contentsline {chapter}{List of Figures}{77}{section*.36}
+\contentsline {chapter}{Bibliography}{79}{appendix*.37}
 \select@language {swedish}
 \select@language {english}
 \select@language {english}

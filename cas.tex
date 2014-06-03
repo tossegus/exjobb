@@ -13,7 +13,9 @@ will be treated in this thesis:
 \end{itemize}
 
 The parts are connected according to figure \ref{fig:system}. The CAM is
-explained in section \ref{sec:CAM}.
+explained in section \ref{sec:CAM}, the ECM and EMM signals are 
+mentioned briefly in section \ref{sec:CAS} and the DVB-SimulCrypt is 
+described in section \ref{sec:Simul}.
 
 \begin{figure}[h!]
   \includegraphics[width=\textwidth]{system}
@@ -46,36 +48,36 @@ an \emph{Entitlement Management Message} (EMM) which tells the
 smart card what contents the user is allowed access to. This could for 
 instance be whether the user has paid to view premium football games or 
 not. The ECM and EMM are then sent back to the head-end where they are 
-attached to the scrambled TS packet using a multiplexer. 
-This package is sent to a receiver, which is usually a TV. The ECM, 
-EMM and TS packet are separated when they arrive. The ECM and TS packet 
-are sent through a \emph{Common Interface} (CI) to a \emph{Conditional 
-Access Module} (CAM), where the ECM (previous control word) is 
-decrypted using a decryption algorithm located on a smart card. 
-The resulting control word is then used to descramble the TS packet. 
-The TS packet is encrypted once more if the CI is a CI-Plus, otherwise 
-it is sent in the clear back to the receiver where the data is 
-processed before it is dispatched to the user. The CI and CI-Plus as 
-well as the extra encryption are all discussed in section \ref{sec:CI}.
+attached to the scrambled TS packet using a multiplexer. This package 
+is sent to a receiver, which is usually a TV. The ECM, EMM and TS 
+packet are separated when they arrive. The ECM and TS packet are sent 
+through a \emph{Common Interface} (CI) to a \emph{Conditional Access 
+Module} (CAM), where the ECM (previous control word) is decrypted using 
+a decryption algorithm located on a smart card. The resulting control 
+word is then used to descramble the TS packet. The TS packet is 
+encrypted once more if the CI is a CI-Plus, otherwise it is sent in the 
+clear back to the receiver where the data is processed before it is 
+dispatched to the user. The CI and CI-Plus as well as the extra 
+encryption are all discussed in section \ref{sec:CI}.
 
 \section{Conditional Access System} \label{sec:CAS}
-To make sure that users fulfill an amount of criteria, before being 
+To make sure that users fulfills a set of criteria, before being 
 allowed to access content, \emph{Conditional Access} (CA) is used. 
 Conditional Access is provided, based on information about the user, 
 in a system seperate from the head-end. Content is first scrambled, and 
 decoded in a head-end. The control word, used to scramble the data, is 
-sent to the Conditional Access system (CAS) where it is encoded.A CA 
-system consists of an EMM-generator and an ECM-generator among others. 
-An ECM-generator is an encryption of the control word. The algorithms 
-used in generators differ between CA systems and is kept very secret, 
-to make sure that the control word can not be stolen during 
-transmission.
+sent to the Conditional Access system (CAS) where it is encoded. The CA 
+system consists of an EMM-generator (EMMG) and an ECM-generator (ECMG) 
+among others. An ECM-generator encrypts the control word. The 
+algorithms used in the generators differ between CA systems and is kept 
+very secret, to make sure that the control word can not be stolen 
+during transmission.
 
 The ECM is generated using the control word, while the EMM is generated 
 based on subscription- and payment information related to the user. The 
 EMM can allow things, stretching from allowing a user to view a video 
 for a few hours, to access a certain channel for an extended period of 
-time. A TV will not broadcast any channels without receiving an EMM 
+time. A TV will not display any channels without receiving an EMM 
 allowing it to.
 %\Warning[Source]{You need to find more sources than just Patrik}
 
@@ -143,14 +145,14 @@ in Figure \ref{img:CIPlus}.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.5\textwidth]{CIPlus}
-  \caption{CI-Plus interface. Image remade from \citep[p. 10]{CI+:2011}}
+  \caption{CI-Plus interface. \citep[p. 10]{CI+:2011}}
   \label{img:CIPlus}
 \end{figure}
 
 CI-Plus encoding is often used to protect HD content, but not SD 
 content. Since HD content is more high-profile, content distributors 
-are more tend to want to protect it than the SD content. Protection of 
-HD content requires scrambling using AES-128 in CBC-mode. 
+want to protect it more than the SD content. Protection of HD content 
+requires scrambling using AES-128 in CBC-mode. 
 \citep{CI+:2011, CI+:2011_2}
 
 \section{Conditional Access Module}\label{sec:CAM}

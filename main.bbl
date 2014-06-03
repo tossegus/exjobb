@@ -1,4 +1,4 @@
-\begin{thebibliography}{25}
+\begin{thebibliography}{26}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -192,5 +192,12 @@ Kai Wirt.
 \newblock Fault attack on the dvb common scrambling algorithm, 2004.
 \newblock URL \url{https://eprint.iacr.org/2004/289.pdf}.
 \newblock Accessed: 13 Feb 2014.
+
+\bibitem[Xilinx(2007)]{Xilinx:AES}
+Xilinx.
+\newblock Fast aes xts/cbc (helion), December 2007.
+\newblock URL
+  \url{http://www.xilinx.com/products/intellectual-property/Fast\_AES\_XTS\_CBC.htm}.
+\newblock Accessed 3 June 2014.
 
 \end{thebibliography}

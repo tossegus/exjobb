@@ -7,7 +7,7 @@
   % Font options: 'kp' (default), 'times', 'lm'.  The KpFonts (loaded using 'kp'), is the most complete font among the provided options.  Among other, it supports slanted small caps.  See rtthesis.cls for more details regarding the font options.
   largesmallcaps,intlimits,widermath,% Good options to KpFonts.
   sharecounter,nobreak,definition=marks,%  See comments in the results chapter of this document for more information on these options!
-  %numbers, % If you want to cite references by numbers, use this option.
+  numbers, % If you want to cite references by numbers, use this option.
   noparts % Use option 'noparts' if you do not make use of part divisions.
 ]{rtthesis}
 
@@ -28,46 +28,42 @@
 %% \selectlanguage{eng}
 \makeFrontPage
 \frontmatter
-\title{Genomgång av nya och alternativa krypterings- och scramblingssystem för 
-  digital-teve samt implementering av ny scrambling-algoritm (AES128) på FPGA}
-\author{Gustaf Bengtz}
+%\title{Genomgång av nya och alternativa krypterings- och scramblingssystem för digital-teve samt implementering av ny scrambling-algoritm (AES128) på FPGA}
+%\author{Gustaf Bengtz}
 \maketitle
 \makeLibraryPage{\input{introduktion}}
-
-%\begin{abstract}[swedish]
-%	Inget att säga.
-%\end{abstract}
 
 %When including images, make sure to add the line \caption on the row before \label, otherwise the referencing system will not work.
 
 \begin{abstract}[english]
-  \input{abstract}
+  \input{introduktion}
 \end{abstract}
+
 \include{notation}
 
 \tableofcontents
 \mainmatter
 
-\part{Background}
+%\part{Background}
 \include{introduction}
 
-\part{Theory}
+%\part{Theory}
 \include{cas}
 \include{Scrambling}
 \include{CSA}
 \include{cissaORCSA3}
 \include{aes}
 
-\part{Result}
+%\part{Result}
 \include{result}
 
-\part{Appendix}
+%\part{Appendix}
 \appendix
 \include{matrix}
 \include{flowcharts}
 \include{vectors}
 \include{examples}
-\include{blocks}
+%\include{blocks}
 \begin{footnotesize}
 \include{synthesis}
 \end{footnotesize}
