@@ -56,8 +56,8 @@
 \backcite {Angelfire}{{30}{6.1.4}{subsection.6.1.4}}
 \backcite {Stinson:2006}{{31}{6.2.1}{subsection.6.2.1}}
 \backcite {RijndaelKeySchedule}{{32}{6.2.3}{subsection.6.2.3}}
-\backcite {AES:2001}{{44}{7.5}{section.7.5}}
-\backcite {Xilinx:AES}{{45}{7.6}{section.7.6}}
+\backcite {AES:2001}{{43}{7.5}{section.7.5}}
+\backcite {Xilinx:AES}{{44}{7.6}{section.7.6}}
 \backcite {CBCmode:2014}{{53}{19}{figure.caption.32}}
 \backcite {AES:2001}{{55}{7.8}{appendix*.33}}
 \backcite {AES:2001}{{56}{7.8}{appendix*.33}}

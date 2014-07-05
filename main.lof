@@ -19,17 +19,17 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {7.1}{\ignorespaces The top entity\relax }}{35}{figure.caption.11}
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Synthesis results\relax }}{37}{figure.caption.12}
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Scrambler-block\relax }}{39}{figure.caption.13}
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Manager-block\relax }}{39}{figure.caption.14}
-\contentsline {figure}{\numberline {7.5}{\ignorespaces CBC-block\relax }}{40}{figure.caption.15}
-\contentsline {figure}{\numberline {7.6}{\ignorespaces Cipher-block\relax }}{41}{figure.caption.16}
-\contentsline {figure}{\numberline {7.7}{\ignorespaces Keyexpansion-block\relax }}{42}{figure.caption.17}
-\contentsline {figure}{\numberline {7.8}{\ignorespaces Keyblock2-block\relax }}{42}{figure.caption.18}
-\contentsline {figure}{\numberline {7.9}{\ignorespaces Round-block\relax }}{43}{figure.caption.19}
-\contentsline {figure}{\numberline {7.10}{\ignorespaces Test vector 1\relax }}{44}{figure.caption.20}
-\contentsline {figure}{\numberline {7.11}{\ignorespaces Test vector 2\relax }}{44}{figure.caption.21}
-\contentsline {figure}{\numberline {7.12}{\ignorespaces Test vector 3\relax }}{45}{figure.caption.22}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Synthesis results\relax }}{36}{figure.caption.12}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Scrambler-block\relax }}{38}{figure.caption.13}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Manager-block\relax }}{38}{figure.caption.14}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces CBC-block\relax }}{39}{figure.caption.15}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Cipher-block\relax }}{40}{figure.caption.16}
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Keyexpansion-block\relax }}{41}{figure.caption.17}
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Keyblock2-block\relax }}{41}{figure.caption.18}
+\contentsline {figure}{\numberline {7.9}{\ignorespaces Round-block\relax }}{42}{figure.caption.19}
+\contentsline {figure}{\numberline {7.10}{\ignorespaces Test vector 1\relax }}{43}{figure.caption.20}
+\contentsline {figure}{\numberline {7.11}{\ignorespaces Test vector 2\relax }}{43}{figure.caption.21}
+\contentsline {figure}{\numberline {7.12}{\ignorespaces Test vector 3\relax }}{44}{figure.caption.22}
 \contentsline {figure}{\numberline {13}{\ignorespaces Rijndael S-box\relax }}{48}{figure.caption.25}
 \contentsline {figure}{\numberline {14}{\ignorespaces State-Matrix\relax }}{48}{figure.caption.26}
 \contentsline {figure}{\numberline {15}{\ignorespaces Rijndael MixColumns equation\relax }}{48}{figure.caption.27}

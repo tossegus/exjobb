@@ -1,25 +1,24 @@
 \chapter{Result}
 The focus of this thesis has been to minimize the amount of hardware 
 usage, while trying to meet the timing constraints provided 
-from the rest of the circuit. The clock frequency used on the FPGA has 
-been 100 MHz. A throughput in the scale of Gbits/s is sufficient for the
-current design.
+from the rest of the circuit. Reaching a throughput of 1 Gbit/s was 
+sufficient for the current design.
 
 The implemented scrambler processes 16 bytes of data in 11 clock pulses 
-with a clock frequency of 94MHz, which would correspond 
-roughly to a throughput of 1.16 Gbits/s. The reason why the design does 
-not meet the frequency of the rest of the circuit is due to the 
-critical path being too long. This is further discussed in section 
-\ref{sec:c_path}.
-The scrambler needs to process the key first, before being able to 
-scramble data. A keyexpansion takes roughly 45 clock pulses, and is 
-only performed when a new key is sent, which is very seldom. The 
-scrambler then deals with 16 bytes of data on 13 clock pulses, but 
-outputs 1 byte of data per clock cycle. This is done so that one byte 
-of data from the scrambled package is read into a register on every 
-clock pulse. When four bytes are collected the 32-bit output is sent 
-out. 32-bits are processed at a time, since the data-bus is a 32-bit 
-bus.
+with a clock frequency of 94MHz, which would correspond roughly to a 
+throughput of 1.16 Gbits/s. %The reason why the design does not meet the
+%frequency of the rest of the circuit is due to the critical path being 
+%too long. 
+The frequency of the design is further discussed in section 
+\ref{sec:c_path}. The scrambler needs to process the key first, before 
+being able to scramble data. A keyexpansion takes roughly 45 clock 
+pulses, and is only performed when a new key is sent, which is very 
+seldom. The scrambler then deals with 16 bytes of data on 13 clock 
+pulses, but outputs 1 byte of data per clock cycle. This is done so 
+that one byte of data from the scrambled package is read into a 
+register on every clock pulse. When four bytes are collected the 32-bit 
+output is sent out. 32-bits are processed at a time, since the data-bus 
+is a 32-bit bus.
 
 \section{Problems}
 The main problems that were encoutered were:
@@ -92,82 +91,81 @@ project been optimized, after synthesis have been run, to either
 minimize hardware usage, or the speed of the circuit. A total of six 
 synthesises were run. A table displaying the differences of the results 
 can be viewed in figure \ref{table:synthesis}.
-The optimizations performed between the synthesizes are discussed in 
-this section.
+The most significant optimizations are discussed in this section. 
+%% The optimizations performed between the synthesizes are discussed in 
+%% this section.
 
-\subsubsection{First synthesis}
-This was the initial synthesis performed on the FPGA. This did not hold 
-any interresting information, except indications about some minor 
-errors that could be found in the initial version of the code.
-%The circuit used up 15\% of the FPGA, and had quite a large amount of 
-%unnescessary latches and FFs included. It used 11830 FFs, and roughly 
-%3000 latches. The circuit was redesigned to remove the latches and ran 
-%the second synthesis.
+\subsubsection{Optimizations}
+The most significant optimization that was performed was an 
+optimization of keyblock 3, which used a lot of the provided resources.
+It was noticed that the circuit waited for the expanded key to become 
+completely filled before updating the output at one point. The expanded 
+key was stored in a vector located in keyblock3 while it was being 
+updated. However, the expanded key used by other entities was not 
+updated until the entire expanded key located in keyblock 3 was 
+completely filled. Rewriting the code decreased the amount of registers 
+by 176 8-bit registers, which could be removed by adding an enable 
+signal. The enable signal tells the other entities when the expanded 
+key is ready for usage.
 
-\subsubsection{Second synthesis}
-%The circuit used up 8\% of the FPGA this time. 
-What was noticed from the second synthesis was that the keyblock3 
-entity, as well as keyblock1 entity seemed to use a lot of registers 
-and multiplexers. It should be possible to replace them with RAMs or 
-LUTs.
-
-The maximum frequency obtained was 92MHz after this synthesis, where a 
-lot of the minimum period was due to the routing of the circuit, which 
-made up for 75\% of the period.
-
+%% \subsubsection{First synthesis}
+%% This was the initial synthesis performed on the FPGA. This did not 
+%% hold any interresting information, except indications about some 
+%% minor errors that could be found in the initial version of the code.
+%% The circuit used up 15\% of the FPGA, and had quite a large amount of
+%% unnescessary latches and FFs included. It used 11830 FFs, and roughly
+%% 3000 latches. The circuit was redesigned to remove the latches and 
+%% ran the second synthesis.
+%% \subsubsection{Second synthesis}
+%% The circuit used up 8\% of the FPGA this time. 
+%% What was noticed from the second synthesis was that the keyblock3 
+%% entity, as well as keyblock1 entity seemed to use a lot of registers 
+%% and multiplexers. It should be possible to replace them with RAMs or 
+%% LUTs.
+%% The maximum frequency obtained was 92MHz after this synthesis, 
+%% where a lot of the minimum period was due to the routing of the 
+%% circuit, which  made up for 75\% of the period.
 %% To be able to compare the third synthesis with this one, you need to 
 %% know that the keyexpansion entity used 1538 D-type FFs and 16 
 %% Comparators. It used up 176 8-bit registers, which were used by the 
 %% expanded key.
-Before running the next synthesis, it was noticed that the circuit 
-waited for the expanded key to become completely filled before updating 
-the output at one point. The expanded key was stored in a vector 
-located in keyblock3 while it was updated. However, the expanded key 
-used by other entities was not updated until the entire expanded key 
-was filled, in keyblock3. Rewriting the code decreased the amount of 
-registers by 176 8-bit registers, which could be removed by adding an 
-enable signal. The enable signal tells the other entities when the 
-expanded key is usable.
-
 %% The entire circuit still used up roughly 8\% of the FPGA. The 
 %% keyexpansion entity used 130 D-type FFs and 16 Comparators this 
 %% time.
-\subsubsection{Third synthesis}
-The maximum frequency obtained this time was 94MHz. The number of 
-Slice Registers went down from 4357 to 2945, and the percentage of 
-Slice Registers decreased from 3\% usage to 2\% usage.
 
-The keyblock3 module seems to be using the most hardware from what can 
-be seen. It uses roughly 1302 multiplexers, which should be reducable.
+%% \subsubsection{Third synthesis}
+%% The maximum frequency obtained this time was 94MHz. The number of 
+%% Slice Registers went down from 4357 to 2945, and the percentage of 
+%% Slice Registers decreased from 3\% usage to 2\% usage. The keyblock3 
+%% module seems to be using the most hardware from what can be seen. 
+%% It uses roughly 1302 multiplexers, which should be reducable.
 
-\subsubsection{Fourth synthesis}
-The next synthesis was made after the state2data module was rewritten, 
-to remove yet another signal. This should have decreased the design by 
-a 128-bit register. It was mostly done to try to allow for a synthesis 
-of the module, while also reducing hardware usage. This would decrease 
-the number of D-type FFs by yet another 128. A comparison between 
-report 3 and 4 displays a decrease from 130 D-type FFs to 2 D-type FFs, 
-which confirms that 128 FFs were removed.
+%% \subsubsection{Fourth synthesis}
+%% The next synthesis was made after the state2data module was 
+%% rewritten, to remove yet another signal. This should have decreased 
+%% the design by a 128-bit register. It was mostly done to try to allow 
+%% for a synthesis of the module, while also reducing hardware usage. 
+%% This would decrease the number of D-type FFs by yet another 128. A 
+%% comparison between report 3 and 4 displays a decrease from 130 D-type
+%% FFs to 2 D-type FFs,  which confirms that 128 FFs were removed.
+%% The maximum frequency obtained this time was 94MHz. The number of 
+%% FFs went from 2945 to 2817. However, this did not affect the number 
+%% of Slice Registers.
+%% The circuit still uses roughly 8\% of the hardware on the FPGA.
 
-The maximum frequency obtained this time was 94MHz. The number of 
-FFs went from 2945 to 2817. However, this did not affect the number of 
-Slice Registers.
+%% \subsubsection{Fifth synthesis}
+%% During the fifth synthesis, it was noted that two reports were made 
+%% during synthesis and optimization. Those were a Synthesis Report as 
+%% well as a Place and Route Report. The ones that have been examined 
+%% this far have been the Synthesis Reports, and to make sure that 
+%% there are not any huge gaps in numbers between the reports, they wil 
+%% be the ones analyzed, and not the Place and Route Reports. Many of 
+%% the entities can not be mapped seperately, due to the amount of IOs 
+%% on the  FPGA, compared to the number of IOs required by the modules.
 
-%The circuit still uses roughly 8\% of the hardware on the FPGA.
-
-\subsubsection{Fifth synthesis}
-During the fifth synthesis, it was noted that two reports were made 
-during synthesis and optimization. Those were a Synthesis Report as 
-well as a Place and Route Report. The ones that have been examined 
-this far have been the Synthesis Reports, and to make sure that 
-there are not any huge gaps in numbers between the reports, they will 
-be the ones analyzed, and not the Place and Route Reports. Many of the 
-entities can not be mapped seperately, due to the amount of IOs on the 
-FPGA, compared to the number of IOs required by the modules.
-
-The third synthesis was performed on each block seperately, to find out
-where optimization might be performed. The usage can be viewed in Table 
-\ref{synt:fifth}.
+The third synthesis was performed on each block seperately, to find out 
+where further optimization would yield the biggest improvement. The 
+hardware usage can be viewed in Table \ref{synt:fifth}.
 
 %
 \newcommand{\MyIndent}{\hspace*{0.2cm}}%
@@ -225,32 +223,30 @@ where optimization might be performed. The usage can be viewed in Table
   \label{synt:fifth}
 \end{longtable}
 
-The plan was to try to reduce the critical path by inserting FFs in the 
-middle of it and then run another synthesis. This would have increased 
-the hardware by a lot of FFs, but also increased the maximum frequency. 
-This was hard to do due to timing issues in the key generation. Adding 
-some signal delay after keyblock3 would have reduced the critical path, 
-but also changed a lot of timing constraints in the keygeneration 
-block FSM. Therefore a decision was made to change the \emph{User 
-Constraints File} (UCF) instead of spending the time trying to 
-decrease the critical path, only to increase the amount of hardware.
+%% The plan was to try to reduce the critical path by inserting FFs in 
+%% the middle of it and then run another synthesis. This would have 
+%% increased the hardware by a lot of FFs, but also increased the 
+%% maximum frequency. This was hard to do due to timing issues in the 
+%% key generation. Adding some signal delay after keyblock3 would have 
+%% reduced the critical path, but also changed a lot of timing 
+%% constraints in the keygeneration block FSM. Therefore a decision was 
+%% made to change the \emph{User Constraints File} (UCF) instead of 
+%% spending the time trying to decrease the critical path, only to 
+%% increase the amount of hardware.
 
-Running the synthesis with an UCF is supposed to make the synthesis 
-program optimize the layout of the circuit according to a number of 
-constraints provided by the user. The constraint made here, was to 
-reach the desired frequency of 100 MHz. However, no information about 
-whether that frequency could be reached or not was found in the reports.
+%% Running the synthesis with an UCF is supposed to make the synthesis 
+%% program optimize the layout of the circuit according to a number of 
+%% constraints provided by the user. The constraint made here, was to 
+%% reach the desired frequency of 100 MHz. However, no information about
+%% whether that frequency could be reached or not was found in the 
+%% reports.
 
-\subsubsection{Sixth synthesis}
+%% \subsubsection{Sixth synthesis}
 The final place and route yielded the following results:
 \begin{verbatim}
 Number of Slice Registers: 2,805 out of 126,576    2%
 Number of Slice LUTs:      4,930 out of  63,288    7%
 \end{verbatim}
-
-There is a difference of one register between the fifth and sixth 
-synthesis reports. That register is most likely a residue after the 
-attempts to reduce the critical path, and can be disregarded.
 
 \subsubsection{Comparison of synthesis results}
 The most interresting numbers from the synthesizes are the number of 
@@ -269,9 +265,15 @@ which is why it will not be included in the comparison.
   \label{table:synthesis}
 \end{figure}
 
+All of the synthesis results can be viewed in Appendix 
+\ref{app:synt_rep}
+
 %Noteworthy is that the number of LUTs increases between the second and third synthesis, and does not decrease thereafter. The reason why this 
 %happens is possibly due to routing of signals, and 
-\Warning[Todo]{Why is this?}
+
+There is a difference of one register between the fifth and sixth 
+synthesis reports. That register is most likely a residue after an 
+attempt to reduce the critical path, and can be disregarded.
 
 \section{Further development}
 There are, as usual, an amount of optimization that could be performed 
@@ -286,6 +288,11 @@ able to be synthesized into a couple of LUT6.
 It has not been possible to find out why the code was implemented into 
 registers instead of more efficient solutions.
 
+Both registers and ROMs are viable implementations for the S-box. 
+However, for area minimization a ROM might be more favourable, while 
+the registers, being clocked, help reduce the critical path of the 
+signals.
+
 \subsection{Critical Path}\label{sec:c_path}
 To increase the maximum frequency of the circuit, the critical path 
 needs to be decreased. This is done by adding FFs in the middle of the 
@@ -298,8 +305,6 @@ decision due to the amount of hardware that might need to be added to
 increase the frequency. However, since LUTs and FFs are located on 
 same slice, it is not sure wether the design would use more slices or 
 not.
-
-%% \subsection{HARDUNÅGOTMERDUVILLFÖRBÄTTRA?}
 
 \section{Implementation}
 This design is very hierarchical. The top layer is an aes128 block in 
