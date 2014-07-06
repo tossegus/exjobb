@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.29)  5 JUL 2014 15:44
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.29)  6 JUL 2014 20:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2307,12 +2307,9 @@ Underfull \vbox (badness 10000) detected at line 107
 File: fig/CIPlus.png Graphic file (type png)
  <use fig/CIPlus.png>
 Package pdftex.def Info: fig/CIPlus.png used on input line 147.
-(pdftex.def)             Requested size: 177.82971pt x 214.38425pt.
+(pdftex.def)             Requested size: 142.2616pt x 171.50739pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) [8] [9 <./fig/CIPlus.png>]
+[8 <./fig/CIPlus.png>]) [9]
 \openout2 = `Scrambling.aux'.
 
  (./Scrambling.tex [10
@@ -2321,31 +2318,13 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ]
 Chapter 3.
-[11]
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 4.74998pt on input line 35.
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 35--35
-[][][][] 
- []
-
-
-Underfull \hbox (badness 6284) in paragraph at lines 53--53
-[]\T1/phv/m/n/5 And find a good
- []
-
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 53--53
-[][][][] 
- []
-
-<fig/TSPacket2.png, id=554, 969.6225pt x 113.42375pt>
+[11] <fig/TSPacket2.png, id=554, 969.6225pt x 113.42375pt>
 File: fig/TSPacket2.png Graphic file (type png)
- <use fig/TSPacket2.png>
+
+<use fig/TSPacket2.png>
 Package pdftex.def Info: fig/TSPacket2.png used on input line 79.
 (pdftex.def)             Requested size: 355.65944pt x 41.6044pt.
-
-[12 <./fig/TSPacket2.png>]
+ [12 <./fig/TSPacket2.png>]
 Overfull \hbox (2.49pt too wide) in paragraph at lines 101--103
 []\T1/jkpk/m/n/10 clear_payload_size = [pay-load_size mod block_size] (or sim-p
 ly pay-load_size
@@ -2360,7 +2339,7 @@ Overfull \hbox (9.34999pt too wide) in alignment at lines 124--141
 Underfull \vbox (badness 10000) detected at line 141
  []
 
-[13] <fig/PES.png, id=575, 993.7125pt x 405.515pt>
+[13] <fig/PES.png, id=574, 993.7125pt x 405.515pt>
 File: fig/PES.png Graphic file (type png)
  <use fig/PES.png>
 Package pdftex.def Info: fig/PES.png used on input line 184.
@@ -2369,137 +2348,62 @@ Package pdftex.def Info: fig/PES.png used on input line 184.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Underfull \hbox (badness 6268) in paragraph at lines 195--195
-[]\T1/phv/m/n/5 Please! I think
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 195--195
-\T1/phv/m/n/5 Schneier wrote
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 195--195
-\T1/phv/m/n/5 some-thing about
- []
-
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 195--195
-[][][][] 
- []
-
-[14]
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 209--209
-[][][][] 
- []
-
-[15 <./fig/PES.png (PNG copy)>]
-<fig/cipher.png, id=595, 501.875pt x 299.1175pt>
+[14] [15 <./fig/PES.png (PNG copy)>]
+<fig/cipher.png, id=594, 501.875pt x 299.1175pt>
 File: fig/cipher.png Graphic file (type png)
  <use fig/cipher.png>
-Package pdftex.def Info: fig/cipher.png used on input line 251.
+Package pdftex.def Info: fig/cipher.png used on input line 252.
 (pdftex.def)             Requested size: 355.65944pt x 211.98238pt.
-
-Underfull \hbox (badness 3623) in paragraph at lines 261--261
-[]\T1/phv/m/n/5 At least the CSA
- []
-
-
-Underfull \hbox (badness 1622) in paragraph at lines 261--261
-\T1/phv/m/n/5 uses it. But you
- []
-
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 261--261
-[][][][] 
- []
-
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [16 <./fig/cipher.png>]
-Underfull \hbox (badness 2173) in paragraph at lines 309--309
-[]\T1/phv/m/n/5 feels like a given,
- []
-
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 309--309
-[][][][] 
- []
-
-[17] <fig/SPnetwork.png, id=636, 451.6875pt x 301.3659pt>
+ [16 <./fig/cipher.png>] [17] <fig/SPnetwork.png, id=635, 451.6875pt x 301.3659
+pt>
 File: fig/SPnetwork.png Graphic file (type png)
 
 <use fig/SPnetwork.png>
-Package pdftex.def Info: fig/SPnetwork.png used on input line 350.
+Package pdftex.def Info: fig/SPnetwork.png used on input line 352.
 (pdftex.def)             Requested size: 177.82971pt x 118.64964pt.
-) [18 <./fig/SPnetwork.png>] [19]
+) [18 <./fig/SPnetwork.png>]
 \openout2 = `CSA.aux'.
 
- (./CSA.tex [20
+ (./CSA.tex
+Chapter 4.
+[19
 
 
 
 ]
-Chapter 4.
-[21]
-Underfull \hbox (badness 1622) in paragraph at lines 68--68
-[]\T1/phv/m/n/5 Except from Pa-trik
- []
+Underfull \vbox (badness 2253) has occurred while \output is active []
 
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 68--68
-[][][][] 
- []
-
-[22]
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 105--105
-[][][][] 
- []
-
-<fig/blockcipher.pdf, id=679, 252.945pt x 179.2296pt>
+ [20]
+<fig/blockcipher.pdf, id=670, 252.945pt x 179.2296pt>
 File: fig/blockcipher.pdf Graphic file (type pdf)
 
 <use fig/blockcipher.pdf>
-Package pdftex.def Info: fig/blockcipher.pdf used on input line 132.
+Package pdftex.def Info: fig/blockcipher.pdf used on input line 135.
 (pdftex.def)             Requested size: 252.94438pt x 179.22914pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [23] [24 <./fig/blockcipher.pdf>]
+) [21] [22 <./fig/blockcipher.pdf>]
 \openout2 = `cissaORCSA3.aux'.
 
  (./cissaORCSA3.tex
 Chapter 5.
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 21--21
-[][][][] 
- []
-
-[25
+[23
 
 
 
 ]
-Overfull \hbox (9.11879pt too wide) in paragraph at lines 40--44
+Overfull \hbox (9.11879pt too wide) in paragraph at lines 43--47
 []\T1/jkpk/m/n/10 An FPGA im-ple-men-ta-tion of the CISSA al-go-rithm seems lik
 ely to be im-ple-mentable,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--56
-[]\T1/phv/m/n/5 No no, not
- []
-
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 56--56
-[][][][] 
- []
-
-
-Overfull \hbox (6.31201pt too wide) in paragraph at lines 73--80
+Overfull \hbox (6.31201pt too wide) in paragraph at lines 78--85
 []\T1/jkpk/m/n/10 The CSA3 is de-signed to be hardware-friendly, mean-ing that 
 de-scram-bling through
  []
@@ -2507,41 +2411,36 @@ de-scram-bling through
 
 Underfull \vbox (badness 2762) has occurred while \output is active []
 
- [26])
-[27]
+ [24])
+[25]
 \openout2 = `aes.aux'.
 
- (./aes.tex [28
+ (./aes.tex [26
 
 
 
 ]
 Chapter 6.
-[29] [30] [31]
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 144--144
-[][][][] 
- []
-
-) [32]
+[27] [28] [29]) [30]
 \openout2 = `result.aux'.
 
  (./result.tex
 Chapter 7.
-[33
+[31
 
 
 
-] <fig/scrambler.png, id=814, 742.775pt x 428.60126pt>
+] <fig/scrambler.png, id=805, 742.775pt x 428.60126pt>
 File: fig/scrambler.png Graphic file (type png)
 
 <use fig/scrambler.png>
-Package pdftex.def Info: fig/scrambler.png used on input line 84.
+Package pdftex.def Info: fig/scrambler.png used on input line 83.
 (pdftex.def)             Requested size: 355.65944pt x 205.22923pt.
- [34]
+ [32]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.178   \MyIndent \triangleright
+l.177   \MyIndent \triangleright
                                  manager      &  858 &  699 \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2549,7 +2448,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.178   \MyIndent \triangleright manager      &
+l.177   \MyIndent \triangleright manager      &
                                                  858 &  699 \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2560,7 +2459,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.179   \MyIndent \triangleright
+l.178   \MyIndent \triangleright
                                  cbc          & 4321 & 2127 \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2568,7 +2467,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.179   \MyIndent \triangleright cbc          &
+l.178   \MyIndent \triangleright cbc          &
                                                 4321 & 2127 \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2579,7 +2478,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.181   \MyIndent \MyIndent \triangleright
+l.180   \MyIndent \MyIndent \triangleright
                                            cipher       & 4229 & 1994 \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2587,7 +2486,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.181 ...t \MyIndent \triangleright cipher       &
+l.180 ...t \MyIndent \triangleright cipher       &
                                                    4229 & 1994 \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2598,7 +2497,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.183 ...Indent \MyIndent \MyIndent \triangleright
+l.182 ...Indent \MyIndent \MyIndent \triangleright
                                                    keyexpansion & 2914
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2606,7 +2505,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.183 ...t \MyIndent \triangleright keyexpansion &
+l.182 ...t \MyIndent \triangleright keyexpansion &
                                                    2914
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2617,7 +2516,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.186 ...Indent \MyIndent \MyIndent \triangleright
+l.185 ...Indent \MyIndent \MyIndent \triangleright
                                                    keyblock1
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2625,7 +2524,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.187   &
+l.186   &
           689 & 0 \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2636,7 +2535,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.188 ...Indent \MyIndent \MyIndent \triangleright
+l.187 ...Indent \MyIndent \MyIndent \triangleright
                                                    keyblock2
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2644,7 +2543,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.189   &
+l.188   &
           208 & 9 \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2655,7 +2554,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.191 ...Indent \MyIndent \MyIndent \triangleright
+l.190 ...Indent \MyIndent \MyIndent \triangleright
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2663,7 +2562,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.192   demux &
+l.191   demux &
                 32   & 0 \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2674,7 +2573,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.193 ...Indent \MyIndent \MyIndent \triangleright
+l.192 ...Indent \MyIndent \MyIndent \triangleright
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2682,7 +2581,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.194   keycore &
+l.193   keycore &
                   183 & 9 \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2693,7 +2592,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.197   \triangleright
+l.196   \triangleright
                        ctr & 14 & 9 \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2701,7 +2600,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.197   \triangleright ctr &
+l.196   \triangleright ctr &
                              14 & 9 \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2712,7 +2611,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.199   \triangleright
+l.198   \triangleright
                        rotw & 0 & 0 \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2720,7 +2619,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.199   \triangleright rotw &
+l.198   \triangleright rotw &
                               0 & 0 \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2731,7 +2630,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.201   \triangleright
+l.200   \triangleright
                        sbox & 128 & 0 \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2739,7 +2638,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.201   \triangleright sbox &
+l.200   \triangleright sbox &
                               128 & 0 \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2750,7 +2649,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.203   \triangleright
+l.202   \triangleright
                        rcon & 40 & 0 \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2758,7 +2657,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.203   \triangleright rcon &
+l.202   \triangleright rcon &
                               40 & 0 \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2769,7 +2668,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.205 ...Indent \MyIndent \MyIndent \triangleright
+l.204 ...Indent \MyIndent \MyIndent \triangleright
                                                    keyblock3
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2777,7 +2676,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.206   &
+l.205   &
           1854 & 1365 \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2788,7 +2687,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.208 ...Indent \MyIndent \MyIndent \triangleright
+l.207 ...Indent \MyIndent \MyIndent \triangleright
                                                    data2state & 0
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2796,7 +2695,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.208 ...ent \MyIndent \triangleright data2state &
+l.207 ...ent \MyIndent \triangleright data2state &
                                                    0
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2807,7 +2706,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.210 ...Indent \MyIndent \MyIndent \triangleright
+l.209 ...Indent \MyIndent \MyIndent \triangleright
                                                    round & 1535 & 272 \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2815,7 +2714,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.210 ...MyIndent \MyIndent \triangleright round &
+l.209 ...MyIndent \MyIndent \triangleright round &
                                                    1535 & 272 \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2826,7 +2725,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.212 ...Indent \MyIndent \MyIndent \triangleright
+l.211 ...Indent \MyIndent \MyIndent \triangleright
                                                    subbytes
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2834,7 +2733,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.213   &
+l.212   &
           512 & 0 \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2845,7 +2744,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.214 ...Indent \MyIndent \MyIndent \triangleright
+l.213 ...Indent \MyIndent \MyIndent \triangleright
                                                    shiftrows
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2853,7 +2752,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.215   &
+l.214   &
           0 & 0 \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2864,7 +2763,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.216 ...Indent \MyIndent \MyIndent \triangleright
+l.215 ...Indent \MyIndent \MyIndent \triangleright
                                                    mixcolumns
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2872,7 +2771,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.217   &
+l.216   &
           176 & 0 \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2883,7 +2782,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.218 ...Indent \MyIndent \MyIndent \triangleright
+l.217 ...Indent \MyIndent \MyIndent \triangleright
                                                    addkey & 128
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2891,7 +2790,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.218 ...yIndent \MyIndent \triangleright addkey &
+l.217 ...yIndent \MyIndent \triangleright addkey &
                                                    128
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2902,7 +2801,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.221 ...Indent \MyIndent \MyIndent \triangleright
+l.220 ...Indent \MyIndent \MyIndent \triangleright
                                                    state2data & 1 & 2 \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2910,7 +2809,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.221 ...ent \MyIndent \triangleright state2data &
+l.220 ...ent \MyIndent \triangleright state2data &
                                                    1 & 2 \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2918,96 +2817,93 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-[35 <./fig/scrambler.png>] [36]
+[33 <./fig/scrambler.png>] [34]
 File: fig/scrambler.png Graphic file (type png)
  <use fig/scrambler.png>
-Package pdftex.def Info: fig/scrambler.png used on input line 327.
+Package pdftex.def Info: fig/scrambler.png used on input line 326.
 (pdftex.def)             Requested size: 266.74457pt x 153.92355pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<fig/manager.png, id=841, 794.97pt x 492.84125pt>
+ [35]
+<fig/manager.png, id=837, 794.97pt x 492.84125pt>
 File: fig/manager.png Graphic file (type png)
  <use fig/manager.png>
-Package pdftex.def Info: fig/manager.png used on input line 349.
+Package pdftex.def Info: fig/manager.png used on input line 348.
 (pdftex.def)             Requested size: 266.74457pt x 165.36792pt.
 
-[37] <fig/cbc.png, id=849, 484.81125pt x 561.09625pt>
+<fig/cbc.png, id=839, 484.81125pt x 561.09625pt>
 File: fig/cbc.png Graphic file (type png)
  <use fig/cbc.png>
-Package pdftex.def Info: fig/cbc.png used on input line 366.
+Package pdftex.def Info: fig/cbc.png used on input line 365.
 (pdftex.def)             Requested size: 266.74457pt x 308.73232pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Underfull \vbox (badness 1406) has occurred while \output is active []
-
- [38 <./fig/manager.png>] <fig/cipherblock.png, id=858, 658.46pt x 478.78876pt>
+[36 <./fig/manager.png>] <fig/cipherblock.png, id=850, 658.46pt x 478.78876pt>
 File: fig/cipherblock.png Graphic file (type png)
 
 <use fig/cipherblock.png>
-Package pdftex.def Info: fig/cipherblock.png used on input line 388.
+Package pdftex.def Info: fig/cipherblock.png used on input line 387.
 (pdftex.def)             Requested size: 266.74457pt x 193.95952pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[39 <./fig/cbc.png>]
-<fig/keyexpansion2.png, id=869, 659.46375pt x 583.17876pt>
+[37 <./fig/cbc.png>]
+<fig/keyexpansion2.png, id=861, 659.46375pt x 583.17876pt>
 File: fig/keyexpansion2.png Graphic file (type png)
 
 <use fig/keyexpansion2.png>
-Package pdftex.def Info: fig/keyexpansion2.png used on input line 414.
+Package pdftex.def Info: fig/keyexpansion2.png used on input line 413.
 (pdftex.def)             Requested size: 266.74457pt x 235.89246pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<fig/keyblock2.png, id=870, 579.16376pt x 485.815pt>
+<fig/keyblock2.png, id=862, 579.16376pt x 485.815pt>
 File: fig/keyblock2.png Graphic file (type png)
  <use fig/keyblock2.png>
-Package pdftex.def Info: fig/keyblock2.png used on input line 421.
+Package pdftex.def Info: fig/keyblock2.png used on input line 420.
 (pdftex.def)             Requested size: 266.74457pt x 223.75189pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[40 <./fig/cipherblock.png>]
-Underfull \vbox (badness 1205) has occurred while \output is active []
-
- [41 <./fig/keyexpansion2.png> <./fig/keyblock2.png>]
-<fig/round.png, id=886, 652.4375pt x 630.355pt>
+<fig/round.png, id=864, 652.4375pt x 630.355pt>
 File: fig/round.png Graphic file (type png)
  <use fig/round.png>
-Package pdftex.def Info: fig/round.png used on input line 452.
+Package pdftex.def Info: fig/round.png used on input line 451.
 (pdftex.def)             Requested size: 266.74457pt x 257.72583pt.
- [42 <./fig/round.png>] <fig/successtv1.png, id=896, 831.85782pt x 106.14656pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[38 <./fig/cipherblock.png>]
+Overfull \vbox (14.81561pt too high) has occurred while \output is active []
+
+
+[39 <./fig/keyexpansion2.png> <./fig/keyblock2.png>] [40 <./fig/round.png>]
+<fig/successtv1.png, id=886, 831.85782pt x 106.14656pt>
 File: fig/successtv1.png Graphic file (type png)
 
 <use fig/successtv1.png>
-Package pdftex.def Info: fig/successtv1.png used on input line 496.
+Package pdftex.def Info: fig/successtv1.png used on input line 495.
 (pdftex.def)             Requested size: 355.65944pt x 45.38298pt.
 
-<fig/successtv2.png, id=898, 832.61063pt x 112.16907pt>
+<fig/successtv2.png, id=888, 832.61063pt x 112.16907pt>
 File: fig/successtv2.png Graphic file (type png)
 
 <use fig/successtv2.png>
-Package pdftex.def Info: fig/successtv2.png used on input line 507.
+Package pdftex.def Info: fig/successtv2.png used on input line 506.
 (pdftex.def)             Requested size: 355.65944pt x 47.9151pt.
- <fig/successtv3.png, id=900, 726.46407pt x 108.405pt>
+ <fig/successtv3.png, id=890, 726.46407pt x 108.405pt>
 File: fig/successtv3.png Graphic file (type png)
 
 <use fig/successtv3.png>
-Package pdftex.def Info: fig/successtv3.png used on input line 518.
+Package pdftex.def Info: fig/successtv3.png used on input line 517.
 (pdftex.def)             Requested size: 355.65944pt x 53.07423pt.
-
-Underfull \vbox (badness 4242) has occurred while \output is active []
-
- [43 <./fig/successtv1.png (PNG copy)> <./fig/successtv2.png (PNG copy)>]
-Overfull \hbox (5.6194pt too wide) in paragraph at lines 546--556
+ [41 <./fig/successtv1.png (PNG copy)> <./fig/successtv2.png (PNG copy)> <./fig
+/successtv3.png>]
+Overfull \hbox (5.6194pt too wide) in paragraph at lines 545--555
 []\T1/jkpk/m/n/10 The im-ple-men-ta-tion by Xil-inx uses cus-tom FPGA op-ti-miz
 a-tion tech-niques through
  []
@@ -3015,7 +2911,7 @@ a-tion tech-niques through
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.564   \begin{array}{| l | l | l | l |}
+l.563   \begin{array}{| l | l | l | l |}
                                         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -3023,7 +2919,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.570   \end{array}
+l.569   \end{array}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3031,13 +2927,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[44 <./fig/successtv3.png>]) [45]
+[42]) [43]
 \openout2 = `matrix.aux'.
 
- (./matrix.tex [46
+ (./matrix.tex [44
 
 
 
@@ -3070,37 +2963,37 @@ Overfull \hbox (40.79588pt too wide) in paragraph at lines 83--101
 []$[]$ 
  []
 
-) [47] [48] [49]
+) [45] [46] [47]
 \openout2 = `flowcharts.aux'.
 
- (./flowcharts.tex [50
+ (./flowcharts.tex [48
 
 
 
 ]
-<fig/flowchart.pdf, id=947, 415.5525pt x 912.40875pt>
+<fig/flowchart.pdf, id=938, 415.5525pt x 912.40875pt>
 File: fig/flowchart.pdf Graphic file (type pdf)
  <use fig/flowchart.pdf>
 Package pdftex.def Info: fig/flowchart.pdf used on input line 5.
 (pdftex.def)             Requested size: 151.61516pt x 332.90062pt.
 
-<fig/keyschedule.png, id=948, 822.272pt x 822.272pt>
+<fig/keyschedule.png, id=939, 822.272pt x 822.272pt>
 File: fig/keyschedule.png Graphic file (type png)
  <use fig/keyschedule.png>
 Package pdftex.def Info: fig/keyschedule.png used on input line 12.
 (pdftex.def)             Requested size: 355.65944pt x 355.66539pt.
 
-<fig/CBCmode.png, id=949, 2007.5pt x 700.6175pt>
+<fig/CBCmode.png, id=940, 2007.5pt x 700.6175pt>
 File: fig/CBCmode.png Graphic file (type png)
  <use fig/CBCmode.png>
 Package pdftex.def Info: fig/CBCmode.png used on input line 19.
 (pdftex.def)             Requested size: 355.65944pt x 124.11726pt.
 )
-[51] [52 <./fig/flowchart.pdf>] [53 <./fig/keyschedule.png (PNG copy)> <./fig/C
+[49] [50 <./fig/flowchart.pdf>] [51 <./fig/keyschedule.png (PNG copy)> <./fig/C
 BCmode.png>]
 \openout2 = `vectors.aux'.
 
- (./vectors.tex [54
+ (./vectors.tex [52
 
 
 
@@ -3109,7 +3002,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--10
 
  []
 
-[55]
+[53]
 
 ! Package caption Error: \caption outside float.
 
@@ -3177,7 +3070,7 @@ Overfull \hbox (52.91017pt too wide) in alignment at lines 108--133
  [] [] [] [] [] [] [] [] 
  []
 
-[56]
+[54]
 Overfull \hbox (52.91017pt too wide) in alignment at lines 133--138
  [] [] [] [] [] [] [] [] 
  []
@@ -3363,14 +3256,14 @@ Overfull \hbox (29.07985pt too wide) in alignment at lines 500--588
  [] [] [] [] [] [] [] 
  []
 
-[57] [58]
+[55] [56]
 Underfull \vbox (badness 10000) detected at line 617
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [59]
+ [57]
 Overfull \hbox (57.23956pt too wide) in alignment at lines 632--655
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
@@ -3390,10 +3283,10 @@ Overfull \hbox (58.7516pt too wide) in alignment at lines 692--704
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
-[60]) [61]
+[58]) [59]
 \openout2 = `examples.aux'.
 
- (./examples.tex [62
+ (./examples.tex [60
 
 
 
@@ -3451,14 +3344,14 @@ l.18
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-) [63]
+) [61]
 \openout2 = `synthesis.aux'.
 
- (./synthesis.tex [64
+ (./synthesis.tex [62
 
 
 
-] (./synthesis2.tex) (./synthesis3.tex [65])
+] (./synthesis2.tex) (./synthesis3.tex [63])
 (./synthesis4.tex) (./synthesis5.tex
 ! Undefined control sequence.
 l.2 \subsubsubsection
@@ -3469,7 +3362,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[66]
+[64]
 ! Undefined control sequence.
 l.20 \subsubsubsection
                       {CBC}
@@ -3497,7 +3390,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[67]
+[65]
 ! Undefined control sequence.
 l.86 \subsubsubsection
                       {Data2state}
@@ -3534,7 +3427,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[68]
+[66]
 ! Undefined control sequence.
 l.164 \subsubsubsection
                        {Keyblock3}
@@ -3553,7 +3446,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[69]
+[67]
 ! Undefined control sequence.
 l.209 \subsubsubsection
                        {Keyexpansion}
@@ -3581,7 +3474,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[70]
+[68]
 ! Undefined control sequence.
 l.277 \subsubsubsection
                        {Rcon}
@@ -3609,7 +3502,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[71]
+[69]
 ! Undefined control sequence.
 l.337 \subsubsubsection
                        {Scrambler}
@@ -3637,7 +3530,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[72]
+[70]
 ! Undefined control sequence.
 l.403 \subsubsubsection
                        {Subbytes}
@@ -3656,7 +3549,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-) (./synthesis6.tex [73]
+) (./synthesis6.tex [71]
 Overfull \hbox (4.34079pt too wide) in paragraph at lines 72--72
 []  \T1/pcr/m/n/8 A LUT Flip Flop pair for this architecture represents one LUT
  paired with[] 
@@ -3665,8 +3558,8 @@ Overfull \hbox (4.34079pt too wide) in paragraph at lines 72--72
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [74]))
-[75] [76
+ [72]))
+[73] [74
 
 
 ] (./main.lof)
@@ -3677,7 +3570,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 \tf@brf=\write8
 \openout8 = `main.brf'.
 
- [77] [78
+ [75] [76
 
 ]
 Underfull \hbox (badness 3872) in paragraph at lines 40--40
@@ -3733,7 +3626,7 @@ Underfull \hbox (badness 2426) in paragraph at lines 64--64
  FTLCAWhitePaperTwo .
  []
 
-[79]
+[77]
 Underfull \hbox (badness 10000) in paragraph at lines 80--80
 []$\T1/pcr/m/n/10 http : / / ieeexplore . ieee . org . lt . ltag . bibl . liu .
  se / stamp /
@@ -3775,7 +3668,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 151--151
 e / chapter /
  []
 
-[80]
+[78]
 Underfull \hbox (badness 3989) in paragraph at lines 159--159
 []\T1/jkpk/m/n/10 Serge Vau-de-nay, Willi Meier, Si-mon Fis-cher, et al.  Anal-
 y-sis of
@@ -3825,9 +3718,9 @@ st _
 
 )
 No file main.ind.
-[81] [82
+[79] [80
 
-] <fig/LinkUniv_staende_pms.pdf, id=1253, 260.975pt x 172.645pt>
+] <fig/LinkUniv_staende_pms.pdf, id=1244, 260.975pt x 172.645pt>
 File: fig/LinkUniv_staende_pms.pdf Graphic file (type pdf)
 
 <use fig/LinkUniv_staende_pms.pdf>
@@ -3839,7 +3732,7 @@ Overfull \hbox (0.16193pt too wide) in paragraph at lines 80--80
 doc-u-ment in-tegrity, please
  []
 
-[83 <./fig/LinkUniv_staende_pms.pdf>]
+[81 <./fig/LinkUniv_staende_pms.pdf>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 80.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 80.
  (./main.aux (./notation.aux)
@@ -3851,16 +3744,16 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 80.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: A959776785CA20BAE1AC1DE1E8847FDA;5193.
 Package rerunfilecheck Info: File `main.brf' has not changed.
-(rerunfilecheck)             Checksum: E6DE1D67C426E26A636BB5A239B86585;3328.
+(rerunfilecheck)             Checksum: 4D318C6CC4D57AE7338AEBF6498BE3F4;3328.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 80.
  )
 (\end occurred when \ifx on line 20 was incomplete) 
 Here is how much of TeX's memory you used:
- 22977 strings out of 493304
- 375647 string characters out of 6139871
- 597696 words of memory out of 5000000
+ 22974 strings out of 493304
+ 375623 string characters out of 6139871
+ 597751 words of memory out of 5000000
  25413 multiletter control sequences out of 15000+600000
- 228716 words of font info for 189 fonts, out of 8000000 for 9000
+ 225826 words of font info for 187 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  56i,12n,87p,587b,559s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-di
@@ -3879,12 +3772,11 @@ ne.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpmsc8a.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/kpfonts/jkpsya.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/font
-s/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
-helvetic/uhvr8a.pfb>
-Output written on main.pdf (97 pages, 1228310 bytes).
+s/type1/urw/helvetic/uhvb8a.pfb>
+Output written on main.pdf (95 pages, 1215035 bytes).
 PDF statistics:
- 1381 PDF objects out of 1440 (max. 8388607)
- 1205 compressed objects within 13 object streams
- 270 named destinations out of 1000 (max. 500000)
+ 1367 PDF objects out of 1440 (max. 8388607)
+ 1195 compressed objects within 12 object streams
+ 268 named destinations out of 1000 (max. 500000)
  19192 words of extra memory for PDF output out of 20736 (max. 10000000)
 

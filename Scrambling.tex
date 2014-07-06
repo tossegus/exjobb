@@ -31,10 +31,10 @@ turn the tide of the entire war. Moreover, you do not want people to
 read your account information or credit card number when you do online 
 shopping. Both of these problems can be solved by cryptography and 
 encryption.
-
-\Warning[Source]{Typ Schneier har jag för mig? Låna om boken?}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+%\Warning[Source]{Typ Schneier har jag för mig? Låna om boken?}
 %This might need a rework!
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Scrambling and Encrypting}
 Scrambling can be seen as the distortion of a plain-text, using a 
 control word. However, encryption can be seen as the entire process of 
@@ -49,10 +49,10 @@ data bits with the same value, like strings of zeroes or ones. It could
 also serve to balance the number of zeroes and ones in strings. This is 
 done as to try to obtain DC balance. DC balance is desired since it 
 avoids voltage imbalance during communication between connected systems.
-
-\Warning[Rewrite]{And find a good source for this}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\Warning[Rewrite]{And find a good source for this}
 %Det är osannolikt att det här stämmer helt och hållet :)
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Data packets}\label{sec:Data}
 The data processed by the DVB systems is sent in data packets. All of 
 them are created from Elementary Stream packets (ES) which are 
@@ -192,8 +192,9 @@ messages. Those are the algorithm, plaintext and the key. Even though
 there are plenty of ways to encrypt messages, there are mainly two ways 
 of sharing the encryption-key. The first method is the symmetric-key 
 encryption, and the second method is the public-key encryption. 
-\Warning[Source]{Please! I think Schneier wrote something about this}
-
+%%%%%%%%%%%%%%%%%%%%
+%\Warning[Source]{Please! I think Schneier wrote something about this}
+%%%%%%%%%%%%%%%%%%%%
 \subsection{Symmetric-key encryption}\label{ch:symmetric}
 The symmetric-key encryption uses the same key to encode and decode 
 messages. Distrubution of the key, when using the symmetric-key 
@@ -205,9 +206,9 @@ our messages are most likely already listening. They will therefore
 obtain the key as well as the means to decode the messages. Both the 
 CSA and the AES encryption methods are symmetric-key encryptions, using 
 the same key for encryption and decryption.
-
-\Warning[Source]{Schneier har jag för mig igen}
-
+%%%%%%%%%%%%%%%%%%%%
+%\Warning[Source]{Schneier har jag för mig igen}
+%%%%%%%%%%%%%%%%%%%%
 \subsection{Public-key encryption}\label{ch:public}
 The public-key encryption uses a public key that anyone can look up, 
 and a secret key that only one person knows 
@@ -257,9 +258,9 @@ There are mainly two kinds of ciphers that are used when designing
 modern cryptosystems. Those ciphers are called block ciphers and 
 stream ciphers. Many systems use a combination of block ciphers and 
 stream ciphers to provide security. 
-
-\Warning[Source]{At least the CSA uses it. But you need a source}
-
+%%%%%%%%%%%%%%%%%%%%%%%
+%\Warning[Source]{At least the CSA uses it. But you need a source}
+%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Block cipher}\label{sec:BlockCipher}
 A block cipher operates on fixed sized sets of data. These sets are 
 called blocks, hence the reason that they are called block ciphers. 
@@ -306,8 +307,9 @@ description of how this is done for the CBC-mode (described in
 \ref{sec:BlockCipher}) is described in \ref{sec:CBCcalc} in appendix 
 \ref{app:examples}. It is here assumed that the decryption algorithm 
 is known, for simplicity. 
-\Warning[Source]{feels like a given, but still}
-
+%%%%%%%%%%%%%%%%%%%%%%%
+%\Warning[Source]{feels like a given, but still}
+%%%%%%%%%%%%%%%%%%%%%%%
 \section{Confusion and Diffusion}\label{ch:ConfDiff}
 Two properties that are needed to ensure that a cipher provides 
 security are confusion and diffusion \citep{Shannon:1949}. 
@@ -357,11 +359,10 @@ is represented by the dotted rectangle in the middle.
 
 \section{Secrecy}
 Although encryption is important, as well as the strength of the 
-encryption, keeping the algorithm secret is never a good idea. A simple 
+encryption, neither using an algorithm designed for use in just a few 
+applications nor using a secret algorithm is ever a good idea. A simple 
 mistake when designing an algorithm might turn an encryption that would 
-otherwise have been strong, incredibly weak. It is therefore a bad 
-idea to use small scale algorithms (designed for the use of just a few 
-persons for instance). If you instead use an open algorithm, faults 
-will most likely be discovered and fixed by experienced cryptographers 
-\citep[pp. 23]{Schneier:2003}. Keeping the key, which is used to 
-encrypt the data, secret is what is important.
+otherwise have been strong, incredibly weak. If you use an open 
+algorithm, faults will most likely be discovered and fixed by 
+experienced cryptographers \citep[pp. 23]{Schneier:2003}. Keeping the 
+key, which is used to encrypt the data, secret is what is important.
