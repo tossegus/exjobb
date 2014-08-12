@@ -2,13 +2,12 @@ This report adresses why the currently used scrambling standard CSA
 needs a replacement. Proposed replacements to CSA are analyzed to some 
 extent, and an alternative replacement (AES128) is analyzed.
 
-One alternative being the CSA3, and the other being the CISSA algorithm.
-Both of them are based on the public AES algorithm. Both of the 
-proposed algorithms use the AES algorithm as a base. The CSA3 combines 
-it with a secret cipher, the XRC, while CISSA uses the AES cipher in a 
-feedback mode. The different utilizations makes CSA3 hardware friendly 
-and CISSA software friendly.
+One alternative being the CSA3, and the other being the CISSA 
+algorithm. Both of the proposed algorithms use the AES algorithm as a 
+base. The CSA3 combines AES128 with a secret cipher, the XRC, while 
+CISSA uses the AES cipher in a feedback mode. The different 
+utilizations makes CSA3 hardware friendly and CISSA software friendly.
 
 The implementation of the Advanced Encryption Standard (AES) is 
-analyzed for a 128 bit key length based design, and the general 
-implementation is displayed.
+analyzed for a 128 bit key length based design, and a specific 
+implementation is presented.

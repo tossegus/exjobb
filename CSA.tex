@@ -158,14 +158,13 @@ method to obtain the key.
 The known plaintext attacks are performed to figure out the key. What 
 is interresting is that this kind of attack only is applicable for 
 symmetric ciphers. That means that the known plaintext attack can not 
-be used to retrieve the secret key during public-key encryption 
-(section \ref{ch:public}). The key can then be used to decrypt 
-following ciphertexts. To perform this kind of attack, a known 
-plaintext-ciphertext pair is needed. You can try to find the key if 
-you have the both of them. This is done by identifying ciphertexts 
-known to correspond to zero-filled plaintexts, when trying to break the 
-CSA \citep{Breaking:2012}. Memories are then filled with precalculated 
-keys, which are used to find which key the current plaintext-ciphertext 
-pair corresponds to. This method is supposed to recover a key in 
-roughly 7 seconds with a 97\% certainty according to 
-\citet{Breaking:2012}.
+be used to retrieve the secret key during public-key encryption. The 
+key can then be used to decrypt following ciphertexts. To perform this 
+kind of attack, a known plaintext-ciphertext pair is needed. You can 
+try to find the key if you have the both of them. This is done by 
+identifying ciphertexts known to correspond to zero-filled plaintexts, 
+when trying to break the CSA \citep{Breaking:2012}. Memories are then 
+filled with precalculated keys, which are used to find which key the 
+current plaintext-ciphertext pair corresponds to. This method is 
+supposed to recover a key in roughly 7 seconds with a 97\% certainty 
+according to \citet{Breaking:2012}.

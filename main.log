@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.29)  6 JUL 2014 20:36
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.29)  12 AUG 2014 23:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1554,16 +1554,36 @@ File: pgfmodulematrix.code.tex 2010/08/24  (rcs-revision 1.4)
 (/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopat
 hs.code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v2.10 (rcs-revision 1.2)
-))) (./main.aux (./notation.aux) (./introduction.aux) (./cas.aux)
-(./Scrambling.aux) (./CSA.aux) (./cissaORCSA3.aux) (./aes.aux) (./result.aux)
-(./matrix.aux) (./flowcharts.aux) (./vectors.aux) (./examples.aux)
-(./synthesis.aux))
+)))
+
+! LaTeX Error: Option clash for package appendix.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 
+     
+The package appendix has already been loaded with options:
+  []
+There has now been an attempt to load it with options
+  [titletoc, title]
+Adding the global options:
+  ,titletoc, title
+to your \documentclass declaration may fix this.
+Try typing  <return>  to proceed.
+
+(./main.aux (./notation.aux) (./introduction.aux) (./cas.aux) (./Scrambling.aux
+) (./CSA.aux) (./cissaORCSA3.aux) (./aes.aux) (./implementation.aux)
+(./result.aux) (./matrix.aux) (./flowcharts.aux) (./vectors.aux)
+(./examples.aux) (./synthesis.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/jkpw/m/it on input line 27.
 LaTeX Font Info:    Try loading font information for OML+jkpw on input line 27.
 
- (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/omljkpw.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/kpfonts/omljkpw.fd
 File: omljkpw.fd 2006/08/15 v1.0
 )
 LaTeX Font Info:    ... okay on input line 27.
@@ -1573,6 +1593,7 @@ LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
 LaTeX Font Info:    ... okay on input line 27.
 LaTeX Font Info:    Checking defaults for OMS/jkpw/m/n on input line 27.
 LaTeX Font Info:    Try loading font information for OMS+jkpw on input line 27.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/omsjkpw.fd
 File: omsjkpw.fd 2006/08/15 v1.0
@@ -2132,43 +2153,43 @@ Option `squaren' provided!
  Command \squaren defined by SIunits package!
 
 ABD: EveryShipout initializing macros
-LaTeX Font Info:    Try loading font information for OT1+jkp on input line 29.
+LaTeX Font Info:    Try loading font information for OT1+jkp on input line 28.
 
 (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ot1jkp.fd
 File: ot1jkp.fd 2007/08/30 Fontinst v1.928 font definitions for OT1/jkp.
 )
-LaTeX Font Info:    Try loading font information for U+jkpmiaw on input line 29
+LaTeX Font Info:    Try loading font information for U+jkpmiaw on input line 28
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ujkpmiaw.fd
 File: ujkpmiaw.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Try loading font information for U+jkpsya on input line 29.
+LaTeX Font Info:    Try loading font information for U+jkpsya on input line 28.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ujkpsya.fd
 File: ujkpsya.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Try loading font information for U+jkpsybw on input line 29
+LaTeX Font Info:    Try loading font information for U+jkpsybw on input line 28
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ujkpsybw.fd
 File: ujkpsybw.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Try loading font information for U+jkpsyc on input line 29.
+LaTeX Font Info:    Try loading font information for U+jkpsyc on input line 28.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ujkpsyc.fd
 File: ujkpsyc.fd 2006/08/15 v1.0
 )
-<fig/LiTH_staende_sv.pdf, id=324, 260.975pt x 190.7125pt>
+<fig/LiTH_staende_sv.pdf, id=348, 260.975pt x 190.7125pt>
 File: fig/LiTH_staende_sv.pdf Graphic file (type pdf)
 
 <use fig/LiTH_staende_sv.pdf>
-Package pdftex.def Info: fig/LiTH_staende_sv.pdf used on input line 29.
+Package pdftex.def Info: fig/LiTH_staende_sv.pdf used on input line 28.
 (pdftex.def)             Requested size: 233.62096pt x 170.71652pt.
 
-Overfull \hbox (19.91695pt too wide) in paragraph at lines 29--29
+Overfull \hbox (19.91695pt too wide) in paragraph at lines 28--28
 []| [] 
  []
 
@@ -2179,7 +2200,7 @@ Overfull \hbox (19.91695pt too wide) in paragraph at lines 29--29
 ] [2
 
 ]
-Overfull \hbox (35.56596pt too wide) in paragraph at lines 33--33
+Overfull \hbox (35.56596pt too wide) in paragraph at lines 30--30
 []| [] 
  []
 
@@ -2188,17 +2209,17 @@ Overfull \hbox (35.56596pt too wide) in paragraph at lines 33--33
 
 ] [2
 
-] <fig/LiTH_sigill_sv.pdf, id=348, 124.465pt x 124.465pt>
+] <fig/LiTH_sigill_sv.pdf, id=371, 124.465pt x 124.465pt>
 File: fig/LiTH_sigill_sv.pdf Graphic file (type pdf)
 
 <use fig/LiTH_sigill_sv.pdf>
-Package pdftex.def Info: fig/LiTH_sigill_sv.pdf used on input line 34.
+Package pdftex.def Info: fig/LiTH_sigill_sv.pdf used on input line 31.
 (pdftex.def)             Requested size: 56.9055pt x 56.90704pt.
 
 
-Package hyperref Warning: Suppressing link with empty target on input line 34.
+Package hyperref Warning: Suppressing link with empty target on input line 31.
 
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 34.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 31.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ) (./introduktion.tex)
@@ -2208,19 +2229,19 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 13.67995pt on input line 38.
+(Font)              scaled to size 13.67995pt on input line 35.
  (./introduktion.tex)pdfTeX warning (ext4): destination with the same identifie
 r (name{page.iii}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.40 \end{abstract}
+l.37 \end{abstract}
                     [3
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.iv}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.40 \end{abstract}
+l.37 \end{abstract}
                     [4
 
 ]
@@ -2243,17 +2264,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-Overfull \vbox (21.27959pt too high) has occurred while \output is active []
+Overfull \vbox (45.02966pt too high) has occurred while \output is active []
 
 
 [6]) (./main.toc [7
 
 
-])
+] [8])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [8] [9] [10
+ [9] [10
 
 ]
 \openout2 = `introduction.aux'.
@@ -2268,16 +2289,16 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.32 
+l.33 
       [1
 
 
-]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
- been already used, duplicate ignored
+])pdfTeX warning (ext4): destination with the same identifier (name{page.2}) ha
+s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.85 
-      [2]) [3]
+l.44 \include{introduction}
+                            [2] [3]
 \openout2 = `cas.aux'.
 
  (./cas.tex [4
@@ -2286,7 +2307,7 @@ l.85
 
 ]
 Chapter 2.
-<fig/system.png, id=494, 948.54375pt x 587.19376pt>
+<fig/system.png, id=525, 948.54375pt x 587.19376pt>
 File: fig/system.png Graphic file (type png)
  <use fig/system.png>
 Package pdftex.def Info: fig/system.png used on input line 21.
@@ -2299,17 +2320,35 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Underfull \vbox (badness 3302) has occurred while \output is active []
 
  [5]
-[6 <./fig/system.png>]
-Underfull \vbox (badness 10000) detected at line 107
+Overfull \hbox (0.12141pt too wide) in paragraph at lines 45--65
+[]\T1/jkpk/m/n/10 The fol-low-ing sec-tion de-scribes the setup of the DVB sys-
+tem, which can be viewed
  []
 
-[7] <fig/CIPlus.png, id=520, 434.62375pt x 523.9575pt>
+[6 <./fig/system.png>]
+Overfull \hbox (7.4166pt too wide) in paragraph at lines 80--87
+\T1/jkpk/m/n/10 on subscription- and pay-ment in-for-ma-tion re-lated to the us
+er. The ECM-generators
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 110
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7]
+<fig/CIPlus.png, id=553, 434.62375pt x 523.9575pt>
 File: fig/CIPlus.png Graphic file (type png)
  <use fig/CIPlus.png>
-Package pdftex.def Info: fig/CIPlus.png used on input line 147.
-(pdftex.def)             Requested size: 142.2616pt x 171.50739pt.
+Package pdftex.def Info: fig/CIPlus.png used on input line 149.
+(pdftex.def)             Requested size: 248.96051pt x 300.13794pt.
 
-[8 <./fig/CIPlus.png>]) [9]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) [8] [9 <./fig/CIPlus.png>]
 \openout2 = `Scrambling.aux'.
 
  (./Scrambling.tex [10
@@ -2318,51 +2357,55 @@ Package pdftex.def Info: fig/CIPlus.png used on input line 147.
 
 ]
 Chapter 3.
-[11] <fig/TSPacket2.png, id=554, 969.6225pt x 113.42375pt>
+[11] <fig/TSPacket2.png, id=588, 969.6225pt x 113.42375pt>
 File: fig/TSPacket2.png Graphic file (type png)
 
 <use fig/TSPacket2.png>
-Package pdftex.def Info: fig/TSPacket2.png used on input line 79.
+Package pdftex.def Info: fig/TSPacket2.png used on input line 92.
 (pdftex.def)             Requested size: 355.65944pt x 41.6044pt.
  [12 <./fig/TSPacket2.png>]
-Overfull \hbox (2.49pt too wide) in paragraph at lines 101--103
-[]\T1/jkpk/m/n/10 clear_payload_size = [pay-load_size mod block_size] (or sim-p
-ly pay-load_size
+Overfull \hbox (0.2599pt too wide) in alignment at lines 111--125
+ [] [] 
  []
 
 
-Overfull \hbox (9.34999pt too wide) in alignment at lines 124--141
+Underfull \vbox (badness 10000) detected at line 125
+ []
+
+
+Overfull \hbox (9.34999pt too wide) in alignment at lines 146--163
  [] [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 141
+Underfull \vbox (badness 10000) detected at line 163
  []
 
-[13] <fig/PES.png, id=574, 993.7125pt x 405.515pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13]
+<fig/PES.png, id=610, 993.7125pt x 405.515pt>
 File: fig/PES.png Graphic file (type png)
  <use fig/PES.png>
-Package pdftex.def Info: fig/PES.png used on input line 184.
+Package pdftex.def Info: fig/PES.png used on input line 203.
 (pdftex.def)             Requested size: 355.65944pt x 145.13757pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [14] [15 <./fig/PES.png (PNG copy)>]
-<fig/cipher.png, id=594, 501.875pt x 299.1175pt>
+<fig/cipher.png, id=631, 501.875pt x 299.1175pt>
 File: fig/cipher.png Graphic file (type png)
  <use fig/cipher.png>
-Package pdftex.def Info: fig/cipher.png used on input line 252.
+Package pdftex.def Info: fig/cipher.png used on input line 273.
 (pdftex.def)             Requested size: 355.65944pt x 211.98238pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [16 <./fig/cipher.png>] [17] <fig/SPnetwork.png, id=635, 451.6875pt x 301.3659
+ [16 <./fig/cipher.png>] [17] <fig/SPnetwork.png, id=669, 451.6875pt x 301.3659
 pt>
 File: fig/SPnetwork.png Graphic file (type png)
 
 <use fig/SPnetwork.png>
-Package pdftex.def Info: fig/SPnetwork.png used on input line 352.
+Package pdftex.def Info: fig/SPnetwork.png used on input line 374.
 (pdftex.def)             Requested size: 177.82971pt x 118.64964pt.
 ) [18 <./fig/SPnetwork.png>]
 \openout2 = `CSA.aux'.
@@ -2377,7 +2420,7 @@ Chapter 4.
 Underfull \vbox (badness 2253) has occurred while \output is active []
 
  [20]
-<fig/blockcipher.pdf, id=670, 252.945pt x 179.2296pt>
+<fig/blockcipher.pdf, id=704, 252.945pt x 179.2296pt>
 File: fig/blockcipher.pdf Graphic file (type pdf)
 
 <use fig/blockcipher.pdf>
@@ -2422,21 +2465,90 @@ Underfull \vbox (badness 2762) has occurred while \output is active []
 ]
 Chapter 6.
 [27] [28] [29]) [30]
-\openout2 = `result.aux'.
+\openout2 = `implementation.aux'.
 
- (./result.tex
+ (./implementation.tex
 Chapter 7.
+<fig/scrambler.png, id=833, 742.775pt x 428.60126pt>
+File: fig/scrambler.png Graphic file (type png)
+ <use fig/scrambler.png>
+Package pdftex.def Info: fig/scrambler.png used on input line 18.
+(pdftex.def)             Requested size: 266.74457pt x 153.92355pt.
+
 [31
 
 
 
-] <fig/scrambler.png, id=805, 742.775pt x 428.60126pt>
-File: fig/scrambler.png Graphic file (type png)
+ <./fig/scrambler.png>] <fig/manager.png, id=842, 794.97pt x 492.84125pt>
+File: fig/manager.png Graphic file (type png)
 
-<use fig/scrambler.png>
+<use fig/manager.png>
+Package pdftex.def Info: fig/manager.png used on input line 40.
+(pdftex.def)             Requested size: 266.74457pt x 165.36792pt.
+ <fig/cbc.png, id=844, 484.81125pt x 561.09625pt>
+File: fig/cbc.png Graphic file (type png)
+
+<use fig/cbc.png>
+Package pdftex.def Info: fig/cbc.png used on input line 57.
+(pdftex.def)             Requested size: 266.74457pt x 308.73232pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[32 <./fig/manager.png>] <fig/cipherblock.png, id=855, 658.46pt x 478.78876pt>
+File: fig/cipherblock.png Graphic file (type png)
+
+<use fig/cipherblock.png>
+Package pdftex.def Info: fig/cipherblock.png used on input line 79.
+(pdftex.def)             Requested size: 266.74457pt x 193.95952pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[33 <./fig/cbc.png>]
+<fig/keyexpansion2.png, id=866, 659.46375pt x 583.17876pt>
+File: fig/keyexpansion2.png Graphic file (type png)
+
+<use fig/keyexpansion2.png>
+Package pdftex.def Info: fig/keyexpansion2.png used on input line 105.
+(pdftex.def)             Requested size: 266.74457pt x 235.89246pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<fig/keyblock2.png, id=867, 579.16376pt x 485.815pt>
+File: fig/keyblock2.png Graphic file (type png)
+ <use fig/keyblock2.png>
+Package pdftex.def Info: fig/keyblock2.png used on input line 112.
+(pdftex.def)             Requested size: 266.74457pt x 223.75189pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[34 <./fig/cipherblock.png>]
+Underfull \vbox (badness 1205) has occurred while \output is active []
+
+ [35 <./fig/keyexpansion2.png> <./fig/keyblock2.png>]
+<fig/round.png, id=882, 652.4375pt x 630.355pt>
+File: fig/round.png Graphic file (type png)
+ <use fig/round.png>
+Package pdftex.def Info: fig/round.png used on input line 143.
+(pdftex.def)             Requested size: 266.74457pt x 257.72583pt.
+) [36 <./fig/round.png>] [37]
+\openout2 = `result.aux'.
+
+ (./result.tex [38
+
+
+
+]
+Chapter 8.
+[39]
+File: fig/scrambler.png Graphic file (type png)
+ <use fig/scrambler.png>
 Package pdftex.def Info: fig/scrambler.png used on input line 83.
 (pdftex.def)             Requested size: 355.65944pt x 205.22923pt.
- [32]
+ [40]
 ! Missing $ inserted.
 <inserted text> 
                 $
@@ -2817,101 +2929,36 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-[33 <./fig/scrambler.png>] [34]
-File: fig/scrambler.png Graphic file (type png)
- <use fig/scrambler.png>
-Package pdftex.def Info: fig/scrambler.png used on input line 326.
-(pdftex.def)             Requested size: 266.74457pt x 153.92355pt.
- [35]
-<fig/manager.png, id=837, 794.97pt x 492.84125pt>
-File: fig/manager.png Graphic file (type png)
- <use fig/manager.png>
-Package pdftex.def Info: fig/manager.png used on input line 348.
-(pdftex.def)             Requested size: 266.74457pt x 165.36792pt.
-
-<fig/cbc.png, id=839, 484.81125pt x 561.09625pt>
-File: fig/cbc.png Graphic file (type png)
- <use fig/cbc.png>
-Package pdftex.def Info: fig/cbc.png used on input line 365.
-(pdftex.def)             Requested size: 266.74457pt x 308.73232pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[36 <./fig/manager.png>] <fig/cipherblock.png, id=850, 658.46pt x 478.78876pt>
-File: fig/cipherblock.png Graphic file (type png)
-
-<use fig/cipherblock.png>
-Package pdftex.def Info: fig/cipherblock.png used on input line 387.
-(pdftex.def)             Requested size: 266.74457pt x 193.95952pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[37 <./fig/cbc.png>]
-<fig/keyexpansion2.png, id=861, 659.46375pt x 583.17876pt>
-File: fig/keyexpansion2.png Graphic file (type png)
-
-<use fig/keyexpansion2.png>
-Package pdftex.def Info: fig/keyexpansion2.png used on input line 413.
-(pdftex.def)             Requested size: 266.74457pt x 235.89246pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<fig/keyblock2.png, id=862, 579.16376pt x 485.815pt>
-File: fig/keyblock2.png Graphic file (type png)
- <use fig/keyblock2.png>
-Package pdftex.def Info: fig/keyblock2.png used on input line 420.
-(pdftex.def)             Requested size: 266.74457pt x 223.75189pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<fig/round.png, id=864, 652.4375pt x 630.355pt>
-File: fig/round.png Graphic file (type png)
- <use fig/round.png>
-Package pdftex.def Info: fig/round.png used on input line 451.
-(pdftex.def)             Requested size: 266.74457pt x 257.72583pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[38 <./fig/cipherblock.png>]
-Overfull \vbox (14.81561pt too high) has occurred while \output is active []
-
-
-[39 <./fig/keyexpansion2.png> <./fig/keyblock2.png>] [40 <./fig/round.png>]
-<fig/successtv1.png, id=886, 831.85782pt x 106.14656pt>
+[41] [42] <fig/successtv1.png, id=928, 831.85782pt x 106.14656pt>
 File: fig/successtv1.png Graphic file (type png)
 
 <use fig/successtv1.png>
-Package pdftex.def Info: fig/successtv1.png used on input line 495.
+Package pdftex.def Info: fig/successtv1.png used on input line 328.
 (pdftex.def)             Requested size: 355.65944pt x 45.38298pt.
 
-<fig/successtv2.png, id=888, 832.61063pt x 112.16907pt>
+<fig/successtv2.png, id=930, 832.61063pt x 112.16907pt>
 File: fig/successtv2.png Graphic file (type png)
 
 <use fig/successtv2.png>
-Package pdftex.def Info: fig/successtv2.png used on input line 506.
+Package pdftex.def Info: fig/successtv2.png used on input line 339.
 (pdftex.def)             Requested size: 355.65944pt x 47.9151pt.
- <fig/successtv3.png, id=890, 726.46407pt x 108.405pt>
+ [43 <./fig/successtv1.png (PNG copy)>]
+<fig/successtv3.png, id=940, 726.46407pt x 108.405pt>
 File: fig/successtv3.png Graphic file (type png)
-
-<use fig/successtv3.png>
-Package pdftex.def Info: fig/successtv3.png used on input line 517.
+ <use fig/successtv3.png>
+Package pdftex.def Info: fig/successtv3.png used on input line 350.
 (pdftex.def)             Requested size: 355.65944pt x 53.07423pt.
- [41 <./fig/successtv1.png (PNG copy)> <./fig/successtv2.png (PNG copy)> <./fig
-/successtv3.png>]
-Overfull \hbox (5.6194pt too wide) in paragraph at lines 545--555
+
+Overfull \hbox (5.6194pt too wide) in paragraph at lines 378--388
 []\T1/jkpk/m/n/10 The im-ple-men-ta-tion by Xil-inx uses cus-tom FPGA op-ti-miz
 a-tion tech-niques through
  []
 
+[44 <./fig/successtv2.png (PNG copy)> <./fig/successtv3.png>]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.563   \begin{array}{| l | l | l | l |}
+l.396   \begin{array}{| l | l | l | l |}
                                         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2919,7 +2966,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.569   \end{array}
+l.402   \end{array}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2927,14 +2974,18 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-[42]) [43]
-\openout2 = `matrix.aux'.
-
- (./matrix.tex [44
-
+) [45] [46
 
 
 ]
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 23.63593pt on input line 55.
+ [47] [48]
+\openout2 = `matrix.aux'.
+
+ (./matrix.tex
+Appendix A.
+
 Overfull \hbox (16.60016pt too wide) detected at line 43
 [][]
  []
@@ -2963,46 +3014,52 @@ Overfull \hbox (40.79588pt too wide) in paragraph at lines 83--101
 []$[]$ 
  []
 
-) [45] [46] [47]
+) [49
+
+
+] [50] [51]
 \openout2 = `flowcharts.aux'.
 
- (./flowcharts.tex [48
+ (./flowcharts.tex [52
 
 
 
 ]
-<fig/flowchart.pdf, id=938, 415.5525pt x 912.40875pt>
+Appendix B.
+<fig/flowchart.pdf, id=988, 415.5525pt x 912.40875pt>
 File: fig/flowchart.pdf Graphic file (type pdf)
  <use fig/flowchart.pdf>
 Package pdftex.def Info: fig/flowchart.pdf used on input line 5.
 (pdftex.def)             Requested size: 151.61516pt x 332.90062pt.
 
-<fig/keyschedule.png, id=939, 822.272pt x 822.272pt>
+<fig/keyschedule.png, id=989, 822.272pt x 822.272pt>
 File: fig/keyschedule.png Graphic file (type png)
  <use fig/keyschedule.png>
 Package pdftex.def Info: fig/keyschedule.png used on input line 12.
 (pdftex.def)             Requested size: 355.65944pt x 355.66539pt.
 
-<fig/CBCmode.png, id=940, 2007.5pt x 700.6175pt>
+<fig/CBCmode.png, id=990, 2007.5pt x 700.6175pt>
 File: fig/CBCmode.png Graphic file (type png)
  <use fig/CBCmode.png>
 Package pdftex.def Info: fig/CBCmode.png used on input line 19.
 (pdftex.def)             Requested size: 355.65944pt x 124.11726pt.
 )
-[49] [50 <./fig/flowchart.pdf>] [51 <./fig/keyschedule.png (PNG copy)> <./fig/C
+[53] [54 <./fig/flowchart.pdf>] [55 <./fig/keyschedule.png (PNG copy)> <./fig/C
 BCmode.png>]
 \openout2 = `vectors.aux'.
 
- (./vectors.tex [52
+ (./vectors.tex [56
 
 
 
 ]
+Appendix C.
+
 Underfull \hbox (badness 10000) in paragraph at lines 8--10
 
  []
 
-[53]
+[57]
 
 ! Package caption Error: \caption outside float.
 
@@ -3070,7 +3127,7 @@ Overfull \hbox (52.91017pt too wide) in alignment at lines 108--133
  [] [] [] [] [] [] [] [] 
  []
 
-[54]
+[58]
 Overfull \hbox (52.91017pt too wide) in alignment at lines 133--138
  [] [] [] [] [] [] [] [] 
  []
@@ -3256,14 +3313,11 @@ Overfull \hbox (29.07985pt too wide) in alignment at lines 500--588
  [] [] [] [] [] [] [] 
  []
 
-[55] [56]
+[59] [60]
 Underfull \vbox (badness 10000) detected at line 617
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [57]
+[61]
 Overfull \hbox (57.23956pt too wide) in alignment at lines 632--655
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
@@ -3278,19 +3332,20 @@ Overfull \hbox (59.1926pt too wide) in alignment at lines 675--688
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
-
+[62]
 Overfull \hbox (58.7516pt too wide) in alignment at lines 692--704
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
-[58]) [59]
+) [63]
 \openout2 = `examples.aux'.
 
- (./examples.tex [60
+ (./examples.tex [64
 
 
 
 ]
+Appendix D.
 ! Missing $ inserted.
 <inserted text> 
                 $
@@ -3344,14 +3399,14 @@ l.18
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-) [61]
+) [65]
 \openout2 = `synthesis.aux'.
 
- (./synthesis.tex [62
+ (./synthesis.tex [66
 
 
 
-] (./synthesis2.tex) (./synthesis3.tex [63])
+] (./synthesis2.tex) (./synthesis3.tex [67])
 (./synthesis4.tex) (./synthesis5.tex
 ! Undefined control sequence.
 l.2 \subsubsubsection
@@ -3362,7 +3417,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[64]
+[68]
 ! Undefined control sequence.
 l.20 \subsubsubsection
                       {CBC}
@@ -3390,7 +3445,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[65]
+[69]
 ! Undefined control sequence.
 l.86 \subsubsubsection
                       {Data2state}
@@ -3427,7 +3482,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[66]
+[70]
 ! Undefined control sequence.
 l.164 \subsubsubsection
                        {Keyblock3}
@@ -3446,7 +3501,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[67]
+[71]
 ! Undefined control sequence.
 l.209 \subsubsubsection
                        {Keyexpansion}
@@ -3474,7 +3529,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[68]
+[72]
 ! Undefined control sequence.
 l.277 \subsubsubsection
                        {Rcon}
@@ -3502,7 +3557,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[69]
+[73]
 ! Undefined control sequence.
 l.337 \subsubsubsection
                        {Scrambler}
@@ -3530,7 +3585,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[70]
+[74]
 ! Undefined control sequence.
 l.403 \subsubsubsection
                        {Subbytes}
@@ -3549,7 +3604,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-) (./synthesis6.tex [71]
+) (./synthesis6.tex [75]
 Overfull \hbox (4.34079pt too wide) in paragraph at lines 72--72
 []  \T1/pcr/m/n/8 A LUT Flip Flop pair for this architecture represents one LUT
  paired with[] 
@@ -3558,8 +3613,8 @@ Overfull \hbox (4.34079pt too wide) in paragraph at lines 72--72
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [72]))
-[73] [74
+ [76]))
+[77] [78
 
 
 ] (./main.lof)
@@ -3570,7 +3625,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 \tf@brf=\write8
 \openout8 = `main.brf'.
 
- [75] [76
+ [79] [80
 
 ]
 Underfull \hbox (badness 3872) in paragraph at lines 40--40
@@ -3626,7 +3681,7 @@ Underfull \hbox (badness 2426) in paragraph at lines 64--64
  FTLCAWhitePaperTwo .
  []
 
-[77]
+[81]
 Underfull \hbox (badness 10000) in paragraph at lines 80--80
 []$\T1/pcr/m/n/10 http : / / ieeexplore . ieee . org . lt . ltag . bibl . liu .
  se / stamp /
@@ -3668,7 +3723,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 151--151
 e / chapter /
  []
 
-[78]
+[82]
 Underfull \hbox (badness 3989) in paragraph at lines 159--159
 []\T1/jkpk/m/n/10 Serge Vau-de-nay, Willi Meier, Si-mon Fis-cher, et al.  Anal-
 y-sis of
@@ -3718,44 +3773,45 @@ st _
 
 )
 No file main.ind.
-[79] [80
+[83] [84
 
-] <fig/LinkUniv_staende_pms.pdf, id=1244, 260.975pt x 172.645pt>
+] <fig/LinkUniv_staende_pms.pdf, id=1296, 260.975pt x 172.645pt>
 File: fig/LinkUniv_staende_pms.pdf Graphic file (type pdf)
 
 <use fig/LinkUniv_staende_pms.pdf>
-Package pdftex.def Info: fig/LinkUniv_staende_pms.pdf used on input line 80.
+Package pdftex.def Info: fig/LinkUniv_staende_pms.pdf used on input line 79.
 (pdftex.def)             Requested size: 77.41702pt x 51.21495pt.
 
-Overfull \hbox (0.16193pt too wide) in paragraph at lines 80--80
+Overfull \hbox (0.16193pt too wide) in paragraph at lines 79--79
 \T1/jkpk/m/n/10 and its pro-ce-dures for pub-li-ca-tion and for as-sur-ance of 
 doc-u-ment in-tegrity, please
  []
 
-[81 <./fig/LinkUniv_staende_pms.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 80.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 80.
+[85 <./fig/LinkUniv_staende_pms.pdf>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 79.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 79.
  (./main.aux (./notation.aux)
 (./introduction.aux) (./cas.aux) (./Scrambling.aux) (./CSA.aux)
-(./cissaORCSA3.aux) (./aes.aux) (./result.aux) (./matrix.aux) (./flowcharts.aux
-) (./vectors.aux) (./examples.aux) (./synthesis.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 80.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 80.
+(./cissaORCSA3.aux) (./aes.aux) (./implementation.aux) (./result.aux)
+(./matrix.aux) (./flowcharts.aux) (./vectors.aux) (./examples.aux)
+(./synthesis.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 79.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 79.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: A959776785CA20BAE1AC1DE1E8847FDA;5193.
+(rerunfilecheck)             Checksum: 57730C58F60960AF7273D8FBED082449;5486.
 Package rerunfilecheck Info: File `main.brf' has not changed.
-(rerunfilecheck)             Checksum: 4D318C6CC4D57AE7338AEBF6498BE3F4;3328.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 80.
+(rerunfilecheck)             Checksum: 3B282625120EA9BC1A97AC1A6686EAAB;3402.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 79.
  )
 (\end occurred when \ifx on line 20 was incomplete) 
 Here is how much of TeX's memory you used:
- 22974 strings out of 493304
- 375623 string characters out of 6139871
- 597751 words of memory out of 5000000
- 25413 multiletter control sequences out of 15000+600000
- 225826 words of font info for 187 fonts, out of 8000000 for 9000
+ 22999 strings out of 493304
+ 375857 string characters out of 6139871
+ 601810 words of memory out of 5000000
+ 25423 multiletter control sequences out of 15000+600000
+ 228556 words of font info for 189 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 56i,12n,87p,587b,559s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,12n,87p,587b,556s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-di
 st/fonts/enc/dvips/base/8r.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/k
 pfonts/kpfonts-expert.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/kpfont
@@ -3768,15 +3824,14 @@ mf-dist/fonts/type1/public/kpfonts/jkpmi.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/kpfonts/jkpmn8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 public/kpfonts/jkpmn8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kp
 fonts/jkpmne.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpm
-ne.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpmsc8a.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/kpfonts/jkpsya.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/font
-s/type1/urw/helvetic/uhvb8a.pfb>
-Output written on main.pdf (95 pages, 1215035 bytes).
+ne.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpsya.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/urw/helvetic/uhvb8a.pfb>
+Output written on main.pdf (99 pages, 1209861 bytes).
 PDF statistics:
- 1367 PDF objects out of 1440 (max. 8388607)
- 1195 compressed objects within 12 object streams
- 268 named destinations out of 1000 (max. 500000)
- 19192 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 1417 PDF objects out of 1440 (max. 8388607)
+ 1241 compressed objects within 13 object streams
+ 275 named destinations out of 1000 (max. 500000)
+ 19240 words of extra memory for PDF output out of 20736 (max. 10000000)
 

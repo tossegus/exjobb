@@ -16,64 +16,70 @@
 \BOOKMARK [2][-]{subsection.2.3.1}{2.3.1 Standards}{section.2.3}% 16
 \BOOKMARK [1][-]{section.2.4}{2.4 DVB-SimulCrypt}{chapter.2}% 17
 \BOOKMARK [1][-]{section.2.5}{2.5 Common Interface}{chapter.2}% 18
-\BOOKMARK [2][-]{subsection.2.5.1}{2.5.1 CI-Plus}{section.2.5}% 19
+\BOOKMARK [2][-]{subsection.2.5.1}{2.5.1 CI+}{section.2.5}% 19
 \BOOKMARK [1][-]{section.2.6}{2.6 Conditional Access Module}{chapter.2}% 20
 \BOOKMARK [0][]{chapter.3}{3 Cryptography}{}% 21
 \BOOKMARK [1][-]{section.3.1}{3.1 Why cryptography is needed}{chapter.3}% 22
-\BOOKMARK [1][-]{section.3.2}{3.2 Scrambling and Encrypting}{chapter.3}% 23
-\BOOKMARK [1][-]{section.3.3}{3.3 Data packets}{chapter.3}% 24
-\BOOKMARK [2][-]{subsection.3.3.1}{3.3.1 TS packets}{section.3.3}% 25
-\BOOKMARK [2][-]{subsection.3.3.2}{3.3.2 PES packets}{section.3.3}% 26
-\BOOKMARK [1][-]{section.3.4}{3.4 Encryption and Decryption}{chapter.3}% 27
-\BOOKMARK [2][-]{subsection.3.4.1}{3.4.1 Symmetric-key encryption}{section.3.4}% 28
-\BOOKMARK [2][-]{subsection.3.4.2}{3.4.2 Public-key encryption}{section.3.4}% 29
-\BOOKMARK [2][-]{subsection.3.4.3}{3.4.3 Combination of encryption}{section.3.4}% 30
-\BOOKMARK [1][-]{section.3.5}{3.5 Ciphers}{chapter.3}% 31
-\BOOKMARK [2][-]{subsection.3.5.1}{3.5.1 Block cipher}{section.3.5}% 32
-\BOOKMARK [2][-]{subsection.3.5.2}{3.5.2 Stream cipher}{section.3.5}% 33
-\BOOKMARK [2][-]{subsection.3.5.3}{3.5.3 Decryption}{section.3.5}% 34
-\BOOKMARK [1][-]{section.3.6}{3.6 Confusion and Diffusion}{chapter.3}% 35
-\BOOKMARK [2][-]{subsection.3.6.1}{3.6.1 S-boxes and P-boxes}{section.3.6}% 36
-\BOOKMARK [1][-]{section.3.7}{3.7 Secrecy}{chapter.3}% 37
-\BOOKMARK [0][]{chapter.4}{4 Common Scrambling Algorithm}{}% 38
-\BOOKMARK [1][-]{section.4.1}{4.1 The need for a new standard}{chapter.4}% 39
-\BOOKMARK [1][-]{section.4.2}{4.2 Layout of the CSA}{chapter.4}% 40
-\BOOKMARK [1][-]{section.4.3}{4.3 Security}{chapter.4}% 41
-\BOOKMARK [2][-]{subsection.4.3.1}{4.3.1 Breaking the CSA}{section.4.3}% 42
-\BOOKMARK [0][]{chapter.5}{5 CISSA and CSA3}{}% 43
-\BOOKMARK [1][-]{section.5.1}{5.1 CISSA}{chapter.5}% 44
-\BOOKMARK [2][-]{subsection.5.1.1}{5.1.1 Software friendly}{section.5.1}% 45
-\BOOKMARK [1][-]{section.5.2}{5.2 CSA3}{chapter.5}% 46
-\BOOKMARK [2][-]{subsection.5.2.1}{5.2.1 Hardware friendly}{section.5.2}% 47
-\BOOKMARK [1][-]{section.5.3}{5.3 Conclusion}{chapter.5}% 48
-\BOOKMARK [0][]{chapter.6}{6 Advanced Encryption Standard}{}% 49
-\BOOKMARK [1][-]{section.6.1}{6.1 Method}{chapter.6}% 50
-\BOOKMARK [2][-]{subsection.6.1.1}{6.1.1 InitialRound}{section.6.1}% 51
-\BOOKMARK [2][-]{subsection.6.1.2}{6.1.2 SubBytes}{section.6.1}% 52
-\BOOKMARK [2][-]{subsection.6.1.3}{6.1.3 ShiftRows}{section.6.1}% 53
-\BOOKMARK [2][-]{subsection.6.1.4}{6.1.4 MixColumns}{section.6.1}% 54
-\BOOKMARK [2][-]{subsection.6.1.5}{6.1.5 AddRoundKey}{section.6.1}% 55
-\BOOKMARK [1][-]{section.6.2}{6.2 KeyExpansion}{chapter.6}% 56
-\BOOKMARK [2][-]{subsection.6.2.1}{6.2.1 Key-schedule core}{section.6.2}% 57
-\BOOKMARK [2][-]{subsection.6.2.2}{6.2.2 Rijndael's S-Box}{section.6.2}% 58
-\BOOKMARK [2][-]{subsection.6.2.3}{6.2.3 Rcon}{section.6.2}% 59
-\BOOKMARK [0][]{chapter.7}{7 Result}{}% 60
-\BOOKMARK [1][-]{section.7.1}{7.1 Problems}{chapter.7}% 61
-\BOOKMARK [1][-]{section.7.2}{7.2 Hardware}{chapter.7}% 62
-\BOOKMARK [2][-]{subsection.7.2.1}{7.2.1 Hardware usage}{section.7.2}% 63
-\BOOKMARK [1][-]{section.7.3}{7.3 Further development}{chapter.7}% 64
-\BOOKMARK [2][-]{subsection.7.3.1}{7.3.1 Rijndael's S-Box}{section.7.3}% 65
-\BOOKMARK [2][-]{subsection.7.3.2}{7.3.2 Critical Path}{section.7.3}% 66
-\BOOKMARK [1][-]{section.7.4}{7.4 Implementation}{chapter.7}% 67
-\BOOKMARK [2][-]{subsection.7.4.1}{7.4.1 Manager entity}{section.7.4}% 68
-\BOOKMARK [2][-]{subsection.7.4.2}{7.4.2 CBC entity}{section.7.4}% 69
-\BOOKMARK [2][-]{subsection.7.4.3}{7.4.3 Cipher entity}{section.7.4}% 70
-\BOOKMARK [2][-]{subsection.7.4.4}{7.4.4 Keyexpansion entity}{section.7.4}% 71
-\BOOKMARK [2][-]{subsection.7.4.5}{7.4.5 Round entity}{section.7.4}% 72
-\BOOKMARK [1][-]{section.7.5}{7.5 Tests}{chapter.7}% 73
-\BOOKMARK [1][-]{section.7.6}{7.6 Comparison to other implementations}{chapter.7}% 74
-\BOOKMARK [1][-]{section.7.7}{7.7 Discussion}{chapter.7}% 75
-\BOOKMARK [1][-]{section.7.8}{7.8 Conclusions}{chapter.7}% 76
-\BOOKMARK [0][]{section*.36}{List of Figures}{}% 77
-\BOOKMARK [0][]{appendix*.37}{Bibliography}{}% 78
-\BOOKMARK [0][]{Copyright.0}{Copyright}{}% 79
+\BOOKMARK [1][-]{section.3.2}{3.2 Data packets}{chapter.3}% 23
+\BOOKMARK [2][-]{subsection.3.2.1}{3.2.1 TS packets}{section.3.2}% 24
+\BOOKMARK [2][-]{subsection.3.2.2}{3.2.2 PES packets}{section.3.2}% 25
+\BOOKMARK [1][-]{section.3.3}{3.3 Encryption and Decryption}{chapter.3}% 26
+\BOOKMARK [2][-]{subsection.3.3.1}{3.3.1 Symmetric-key encryption}{section.3.3}% 27
+\BOOKMARK [2][-]{subsection.3.3.2}{3.3.2 Public-key encryption}{section.3.3}% 28
+\BOOKMARK [2][-]{subsection.3.3.3}{3.3.3 Combination of encryption methods}{section.3.3}% 29
+\BOOKMARK [1][-]{section.3.4}{3.4 Ciphers}{chapter.3}% 30
+\BOOKMARK [2][-]{subsection.3.4.1}{3.4.1 Block cipher}{section.3.4}% 31
+\BOOKMARK [2][-]{subsection.3.4.2}{3.4.2 Stream cipher}{section.3.4}% 32
+\BOOKMARK [2][-]{subsection.3.4.3}{3.4.3 Decryption}{section.3.4}% 33
+\BOOKMARK [1][-]{section.3.5}{3.5 Confusion and Diffusion}{chapter.3}% 34
+\BOOKMARK [2][-]{subsection.3.5.1}{3.5.1 S-boxes and P-boxes}{section.3.5}% 35
+\BOOKMARK [1][-]{section.3.6}{3.6 Secrecy}{chapter.3}% 36
+\BOOKMARK [0][]{chapter.4}{4 Common Scrambling Algorithm}{}% 37
+\BOOKMARK [1][-]{section.4.1}{4.1 The need for a new standard}{chapter.4}% 38
+\BOOKMARK [1][-]{section.4.2}{4.2 Layout of the CSA}{chapter.4}% 39
+\BOOKMARK [1][-]{section.4.3}{4.3 Security}{chapter.4}% 40
+\BOOKMARK [2][-]{subsection.4.3.1}{4.3.1 Breaking the CSA}{section.4.3}% 41
+\BOOKMARK [0][]{chapter.5}{5 CISSA and CSA3}{}% 42
+\BOOKMARK [1][-]{section.5.1}{5.1 CISSA}{chapter.5}% 43
+\BOOKMARK [2][-]{subsection.5.1.1}{5.1.1 Software friendly}{section.5.1}% 44
+\BOOKMARK [1][-]{section.5.2}{5.2 CSA3}{chapter.5}% 45
+\BOOKMARK [2][-]{subsection.5.2.1}{5.2.1 Hardware friendly}{section.5.2}% 46
+\BOOKMARK [1][-]{section.5.3}{5.3 Conclusion}{chapter.5}% 47
+\BOOKMARK [0][]{chapter.6}{6 Advanced Encryption Standard}{}% 48
+\BOOKMARK [1][-]{section.6.1}{6.1 Method}{chapter.6}% 49
+\BOOKMARK [2][-]{subsection.6.1.1}{6.1.1 InitialRound}{section.6.1}% 50
+\BOOKMARK [2][-]{subsection.6.1.2}{6.1.2 SubBytes}{section.6.1}% 51
+\BOOKMARK [2][-]{subsection.6.1.3}{6.1.3 ShiftRows}{section.6.1}% 52
+\BOOKMARK [2][-]{subsection.6.1.4}{6.1.4 MixColumns}{section.6.1}% 53
+\BOOKMARK [2][-]{subsection.6.1.5}{6.1.5 AddRoundKey}{section.6.1}% 54
+\BOOKMARK [1][-]{section.6.2}{6.2 KeyExpansion}{chapter.6}% 55
+\BOOKMARK [2][-]{subsection.6.2.1}{6.2.1 Key-schedule core}{section.6.2}% 56
+\BOOKMARK [2][-]{subsection.6.2.2}{6.2.2 Rijndael's S-Box}{section.6.2}% 57
+\BOOKMARK [2][-]{subsection.6.2.3}{6.2.3 Rcon}{section.6.2}% 58
+\BOOKMARK [0][]{chapter.7}{7 Implementation}{}% 59
+\BOOKMARK [1][-]{section.7.1}{7.1 Manager entity}{chapter.7}% 60
+\BOOKMARK [1][-]{section.7.2}{7.2 CBC entity}{chapter.7}% 61
+\BOOKMARK [1][-]{section.7.3}{7.3 Cipher entity}{chapter.7}% 62
+\BOOKMARK [1][-]{section.7.4}{7.4 Keyexpansion entity}{chapter.7}% 63
+\BOOKMARK [2][-]{subsection.7.4.1}{7.4.1 Keycore entity}{section.7.4}% 64
+\BOOKMARK [1][-]{section.7.5}{7.5 Round entity}{chapter.7}% 65
+\BOOKMARK [2][-]{subsection.7.5.1}{7.5.1 Addroundkey entity}{section.7.5}% 66
+\BOOKMARK [2][-]{subsection.7.5.2}{7.5.2 The mulblock entity}{section.7.5}% 67
+\BOOKMARK [0][]{chapter.8}{8 Result}{}% 68
+\BOOKMARK [1][-]{section.8.1}{8.1 Problems}{chapter.8}% 69
+\BOOKMARK [1][-]{section.8.2}{8.2 Hardware}{chapter.8}% 70
+\BOOKMARK [2][-]{subsection.8.2.1}{8.2.1 Hardware usage}{section.8.2}% 71
+\BOOKMARK [1][-]{section.8.3}{8.3 Further development}{chapter.8}% 72
+\BOOKMARK [2][-]{subsection.8.3.1}{8.3.1 Rijndael's S-Box}{section.8.3}% 73
+\BOOKMARK [2][-]{subsection.8.3.2}{8.3.2 Critical Path}{section.8.3}% 74
+\BOOKMARK [1][-]{section.8.4}{8.4 Tests}{chapter.8}% 75
+\BOOKMARK [1][-]{section.8.5}{8.5 Comparison to other implementations}{chapter.8}% 76
+\BOOKMARK [1][-]{section.8.6}{8.6 Discussion}{chapter.8}% 77
+\BOOKMARK [1][-]{section.8.7}{8.7 Conclusions}{chapter.8}% 78
+\BOOKMARK [0][]{appendix.A}{A Matrixes}{}% 79
+\BOOKMARK [0][]{appendix.B}{B Illustrations}{}% 80
+\BOOKMARK [0][]{appendix.C}{C Test vectors}{}% 81
+\BOOKMARK [0][]{appendix.D}{D Examples}{}% 82
+\BOOKMARK [0][]{section*.32}{List of Figures}{}% 83
+\BOOKMARK [0][]{appendix*.33}{Bibliography}{}% 84
+\BOOKMARK [0][]{Copyright.0}{Copyright}{}% 85

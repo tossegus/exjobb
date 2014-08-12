@@ -1,19 +1,19 @@
 \chapter{Introduction}
 WISI Norden AB, previously A2B Electronics, is a Swedish company 
-founded in 1997. The company is a developer of headend cable-TV 
-distribution systems. WISI Norden develops and designs both hardware and
-software, with the purpose of providing Digital TV solutions. 
+founded in 1997. The company is a developer of head-end cable-TV 
+distribution systems. WISI Norden develops and designs both hardware 
+and software, with the purpose of providing Digital TV solutions. 
 
 The purpose of this thesis has been to find a replacement to the 
-currently implemented scrambler, located in the head-end solutions. The 
+currently implemented scrambler, located in the head-end solutions. The
 previous scrambler needed to be replaced, since it was designed in 
 1994 and was supposed to last for ten years. The scrambler is used to 
 render the digital television streams unreadable if the user does not 
-subscribe to the encoded channels.
+subscribe to the encoded channels. 
 
 The task was to evaluate and analyze a few potential scrambling 
-algorithms, and then choose which was the most suitable to replace the 
-currently implemented algorithm in WISI Norden's devices.
+algorithms, and then choose one algorithm to implement in WISI 
+Norden's devices.
 
 \section{Background}
 The formerly used \emph{common scrambling algorithm} (CSA) has due to 
@@ -22,8 +22,9 @@ designed to make software descrambling hard, if possible, while making
 hardware descrambling fast. 
 
 There are two suggested replacements of CSA. The first one is named 
-after the CSA, and is called CSA3. There already exists an algorithm 
-called CSA2 , which is basically the same as CSA, just with a different 
+after the CSA, and is called CSA3. The reason as to why it is not 
+called CSA2 is since there already exists an algorithm which is 
+called CSA2. CSA2 is the same algorithm as CSA, just with a different
 key-length. The second algorithm is the software-friendly descrambling 
 algorithm CISSA. Both of them are based on the public Advanced 
 Encryption Standard - 128 (commonly known as the AES-128). There are 
@@ -41,27 +42,26 @@ The task was to analyze the possible replacements for the common
 scrambling algorithm, and decide which one was the most suitable 
 replacement. After choosing an algorithm, that algorithm was to be 
 implemented from scratch, making decisions to minimize the hardware 
-usage while achieving a suitable frequency. The decisions made were to 
-be motivated either through simulations or reference litterature.
+usage while achieving the frequency used by the rest of the system. 
+The decisions made were to be motivated either through simulations or 
+reference litterature.
 
 There were two proposed replacements to be compared and analyzed 
 to find what made one of them software-friendly and the other one 
 hardware-friendly. 
 
 \section{Constraints}
-The thesis has been limited to implement the scrambing algorithm chosen 
-in consent between the author and the supervisor at WISI Norden. The 
-implementation should be optimized towards hardware usage, while 
-achieving a suitable frequency, preferably the one used in the rest of 
-the Field-Programmable Gate Array (FPGA).
-
-%% While the entire circuit can be made as a combinatorial circuit, it 
-%% will most likely fill up the entire FPGA.
+The thesis has been limited to implement the scrambing algorithm 
+chosen in consent between the author and the supervisor at WISI 
+Norden. The algorithm that was chosen, after analysis of the two 
+proposed algorithms, was the AES128 algorithm in CBC-mode (chapter 
+\ref{sec:BlockCipher}). The implementation is focused on minimizing 
+the hardware usage, while achieving a throughput of at least 1 Gbits/s.
 
 \section{Methodology}
-The project was split into a set of tasks, to be performed in the order 
-written below. Performing the tasks in this order was done to decrease 
-the complexity of the seperate tasks.
+The project was split into a set of tasks, to be performed in the 
+order written below. Performing the tasks in this order was done to 
+decrease the complexity of the seperate tasks.
 
 \begin{itemize}
 \item Litterature study
@@ -72,19 +72,15 @@ the complexity of the seperate tasks.
 \end{itemize}
 
 To gain some knowledge about cryptography, a litterature study was 
-first conducted. This provided some insight into what the strenghts and 
-weaknesses the algorithms actually were. This provided some deeper 
-understanding, and a cipher that was used in both analyzed algorithms 
-was chosen. Using the gathered background information about how the 
-algorithm worked made design and testing of the entities rather easy. 
-The lower level entities were designed first, which allowed for easier 
-testing of seperate parts of the system. 
-Knowing that the functionality, of low level entities, was already 
-present allowed for easier merging of entities. This led to the system 
-being built bottoms-up.
-
-%% Hur har exjobbet genomförts? Det här behöver skrivas om och förbättras. 
-%% Det är ju hur jag jobbat, men jag vet inte hur vettigt det jag skrev 
-%% var.
-
-%JAG HAR INGEN ANING.
+first conducted. This provided some insight into what the strenghts 
+and weaknesses of the algorithms actually were. The AES cipher was 
+chosen as an initial algortihm, since both of the proposed algorithms 
+used the AES as a base. The other parts of the cipher, which ever was 
+chosen, were to be added after the AES was finished. Using the 
+gathered background information about how the algorithm worked made 
+design and testing of the entities rather easy. The lower level 
+entities were designed first, which allowed for easier testing of 
+seperate parts of the system. Knowing that the functionality, of low 
+level entities, was already present allowed for easier merging of 
+entities. This led to the system being implemented through bottom-up 
+design.

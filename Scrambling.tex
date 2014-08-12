@@ -1,71 +1,84 @@
 \chapter{Cryptography}\label{ch:Scrambling}
 Cryptography is the science of rendering content incomprehensible for 
-undesired readers. However, securing content is not only about 
-cryptography. The main reason why cryptography is attacked, is because 
-an attack has a very low chance of being detected. There will be no 
-traces of the attack, since the attacker’s access will look just like 
-an ordinary access. \citep{Schneier:2003}
+undesired readers. Non-encrypted content is called plaintexts, and 
+encrypted plaintexts are called ciphertexts in cryptography. However, 
+securing content is not only about cryptography. The main reason why 
+the encryption algorithms are attacked, is because an attack has a 
+very low chance of being detected. There will be no traces of the 
+attack, since the attacker’s access will look just like an ordinary 
+access. \citep{Schneier:2003}
 
 This can be compared to a real-life break-in. The break-in will be 
 noticed if the thief breaks in using a crowbar. On the other hand, you 
 might never notice that the security had been breached, if the the 
 thief were to pick the lock instead. \citep{Schneier:2003}
 
-One of the more noteworthy cryptography rule is that you always are to 
-assume that someone is out to get you. Because of this, 
-\citet[pp. 12--14]{Schneier:2003} claims that it is always needed to 
-look for possible ways to break systems, to ensure that the security 
-can not be breached, and thereby provides security.
+One of the more important cryptography rules, is to always assume that 
+someone is out to get you. Because of this, 
+\citet[pp. 12--14]{Schneier:2003} claims that it is always important to
+look for possible ways of breaking systems. Possible ways of bypassing 
+the encryption and ways of breaking algorithms are more easily noted 
+by looking at systems with this mindset, and doing so allows 
+cryptographers to more easily notice faults, which can then be fixed 
+and thereby provide a more robust security system.
 
 \section{Why cryptography is needed}
-Cryptography is the science of rendering plaintexts into ciphertexts to 
+Cryptography is the science of rendering plaintexts into ciphertexts to
 protect contents from unauthorized viewing. It is used in electronic 
 communication for protection of e-mail messages and credit card 
-information among other things. If data is sent without being encrypted,
-someone listening in to the transmission channel will access the data.
+information among other things. If data is sent without being 
+encrypted, someone listening in to the transmission channel will be 
+able to access the data.
 
 For most people this is not a problem, but in some instances sending 
 secure messages can be extremely important. One example is 
 communication during war, where a single piece of intelligence might 
 turn the tide of the entire war. Moreover, you do not want people to 
 read your account information or credit card number when you do online 
-shopping. Both of these problems can be solved by cryptography and 
-encryption.
+shopping. Another reason is to make sure that users do not access 
+premium content without paying for it, as the case is with DVB. All of 
+these problems can be solved by cryptography and encryption.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
 %\Warning[Source]{Typ Schneier har jag för mig? Låna om boken?}
 %This might need a rework!
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Scrambling and Encrypting}
-Scrambling can be seen as the distortion of a plain-text, using a 
-control word. However, encryption can be seen as the entire process of 
-protecting content. This includes everything from generating the 
-control word to scrambling data. Scrambling can therefore be seen as a 
-part of encryption.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% %%
 
-%Jag vet inte om det här är relevant, eller stämmer
+%% \section{Scrambling or Encrypting}
+%% Scrambling can be seen as the distortion of a plaintext, using a 
+%% control word. However, encryption can be seen as the entire process of 
+%% protecting content. This includes everything from generating the 
+%% control word to scrambling data. Scrambling can therefore be seen as a 
+%% part of encryption.
 
-Yet another reason to scramble, is to reduce the number of adjacent 
-data bits with the same value, like strings of zeroes or ones. It could 
-also serve to balance the number of zeroes and ones in strings. This is 
-done as to try to obtain DC balance. DC balance is desired since it 
-avoids voltage imbalance during communication between connected systems.
-%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\Warning[Rewrite]{And find a good source for this}
-%Det är osannolikt att det här stämmer helt och hållet :)
-%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% %Jag vet inte om det här är relevant, eller stämmer
+
+%% Yet another reason to scramble, is to reduce the number of adjacent 
+%% data bits with the same value, like strings of zeroes or ones. It could
+%% also serve to balance the number of zeroes and ones in strings. This 
+%% is done as to try to obtain DC balance. DC balance is desired since it 
+%% avoids voltage imbalance during communication between connected 
+%% systems.
+%% %%%%%%%%%%%%%%%%%%%%%%%%%%
+%% %\Warning[Rewrite]{And find a good source for this}
+%% %Det är osannolikt att det här stämmer helt och hållet :)
+%% %%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Data packets}\label{sec:Data}
-The data processed by the DVB systems is sent in data packets. All of 
-them are created from Elementary Stream packets (ES) which are 
-generally the output from an audio or video encoder. The ES-packets are 
-then packeted into Program Stream- (PS), Transport Stream- (TS) or 
-Packatized Elementary Stream (PES) packets and then distributed. Among 
-the three ways of packing data, only two are interresting from a DVB 
-perspective. This is due to PS packets being used for storing data, 
-while TS and PES are used for transmitting data. The interresting 
-types, when working with DVB, are therefore the TS packets as well as 
-the PES packets. PES packets are often packed into the payload of TS 
-packets. The payload is the part of the packets which is the actual 
-data, which is everything except the header and adaptation field.
+The data processed by the DVB systems is packaged into data packets 
+before it is sent. All of them are created from (ES) packets 
+(Elementary Stream) which are generally the output from an audio or 
+video encoder. The ES-packets are packeted into PS- (Program Stream), 
+TS- (Transport Stream) or PES packets (Packatized Elementary Stream) 
+before being distributed. Among the three ways of packing data, only 
+two are interresting from a DVB perspective. This is due to PS packets 
+being used for storing data, while TS and PES are used for 
+transmitting data. The interresting types, when working with DVB, are 
+therefore the TS packets as well as the PES packets. PES packets are 
+often packed into the payload of TS packets. TS packets are desirable 
+since they are of a fixed length of 188 bytes, while the PES packets 
+are desirable due to their strength. The payload is the part of the 
+packets which is the actual data, which is everything except the 
+header and adaptation field.
 
 \subsection{TS packets}
 TS packets are used by the DVB society due to their fixed length, and 
@@ -73,7 +86,7 @@ the fact that TS packets are meant to be used for streaming services,
 while PS packets are used for storing packets of data. TS packets have 
 got a length of 188 bytes with a 4 byte long header. This means that 
 the payload consists of a maximum of 184 bytes. The layout of a TS 
-packet can be viewed in figure \ref{img:Package}\citep{DVB:2013}.
+packet can be viewed in figure. \ref{img:Package}\citep{DVB:2013}
 
 \begin{figure}[h!]
   \includegraphics[width=\textwidth]{TSPacket2}
@@ -91,16 +104,25 @@ only the header is guaranteed to be present. Those blocks are:
 \item Clear payload
 \end{itemize}
 
-The byte-sizes of the building blocks of a TS packet are:
+The byte-sizes of the building blocks of a TS packet are given in 
+table \ref{table:sizes}. The block\_size is the size of the blocks 
+that are encrypted, and is 16 for all of the AES standards.
 
-\begin{itemize}
-\item header\_size = 4
-\item adaptation\_field\_size = the size of the adaptation field
-\item payload\_size = 188 - (header\_size + adaptation\_field\_size)
-\item encrypted\_payload\_size = payload\_size - [payload\_size mod block\_size]
-\item clear\_payload\_size = [payload\_size mod block\_size] 
-  (or simply payload\_size - encrypted\_payload\_size)
-\end{itemize}
+\begin{longtable}{| l | l |}
+  \hline
+  Part & Size in bytes \\ \hline
+  header\_size & 4 \\ \hline
+  adaptation\_field\_size & the size of the adaptation field \\ \hline
+  payload\_size & 188 - (header\_size + adaptation\_field\_size) \\ 
+  \hline
+  encrypted\_payload\_size & payload\_size - [payload\_size mod 
+    block\_size] \\ \hline
+  clear\_payload\_size & [payload\_size mod block\_size] \\
+   & (or simply payload\_size - encrypted\_payload\_size) \\ \hline 
+  \caption{Byte sizes of the parts in TS packets. The TS packet is 
+    188 bytes.}
+  \label{table:sizes}
+\end{longtable}
 
 The header is always 4 bytes, while the adaptation field can have any 
 size between 0 and 183 bytes. This means that the clear payload can 
@@ -111,7 +133,7 @@ block size. The rest of the data consists of the payload.
 The header consists of information regarding the packet, and has a 
 sync\_byte (with a hex-value of 0x47, or bit-value of 01000111) to 
 announce the beginning of a packet. The value of the sync\_byte 
-corresponds to the ASCII-value of the letter G, for go. 
+corresponds to the ASCII-value of the letter G which stands for Go.
 The header also contains information as to whether there is an 
 adaptation field and payload in the packet, what Packet ID (PID) the 
 packet has, if it should be prioritized, whether the data is 
@@ -120,122 +142,121 @@ key, among others \citep[pp. 25--26]{etsiMPEG:2009}. The header should
 never be encrypted and is always found at the beginning of a packet 
 \citep[pp. 10--11]{DVB:2013}.
 
-The header contains the following:
+The header contains the following bits:
 \begin{longtable}{| l | l | l |}
   \hline
   Bits & Name & Description \\ \hline
   8 & Sync byte & Fixed byte value 0x47 \\ \hline
-  1 & Transport Error Indicator & Uncorrectable bit errors exist. \\ 
+  1 & Transport Error Indicator & Uncorrectable bit errors exist \\ 
   \hline
   1 & Payload Unit Start Indicator & TS packet contains PES packets or\\
   & & Program Specific Information (PSI data)\\ \hline
   2 & Transport Scrambling Control & 00 No scramling, 01 Reserved, \\
   & & 10 Even key, 11 Odd key \\ \hline
-  1 & Transport Priority & 1 gives this packet higher priority \\ \hline
-  13 & PID & Type and number of data \\
-  & & stored in packet payload \\ \hline
-  1 & Adaptation Field Control & 1 means that an adaptation field 
-  exists\\ \hline
-  1 & Contains Payload & 1 means that payload exists \\ \hline
-  4 & Continuity Counter & Sequence number of payload packets\\ \hline
+  1 & Transport Priority & 1 gives this packet higher priority \\ 
+  \hline
+  13 & PID & Packet identification number \\ \hline
+  1 & Adaptation Field Control & Adaptation field exists \\ \hline
+  1 & Contains Payload & Payload exists \\ \hline
+  4 & Continuity Counter & Packet number. Used to make sure \\
+  & & packets are not lost\\ \hline
 \end{longtable}
 
 \subsubsection{Adaptation field}
-The adaptation field is a sort of padding that is inserted when the 
+The adaptation field is a padding field that is only inserted when the 
 end of the data does not align with the end of the TS packet. This is 
-done to make sure that the TS packet is filled with known data. The 
-only time that the adaptation field can exist is when the last string 
-of data is processed, if the end of data does not align with the end 
-of the TS packet. Adaptation fields are never encrypted. 
-\cite[pp. 10--11]{DVB:2013}
+done to make sure that the TS packet is filled with known data. 
+Adaptation fields are never encrypted. \cite[pp. 10--11]{DVB:2013}
 
 \subsubsection{Encrypted and clear payload}
-When working with block ciphers, clear bytes of data tend to turn up. 
-This is since block ciphers only encrypt data blocks of fixed sizes. 
-The clear data is always the data located at the end of the received TS 
-packet. When receiving a TS packet, the first thing to be done is to 
-find the start of the payload. While there is no adaptation field, this 
-is the data right after the header. If there is an adaptation field, 
-some searching for the data is needed to be done. After the start of 
-the payload is found, blocks of a given size are sent to the scrambler.
-The remainder of data, when all of the blocks of the right size have 
-been scrambled, is to be left clear. The number of unscrambled bytes 
-might be of sizes up to one byte smaller than the block size. This 
-means that the AES-128, which works on block sizes of 16 bytes, can 
-have a maximum of 15 clear bytes at the most. The encrypted payload is 
-always located in front of the clear payload. 
+Clear bytes of data tend to turn up, when working with block ciphers. 
+This happens since block ciphers only encrypt data blocks of fixed 
+sizes. The clear data is always located at the end of the received 
+TS packet. When receiving a TS packet, the first thing to be done is 
+to find the start of the payload. The start of the payload is found 
+directly after the header, when there is no adaptation field. If an 
+adaptation field is present, we can find the data after it. The length 
+of the adaptation field is found in the beginning of it. When the 
+start of the payload has been found, blocks of a given size are sent 
+to the scrambler. The remainder of the data, when all of the blocks 
+of the right size have been scrambled, is to be left clear. The number 
+of unscrambled bytes might be of sizes up to one byte smaller than the 
+block size. This means that the AES-128, which works on block sizes of 
+16 bytes, can have a maximum of 15 clear bytes. 
 \cite[pp. 10--11]{DVB:2013}
 
 \subsection{PES packets}
 The PES packets have varying lengths of up to 64 kilo bytes, and are 
-often packed into TS packets when distributed, due to the strength of 
-TS packets. The payload data in the TS packets, when carrying PES 
-packets, consist of the entire PES packets, which is the header as well 
-as the data. PES packets do not use adaptation fields, since they are 
-of adaptable lengths, as long as the length of the packet does not 
-exceed 64 kilo bytes.
+often packed into TS packets when distributed, due to the TS packets 
+being strong. The payload data in the TS packets, when carrying PES 
+packets, consist of the entire PES packets, which is the header as 
+well as the data. PES packets do not use adaptation fields, since 
+they are of adaptable lengths, as long as the length of the packet 
+does not exceed 64 kilo bytes.
 
-Since Digital Video Broadcasting seldom uses itself of PES packets, an 
-analyzation of the header will not be done in this report. The 
-derivation of PES packets from TS packets can be seen in Figure 
-\ref{img:PES} \citep[p. 9]{ETR:289}.
+Since Digital Video Broadcasting seldom uses PES packets, an 
+explanation of the elements of the PES header will not be done in 
+this report. The derivation of PES packets from TS packets can be 
+seen in Figure \ref{img:PES} \citep[p. 9]{ETR:289}.
 
 \begin{figure}[h!]
   \includegraphics[width=\textwidth]{PES.png}
-  \caption{PES packet derived from TS packets}
+  \caption{PES packet derived from TS packets. The packet in the top 
+    is a PES packet and the packets in the bottom are TS packets.}
   \label{img:PES}
 \end{figure}
 
 \section{Encryption and Decryption}
 There are three things that you need when you encrypt and decrypt 
 messages. Those are the algorithm, plaintext and the key. Even though 
-there are plenty of ways to encrypt messages, there are mainly two ways 
+there are plenty of ways to encrypt messages, there are mainly two ways
 of sharing the encryption-key. The first method is the symmetric-key 
 encryption, and the second method is the public-key encryption. 
-%%%%%%%%%%%%%%%%%%%%
-%\Warning[Source]{Please! I think Schneier wrote something about this}
-%%%%%%%%%%%%%%%%%%%%
+\citep{Schneier:2003}
+
 \subsection{Symmetric-key encryption}\label{ch:symmetric}
 The symmetric-key encryption uses the same key to encode and decode 
 messages. Distrubution of the key, when using the symmetric-key 
-encryption is troublesome and the fact that both parties need access to 
-the same secret key is a major drawback of the symmetric key 
+encryption is troublesome and the fact that both parties need access 
+to the same secret key is a major drawback of the symmetric key 
 encryption, as compared to the public-key encryption method. Sending 
 the key in an email is a bad idea, since the persons who want to read 
-our messages are most likely already listening. They will therefore 
-obtain the key as well as the means to decode the messages. Both the 
-CSA and the AES encryption methods are symmetric-key encryptions, using 
-the same key for encryption and decryption.
-%%%%%%%%%%%%%%%%%%%%
-%\Warning[Source]{Schneier har jag för mig igen}
-%%%%%%%%%%%%%%%%%%%%
+the sent messages are most likely already listening. They will 
+therefore obtain the key as well as the means to decode the messages. 
+Both the CSA and the AES encryption methods are symmetric-key 
+encryptions, using the same key for encryption and decryption. 
+\citep{Schneier:2003}
+
 \subsection{Public-key encryption}\label{ch:public}
 The public-key encryption uses a public key that anyone can look up, 
 and a secret key that only one person knows 
-\citep[pp. 25--32]{Simmons:1992}. For instance say that the two 
-persons, Bob and Alice, want to communicate. Bob produces a keypair 
-\(P_{Bob}\) (Bob’s public key) and \(S_{Bob}\) (Bob’s secret key) and 
-publishes \(P_{Bob}\) for anyone to see. When Alice wants to send Bob a 
-message, she looks up Bob’s public key \(P_{Bob}\), which she then uses 
-to encode her message. When she sends Bob the message, Bob decodes the 
-message using his secret key \(S_{Bob}\) \citep{Schneier:2003}. 
-Since Alice now knows both the plaintext, and can find out what the 
-corresponding ciphertext will be, she could potentially try to find 
-Bob's secret key, as described in section \ref{sec:kpa}.
+\citep[pp. 25--32]{Simmons:1992}. For instance say that two persons, 
+Bob and Alice, want to communicate. Bob produces a keypair \(P_{Bob}\) 
+(Bob’s public key) and \(S_{Bob}\) (Bob’s secret key) and publishes 
+\(P_{Bob}\) for anyone to see. When Alice wants to send Bob a message, 
+she looks up Bob’s public key \(P_{Bob}\), which she uses to encode her 
+message. When she sends Bob the message, Bob decodes the message using 
+his secret key \(S_{Bob}\). Since Alice now knows both 
+the plaintext, and can find out what the corresponding ciphertext will 
+be, she could potentially try to find Bob's secret key. 
+\citep{Schneier:2003}
 
-\subsection{Combination of encryption}
-Since the public-key encryption seems secure and easy to manage, how 
-come it is not the only used encryption method? The reason is that the 
+\subsection{Combination of encryption methods}
+If the public-key encryption seems secure and easy to manage, how 
+come it is not the only encryption method used? The reason is that the 
 public-key encryption is not as effective as the symmetric-key 
-encryption. It is common to utilize a combination of those two since an 
-easy, effective way to encrypt messages is desirable.
+encryption. It is common to use a combination of those two when 
+an easy, effective way to encrypt messages is desired.
 
 To combine the two encryption methods, the symmetric-key algorithm 
-encodes the plaintext into a ciphertext. Then the public-key encryption 
-encrypts the key used by the symmeteric-key encryption. The encoded key 
-is then sent together with the ciphertext to the recipient, which 
-decodes the symmetric key using the secret key. The plaintext is once 
-again received through decrypting the ciphertext with that key.
+encodes the plaintext into a ciphertext. Then the public-key 
+encryption encrypts the key used by the symmeteric-key encryption. The 
+encoded key is then sent together with the ciphertext to the 
+recipient, which decodes the symmetric key using the secret key. The 
+plaintext is obtained by decrypting the ciphertext using the symmetric 
+key.
+
+%% HERE DO THIS PART NOW!! YOU GOT ALL THE WAY HERE!!
 
 \section{Ciphers}
 A cipher is the same as an encryption algorithm, which operates on 
@@ -269,11 +290,11 @@ case the plaintext contains a number of bytes that is not a denominator
 of the blocksize. Block ciphers often use a combination of S-boxes 
 (Substitution boxes) and P-boxes (Permutation boxes) in a so-called 
 SP-network (S-box / P-box network) (Figure \ref{img:SPNetwork}).
-
 There are many modes of block ciphers, but the two recommended by 
 \citet{Schneier:2003} are the CBC-mode and the CTR-mode.
 
-\emph{CBC} stands for \emph{cipher block chaining} and is performed by 
+\subsubsection{CBC}
+CBC stands for \emph{cipher block chaining} and is performed by 
 encrypting the result of an XOR (basic logic component) between 
 an Initialization Vector (IV) and the plaintext. The resulting 
 ciphertext is then fed back to the XOR, this time replacing the IV.
@@ -283,7 +304,8 @@ then put into an XOR with the next plaintext, which is then encrypted
 in the cipher. For reference, see image \ref{img:CBCmode} in 
 appendix \ref{app:fig}. \citep[pp. 109--111]{Stinson:2006}
 
-\emph{CTR} stands for \emph{counter}, and refers to the way the IV is 
+\subsubsection{CTR}
+CTR stands for \emph{counter}, and refers to the way the IV is 
 generated. The counter outputs a value, which is encoded with the key. 
 The encoded output is sent to an XOR together with the plaintext, 
 producing the ciphertext. The counter is incremented and the procedure 

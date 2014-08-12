@@ -12,10 +12,10 @@
 ]{rtthesis}
 
 \usepackage{mythesis}
-
 \usepackage{longtable}
 \usepackage{color, soul}
 \usepackage{tikz}
+\usepackage[titletoc, title]{appendix}
 
 \newcommand{\hcancel}[1]{%
     \tikz[baseline=(tocancel.base)]{
@@ -25,18 +25,15 @@
 }%
 
 \begin{document}
-%% \selectlanguage{eng}
 \makeFrontPage
 \frontmatter
-%\title{Genomgång av nya och alternativa krypterings- och scramblingssystem för digital-teve samt implementering av ny scrambling-algoritm (AES128) på FPGA}
-%\author{Gustaf Bengtz}
 \maketitle
-\makeLibraryPage{\input{introduktion}}
+\makeLibraryPage{\myabstract}
 
 %When including images, make sure to add the line \caption on the row before \label, otherwise the referencing system will not work.
 
 \begin{abstract}[english]
-  \input{introduktion}
+\myabstract
 \end{abstract}
 
 \include{notation}
@@ -44,29 +41,31 @@
 \tableofcontents
 \mainmatter
 
-%\part{Background}
 \include{introduction}
 
-%\part{Theory}
 \include{cas}
 \include{Scrambling}
 \include{CSA}
 \include{cissaORCSA3}
 \include{aes}
 
-%\part{Result}
+\include{implementation}
 \include{result}
 
-%\part{Appendix}
+\part*{Appendices}
+%% \addtocontents{toc}{chapter}{Appendix}
+%% \let\oldaddtocontents\addtocontents \renewcommand{\addtocontents}[2]{}
+
 \appendix
 \include{matrix}
 \include{flowcharts}
 \include{vectors}
 \include{examples}
-%\include{blocks}
 \begin{footnotesize}
 \include{synthesis}
 \end{footnotesize}
+
+%% \let\addtocontents\oldaddtocontents
 
 % Include the libraries used here. Remember to input the objects into myrefs.bib 
 % and run the command bibtex main from ~/Documents/Exjobb/ 
