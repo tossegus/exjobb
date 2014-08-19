@@ -261,10 +261,11 @@ key.
 \section{Ciphers}
 A cipher is the same as an encryption algorithm, which operates on 
 either plaintexts or ciphertexts to perform encryption or decryption. 
-Figure \ref{img:ciphers} describes how the different kinds of ciphers 
+Figure \ref{img:ciphers} shows how the different kinds of ciphers 
 can be split into sub-groups. The first branch splits into Classical-, 
 Rotor Machine- and Modern ciphers. Substitution and Transposition are 
-still used in modern algorithms. The Modern ciphers are the Private 
+still used in modern algorithms, even though they are considered 
+classical ciphers. The Modern ciphers are the Private 
 key and Public key (descibed in chapter \ref{ch:symmetric} and 
 \ref{ch:public}). The CSA algorithm uses both the stream- and block 
 ciphers, while the AES algorithm only uses a block cipher.
@@ -282,34 +283,46 @@ stream ciphers to provide security.
 %%%%%%%%%%%%%%%%%%%%%%%
 %\Warning[Source]{At least the CSA uses it. But you need a source}
 %%%%%%%%%%%%%%%%%%%%%%%
+
 \subsection{Block cipher}\label{sec:BlockCipher}
 A block cipher operates on fixed sized sets of data. These sets are 
-called blocks, hence the reason that they are called block ciphers. 
-Them being fixed sizes might cause a need for padding the blocks, in 
-case the plaintext contains a number of bytes that is not a denominator
-of the blocksize. Block ciphers often use a combination of S-boxes 
-(Substitution boxes) and P-boxes (Permutation boxes) in a so-called 
-SP-network (S-box / P-box network) (Figure \ref{img:SPNetwork}).
-There are many modes of block ciphers, but the two recommended by 
-\citet{Schneier:2003} are the CBC-mode and the CTR-mode.
+called blocks, which is the reason why they are called block ciphers. 
+Them being fixed sizes might cause a need for padding of the blocks, in 
+case the plaintext contains a number of bytes that is not a multiplier
+of the blocksize. Block ciphers often use a combination of Substitution-boxes 
+(S-boxes) and Permutation-boxes (P-boxes) in a so-called SP-network 
+(S-box / P-box network) (Figure \ref{img:SPNetwork}). There are many modes 
+of block ciphers, but the two recommended by \citet{Schneier:2003} are the 
+CBC-mode and the CTR-mode, which are described in the following sections.
 
 \subsubsection{CBC}
 CBC stands for \emph{cipher block chaining} and is performed by 
 encrypting the result of an XOR (basic logic component) between 
 an Initialization Vector (IV) and the plaintext. The resulting 
-ciphertext is then fed back to the XOR, this time replacing the IV.
+ciphertext is then fed back to the XOR replacing the IV.
 This means that the data input into the cipher will be the result of 
-an XOR between the previous result, and the upcoming data. This is 
+an XOR between the previous result, and the next plaintext. This is 
 then put into an XOR with the next plaintext, which is then encrypted 
-in the cipher. For reference, see image \ref{img:CBCmode} in 
-appendix \ref{app:fig}. \citep[pp. 109--111]{Stinson:2006}
+in the cipher. For reference, see image \ref{img:CBCmode}. 
+\citep[pp. 109--111]{Stinson:2006}
+
+\begin{figure}
+  \begin{center}
+   \includegraphics[width=\textwidth]{CBCmode}
+  \end{center}
+  \caption{Cipher block chaining mode, \citep{CBCmode:2014}}
+  \label{img:CBCmode}
+\end{figure}
 
 \subsubsection{CTR}
 CTR stands for \emph{counter}, and refers to the way the IV is 
 generated. The counter outputs a value, which is encoded with the key. 
-The encoded output is sent to an XOR together with the plaintext, 
-producing the ciphertext. The counter is incremented and the procedure 
-is iterated \citep[p. 111]{Stinson:2006}.
+The counter often uses a Linear Feedback Shift Register (LFSR) with some 
+sort of logical function, most often XORs. The counter has got an internal
+state, which it manipulates in order to create the next state. The state
+is what is output from the counter and sent to an XOR together with the 
+plaintext, producing the ciphertext. The counter is incremented and the 
+procedure is iterated \citep[p. 111]{Stinson:2006}.
 
 \subsection{Stream cipher} \label{sec:StreamCipher}
 Stream ciphers work on streams of data. They usually consist of a 
@@ -324,8 +337,8 @@ mainly used because of how easy it is to construct in hardware
 \subsection{Decryption}
 Decryption is often performed by reversing the encryption. You need to 
 know the algorithm, preferably through a mathematical representation, 
-to calculate how to obtain the plaintext from the ciphertext. A 
-description of how this is done for the CBC-mode (described in 
+to calculate how to obtain the plaintext from the ciphertext. An 
+example of how this is done for the CBC-mode (described in 
 \ref{sec:BlockCipher}) is described in \ref{sec:CBCcalc} in appendix 
 \ref{app:examples}. It is here assumed that the decryption algorithm 
 is known, for simplicity. 
@@ -340,15 +353,16 @@ and key as complex as possible. \emph{Diffusion} refers to replacing
 and shuffling the data, to make it impossible to analyze data 
 statistically. This is usually done by performing substitutions and 
 permutations in a simple pattern multiple times. This can easily be 
-done by using an SP-network (S-box / P-box network) 
-\citep[pp. 74--79]{Stinson:2006}. The very first, as well as the last 
-step, of SP-Networks is usually an XOR between the subkey and the data. 
-This is called \emph{whitening}, and is according to 
-\citet[p. 75]{Stinson:2006} regarded as a very effective way to prevent 
-encryption/decryption without a known key. The goal of this is to make 
-it hard to find the key, even though one has access to multiple 
-plaintext/ciphertext pairs produced with the same key 
-\citep{Shannon:1949}.
+done by using an SP-network \citep[pp. 74--79]{Stinson:2006}. The first
+ as well as the last step of SP-Networks is usually an XOR between 
+the subkey and the data. A subkey is a key generated from the provided 
+key, and is used to provide systems with more complex encryptions. 
+Performing an XOR between a subkey and data is called \emph{whitening}, 
+and is according to \citet[p. 75]{Stinson:2006} regarded as a very 
+effective way to prevent encryption/decryption without the key. 
+The goal of this is to make it hard to find the key, even though one 
+has access to multiple plaintext/ciphertext pairs produced with the 
+same key \citep{Shannon:1949}.
 
 However, a cipher is not guaranteed to be secure just because it 
 provides these two properties.
@@ -357,7 +371,9 @@ provides these two properties.
 The S-box is one of the basic components that is used when creating 
 ciphers. An S-box takes a number of input bits and creates an equal 
 number of output bits. The way they are generated is non-linear. 
-Implementing an S-box can effectively be done using lookup tables. 
+Implementing an S-box can effectively be done using lookup tables, since
+the function of an S-box is to substitute the input with a different 
+output, which corresponds to the functionality of a lookup table.
 Each input has to correspond to a unique output, to make sure that the 
 functionality of the S-Box can be uniquely reversed. If it can not be 
 reversed, descrambling will be impossible. 
@@ -366,7 +382,7 @@ reversed, descrambling will be impossible.
 % CONFUSION OR DIFFUSION?
 The second basic component used in cryptography is the P-box. A P-box 
 shuffles and thereby rearranges the order of given bits. This can be 
-viewed in the SP-network in figure \ref{img:SPNetwork}, where the P-box 
+viewed in the SP-network in figure \ref{img:PNetwork}, where the P-box 
 is represented by the dotted rectangle in the middle.
 
 \begin{figure}[h!]

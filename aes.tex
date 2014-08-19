@@ -1,19 +1,28 @@
 \chapter{Advanced Encryption Standard}\label{ch:AES}
-The AES is based on an SP-network and is fast both in hardware as well 
-as software. Rijndael, which is used in AES, has key-sizes of at least 
-128 bits, block lengths of 128 bits, 8 to 8 bit S-boxes and a minimum 
-of 10 rounds of repetition \citep[p. 79]{Stinson:2006}. It is a 
+Both CSA3 and CISSA use the block cipher called AES, which will be 
+explained in this chapter. The standard was determined by NIST in 
+November 2001. AES is a symmetric block cipher which uses itself of
+key lengths of either 128, 192 or 256 bits. It is based on an 
+SP-network which is fast in both hardware and software. 
+
+\section{Introduction}
+The Rijndael cipher, which is used in AES, has key-sizes of at least 
+128 bits. The block length is 128 bits. It uses 8 to 8 bit S-boxes 
+and a encryption is made with a minimum of 10 rounds of repetition 
+\citep[p. 79]{Stinson:2006}. A round can corresponds to one iteration 
+of a certain part of the algorithm, and uses a subkey to the provided 
+key. The keys used in the rounds are called round keys. It is a 
 symmetric-key algorithm with a fixed block size of 128 bits, where the 
 key-size can vary between 128, 192 or 256 bits. The number of cycles 
 needed to convert the plaintext into ciphertext depends on the size of 
 the key. The 128-bit key requires 10 cycles of repetitions (rounds). 
 The 192-bit key requires 12 rounds and the 256-bit key requires 14 
-rounds \citep[p. 103]{Stinson:2006}.
+rounds. \citep[p. 103]{Stinson:2006}
 
 \section{Method}
 The AES consists of a number of steps that are repeated for each block 
-to be encoded. The steps to be performed are, according to 
-\citet{Stinson:2006}:
+to be encoded. All of the steps are explained later in this chapter.
+The steps to be performed are, according to \citet{Stinson:2006}:
 
 \emph{Set-up steps}
 \begin{enumerate}
@@ -21,132 +30,156 @@ to be encoded. The steps to be performed are, according to
 \item InitialRound - Combine each byte of the state with a byte of 
   round key.
 \end{enumerate}
-\emph{Steps performed in rounds}
+\emph{Steps performed during the rounds}
 \begin{enumerate}
 \item SubBytes - Each byte is \emph{substituted} using the Rijndael's 
   S-box.
 \item ShiftRows - The rows of the state matrix are \emph{permutated}.
-\item MixColums - The columns of the matrix are multiplicated with a 
+\item MixColums - The columns of the state matrix are multiplicated with a 
   matrix.
 \item AddRoundKey - The state matrix is once again combined with 
   round-keys.
 \end{enumerate}
-\emph{In the final round everything except the MixColumns step are done}
-\begin{enumerate}
-\item SubBytes
-\item ShiftRows
-\item AddRoundKey
-\end{enumerate}
+\emph{In the final round everything except the MixColumns step are 
+performed. Meaning that SubBytes, ShiftRows and AddRoundKey are 
+performed.}
 
 The ciphertext is then defined as the state-matrix 
 \citep[p. 103]{Stinson:2006}. As mentioned in section 
-\ref{ch:ConfDiff} (\nameref{ch:ConfDiff}), both confusion and diffusion 
-are nescessary. They can be seen in the SubBytes and ShiftRows steps 
-above. These steps also performs whitening, which strengthens the 
-cipher. Whitening is, as mentioned in \ref{ch:ConfDiff}, performed 
-through an XOR between the roundkey and the data.
+\ref{ch:ConfDiff} (\nameref{ch:ConfDiff}), both confusion and 
+diffusion are nescessary to ensure a secure encryption. They can be 
+seen in the SubBytes and ShiftRows steps above. These steps also 
+performs whitening, which strengthens the cipher. Whitening is, as 
+mentioned in \ref{ch:ConfDiff}, performed through an XOR between the 
+roundkey and the data.
 
-The KeySchedule is explained in section \ref{sec:KeySch}.
+The KeyExpansion is explained in section \ref{sec:KeySch}.
+
+Before anything can be done, the data needs to be put into a 
+state-matrix, which can be seen in figure \ref{matrix2:state}.
+
+\begin{figure}[h!]
+  \begin{equation}
+    \begin{bmatrix}
+      a_{1, 1} & a_{1, 2} & a_{1, 3} & a_{1, 4} \\
+      a_{2, 1} & a_{2, 2} & a_{2, 3} & a_{2, 4} \\
+      a_{3, 1} & a_{3, 2} & a_{3, 3} & a_{3, 4} \\
+      a_{4, 1} & a_{4, 2} & a_{4, 3} & a_{4, 4}
+    \end{bmatrix}
+  \end{equation}
+  \caption{State-Matrix}
+  \label{matrix2:state}
+\end{figure}
 
 \subsection{InitialRound}
-This is simply an initial AddRoundKey.
+This is an initial AddRoundKey which is explained in section 
+\ref{sec:AddRoundKey}.
 
 \subsection{SubBytes}
 In the SubBytes step, each byte is sent to a Rijndael S-box (which is 
-basically a lookup table, see Matrix \ref{matrix:rijSbox}) where they 
-are substituted in a non-linear fashion. This gives us a substituted 
-state matrix.
+basically a lookup table, see figure \ref{matrix:rijSbox} in appendix 
+\ref{app:matrix}) where they are substituted in a non-linear fashion. 
+This gives us a substituted state matrix.
 
 \subsection{ShiftRows}
-The next step is called the ShiftRows step, which left-shift the rows 
+The next step is called the ShiftRows step, which left-shifts the rows 
 n-1 steps where n is the index of the row. This means that the first 
-row is left as it is, the second row is shifted one step, the third row 
-is shifted two steps, and the fourth row is shifted three steps.
+row is left as it is, the second row is shifted one step, the third 
+row is shifted two steps, and the fourth row is shifted three steps.
+The data is shifted cyclically, meaning that data which is shifted 
+out of the left side of the state-matrix is shifted back in from the 
+right side.
 
 \subsection{MixColumns}
-In the MixColumns step, the four bytes of each row are combined through 
-a matrix multiplication. The MixColumns function takes four bytes as 
-input and multiplies them with a fixed matrix (figure 
+All of the multiplications performed in the MixColumns steps are 
+take place in the Galois Field, which is why a lot of it might seem
+illogical at first. 
+
+In the MixColumns step, the four bytes of each row are combined 
+through a matrix multiplication. The MixColumns function takes four 
+bytes as input and multiplies them with a fixed matrix (figure 
 \ref{matrix:rijMix} in appendix \ref{app:matrix}). While this might 
-seem simple, it really is not. The multiplication makes sure that each 
-input byte affect all output bytes.\citep{Angelfire}
+seem simple to do, it actually is not. The multiplication makes sure 
+that each input byte affect all output bytes. \citep{Angelfire}
 
 The matrix is multiplicated with the vector from the left, (4x4*4x1 = 
 4x\hcancel{4*4x}1 = 4x1) where the vector is a column from the 
 state-matrix. Multiplication with 1 means that the value is left 
 untouched. Multiplication by 2 means left shift, then an XOR with 0x1B 
-if the shifted value exceeds 0xFF. Multiplication with 3 is done in the 
-same way as a multiplication with 2, except that the result after the 
-shift and conditional XOR are then XOR:ed with the input value of the 
-multiplication. All of the resulting values are then XOR:ed, leaving us 
-with the result. All additions are replaced with XOR, since the 
-calculations take place in GF(\(2^8\)) (Galois field).
+if the shifted value exceeds 0xFF. Multiplication with 3 is done in 
+the same way as a multiplication with 2, except that the result after 
+the shift and conditional XOR are then XOR:ed with the input value of 
+the multiplication. All of the resulting values are then XOR:ed, 
+leaving us with the result. All additions are replaced with XOR, since 
+the calculations take place in the Galois Field (GF(\(2^8\))).
 
-\subsection{AddRoundKey}
-Each of the 16 bytes of the state are then combined with a byte from 
-the round key using a bitwise xor. They are then combined to a state 
-matrix (figure \ref{matrix:state} in appendix \ref{app:matrix}) 
+\subsection{AddRoundKey}\label{sec:AddRoundKey}
+Each of the 16 bytes of the state are combined with a byte from the 
+round key using a bitwise XOR. They are then combined to a state 
+matrix (Figure \ref{matrix:state} in Appendix \ref{app:matrix}) 
 containing 4x4 bytes.
 
 \section{KeyExpansion}\label{sec:KeySch}
-To generate round keys from the cipher key, the Rijndael's key schedule
-is used. This is done since AES requires a separate 128-bit (16-byte) 
+To generate round keys from the provided key, the Rijndael's key 
+schedule is used. The schedule consists of a couple of loops and a key-
+schedule core. The schedule core is the part that branches out if c 
+modulo 16 is zero. The flowchart explaining the entire KeyExpansion 
+can be viewed in Figure \ref{img:keysch} in Appendix \ref{app:fig}. 
+To change the key schedule to fit a key size of 192 bits, you simply 
+change the value that c is compared to in the first branch in the 
+flowchart from 176 to 206.
+
+This is done since AES requires a separate 128-bit (16-byte) 
 round key for each round, plus one extra key for the initialization 
-which means that the AES-128 requires 176 bytes, since AES-128 consists 
+which means that the AES-128 requires 176 bytes, since AES-128 consists
 of 10 rounds.
 
-The schedule consists of a couple of loops and a key-schedule core. The 
-schedule core is the part that branches out if c modulo 16 is zero. 
-The entire KeyExpansion can be viewed in Figure \ref{img:keysch} in 
-appendix \ref{app:fig}. To change the key schedule to fit a key size of 
-192 bits, you simply change the value c is compared to in the first 
-branch in the flowchart from 176 to 206.
-
 \subsection{Key-schedule core}\label{sec:kCore}
-The key-schedule core takes an input of 4 bytes (32 bits) which it then 
-rotates 1 byte (8 bits) to the left. Let us say that our key is 
-\emph{AB CD EF 01}. This would give us the key \emph{CD EF 01 AB} after 
-the rotation. This operation is also called the RotWord-operation 
-\citep[p. 107]{Stinson:2006}. The next step is to apply Rijndael's 
-S-box to each of these bytes, giving us 4 new bytes. The bytes 
-{AB CD EF 01} would give us {62 BD DF 7C}, when substituted according 
-to the Rijndael S-box (Figure \ref{matrix:rijSbox}).
+The key-schedule core takes an input of 4 bytes (32 bits) which it 
+then rotates 1 byte (8 bits) to the left. Let us say that our key is 
+\emph{AB CD EF 01}. This would give us the key \emph{CD EF 01 AB} 
+after the rotation. This operation is also called the RotWord-
+operation \citep[p. 107]{Stinson:2006}. The next step is to apply 
+Rijndael's S-box to each of these bytes, giving us 4 new bytes. The 
+bytes {AB CD EF 01} would give us {62 BD DF 7C}, when substituted 
+according to the Rijndael S-box (Figure \ref{matrix:rijSbox} in 
+Appendix \ref{app:matrix}).
 
 The left-most byte is then XOR:ed with a value from the Rcon function 
-depending on what round you are currently processing. You can read more 
-about the Rcon function in section \ref{ch:Rcon}.
+depending on what round you are currently processing. You can read 
+more about the Rcon function in section \ref{ch:Rcon}.
 
 \subsection{Rijndael's S-Box}
-Rijndael's S-box takes an input byte which it transforms according to a 
-LUT (Figure \ref{matrix:rijSbox} in appendix \ref{app:matrix}). Where 
-the most significant nibble is placed on the Y axis, and the least 
-significant nibble is set on the X axis. Given the input \emph{0x31}, 
-the output \emph{0xC7} would be received from the Rijndael's S-box.
+Rijndael's S-box takes an input byte which it transforms according to 
+a LUT (Figure \ref{matrix:rijSbox} in Appendix \ref{app:matrix}). 
+Where the most significant nibble is located on the Y axis, and the 
+least significant nibble is located on the X axis of the table. Given 
+the input \emph{0x31}, the output \emph{0xC7} would be received from 
+the Rijndael's S-box.
 
 \subsection{Rcon} \label{ch:Rcon}
 The value input into the Rcon function depends on what round you are 
 currently at. Which means that you would choose Rcon(1) for the first 
 round, Rcon(2) for the second round, and so on. The values in the Rcon 
-array are calculated mathematically, but might as well be accessed from 
-a vector, such as the one found in Figure \ref{matrix:rcon} in 
-appendix \ref{app:matrix}.
+array are calculated mathematically, but might as well be accessed 
+from a vector, such as the one found in Figure \ref{matrix:rcon} in 
+Appendix \ref{app:matrix}.
 
-I illustrated the steps to be performed in the Rcon function, using a 
-flowchart, which can be viewed in figure \ref{img:rcon} in appendix 
+The steps to be performed in the Rcon function are illustrated in a
+flowchard and can be viewed in figure \ref{img:rcon} in appendix 
 \ref{app:fig}.
 
-If the input value is 0 or 1, the same value is returned, otherwise the 
+If the input value is 0, the output value is 0, otherwise the 
 following steps are performed \citep{RijndaelKeySchedule}. This can 
-also be replaced by an S-box where you input your byte, and get another 
-back, since the input byte is just used as a counter that decides how 
-many times you perform steps \ref{item:step1} through \ref{item:step3} 
-%%%%%%%%%%%%%%%%%%%
-%\Warning[TODO]{You need more reliable sources than WIKIPEDIA!}.
-%%%%%%%%%%%%%%%%%%%
+also be replaced by an S-box where you input your byte, and get 
+another back, since the input byte is just used as a counter that 
+decides how many times you perform steps \ref{item:step1} through 
+\ref{item:step3} 
+
 \begin{enumerate}
 \item Set a variable c to 0x01.
-\item If the input-value does not equal 1, set variable b to c \& 0x80. 
-  Otherwise, go to \ref{item:exit_loop}. 
+\item If the input-value does not equal 1, set variable b to c 
+  \& 0x80. Otherwise, go to \ref{item:exit_loop}. 
   \label{item:step1}
 \item Left shift c one step.
 \item If b is equal to 0x80 proceed to \ref{item:step2}, otherwise go to

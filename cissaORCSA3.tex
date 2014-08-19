@@ -1,21 +1,26 @@
-\chapter{CISSA and CSA3}
+\chapter{CISSA or CSA3}
 There are currently two scrambling algorithms being assessed as 
-replacements to the currently used DVB-CSA. This is done to assure 
-content security for yet another ten years.
+replacements to the currently used DVB-CSA. A replacement is 
+needed to assure content security for yet another ten years.
+A part of this thesis has been to compare the two proposed 
+algorithms and decide which one is the most suitable replacement.
+This chapter is a basic introduction to the two algorithms, and 
+the algorithm implemented in this thesis is presented.
 
+\section{Replacements}
 CISSA is meant to be a hardware-friendly as well as software-friendly 
 algorithm designed to allow descrambling to be made on CPU-based units 
 such as computers, smart phones and tablets \citep[p. 9]{DVB:2013}.
 
 CSA3 is a hardware-friendly, software-unfriendly scrambling algorithm 
 chosen by the ETSI to replace the currently used CSA 
-\citep[pp. 6--7]{DVB:2013}. Software-unfriendly means that 
-descrambling is designed so that it is highly impractical to perform 
-in software, but easily done in hardware.
+\citep[pp. 6--7]{DVB:2013}. Software-unfriendly means that descrambling 
+is designed in such a way that it is highly impractical to perform in 
+software.
 
 Both of the algorithms are to be implemented in hardware for 
 scrambling of data. The difference is that CSA3 is to make it hard to 
-descramble the material, using software. Since both of the algorithms 
+descramble the material using software. Since both of the algorithms 
 are confidential, it is sadly impossible to find out what makes the 
 CSA3 algorithm software-unfriendly, while the CISSA algorithm is 
 software-friendly. 
@@ -27,9 +32,9 @@ software-friendly.
 CISSA stands for \emph{Common IPTV Software-oriented Scrambling 
 Algorithm} and is designed to be software-friendly. Opposite to the 
 CSA3, CISSA is made to be easily descrambled in software, so that 
-CPU-based systems such as computers and smart-phones can also 
-implement it.  Although it is software-friendly, it is supposed to 
-able to be implemented efficiently on hardware as well as in software 
+CPU-based systems such as computers and smart-phones can implement 
+it.  Although it is software-friendly, it is supposed to able to 
+be implemented efficiently on hardware as well as in software 
 \citep[p. 9]{DVB:2013}.
 
 CISSA is to use the AES-128 block cipher in CBC-mode with a 16 byte 
@@ -37,13 +42,14 @@ IV with the value 0x445642544d4350544145534349535341. Each TS packet
 is to be processed independently of other TS packets, but each block 
 of data in the payload depends on the previous blocks of data in the 
 same payload, except the first block of data, which depends on the IV. 
-Both the header and adaptation field are to be left unscrambled. \citep[p. 11]{DVB:2013}
+Both the header and adaptation field are to be left unscrambled. 
+\citep[p. 11]{DVB:2013}
 
 \subsection{Software friendly}
-An FPGA implementation of the CISSA algorithm seems likely to be 
-implementable, due to the fact that the scrambling of the content is 
-supposed to be made in hardware, regardless as to whether the 
-descrambling is supposed to be made either in hardware or software.
+An FPGA implementation of the CISSA algorithm is implementable, due 
+to the fact that the scrambling of the content is supposed to be 
+made in hardware, even though the descrambling is supposed to be 
+made either in hardware or software.
 
 While having a scrambling algorithm designed to enable viewing on 
 CPU-based units opens up the market for more users, it might increase 
@@ -62,17 +68,16 @@ Principle.
 This means that the only result of having a descrambling method suited 
 for hardware as well as software implementation should possibly only 
 result in some free implementations showing up. But it being 
-implemented in software should therefore not lead to any problem.
+implemented in software should not lead to any problem.
 
 %Is this even a problem? I think WISI utilizes a free implementation of the CSA.
 
 \section{CSA3}
-The CSA3 scrambling algorithm is based on a combination of an AES 
-(\emph{Advanced Encryption Standard}) block cipher using a 128-bit 
-key, which is simply called the AES-128, and a confidential block 
-cipher called the XRC \citep[p. 8]{DVB:2013}. XRC stands for eXtended 
-emulation Resistant Cipher and is a confidential cipher used in DVB 
-\citep[p. 8]{DVB:2013}.
+The CSA3 scrambling algorithm is based on a combination of an Advanced 
+Encryption Standard (AES) block cipher using a 128-bit key, which is 
+called the AES-128, and a confidential block cipher called the XRC 
+\citep[p. 8]{DVB:2013}. XRC stands for eXtended emulation Resistant 
+Cipher and is a confidential cipher used in DVB \citep[p. 8]{DVB:2013}.
 
 \subsection{Hardware friendly}
 The CSA3 is designed to be hardware-friendly, meaning that 
@@ -83,21 +88,22 @@ Even though it would decrease the probability of content theft, it
 closes the door to expansion onto the CPU-based units market, which is 
 becoming larger and larger.
 
-\section{Conclusion}
+\section{Selection of the algorithm}
 CSA3 implements the AES-128 cipher for scrambling, combined with a 
-confidential cipher, called the XRC cipher. CISSA does not, on the 
-other hand, seem to be using any confidential cipher. It does however 
-use the AES-128 cipher in CBC-mode with a static IV \citep{DVB:2013}.
+confidential cipher, called the XRC cipher. CISSA does not on the 
+other hand contain any confidential cipher. CISSA uses the AES-128 
+cipher in CBC-mode with a static IV \citep{DVB:2013}.
 
 CISSA sounds like a great idea, since it would allow CPU-based units 
 to descramble data streams without using a dedicated HW-Chip. Regardless
 of which cipher is the best, or will prove to become the next standard, 
 both of them use AES-128 as a building block. Therefore, starting out 
-with an AES-128 chiper would provide for a basis to continue developing 
-the scrambler towards either CISSA or CSA3 on a later stage. Due to the
-CIplus interface being implemented, software descrambling and theft will
-very likely not be as big of a problem using a software friendly 
-scrambling method. AES-128 in CBC-mode seems to be the best to 
-implement, since it is mandatory for HD hosts using the CI+ interface 
-\citep[p. 15]{CI+:2011}.
+with an AES-128 chiper provided for a basis to continue developing 
+the scrambler towards either CISSA or CSA3 on a later stage. The 
+algorithm that was finally chosen was the CISSA algorithm due to three
+reasons. Firstly, software descrambling seems to be the future of 
+content protection. Secondly, CISSA was a free and open algortihm. 
+Finally, AES-128 in CBC mode (which is basically CISSA) is needed in 
+order to use CI+ \citep[p. 15]{CI+:2011}.
+
 
