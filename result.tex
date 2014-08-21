@@ -262,9 +262,10 @@ Number of Slice LUTs:      4,930 out of  63,288    7%
 
 \subsubsection{Comparison of synthesis results}
 The most interresting numbers from the synthesizes are the number of 
-LUTs used, number of ROMs (Read-only Memories) and number of Flip-Flops. However, only one ROM has 
-been implemented in this design, which was present in all synthesizes, 
-which is why it will not be included in the comparison.
+LUTs used, number of ROMs (Read-only Memories) and number of 
+Flip-Flops. However, only one ROM has been implemented in this design, 
+which was present in all synthesizes, which is why it will not be 
+included in the comparison.
 
 \begin{table}[h!]
   \centering
@@ -291,9 +292,6 @@ which is why it will not be included in the comparison.
 
 All of the synthesis results can be viewed in Appendix 
 \ref{app:synt_rep}.
-
-%Noteworthy is that the number of LUTs increases between the second and third synthesis, and does not decrease thereafter. The reason why this 
-%happens is possibly due to routing of signals, and 
 
 There is a difference of one register between the fifth and sixth 
 synthesis reports. That register is most likely a residue after an 
@@ -337,15 +335,15 @@ logic.
 \section{Tests}
 All of the entities in the design have been simulated and evaluated 
 seperately before being merged and tested together, to make sure that 
-they had the desired functionality both seperately and when combined 
-together. The simulations for the seperate blocks are trivial, and 
-therefore not included in the report.
+they have the desired functionality both seperately and when combined 
+together. The simulations of the seperate blocks are trivial, and 
+therefore not included in the report. 
 
 Figure \ref{test:1} through \ref{test:3} are tests performed on the 
-complete aes-128 block, before CBC-mode. In the figures, in\_key is the 
-input key to be extended and used, and datapacket is one packet from a 
-TS. Test vector 1 and 2 are taken from \citep{AES:2001}, while test 
-vector 3 is generated using a webpage.
+complete AES128 block, before CBC-mode. In the figures, in\_key is 
+the input key to be extended and used, and datapacket is one packet 
+from a TS. Test vector 1 and 2 are taken from \citet{AES:2001}, while 
+test vector 3 is generated using webpage \citep{Generator}.
 
 \emph{Test vector 1 (Figure \ref{test:1})}\\
 Input key: 2b 7e 15 16 28 ae d2 a6 ab f7 15 88 09 cf 4f 3c\\
@@ -381,36 +379,35 @@ Ciphertext: bf 99 1f aa 8b 0f e6 48 36 46 a0 2d 33 9e de a5
 \end{figure}
 
 \section{Comparison to other implementations}
-Since there exists more implementations of the AES-128 algorithm, an 
-analyzis between the implementations is interresting. To be noted is 
-that this report and implementation have been made in effort to 
-minimize the hardware usage, while achieving a suitable frequency.
-Since it is possible to achieve an entirely combinatorial AES128 
-scrambler, as well as pipelined version, the focus has been to try to 
-find an implementation as similar as this one as possible, to compare 
-results. 
+Since there exist more implementations of the AES128 algorithm, a 
+comparison between the implementations is interresting. To be noted is 
+that this implementation has been focusing on minimizing the hardware 
+usage, while achieving a throughput of atleast 1 Gbit/s. Since it is 
+possible to achieve an entirely combinatorial AES128 scrambler, as 
+well as a pipelined version, the focus has been to try to find an 
+implementation as similar as this one as possible to compare the 
+results.
 
 Note that this implementation has got a couple of entities, that are 
-usually not present in these kinds of designs, in order to allow 
+usually not present in scramblers. They are there in order to allow 
 insertion of the implementation into the FPGA used by WISI.
 
 The design implemented in this thesis scrambles a block of 16 bytes 
 of data in 13 clock pulses. It uses 4930 LUTs, occupies 1727 slices 
 and can be run at a maximum frequency of 94 MHz. The circuit is 
-implemented on a Xilinx Spartan-6.
-
-This can be compared to the Fast AES XTS/CBC implementation (Helion) 
-made by Xilinx themselves. It uses 1041 slices and 4047 LUTs with a 
-maximum frequency of 130 MHz. \cite{Xilinx:AES} 
+implemented on a Xilinx Spartan-6. This can be compared to the Fast 
+AES XTS/CBC implementation (Helion) made by Xilinx. It uses 1041 
+slices and 4047 LUTs with a maximum frequency of 130 MHz. 
+\cite{Xilinx:AES} 
 
 The implementation by Xilinx uses custom FPGA optimization techniques 
 through hand crafted macros. A comparison between the two 
 implementations can be found in table \ref{fig:imp_diff}. When these 
 two implementations are compared, the most important difference is the 
-frequency at which the two circuits can be run. The amount of LUTs that 
-are used does in fact not tell a lot, since a LUT is said to be used
-even if just a small part is used in the circuit. If only one LUT in a 
-slice is used, it still counts the slice as used. 
+frequency at which the two circuits can be run. The amount of LUTs 
+that are used does in fact not mean much, since a LUT is said to be 
+used even if just a small part is used in the circuit. If only one LUT 
+in a slice is used, the LUT is still considered used. 
 
 The percentage row in table \ref{fig:imp_diff} indicates how many more 
 percent LUTs and slices that are used in this implementation compared 
@@ -422,23 +419,20 @@ higher the frequency of the Xilinx implementation is.
   \begin{array}{| l | l | l | l |}
     \hline
     & Slices & LUTs & Frequency (MHz) \\ \hline
-    This & 1727 & 4930 & 94 \\ \hline
+    Current & 1727 & 4930 & 94 \\ \hline
     Xilinx & 1041 & 4047 & 130 \\ \hline
     Percentage & 65\% & 21.8\% & 27.7\% \\ \hline
   \end{array}
-  \caption{Comparison between implementations}
+  \caption{Comparison between implementations.}
   \label{fig:imp_diff}
 \end{table}
 
-\section{Discussion}
-The main reason for choosing a bottoms-up methodology, was since the 
-functionality of the smaller blocks were very basic, but the timing was 
-rather complex. In addition to the fact that there were no concrete 
-guidlines, performing the work on the smaller entities, and then 
-implementing the higher ones minimized the probability of performing 
-tasks that were to be discarded in later stages of the implementation.
+%% The current implementation, compared to Xilinx implementation has got
+%% a lower maximum frequency, while using more space on the FPGA. This is
+%% however a good result, given that Xilinx solution is commercial, and 
+%% implemented on a Xilinx board by Xilinx.
 
-\section{Conclusions}
+\section{Discussion}
 One of the first things noticed during this thesis was that industrial
 secrecy can put a quick halt to projects. A license had to be written 
 and approved by ETSI before WISI Norden was allowed information about 
@@ -448,17 +442,47 @@ this specific analyzis came to a halt before it even started. This
 led to the comparison between a software- and hardware-friendly 
 algorithm becoming impossible to do. 
 
-While WISI Norden and ETSI were discussing the license, specifics about 
-the CSA3 and CISSa algorithms were investigated, since those were the 
-ones to be analyzed. From the little information available about 
-the CSA3, only the names of the two ciphers were possible to find. 
-Since one of the two ciphers in the CSA3 algorithm corresponded to one 
-of the ciphers in the CISSA algorithm, this cipher was examined as much 
-as possible. This was the AES-128 cipher.
+While WISI Norden and ETSI were discussing the license, specifics 
+about the CSA3 and CISSa algorithms were investigated, since those 
+were the ones to be analyzed. From the little information available 
+about the CSA3, only the names of the two ciphers were possible to 
+find. Since one of the two ciphers in the CSA3 algorithm corresponded 
+to one of the ciphers in the CISSA algorithm, this cipher was examined 
+as much as possible. This was the AES128 cipher.
 
-Both the key generation, and the functionality of the entities in 
+Both the key generation and the functionality of the entities in 
 AES-128 algorithm could be found in litterature, since the AES 
 encryption is a public algorithm. From what could be found out about 
 the CISSA algorithm, through an official ETSI journal, it seemed to 
 just use the AES-128 algorithm, but in a certain mode, with a specific 
 Initialization Vector.
+
+%% \section{Discussion}
+%% The main reason for choosing a bottoms-up methodology, was since the 
+%% functionality of the smaller blocks were very basic, but the timing 
+%% was rather complex. In addition to the fact that there were no 
+%% concrete guidlines, performing the work on the smaller entities, and 
+%% then implementing the higher ones minimized the probability of 
+%% performing tasks that were to be discarded in later stages of the 
+%% implementation.
+
+\section{Conclusions}
+Analysis of the two proposed algorithms led to a decision of 
+implementing the AES128 cipher. During design of the circuit, the 
+number of registers have been kept to a minimum by increasing the 
+amount of signals. Many of the solutions were made through observation 
+of simulations 
+
+There were two proposed replacements to be compared and analyzed 
+to find what made one of them software-friendly and the other one 
+hardware-friendly. 
+
+The thesis has been limited to implement the scrambing algorithm 
+chosen in consent between the author and the supervisor at WISI 
+Norden. The algorithm that was chosen, after analysis of the two 
+proposed algorithms, was the AES128 algorithm in CBC-mode (chapter 
+\ref{sec:BlockCipher}) with a set IV, according to the CISSA standard. 
+This corresponds to the CISSA algorithm \citep{DVB:2013}.The 
+implementation is focused on minimizing the hardware usage, while 
+achieving a throughput of at least 1 Gbits/s.
+

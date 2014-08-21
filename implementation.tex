@@ -81,7 +81,7 @@ the cipher entity that the expanded key is complete.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.75\textwidth]{cipherblock}
-  \caption{Cipher-block}
+  \caption{Cipher-block.}
   \label{block:cipher}
 \end{figure}
 
@@ -111,14 +111,14 @@ keyblock2 and keyblock3.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.75\textwidth]{keyexpansion2}
-  \caption{Keyexpansion-block}
+  \caption{Keyexpansion-block.}
   \label{block:keyexpansion}
 \end{figure}
 
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.75\textwidth]{keyblock2}
-  \caption{Keyblock2-block}
+  \caption{Keyblock2-block.}
   \label{block:keyblock2}
 \end{figure}
 
@@ -130,46 +130,49 @@ suited to be placed inside the keycore entity. Rotword rotates the
 bytes of the input one step to the left through a simple left shift. 
 The Sbox replaces the input bytes according to the Rijndael Sbox, 
 through a LUT. The Rcon entity both collects the correct rcon value 
-from a 
-precalculated vector, as well as inputs it into an xor together with 
-the input.
+from a precalculated vector, as well as inputs it into an xor together 
+with the input.
 
 \section{Round entity}
-The round-entity (Figure \ref{block:round}) consists of four entities. 
-Subbytes, shiftrows, mixcolumns and addroundkey. Addroundkey is a 
-somewhat special XOR. Subbytes is an Rijndael Sbox, which takes an 
-input 16-byte state, substitutes it, and outputs another 16-byte state. 
-Shiftrows transposes the rows of the second, third and fourth row of 
+The round-entity (Figure \ref{block:round}) consists of four entities, 
+which are called Subbytes, shiftrows, mixcolumns and addroundkey. 
+Addroundkey is a special XOR, which changes input depending on what 
+round is being processed. Subbytes is an Rijndael Sbox which takes an 
+input 16-byte state, substitutes it and outputs another 16-byte state. 
+Shiftrows shifts the rows of the second, third and fourth row of 
 the state. Last, but not least, is the mixcolumns entity. It consists 
 of 16 mulblock entities. The input state of mixcolumns is split into 
-columns, and each column is sent to a mulblock entity, which multiplies 
-the inputs with 1, 2 or 3, then performs a bitwise XOR on them, 
-outputting the result of the XOR. The function of the mixcolumns block 
-is a rather complex matrix multiplication.
+columns, and each column is sent to a mulblock entity, which 
+multiplies the inputs with 1, 2 or 3, then performs a bitwise XOR on 
+them and outputs the result of the XOR. The function of the mixcolumns 
+block is a complex matrix multiplication.
 
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.75\textwidth]{round}
-  \caption{Round-block}
+  \caption{Round-block.}
   \label{block:round}
 \end{figure}
 
 \subsection{Addroundkey entity}
 Addroundkey is an entity which takes different inputs depending on 
 what round is currently being dealt with. On the first round, 
-addroundkey takes the input to the round entity. On the last round, it 
-takes the output from the subbytes entity. The input to addroundkey is 
-the output from mixcolumns the rest of the time.
+Addroundkey takes the input to the round entity. On the last round, it 
+takes the output from the ShiftRows entity. The input to addroundkey 
+is the output from MixColumns the rest of the time.
 
 \subsection{The mulblock entity}
-The mulblock entity consists of one mul3 entity and one mul2 entity, 
-which performs a special kind of hardware multiplication of 3, and 2, 
-on the input. It also takes two inputs which it leaves alone. The four 
-results are then XOR:ed with eachother, and returned to the mixcolumns 
-entity. The result is then input into the correct index in the matrix. 
+The mulblock entity is the multiplication used by the MixColumns 
+entity. It consists of one mul3 entity and one mul2 entity, which 
+performs a special kind of hardware multiplication of three, and two, 
+on the input. It also takes two inputs which it does not process, 
+those are the values multiplied by one. The four results are then 
+XOR:ed with eachother, and returned to the mixcolumns entity. The 
+result is then input into the correct index in the matrix.
 
-Mul3 means multiplication with 3, and mul2 means multiplication with 2. 
-A multiplication with 2 is a left-shift, followed by an XOR with the 
-fix value 0x1B if the shifted value exceeds 0xFF. A multiplication with 
-3 is the same as a multiplication with 2, followed by an XOR with the 
-input value.
+Mul3 means multiplication with 3, and mul2 means multiplication with 
+2. A multiplication with 2 is a left-shift, followed by an XOR with 
+the fix value 0x1B if the shifted value exceeds 0xFF. A multiplication 
+with 3 is the same as a multiplication with 2, followed by an XOR with 
+the input value. The choice of using an XOR instead of additions, and 
+the XOR with 0x1B are explained in section \ref{sec:MixColumns}.
