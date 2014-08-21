@@ -55,7 +55,7 @@ been hard. It has been possible to find a number of them through the
 ETSI documentation though, which has been used to determine the 
 functionality of the blocks.
 
-\subsubsection{Merging and timing}
+\subsubsection{Merging and timing} \label{ssec:merge}
 Merging has required more focus than expected, probably since this 
 design was a bottoms-up design, instead of the more common top-down 
 design. This project was done by implementing low level entities 
@@ -96,14 +96,16 @@ in the following sections.
   \label{b:scr}
 \end{figure}
 
-\subsection{Hardware usage}
+\subsection{Hardware usage} \label{ssec:hu}
 The circuit that was first implemented has during the course of the 
 project been optimized in a couple of ways it was synthesized. 
 It has either been optimized to minimize hardware usage, or maximize 
 the speed of the circuit. A total of six synthesises were run. A 
 table displaying the differences of the results can be viewed in 
-figure \ref{table:synthesis}.
-The most significant optimizations are discussed in this section. 
+figure \ref{table:synthesis}. Most focus has been put on minimizing the 
+amount of registers. This has been done by adding control signals, that 
+decrease the need to store values in registers. The most significant 
+optimizations are discussed in this section. 
 
 \subsubsection{Optimizations}
 The most significant optimization that was performed was an 
@@ -467,22 +469,25 @@ Initialization Vector.
 %% implementation.
 
 \section{Conclusions}
-Analysis of the two proposed algorithms led to a decision of 
-implementing the AES128 cipher. During design of the circuit, the 
-number of registers have been kept to a minimum by increasing the 
-amount of signals. Many of the solutions were made through observation 
-of simulations 
+An analysis of two algorithms proposed to replace the current standard 
+scrambling algorithm CSA has been done. This has been done through 
+a study of litterature and documents defining the algorithms. The 
+system was built using a bottom-up design, after finding basic 
+information about the components of the algorithm.
 
-There were two proposed replacements to be compared and analyzed 
-to find what made one of them software-friendly and the other one 
-hardware-friendly. 
+As explained in chapter \ref{csa3cissa}, the lack of information 
+available about the two algorithms made an analysis of what made one 
+of them hardware friendly and the other software friendly impossible. 
+However, CSI+ requires the scrambling to be done using the AES128 
+algorithm in CBC-mode, and therefore CISSA was chosen to be 
+implemented.
 
-The thesis has been limited to implement the scrambing algorithm 
-chosen in consent between the author and the supervisor at WISI 
-Norden. The algorithm that was chosen, after analysis of the two 
-proposed algorithms, was the AES128 algorithm in CBC-mode (chapter 
-\ref{sec:BlockCipher}) with a set IV, according to the CISSA standard. 
-This corresponds to the CISSA algorithm \citep{DVB:2013}.The 
-implementation is focused on minimizing the hardware usage, while 
-achieving a throughput of at least 1 Gbits/s.
+As mentioned in chapter \ref{ssec:hu}, optimization of the circuit has 
+been mainly done by minimizing the usage of registers. This has been 
+done by increasing the amount of signals. Most decisions were made 
+through analysis of simulations and synthesis reports.
 
+The biggest difficulties encountered during this thesis has been 
+finding proper documentation. Moreover, as mentioned in 
+\ref{ssec:merge}, merging has taken more time and focus than was 
+planned for.

@@ -1,9 +1,12 @@
 \chapter{Examples}\label{app:examples}
+This appendix contains an algebraic example of how to perform an 
+inverse scrambling in CBC-mode.
 
 \section*{CBC-mode calculations} \label{sec:CBCcalc}
-The ciphertext is obtained through the following equation where \newline
-C_{0} \text{ is the IV, and the XOR-operation is noted with }\oplus.
-
+The ciphertext is obtained through the following equation where 
+\newline
+C_{0} \text{ is the IV} \newline
+\text{XOR is noted with }\oplus. \newline
 C_i \text{ is the ciphertext} \newline
 P_i \text{ is the plaintext} \newline
 E_k \text{ is the encryption algorithm} \newline
@@ -16,7 +19,7 @@ C_{i} = E_{k}(P_{i} \oplus C_{i-1})
 The inverse of the encryption algorithm E_{k} \text{ is the decryption 
 algorithm } D_{k}.
 
-The inverse of the XOR-operation the XOR-operation.
+The inverse of an XOR-operation is an XOR-operation.
 
 This gives us:
 

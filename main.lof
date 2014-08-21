@@ -33,10 +33,10 @@
 \contentsline {figure}{\numberline {8.3}{\ignorespaces Test vector 2\relax }}{46}{figure.caption.23}
 \contentsline {figure}{\numberline {8.4}{\ignorespaces Test vector 3\relax }}{46}{figure.caption.24}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Rijndael S-box\relax }}{52}{figure.caption.26}
-\contentsline {figure}{\numberline {A.2}{\ignorespaces State-Matrix\relax }}{52}{figure.caption.27}
-\contentsline {figure}{\numberline {A.3}{\ignorespaces Rijndael MixColumns equation\relax }}{52}{figure.caption.28}
-\contentsline {figure}{\numberline {A.4}{\ignorespaces The Rcon function represented as a vector\relax }}{53}{figure.caption.29}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Rijndael S-box.\relax }}{52}{figure.caption.26}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces State-Matrix.\relax }}{52}{figure.caption.27}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Rijndael MixColumns equation.\relax }}{52}{figure.caption.28}
+\contentsline {figure}{\numberline {A.4}{\ignorespaces The Rcon function represented as a vector.\relax }}{53}{figure.caption.29}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {B.1}{\ignorespaces Flowchart of the Rcon function\relax }}{56}{figure.caption.30}
 \contentsline {figure}{\numberline {B.2}{\ignorespaces Flowchart of the key schedule\relax }}{57}{figure.caption.31}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.29)  21 AUG 2014 13:04
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.29)  21 AUG 2014 18:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2680,7 +2680,7 @@ Package pdftex.def Info: fig/scrambler.png used on input line 94.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.189   \MyIndent \triangleright
+l.191   \MyIndent \triangleright
                                  manager      &  858 &  699 \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2688,7 +2688,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.189   \MyIndent \triangleright manager      &
+l.191   \MyIndent \triangleright manager      &
                                                  858 &  699 \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2699,7 +2699,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.190   \MyIndent \triangleright
+l.192   \MyIndent \triangleright
                                  cbc          & 4321 & 2127 \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2707,7 +2707,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.190   \MyIndent \triangleright cbc          &
+l.192   \MyIndent \triangleright cbc          &
                                                 4321 & 2127 \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2718,7 +2718,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.192   \MyIndent \MyIndent \triangleright
+l.194   \MyIndent \MyIndent \triangleright
                                            cipher       & 4229 & 1994 \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2726,7 +2726,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.192 ...t \MyIndent \triangleright cipher       &
+l.194 ...t \MyIndent \triangleright cipher       &
                                                    4229 & 1994 \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2737,7 +2737,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.194 ...Indent \MyIndent \MyIndent \triangleright
+l.196 ...Indent \MyIndent \MyIndent \triangleright
                                                    keyexpansion & 2914
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2745,7 +2745,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.194 ...t \MyIndent \triangleright keyexpansion &
+l.196 ...t \MyIndent \triangleright keyexpansion &
                                                    2914
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2756,7 +2756,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.197 ...Indent \MyIndent \MyIndent \triangleright
+l.199 ...Indent \MyIndent \MyIndent \triangleright
                                                    keyblock1
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2764,7 +2764,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.198   &
+l.200   &
           689 & 0 \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2775,7 +2775,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.199 ...Indent \MyIndent \MyIndent \triangleright
+l.201 ...Indent \MyIndent \MyIndent \triangleright
                                                    keyblock2
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2783,27 +2783,8 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.200   &
+l.202   &
           208 & 9 \\
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.202 ...Indent \MyIndent \MyIndent \triangleright
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.203   demux &
-                32   & 0 \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -2821,7 +2802,26 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.205   keycore &
+l.205   demux &
+                32   & 0 \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.206 ...Indent \MyIndent \MyIndent \triangleright
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.207   keycore &
                   183 & 9 \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2832,7 +2832,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.208   \triangleright
+l.210   \triangleright
                        ctr & 14 & 9 \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2840,7 +2840,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.208   \triangleright ctr &
+l.210   \triangleright ctr &
                              14 & 9 \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2851,7 +2851,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.210   \triangleright
+l.212   \triangleright
                        rotw & 0 & 0 \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2859,7 +2859,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.210   \triangleright rotw &
+l.212   \triangleright rotw &
                               0 & 0 \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2870,7 +2870,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.212   \triangleright
+l.214   \triangleright
                        sbox & 128 & 0 \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2878,7 +2878,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.212   \triangleright sbox &
+l.214   \triangleright sbox &
                               128 & 0 \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2889,7 +2889,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.214   \triangleright
+l.216   \triangleright
                        rcon & 40 & 0 \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2897,7 +2897,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.214   \triangleright rcon &
+l.216   \triangleright rcon &
                               40 & 0 \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2908,7 +2908,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.216 ...Indent \MyIndent \MyIndent \triangleright
+l.218 ...Indent \MyIndent \MyIndent \triangleright
                                                    keyblock3
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2916,7 +2916,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.217   &
+l.219   &
           1854 & 1365 \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2927,7 +2927,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.219 ...Indent \MyIndent \MyIndent \triangleright
+l.221 ...Indent \MyIndent \MyIndent \triangleright
                                                    data2state & 0
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2935,7 +2935,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.219 ...ent \MyIndent \triangleright data2state &
+l.221 ...ent \MyIndent \triangleright data2state &
                                                    0
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2946,7 +2946,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.221 ...Indent \MyIndent \MyIndent \triangleright
+l.223 ...Indent \MyIndent \MyIndent \triangleright
                                                    round & 1535 & 272 \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2954,7 +2954,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.221 ...MyIndent \MyIndent \triangleright round &
+l.223 ...MyIndent \MyIndent \triangleright round &
                                                    1535 & 272 \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2965,7 +2965,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.223 ...Indent \MyIndent \MyIndent \triangleright
+l.225 ...Indent \MyIndent \MyIndent \triangleright
                                                    subbytes
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2973,7 +2973,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.224   &
+l.226   &
           512 & 0 \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2984,7 +2984,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.225 ...Indent \MyIndent \MyIndent \triangleright
+l.227 ...Indent \MyIndent \MyIndent \triangleright
                                                    shiftrows
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2992,7 +2992,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.226   &
+l.228   &
           0 & 0 \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3003,7 +3003,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.227 ...Indent \MyIndent \MyIndent \triangleright
+l.229 ...Indent \MyIndent \MyIndent \triangleright
                                                    mixcolumns
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -3011,7 +3011,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.228   &
+l.230   &
           176 & 0 \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3022,7 +3022,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.229 ...Indent \MyIndent \MyIndent \triangleright
+l.231 ...Indent \MyIndent \MyIndent \triangleright
                                                    addkey & 128
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -3030,7 +3030,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.229 ...yIndent \MyIndent \triangleright addkey &
+l.231 ...yIndent \MyIndent \triangleright addkey &
                                                    128
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3041,7 +3041,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.232 ...Indent \MyIndent \MyIndent \triangleright
+l.234 ...Indent \MyIndent \MyIndent \triangleright
                                                    state2data & 1 & 2 \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -3049,7 +3049,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.232 ...ent \MyIndent \triangleright state2data &
+l.234 ...ent \MyIndent \triangleright state2data &
                                                    1 & 2 \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3060,36 +3060,33 @@ my insertion and my current dilemma will both disappear.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[44]
-Underfull \vbox (badness 2680) has occurred while \output is active []
-
- [45]
+[44] [45]
 
 Package natbib Warning: Citation `Generator' on page 46 undefined on input line
- 346.
+ 348.
 
 <fig/successtv1.png, id=964, 831.85782pt x 106.14656pt>
 File: fig/successtv1.png Graphic file (type png)
 
 <use fig/successtv1.png>
-Package pdftex.def Info: fig/successtv1.png used on input line 354.
+Package pdftex.def Info: fig/successtv1.png used on input line 356.
 (pdftex.def)             Requested size: 355.65944pt x 45.38298pt.
 
 <fig/successtv2.png, id=966, 832.61063pt x 112.16907pt>
 File: fig/successtv2.png Graphic file (type png)
 
 <use fig/successtv2.png>
-Package pdftex.def Info: fig/successtv2.png used on input line 365.
+Package pdftex.def Info: fig/successtv2.png used on input line 367.
 (pdftex.def)             Requested size: 355.65944pt x 47.9151pt.
  <fig/successtv3.png, id=968, 726.46407pt x 108.405pt>
 File: fig/successtv3.png Graphic file (type png)
 
 <use fig/successtv3.png>
-Package pdftex.def Info: fig/successtv3.png used on input line 376.
+Package pdftex.def Info: fig/successtv3.png used on input line 378.
 (pdftex.def)             Requested size: 355.65944pt x 53.07423pt.
  [46 <./fig/successtv1.png (PNG copy)> <./fig/successtv2.png (PNG copy)> <./fig
 /successtv3.png>]
-Overfull \hbox (5.6194pt too wide) in paragraph at lines 403--411
+Overfull \hbox (5.6194pt too wide) in paragraph at lines 405--413
 []\T1/jkpk/m/n/10 The im-ple-men-ta-tion by Xil-inx uses cus-tom FPGA op-ti-miz
 a-tion tech-niques through
  []
@@ -3097,7 +3094,7 @@ a-tion tech-niques through
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.419   \begin{array}{| l | l | l | l |}
+l.421   \begin{array}{| l | l | l | l |}
                                         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -3105,7 +3102,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.425   \end{array}
+l.427   \end{array}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3113,7 +3110,11 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-[47]) [48]
+[47]
+
+LaTeX Warning: Reference `csa3cissa' on page 48 undefined on input line 478.
+
+) [48]
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 23.63593pt on input line 55.
  [49
@@ -3125,14 +3126,14 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
  (./matrix.tex
 Appendix A.
 
-Overfull \hbox (16.60016pt too wide) detected at line 43
+Overfull \hbox (16.60016pt too wide) detected at line 50
 [][]
  []
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.83 ...{array}{l l l l l l l l l l l l l l l l l}
+l.90 ...{array}{l l l l l l l l l l l l l l l l l}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -3140,7 +3141,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.100   \end{array}
+l.107   \end{array}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3149,7 +3150,7 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (40.79588pt too wide) in paragraph at lines 83--101
+Overfull \hbox (40.79588pt too wide) in paragraph at lines 90--108
 []$[]$ 
  []
 
@@ -3165,17 +3166,17 @@ Overfull \hbox (40.79588pt too wide) in paragraph at lines 83--101
 
 ]
 Appendix B.
-<fig/flowchart.pdf, id=1019, 415.5525pt x 912.40875pt>
+<fig/flowchart.pdf, id=1021, 415.5525pt x 912.40875pt>
 File: fig/flowchart.pdf Graphic file (type pdf)
  <use fig/flowchart.pdf>
-Package pdftex.def Info: fig/flowchart.pdf used on input line 5.
+Package pdftex.def Info: fig/flowchart.pdf used on input line 10.
 (pdftex.def)             Requested size: 151.61516pt x 332.90062pt.
 
-<fig/keyschedule.png, id=1020, 822.272pt x 822.272pt>
+<fig/keyschedule.png, id=1022, 822.272pt x 822.272pt>
 File: fig/keyschedule.png Graphic file (type png)
 
 <use fig/keyschedule.png>
-Package pdftex.def Info: fig/keyschedule.png used on input line 12.
+Package pdftex.def Info: fig/keyschedule.png used on input line 17.
 (pdftex.def)             Requested size: 355.65944pt x 355.66539pt.
 ) [55] [56 <./fig/flowchart.pdf>] [57 <./fig/keyschedule.png (PNG copy)>]
 \openout2 = `vectors.aux'.
@@ -3187,39 +3188,24 @@ Package pdftex.def Info: fig/keyschedule.png used on input line 12.
 ]
 Appendix C.
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--10
+Underfull \hbox (badness 10000) in paragraph at lines 9--11
 
  []
 
 [59]
-
-! Package caption Error: \caption outside float.
-
-See the caption package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.72   \caption
-               {AES-128 Scrambling of one data packet}
-If you do not understand this error, please take a closer look
-at the documentation of the `caption' package, especially the
-section about errors.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.83     &  & After & After &  & After \oplus
-                                              &  & w[i] = temp\\
+l.140     &  & After & After &  & After \oplus
+                                               &  & w[i] = temp\\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.83     &  & After & After &  & After \oplus &
-                                                 & w[i] = temp\\
+l.140     &  & After & After &  & After \oplus &
+                                                  & w[i] = temp\\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -3229,16 +3215,16 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.85     \oplus
-                w[i-16] \\ \hline
+l.142     \oplus
+                 w[i-16] \\ \hline
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.85     \oplus w[i-16] \\ \hline
-                                 
+l.142     \oplus w[i-16] \\ \hline
+                                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -3246,28 +3232,28 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (52.91017pt too wide) in alignment at lines 81--108
+Overfull \hbox (52.91017pt too wide) in alignment at lines 138--165
  [] [] [] [] [] [] [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 108
+Underfull \vbox (badness 10000) detected at line 165
  []
 
 
-Overfull \hbox (52.91017pt too wide) in alignment at lines 108--133
+Overfull \hbox (52.91017pt too wide) in alignment at lines 165--190
  [] [] [] [] [] [] [] [] 
  []
 
 [60]
-Overfull \hbox (52.91017pt too wide) in alignment at lines 133--138
+Overfull \hbox (52.91017pt too wide) in alignment at lines 190--195
  [] [] [] [] [] [] [] [] 
  []
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.187   \oplus
+l.245   \oplus
                &
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -3275,7 +3261,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.187   \oplus &
+l.245   \oplus &
                 
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3286,7 +3272,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.226   \oplus
+l.284   \oplus
                &
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -3294,7 +3280,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.226   \oplus &
+l.284   \oplus &
                 
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3305,7 +3291,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.264   \oplus
+l.322   \oplus
                &
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -3313,7 +3299,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.264   \oplus &
+l.322   \oplus &
                 
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3324,7 +3310,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.302   \oplus
+l.360   \oplus
                &
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -3332,7 +3318,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.302   \oplus &
+l.360   \oplus &
                 
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3343,7 +3329,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.340   \oplus
+l.398   \oplus
                &
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -3351,7 +3337,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.340   \oplus &
+l.398   \oplus &
                 
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3362,7 +3348,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.378   \oplus
+l.436   \oplus
                &
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -3370,7 +3356,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.378   \oplus &
+l.436   \oplus &
                 
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3381,7 +3367,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.416   \oplus
+l.474   \oplus
                &
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -3389,7 +3375,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.416   \oplus &
+l.474   \oplus &
                 
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3398,14 +3384,14 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (29.07985pt too wide) in alignment at lines 150--500
+Overfull \hbox (29.07985pt too wide) in alignment at lines 208--558
  [] [] [] [] [] [] [] 
  []
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.530   \oplus
+l.588   \oplus
                &
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -3413,7 +3399,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.530   \oplus &
+l.588   \oplus &
                 
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3424,7 +3410,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.569   \oplus
+l.627   \oplus
                &
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -3432,7 +3418,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.569   \oplus &
+l.627   \oplus &
                 
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3441,31 +3427,31 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (29.07985pt too wide) in alignment at lines 500--588
+Overfull \hbox (29.07985pt too wide) in alignment at lines 558--646
  [] [] [] [] [] [] [] 
  []
 
 [61] [62]
-Underfull \vbox (badness 10000) detected at line 617
+Underfull \vbox (badness 10000) detected at line 676
  []
 
 [63]
-Overfull \hbox (57.23956pt too wide) in alignment at lines 632--655
+Overfull \hbox (57.23956pt too wide) in alignment at lines 692--715
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (60.32657pt too wide) in alignment at lines 659--671
+Overfull \hbox (60.32657pt too wide) in alignment at lines 719--731
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (59.1926pt too wide) in alignment at lines 675--688
+Overfull \hbox (59.1926pt too wide) in alignment at lines 735--748
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
 [64]
-Overfull \hbox (58.7516pt too wide) in alignment at lines 692--704
+Overfull \hbox (58.7516pt too wide) in alignment at lines 752--764
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
@@ -3481,44 +3467,28 @@ Appendix D.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.5 C_
-      {0} \text{ is the IV, and the XOR-operation is noted with }\oplus.
+l.8 C_
+      {0} \text{ is the IV} \newline
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.6 
-    
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.7 C_
-      i \text{ is the ciphertext} \newline
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.11 
+l.14 
      
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7--11
+Underfull \hbox (badness 10000) in paragraph at lines 6--14
 
  []
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.16 The inverse of the encryption algorithm E_
+l.19 The inverse of the encryption algorithm E_
                                                {k} \text{ is the decryption
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -3526,19 +3496,19 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.18 
+l.21 
      
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-) [67]
+[67]) [68]
 \openout2 = `synthesis.aux'.
 
- (./synthesis.tex [68
+ (./synthesis.tex (./synthesis2.tex) (./synthesis3.tex [69
 
 
 
-] (./synthesis2.tex) (./synthesis3.tex [69])
+])
 (./synthesis4.tex) (./synthesis5.tex
 ! Undefined control sequence.
 l.2 \subsubsubsection
@@ -3910,7 +3880,7 @@ Package natbib Warning: There were undefined citations.
 
 [85] [86
 
-] <fig/LinkUniv_staende_pms.pdf, id=1322, 260.975pt x 172.645pt>
+] <fig/LinkUniv_staende_pms.pdf, id=1324, 260.975pt x 172.645pt>
 File: fig/LinkUniv_staende_pms.pdf Graphic file (type pdf)
 
 <use fig/LinkUniv_staende_pms.pdf>
@@ -3933,7 +3903,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 79.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 79.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 79.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3B31D5D4FA4D133EE83654333FDC5B02;5627.
+(rerunfilecheck)             Checksum: 3C1CE439D153245C9ED52A5FED0E9601;5624.
 Package rerunfilecheck Info: File `main.brf' has not changed.
 (rerunfilecheck)             Checksum: 10EC2B098F227E781AE6A4493ED9AB77;3506.
 
@@ -3944,10 +3914,10 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 79.
  )
 (\end occurred when \ifx on line 20 was incomplete) 
 Here is how much of TeX's memory you used:
- 23010 strings out of 493304
- 376011 string characters out of 6139871
- 602064 words of memory out of 5000000
- 25432 multiletter control sequences out of 15000+600000
+ 23014 strings out of 493304
+ 376063 string characters out of 6139871
+ 602219 words of memory out of 5000000
+ 25436 multiletter control sequences out of 15000+600000
  228556 words of font info for 189 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  56i,12n,87p,587b,559s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3967,10 +3937,10 @@ ne.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpsya.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/helvetic/uhvb8a.pfb>
-Output written on main.pdf (101 pages, 1214467 bytes).
+Output written on main.pdf (101 pages, 1216484 bytes).
 PDF statistics:
- 1444 PDF objects out of 1728 (max. 8388607)
- 1266 compressed objects within 13 object streams
+ 1446 PDF objects out of 1728 (max. 8388607)
+ 1268 compressed objects within 13 object streams
  277 named destinations out of 1000 (max. 500000)
  19256 words of extra memory for PDF output out of 20736 (max. 10000000)
 

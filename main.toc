@@ -94,7 +94,7 @@
 \contentsline {section}{\numberline {8.6}Discussion}{47}{section.8.6}
 \contentsline {section}{\numberline {8.7}Conclusions}{48}{section.8.7}
 \contentsline {chapter}{\numberline {A}Matrixes}{51}{appendix.A}
-\contentsline {chapter}{\numberline {B}Illustrations}{55}{appendix.B}
+\contentsline {chapter}{\numberline {B}Flowcharts}{55}{appendix.B}
 \contentsline {chapter}{\numberline {C}Test vectors}{59}{appendix.C}
 \contentsline {chapter}{\numberline {D}Examples}{67}{appendix.D}
 \contentsline {chapter}{List of Figures}{81}{section*.33}
