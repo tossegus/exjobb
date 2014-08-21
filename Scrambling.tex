@@ -65,7 +65,7 @@ these problems can be solved by cryptography and encryption.
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Data packets}\label{sec:Data}
 The data processed by the DVB systems is packaged into data packets 
-before it is sent. All of them are created from (ES) packets 
+before it is sent. All of them are created from ES packets 
 (Elementary Stream) which are generally the output from an audio or 
 video encoder. The ES-packets are packeted into PS- (Program Stream), 
 TS- (Transport Stream) or PES packets (Packatized Elementary Stream) 
@@ -295,7 +295,7 @@ of the blocksize. Block ciphers often use a combination of Substitution-boxes
 of block ciphers, but the two recommended by \citet{Schneier:2003} are the 
 CBC-mode and the CTR-mode, which are described in the following sections.
 
-\subsubsection{CBC}
+\subsubsection{CBC} \label{sec:cbc}
 CBC stands for \emph{cipher block chaining} and is performed by 
 encrypting the result of an XOR (basic logic component) between 
 an Initialization Vector (IV) and the plaintext. The resulting 

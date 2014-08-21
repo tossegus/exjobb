@@ -70,25 +70,29 @@
 \contentsline {chapter}{\numberline {7}Implementation}{33}{chapter.7}
 \contentsline {section}{\numberline {7.1}Manager entity}{34}{section.7.1}
 \contentsline {section}{\numberline {7.2}CBC entity}{34}{section.7.2}
-\contentsline {section}{\numberline {7.3}Cipher entity}{34}{section.7.3}
-\contentsline {section}{\numberline {7.4}Keyexpansion entity}{35}{section.7.4}
+\contentsline {section}{\numberline {7.3}Cipher entity}{35}{section.7.3}
+\contentsline {section}{\numberline {7.4}Keyexpansion entity}{36}{section.7.4}
 \contentsline {subsection}{\numberline {7.4.1}Keycore entity}{36}{subsection.7.4.1}
-\contentsline {section}{\numberline {7.5}Round entity}{36}{section.7.5}
+\contentsline {section}{\numberline {7.5}Round entity}{37}{section.7.5}
 \contentsline {subsection}{\numberline {7.5.1}Addroundkey entity}{38}{subsection.7.5.1}
 \contentsline {subsection}{\numberline {7.5.2}The mulblock entity}{38}{subsection.7.5.2}
 \contentsline {chapter}{\numberline {8}Result}{41}{chapter.8}
 \contentsline {section}{\numberline {8.1}Problems}{41}{section.8.1}
-\contentsline {section}{\numberline {8.2}Hardware}{42}{section.8.2}
-\contentsline {subsection}{\numberline {8.2.1}Hardware usage}{42}{subsection.8.2.1}
-\contentsline {subsubsection}{Optimizations}{42}{subsection.8.2.1}
+\contentsline {subsubsection}{License and interrest of the CSA3}{42}{section.8.1}
+\contentsline {subsubsection}{Documentation of CISSA}{42}{section.8.1}
+\contentsline {subsubsection}{Test vectors}{42}{section.8.1}
+\contentsline {subsubsection}{Merging and timing}{42}{section.8.1}
+\contentsline {section}{\numberline {8.2}Hardware}{43}{section.8.2}
+\contentsline {subsection}{\numberline {8.2.1}Hardware usage}{43}{subsection.8.2.1}
+\contentsline {subsubsection}{Optimizations}{43}{subsection.8.2.1}
 \contentsline {subsubsection}{Comparison of synthesis results}{44}{table.8.1}
-\contentsline {section}{\numberline {8.3}Further development}{44}{section.8.3}
-\contentsline {subsection}{\numberline {8.3.1}Rijndael's S-Box}{44}{subsection.8.3.1}
+\contentsline {section}{\numberline {8.3}Further development}{45}{section.8.3}
+\contentsline {subsection}{\numberline {8.3.1}Rijndael's S-Box}{45}{subsection.8.3.1}
 \contentsline {subsection}{\numberline {8.3.2}Critical Path}{45}{subsection.8.3.2}
-\contentsline {section}{\numberline {8.4}Tests}{45}{section.8.4}
-\contentsline {section}{\numberline {8.5}Comparison to other implementations}{46}{section.8.5}
+\contentsline {section}{\numberline {8.4}Tests}{46}{section.8.4}
+\contentsline {section}{\numberline {8.5}Comparison to other implementations}{47}{section.8.5}
 \contentsline {section}{\numberline {8.6}Discussion}{47}{section.8.6}
-\contentsline {section}{\numberline {8.7}Conclusions}{47}{section.8.7}
+\contentsline {section}{\numberline {8.7}Conclusions}{48}{section.8.7}
 \contentsline {chapter}{\numberline {A}Matrixes}{51}{appendix.A}
 \contentsline {chapter}{\numberline {B}Illustrations}{55}{appendix.B}
 \contentsline {chapter}{\numberline {C}Test vectors}{59}{appendix.C}

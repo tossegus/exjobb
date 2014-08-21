@@ -1,78 +1,82 @@
 \chapter{Implementation}
-This design is very hierarchical. The top layer is an aes128 block in 
+This design is hierarchical. The top layer is an AES128 block in 
 CBC-mode. It takes an input TS-packet, selects data from it which it 
-scrambles, and then outputs the data in the form of a TS-packet once 
+scrambles and outputs the data in the form of a TS-packet once 
 again.
 
 The scrambler (Figure \ref{block:scrambler}) consists of two entities. 
-An entity which is called the cbc-entity, which deals with the 
+An entity which is called the CBC-entity, which deals with the 
 scrambling of the received data. The other entity is a data-manager. 
 The manager deals with reading data from the interface towards the 
-rest of the FPGA as well as sending the right data-bits to the CBC-
-entity. It also tells the CBC-entity how to handle the data, since 
-different things are to be done depending on if the data is the first 
-data packet sent, or not.
+rest of the FPGA as well as sending data-bits to the CBC-entity at the 
+correct time. It also tells the CBC-entity how to handle the data, 
+since different tasks are to be done depending on if the data is the 
+first data packet sent or not.
 
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.75\textwidth]{scrambler}
-  \caption{Scrambler-block}
+  \caption{Scrambler-block.}
   \label{block:scrambler}
 \end{figure}
 
 \section{Manager entity}
-The manager (Figure \ref{block:manager}) consists of a FIFO, an FSM 
-and a couple of registers. The FIFO is needed since the data sent to 
-the scrambler from the FPGA is sent in bursts. The FIFO therefore 
-writes the data bursts into a memory, from which it later reads, 
-processes and sends the data to the CBC-entity. The data written to 
-the FIFO is written in packets of 32 bits, but are read 8 bits at the 
-time. The manager looks through the data packets to see if there is 
-an adaptation field or not, since that changes the way that data is 
-handled. The payload is written to the first set of registers as the 
-data is found, and then sent to the next set of registers. This is 
-simply done to allow the manager to deal with two sets of data in 
-parallell. When the packet is ready to be sent, a flag is set and the 
-data is sent to the CBC-entity. 
+The manager (Figure \ref{block:manager}) consists of a FIFO (First in, 
+First out), an FSM (Final State Machine) and a couple of registers. 
+The FIFO is needed since the data sent to the scrambler from the FPGA 
+is sent in bursts. The FIFO therefore writes the data bursts into a m
+emory, from which it later reads, processes and sends the data to the 
+CBC-entity. The data written to the FIFO is written in packets of 32 
+bits, but are read 8 bits at the time. The manager looks through the 
+data packets to see if there is an adaptation field or not, since that 
+changes the way that the data is handled. The payload is written to 
+the first set of registers as the data is found, and then sent to the 
+next set of registers. This is done to allow the manager to deal with 
+two sets of data in parallell. However, only one packet is scrambled 
+at any given time. When the packet is ready to be sent, a flag is set 
+and the data is sent to the CBC-entity. The output of the registers 
+is the input of the CBC-entity, which can be seen in figure 
+\ref{block:scrambler}.
 
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.75\textwidth]{manager}
-  \caption{Manager-block}
+  \caption{Manager-block.}
   \label{block:manager}
 \end{figure}
 
 \section{CBC entity}
 The CBC-entity (Figure \ref{block:cbc}) consists of three small 
-entities. An XOR, a multiplexer and a cipher-entity. The multiplexer is 
-needed since the first plaintext should be sent to the XOR together 
+entities. An XOR, a multiplexer and a cipher-entity. The multiplexer 
+is needed since the first plaintext should be sent to the XOR together 
 with an IV. For the rest of the plaintexts contained within the same 
 TS packet, the output ciphertext should be used instead of the IV. 
-There is only going to be one aes128 cipher in the CBC-entity, in order 
-to save hardware. It will be run in sequence instead of in parallell, 
-even though it might reduce the maximal speed of the circuit.
+There is only going to be one AES128 cipher in the CBC-entity in 
+order to save hardware. It will be run in sequence instead of in 
+parallell, even though it might reduce the maximal speed of the 
+circuit. CBC is explained in section \ref{sec:cbc}.
 
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.75\textwidth]{cbc}
-  \caption{CBC-block}
+  \caption{CBC-block.}
   \label{block:cbc}
 \end{figure}
 
 \section{Cipher entity}
-The aes-128 cipher-entity (Figure \ref{block:cipher}) consists of 4 
+The AES128 cipher-entity (Figure \ref{block:cipher}) consists of 4 
 components. The data2state entity, which transforms the array into a 
 matrix of data. A keyexpansion entity, which takes an input of a key, 
-and generates an extended key as an output. An entity, which was named  
-rounds, that deals with the encryption of the 16 byte data blocks. 
-And finally a state2data entity, which transforms the data-matrix into 
-an array once again. The cipher entity itself keeps track of timing 
-mainly between the keyexpansion and the round entity. It uses itself of 
-an FSM to make sure that the round entity is provided with the correct 
-roundkey at the right time, and data is output when it is scrambled. 
-What can not be seen in figure \ref{block:cipher} is that the 
-keyexpansion entity also sends an enable signal, that tells the cipher 
-entity that the expanded key is complete.
+and generates an extended key as an output. An entity, which was 
+named rounds, that deals with the encryption of the 16 byte data 
+blocks. And finally a state2data entity, which transforms the data-
+matrix into an array once again. The cipher entity itself keeps track 
+of timing mainly between the keyexpansion and the round entity. It 
+uses an FSM to make sure that the round entity is provided with the 
+correct roundkey at the right time, and data is output when 
+it is scrambled. What can not be seen in figure \ref{block:cipher} is 
+that the keyexpansion entity also sends an enable signal, that tells 
+the cipher entity that the expanded key is complete.
 
 \begin{figure}[h!]
   \centering
@@ -81,24 +85,28 @@ entity that the expanded key is complete.
   \label{block:cipher}
 \end{figure}
 
-\section{Keyexpansion entity}
+\section{Keyexpansion entity} \label{sec:Expansion}
 The keyexpansion-entity (Figure \ref{block:keyexpansion}) is divided 
-into 3 keyblock entities. The first keyblock entity decides what 4 
-bytes of the expanded key are to be expanded. The second keyblock 
-entity (Figure \ref{block:keyblock2}) contains the keycore, which is 
-only performed on every 4th set of 4 bytes, and a demux entity. 
-The third keyblock entity performs an xor between either the first or 
-second keyblock depending on if the keycore was supposed to be run. It 
-also increments the internal counter, which is used as an index when 
-accessing and generating the 4 byte blocks of data.
+into three keyblock entities. The first keyblock entity decides what 
+four bytes of the expanded key are to be expanded. The first time, the 
+bytes are selected from the provided key, but after the first key has 
+been expanded, the data bits are chosen from the newly expanded key. 
+The second keyblock entity (Figure \ref{block:keyblock2}) contains the 
+keycore, which is only performed on every fourth set of four bytes, 
+and a demux entity. The third keyblock entity performs an XOR between 
+either the first or second keyblock depending on if the keycore was 
+supposed to be run and the key. It also increments the internal 
+counter, which is used as an index when accessing and generating the 4 
+byte blocks of data.
 
-The FSM seen in figure \ref{block:keyexpansion} keeps track of when the 
-key generation is done, and and produces a lock signal at that time. 
+The FSM seen in figure \ref{block:keyexpansion} keeps track of when 
+the key generation is done, and produces a lock signal at that time. 
 The lock signal is used by keyblock3 to produce the done signal, that 
 is passed to other entities. 
 The FSM also keeps track of when a new key is received, and forces a 
 reset of keyblock2 and keyblock3, since they are not entirely 
-combinatorial. The reset\_i signal is the force reset signal. 
+combinatorial. The internal reset signal, reset\_i, forces a reset of 
+keyblock2 and keyblock3. 
 
 \begin{figure}[h!]
   \centering
@@ -115,13 +123,14 @@ combinatorial. The reset\_i signal is the force reset signal.
 \end{figure}
 
 \subsection{Keycore entity}
-The keycore entity consists of four entities. Rotword, Sbox, Rcon and a 
-counter. The counter is used to get the right data-byte from the Rcon 
+The keycore entity consists of four entities. Rotword, Sbox, Rcon and 
+a counter. The counter is used to get the correct output from the Rcon 
 entity, and the index is only used in the keycore, and is thus best 
 suited to be placed inside the keycore entity. Rotword rotates the 
 bytes of the input one step to the left through a simple left shift. 
-Sbox replaces the input bytes according to the Rijndael Sbox, through 
-a LUT. The Rcon entity both collects the correct rcon value from a 
+The Sbox replaces the input bytes according to the Rijndael Sbox, 
+through a LUT. The Rcon entity both collects the correct rcon value 
+from a 
 precalculated vector, as well as inputs it into an xor together with 
 the input.
 

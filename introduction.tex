@@ -55,8 +55,10 @@ The thesis has been limited to implement the scrambing algorithm
 chosen in consent between the author and the supervisor at WISI 
 Norden. The algorithm that was chosen, after analysis of the two 
 proposed algorithms, was the AES128 algorithm in CBC-mode (chapter 
-\ref{sec:BlockCipher}). The implementation is focused on minimizing 
-the hardware usage, while achieving a throughput of at least 1 Gbits/s.
+\ref{sec:BlockCipher}) with a set IV, according to the CISSA standard. 
+This corresponds to the CISSA algorithm \citep{DVB:2013}.The 
+implementation is focused on minimizing the hardware usage, while 
+achieving a throughput of at least 1 Gbits/s.
 
 \section{Methodology}
 The project was split into a set of tasks, to be performed in the 

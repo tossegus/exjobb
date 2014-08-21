@@ -4,80 +4,91 @@ usage, while trying to meet the timing constraints provided
 from the rest of the circuit. Reaching a throughput of 1 Gbit/s was 
 sufficient for the current design.
 
-The implemented scrambler processes 16 bytes of data in 11 clock pulses 
-with a clock frequency of 94MHz, which would correspond roughly to a 
-throughput of 1.16 Gbits/s. %The reason why the design does not meet the
-%frequency of the rest of the circuit is due to the critical path being 
-%too long. 
-The frequency of the design is further discussed in section 
-\ref{sec:c_path}. The scrambler needs to process the key first, before 
-being able to scramble data. A keyexpansion takes roughly 45 clock 
-pulses, and is only performed when a new key is sent, which is very 
-seldom. The scrambler then deals with 16 bytes of data on 13 clock 
-pulses, but outputs 1 byte of data per clock cycle. This is done so 
-that one byte of data from the scrambled package is read into a 
-register on every clock pulse. When four bytes are collected the 32-bit 
-output is sent out. 32-bits are processed at a time, since the data-bus 
-is a 32-bit bus.
+The implemented circuit was a scrambler, which can be found in the 
+head-end of DVB systems. An analysis of two algorithms was done, and 
+the AES128 algorithm, in CBC-mode, was chosen. It corresponds to the 
+CISSA algorithm, which is designed to be software-friendly. 
+
+AES128 processes 16 bytes of data in 11 clock pulses with a clock 
+frequency of 94MHz, which would correspond roughly to a throughput of 
+1.16 Gbits/s. The frequency of the design is further discussed in 
+section \ref{sec:c_path}. The scrambler needs to process the key 
+first, before being able to scramble data. A keyexpansion takes 
+roughly 45 clock pulses, and is only performed when a new key is sent, 
+which is very seldom. The scrambler then deals with 16 bytes of data 
+on 13 clock pulses, but outputs 1 byte of data per clock cycle. This 
+is done so that one byte of data from the scrambled package is read 
+into a register on every clock pulse. When four bytes are collected 
+the 32-bit output is sent out. 32-bits are processed at a time, since 
+the data-bus is a 32-bit bus.
 
 \section{Problems}
-The main problems that were encoutered were:
+The main problems encoutered were:
 
 \begin{itemize}
-\item Not possible to get the license for CSA3
-\item Small interrest for CSA3
-\item Next to no documentation of the CISSA algorithm
-\item Hard finding reliable test vectors
-\item Merging
-\item Timing
-%\item Latches
+\item Not possible to get the license for CSA3.
+\item Small interrest in CSA3 from customers.
+\item Next to no documentation of the CISSA algorithm.
+\item Hard finding reliable test vectors.
+\item Merging.
+\item Timing.
 \end{itemize}
 
-When the Thesis was first started, the idea was that the CSA3 algorithm 
-was to be implemented. However, licensing problems, and the fact that 
-AES-128 in CBC-mode seemed like a better idea, led to a rework of the 
-project.
+\subsubsection{License and interrest of the CSA3}
+When the Thesis was first started, the idea was that the CSA3 
+algorithm was to be implemented. However, licensing problems, and the 
+fact that AES-128 in CBC-mode seemed like a better idea, led to a 
+rework of the project. Also, the interrest in CSA3 from potential 
+customers was small, while the interrest in AES128 in CBC-mode was 
+great.
 
-Most of these problems are self-explanatory. The one that 
-will be discussed here is the merging problem. This problem occured 
-due to the fact that this design was a bottoms-up design, instead of 
-the more common top-down design. This project was done by implementing 
-low level entities first, that were to be used in higher hierarchies. 
-Doing this caused some problems when merging entities into higher level 
-blocks, since some signals, needed to be produced. This was not a huge 
-problem, and only occurred on a few instances, but were rather 
-troublesome at those times.
+\subsubsection{Documentation of CISSA}
+The only mention of the CISSA algorithm found in official documents 
+has been found in \citet{DVB:2013}. What can be found from this 
+documentation is that CISSA uses the AES128 cipher in CBC-mode 
+encyption, with a static IV. While this has been sufficient to 
+implement the algorithm, more documentation would have been good.
 
-The pro of this method of working has been that it produced results 
-quickly. The con is that a large portion of the time has been 
-spent on going back to entities that were already functional, and 
-reworking them by adding signals, and finding the right timing 
-conditions to make sure that they provided nescessary information for 
-entities higher up in the hierarchy.
+\subsubsection{Test vectors}
+Finding test vectors for the different blocks of the scrambler has 
+been hard. It has been possible to find a number of them through the 
+ETSI documentation though, which has been used to determine the 
+functionality of the blocks.
+
+\subsubsection{Merging and timing}
+Merging has required more focus than expected, probably since this 
+design was a bottoms-up design, instead of the more common top-down 
+design. This project was done by implementing low level entities 
+first, that were to be used in higher hierarchies. Doing this caused 
+some problems when merging entities into higher level blocks, since 
+some signals, needed to be produced. This was not a huge problem, and 
+only occurred on a few instances, but were rather troublesome at those 
+times.
+
+The pro of this method has been that it produced results quickly. The 
+con is that a large portion of the time has been spent on going back 
+to entities that were already functional, and reworking them by adding 
+signals, and finding the right timing conditions to make sure that 
+they provided nescessary information for entities higher up in the 
+hierarchy.
 
 Since the plan was to optimize this implementation to just meet the 
 demands on speed, while trying to minimize the amount of hardware 
 needed, timing was introduced into a few circuits that could have 
 otherwise been completely combinatorial. This has, as expected, 
-introduced quite a bunch of timing-issues. All of them seem to be gone 
-now, but without more exhaustive testing, it is quite hard to know.
+introduced quite a bunch of timing-issues. All of them appear to be 
+gone now. It is however hard to know, without performing more 
+exhaustive testing of the system.
 
-%% When the circuit was first synthesized, towards the end of the 
-%% implementation, it was noted that the circuit synthesized a large 
-%% amount of latches. This made the circuit take up roughly 15\% of the 
-%% FPGA, and use 11830 Flip-Flops (FFs). At this time, there were roughly 
-%% 3000 latches. When all of them were removed, the entire circuit 
-%% used up roughly 8\% of the FPGA, and used about 4500 FFs instead. They 
-%% appeared in the design due to a
-
-This is the entire hardware usage, including the interface towards the 
-FPGA, which is one of the reasons why it might appear large, when 
-compared to other implementations.
+The solution described in this thesis includes the entire hardware 
+usage, which includes the interface towards the FPGA, which is one of 
+the reasons why it might appear large, when compared to other 
+implementations.
 
 \section{Hardware}
-The top entity can be viewed in Figure \ref{b:scr}, and the rest of the 
-entities are placed near the explanation of the entities in the 
-following sections.
+The top entity can be viewed in Figure \ref{b:scr}, and figures of the 
+rest of the entities are placed near the explanation of the entities 
+in the following sections.
 
 \begin{figure}
   \includegraphics[width=\textwidth]{scrambler}
@@ -87,26 +98,27 @@ following sections.
 
 \subsection{Hardware usage}
 The circuit that was first implemented has during the course of the 
-project been optimized, after synthesis have been run, to either 
-minimize hardware usage, or the speed of the circuit. A total of six 
-synthesises were run. A table displaying the differences of the results 
-can be viewed in figure \ref{table:synthesis}.
+project been optimized in a couple of ways it was synthesized. 
+It has either been optimized to minimize hardware usage, or maximize 
+the speed of the circuit. A total of six synthesises were run. A 
+table displaying the differences of the results can be viewed in 
+figure \ref{table:synthesis}.
 The most significant optimizations are discussed in this section. 
-%% The optimizations performed between the synthesizes are discussed in 
-%% this section.
 
 \subsubsection{Optimizations}
 The most significant optimization that was performed was an 
-optimization of keyblock 3, which used a lot of the provided resources.
-It was noticed that the circuit waited for the expanded key to become 
-completely filled before updating the output at one point. The expanded 
-key was stored in a vector located in keyblock3 while it was being 
-updated. However, the expanded key used by other entities was not 
-updated until the entire expanded key located in keyblock 3 was 
-completely filled. Rewriting the code decreased the amount of registers 
-by 176 8-bit registers, which could be removed by adding an enable 
-signal. The enable signal tells the other entities when the expanded 
-key is ready for usage.
+optimization of keyblock3. Keyblock3 is located in the keyexpansion 
+entity which is explained in section \ref{sec:Expansion} and can be 
+seen in Figure \ref{block:keyexpansion}. That entity used a lot of 
+the provided resources. It was noticed that the circuit waited for 
+the expanded key to become completely filled before updating the 
+output at one point. The expanded key was stored in a vector located 
+in keyblock3 while it was being updated. However, the expanded key 
+used by other entities was not updated until the entire expanded key 
+located in keyblock 3 was completely filled. Rewriting the code 
+decreased the amount of registers by 176 8-bit registers, which could 
+be removed by adding an enable signal. The enable signal tells the 
+other entities when the expanded key is ready for usage.
 
 %% \subsubsection{First synthesis}
 %% This was the initial synthesis performed on the FPGA. This did not 
@@ -163,9 +175,9 @@ key is ready for usage.
 %% the entities can not be mapped seperately, due to the amount of IOs 
 %% on the  FPGA, compared to the number of IOs required by the modules.
 
-The third synthesis was performed on each block seperately, to find out 
-where further optimization would yield the biggest improvement. The 
-hardware usage can be viewed in Table \ref{synt:fifth}.
+The third synthesis was performed on each block seperately, to find 
+out where further optimization would yield the biggest improvement. 
+The hardware usage can be viewed in Table \ref{synt:fifth}.
 
 %
 \newcommand{\MyIndent}{\hspace*{0.2cm}}%
@@ -219,7 +231,7 @@ hardware usage can be viewed in Table \ref{synt:fifth}.
 
   \MyIndent \MyIndent \MyIndent \triangleright state2data & 1 & 2 \\
 
-  \caption{Hardware usage of entities}
+  \caption{Hardware usage of entities from synthesis number 3.}
   \label{synt:fifth}
 \end{longtable}
 
@@ -250,23 +262,35 @@ Number of Slice LUTs:      4,930 out of  63,288    7%
 
 \subsubsection{Comparison of synthesis results}
 The most interresting numbers from the synthesizes are the number of 
-LUTs used, number of ROMs and number of FFs. However, only one ROM has 
+LUTs used, number of ROMs (Read-only Memories) and number of Flip-Flops. However, only one ROM has 
 been implemented in this design, which was present in all synthesizes, 
 which is why it will not be included in the comparison.
-\begin{figure}[h!]
-  \begin{equation}
-    \begin{array}{l | l | l | l | l | l}
-      & Second & Third & Fourth & Fifth & Final \\ \hline
-      LUTs       & 5121   & 5167  & 5167   & 5167  & 5167  \\ \hline
-      Registers  & 4537   & 2945  & 2817   & 2817  & 2818  \\
-    \end{array}
-  \end{equation}
+
+\begin{table}[h!]
+  \centering
+  \begin{tabular}{l | l | l | l | l | l}
+    & Second & Third & Fourth & Fifth & Final \\ \hline
+    LUTs       & 5121   & 5167  & 5167   & 5167  & 5167  \\ \hline
+    Registers  & 4537   & 2945  & 2817   & 2817  & 2818  \\
+  \end{tabular}
   \caption{Synthesis results}
   \label{table:synthesis}
-\end{figure}
+\end{table}
+
+%% \begin{figure}[h!]
+%%   \begin{equation}
+%%     \begin{array}{l | l | l | l | l | l}
+%%       & Second & Third & Fourth & Fifth & Final \\ \hline
+%%       LUTs       & 5121   & 5167  & 5167   & 5167  & 5167  \\ \hline
+%%       Registers  & 4537   & 2945  & 2817   & 2817  & 2818  \\
+%%     \end{array}
+%%   \end{equation}
+%%   \caption{Synthesis results}
+%%   \label{table:synthesis}
+%% \end{figure}
 
 All of the synthesis results can be viewed in Appendix 
-\ref{app:synt_rep}
+\ref{app:synt_rep}.
 
 %Noteworthy is that the number of LUTs increases between the second and third synthesis, and does not decrease thereafter. The reason why this 
 %happens is possibly due to routing of signals, and 
@@ -276,17 +300,20 @@ synthesis reports. That register is most likely a residue after an
 attempt to reduce the critical path, and can be disregarded.
 
 \section{Further development}
-There are, as usual, an amount of optimization that could be performed 
-on the circuit. They consist of optimization of code, as well as some 
-deeper research into how to rewrite VHDL code to turn the registers in 
-this implementation into RAMs, ROMs or LUTs.
+There are, an amount of optimization that could be performed on the 
+circuit. They consist of optimization of code, as well as some deeper 
+research into how to rewrite VHDL code to turn the registers in this 
+implementation into RAMs, ROMs or LUTs. By rewriting the code into 
+those entities instead of the currently implementation, which consists 
+of a network of multiplexers, would be a reduction in the critical path
+as well as a reduction in the number of used slices.
 
 \subsection{Rijndael's S-Box}
-The Rijndael Sbox implemented in this design does not synthesize into a 
-ROM, which it should be able to do. Other than a ROM, it should also be 
-able to be synthesized into a couple of LUT6.
-It has not been possible to find out why the code was implemented into 
-registers instead of more efficient solutions.
+The Rijndael S-box implemented in this design does not synthesize into 
+a ROM, which it should be able to do. Other than a ROM, it should also 
+be able to be synthesized into a couple of LUT6. It has not been 
+possible to find out why the code was implemented into registers 
+instead of more efficient solutions.
 
 Both registers and ROMs are viable implementations for the S-box. 
 However, for area minimization a ROM might be more favourable, while 
@@ -296,15 +323,16 @@ signals.
 \subsection{Critical Path}\label{sec:c_path}
 To increase the maximum frequency of the circuit, the critical path 
 needs to be decreased. This is done by adding FFs in the middle of the 
-critical path. This will be hard to solve, due to the complexity of the 
-keyexpansion, and would increase the amount of hardware as well as the 
-complexity of the circuit if FFs were to be added.
+critical path. This will be hard to solve, due to the complexity of 
+the keyexpansion, and would increase the amount of hardware as well as 
+the complexity of the circuit if FFs were to be added.
 
-The decision whether to reduce the critical path, or not, is a hard 
+The decision whether to reduce the critical path or not is a hard 
 decision due to the amount of hardware that might need to be added to
 increase the frequency. However, since LUTs and FFs are located on 
-same slice, it is not sure wether the design would use more slices or 
-not.
+same slice, it is not sure whether the design would use more slices or 
+not. A slice is a section of the FPGA, which consists of some basic 
+logic.
 
 \section{Tests}
 All of the entities in the design have been simulated and evaluated 
@@ -367,9 +395,9 @@ usually not present in these kinds of designs, in order to allow
 insertion of the implementation into the FPGA used by WISI.
 
 The design implemented in this thesis scrambles a block of 16 bytes 
-of data in 13 clock pulses. It uses 4930 LUTs, occupies 1727 slices and 
-can be run at a maximum frequency of 94 MHz. The circuit is implemented 
-on a Xilinx Spartan-6.
+of data in 13 clock pulses. It uses 4930 LUTs, occupies 1727 slices 
+and can be run at a maximum frequency of 94 MHz. The circuit is 
+implemented on a Xilinx Spartan-6.
 
 This can be compared to the Fast AES XTS/CBC implementation (Helion) 
 made by Xilinx themselves. It uses 1041 slices and 4047 LUTs with a 
