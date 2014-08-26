@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.29)  21 AUG 2014 18:07
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.29)  26 AUG 2014 15:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1575,8 +1575,7 @@ Try typing  <return>  to proceed.
 
 (./main.aux (./notation.aux) (./introduction.aux) (./cas.aux) (./Scrambling.aux
 ) (./CSA.aux) (./cissaORCSA3.aux) (./aes.aux) (./implementation.aux)
-(./result.aux) (./matrix.aux) (./flowcharts.aux) (./vectors.aux)
-(./examples.aux) (./synthesis.aux))
+(./result.aux) (./matrix.aux) (./flowcharts.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/jkpw/m/it on input line 27.
@@ -2182,7 +2181,7 @@ LaTeX Font Info:    Try loading font information for U+jkpsyc on input line 28.
 (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ujkpsyc.fd
 File: ujkpsyc.fd 2006/08/15 v1.0
 )
-<fig/LiTH_staende_sv.pdf, id=356, 260.975pt x 190.7125pt>
+<fig/LiTH_staende_sv.pdf, id=348, 260.975pt x 190.7125pt>
 File: fig/LiTH_staende_sv.pdf Graphic file (type pdf)
 
 <use fig/LiTH_staende_sv.pdf>
@@ -2209,7 +2208,7 @@ Overfull \hbox (35.56596pt too wide) in paragraph at lines 30--30
 
 ] [2
 
-] <fig/LiTH_sigill_sv.pdf, id=379, 124.465pt x 124.465pt>
+] <fig/LiTH_sigill_sv.pdf, id=371, 124.465pt x 124.465pt>
 File: fig/LiTH_sigill_sv.pdf Graphic file (type pdf)
 
 <use fig/LiTH_sigill_sv.pdf>
@@ -2229,19 +2228,19 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 13.67995pt on input line 35.
+(Font)              scaled to size 13.67995pt on input line 33.
  (./introduktion.tex)pdfTeX warning (ext4): destination with the same identifie
 r (name{page.iii}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.37 \end{abstract}
+l.35 \end{abstract}
                     [3
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.iv}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.37 \end{abstract}
+l.35 \end{abstract}
                     [4
 
 ]
@@ -2297,7 +2296,7 @@ l.33
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.44 \include{introduction}
+l.41 \include{introduction}
                             [2] [3]
 \openout2 = `cas.aux'.
 
@@ -2307,7 +2306,7 @@ l.44 \include{introduction}
 
 ]
 Chapter 2.
-<fig/system.png, id=537, 948.54375pt x 587.19376pt>
+<fig/system.png, id=527, 948.54375pt x 587.19376pt>
 File: fig/system.png Graphic file (type png)
  <use fig/system.png>
 Package pdftex.def Info: fig/system.png used on input line 21.
@@ -2339,7 +2338,7 @@ Underfull \vbox (badness 10000) detected at line 110
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [7]
-<fig/CIPlus.png, id=565, 434.62375pt x 523.9575pt>
+<fig/CIPlus.png, id=555, 434.62375pt x 523.9575pt>
 File: fig/CIPlus.png Graphic file (type png)
  <use fig/CIPlus.png>
 Package pdftex.def Info: fig/CIPlus.png used on input line 149.
@@ -2357,7 +2356,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ]
 Chapter 3.
-[11] <fig/TSPacket2.png, id=600, 969.6225pt x 113.42375pt>
+[11] <fig/TSPacket2.png, id=590, 969.6225pt x 113.42375pt>
 File: fig/TSPacket2.png Graphic file (type png)
 
 <use fig/TSPacket2.png>
@@ -2385,7 +2384,7 @@ Underfull \vbox (badness 10000) detected at line 163
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [13]
-<fig/PES.png, id=622, 993.7125pt x 405.515pt>
+<fig/PES.png, id=611, 993.7125pt x 405.515pt>
 File: fig/PES.png Graphic file (type png)
  <use fig/PES.png>
 Package pdftex.def Info: fig/PES.png used on input line 203.
@@ -2395,26 +2394,22 @@ Package pdftex.def Info: fig/PES.png used on input line 203.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [14] [15 <./fig/PES.png (PNG copy)>]
-<fig/cipher.png, id=642, 501.875pt x 299.1175pt>
+<fig/cipher.png, id=632, 501.875pt x 299.1175pt>
 File: fig/cipher.png Graphic file (type png)
  <use fig/cipher.png>
 Package pdftex.def Info: fig/cipher.png used on input line 274.
 (pdftex.def)             Requested size: 355.65944pt x 211.98238pt.
- [16 <./fig/cipher.png>] <fig/CBCmode.png, id=657, 2007.5pt x 700.6175pt>
+ [16 <./fig/cipher.png>] <fig/CBCmode.png, id=647, 2007.5pt x 700.6175pt>
 File: fig/CBCmode.png Graphic file (type png)
 
 <use fig/CBCmode.png>
 Package pdftex.def Info: fig/CBCmode.png used on input line 311.
 (pdftex.def)             Requested size: 355.65944pt x 124.11726pt.
  [17 <./fig/CBCmode.png>]
-
-LaTeX Warning: Reference `img:PNetwork' on page 18 undefined on input line 385.
-
-
-<fig/SPnetwork.png, id=682, 451.6875pt x 301.3659pt>
+<fig/SPnetwork.png, id=670, 451.6875pt x 301.3659pt>
 File: fig/SPnetwork.png Graphic file (type png)
  <use fig/SPnetwork.png>
-Package pdftex.def Info: fig/SPnetwork.png used on input line 390.
+Package pdftex.def Info: fig/SPnetwork.png used on input line 394.
 (pdftex.def)             Requested size: 177.82971pt x 118.64964pt.
 
 
@@ -2543,7 +2538,7 @@ T1/jkp/m/n/10 (\OML/jkpw/m/it/10 seconds=day\OT1/jkp/m/n/10 )\OML/jkpw/m/it/10
  ; \OT1/jkp/m/n/10 4749767 \OMS/jkpw/m/n/10 ^^B
  []
 
-<fig/blockcipher.pdf, id=726, 252.945pt x 179.2296pt>
+<fig/blockcipher.pdf, id=714, 252.945pt x 179.2296pt>
 File: fig/blockcipher.pdf Graphic file (type pdf)
 
 <use fig/blockcipher.pdf>
@@ -2591,7 +2586,7 @@ Overfull \hbox (6.06662pt too wide) in paragraph at lines 47--55
 
  (./implementation.tex
 Chapter 7.
-<fig/scrambler.png, id=860, 742.775pt x 428.60126pt>
+<fig/scrambler.png, id=848, 742.775pt x 428.60126pt>
 File: fig/scrambler.png Graphic file (type png)
  <use fig/scrambler.png>
 Package pdftex.def Info: fig/scrambler.png used on input line 18.
@@ -2601,13 +2596,13 @@ Package pdftex.def Info: fig/scrambler.png used on input line 18.
 
 
 
- <./fig/scrambler.png>] <fig/manager.png, id=869, 794.97pt x 492.84125pt>
+ <./fig/scrambler.png>] <fig/manager.png, id=857, 794.97pt x 492.84125pt>
 File: fig/manager.png Graphic file (type png)
 
 <use fig/manager.png>
 Package pdftex.def Info: fig/manager.png used on input line 43.
 (pdftex.def)             Requested size: 266.74457pt x 165.36792pt.
- <fig/cbc.png, id=872, 484.81125pt x 561.09625pt>
+ <fig/cbc.png, id=860, 484.81125pt x 561.09625pt>
 File: fig/cbc.png Graphic file (type png)
 
 <use fig/cbc.png>
@@ -2620,7 +2615,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [34 <./fig/manager.png>] <fig/cipherblock.png, id=882, 658.46pt x 478.78876pt>
+ [34 <./fig/manager.png>] <fig/cipherblock.png, id=870, 658.46pt x 478.78876pt>
 File: fig/cipherblock.png Graphic file (type png)
 
 <use fig/cipherblock.png>
@@ -2633,7 +2628,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [35 <./fig/cbc.png>] <fig/keyexpansion2.png, id=893, 659.46375pt x 583.17876pt
+ [35 <./fig/cbc.png>] <fig/keyexpansion2.png, id=881, 659.46375pt x 583.17876pt
 >
 File: fig/keyexpansion2.png Graphic file (type png)
 
@@ -2644,7 +2639,7 @@ Package pdftex.def Info: fig/keyexpansion2.png used on input line 113.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<fig/keyblock2.png, id=894, 579.16376pt x 485.815pt>
+<fig/keyblock2.png, id=882, 579.16376pt x 485.815pt>
 File: fig/keyblock2.png Graphic file (type png)
  <use fig/keyblock2.png>
 Package pdftex.def Info: fig/keyblock2.png used on input line 120.
@@ -2657,7 +2652,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Underfull \vbox (badness 1205) has occurred while \output is active []
 
  [37 <./fig/keyexpansion2.png> <./fig/keyblock2.png>]
-<fig/round.png, id=909, 652.4375pt x 630.355pt>
+<fig/round.png, id=897, 652.4375pt x 630.355pt>
 File: fig/round.png Graphic file (type png)
  <use fig/round.png>
 Package pdftex.def Info: fig/round.png used on input line 152.
@@ -3060,25 +3055,29 @@ my insertion and my current dilemma will both disappear.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+
+LaTeX Warning: Reference `app:synt_rep' on page 44 undefined on input line 296.
+
+
 [44] [45]
 
 Package natbib Warning: Citation `Generator' on page 46 undefined on input line
  348.
 
-<fig/successtv1.png, id=964, 831.85782pt x 106.14656pt>
+<fig/successtv1.png, id=949, 831.85782pt x 106.14656pt>
 File: fig/successtv1.png Graphic file (type png)
 
 <use fig/successtv1.png>
 Package pdftex.def Info: fig/successtv1.png used on input line 356.
 (pdftex.def)             Requested size: 355.65944pt x 45.38298pt.
 
-<fig/successtv2.png, id=966, 832.61063pt x 112.16907pt>
+<fig/successtv2.png, id=951, 832.61063pt x 112.16907pt>
 File: fig/successtv2.png Graphic file (type png)
 
 <use fig/successtv2.png>
 Package pdftex.def Info: fig/successtv2.png used on input line 367.
 (pdftex.def)             Requested size: 355.65944pt x 47.9151pt.
- <fig/successtv3.png, id=968, 726.46407pt x 108.405pt>
+ <fig/successtv3.png, id=953, 726.46407pt x 108.405pt>
 File: fig/successtv3.png Graphic file (type png)
 
 <use fig/successtv3.png>
@@ -3110,616 +3109,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-[47]
-
-LaTeX Warning: Reference `csa3cissa' on page 48 undefined on input line 478.
-
-) [48]
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 23.63593pt on input line 55.
- [49
-
-
-] [50]
-\openout2 = `matrix.aux'.
-
- (./matrix.tex
-Appendix A.
-
-Overfull \hbox (16.60016pt too wide) detected at line 50
-[][]
- []
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.90 ...{array}{l l l l l l l l l l l l l l l l l}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.107   \end{array}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-Overfull \hbox (40.79588pt too wide) in paragraph at lines 90--108
-[]$[]$ 
- []
-
-) [51
-
-
-] [52] [53]
-\openout2 = `flowcharts.aux'.
-
- (./flowcharts.tex [54
-
-
-
-]
-Appendix B.
-<fig/flowchart.pdf, id=1021, 415.5525pt x 912.40875pt>
-File: fig/flowchart.pdf Graphic file (type pdf)
- <use fig/flowchart.pdf>
-Package pdftex.def Info: fig/flowchart.pdf used on input line 10.
-(pdftex.def)             Requested size: 151.61516pt x 332.90062pt.
-
-<fig/keyschedule.png, id=1022, 822.272pt x 822.272pt>
-File: fig/keyschedule.png Graphic file (type png)
-
-<use fig/keyschedule.png>
-Package pdftex.def Info: fig/keyschedule.png used on input line 17.
-(pdftex.def)             Requested size: 355.65944pt x 355.66539pt.
-) [55] [56 <./fig/flowchart.pdf>] [57 <./fig/keyschedule.png (PNG copy)>]
-\openout2 = `vectors.aux'.
-
- (./vectors.tex [58
-
-
-
-]
-Appendix C.
-
-Underfull \hbox (badness 10000) in paragraph at lines 9--11
-
- []
-
-[59]
-! Missing $ inserted.
-<inserted text> 
-                $
-l.140     &  & After & After &  & After \oplus
-                                               &  & w[i] = temp\\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.140     &  & After & After &  & After \oplus &
-                                                  & w[i] = temp\\
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.142     \oplus
-                 w[i-16] \\ \hline
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.142     \oplus w[i-16] \\ \hline
-                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-Overfull \hbox (52.91017pt too wide) in alignment at lines 138--165
- [] [] [] [] [] [] [] [] 
- []
-
-
-Underfull \vbox (badness 10000) detected at line 165
- []
-
-
-Overfull \hbox (52.91017pt too wide) in alignment at lines 165--190
- [] [] [] [] [] [] [] [] 
- []
-
-[60]
-Overfull \hbox (52.91017pt too wide) in alignment at lines 190--195
- [] [] [] [] [] [] [] [] 
- []
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.245   \oplus
-               &
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.245   \oplus &
-                
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.284   \oplus
-               &
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.284   \oplus &
-                
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.322   \oplus
-               &
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.322   \oplus &
-                
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.360   \oplus
-               &
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.360   \oplus &
-                
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.398   \oplus
-               &
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.398   \oplus &
-                
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.436   \oplus
-               &
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.436   \oplus &
-                
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.474   \oplus
-               &
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.474   \oplus &
-                
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-Overfull \hbox (29.07985pt too wide) in alignment at lines 208--558
- [] [] [] [] [] [] [] 
- []
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.588   \oplus
-               &
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.588   \oplus &
-                
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.627   \oplus
-               &
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.627   \oplus &
-                
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-Overfull \hbox (29.07985pt too wide) in alignment at lines 558--646
- [] [] [] [] [] [] [] 
- []
-
-[61] [62]
-Underfull \vbox (badness 10000) detected at line 676
- []
-
-[63]
-Overfull \hbox (57.23956pt too wide) in alignment at lines 692--715
- [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (60.32657pt too wide) in alignment at lines 719--731
- [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (59.1926pt too wide) in alignment at lines 735--748
- [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
- []
-
-[64]
-Overfull \hbox (58.7516pt too wide) in alignment at lines 752--764
- [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
- []
-
-) [65]
-\openout2 = `examples.aux'.
-
- (./examples.tex [66
-
-
-
-]
-Appendix D.
-! Missing $ inserted.
-<inserted text> 
-                $
-l.8 C_
-      {0} \text{ is the IV} \newline
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.14 
-     
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6--14
-
- []
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.19 The inverse of the encryption algorithm E_
-                                               {k} \text{ is the decryption
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.21 
-     
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-[67]) [68]
-\openout2 = `synthesis.aux'.
-
- (./synthesis.tex (./synthesis2.tex) (./synthesis3.tex [69
-
-
-
-])
-(./synthesis4.tex) (./synthesis5.tex
-! Undefined control sequence.
-l.2 \subsubsubsection
-                     {Addroundkey}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[70]
-! Undefined control sequence.
-l.20 \subsubsubsection
-                      {CBC}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.42 \subsubsubsection
-                      {Cipher}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.64 \subsubsubsection
-                      {Counter}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[71]
-! Undefined control sequence.
-l.86 \subsubsubsection
-                      {Data2state}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.102 \subsubsubsection
-                       {Demux}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.122 \subsubsubsection
-                       {Keyblock1}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.142 \subsubsubsection
-                       {Keyblock2}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[72]
-! Undefined control sequence.
-l.164 \subsubsubsection
-                       {Keyblock3}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.187 \subsubsubsection
-                       {Keycore}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[73]
-! Undefined control sequence.
-l.209 \subsubsubsection
-                       {Keyexpansion}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.231 \subsubsubsection
-                       {Manager}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.257 \subsubsubsection
-                       {Mixcolumns}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[74]
-! Undefined control sequence.
-l.277 \subsubsubsection
-                       {Rcon}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.297 \subsubsubsection
-                       {Round}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.319 \subsubsubsection
-                       {Rword}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[75]
-! Undefined control sequence.
-l.337 \subsubsubsection
-                       {Scrambler}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.363 \subsubsubsection
-                       {Shiftrows}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.381 \subsubsubsection
-                       {State2data}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[76]
-! Undefined control sequence.
-l.403 \subsubsubsection
-                       {Subbytes}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.423 \subsubsubsection
-                       {Substitutebox}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-) (./synthesis6.tex [77]
-Overfull \hbox (4.34079pt too wide) in paragraph at lines 72--72
-[]  \T1/pcr/m/n/8 A LUT Flip Flop pair for this architecture represents one LUT
- paired with[] 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [78]))
-[79] [80
-
-
-] (./main.lof)
+[47]) [48] (./main.lof)
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
@@ -3727,7 +3117,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 \tf@brf=\write8
 \openout8 = `main.brf'.
 
- [81] [82
+ [49
+
+] [50
 
 ]
 Underfull \hbox (badness 3872) in paragraph at lines 40--40
@@ -3783,7 +3175,7 @@ Underfull \hbox (badness 2426) in paragraph at lines 64--64
  FTLCAWhitePaperTwo .
  []
 
-[83]
+[51]
 Underfull \hbox (badness 10000) in paragraph at lines 80--80
 []$\T1/pcr/m/n/10 http : / / ieeexplore . ieee . org . lt . ltag . bibl . liu .
  se / stamp /
@@ -3825,7 +3217,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 151--151
 e / chapter /
  []
 
-[84]
+[52]
 Underfull \hbox (badness 3989) in paragraph at lines 159--159
 []\T1/jkpk/m/n/10 Serge Vau-de-nay, Willi Meier, Si-mon Fis-cher, et al.  Anal-
 y-sis of
@@ -3873,52 +3265,117 @@ Underfull \hbox (badness 10000) in paragraph at lines 202--202
 st _
  []
 
-)
+) [53] [54
+
+]
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 23.63593pt on input line 54.
+ [55] [56]
+\openout2 = `matrix.aux'.
+
+ (./matrix.tex
+Appendix A.
+
+Overfull \hbox (16.60016pt too wide) detected at line 50
+[][]
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.90 ...{array}{l l l l l l l l l l l l l l l l l}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.107   \end{array}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (40.79588pt too wide) in paragraph at lines 90--108
+[]$[]$ 
+ []
+
+) [57
+
+
+] [58] [59]
+\openout2 = `flowcharts.aux'.
+
+ (./flowcharts.tex [60
+
+
+
+]
+Appendix B.
+<fig/flowchart.pdf, id=1161, 415.5525pt x 912.40875pt>
+File: fig/flowchart.pdf Graphic file (type pdf)
+ <use fig/flowchart.pdf>
+Package pdftex.def Info: fig/flowchart.pdf used on input line 10.
+(pdftex.def)             Requested size: 151.61516pt x 332.90062pt.
+
+<fig/keyschedule.png, id=1162, 822.272pt x 822.272pt>
+File: fig/keyschedule.png Graphic file (type png)
+
+<use fig/keyschedule.png>
+Package pdftex.def Info: fig/keyschedule.png used on input line 17.
+(pdftex.def)             Requested size: 355.65944pt x 355.66539pt.
+) [61] [62 <./fig/flowchart.pdf>] [63 <./fig/keyschedule.png (PNG copy)>] [64
+
+
+]
 No file main.ind.
 
 Package natbib Warning: There were undefined citations.
 
-[85] [86
-
-] <fig/LinkUniv_staende_pms.pdf, id=1324, 260.975pt x 172.645pt>
+<fig/LinkUniv_staende_pms.pdf, id=1199, 260.975pt x 172.645pt>
 File: fig/LinkUniv_staende_pms.pdf Graphic file (type pdf)
 
 <use fig/LinkUniv_staende_pms.pdf>
-Package pdftex.def Info: fig/LinkUniv_staende_pms.pdf used on input line 79.
+Package pdftex.def Info: fig/LinkUniv_staende_pms.pdf used on input line 75.
 (pdftex.def)             Requested size: 77.41702pt x 51.21495pt.
 
-Overfull \hbox (0.16193pt too wide) in paragraph at lines 79--79
+Overfull \hbox (0.16193pt too wide) in paragraph at lines 75--75
 \T1/jkpk/m/n/10 and its pro-ce-dures for pub-li-ca-tion and for as-sur-ance of 
 doc-u-ment in-tegrity, please
  []
 
-[87 <./fig/LinkUniv_staende_pms.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 79.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 79.
+[65
+
+ <./fig/LinkUniv_staende_pms.pdf>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 75.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 75.
  (./main.aux (./notation.aux)
 (./introduction.aux) (./cas.aux) (./Scrambling.aux) (./CSA.aux)
 (./cissaORCSA3.aux) (./aes.aux) (./implementation.aux) (./result.aux)
-(./matrix.aux) (./flowcharts.aux) (./vectors.aux) (./examples.aux)
-(./synthesis.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 79.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 79.
+(./matrix.aux) (./flowcharts.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 75.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 75.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3C1CE439D153245C9ED52A5FED0E9601;5624.
+(rerunfilecheck)             Checksum: 2B77C632B8EECDA139FA58C1829AE99F;5527.
 Package rerunfilecheck Info: File `main.brf' has not changed.
-(rerunfilecheck)             Checksum: 10EC2B098F227E781AE6A4493ED9AB77;3506.
+(rerunfilecheck)             Checksum: 18F19FAE94460D5C7757BBBBF3F89DFD;3387.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 79.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 75.
  )
-(\end occurred when \ifx on line 20 was incomplete) 
+(\end occurred when \ifx on line 22 was incomplete) 
 Here is how much of TeX's memory you used:
- 23014 strings out of 493304
- 376063 string characters out of 6139871
- 602219 words of memory out of 5000000
- 25436 multiletter control sequences out of 15000+600000
- 228556 words of font info for 189 fonts, out of 8000000 for 9000
+ 22907 strings out of 493304
+ 374939 string characters out of 6139871
+ 518028 words of memory out of 5000000
+ 25405 multiletter control sequences out of 15000+600000
+ 228387 words of font info for 175 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  56i,12n,87p,587b,559s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-di
@@ -3937,10 +3394,10 @@ ne.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpsya.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/helvetic/uhvb8a.pfb>
-Output written on main.pdf (101 pages, 1216484 bytes).
+Output written on main.pdf (79 pages, 1172508 bytes).
 PDF statistics:
- 1446 PDF objects out of 1728 (max. 8388607)
- 1268 compressed objects within 13 object streams
- 277 named destinations out of 1000 (max. 500000)
- 19256 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 1315 PDF objects out of 1440 (max. 8388607)
+ 1160 compressed objects within 12 object streams
+ 242 named destinations out of 1000 (max. 500000)
+ 19240 words of extra memory for PDF output out of 20736 (max. 10000000)
 

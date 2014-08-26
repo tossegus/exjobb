@@ -30,19 +30,15 @@
 \maketitle
 \makeLibraryPage{\myabstract}
 
-%When including images, make sure to add the line \caption on the row before \label, otherwise the referencing system will not work.
-
 \begin{abstract}[english]
 \myabstract
 \end{abstract}
-
 \include{notation}
 
 \tableofcontents
 \mainmatter
 
 \include{introduction}
-
 \include{cas}
 \include{Scrambling}
 \include{CSA}
@@ -52,6 +48,9 @@
 \include{implementation}
 \include{result}
 
+\listoffigures
+\bibliography{myrefs}
+
 \part*{Appendices}
 %% \addtocontents{toc}{chapter}{Appendix}
 %% \let\oldaddtocontents\addtocontents \renewcommand{\addtocontents}[2]{}
@@ -59,20 +58,17 @@
 \appendix
 \include{matrix}
 \include{flowcharts}
-\include{vectors}
-\include{examples}
-\begin{footnotesize}
-\include{synthesis}
-\end{footnotesize}
+%% \include{vectors}
+%% \include{examples}
+%% \begin{footnotesize}
+%% \include{synthesis}
+%% \end{footnotesize}
 
 %% \let\addtocontents\oldaddtocontents
 
 % Include the libraries used here. Remember to input the objects into myrefs.bib 
 % and run the command bibtex main from ~/Documents/Exjobb/ 
 \backmatter
-
-\listoffigures
-\bibliography{myrefs}
 
 \printindex
 

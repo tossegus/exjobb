@@ -406,10 +406,10 @@ The implementation by Xilinx uses custom FPGA optimization techniques
 through hand crafted macros. A comparison between the two 
 implementations can be found in table \ref{fig:imp_diff}. When these 
 two implementations are compared, the most important difference is the 
-frequency at which the two circuits can be run. The amount of LUTs 
-that are used does in fact not mean much, since a LUT is said to be 
+frequency at which the two circuits can be run. The amount of slices 
+that are used does in fact not mean much, since a slice is said to be 
 used even if just a small part is used in the circuit. If only one LUT 
-in a slice is used, the LUT is still considered used. 
+in a slice is used, the slice is still considered used. 
 
 The percentage row in table \ref{fig:imp_diff} indicates how many more 
 percent LUTs and slices that are used in this implementation compared 
@@ -475,7 +475,7 @@ a study of litterature and documents defining the algorithms. The
 system was built using a bottom-up design, after finding basic 
 information about the components of the algorithm.
 
-As explained in chapter \ref{csa3cissa}, the lack of information 
+As explained in chapter \ref{ch:csa3cissa}, the lack of information 
 available about the two algorithms made an analysis of what made one 
 of them hardware friendly and the other software friendly impossible. 
 However, CSI+ requires the scrambling to be done using the AES128 

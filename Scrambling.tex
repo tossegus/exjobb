@@ -337,14 +337,18 @@ mainly used because of how easy it is to construct in hardware
 \subsection{Decryption}
 Decryption is often performed by reversing the encryption. You need to 
 know the algorithm, preferably through a mathematical representation, 
-to calculate how to obtain the plaintext from the ciphertext. An 
-example of how this is done for the CBC-mode (described in 
-\ref{sec:BlockCipher}) is described in \ref{sec:CBCcalc} in appendix 
-\ref{app:examples}. It is here assumed that the decryption algorithm 
-is known, for simplicity. 
+to calculate how to obtain the plaintext from the ciphertext. The 
+inverse function of the basic building blocks also needs to be known.
+
+%% An 
+%% example of how this is done for the CBC-mode (described in 
+%% \ref{sec:BlockCipher}) is described in \ref{sec:CBCcalc} in appendix 
+%% \ref{app:examples}. It is here assumed that the decryption algorithm 
+%% is known, for simplicity.
 %%%%%%%%%%%%%%%%%%%%%%%
 %\Warning[Source]{feels like a given, but still}
 %%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Confusion and Diffusion}\label{ch:ConfDiff}
 Two properties that are needed to ensure that a cipher provides 
 security are confusion and diffusion \citep{Shannon:1949}. 
@@ -382,7 +386,7 @@ reversed, descrambling will be impossible.
 % CONFUSION OR DIFFUSION?
 The second basic component used in cryptography is the P-box. A P-box 
 shuffles and thereby rearranges the order of given bits. This can be 
-viewed in the SP-network in figure \ref{img:PNetwork}, where the P-box 
+viewed in the SP-network in figure \ref{img:SPNetwork}, where the P-box 
 is represented by the dotted rectangle in the middle.
 
 \begin{figure}[h!]

@@ -63,9 +63,6 @@
 \backcite {DVB:2013}{{42}{8.1}{section.8.1}}
 \backcite {AES:2001}{{46}{8.4}{section.8.4}}
 \backcite {Xilinx:AES}{{47}{8.5}{section.8.5}}
-\backcite {AES:2001}{{59}{C}{appendix.C}}
-\backcite {AES:2001}{{60}{C}{appendix.C}}
-\backcite {AES:2001}{{61}{C}{table.C.1}}
-\backcite {CI+:2011}{{81}{D}{section*.33}}
-\backcite {CipherTax:2013}{{81}{D}{section*.33}}
-\backcite {CBCmode:2014}{{81}{D}{section*.33}}
+\backcite {CI+:2011}{{49}{8.7}{section*.26}}
+\backcite {CipherTax:2013}{{49}{8.7}{section*.26}}
+\backcite {CBCmode:2014}{{49}{8.7}{section*.26}}
