@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.29)  26 AUG 2014 15:20
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.29)  6 OCT 2014 21:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2397,25 +2397,22 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <fig/cipher.png, id=632, 501.875pt x 299.1175pt>
 File: fig/cipher.png Graphic file (type png)
  <use fig/cipher.png>
-Package pdftex.def Info: fig/cipher.png used on input line 274.
+Package pdftex.def Info: fig/cipher.png used on input line 273.
 (pdftex.def)             Requested size: 355.65944pt x 211.98238pt.
- [16 <./fig/cipher.png>] <fig/CBCmode.png, id=647, 2007.5pt x 700.6175pt>
+ [16 <./fig/cipher.png>] <fig/CBCmode.png, id=648, 2007.5pt x 700.6175pt>
 File: fig/CBCmode.png Graphic file (type png)
 
 <use fig/CBCmode.png>
-Package pdftex.def Info: fig/CBCmode.png used on input line 311.
+Package pdftex.def Info: fig/CBCmode.png used on input line 310.
 (pdftex.def)             Requested size: 355.65944pt x 124.11726pt.
  [17 <./fig/CBCmode.png>]
 <fig/SPnetwork.png, id=670, 451.6875pt x 301.3659pt>
 File: fig/SPnetwork.png Graphic file (type png)
  <use fig/SPnetwork.png>
-Package pdftex.def Info: fig/SPnetwork.png used on input line 394.
+Package pdftex.def Info: fig/SPnetwork.png used on input line 393.
 (pdftex.def)             Requested size: 177.82971pt x 118.64964pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) [18] [19 <./fig/SPnetwork.png>]
+)
+[18 <./fig/SPnetwork.png>] [19]
 \openout2 = `CSA.aux'.
 
  (./CSA.tex [20
@@ -2457,87 +2454,6 @@ l.104 ...tions, which corresponds to 281\times$10^
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.126 By substituting seconds with days \times
-                                               (seconds/day), the number of ...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-! LaTeX Error: Bad math environment delimiter.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.128 \begin{equation}
-                      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! You can't use `\eqno' in math mode.
-\endmathdisplay@a ...\df@tag \@empty \else \veqno 
-                                                  \alt@tag \df@tag \fi \ifx ...
-l.131 \end{equation}
-                    
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.131 \end{equation}
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-! LaTeX Error: \begin{document} ended by \end{equation}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.131 \end{equation}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.131 \end{equation}
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.131 \end{equation}
-                    
-Things are pretty mixed up, but I think the worst is over.
-
-
-Overfull \hbox (128.58386pt too wide) in paragraph at lines 126--132
-[]\T1/jkpk/m/n/10 By sub-sti-tut-ing sec-onds with days $\OMS/jkpw/m/n/10 ^^B\O
-T1/jkp/m/n/10 (\OML/jkpw/m/it/10 seconds=day\OT1/jkp/m/n/10 )\OML/jkpw/m/it/10 
-; thenumberofkeysperdaysisfoundinstead \OT1/jkp/m/n/10 : []281\OML/jkpw/m/it/10
- ; \OT1/jkp/m/n/10 4749767 \OMS/jkpw/m/n/10 ^^B
- []
-
 <fig/blockcipher.pdf, id=714, 252.945pt x 179.2296pt>
 File: fig/blockcipher.pdf Graphic file (type pdf)
 
@@ -2576,7 +2492,7 @@ de-scram-bling through
 ]
 Chapter 6.
 [29]
-Overfull \hbox (6.06662pt too wide) in paragraph at lines 47--55
+Overfull \hbox (6.06662pt too wide) in paragraph at lines 48--56
 \T1/jkpk/m/n/10 sary to en-sure a se-cure en-cryp-tion. They can be seen in the
  Sub-Bytes and ShiftRows
  []
@@ -2636,27 +2552,18 @@ File: fig/keyexpansion2.png Graphic file (type png)
 Package pdftex.def Info: fig/keyexpansion2.png used on input line 113.
 (pdftex.def)             Requested size: 266.74457pt x 235.89246pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 <fig/keyblock2.png, id=882, 579.16376pt x 485.815pt>
 File: fig/keyblock2.png Graphic file (type png)
  <use fig/keyblock2.png>
 Package pdftex.def Info: fig/keyblock2.png used on input line 120.
 (pdftex.def)             Requested size: 266.74457pt x 223.75189pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[36 <./fig/cipherblock.png>]
-Underfull \vbox (badness 1205) has occurred while \output is active []
-
- [37 <./fig/keyexpansion2.png> <./fig/keyblock2.png>]
-<fig/round.png, id=897, 652.4375pt x 630.355pt>
+[36 <./fig/cipherblock.png>] [37 <./fig/keyexpansion2.png> <./fig/keyblock2.png
+>] <fig/round.png, id=897, 652.4375pt x 630.355pt>
 File: fig/round.png Graphic file (type png)
  <use fig/round.png>
 Package pdftex.def Info: fig/round.png used on input line 152.
-(pdftex.def)             Requested size: 266.74457pt x 257.72583pt.
+(pdftex.def)             Requested size: 248.96051pt x 240.5377pt.
  [38 <./fig/round.png>]) [39]
 \openout2 = `result.aux'.
 
@@ -3055,37 +2962,32 @@ my insertion and my current dilemma will both disappear.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[44]
+Underfull \vbox (badness 2680) has occurred while \output is active []
 
-LaTeX Warning: Reference `app:synt_rep' on page 44 undefined on input line 296.
-
-
-[44] [45]
-
-Package natbib Warning: Citation `Generator' on page 46 undefined on input line
- 348.
-
-<fig/successtv1.png, id=949, 831.85782pt x 106.14656pt>
+ [45]
+<fig/successtv1.png, id=950, 831.85782pt x 106.14656pt>
 File: fig/successtv1.png Graphic file (type png)
 
 <use fig/successtv1.png>
-Package pdftex.def Info: fig/successtv1.png used on input line 356.
+Package pdftex.def Info: fig/successtv1.png used on input line 353.
 (pdftex.def)             Requested size: 355.65944pt x 45.38298pt.
 
-<fig/successtv2.png, id=951, 832.61063pt x 112.16907pt>
+<fig/successtv2.png, id=952, 832.61063pt x 112.16907pt>
 File: fig/successtv2.png Graphic file (type png)
 
 <use fig/successtv2.png>
-Package pdftex.def Info: fig/successtv2.png used on input line 367.
+Package pdftex.def Info: fig/successtv2.png used on input line 364.
 (pdftex.def)             Requested size: 355.65944pt x 47.9151pt.
- <fig/successtv3.png, id=953, 726.46407pt x 108.405pt>
+ <fig/successtv3.png, id=954, 726.46407pt x 108.405pt>
 File: fig/successtv3.png Graphic file (type png)
 
 <use fig/successtv3.png>
-Package pdftex.def Info: fig/successtv3.png used on input line 378.
+Package pdftex.def Info: fig/successtv3.png used on input line 375.
 (pdftex.def)             Requested size: 355.65944pt x 53.07423pt.
  [46 <./fig/successtv1.png (PNG copy)> <./fig/successtv2.png (PNG copy)> <./fig
 /successtv3.png>]
-Overfull \hbox (5.6194pt too wide) in paragraph at lines 405--413
+Overfull \hbox (5.6194pt too wide) in paragraph at lines 402--410
 []\T1/jkpk/m/n/10 The im-ple-men-ta-tion by Xil-inx uses cus-tom FPGA op-ti-miz
 a-tion tech-niques through
  []
@@ -3093,7 +2995,7 @@ a-tion tech-niques through
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.421   \begin{array}{| l | l | l | l |}
+l.418   \begin{array}{| l | l | l | l |}
                                         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -3101,7 +3003,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.427   \end{array}
+l.424   \end{array}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3176,91 +3078,108 @@ Underfull \hbox (badness 2426) in paragraph at lines 64--64
  []
 
 [51]
-Underfull \hbox (badness 10000) in paragraph at lines 80--80
-[]$\T1/pcr/m/n/10 http : / / ieeexplore . ieee . org . lt . ltag . bibl . liu .
- se / stamp /
+Overfull \hbox (85.7999pt too wide) in paragraph at lines 78--78
+[]\T1/jkpk/m/n/10 http://upload.wikimedia.org/wikipedia/commons/thumb/8/80/CBC_
+encryption.svg/2000px
  []
 
 
-Underfull \hbox (badness 2150) in paragraph at lines 95--95
-[]\T1/jkpk/m/n/10 CI Plus LLP.  Ci plus spec-i-fi-ca-tion.  \T1/jkpk/m/sl/10 CI
- Plus Spec-i-fi-ca-tion v1.3.1\T1/jkpk/m/n/10 ,
+Underfull \hbox (badness 7649) in paragraph at lines 78--78
+\T1/jkpk/m/n/10 CBC_encryption.svg.png.  Cbc en-cryp-tion, 2014.  URL []$\T1/pc
+r/m/n/10 http :
  []
 
 
-Underfull \hbox (badness 6825) in paragraph at lines 115--115
-[]\T1/jkpk/m/n/10 G.J. Schri-jen.  Use case: Con-trol word pro-tec-tion, May 20
-11.
- []
-
-
-Underfull \hbox (badness 1694) in paragraph at lines 115--115
-\T1/jkpk/m/n/10 URL []$\T1/pcr/m/n/10 http : / / www . hisinitiative . org / _l
-ib / img / Intrinsic-[]ID _
- []
-
-
-Underfull \hbox (badness 2856) in paragraph at lines 151--151
-[]\T1/jkpk/m/n/10 Erik Tews, Ju-lian Wälde, and Michael Weiner.  Break-ing dvb-
-csa.
- []
-
-
-Underfull \hbox (badness 5446) in paragraph at lines 151--151
-\T1/jkpk/m/n/10 In \T1/jkpk/m/sl/10 Re-search in Cryp-tol-ogy\T1/jkpk/m/n/10 , 
-pages 45--61. Springer, 2012.  URL
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 151--151
-[]$\T1/pcr/m/n/10 http : / / link . springer . com . lt . ltag . bibl . liu . s
-e / chapter /
- []
-
-[52]
-Underfull \hbox (badness 3989) in paragraph at lines 159--159
-[]\T1/jkpk/m/n/10 Serge Vau-de-nay, Willi Meier, Si-mon Fis-cher, et al.  Anal-
-y-sis of
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 175--175
-[]\T1/jkpk/m/n/10 Unknown Wikipedia.  Cbc en-cryp-tion, 2014.  URL []$\T1/pcr/m
-/n/10 http :
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 175--175
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
 \T1/pcr/m/n/10 / / upload . wikimedia . org / wikipedia / commons / thumb / 8 /
  80 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 175--175
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
 \T1/pcr/m/n/10 CBC _ encryption . svg / 2000px-[]CBC _ encryption . svg . png$[
 ]\T1/jkpk/m/n/10 .  Ac-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 182--182
-\T1/pcr/m/n/10 wikimedia . org / wikipedia / en / thumb / 8 / 85 / Cipher-[]tax
-onomy .
+Underfull \hbox (badness 10000) in paragraph at lines 87--87
+[]\T1/jkpk/m/n/10 http://upload.wikimedia.org/wikipedia/en/thumb/8/85/Cipher-
  []
 
 
-Underfull \hbox (badness 2384) in paragraph at lines 189--189
-[]$\T1/pcr/m/n/10 http : / / en . wikipedia . org / wiki / Rijndael _ key _ sch
-edule$[]\T1/jkpk/m/n/10 .  Ac-
+Underfull \hbox (badness 10000) in paragraph at lines 87--87
+\T1/jkpk/m/n/10 URL []$\T1/pcr/m/n/10 http : / / upload . wikimedia . org / wik
+ipedia / en / thumb / 8 /
  []
 
 
-Underfull \hbox (badness 3068) in paragraph at lines 202--202
+Underfull \hbox (badness 10000) in paragraph at lines 87--87
+\T1/pcr/m/n/10 85 / Cipher-[]taxonomy . svg / 500px-[]Cipher-[]taxonomy . svg .
+ png$[]\T1/jkpk/m/n/10 .
+ []
+
+
+Underfull \hbox (badness 3780) in paragraph at lines 94--94
+[]\T1/jkpk/m/n/10 http://www.angelfire.com/biz7/atleast/mix_columns.pdf.  Mix-c
+olumns
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--103
+[]$\T1/pcr/m/n/10 http : / / ieeexplore . ieee . org . lt . ltag . bibl . liu .
+ se / stamp /
+ []
+
+
+Underfull \hbox (badness 2150) in paragraph at lines 118--118
+[]\T1/jkpk/m/n/10 CI Plus LLP.  Ci plus spec-i-fi-ca-tion.  \T1/jkpk/m/sl/10 CI
+ Plus Spec-i-fi-ca-tion v1.3.1\T1/jkpk/m/n/10 ,
+ []
+
+
+Underfull \hbox (badness 6825) in paragraph at lines 138--138
+[]\T1/jkpk/m/n/10 G.J. Schri-jen.  Use case: Con-trol word pro-tec-tion, May 20
+11.
+ []
+
+
+Underfull \hbox (badness 1694) in paragraph at lines 138--138
+\T1/jkpk/m/n/10 URL []$\T1/pcr/m/n/10 http : / / www . hisinitiative . org / _l
+ib / img / Intrinsic-[]ID _
+ []
+
+[52]
+Underfull \hbox (badness 2856) in paragraph at lines 174--174
+[]\T1/jkpk/m/n/10 Erik Tews, Ju-lian Wälde, and Michael Weiner.  Break-ing dvb-
+csa.
+ []
+
+
+Underfull \hbox (badness 5446) in paragraph at lines 174--174
+\T1/jkpk/m/n/10 In \T1/jkpk/m/sl/10 Re-search in Cryp-tol-ogy\T1/jkpk/m/n/10 , 
+pages 45--61. Springer, 2012.  URL
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+[]$\T1/pcr/m/n/10 http : / / link . springer . com . lt . ltag . bibl . liu . s
+e / chapter /
+ []
+
+
+Underfull \hbox (badness 3989) in paragraph at lines 182--182
+[]\T1/jkpk/m/n/10 Serge Vau-de-nay, Willi Meier, Si-mon Fis-cher, et al.  Anal-
+y-sis of
+ []
+
+
+Underfull \hbox (badness 3068) in paragraph at lines 204--204
 []\T1/jkpk/m/n/10 Xilinx.  Fast aes xts/cbc (he-lion), De-cem-ber 2007.  URL []
 $\T1/pcr/m/n/10 http :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 202--202
+Underfull \hbox (badness 10000) in paragraph at lines 204--204
 \T1/pcr/m/n/10 / / www . xilinx . com / products / intellectual-[]property / Fa
 st _
  []
@@ -3316,13 +3235,13 @@ Overfull \hbox (40.79588pt too wide) in paragraph at lines 90--108
 
 ]
 Appendix B.
-<fig/flowchart.pdf, id=1161, 415.5525pt x 912.40875pt>
+<fig/flowchart.pdf, id=1162, 415.5525pt x 912.40875pt>
 File: fig/flowchart.pdf Graphic file (type pdf)
  <use fig/flowchart.pdf>
 Package pdftex.def Info: fig/flowchart.pdf used on input line 10.
 (pdftex.def)             Requested size: 151.61516pt x 332.90062pt.
 
-<fig/keyschedule.png, id=1162, 822.272pt x 822.272pt>
+<fig/keyschedule.png, id=1163, 822.272pt x 822.272pt>
 File: fig/keyschedule.png Graphic file (type png)
 
 <use fig/keyschedule.png>
@@ -3333,10 +3252,7 @@ Package pdftex.def Info: fig/keyschedule.png used on input line 17.
 
 ]
 No file main.ind.
-
-Package natbib Warning: There were undefined citations.
-
-<fig/LinkUniv_staende_pms.pdf, id=1199, 260.975pt x 172.645pt>
+<fig/LinkUniv_staende_pms.pdf, id=1200, 260.975pt x 172.645pt>
 File: fig/LinkUniv_staende_pms.pdf Graphic file (type pdf)
 
 <use fig/LinkUniv_staende_pms.pdf>
@@ -3362,19 +3278,15 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 75.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 2B77C632B8EECDA139FA58C1829AE99F;5527.
 Package rerunfilecheck Info: File `main.brf' has not changed.
-(rerunfilecheck)             Checksum: 18F19FAE94460D5C7757BBBBF3F89DFD;3387.
-
-
-LaTeX Warning: There were undefined references.
-
+(rerunfilecheck)             Checksum: A7119B1CC4FCD846BA1941D7523AA072;3422.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 75.
  )
 (\end occurred when \ifx on line 22 was incomplete) 
 Here is how much of TeX's memory you used:
- 22907 strings out of 493304
- 374939 string characters out of 6139871
- 518028 words of memory out of 5000000
- 25405 multiletter control sequences out of 15000+600000
+ 22905 strings out of 493304
+ 374814 string characters out of 6139871
+ 518377 words of memory out of 5000000
+ 25403 multiletter control sequences out of 15000+600000
  228387 words of font info for 175 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  56i,12n,87p,587b,559s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3394,10 +3306,10 @@ ne.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpsya.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/helvetic/uhvb8a.pfb>
-Output written on main.pdf (79 pages, 1172508 bytes).
+Output written on main.pdf (79 pages, 1172182 bytes).
 PDF statistics:
- 1315 PDF objects out of 1440 (max. 8388607)
- 1160 compressed objects within 12 object streams
+ 1316 PDF objects out of 1440 (max. 8388607)
+ 1161 compressed objects within 12 object streams
  242 named destinations out of 1000 (max. 500000)
  19240 words of extra memory for PDF output out of 20736 (max. 10000000)
 

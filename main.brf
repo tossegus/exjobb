@@ -19,8 +19,8 @@
 \backcite {Simmons:1992}{{15}{3.3.2}{subsection.3.3.2}}
 \backcite {Schneier:2003}{{15}{3.3.2}{subsection.3.3.2}}
 \backcite {CipherTax:2013}{{16}{3.3}{figure.caption.8}}
+\backcite {Schneier:2003}{{16}{3.4.1}{subsection.3.4.1}}
 \backcite {CBCmode:2014}{{17}{3.4}{figure.caption.9}}
-\backcite {Schneier:2003}{{17}{3.4.1}{subsection.3.4.1}}
 \backcite {Stinson:2006}{{17}{3.4.1}{subsection.3.4.1}}
 \backcite {Stinson:2006}{{17}{3.4.1}{figure.caption.9}}
 \backcite {Simmons:1992}{{17}{3.4.2}{subsection.3.4.2}}
@@ -58,10 +58,11 @@
 \backcite {Stinson:2006}{{29}{6.2}{section.6.2}}
 \backcite {Stinson:2006}{{30}{6.2}{Item.6}}
 \backcite {Angelfire}{{31}{6.2.4}{subsection.6.2.4}}
-\backcite {Stinson:2006}{{31}{6.3.1}{subsection.6.3.1}}
-\backcite {RijndaelKeySchedule}{{32}{6.3.3}{subsection.6.3.3}}
+\backcite {Stinson:2006}{{32}{6.3.1}{subsection.6.3.1}}
+\backcite {AES:2001}{{32}{6.3.3}{subsection.6.3.3}}
 \backcite {DVB:2013}{{42}{8.1}{section.8.1}}
 \backcite {AES:2001}{{46}{8.4}{section.8.4}}
+\backcite {Generator}{{46}{8.4}{section.8.4}}
 \backcite {Xilinx:AES}{{47}{8.5}{section.8.5}}
 \backcite {CI+:2011}{{49}{8.7}{section*.26}}
 \backcite {CipherTax:2013}{{49}{8.7}{section*.26}}

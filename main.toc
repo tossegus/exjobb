@@ -37,10 +37,10 @@
 \contentsline {subsubsection}{CBC}{17}{subsection.3.4.1}
 \contentsline {subsubsection}{CTR}{17}{figure.caption.9}
 \contentsline {subsection}{\numberline {3.4.2}Stream cipher}{17}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Decryption}{18}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.3}Decryption}{17}{subsection.3.4.3}
 \contentsline {section}{\numberline {3.5}Confusion and Diffusion}{18}{section.3.5}
 \contentsline {subsection}{\numberline {3.5.1}S-boxes and P-boxes}{18}{subsection.3.5.1}
-\contentsline {section}{\numberline {3.6}Secrecy}{18}{section.3.6}
+\contentsline {section}{\numberline {3.6}Secrecy}{19}{section.3.6}
 \contentsline {chapter}{\numberline {4}Common Scrambling Algorithm}{21}{chapter.4}
 \contentsline {section}{\numberline {4.1}The need for a new standard}{21}{section.4.1}
 \contentsline {section}{\numberline {4.2}Layout of the CSA}{22}{section.4.2}

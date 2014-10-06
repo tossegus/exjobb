@@ -24,6 +24,7 @@ The AES consists of a number of steps that are repeated for each block
 to be encoded. All of the steps are explained later in this chapter.
 The steps to be performed are, according to \citet{Stinson:2006}:
 
+\newpage
 \emph{Set-up steps}
 \begin{enumerate}
 \item KeyExpansion - Produce round keys.
@@ -40,9 +41,9 @@ The steps to be performed are, according to \citet{Stinson:2006}:
 \item AddRoundKey - The state matrix is once again combined with 
   round-keys.
 \end{enumerate}
-\emph{In the final round everything except the MixColumns step are 
+In the final round everything except the MixColumns step are 
 performed. Meaning that SubBytes, ShiftRows and AddRoundKey are 
-performed.}
+performed.
 
 The ciphertext is then defined as the state-matrix 
 \citep[p. 103]{Stinson:2006}. As mentioned in section 
@@ -170,9 +171,9 @@ flowchard and can be viewed in figure \ref{img:rcon} in appendix
 \ref{app:fig}.
 
 If the input value is 0, the output value is 0, otherwise the 
-following steps are performed \citep{RijndaelKeySchedule}. This can 
-also be replaced by an S-box where you input your byte, and get 
-another back, since the input byte is just used as a counter that 
+following steps are performed \citep{AES:2001} %\citep{RijndaelKeySchedule}. 
+This can also be replaced by an S-box where you input your byte, and 
+get another back, since the input byte is just used as a counter that 
 decides how many times you perform steps \ref{item:step1} through 
 \ref{item:step3} 
 

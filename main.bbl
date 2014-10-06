@@ -62,8 +62,31 @@ Farncombe{\ }Consulting{\ }Group.
 \newblock URL \url{http://farncombe.eu/whitepapers/FTLCAWhitePaperTwo.pdf}.
 \newblock Accessed: 28 jan 2014.
 
-\bibitem[Internet(2014)]{Angelfire}
-Mr~Internet.
+\bibitem[Generator()]{Generator}
+Generator, 2014, 5.
+\newblock URL \url{http://aes.online-domain-tools.com/}.
+\newblock Accessed: 25 Mar 2014.
+
+\bibitem[http://upload.wikimedia.org/wikipedia/commons/thumb/8/80/CBC\_encryption.svg/2000px
+  CBC\_encryption.svg.png(2014)]{CBCmode:2014}
+http://upload.wikimedia.org/wikipedia/commons/thumb/8/80/CBC\_encryption.svg/2000px
+  CBC\_encryption.svg.png.
+\newblock Cbc encryption, 2014.
+\newblock URL
+  \url{http://upload.wikimedia.org/wikipedia/commons/thumb/8/80/CBC\_encryption.svg/2000px-CBC\_encryption.svg.png}.
+\newblock Accessed: 7 Feb 2014.
+
+\bibitem[http://upload.wikimedia.org/wikipedia/en/thumb/8/85/Cipher-taxonomy.svg/500px
+  Cipher-taxonomy.svg.png(2014)]{CipherTax:2013}
+http://upload.wikimedia.org/wikipedia/en/thumb/8/85/Cipher-taxonomy.svg/500px
+  Cipher-taxonomy.svg.png.
+\newblock Cipher-taxanomy, 2014.
+\newblock URL
+  \url{http://upload.wikimedia.org/wikipedia/en/thumb/8/85/Cipher-taxonomy.svg/500px-Cipher-taxonomy.svg.png}.
+\newblock Accessed: 5 Feb 2014.
+
+\bibitem[http://www.angelfire.com/biz7/atleast/mix\_columns.pdf(2014)]{Angelfire}
+http://www.angelfire.com/biz7/atleast/mix\_columns.pdf.
 \newblock Mixcolumns step for aes.
 \newblock \emph{Empty}, January 2014.
 \newblock URL \url{http://www.angelfire.com/biz7/atleast/mix\_columns.pdf}.
@@ -165,27 +188,6 @@ Ralf-Philipp Weinmann and Kai Wirt.
 \newblock URL
   \url{http//sec.cs.kent.ac.uk/cms2004/Program/CMS2004final/p5a1.pdf}.
 \newblock Accessed: 31 Jan 2014.
-
-\bibitem[Wikipedia(2014{\natexlab{a}})]{CBCmode:2014}
-Unknown Wikipedia.
-\newblock Cbc encryption, 2014{\natexlab{a}}.
-\newblock URL
-  \url{http://upload.wikimedia.org/wikipedia/commons/thumb/8/80/CBC\_encryption.svg/2000px-CBC\_encryption.svg.png}.
-\newblock Accessed: 7 Feb 2014.
-
-\bibitem[Wikipedia(2014{\natexlab{b}})]{CipherTax:2013}
-Unknown Wikipedia.
-\newblock Cipher-taxanomy, 2014{\natexlab{b}}.
-\newblock URL
-  \url{http://upload.wikimedia.org/wikipedia/en/thumb/8/85/Cipher-taxonomy.svg/500px-Cipher-taxonomy.svg.png}.
-\newblock Accessed: 5 Feb 2014.
-
-\bibitem[Wikipedia(2014{\natexlab{c}})]{RijndaelKeySchedule}
-Wikipedia~Jr Wikipedia.
-\newblock Rijndael's key schedule.
-\newblock \emph{Empty}, January 2014{\natexlab{c}}.
-\newblock URL \url{http://en.wikipedia.org/wiki/Rijndael\_key\_schedule}.
-\newblock Accessed: 28 jan 2014.
 
 \bibitem[Wirt(2004)]{Wirt:2004}
 Kai Wirt.

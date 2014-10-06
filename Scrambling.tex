@@ -249,12 +249,11 @@ encryption. It is common to use a combination of those two when
 an easy, effective way to encrypt messages is desired.
 
 To combine the two encryption methods, the symmetric-key algorithm 
-encodes the plaintext into a ciphertext. Then the public-key 
+encodes the plaintext into a ciphertext while the public-key 
 encryption encrypts the key used by the symmeteric-key encryption. The 
-encoded key is then sent together with the ciphertext to the 
-recipient, which decodes the symmetric key using the secret key. The 
-plaintext is obtained by decrypting the ciphertext using the symmetric 
-key.
+encoded key is sent with the ciphertext to the recipient that decodes 
+the symmetric key using the secret key. The plaintext is obtained by 
+decrypting the ciphertext using the symmetric key.
 
 %% HERE DO THIS PART NOW!! YOU GOT ALL THE WAY HERE!!
 
@@ -286,7 +285,7 @@ stream ciphers to provide security.
 
 \subsection{Block cipher}\label{sec:BlockCipher}
 A block cipher operates on fixed sized sets of data. These sets are 
-called blocks, which is the reason why they are called block ciphers. 
+called blocks, which is the reason they are called block ciphers. 
 Them being fixed sizes might cause a need for padding of the blocks, in 
 case the plaintext contains a number of bytes that is not a multiplier
 of the blocksize. Block ciphers often use a combination of Substitution-boxes 
